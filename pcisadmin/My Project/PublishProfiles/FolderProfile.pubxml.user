@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\acapx\Desktop\PermataPintar\pcisadmin\bin\Release\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="admin.default.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.dobyear.summary.list.aspx">
+      <publishTime>08/23/2019 11:55:35</publishTime>
+    </File>
+    <File Include="admin.Master">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.masterconfig.update.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.notification.list.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.pcis.config.create.aspx">
+      <publishTime>08/22/2016 09:51:51</publishTime>
+    </File>
+    <File Include="admin.pcis.config.list.aspx">
+      <publishTime>06/07/2017 16:13:14</publishTime>
+    </File>
+    <File Include="admin.pcis.config.update.aspx">
+      <publishTime>08/22/2016 08:44:27</publishTime>
+    </File>
+    <File Include="admin.pcis.config.view.aspx">
+      <publishTime>08/22/2016 08:34:30</publishTime>
+    </File>
+    <File Include="admin.pcis.dobyear.summary.aspx">
+      <publishTime>08/22/2019 16:07:21</publishTime>
+    </File>
+    <File Include="admin.pcis.exam.year.create.aspx">
+      <publishTime>08/22/2016 09:42:49</publishTime>
+    </File>
+    <File Include="admin.pcis.exam.year.list.aspx">
+      <publishTime>08/22/2016 09:28:55</publishTime>
+    </File>
+    <File Include="admin.pcis.exam.year.update.aspx">
+      <publishTime>08/22/2016 09:31:01</publishTime>
+    </File>
+    <File Include="admin.pcis.gender.summary.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.pcis.jsc.aspx">
+      <publishTime>08/20/2019 15:13:54</publishTime>
+    </File>
+    <File Include="admin.pcis.mark.aspx">
+      <publishTime>03/18/2016 16:28:51</publishTime>
+    </File>
+    <File Include="admin.pcis.progress.aspx">
+      <publishTime>03/18/2016 16:28:51</publishTime>
+    </File>
+    <File Include="admin.pcis.teststart.summary.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.pcisadmin.create.aspx">
+      <publishTime>08/22/2019 12:08:17</publishTime>
+    </File>
+    <File Include="admin.pcisadmin.list.aspx">
+      <publishTime>08/22/2019 10:11:14</publishTime>
+    </File>
+    <File Include="admin.pcisadmin.update.aspx">
+      <publishTime>08/22/2019 14:54:09</publishTime>
+    </File>
+    <File Include="admin.security_login_trail.list.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.studentprofile.create.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.studentprofile.mark.view.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.studentprofile.search.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.studentprofile.update.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="admin.studentprofile.view.aspx">
+      <publishTime>01/09/2016 11:07:49</publishTime>
+    </File>
+    <File Include="admin.TransactionLog.list.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="bin/araken.pcisadmin.dll">
+      <publishTime>05/14/2020 09:39:58</publishTime>
+    </File>
+    <File Include="bin/araken.pcisadmin.pdb">
+      <publishTime>05/14/2020 09:39:58</publishTime>
+    </File>
+    <File Include="bin/araken.pcisadmin.xml">
+      <publishTime>05/14/2020 09:39:58</publishTime>
+    </File>
+    <File Include="commoncontrol/admin_create.ascx">
+      <publishTime>08/22/2019 14:39:48</publishTime>
+    </File>
+    <File Include="commoncontrol/admin_list.ascx">
+      <publishTime>08/22/2019 14:44:27</publishTime>
+    </File>
+    <File Include="commoncontrol/admin_update.ascx">
+      <publishTime>08/22/2019 15:01:29</publishTime>
+    </File>
+    <File Include="commoncontrol/exam_history_list.ascx">
+      <publishTime>09/10/2019 11:05:37</publishTime>
+    </File>
+    <File Include="commoncontrol/exam_mark.ascx">
+      <publishTime>08/23/2019 11:30:56</publishTime>
+    </File>
+    <File Include="commoncontrol/exam_progress.ascx">
+      <publishTime>07/13/2017 08:22:10</publishTime>
+    </File>
+    <File Include="commoncontrol/menu_left.ascx">
+      <publishTime>05/09/2019 15:04:44</publishTime>
+    </File>
+    <File Include="commoncontrol/our_address.ascx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_config_create.ascx">
+      <publishTime>08/22/2016 10:00:26</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_config_list.ascx">
+      <publishTime>08/22/2016 09:52:51</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_config_update.ascx">
+      <publishTime>08/22/2016 09:49:53</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_dobyear_list.ascx">
+      <publishTime>08/23/2019 11:55:46</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_exam_year_create.ascx">
+      <publishTime>08/22/2016 09:41:11</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_exam_year_list.ascx">
+      <publishTime>07/08/2019 11:02:31</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_exam_year_update.ascx">
+      <publishTime>07/08/2019 11:03:42</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_jsc_create.ascx">
+      <publishTime>08/21/2019 15:50:56</publishTime>
+    </File>
+    <File Include="commoncontrol/pcis_summary_age.ascx">
+      <publishTime>08/24/2019 21:51:05</publishTime>
+    </File>
+    <File Include="commoncontrol/userprofile_create.ascx">
+      <publishTime>08/20/2019 15:02:44</publishTime>
+    </File>
+    <File Include="commoncontrol/userprofile_search.ascx">
+      <publishTime>08/20/2019 15:00:58</publishTime>
+    </File>
+    <File Include="commoncontrol/userprofile_update.ascx">
+      <publishTime>08/22/2016 09:20:19</publishTime>
+    </File>
+    <File Include="commoncontrol/userprofile_view.ascx">
+      <publishTime>08/30/2016 15:29:23</publishTime>
+    </File>
+    <File Include="commoncontrol/user_login.ascx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="css/grd_alt.png">
+      <publishTime>03/03/2008 16:23:50</publishTime>
+    </File>
+    <File Include="css/grd_head.png">
+      <publishTime>03/03/2008 15:52:14</publishTime>
+    </File>
+    <File Include="css/grd_pgr.png">
+      <publishTime>03/03/2008 16:20:56</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>12/29/2010 11:44:52</publishTime>
+    </File>
+    <File Include="css/material_button.css">
+      <publishTime>03/18/2015 23:41:52</publishTime>
+    </File>
+    <File Include="css/portal.default.css">
+      <publishTime>11/19/2015 08:02:08</publishTime>
+    </File>
+    <File Include="css/portal.default.old.css">
+      <publishTime>12/21/2010 13:32:08</publishTime>
+    </File>
+    <File Include="css/table-images/back.png">
+      <publishTime>07/28/2008 00:26:04</publishTime>
+    </File>
+    <File Include="css/table-images/blurry.jpg">
+      <publishTime>07/28/2008 00:36:08</publishTime>
+    </File>
+    <File Include="css/table-images/botleft.png">
+      <publishTime>07/27/2008 20:32:02</publishTime>
+    </File>
+    <File Include="css/table-images/botright.png">
+      <publishTime>07/27/2008 20:32:12</publishTime>
+    </File>
+    <File Include="css/table-images/gradback.png">
+      <publishTime>07/27/2008 22:44:12</publishTime>
+    </File>
+    <File Include="css/table-images/gradhead.png">
+      <publishTime>07/27/2008 22:44:36</publishTime>
+    </File>
+    <File Include="css/table-images/gradhover.png">
+      <publishTime>07/27/2008 22:43:48</publishTime>
+    </File>
+    <File Include="css/table-images/header.jpg">
+      <publishTime>07/30/2008 12:34:48</publishTime>
+    </File>
+    <File Include="css/table-images/left.png">
+      <publishTime>07/27/2008 20:20:26</publishTime>
+    </File>
+    <File Include="css/table-images/pattern-head.png">
+      <publishTime>03/08/2008 23:35:38</publishTime>
+    </File>
+    <File Include="css/table-images/pattern.gif">
+      <publishTime>10/23/2006 18:34:18</publishTime>
+    </File>
+    <File Include="css/table-images/pattern.png">
+      <publishTime>03/08/2008 23:26:42</publishTime>
+    </File>
+    <File Include="css/table-images/patternb-head.png">
+      <publishTime>03/08/2008 23:29:02</publishTime>
+    </File>
+    <File Include="css/table-images/patternb.png">
+      <publishTime>03/08/2008 23:25:32</publishTime>
+    </File>
+    <File Include="css/table-images/right.png">
+      <publishTime>07/27/2008 20:26:38</publishTime>
+    </File>
+    <File Include="css/table_style.css">
+      <publishTime>11/19/2015 14:37:01</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="default.contactus.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="default.Master">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="img/ambulance-facebook-emoticon.png">
+      <publishTime>05/01/2015 07:15:33</publishTime>
+    </File>
+    <File Include="img/boy-and-girl-holding-hands.png">
+      <publishTime>01/22/2015 18:37:41</publishTime>
+    </File>
+    <File Include="img/bus-emoticon.png">
+      <publishTime>12/25/2014 08:51:08</publishTime>
+    </File>
+    <File Include="img/cal.jpg">
+      <publishTime>04/23/2014 17:14:20</publishTime>
+    </File>
+    <File Include="img/department-store-emoticon.png">
+      <publishTime>05/01/2015 08:09:07</publishTime>
+    </File>
+    <File Include="img/drawline.png">
+      <publishTime>12/16/2010 09:19:20</publishTime>
+    </File>
+    <File Include="img/error.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/facebook-policeman-symbol.png">
+      <publishTime>02/01/2015 09:20:02</publishTime>
+    </File>
+    <File Include="img/front_page.jpg">
+      <publishTime>02/18/2009 08:42:32</publishTime>
+    </File>
+    <File Include="img/girl-emoticon-for-facebook.png">
+      <publishTime>12/29/2014 09:13:36</publishTime>
+    </File>
+    <File Include="img/home-small.png">
+      <publishTime>12/25/2014 08:15:34</publishTime>
+    </File>
+    <File Include="img/home.png">
+      <publishTime>11/19/2015 19:58:56</publishTime>
+    </File>
+    <File Include="img/info.png">
+      <publishTime>10/10/2007 01:41:56</publishTime>
+    </File>
+    <File Include="img/keamatan01.png">
+      <publishTime>12/10/2010 12:33:24</publishTime>
+    </File>
+    <File Include="img/left.gif">
+      <publishTime>05/12/2009 19:35:20</publishTime>
+    </File>
+    <File Include="img/man-emoticon.png">
+      <publishTime>12/29/2014 09:12:02</publishTime>
+    </File>
+    <File Include="img/megaphone-emoticon.png">
+      <publishTime>12/25/2014 08:19:24</publishTime>
+    </File>
+    <File Include="img/memo-sign-for-facebook.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="img/mens-emoticon.png">
+      <publishTime>12/24/2014 15:59:10</publishTime>
+    </File>
+    <File Include="img/mini_permatapintar.jpg">
+      <publishTime>12/18/2010 19:51:08</publishTime>
+    </File>
+    <File Include="img/ncdrc-logo.png">
+      <publishTime>11/19/2015 19:55:53</publishTime>
+    </File>
+    <File Include="img/open-book-emoticon.png">
+      <publishTime>01/18/2015 20:27:17</publishTime>
+    </File>
+    <File Include="img/pcis-login.png">
+      <publishTime>11/19/2015 07:34:09</publishTime>
+    </File>
+    <File Include="img/permatanegara.jpg">
+      <publishTime>10/14/2009 13:54:36</publishTime>
+    </File>
+    <File Include="img/permatapintar.jpg">
+      <publishTime>02/28/2010 23:19:16</publishTime>
+    </File>
+    <File Include="img/permatapintar_old.jpg">
+      <publishTime>10/14/2009 13:58:06</publishTime>
+    </File>
+    <File Include="img/permata_insan.png">
+      <publishTime>12/19/2010 21:17:22</publishTime>
+    </File>
+    <File Include="img/permata_negara.jpg">
+      <publishTime>12/21/2010 03:43:52</publishTime>
+    </File>
+    <File Include="img/permata_negara.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="img/phone-symbol.png">
+      <publishTime>05/01/2015 07:16:50</publishTime>
+    </File>
+    <File Include="img/print.png">
+      <publishTime>11/02/2015 09:43:00</publishTime>
+    </File>
+    <File Include="img/red-exclamation-mark.png">
+      <publishTime>12/25/2014 08:20:01</publishTime>
+    </File>
+    <File Include="img/refresh.jpg">
+      <publishTime>09/07/2013 10:47:58</publishTime>
+    </File>
+    <File Include="img/restroom-emoticon.png">
+      <publishTime>12/25/2014 08:12:56</publishTime>
+    </File>
+    <File Include="img/right.gif">
+      <publishTime>05/12/2009 19:35:12</publishTime>
+    </File>
+    <File Include="img/sample_que.jpg">
+      <publishTime>02/18/2009 09:46:52</publishTime>
+    </File>
+    <File Include="img/school_info.png">
+      <publishTime>12/27/2011 07:04:08</publishTime>
+    </File>
+    <File Include="img/soccer-ball-emoticon.png">
+      <publishTime>12/25/2014 08:10:32</publishTime>
+    </File>
+    <File Include="img/spacing.png">
+      <publishTime>12/16/2010 09:19:20</publishTime>
+    </File>
+    <File Include="img/success.png">
+      <publishTime>10/10/2007 01:47:48</publishTime>
+    </File>
+    <File Include="img/t-shirt-emoticon-for-facebook.png">
+      <publishTime>05/01/2015 09:03:28</publishTime>
+    </File>
+    <File Include="img/text_calendar.png">
+      <publishTime>01/22/2015 07:05:07</publishTime>
+    </File>
+    <File Include="img/tie-emoticon-facebook.png">
+      <publishTime>01/28/2015 22:23:41</publishTime>
+    </File>
+    <File Include="img/UKM1.JPG">
+      <publishTime>09/03/2010 19:13:56</publishTime>
+    </File>
+    <File Include="img/ukm1_2011_mini.jpg">
+      <publishTime>12/21/2010 18:12:08</publishTime>
+    </File>
+    <File Include="img/validation.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/warning.png">
+      <publishTime>10/10/2007 01:44:54</publishTime>
+    </File>
+    <File Include="img/white_space.jpg">
+      <publishTime>12/21/2010 17:06:48</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="system.error.aspx">
+      <publishTime>03/18/2016 16:28:43</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/15/2019 09:55:38</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

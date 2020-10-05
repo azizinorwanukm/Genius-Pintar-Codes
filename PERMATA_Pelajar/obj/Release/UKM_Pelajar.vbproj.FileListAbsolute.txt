@@ -1,0 +1,134 @@
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbprojResolveAssemblyReference.cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbprojResolveAssemblyReference.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.Cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.CoreCompileInputs.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\bin\UKM_Pelajar.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\bin\UKM_Pelajar.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\bin\UKM_Pelajar.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\bin\UKM_Pelajar.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Pelajar\obj\Release\UKM_Pelajar.pdb

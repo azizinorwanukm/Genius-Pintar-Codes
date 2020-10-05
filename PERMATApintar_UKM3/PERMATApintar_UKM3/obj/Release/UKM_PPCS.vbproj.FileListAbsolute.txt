@@ -1,0 +1,133 @@
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\bin\UKM_Eval.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\bin\UKM_Eval.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\bin\UKM_Eval.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\obj\Release\UKM_Eval.Resources.resources
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\obj\Release\UKM_Eval.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\obj\Release\UKM_Eval.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM1_Eval\obj\Release\UKM_Eval.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Release\UKM_PPCS.Resources.resources
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_PPCS\obj\Release\UKM_PPCS.vbprojResolveAssemblyReference.cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbprojResolveAssemblyReference.cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbprojResolveAssemblyReference.cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_PPCS\obj\Release\UKM_PPCS.vbprojResolveAssemblyReference.cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\obj\Release\UKM_PPCS.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\obj\Release\UKM_PPCS.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\obj\Release\UKM_PPCS.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_PPCS\obj\Release\UKM_PPCS.vbproj.CoreCompileInputs.cache

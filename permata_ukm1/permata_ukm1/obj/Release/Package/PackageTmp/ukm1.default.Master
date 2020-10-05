@@ -1,0 +1,65 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="ukm1.default.master.vb"
+    Inherits="permatapintar.ukm1_default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="description" content=" UJIAN UKM 1" />
+    <meta name="keywords" content="UJIAN UKM1" />
+    <meta name="author" content="Araken Sdn Bhd" />
+    <title>UJIAN UKM1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="portal.default.css"  type="text/css" />
+    <link rel="stylesheet" href="boxstyle.css" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 100%; border: solid 0px #000000;">
+            <tr>
+                <td colspan="3">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left;">
+                                <a href="default.aspx">Ujian UKM1
+                                    <asp:Label ID="lblExamYear" runat="server" Text="Label"></asp:Label></a>
+                            </td>
+                            <td style="width: 40%; text-align: right;">
+                                <a href="ukm1.contactus.aspx">Hubungi Kami</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table width="100%" border="0px" class="fbmain_left">
+            <tr>
+                <td style="width: 100%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">
+                    <table width="100%" border="0px">
+                        <tr>
+                            <td style="border-top: 1px solid #e2c822;">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                |&nbsp;© 2011 Universiti Kebangsaan Malaysia&nbsp;|
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

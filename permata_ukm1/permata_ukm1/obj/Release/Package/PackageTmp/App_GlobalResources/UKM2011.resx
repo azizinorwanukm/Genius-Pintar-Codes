@@ -1,0 +1,1348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblintro000" xml:space="preserve">
+    <value>PERAKUAN</value>
+  </data>
+  <data name="lblintro001" xml:space="preserve">
+    <value>Saya mengaku bahawa saya TIDAK AKAN MENERIMA SEBARANG BANTUAN daripada sesiapa
+                    semasa mengambil ujian ini. Jika saya didapati meniru, menggunakan KAMUS bercetak
+                    atau elektronik (CD dan laman web) atau mendapat bantuan dari orang lain, keputusan
+                    ujian saya dengan sendirinya akan terbatal.</value>
+  </data>
+  <data name="lblintro002" xml:space="preserve">
+    <value>Pelajar perlu JUJUR pada diri sendiri.</value>
+  </data>
+  <data name="lblintro003" xml:space="preserve">
+    <value>**Perhatian: Selepas ini bantuan dari pihak lain tidak dibenarkan.</value>
+  </data>
+  <data name="lblintro004" xml:space="preserve">
+    <value>• Semasa mengisi maklumat pelajar, sekolah dan ibu bapa / penjaga, jika didapati
+                            maklumat palsu, walaupun pelajar melepasi skor kelayakan, maka pelajar tidak layak
+                            menduduki ujian UKM2 atau USIM-1.&lt;br/&gt;
+                            • Sekiranya orang lain yang menjawab soalan bagi pihak pelajar atau pelajar meniru,
+                            maka pelajar akan terperangkap semasa ujian saringan kedua UKM2 yang dilakukan dengan
+                            pengawasan.&lt;br/&gt;
+                            • Sila &lt;b&gt;JUJUR dan BERTANGGUNGJAWAB&lt;b&gt; pada diri sendiri semasa mengisi maklumat
+                            dan menjawab soalan.</value>
+  </data>
+  <data name="btnNo" xml:space="preserve">
+    <value>&lt;&lt; Tidak Setuju</value>
+  </data>
+  <data name="btnYes" xml:space="preserve">
+    <value>Setuju &gt;&gt;</value>
+  </data>
+  <data name="lblModuleA" xml:space="preserve">
+    <value>PILIH GAMBAR</value>
+  </data>
+  <data name="lblInstructionModuleA" xml:space="preserve">
+    <value>Sila klik gambar yang sesuai untuk melengkapkan gambar disebelah kiri.</value>
+  </data>
+  <data name="lblmodAFirst" xml:space="preserve">
+    <value>Hanya soalan ini sahaja yang disediakan jawaban. Jawabannya ialah: D</value>
+  </data>
+  <data name="lblOpen" xml:space="preserve">
+    <value>*Sila terangkan maksud bagi setiap perkataan di bawah. Jika anda tidak tahu jawabannya, masukkan 'x'</value>
+  </data>
+  <data name="lblSelect" xml:space="preserve">
+    <value>Jawab semua soalan. Sila pilih jawapan yang mempunyai maksud terdekat.</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Seterusnya &gt;&gt;</value>
+  </data>
+
+  <data name="lblModEnd" xml:space="preserve">
+    <value>PICTURE COMPLETION END</value>
+  </data>
+  <data name="lblModEndMsg" xml:space="preserve">
+    <value>Thank you. You had completed the picture completion section. Click [Next >>] to continue.</value>
+  </data>
+
+  <data name="lblOpenEnd" xml:space="preserve">
+    <value>OPEN-ENDED QUESTIONS END</value>
+  </data>
+  <data name="lblOpenEndMsg" xml:space="preserve">
+    <value>Thank you. You had completed the open-ended questions section. Click [Next >>] to continue.</value>
+  </data>
+  
+  <data name="Q061" xml:space="preserve">
+    <value>HULUR</value>
+  </data>
+  <data name="Q062" xml:space="preserve">
+    <value>JAJA</value>
+  </data>
+  <data name="Q063" xml:space="preserve">
+    <value>LEGA</value>
+  </data>
+  <data name="Q064" xml:space="preserve">
+    <value>KACAU</value>
+  </data>
+  <data name="Q065" xml:space="preserve">
+    <value>TEDUH</value>
+  </data>
+  <data name="Q066" xml:space="preserve">
+    <value>BEBAN</value>
+  </data>
+  <data name="Q067" xml:space="preserve">
+    <value>GEBU</value>
+  </data>
+  <data name="Q068" xml:space="preserve">
+    <value>NGERI</value>
+  </data>
+  <data name="Q069" xml:space="preserve">
+    <value>BALA</value>
+  </data>
+  <data name="Q070" xml:space="preserve">
+    <value>TERPEGUN</value>
+  </data>
+  <data name="Q071" xml:space="preserve">
+    <value>ADU</value>
+  </data>
+  <data name="Q072" xml:space="preserve">
+    <value>WAJA</value>
+  </data>
+  <data name="Q073" xml:space="preserve">
+    <value>TERPERUK</value>
+  </data>
+  <data name="Q074" xml:space="preserve">
+    <value>PARAS</value>
+  </data>
+  <data name="Q075" xml:space="preserve">
+    <value>BERBALAH</value>
+  </data>
+  <data name="Q076" xml:space="preserve">
+    <value>BIAK</value>
+  </data>
+  <data name="Q077" xml:space="preserve">
+    <value>LIKAT</value>
+  </data>
+  <data name="Q078" xml:space="preserve">
+    <value>HEMAH</value>
+  </data>
+  <data name="Q079" xml:space="preserve">
+    <value>TILIK</value>
+  </data>
+  <data name="Q080" xml:space="preserve">
+    <value>KONGKONG</value>
+  </data>
+  <data name="Q081" xml:space="preserve">
+    <value>TEKAL</value>
+  </data>
+  <data name="Q082" xml:space="preserve">
+    <value>ILAI</value>
+  </data>
+  <data name="Q083" xml:space="preserve">
+    <value>CUAK</value>
+  </data>
+  <data name="Q084" xml:space="preserve">
+    <value>BUBUK</value>
+  </data>
+  <data name="Q085" xml:space="preserve">
+    <value>SERAK</value>
+  </data>
+  <data name="Q086" xml:space="preserve">
+    <value>MAYANG</value>
+  </data>
+  <data name="Q087" xml:space="preserve">
+    <value>ANDAM</value>
+  </data>
+  <data name="Q088" xml:space="preserve">
+    <value>PEKASAM</value>
+  </data>
+  <data name="Q089" xml:space="preserve">
+    <value>PACAL</value>
+  </data>
+  <data name="Q090" xml:space="preserve">
+    <value>SIAH</value>
+  </data>
+  <data name="Q105" xml:space="preserve">
+    <value>PAKAI</value>
+  </data>
+  <data name="Q105_1" xml:space="preserve">
+    <value>Lusuh</value>
+  </data>
+  <data name="Q105_2" xml:space="preserve">
+    <value>Baju</value>
+  </data>
+  <data name="Q105_3" xml:space="preserve">
+    <value>Guna</value>
+  </data>
+  <data name="Q105_4" xml:space="preserve">
+    <value>Pasang</value>
+  </data>
+  <data name="Q105_5" xml:space="preserve">
+    <value>Habis</value>
+  </data>
+  <data name="Q105_6" xml:space="preserve">
+    <value>Terima</value>
+  </data>
+  <data name="Q106" xml:space="preserve">
+    <value>GELANGGANG</value>
+  </data>
+  <data name="Q106_1" xml:space="preserve">
+    <value>Tapian</value>
+  </data>
+  <data name="Q106_2" xml:space="preserve">
+    <value>Medan</value>
+  </data>
+  <data name="Q106_3" xml:space="preserve">
+    <value>Bidang</value>
+  </data>
+  <data name="Q106_4" xml:space="preserve">
+    <value>Perang</value>
+  </data>
+  <data name="Q106_5" xml:space="preserve">
+    <value>Pelamin</value>
+  </data>
+  <data name="Q106_6" xml:space="preserve">
+    <value>Tempat</value>
+  </data>
+  <data name="Q107" xml:space="preserve">
+    <value>RAGA</value>
+  </data>
+  <data name="Q107_1" xml:space="preserve">
+    <value>Bekas</value>
+  </data>
+  <data name="Q107_2" xml:space="preserve">
+    <value>Buah</value>
+  </data>
+  <data name="Q107_3" xml:space="preserve">
+    <value>Bola</value>
+  </data>
+  <data name="Q107_4" xml:space="preserve">
+    <value>Sukan</value>
+  </data>
+  <data name="Q107_5" xml:space="preserve">
+    <value>Jiwa</value>
+  </data>
+  <data name="Q107_6" xml:space="preserve">
+    <value>Pamer</value>
+  </data>
+  <data name="Q108" xml:space="preserve">
+    <value>MILIK</value>
+  </data>
+  <data name="Q108_1" xml:space="preserve">
+    <value>Hak</value>
+  </data>
+  <data name="Q108_2" xml:space="preserve">
+    <value>Bebas</value>
+  </data>
+  <data name="Q108_3" xml:space="preserve">
+    <value>Pinjam</value>
+  </data>
+  <data name="Q108_4" xml:space="preserve">
+    <value>Pegang</value>
+  </data>
+  <data name="Q108_5" xml:space="preserve">
+    <value>Tanah</value>
+  </data>
+  <data name="Q108_6" xml:space="preserve">
+    <value>Barang</value>
+  </data>
+  <data name="Q109" xml:space="preserve">
+    <value>PENTING</value>
+  </data>
+  <data name="Q109_1" xml:space="preserve">
+    <value>Perlu</value>
+  </data>
+  <data name="Q110" xml:space="preserve">
+    <value>RAWAT</value>
+  </data>
+  <data name="Q111" xml:space="preserve">
+    <value>LANCAR</value>
+  </data>
+  <data name="Q112" xml:space="preserve">
+    <value>CELIK</value>
+  </data>
+  <data name="Q113" xml:space="preserve">
+    <value>GEGAR</value>
+  </data>
+  <data name="Q114" xml:space="preserve">
+    <value>LILIT</value>
+  </data>
+  <data name="Q115" xml:space="preserve">
+    <value>REMPUH</value>
+  </data>
+  <data name="Q116" xml:space="preserve">
+    <value>TEBAR</value>
+  </data>
+  <data name="Q117" xml:space="preserve">
+    <value>MELATI</value>
+  </data>
+  <data name="Q118" xml:space="preserve">
+    <value>RAYA</value>
+  </data>
+  <data name="Q119" xml:space="preserve">
+    <value>RONGGA</value>
+  </data>
+  <data name="Q120" xml:space="preserve">
+    <value>LUMAT</value>
+  </data>
+  <data name="Q121" xml:space="preserve">
+    <value>KERUH</value>
+  </data>
+  <data name="Q122" xml:space="preserve">
+    <value>SENGET</value>
+  </data>
+  <data name="Q123" xml:space="preserve">
+    <value>SENTOSA</value>
+  </data>
+  <data name="Q124" xml:space="preserve">
+    <value>TULUS</value>
+  </data>
+  <data name="Q125" xml:space="preserve">
+    <value>RIAK</value>
+  </data>
+  <data name="Q126" xml:space="preserve">
+    <value>LABA</value>
+  </data>
+  <data name="Q127" xml:space="preserve">
+    <value>KENDONG</value>
+  </data>
+  <data name="Q128" xml:space="preserve">
+    <value>TAASUB</value>
+  </data>
+  <data name="Q129" xml:space="preserve">
+    <value>BIAS</value>
+  </data>
+  <data name="Q130" xml:space="preserve">
+    <value>ROBEK</value>
+  </data>
+  <data name="Q131" xml:space="preserve">
+    <value>KESUMAT</value>
+  </data>
+  <data name="Q132" xml:space="preserve">
+    <value>TAKJUB</value>
+  </data>
+  <data name="Q133" xml:space="preserve">
+    <value>SESAH</value>
+  </data>
+  <data name="Q134" xml:space="preserve">
+    <value>KESUMA</value>
+  </data>
+  <data name="Q109_2" xml:space="preserve">
+    <value>Utama</value>
+  </data>
+  <data name="Q109_3" xml:space="preserve">
+    <value>Nilai</value>
+  </data>
+  <data name="Q109_4" xml:space="preserve">
+    <value>Syarat</value>
+  </data>
+  <data name="Q109_5" xml:space="preserve">
+    <value>Diri</value>
+  </data>
+  <data name="Q109_6" xml:space="preserve">
+    <value>Harga</value>
+  </data>
+  <data name="Q110_1" xml:space="preserve">
+    <value>Ubat</value>
+  </data>
+  <data name="Q110_2" xml:space="preserve">
+    <value>Pelihara</value>
+  </data>
+  <data name="Q110_3" xml:space="preserve">
+    <value>Balut</value>
+  </data>
+  <data name="Q110_4" xml:space="preserve">
+    <value>Rehat</value>
+  </data>
+  <data name="Q110_5" xml:space="preserve">
+    <value>Belai</value>
+  </data>
+  <data name="Q110_6" xml:space="preserve">
+    <value>Sembuh</value>
+  </data>
+  <data name="Q111_1" xml:space="preserve">
+    <value>Rasmi</value>
+  </data>
+  <data name="Q111_2" xml:space="preserve">
+    <value>Belajar</value>
+  </data>
+  <data name="Q111_3" xml:space="preserve">
+    <value>Serang</value>
+  </data>
+  <data name="Q111_4" xml:space="preserve">
+    <value>Laju</value>
+  </data>
+  <data name="Q111_5" xml:space="preserve">
+    <value>Tindak</value>
+  </data>
+  <data name="Q111_6" xml:space="preserve">
+    <value>Mudah</value>
+  </data>
+  <data name="Q112_1" xml:space="preserve">
+    <value>Hati</value>
+  </data>
+  <data name="Q112_2" xml:space="preserve">
+    <value>Mata</value>
+  </data>
+  <data name="Q112_3" xml:space="preserve">
+    <value>Buka</value>
+  </data>
+  <data name="Q112_4" xml:space="preserve">
+    <value>Insaf</value>
+  </data>
+  <data name="Q112_5" xml:space="preserve">
+    <value>Kejam</value>
+  </data>
+  <data name="Q112_6" xml:space="preserve">
+    <value>Huruf</value>
+  </data>
+  <data name="Q113_1" xml:space="preserve">
+    <value>Gempita</value>
+  </data>
+  <data name="Q113_2" xml:space="preserve">
+    <value>Gempar</value>
+  </data>
+  <data name="Q113_3" xml:space="preserve">
+    <value>Gerak</value>
+  </data>
+  <data name="Q113_4" xml:space="preserve">
+    <value>Gelora</value>
+  </data>
+  <data name="Q113_5" xml:space="preserve">
+    <value>Godam</value>
+  </data>
+  <data name="Q113_6" xml:space="preserve">
+    <value>Goncang</value>
+  </data>
+  <data name="Q114_1" xml:space="preserve">
+    <value>Ikat</value>
+  </data>
+  <data name="Q114_2" xml:space="preserve">
+    <value>Gulung</value>
+  </data>
+  <data name="Q114_3" xml:space="preserve">
+    <value>Ukur</value>
+  </data>
+  <data name="Q114_4" xml:space="preserve">
+    <value>Lengkung</value>
+  </data>
+  <data name="Q114_5" xml:space="preserve">
+    <value>Belit</value>
+  </data>
+  <data name="Q114_6" xml:space="preserve">
+    <value>Bulatan</value>
+  </data>
+  <data name="Q115_1" xml:space="preserve">
+    <value>Tolak</value>
+  </data>
+  <data name="Q115_2" xml:space="preserve">
+    <value>Rintangan</value>
+  </data>
+  <data name="Q115_3" xml:space="preserve">
+    <value>Maut</value>
+  </data>
+  <data name="Q115_4" xml:space="preserve">
+    <value>Runtuh</value>
+  </data>
+  <data name="Q115_5" xml:space="preserve">
+    <value>Singgung</value>
+  </data>
+  <data name="Q115_6" xml:space="preserve">
+    <value>Langgar</value>
+  </data>
+  <data name="Q116_1" xml:space="preserve">
+    <value>Roti canai</value>
+  </data>
+  <data name="Q116_2" xml:space="preserve">
+    <value>Jala</value>
+  </data>
+  <data name="Q116_3" xml:space="preserve">
+    <value>Tabur</value>
+  </data>
+  <data name="Q116_4" xml:space="preserve">
+    <value>Kain</value>
+  </data>
+  <data name="Q116_5" xml:space="preserve">
+    <value>Sembur</value>
+  </data>
+  <data name="Q116_6" xml:space="preserve">
+    <value>Terbang</value>
+  </data>
+  <data name="Q117_1" xml:space="preserve">
+    <value>Bunga</value>
+  </data>
+  <data name="Q117_2" xml:space="preserve">
+    <value>Wangi</value>
+  </data>
+  <data name="Q117_3" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+  <data name="Q117_4" xml:space="preserve">
+    <value>Putih</value>
+  </data>
+  <data name="Q117_5" xml:space="preserve">
+    <value>Cantik</value>
+  </data>
+  <data name="Q117_6" xml:space="preserve">
+    <value>Pokok</value>
+  </data>
+  <data name="Q118_1" xml:space="preserve">
+    <value>Rai</value>
+  </data>
+  <data name="Q118_2" xml:space="preserve">
+    <value>Hari</value>
+  </data>
+  <data name="Q118_3" xml:space="preserve">
+    <value>Jalan</value>
+  </data>
+  <data name="Q118_4" xml:space="preserve">
+    <value>Bandar</value>
+  </data>
+  <data name="Q118_5" xml:space="preserve">
+    <value>Besar</value>
+  </data>
+  <data name="Q118_6" xml:space="preserve">
+    <value>Ria</value>
+  </data>
+  <data name="Q119_1" xml:space="preserve">
+    <value>Lapang</value>
+  </data>
+  <data name="Q119_2" xml:space="preserve">
+    <value>Deria</value>
+  </data>
+  <data name="Q119_3" xml:space="preserve">
+    <value>Tulang</value>
+  </data>
+  <data name="Q119_4" xml:space="preserve">
+    <value>Ruang</value>
+  </data>
+  <data name="Q119_5" xml:space="preserve">
+    <value>Dalam</value>
+  </data>
+  <data name="Q119_6" xml:space="preserve">
+    <value>Saluran</value>
+  </data>
+  <data name="Q120_1" xml:space="preserve">
+    <value>Hancur</value>
+  </data>
+  <data name="Q120_2" xml:space="preserve">
+    <value>Tumbuk</value>
+  </data>
+  <data name="Q120_3" xml:space="preserve">
+    <value>Giling</value>
+  </data>
+  <data name="Q120_4" xml:space="preserve">
+    <value>Halus</value>
+  </data>
+  <data name="Q120_5" xml:space="preserve">
+    <value>Serbuk</value>
+  </data>
+  <data name="Q120_6" xml:space="preserve">
+    <value>Tepung</value>
+  </data>
+  <data name="Q121_1" xml:space="preserve">
+    <value>Lumpur</value>
+  </data>
+  <data name="Q121_2" xml:space="preserve">
+    <value>Keladak</value>
+  </data>
+  <data name="Q121_3" xml:space="preserve">
+    <value>Hampas</value>
+  </data>
+  <data name="Q121_4" xml:space="preserve">
+    <value>Dengkur</value>
+  </data>
+  <data name="Q121_5" xml:space="preserve">
+    <value>Tidur</value>
+  </data>
+  <data name="Q121_6" xml:space="preserve">
+    <value>Muram</value>
+  </data>
+  <data name="Q122_1" xml:space="preserve">
+    <value>Pencong</value>
+  </data>
+  <data name="Q122_2" xml:space="preserve">
+    <value>Bengot</value>
+  </data>
+  <data name="Q122_3" xml:space="preserve">
+    <value>Sendeng</value>
+  </data>
+  <data name="Q122_4" xml:space="preserve">
+    <value>Herot</value>
+  </data>
+  <data name="Q122_5" xml:space="preserve">
+    <value>Gila</value>
+  </data>
+  <data name="Q122_6" xml:space="preserve">
+    <value>Sinus</value>
+  </data>
+  <data name="Q123_1" xml:space="preserve">
+    <value>Senang</value>
+  </data>
+  <data name="Q123_2" xml:space="preserve">
+    <value>Selesa</value>
+  </data>
+  <data name="Q123_3" xml:space="preserve">
+    <value>Aman</value>
+  </data>
+  <data name="Q123_4" xml:space="preserve">
+    <value>Makmur</value>
+  </data>
+  <data name="Q123_5" xml:space="preserve">
+    <value>Damai</value>
+  </data>
+  <data name="Q123_6" xml:space="preserve">
+    <value>Bebas</value>
+  </data>
+  <data name="Q124_1" xml:space="preserve">
+    <value>Hati</value>
+  </data>
+  <data name="Q124_2" xml:space="preserve">
+    <value>Jujur</value>
+  </data>
+  <data name="Q124_3" xml:space="preserve">
+    <value>Lembut</value>
+  </data>
+  <data name="Q124_4" xml:space="preserve">
+    <value>Benar</value>
+  </data>
+  <data name="Q124_5" xml:space="preserve">
+    <value>Niat</value>
+  </data>
+  <data name="Q124_6" xml:space="preserve">
+    <value>Rasa</value>
+  </data>
+  <data name="Q125_1" xml:space="preserve">
+    <value>Muka</value>
+  </data>
+  <data name="Q125_2" xml:space="preserve">
+    <value>Gerak hati</value>
+  </data>
+  <data name="Q125_3" xml:space="preserve">
+    <value>Air</value>
+  </data>
+  <data name="Q125_4" xml:space="preserve">
+    <value>Sombong</value>
+  </data>
+  <data name="Q125_5" xml:space="preserve">
+    <value>Gelombang</value>
+  </data>
+  <data name="Q125_6" xml:space="preserve">
+    <value>Udara</value>
+  </data>
+  <data name="Q126_1" xml:space="preserve">
+    <value>Labur</value>
+  </data>
+  <data name="Q126_2" xml:space="preserve">
+    <value>Niaga</value>
+  </data>
+  <data name="Q126_3" xml:space="preserve">
+    <value>Modal</value>
+  </data>
+  <data name="Q126_4" xml:space="preserve">
+    <value>Cukai</value>
+  </data>
+  <data name="Q126_5" xml:space="preserve">
+    <value>Usaha</value>
+  </data>
+  <data name="Q126_6" xml:space="preserve">
+    <value>Faedah</value>
+  </data>
+  <data name="Q127_1" xml:space="preserve">
+    <value>Tali</value>
+  </data>
+  <data name="Q127_2" xml:space="preserve">
+    <value>Kain</value>
+  </data>
+  <data name="Q127_3" xml:space="preserve">
+    <value>Bawa</value>
+  </data>
+  <data name="Q127_4" xml:space="preserve">
+    <value>Dukung</value>
+  </data>
+  <data name="Q127_5" xml:space="preserve">
+    <value>Jinjit</value>
+  </data>
+  <data name="Q127_6" xml:space="preserve">
+    <value>Tumbuhan</value>
+  </data>
+  <data name="Q128_1" xml:space="preserve">
+    <value>Pujaan</value>
+  </data>
+  <data name="Q128_2" xml:space="preserve">
+    <value>Berlebihan</value>
+  </data>
+  <data name="Q128_3" xml:space="preserve">
+    <value>Minat</value>
+  </data>
+  <data name="Q128_4" xml:space="preserve">
+    <value>Sempurna</value>
+  </data>
+  <data name="Q128_5" xml:space="preserve">
+    <value>Kesukaan</value>
+  </data>
+  <data name="Q128_6" xml:space="preserve">
+    <value>Tegar</value>
+  </data>
+  <data name="Q129_1" xml:space="preserve">
+    <value>Bayang</value>
+  </data>
+  <data name="Q129_2" xml:space="preserve">
+    <value>Arah</value>
+  </data>
+  <data name="Q129_3" xml:space="preserve">
+    <value>Pesong</value>
+  </data>
+  <data name="Q129_4" xml:space="preserve">
+    <value>Pantul</value>
+  </data>
+  <data name="Q129_5" xml:space="preserve">
+    <value>Balik</value>
+  </data>
+  <data name="Q129_6" xml:space="preserve">
+    <value>Condong</value>
+  </data>
+  <data name="Q130_1" xml:space="preserve">
+    <value>Lorek</value>
+  </data>
+  <data name="Q130_2" xml:space="preserve">
+    <value>Carik</value>
+  </data>
+  <data name="Q130_3" xml:space="preserve">
+    <value>Luka</value>
+  </data>
+  <data name="Q130_4" xml:space="preserve">
+    <value>Potong</value>
+  </data>
+  <data name="Q130_5" xml:space="preserve">
+    <value>Rebeh</value>
+  </data>
+  <data name="Q130_6" xml:space="preserve">
+    <value>Gali</value>
+  </data>
+  <data name="Q131_1" xml:space="preserve">
+    <value>Maki</value>
+  </data>
+  <data name="Q131_2" xml:space="preserve">
+    <value>Dengki</value>
+  </data>
+  <data name="Q131_3" xml:space="preserve">
+    <value>Iri</value>
+  </data>
+  <data name="Q131_4" xml:space="preserve">
+    <value>Benci</value>
+  </data>
+  <data name="Q131_5" xml:space="preserve">
+    <value>Marah</value>
+  </data>
+  <data name="Q131_6" xml:space="preserve">
+    <value>Murung</value>
+  </data>
+  <data name="Q132_1" xml:space="preserve">
+    <value>Terkejut</value>
+  </data>
+  <data name="Q132_2" xml:space="preserve">
+    <value>Hairan</value>
+  </data>
+  <data name="Q132_3" xml:space="preserve">
+    <value>Terperanjat</value>
+  </data>
+  <data name="Q132_4" xml:space="preserve">
+    <value>Pelik</value>
+  </data>
+  <data name="Q132_5" xml:space="preserve">
+    <value>Melopong</value>
+  </data>
+  <data name="Q132_6" xml:space="preserve">
+    <value>Keindahan</value>
+  </data>
+  <data name="Q133_1" xml:space="preserve">
+    <value>Resah</value>
+  </data>
+  <data name="Q133_2" xml:space="preserve">
+    <value>Teruk</value>
+  </data>
+  <data name="Q133_3" xml:space="preserve">
+    <value>Carik</value>
+  </data>
+  <data name="Q133_4" xml:space="preserve">
+    <value>Pukul</value>
+  </data>
+  <data name="Q133_5" xml:space="preserve">
+    <value>Ketuk</value>
+  </data>
+  <data name="Q133_6" xml:space="preserve">
+    <value>Tibai</value>
+  </data>
+  <data name="Q134_1" xml:space="preserve">
+    <value>Sawan</value>
+  </data>
+  <data name="Q134_2" xml:space="preserve">
+    <value>Bangsa</value>
+  </data>
+  <data name="Q134_3" xml:space="preserve">
+    <value>Wanita</value>
+  </data>
+  <data name="Q134_4" xml:space="preserve">
+    <value>Molek</value>
+  </data>
+  <data name="Q134_5" xml:space="preserve">
+    <value>Bukit</value>
+  </data>
+  <data name="Q134_6" xml:space="preserve">
+    <value>Hati</value>
+  </data>
+  <data name="A001" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A002" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A003" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A004" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A005" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A006" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A007" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A008" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A009" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A010" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A011" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A012" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A013" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A014" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A015" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A016" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A017" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A018" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A019" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A020" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A021" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A022" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A023" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A024" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A025" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A026" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A027" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A028" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A029" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A030" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A031" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A032" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A033" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A034" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A035" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A036" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A037" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A038" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A039" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A040" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A041" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A042" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A043" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A044" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A045" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A046" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A047" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A048" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A049" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A050" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A051" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A052" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A053" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A054" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A055" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A056" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A057" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A058" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A059" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A060" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A061" xml:space="preserve">
+    <value>BERI|MEMANJANG|MENGUNJUK|</value>
+  </data>
+  <data name="A062" xml:space="preserve">
+    <value>SEBAR|NIAGA|JUAL|DAGANG|</value>
+  </data>
+  <data name="A063" xml:space="preserve">
+    <value>LAPANG|TENTERAM|LUAS|</value>
+  </data>
+  <data name="A064" xml:space="preserve">
+    <value>GANGGU|GAUL|HURU-HARA|ADUK|RUSUH</value>
+  </data>
+  <data name="A065" xml:space="preserve">
+    <value>LINDUNG|REDUP|REDA|</value>
+  </data>
+  <data name="A066" xml:space="preserve">
+    <value>TANGGUNGAN|MUATAN|</value>
+  </data>
+  <data name="A067" xml:space="preserve">
+    <value>LEMBUT|BERISI|GEMBUR</value>
+  </data>
+  <data name="A068" xml:space="preserve">
+    <value>TAKUT|SERAM</value>
+  </data>
+  <data name="A069" xml:space="preserve">
+    <value>PASUKAN|MALAPETAKA|BENCANA|</value>
+  </data>
+  <data name="A070" xml:space="preserve">
+    <value>KAGUM|TAKJUB</value>
+  </data>
+  <data name="A071" xml:space="preserve">
+    <value>LAGA|SABUNG|TANDING|LAPOR|LUMBA|BERITAHU|</value>
+  </data>
+  <data name="A072" xml:space="preserve">
+    <value>MAMPAT|PADAT|KUAT|KUKUH|UTUH|SEBATI|</value>
+  </data>
+  <data name="A073" xml:space="preserve">
+    <value>TERBENAM|TERSIMPAN|TERKURUNG|TERPEROSOK</value>
+  </data>
+  <data name="A074" xml:space="preserve">
+    <value>ARAS|TAHAP|TINGKAT|RUPA|TAKAT|WAJAH</value>
+  </data>
+  <data name="A075" xml:space="preserve">
+    <value>BERTELINGKAH|BERSENGKETA|BERSELISIH</value>
+  </data>
+  <data name="A076" xml:space="preserve">
+    <value>BECAK|LECAH|BANYAK|KEMBANG</value>
+  </data>
+  <data name="A077" xml:space="preserve">
+    <value>PEKAT|KERUH|KENTAL|</value>
+  </data>
+  <data name="A078" xml:space="preserve">
+    <value>SOPAN|SANTUN|ADAB|BUDI PEKERTI|INDAH</value>
+  </data>
+  <data name="A079" xml:space="preserve">
+    <value>RAMAL|TENUNG|LIHAT|PANDANGAN|TELITI|TELAHAN</value>
+  </data>
+  <data name="A080" xml:space="preserve">
+    <value>BELENGGU|PASUNG|SEKAT|HALANG|BATAS|KEPUNG</value>
+  </data>
+  <data name="A081" xml:space="preserve">
+    <value>TETAP|TEGUH</value>
+  </data>
+  <data name="A082" xml:space="preserve">
+    <value>KETAWA|DEKAH|</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>CEMAS|GENTAR|TAKUT|</value>
+  </data>
+  <data name="A084" xml:space="preserve">
+    <value>SERANGGA|ULAT|SERBUK</value>
+  </data>
+  <data name="A085" xml:space="preserve">
+    <value>GARAU|PARAU|SEPAH|TABUR</value>
+  </data>
+  <data name="A086" xml:space="preserve">
+    <value>HIRIS|BUNGA PALMA|POTONG</value>
+  </data>
+  <data name="A087" xml:space="preserve">
+    <value>SOLEK|HIAS|DANDAN</value>
+  </data>
+  <data name="A088" xml:space="preserve">
+    <value>JERUK|PERAM|</value>
+  </data>
+  <data name="A089" xml:space="preserve">
+    <value>PATIK|HAMBA</value>
+  </data>
+  <data name="A090" xml:space="preserve">
+    <value>GANJAK|TOLAK|KUAK</value>
+  </data>
+  <data name="A091" xml:space="preserve">
+    <value>TIDAK BENAR|TIDAK TULEN</value>
+  </data>
+  <data name="A092" xml:space="preserve">
+    <value>BERKOMPLOT|BERPAKAT|SEKONGKOL</value>
+  </data>
+  <data name="A093" xml:space="preserve">
+    <value>PANDANGAN DENGAN EKOR MATA|KERLING| JELING</value>
+  </data>
+  <data name="A094" xml:space="preserve">
+    <value>TIDAK SEMPIT|LUAS|TENTERAM PERASAAN|AMAN|SENANG|TIDAK SIBUK</value>
+  </data>
+  <data name="A095" xml:space="preserve">
+    <value>TIDAK DAPAT DILENTURKAN|KERAS HATI|TIDAK DAPAT DIUBAH|TIDAK MENURUT KATA|KERAS KEPALA</value>
+  </data>
+  <data name="A096" xml:space="preserve">
+    <value>MEMIKAT |MEMUJUK|MEMBUJUK</value>
+  </data>
+  <data name="A097" xml:space="preserve">
+    <value>MEMUJA|MEMANDANG TINGGI|MENJADIKAN IDOLA</value>
+  </data>
+  <data name="A098" xml:space="preserve">
+    <value>BERBUDI PEKERTI|MEMPUNYAI BUDI PEKERTI YANG MULIA|BERHEMAH</value>
+  </data>
+  <data name="A099" xml:space="preserve">
+    <value>PERINGKAT|TINGKAT|TAHAP</value>
+  </data>
+  <data name="A100" xml:space="preserve">
+    <value>ASING|TERSENDIRI| MENJAUHKAN DIRI/PUTUS HUBUNGAN</value>
+  </data>
+  <data name="A101" xml:space="preserve">
+    <value>ILAI|KETAWA YANG PANJANG DAN NYARING|MENYERAMKAN</value>
+  </data>
+  <data name="A102" xml:space="preserve">
+    <value>TTERLALU KECIL|KENIT</value>
+  </data>
+  <data name="A103" xml:space="preserve">
+    <value>CERITA KHAYALAN|YANG DIADA-ADAKAN KEJADIANNYA| DONGENG</value>
+  </data>
+  <data name="A104" xml:space="preserve">
+    <value>MERDEKA|LEPAS|BERDIRI SENDIRI</value>
+  </data>
+  <data name="A105" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A106" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A107" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A108" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A109" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A110" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A111" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A112" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A113" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A114" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A115" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A116" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A117" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A118" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A119" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A120" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A121" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A122" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A123" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A124" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A125" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A126" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A127" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A128" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A129" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A130" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A131" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A132" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A133" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A134" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A135" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A136" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A137" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A138" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A139" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A140" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A141" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A142" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A143" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A144" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A145" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A146" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A147" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A148" xml:space="preserve">
+    <value>3</value>
+  </data>
+</root>

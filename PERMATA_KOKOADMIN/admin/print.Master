@@ -1,0 +1,29 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="print.master.vb" Inherits="permatapintar.print" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sistem Pengurusan Kokurikulum Pelajar</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+    <link href="~/css/koko_style.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/koko_table.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="fbbody">
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

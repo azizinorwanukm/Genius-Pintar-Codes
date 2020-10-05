@@ -1,0 +1,211 @@
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\KPP_MS.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\KPP_MS.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.subjectDataMS.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\itextsharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\itextsharp.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.CoreCompileInputs.cache
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.xml
+F:\PermataPintar\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+F:\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.xml
+F:\PermataPintar\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+F:\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbprojAssemblyReference.cache
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.subjectDataMS.resources
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.Resources.resources
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.GenerateResource.cache
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.CopyComplete
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.dll
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.xml
+F:\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.pdb
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.xml
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.xml
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbprojAssemblyReference.cache
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.subjectDataMS.resources
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.Resources.resources
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.GenerateResource.cache
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.CoreCompileInputs.cache
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.vbproj.CopyComplete
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.xml
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\obj\Debug\KPP_MS.pdb
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\System.Data.OleDb.dll
+C:\Users\acapx\Desktop\PermataPintar\KPP_MS\KPP_MS\bin\System.Data.OleDb.xml

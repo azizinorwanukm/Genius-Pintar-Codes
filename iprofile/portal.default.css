@@ -1,0 +1,451 @@
+/* Default CSS ukm2-20100517*/
+.fbbody
+{
+    font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+    font-size: 14px;
+    color: #333333;
+}
+
+.fbbody a
+{
+    text-decoration: none;
+}
+
+.fbbody a:hover
+{
+    text-decoration: underline;
+}
+
+.fbbody a:active
+{
+    text-decoration: underline;
+}
+
+/*fbheader*/
+.fbheader_title
+{
+    color: Olive;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.fbheader_menu
+{
+    background-color: #3B5998;
+    color: #FFFFFF;
+    border: 1px solid #0099FF;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbheader_menu a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+.fbheader_menu a:hover
+{
+    background: #6D84B4;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*fbnav*/
+.fbnav_header
+{
+    background-color: Olive; /*#3B5998;*/
+    border: 1px solid #0099FF;
+    color: #FFFFFF;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbnav_header a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+
+.fbnav_header a:hover
+{
+    background: #6D84B4;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fbnav_items
+{
+    border-bottom: solid 1px #0099FF;
+    border-bottom-color: #66CCFF;
+    font-size: 11px;
+}
+
+.fbnav_items a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.fbnav_items a:hover
+{
+    text-decoration: none;
+}
+
+.fbnav_items td:hover
+{
+    background-color: #CCFFFF;
+}
+
+
+/*fbsection*/
+.fbsection_table
+{
+    background-color: #eceff6;
+    border: 1px solid #0099FF;
+    color: #000000;
+    padding: 5px 0px 5px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+
+/*fbsection_header*/
+.fbsection_header
+{
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 13px;
+    font-weight: bold;
+    color: #999999;
+    padding: 5px 5px 5px 5px;
+    display: block;
+    margin: 0;
+}
+
+.fbsection_title
+{
+    font-size: 20px;
+    color: Black;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.fbsection_bold
+{
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    height: 5px;
+}
+
+fbsection_normal
+{
+    text-align: left;
+    vertical-align: top;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+/*fbsection_article*/
+.fbsection_article
+{
+    text-align: left;
+    vertical-align: top;
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.fbsection_article a
+{
+    font-weight: bold;
+}
+
+.fbsection_article a:hover
+{
+    text-decoration: none;
+}
+
+.fbsection_article img
+{
+    text-align: left;
+    vertical-align: top;
+    background-color: #FFFFFF;
+}
+
+.fbsection_img
+{
+    width: 150px;
+    height: 110px;
+    text-align: left;
+    vertical-align: top;
+    background-color: #FFFFFF;
+}
+
+.fbsection_sap
+{
+    border-bottom: dotted 1px #cccccc;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    height: 0px;
+}
+
+
+/*fbsection_footer*/
+.fbsection_footer
+{
+}
+
+/*fbaside*/
+.fbaside_header
+{
+    color: Olive; /*#3B5998;*/
+    border-bottom: solid 1px #CCCCCC;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fbaside_header a
+{
+}
+
+.fbaside_header a:hover
+{
+}
+
+.fbaside_image
+{
+    vertical-align: top;
+}
+
+.fbaside_items
+{
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.fbaside_items a
+{
+}
+
+.fbaside_items a:hover
+{
+}
+
+.fbaside_tiny
+{
+    font-size: 10px;
+    color: #777;
+}
+
+.fbaside_sap
+{
+    border-bottom: solid 1px #cccccc;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    height: 0px;
+}
+
+/*fbfooter*/
+.fbfooter
+{
+}
+
+/*login table*/
+.fblogin_table
+{
+    background-color: Olive;
+    border: 1px solid #0099FF;
+    color: #FFFFFF;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fblogin_table a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+
+.fblogin_table a:hover
+{
+    padding: 5px;
+    text-decoration: underline;
+}
+/*FORM*/
+.fbbutton
+{
+    padding: 1px 3px 1px 4px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #3b5998;
+    color: #fff;
+    border: 1px solid #0e1f5b;
+    border-left-color: #D9DFEA;
+    border-top-color: #D9DFEA;
+}
+
+.fbbuttonnext, fbbuttoncancel
+{
+    background: #ddd;
+    color: #111;
+    border: 1px solid #666;
+    border-left-color: #ddd;
+    border-top-color: #ddd;
+}
+
+.fblabel_msg
+{
+    color: Red;
+    font-weight: bold;
+}
+
+/*block design*/
+
+.mytablemain
+{
+	padding: inherit;
+	width: 100%;
+	border: 2px;
+	border-style: dotted;
+	border-width: thin;
+	margin: 10px 0 10px 0;
+	table-layout: auto;
+	border-spacing: 1px;
+	text-align: left;
+}
+
+.mytablemain_td
+{
+	width: auto;
+	vertical-align: top;
+	border-bottom: dotted 1px;
+	border-right: dotted 1px;
+	border-top: dotted 1px;
+	border-left: dotted 1px;
+	border-color: #C0C0C0;
+}
+
+.mytableleft
+{
+	width: auto;
+	border-style: none;
+	padding: 0 0 0 0;
+}
+
+.mytableleft_td
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytableright
+{
+	width: auto;
+	border-style: none;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytableright_border
+{
+	width: auto;
+	border: 1px solid #000000;
+	vertical-align: top;
+}
+
+.mytableright_td
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytableright_noborder
+{
+	border: solid 1px;
+	width: auto;
+	padding: 0px;
+	border-spacing: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+.mytableright_td_noborder
+{
+	border: none 0px;
+	border-spacing: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+
+.mytablebottom
+{
+	width: auto;
+	border-style: none;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytablebottom_td
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+
+/*drag and drop*/
+
+.dragElement
+{
+	width: 80px;
+	height: 80px;
+	z-index: 5000;
+	border-width: 1px;
+	border-color: Black;
+}
+
+.dropZone
+{
+	background-color: #FFFF66;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	overflow: auto;
+}
+
+.highlightDropZone
+{
+	background-color: Yellow;
+}
+
+.DefaultDropZoneColor
+{
+	background-color: #FFFF99;
+}

@@ -1,0 +1,1891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{904725D7-C974-4A02-A5F9-9A3CE08E075E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>permatapintar</RootNamespace>
+    <AssemblyName>UKM_KPM</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>UKM_KPM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>UKM_KPM.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asasi.default.aspx.designer.vb">
+      <DependentUpon>asasi.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.default.aspx.vb">
+      <DependentUpon>asasi.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="asasi.Master.designer.vb">
+      <DependentUpon>asasi.Master</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.Master.vb">
+      <DependentUpon>asasi.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="asasi.pusatujian.kehadiran.aspx.designer.vb">
+      <DependentUpon>asasi.pusatujian.kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.pusatujian.kehadiran.aspx.vb">
+      <DependentUpon>asasi.pusatujian.kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="asasi.pusatujian.kehadiran.pelajar.aspx.designer.vb">
+      <DependentUpon>asasi.pusatujian.kehadiran.pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.pusatujian.kehadiran.pelajar.aspx.vb">
+      <DependentUpon>asasi.pusatujian.kehadiran.pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="asasi.studentprofile.view.aspx.designer.vb">
+      <DependentUpon>asasi.studentprofile.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.studentprofile.view.aspx.vb">
+      <DependentUpon>asasi.studentprofile.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="asasi.ukm2.ishadir.confirm.aspx.designer.vb">
+      <DependentUpon>asasi.ukm2.ishadir.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.ukm2.ishadir.confirm.aspx.vb">
+      <DependentUpon>asasi.ukm2.ishadir.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="asasi.ukm2.status.aspx.designer.vb">
+      <DependentUpon>asasi.ukm2.status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.ukm2.status.aspx.vb">
+      <DependentUpon>asasi.ukm2.status.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="asasi.ukm2.ukm2.list.aspx.designer.vb">
+      <DependentUpon>asasi.ukm2.ukm2.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.ukm2.ukm2.list.aspx.vb">
+      <DependentUpon>asasi.ukm2.ukm2.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="calendar.aspx.designer.vb">
+      <DependentUpon>calendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="calendar.aspx.vb">
+      <DependentUpon>calendar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="commoncontrol\MsgInbox_create.ascx.designer.vb">
+      <DependentUpon>MsgInbox_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_create.ascx.vb">
+      <DependentUpon>MsgInbox_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_list.ascx.designer.vb">
+      <DependentUpon>MsgInbox_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_list.ascx.vb">
+      <DependentUpon>MsgInbox_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_reply.ascx.designer.vb">
+      <DependentUpon>MsgInbox_reply.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_reply.ascx.vb">
+      <DependentUpon>MsgInbox_reply.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_view.ascx.designer.vb">
+      <DependentUpon>MsgInbox_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\MsgInbox_view.ascx.vb">
+      <DependentUpon>MsgInbox_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\our_address.ascx.designer.vb">
+      <DependentUpon>our_address.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\our_address.ascx.vb">
+      <DependentUpon>our_address.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parentprofile_view.ascx.designer.vb">
+      <DependentUpon>parentprofile_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parentprofile_view.ascx.vb">
+      <DependentUpon>parentprofile_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\petugas_list.ascx.designer.vb">
+      <DependentUpon>petugas_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\petugas_list.ascx.vb">
+      <DependentUpon>petugas_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\petugas_pusatujian_list.ascx.designer.vb">
+      <DependentUpon>petugas_pusatujian_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\petugas_pusatujian_list.ascx.vb">
+      <DependentUpon>petugas_pusatujian_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\petugas_update.ascx.designer.vb">
+      <DependentUpon>petugas_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\petugas_update.ascx.vb">
+      <DependentUpon>petugas_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_create.ascx.designer.vb">
+      <DependentUpon>pusatujian_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_create.ascx.vb">
+      <DependentUpon>pusatujian_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_list.ascx.designer.vb">
+      <DependentUpon>pusatujian_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_list.ascx.vb">
+      <DependentUpon>pusatujian_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_list_kehadiran.ascx.designer.vb">
+      <DependentUpon>pusatujian_list_kehadiran.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_list_kehadiran.ascx.vb">
+      <DependentUpon>pusatujian_list_kehadiran.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_create.ascx.designer.vb">
+      <DependentUpon>pusatujian_petugas_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_create.ascx.vb">
+      <DependentUpon>pusatujian_petugas_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_list.ascx.designer.vb">
+      <DependentUpon>pusatujian_petugas_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_list.ascx.vb">
+      <DependentUpon>pusatujian_petugas_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_list_all.ascx.designer.vb">
+      <DependentUpon>pusatujian_petugas_list_all.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_list_all.ascx.vb">
+      <DependentUpon>pusatujian_petugas_list_all.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_select.ascx.designer.vb">
+      <DependentUpon>pusatujian_petugas_select.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_select.ascx.vb">
+      <DependentUpon>pusatujian_petugas_select.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_update.ascx.designer.vb">
+      <DependentUpon>pusatujian_petugas_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_petugas_update.ascx.vb">
+      <DependentUpon>pusatujian_petugas_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_student_kehadiran_list.ascx.designer.vb">
+      <DependentUpon>pusatujian_student_kehadiran_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_student_kehadiran_list.ascx.vb">
+      <DependentUpon>pusatujian_student_kehadiran_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_student_list.ascx.designer.vb">
+      <DependentUpon>pusatujian_student_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_student_list.ascx.vb">
+      <DependentUpon>pusatujian_student_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_student_select.ascx.designer.vb">
+      <DependentUpon>pusatujian_student_select.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_student_select.ascx.vb">
+      <DependentUpon>pusatujian_student_select.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_update.ascx.designer.vb">
+      <DependentUpon>pusatujian_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_update.ascx.vb">
+      <DependentUpon>pusatujian_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_view.ascx.designer.vb">
+      <DependentUpon>pusatujian_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pusatujian_view.ascx.vb">
+      <DependentUpon>pusatujian_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_create.ascx.designer.vb">
+      <DependentUpon>schoolprofile_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_create.ascx.vb">
+      <DependentUpon>schoolprofile_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_list.ascx.designer.vb">
+      <DependentUpon>schoolprofile_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_list.ascx.vb">
+      <DependentUpon>schoolprofile_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_pusatujian_select.ascx.designer.vb">
+      <DependentUpon>schoolprofile_pusatujian_select.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_pusatujian_select.ascx.vb">
+      <DependentUpon>schoolprofile_pusatujian_select.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_schoolcity_update.ascx.designer.vb">
+      <DependentUpon>schoolprofile_schoolcity_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_schoolcity_update.ascx.vb">
+      <DependentUpon>schoolprofile_schoolcity_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_select.ascx.designer.vb">
+      <DependentUpon>schoolprofile_select.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_select.ascx.vb">
+      <DependentUpon>schoolprofile_select.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_student_list.ascx.designer.vb">
+      <DependentUpon>schoolprofile_student_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_student_list.ascx.vb">
+      <DependentUpon>schoolprofile_student_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_update.ascx.designer.vb">
+      <DependentUpon>schoolprofile_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_update.ascx.vb">
+      <DependentUpon>schoolprofile_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_view.ascx.designer.vb">
+      <DependentUpon>schoolprofile_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_view.ascx.vb">
+      <DependentUpon>schoolprofile_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_view_change.ascx.designer.vb">
+      <DependentUpon>schoolprofile_view_change.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_view_change.ascx.vb">
+      <DependentUpon>schoolprofile_view_change.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_view_old.ascx.designer.vb">
+      <DependentUpon>schoolprofile_view_old.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\schoolprofile_view_old.ascx.vb">
+      <DependentUpon>schoolprofile_view_old.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\studentprofile_view.ascx.designer.vb">
+      <DependentUpon>studentprofile_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\studentprofile_view.ascx.vb">
+      <DependentUpon>studentprofile_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\studentschool.schoolprofile.select.ascx.designer.vb">
+      <DependentUpon>studentschool.schoolprofile.select.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\studentschool.schoolprofile.select.ascx.vb">
+      <DependentUpon>studentschool.schoolprofile.select.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\studentschool_list.ascx.designer.vb">
+      <DependentUpon>studentschool_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\studentschool_list.ascx.vb">
+      <DependentUpon>studentschool_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\studentschool_view.ascx.designer.vb">
+      <DependentUpon>studentschool_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\studentschool_view.ascx.vb">
+      <DependentUpon>studentschool_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_dobyear_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_dobyear_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_dobyear_summary.ascx.vb">
+      <DependentUpon>ukm1_dobyear_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_examend_datelist.ascx.designer.vb">
+      <DependentUpon>ukm1_examend_datelist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_examend_datelist.ascx.vb">
+      <DependentUpon>ukm1_examend_datelist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_examend_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_examend_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_examend_summary.ascx.vb">
+      <DependentUpon>ukm1_examend_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_examstart_datelist.ascx.designer.vb">
+      <DependentUpon>ukm1_examstart_datelist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_examstart_datelist.ascx.vb">
+      <DependentUpon>ukm1_examstart_datelist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_progress.ascx.designer.vb">
+      <DependentUpon>ukm1_progress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_progress.ascx.vb">
+      <DependentUpon>ukm1_progress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schoollokasi_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_schoollokasi_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schoollokasi_summary.ascx.vb">
+      <DependentUpon>ukm1_schoollokasi_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schoolprofile_list.ascx.designer.vb">
+      <DependentUpon>ukm1_schoolprofile_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schoolprofile_list.ascx.vb">
+      <DependentUpon>ukm1_schoolprofile_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schoolprofile_list_mas.ascx.designer.vb">
+      <DependentUpon>ukm1_schoolprofile_list_mas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schoolprofile_list_mas.ascx.vb">
+      <DependentUpon>ukm1_schoolprofile_list_mas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schooltype_list.ascx.designer.vb">
+      <DependentUpon>ukm1_schooltype_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schooltype_list.ascx.vb">
+      <DependentUpon>ukm1_schooltype_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schooltype_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_schooltype_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_schooltype_summary.ascx.vb">
+      <DependentUpon>ukm1_schooltype_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_school_studentprofile_list.ascx.designer.vb">
+      <DependentUpon>ukm1_school_studentprofile_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_school_studentprofile_list.ascx.vb">
+      <DependentUpon>ukm1_school_studentprofile_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_school_studentprofile_list_old.ascx.designer.vb">
+      <DependentUpon>ukm1_school_studentprofile_list_old.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_school_studentprofile_list_old.ascx.vb">
+      <DependentUpon>ukm1_school_studentprofile_list_old.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_school_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_school_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_school_summary.ascx.vb">
+      <DependentUpon>ukm1_school_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_progress.ascx.designer.vb">
+      <DependentUpon>ukm1_state_progress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_progress.ascx.vb">
+      <DependentUpon>ukm1_state_progress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_sort.ascx.designer.vb">
+      <DependentUpon>ukm1_state_sort.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_sort.ascx.vb">
+      <DependentUpon>ukm1_state_sort.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_student_list.ascx.designer.vb">
+      <DependentUpon>ukm1_state_student_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_student_list.ascx.vb">
+      <DependentUpon>ukm1_state_student_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_state_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_state_summary.ascx.vb">
+      <DependentUpon>ukm1_state_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_studentgender_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_studentgender_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_studentgender_summary.ascx.vb">
+      <DependentUpon>ukm1_studentgender_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_studentrace_summary.ascx.designer.vb">
+      <DependentUpon>ukm1_studentrace_summary.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm1_studentrace_summary.ascx.vb">
+      <DependentUpon>ukm1_studentrace_summary.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm2_select.ascx.designer.vb">
+      <DependentUpon>ukm2_select.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm2_select.ascx.vb">
+      <DependentUpon>ukm2_select.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm2_status_list.ascx.designer.vb">
+      <DependentUpon>ukm2_status_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm2_status_list.ascx.vb">
+      <DependentUpon>ukm2_status_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_master.ascx.designer.vb">
+      <DependentUpon>userprofile_master.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_master.ascx.vb">
+      <DependentUpon>userprofile_master.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\user_login.ascx.designer.vb">
+      <DependentUpon>user_login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\user_login.ascx.vb">
+      <DependentUpon>user_login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.contactus.aspx.designer.vb">
+      <DependentUpon>default.contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.contactus.aspx.vb">
+      <DependentUpon>default.contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.lagu.permatapintar.aspx.designer.vb">
+      <DependentUpon>default.lagu.permatapintar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.lagu.permatapintar.aspx.vb">
+      <DependentUpon>default.lagu.permatapintar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.vb">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.vb">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jpn.default.aspx.designer.vb">
+      <DependentUpon>jpn.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.default.aspx.vb">
+      <DependentUpon>jpn.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.Master.designer.vb">
+      <DependentUpon>jpn.Master</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.Master.vb">
+      <DependentUpon>jpn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jpn.msginbox.create.aspx.designer.vb">
+      <DependentUpon>jpn.msginbox.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.msginbox.create.aspx.vb">
+      <DependentUpon>jpn.msginbox.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.msginbox.list.aspx.designer.vb">
+      <DependentUpon>jpn.msginbox.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.msginbox.list.aspx.vb">
+      <DependentUpon>jpn.msginbox.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.msginbox.reply.aspx.designer.vb">
+      <DependentUpon>jpn.msginbox.reply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.msginbox.reply.aspx.vb">
+      <DependentUpon>jpn.msginbox.reply.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.msginbox.view.aspx.designer.vb">
+      <DependentUpon>jpn.msginbox.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.msginbox.view.aspx.vb">
+      <DependentUpon>jpn.msginbox.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.create.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.create.aspx.vb">
+      <DependentUpon>jpn.pusatujian.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.list.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.list.aspx.vb">
+      <DependentUpon>jpn.pusatujian.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.student.assign.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.student.assign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.student.assign.aspx.vb">
+      <DependentUpon>jpn.pusatujian.student.assign.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.student.list.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.student.list.aspx.vb">
+      <DependentUpon>jpn.pusatujian.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.student.select.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.student.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.student.select.aspx.vb">
+      <DependentUpon>jpn.pusatujian.student.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.update.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.update.aspx.vb">
+      <DependentUpon>jpn.pusatujian.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.pusatujian.view.aspx.designer.vb">
+      <DependentUpon>jpn.pusatujian.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.pusatujian.view.aspx.vb">
+      <DependentUpon>jpn.pusatujian.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.list.aspx.designer.vb">
+      <DependentUpon>jpn.schoolprofile.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.list.aspx.vb">
+      <DependentUpon>jpn.schoolprofile.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.pusatujian.confirm.aspx.designer.vb">
+      <DependentUpon>jpn.schoolprofile.pusatujian.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.pusatujian.confirm.aspx.vb">
+      <DependentUpon>jpn.schoolprofile.pusatujian.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.pusatujian.select.aspx.designer.vb">
+      <DependentUpon>jpn.schoolprofile.pusatujian.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.pusatujian.select.aspx.vb">
+      <DependentUpon>jpn.schoolprofile.pusatujian.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.select.aspx.designer.vb">
+      <DependentUpon>jpn.schoolprofile.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.select.aspx.vb">
+      <DependentUpon>jpn.schoolprofile.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.students.list.aspx.designer.vb">
+      <DependentUpon>jpn.schoolprofile.students.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.students.list.aspx.vb">
+      <DependentUpon>jpn.schoolprofile.students.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.update.aspx.designer.vb">
+      <DependentUpon>jpn.schoolprofile.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.schoolprofile.update.aspx.vb">
+      <DependentUpon>jpn.schoolprofile.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.studentprofile.view.aspx.designer.vb">
+      <DependentUpon>jpn.studentprofile.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.studentprofile.view.aspx.vb">
+      <DependentUpon>jpn.studentprofile.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.studentschool.schoolprofile.confirm.aspx.designer.vb">
+      <DependentUpon>jpn.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.studentschool.schoolprofile.confirm.aspx.vb">
+      <DependentUpon>jpn.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.studentschool.schoolprofile.select.aspx.designer.vb">
+      <DependentUpon>jpn.studentschool.schoolprofile.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.studentschool.schoolprofile.select.aspx.vb">
+      <DependentUpon>jpn.studentschool.schoolprofile.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.summary.examend.aspx.designer.vb">
+      <DependentUpon>jpn.summary.examend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.summary.examend.aspx.vb">
+      <DependentUpon>jpn.summary.examend.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.summary.school.aspx.designer.vb">
+      <DependentUpon>jpn.summary.school.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.summary.school.aspx.vb">
+      <DependentUpon>jpn.summary.school.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.summary.state.aspx.designer.vb">
+      <DependentUpon>jpn.summary.state.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.summary.state.aspx.vb">
+      <DependentUpon>jpn.summary.state.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.dobyear.summary.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.dobyear.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.dobyear.summary.aspx.vb">
+      <DependentUpon>jpn.ukm1.dobyear.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.examend.summary.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.examend.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.examend.summary.aspx.vb">
+      <DependentUpon>jpn.ukm1.examend.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.progress.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.progress.aspx.vb">
+      <DependentUpon>jpn.ukm1.progress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolprofile.list.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.schoolprofile.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolprofile.list.aspx.vb">
+      <DependentUpon>jpn.ukm1.schoolprofile.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolprofile.list.mas.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.schoolprofile.list.mas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolprofile.list.mas.aspx.vb">
+      <DependentUpon>jpn.ukm1.schoolprofile.list.mas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolprofile.student.list.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.schoolprofile.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolprofile.student.list.aspx.vb">
+      <DependentUpon>jpn.ukm1.schoolprofile.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolstate.summary.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.schoolstate.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.schoolstate.summary.aspx.vb">
+      <DependentUpon>jpn.ukm1.schoolstate.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.schooltype.list.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.schooltype.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.schooltype.list.aspx.vb">
+      <DependentUpon>jpn.ukm1.schooltype.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.schooltype.summary.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.schooltype.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.schooltype.summary.aspx.vb">
+      <DependentUpon>jpn.ukm1.schooltype.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.state.select.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.state.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.state.select.aspx.vb">
+      <DependentUpon>jpn.ukm1.state.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.state.student.list.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.state.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.state.student.list.aspx.vb">
+      <DependentUpon>jpn.ukm1.state.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.studentgender.summary.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.studentgender.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.studentgender.summary.aspx.vb">
+      <DependentUpon>jpn.ukm1.studentgender.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm1.studentrace.summary.aspx.designer.vb">
+      <DependentUpon>jpn.ukm1.studentrace.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm1.studentrace.summary.aspx.vb">
+      <DependentUpon>jpn.ukm1.studentrace.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm2.ishadir.confirm.aspx.designer.vb">
+      <DependentUpon>jpn.ukm2.ishadir.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm2.ishadir.confirm.aspx.vb">
+      <DependentUpon>jpn.ukm2.ishadir.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="jpn.ukm2.ukm2.list.aspx.designer.vb">
+      <DependentUpon>jpn.ukm2.ukm2.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jpn.ukm2.ukm2.list.aspx.vb">
+      <DependentUpon>jpn.ukm2.ukm2.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.default.aspx.designer.vb">
+      <DependentUpon>kpm.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.default.aspx.vb">
+      <DependentUpon>kpm.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.Master.designer.vb">
+      <DependentUpon>kpm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.Master.vb">
+      <DependentUpon>kpm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kpm.msginbox.create.aspx.designer.vb">
+      <DependentUpon>kpm.msginbox.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.msginbox.create.aspx.vb">
+      <DependentUpon>kpm.msginbox.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.msginbox.list.aspx.designer.vb">
+      <DependentUpon>kpm.msginbox.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.msginbox.list.aspx.vb">
+      <DependentUpon>kpm.msginbox.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.msginbox.reply.aspx.designer.vb">
+      <DependentUpon>kpm.msginbox.reply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.msginbox.reply.aspx.vb">
+      <DependentUpon>kpm.msginbox.reply.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.msginbox.view.aspx.designer.vb">
+      <DependentUpon>kpm.msginbox.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.msginbox.view.aspx.vb">
+      <DependentUpon>kpm.msginbox.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.pusatujian.list.aspx.designer.vb">
+      <DependentUpon>kpm.pusatujian.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.pusatujian.list.aspx.vb">
+      <DependentUpon>kpm.pusatujian.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.pusatujian.student.list.aspx.designer.vb">
+      <DependentUpon>kpm.pusatujian.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.pusatujian.student.list.aspx.vb">
+      <DependentUpon>kpm.pusatujian.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.pusatujian.view.aspx.designer.vb">
+      <DependentUpon>kpm.pusatujian.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.pusatujian.view.aspx.vb">
+      <DependentUpon>kpm.pusatujian.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.create.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.create.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.list.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.list.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.pusatujian.select.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.pusatujian.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.pusatujian.select.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.pusatujian.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.schoolcity.update.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.schoolcity.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.schoolcity.update.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.schoolcity.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.select.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.select.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.students.list.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.students.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.students.list.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.students.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.update.aspx.designer.vb">
+      <DependentUpon>kpm.schoolprofile.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.schoolprofile.update.aspx.vb">
+      <DependentUpon>kpm.schoolprofile.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.studentprofile.view.aspx.designer.vb">
+      <DependentUpon>kpm.studentprofile.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.studentprofile.view.aspx.vb">
+      <DependentUpon>kpm.studentprofile.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.studentschool.schoolprofile.confirm.aspx.designer.vb">
+      <DependentUpon>kpm.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.studentschool.schoolprofile.confirm.aspx.vb">
+      <DependentUpon>kpm.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.studentschool.schoolprofile.select.aspx.designer.vb">
+      <DependentUpon>kpm.studentschool.schoolprofile.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.studentschool.schoolprofile.select.aspx.vb">
+      <DependentUpon>kpm.studentschool.schoolprofile.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.summary.examend.aspx.designer.vb">
+      <DependentUpon>kpm.summary.examend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.summary.examend.aspx.vb">
+      <DependentUpon>kpm.summary.examend.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.summary.school.aspx.designer.vb">
+      <DependentUpon>kpm.summary.school.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.summary.school.aspx.vb">
+      <DependentUpon>kpm.summary.school.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.summary.state.aspx.designer.vb">
+      <DependentUpon>kpm.summary.state.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.summary.state.aspx.vb">
+      <DependentUpon>kpm.summary.state.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.dobyear.summary.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.dobyear.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.dobyear.summary.aspx.vb">
+      <DependentUpon>kpm.ukm1.dobyear.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.examend.summary.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.examend.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.examend.summary.aspx.vb">
+      <DependentUpon>kpm.ukm1.examend.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.progress.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.progress.aspx.vb">
+      <DependentUpon>kpm.ukm1.progress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.schoolprofile.list.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.schoolprofile.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.schoolprofile.list.aspx.vb">
+      <DependentUpon>kpm.ukm1.schoolprofile.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.schoolprofile.student.list.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.schoolprofile.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.schoolprofile.student.list.aspx.vb">
+      <DependentUpon>kpm.ukm1.schoolprofile.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.schoolstate.summary.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.schoolstate.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.schoolstate.summary.aspx.vb">
+      <DependentUpon>kpm.ukm1.schoolstate.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.schooltype.list.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.schooltype.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.schooltype.list.aspx.vb">
+      <DependentUpon>kpm.ukm1.schooltype.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.schooltype.summary.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.schooltype.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.schooltype.summary.aspx.vb">
+      <DependentUpon>kpm.ukm1.schooltype.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.state.select.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.state.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.state.select.aspx.vb">
+      <DependentUpon>kpm.ukm1.state.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.state.student.list.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.state.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.state.student.list.aspx.vb">
+      <DependentUpon>kpm.ukm1.state.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.studentgender.summary.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.studentgender.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.studentgender.summary.aspx.vb">
+      <DependentUpon>kpm.ukm1.studentgender.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm1.studentrace.summary.aspx.designer.vb">
+      <DependentUpon>kpm.ukm1.studentrace.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm1.studentrace.summary.aspx.vb">
+      <DependentUpon>kpm.ukm1.studentrace.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm2.ishadir.confirm.aspx.designer.vb">
+      <DependentUpon>kpm.ukm2.ishadir.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm2.ishadir.confirm.aspx.vb">
+      <DependentUpon>kpm.ukm2.ishadir.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpm.ukm2.ukm2.list.aspx.designer.vb">
+      <DependentUpon>kpm.ukm2.ukm2.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpm.ukm2.ukm2.list.aspx.vb">
+      <DependentUpon>kpm.ukm2.ukm2.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.default.aspx.designer.vb">
+      <DependentUpon>kpt.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.default.aspx.vb">
+      <DependentUpon>kpt.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.Master.designer.vb">
+      <DependentUpon>kpt.Master</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.Master.vb">
+      <DependentUpon>kpt.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kpt.pusatujian.kehadiran.aspx.designer.vb">
+      <DependentUpon>kpt.pusatujian.kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.pusatujian.kehadiran.aspx.vb">
+      <DependentUpon>kpt.pusatujian.kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.pusatujian.kehadiran.pelajar.aspx.designer.vb">
+      <DependentUpon>kpt.pusatujian.kehadiran.pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.pusatujian.kehadiran.pelajar.aspx.vb">
+      <DependentUpon>kpt.pusatujian.kehadiran.pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.ukm2.ishadir.confirm.aspx.designer.vb">
+      <DependentUpon>kpt.ukm2.ishadir.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.ukm2.ishadir.confirm.aspx.vb">
+      <DependentUpon>kpt.ukm2.ishadir.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.ukm2.status.aspx.designer.vb">
+      <DependentUpon>kpt.ukm2.status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.ukm2.status.aspx.vb">
+      <DependentUpon>kpt.ukm2.status.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.ukm2.ukm2.ishadir.aspx.designer.vb">
+      <DependentUpon>kpt.ukm2.ukm2.ishadir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.ukm2.ukm2.ishadir.aspx.vb">
+      <DependentUpon>kpt.ukm2.ukm2.ishadir.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpt.ukm2.ukm2.list.aspx.designer.vb">
+      <DependentUpon>kpt.ukm2.ukm2.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpt.ukm2.ukm2.list.aspx.vb">
+      <DependentUpon>kpt.ukm2.ukm2.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.default.aspx.designer.vb">
+      <DependentUpon>mara.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.default.aspx.vb">
+      <DependentUpon>mara.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.Master.designer.vb">
+      <DependentUpon>mara.Master</DependentUpon>
+    </Compile>
+    <Compile Include="mara.Master.vb">
+      <DependentUpon>mara.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mara.studentschool.schoolprofile.confirm.aspx.designer.vb">
+      <DependentUpon>mara.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.studentschool.schoolprofile.confirm.aspx.vb">
+      <DependentUpon>mara.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.dobyear.summary.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.dobyear.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.dobyear.summary.aspx.vb">
+      <DependentUpon>mara.ukm1.dobyear.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.examend.summary.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.examend.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.examend.summary.aspx.vb">
+      <DependentUpon>mara.ukm1.examend.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.progress.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.progress.aspx.vb">
+      <DependentUpon>mara.ukm1.progress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolprofile.list.all.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.schoolprofile.list.all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolprofile.list.all.aspx.vb">
+      <DependentUpon>mara.ukm1.schoolprofile.list.all.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolprofile.list.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.schoolprofile.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolprofile.list.aspx.vb">
+      <DependentUpon>mara.ukm1.schoolprofile.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolprofile.list.mas.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.schoolprofile.list.mas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolprofile.list.mas.aspx.vb">
+      <DependentUpon>mara.ukm1.schoolprofile.list.mas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolstate.summary.all.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.schoolstate.summary.all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolstate.summary.all.aspx.vb">
+      <DependentUpon>mara.ukm1.schoolstate.summary.all.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolstate.summary.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.schoolstate.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.schoolstate.summary.aspx.vb">
+      <DependentUpon>mara.ukm1.schoolstate.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.state.student.list.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.state.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.state.student.list.aspx.vb">
+      <DependentUpon>mara.ukm1.state.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.studentgender.summary.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.studentgender.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.studentgender.summary.aspx.vb">
+      <DependentUpon>mara.ukm1.studentgender.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm1.studentrace.summary.aspx.designer.vb">
+      <DependentUpon>mara.ukm1.studentrace.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm1.studentrace.summary.aspx.vb">
+      <DependentUpon>mara.ukm1.studentrace.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mara.ukm2.ukm2.list.aspx.designer.vb">
+      <DependentUpon>mara.ukm2.ukm2.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mara.ukm2.ukm2.list.aspx.vb">
+      <DependentUpon>mara.ukm2.ukm2.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mrsm.studentschool.schoolprofile.confirm.aspx.designer.vb">
+      <DependentUpon>mrsm.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mrsm.studentschool.schoolprofile.confirm.aspx.vb">
+      <DependentUpon>mrsm.studentschool.schoolprofile.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mrsm.studentschool.schoolprofile.select.aspx.designer.vb">
+      <DependentUpon>mrsm.studentschool.schoolprofile.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mrsm.studentschool.schoolprofile.select.aspx.vb">
+      <DependentUpon>mrsm.studentschool.schoolprofile.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="mrsm.ukm1.schoolprofile.student.list.aspx.designer.vb">
+      <DependentUpon>mrsm.ukm1.schoolprofile.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mrsm.ukm1.schoolprofile.student.list.aspx.vb">
+      <DependentUpon>mrsm.ukm1.schoolprofile.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ppd.Master.designer.vb">
+      <DependentUpon>ppd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ppd.Master.vb">
+      <DependentUpon>ppd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="school.Master.designer.vb">
+      <DependentUpon>school.Master</DependentUpon>
+    </Compile>
+    <Compile Include="school.Master.vb">
+      <DependentUpon>school.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowImage.ashx.vb">
+      <DependentUpon>ShowImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="studentprofile.view.aspx.designer.vb">
+      <DependentUpon>studentprofile.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="studentprofile.view.aspx.vb">
+      <DependentUpon>studentprofile.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="system.error.aspx.designer.vb">
+      <DependentUpon>system.error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system.error.aspx.vb">
+      <DependentUpon>system.error.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.default.aspx.designer.vb">
+      <DependentUpon>ukm.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.default.aspx.vb">
+      <DependentUpon>ukm.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.Master.designer.vb">
+      <DependentUpon>ukm.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.Master.vb">
+      <DependentUpon>ukm.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ukm.msginbox.list.aspx.designer.vb">
+      <DependentUpon>ukm.msginbox.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.msginbox.list.aspx.vb">
+      <DependentUpon>ukm.msginbox.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.petugas.list.aspx.designer.vb">
+      <DependentUpon>ukm.petugas.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.petugas.list.aspx.vb">
+      <DependentUpon>ukm.petugas.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.petugas.pusatujian.list.aspx.designer.vb">
+      <DependentUpon>ukm.petugas.pusatujian.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.petugas.pusatujian.list.aspx.vb">
+      <DependentUpon>ukm.petugas.pusatujian.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.petugas.update.aspx.designer.vb">
+      <DependentUpon>ukm.petugas.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.petugas.update.aspx.vb">
+      <DependentUpon>ukm.petugas.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.kehadiran.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.kehadiran.aspx.vb">
+      <DependentUpon>ukm.pusatujian.kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.kehadiran.pelajar.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.kehadiran.pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.kehadiran.pelajar.aspx.vb">
+      <DependentUpon>ukm.pusatujian.kehadiran.pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.laporan.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.laporan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.laporan.aspx.vb">
+      <DependentUpon>ukm.pusatujian.laporan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.list.all.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.list.all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.list.all.aspx.vb">
+      <DependentUpon>ukm.pusatujian.list.all.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.list.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.list.aspx.vb">
+      <DependentUpon>ukm.pusatujian.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.create.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.petugas.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.create.aspx.vb">
+      <DependentUpon>ukm.pusatujian.petugas.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.list.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.petugas.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.list.aspx.vb">
+      <DependentUpon>ukm.pusatujian.petugas.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.select.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.petugas.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.select.aspx.vb">
+      <DependentUpon>ukm.pusatujian.petugas.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.update.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.petugas.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.petugas.update.aspx.vb">
+      <DependentUpon>ukm.pusatujian.petugas.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.remarks.update.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.remarks.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.remarks.update.aspx.vb">
+      <DependentUpon>ukm.pusatujian.remarks.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.student.assign.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.student.assign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.student.assign.aspx.vb">
+      <DependentUpon>ukm.pusatujian.student.assign.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.student.list.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.student.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.student.list.aspx.vb">
+      <DependentUpon>ukm.pusatujian.student.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.student.select.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.student.select.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.student.select.aspx.vb">
+      <DependentUpon>ukm.pusatujian.student.select.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.update.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.update.aspx.vb">
+      <DependentUpon>ukm.pusatujian.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.pusatujian.view.aspx.designer.vb">
+      <DependentUpon>ukm.pusatujian.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.pusatujian.view.aspx.vb">
+      <DependentUpon>ukm.pusatujian.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.studentprofile.view.aspx.designer.vb">
+      <DependentUpon>ukm.studentprofile.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.studentprofile.view.aspx.vb">
+      <DependentUpon>ukm.studentprofile.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.ukm2.ishadir.confirm.aspx.designer.vb">
+      <DependentUpon>ukm.ukm2.ishadir.confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.ukm2.ishadir.confirm.aspx.vb">
+      <DependentUpon>ukm.ukm2.ishadir.confirm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.ukm2.status.aspx.designer.vb">
+      <DependentUpon>ukm.ukm2.status.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.ukm2.status.aspx.vb">
+      <DependentUpon>ukm.ukm2.status.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm.ukm2.ukm2.list.aspx.designer.vb">
+      <DependentUpon>ukm.ukm2.ukm2.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm.ukm2.ukm2.list.aspx.vb">
+      <DependentUpon>ukm.ukm2.ukm2.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm1.invalid.url.aspx.designer.vb">
+      <DependentUpon>ukm1.invalid.url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm1.invalid.url.aspx.vb">
+      <DependentUpon>ukm1.invalid.url.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asasi.default.aspx" />
+    <Content Include="asasi.pusatujian.kehadiran.aspx" />
+    <Content Include="asasi.pusatujian.kehadiran.pelajar.aspx" />
+    <Content Include="asasi.studentprofile.view.aspx" />
+    <Content Include="asasi.ukm2.ishadir.confirm.aspx" />
+    <Content Include="asasi.ukm2.status.aspx" />
+    <Content Include="asasi.ukm2.ukm2.list.aspx" />
+    <Content Include="calendar.aspx" />
+    <Content Include="commoncontrol\MsgInbox_create.ascx" />
+    <Content Include="commoncontrol\MsgInbox_list.ascx" />
+    <Content Include="commoncontrol\MsgInbox_reply.ascx" />
+    <Content Include="commoncontrol\MsgInbox_view.ascx" />
+    <Content Include="commoncontrol\our_address.ascx" />
+    <Content Include="commoncontrol\parentprofile_view.ascx" />
+    <Content Include="commoncontrol\petugas_list.ascx" />
+    <Content Include="commoncontrol\petugas_pusatujian_list.ascx" />
+    <Content Include="commoncontrol\petugas_update.ascx" />
+    <Content Include="commoncontrol\pusatujian_create.ascx" />
+    <Content Include="commoncontrol\pusatujian_list.ascx" />
+    <Content Include="commoncontrol\pusatujian_list_kehadiran.ascx" />
+    <Content Include="commoncontrol\pusatujian_petugas_create.ascx" />
+    <Content Include="commoncontrol\pusatujian_petugas_list.ascx" />
+    <Content Include="commoncontrol\pusatujian_petugas_list_all.ascx" />
+    <Content Include="commoncontrol\pusatujian_petugas_select.ascx" />
+    <Content Include="commoncontrol\pusatujian_petugas_update.ascx" />
+    <Content Include="commoncontrol\pusatujian_student_kehadiran_list.ascx" />
+    <Content Include="commoncontrol\pusatujian_student_list.ascx" />
+    <Content Include="commoncontrol\pusatujian_student_select.ascx" />
+    <Content Include="commoncontrol\pusatujian_update.ascx" />
+    <Content Include="commoncontrol\pusatujian_view.ascx" />
+    <Content Include="commoncontrol\schoolprofile_create.ascx" />
+    <Content Include="commoncontrol\schoolprofile_list.ascx" />
+    <Content Include="commoncontrol\schoolprofile_pusatujian_select.ascx" />
+    <Content Include="commoncontrol\schoolprofile_schoolcity_update.ascx" />
+    <Content Include="commoncontrol\schoolprofile_select.ascx" />
+    <Content Include="commoncontrol\schoolprofile_student_list.ascx" />
+    <Content Include="commoncontrol\schoolprofile_update.ascx" />
+    <Content Include="commoncontrol\schoolprofile_view.ascx" />
+    <Content Include="commoncontrol\schoolprofile_view_change.ascx" />
+    <Content Include="commoncontrol\schoolprofile_view_old.ascx" />
+    <Content Include="commoncontrol\studentprofile_view.ascx" />
+    <Content Include="commoncontrol\studentschool.schoolprofile.select.ascx" />
+    <Content Include="commoncontrol\studentschool_list.ascx" />
+    <Content Include="commoncontrol\studentschool_view.ascx" />
+    <Content Include="commoncontrol\ukm1_dobyear_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_examend_datelist.ascx" />
+    <Content Include="commoncontrol\ukm1_examend_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_examstart_datelist.ascx" />
+    <Content Include="commoncontrol\ukm1_progress.ascx" />
+    <Content Include="commoncontrol\ukm1_schoollokasi_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_schoolprofile_list.ascx" />
+    <Content Include="commoncontrol\ukm1_schoolprofile_list_mas.ascx" />
+    <Content Include="commoncontrol\ukm1_schooltype_list.ascx" />
+    <Content Include="commoncontrol\ukm1_schooltype_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_school_studentprofile_list.ascx" />
+    <Content Include="commoncontrol\ukm1_school_studentprofile_list_old.ascx" />
+    <Content Include="commoncontrol\ukm1_school_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_state_progress.ascx" />
+    <Content Include="commoncontrol\ukm1_state_sort.ascx" />
+    <Content Include="commoncontrol\ukm1_state_student_list.ascx" />
+    <Content Include="commoncontrol\ukm1_state_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_studentgender_summary.ascx" />
+    <Content Include="commoncontrol\ukm1_studentrace_summary.ascx" />
+    <Content Include="commoncontrol\ukm2_select.ascx" />
+    <Content Include="commoncontrol\ukm2_status_list.ascx" />
+    <Content Include="commoncontrol\userprofile_master.ascx" />
+    <Content Include="commoncontrol\user_login.ascx" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\portal.default.css" />
+    <Content Include="css\portal.default.old.css" />
+    <Content Include="default.aspx" />
+    <Content Include="default.contactus.aspx" />
+    <Content Include="default.lagu.permatapintar.aspx" />
+    <Content Include="default.Master" />
+    <Content Include="favicon.ico" />
+    <Content Include="icons\band-aid.png" />
+    <Content Include="icons\button_post.png" />
+    <Content Include="icons\chat.png" />
+    <Content Include="icons\clock.png" />
+    <Content Include="icons\delicious.gif" />
+    <Content Include="icons\digg.gif" />
+    <Content Include="icons\event.png" />
+    <Content Include="icons\eye.png" />
+    <Content Include="icons\facebook.gif" />
+    <Content Include="icons\flag.png" />
+    <Content Include="icons\fork-and-knife.png" />
+    <Content Include="icons\friend.png" />
+    <Content Include="icons\furl.gif" />
+    <Content Include="icons\gear.png" />
+    <Content Include="icons\groups.png" />
+    <Content Include="icons\heart.png" />
+    <Content Include="icons\ilike.gif" />
+    <Content Include="icons\lastfm.gif" />
+    <Content Include="icons\lightning-bolt.png" />
+    <Content Include="icons\link.png" />
+    <Content Include="icons\magnifying-glass.png" />
+    <Content Include="icons\map-marker.png" />
+    <Content Include="icons\map-pin.png" />
+    <Content Include="icons\message.png" />
+    <Content Include="icons\microphone.png" />
+    <Content Include="icons\music-note.png" />
+    <Content Include="icons\mybloglog.gif" />
+    <Content Include="icons\news.png" />
+    <Content Include="icons\note.png" />
+    <Content Include="icons\paw.png" />
+    <Content Include="icons\photo.png" />
+    <Content Include="icons\plus.png" />
+    <Content Include="icons\puzzle.png" />
+    <Content Include="icons\reddit.gif" />
+    <Content Include="icons\star.png" />
+    <Content Include="icons\stumbleupon.gif" />
+    <Content Include="icons\tag.png" />
+    <Content Include="icons\technorati.gif" />
+    <Content Include="icons\tshirt.png" />
+    <Content Include="icons\twitter.gif" />
+    <Content Include="icons\watermark.png" />
+    <Content Include="icons\youtube.gif" />
+    <Content Include="img\cal.jpg" />
+    <Content Include="img\error.png" />
+    <Content Include="img\front_page.jpg" />
+    <Content Include="img\info.png" />
+    <Content Include="img\left.gif" />
+    <Content Include="img\Majlis_Penutup_PPCS_2010.jpg" />
+    <Content Include="img\mini_permatapintar.jpg" />
+    <Content Include="img\permatanegara.jpg" />
+    <Content Include="img\permatapintar.jpg" />
+    <Content Include="img\permatapintar_old.jpg" />
+    <Content Include="img\permata_insan.jpg" />
+    <Content Include="img\permata_insan.png" />
+    <Content Include="img\permata_negara.jpg" />
+    <Content Include="img\permata_negara.png" />
+    <Content Include="img\peta-kampus-induk.jpg" />
+    <Content Include="img\peta-kampus-indukv2.jpg" />
+    <Content Include="img\right.gif" />
+    <Content Include="img\sample_que.jpg" />
+    <Content Include="img\school_info.png" />
+    <Content Include="img\sekolah1.jpg" />
+    <Content Include="img\sekolah2.JPG" />
+    <Content Include="img\success.png" />
+    <Content Include="img\TKC.jpg" />
+    <Content Include="img\UKM1.JPG" />
+    <Content Include="img\ukm1_2011_mini.jpg" />
+    <Content Include="img\ukm1_old.JPG" />
+    <Content Include="img\validation.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="img\white_space.jpg" />
+    <Content Include="jpn.default.aspx" />
+    <Content Include="jpn.msginbox.create.aspx" />
+    <Content Include="jpn.msginbox.list.aspx" />
+    <Content Include="jpn.msginbox.reply.aspx" />
+    <Content Include="jpn.msginbox.view.aspx" />
+    <Content Include="jpn.pusatujian.create.aspx" />
+    <Content Include="jpn.pusatujian.list.aspx" />
+    <Content Include="jpn.pusatujian.student.assign.aspx" />
+    <Content Include="jpn.pusatujian.student.list.aspx" />
+    <Content Include="jpn.pusatujian.student.select.aspx" />
+    <Content Include="jpn.pusatujian.update.aspx" />
+    <Content Include="jpn.pusatujian.view.aspx" />
+    <Content Include="jpn.schoolprofile.list.aspx" />
+    <Content Include="jpn.schoolprofile.pusatujian.confirm.aspx" />
+    <Content Include="jpn.schoolprofile.pusatujian.select.aspx" />
+    <Content Include="jpn.schoolprofile.select.aspx" />
+    <Content Include="jpn.schoolprofile.students.list.aspx" />
+    <Content Include="jpn.schoolprofile.update.aspx" />
+    <Content Include="jpn.studentprofile.view.aspx" />
+    <Content Include="jpn.studentschool.schoolprofile.confirm.aspx" />
+    <Content Include="jpn.studentschool.schoolprofile.select.aspx" />
+    <Content Include="jpn.summary.examend.aspx" />
+    <Content Include="jpn.summary.school.aspx" />
+    <Content Include="jpn.summary.state.aspx" />
+    <Content Include="jpn.ukm1.dobyear.summary.aspx" />
+    <Content Include="jpn.ukm1.examend.summary.aspx" />
+    <Content Include="jpn.ukm1.progress.aspx" />
+    <Content Include="jpn.ukm1.schoolprofile.list.aspx" />
+    <Content Include="jpn.ukm1.schoolprofile.list.mas.aspx" />
+    <Content Include="jpn.ukm1.schoolprofile.student.list.aspx" />
+    <Content Include="jpn.ukm1.schoolstate.summary.aspx" />
+    <Content Include="jpn.ukm1.schooltype.list.aspx" />
+    <Content Include="jpn.ukm1.schooltype.summary.aspx" />
+    <Content Include="jpn.ukm1.state.select.aspx" />
+    <Content Include="jpn.ukm1.state.student.list.aspx" />
+    <Content Include="jpn.ukm1.studentgender.summary.aspx" />
+    <Content Include="jpn.ukm1.studentrace.summary.aspx" />
+    <Content Include="jpn.ukm2.ishadir.confirm.aspx" />
+    <Content Include="jpn.ukm2.ukm2.list.aspx" />
+    <Content Include="js\jquery-1.4.2.js" />
+    <Content Include="js\jquery-1.4.4.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.simplemodal-1.4.1.js" />
+    <Content Include="js\jquery.simplemodal.1.4.1.min.js" />
+    <Content Include="kpm.default.aspx" />
+    <Content Include="kpm.Master" />
+    <Content Include="jpn.Master" />
+    <Content Include="kpm.msginbox.create.aspx" />
+    <Content Include="kpm.msginbox.list.aspx" />
+    <Content Include="kpm.msginbox.reply.aspx" />
+    <Content Include="kpm.msginbox.view.aspx" />
+    <Content Include="kpm.pusatujian.list.aspx" />
+    <Content Include="kpm.pusatujian.student.list.aspx" />
+    <Content Include="kpm.pusatujian.view.aspx" />
+    <Content Include="kpm.schoolprofile.create.aspx" />
+    <Content Include="kpm.schoolprofile.pusatujian.select.aspx" />
+    <Content Include="kpm.schoolprofile.schoolcity.update.aspx" />
+    <Content Include="kpm.schoolprofile.update.aspx" />
+    <Content Include="kpm.studentprofile.view.aspx" />
+    <Content Include="kpm.studentschool.schoolprofile.confirm.aspx" />
+    <Content Include="kpm.studentschool.schoolprofile.select.aspx" />
+    <Content Include="kpm.ukm1.schooltype.list.aspx" />
+    <Content Include="kpm.ukm1.schooltype.summary.aspx" />
+    <Content Include="kpm.ukm1.studentgender.summary.aspx" />
+    <Content Include="kpm.ukm1.studentrace.summary.aspx" />
+    <Content Include="kpm.ukm2.ishadir.confirm.aspx" />
+    <Content Include="kpm.ukm2.ukm2.list.aspx" />
+    <Content Include="kpt.default.aspx" />
+    <Content Include="kpt.pusatujian.kehadiran.aspx" />
+    <Content Include="kpt.pusatujian.kehadiran.pelajar.aspx" />
+    <Content Include="kpt.ukm2.ishadir.confirm.aspx" />
+    <Content Include="kpt.ukm2.status.aspx" />
+    <Content Include="kpt.ukm2.ukm2.ishadir.aspx" />
+    <Content Include="kpt.ukm2.ukm2.list.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="mara.default.aspx" />
+    <Content Include="mara.Master" />
+    <Content Include="kpt.Master" />
+    <Content Include="asasi.Master" />
+    <None Include="Allow_cookies.pdf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="mara.ukm2.ukm2.list.aspx" />
+    <Content Include="ukm.default.aspx" />
+    <Content Include="ukm.Master" />
+    <Content Include="kpm.schoolprofile.list.aspx" />
+    <Content Include="kpm.schoolprofile.select.aspx" />
+    <Content Include="kpm.schoolprofile.students.list.aspx" />
+    <Content Include="kpm.summary.examend.aspx" />
+    <Content Include="kpm.summary.school.aspx" />
+    <Content Include="kpm.summary.state.aspx" />
+    <Content Include="kpm.ukm1.dobyear.summary.aspx" />
+    <Content Include="kpm.ukm1.examend.summary.aspx" />
+    <Content Include="kpm.ukm1.progress.aspx" />
+    <Content Include="kpm.ukm1.schoolprofile.list.aspx" />
+    <Content Include="kpm.ukm1.schoolprofile.student.list.aspx" />
+    <Content Include="kpm.ukm1.schoolstate.summary.aspx" />
+    <Content Include="kpm.ukm1.state.select.aspx" />
+    <Content Include="kpm.ukm1.state.student.list.aspx" />
+    <Content Include="log\error.log.htm" />
+    <Content Include="mara.studentschool.schoolprofile.confirm.aspx" />
+    <Content Include="mara.ukm1.dobyear.summary.aspx" />
+    <Content Include="mara.ukm1.examend.summary.aspx" />
+    <Content Include="mara.ukm1.progress.aspx" />
+    <Content Include="mara.ukm1.schoolprofile.list.all.aspx" />
+    <Content Include="mara.ukm1.schoolprofile.list.aspx" />
+    <Content Include="mara.ukm1.schoolprofile.list.mas.aspx" />
+    <Content Include="mara.ukm1.schoolstate.summary.all.aspx" />
+    <Content Include="mara.ukm1.schoolstate.summary.aspx" />
+    <Content Include="mara.ukm1.state.student.list.aspx" />
+    <Content Include="mara.ukm1.studentgender.summary.aspx" />
+    <Content Include="mara.ukm1.studentrace.summary.aspx" />
+    <Content Include="mrsm.studentschool.schoolprofile.confirm.aspx" />
+    <Content Include="mrsm.studentschool.schoolprofile.select.aspx" />
+    <Content Include="mrsm.ukm1.schoolprofile.student.list.aspx" />
+    <Content Include="ShowImage.ashx" />
+    <Content Include="school.Master" />
+    <Content Include="ppd.Master" />
+    <Content Include="studentprofile.view.aspx" />
+    <Content Include="system.error.aspx" />
+    <Content Include="ukm.msginbox.list.aspx" />
+    <Content Include="ukm.petugas.list.aspx" />
+    <Content Include="ukm.petugas.pusatujian.list.aspx" />
+    <Content Include="ukm.petugas.update.aspx" />
+    <Content Include="ukm.pusatujian.kehadiran.aspx" />
+    <Content Include="ukm.pusatujian.kehadiran.pelajar.aspx" />
+    <Content Include="ukm.pusatujian.laporan.aspx" />
+    <Content Include="ukm.pusatujian.list.all.aspx" />
+    <Content Include="ukm.pusatujian.list.aspx" />
+    <Content Include="ukm.pusatujian.petugas.create.aspx" />
+    <Content Include="ukm.pusatujian.petugas.list.aspx" />
+    <Content Include="ukm.pusatujian.petugas.select.aspx" />
+    <Content Include="ukm.pusatujian.petugas.update.aspx" />
+    <Content Include="ukm.pusatujian.remarks.update.aspx" />
+    <Content Include="ukm.pusatujian.student.assign.aspx" />
+    <Content Include="ukm.pusatujian.student.list.aspx" />
+    <Content Include="ukm.pusatujian.student.select.aspx" />
+    <Content Include="ukm.pusatujian.update.aspx" />
+    <Content Include="ukm.pusatujian.view.aspx" />
+    <Content Include="ukm.studentprofile.view.aspx" />
+    <Content Include="ukm.ukm2.ishadir.confirm.aspx" />
+    <Content Include="ukm.ukm2.status.aspx" />
+    <Content Include="ukm.ukm2.ukm2.list.aspx" />
+    <Content Include="ukm1.invalid.url.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52644</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

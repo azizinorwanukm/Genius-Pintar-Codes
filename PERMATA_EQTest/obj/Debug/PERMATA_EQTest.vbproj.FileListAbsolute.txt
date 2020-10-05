@@ -1,0 +1,61 @@
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\bin\PERMATA_EQTest.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\bin\PERMATA_EQTest.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\bin\PERMATA_EQTest.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\bin\PERMATA_EQTest.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\bin\PERMATA_EQTest.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbprojResolveAssemblyReference.cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\bin\PERMATA_EQTest.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\bin\PERMATA_EQTest.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\bin\PERMATA_EQTest.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\bin\PERMATA_EQTest.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.pdb
+D:\UKM\PERMATA_EQTest\bin\PERMATA_EQTest.dll.config
+D:\UKM\PERMATA_EQTest\bin\PERMATA_EQTest.dll
+D:\UKM\PERMATA_EQTest\bin\PERMATA_EQTest.pdb
+D:\UKM\PERMATA_EQTest\bin\PERMATA_EQTest.xml
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbprojAssemblyReference.cache
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.Resources.resources
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.GenerateResource.cache
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.CoreCompileInputs.cache
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.vbproj.CopyComplete
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.dll
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.xml
+D:\UKM\PERMATA_EQTest\obj\Debug\PERMATA_EQTest.pdb

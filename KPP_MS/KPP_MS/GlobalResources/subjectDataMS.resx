@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PBBE1112" xml:space="preserve">
+    <value>Bahasa Inggeris Pengukuhan 1</value>
+  </data>
+  <data name="PBBE1222" xml:space="preserve">
+    <value>Bahasa Inggeris: Pengukuhan 2</value>
+  </data>
+  <data name="PBBE2112" xml:space="preserve">
+    <value>Bahasa Inggeris Pengayaan 1</value>
+  </data>
+  <data name="PBBE2222" xml:space="preserve">
+    <value>Bahasa Inggeris Pengayaan 2</value>
+  </data>
+  <data name="PBBE3112" xml:space="preserve">
+    <value>Kesusasteraan Inggeris</value>
+  </data>
+  <data name="PBBE3222" xml:space="preserve">
+    <value>Penulisan Kreatif</value>
+  </data>
+  <data name="PGMZ1111" xml:space="preserve">
+    <value>Pendidikan Muzik 1</value>
+  </data>
+  <data name="PGMZ1221" xml:space="preserve">
+    <value>Pendidikan Muzik 2</value>
+  </data>
+  <data name="PGMZ2111" xml:space="preserve">
+    <value>Pendidikan Muzik 1</value>
+  </data>
+  <data name="PGMZ2221" xml:space="preserve">
+    <value>Pendidikan Muzik 2</value>
+  </data>
+  <data name="PGMZ3111" xml:space="preserve">
+    <value>Pendidikan Muzik 1</value>
+  </data>
+  <data name="PGMZ3221" xml:space="preserve">
+    <value>Pendidikan Muzik 2</value>
+  </data>
+  <data name="PGPK3112" xml:space="preserve">
+    <value>Pengaturcaraan Komputer 1</value>
+  </data>
+  <data name="PGPK3222" xml:space="preserve">
+    <value>Pengaturcaraan Komputer 2</value>
+  </data>
+  <data name="PGPP1131" xml:space="preserve">
+    <value>Pengantar Falsafah</value>
+  </data>
+  <data name="PGPP2131" xml:space="preserve">
+    <value>Falsafah Bahasa</value>
+  </data>
+  <data name="PGPP3131" xml:space="preserve">
+    <value>Falsafah Epistemologi</value>
+  </data>
+  <data name="PGPS3112" xml:space="preserve">
+    <value>Pengenalan kepada Psikologi dan Tingkah Laku Manusia 1</value>
+  </data>
+  <data name="PGPS3222" xml:space="preserve">
+    <value>Pengenalan kepada Psikologi dan Tingkah Laku Manusia 2</value>
+  </data>
+  <data name="PGSP2121" xml:space="preserve">
+    <value>Seni Persembahan 1</value>
+  </data>
+  <data name="PGSP2221" xml:space="preserve">
+    <value>Seni Persembahan 2</value>
+  </data>
+  <data name="PGSV2121" xml:space="preserve">
+    <value>Seni Lukis dan Seni Reka</value>
+  </data>
+  <data name="PGSV2122" xml:space="preserve">
+    <value>Seni Digital dan Rekabentuk</value>
+  </data>
+  <data name="PHIK3222" xml:space="preserve">
+    <value>Pengenalan kepada Kesusasteraan Inggeris 2</value>
+  </data>
+  <data name="PHKI3112" xml:space="preserve">
+    <value>Pengenalan kepada Kesusasteraan Inggeris I</value>
+  </data>
+  <data name="PKBM1112" xml:space="preserve">
+    <value>Bahasa Melayu Komunikasi 1</value>
+  </data>
+  <data name="PKBM1222" xml:space="preserve">
+    <value>Bahasa Melayu Komunikasi 2</value>
+  </data>
+  <data name="PKBM2112" xml:space="preserve">
+    <value>Tatabahasa Bahasa Melayu 1</value>
+  </data>
+  <data name="PKBM2222" xml:space="preserve">
+    <value>Tatabahasa Bahasa Melayu 2</value>
+  </data>
+  <data name="PKBM3112" xml:space="preserve">
+    <value>Bahasa Melayu Tinggi 1</value>
+  </data>
+  <data name="PKBM3222" xml:space="preserve">
+    <value>Bahasa Melayu Tinggi 2</value>
+  </data>
+  <data name="PKPI1112" xml:space="preserve">
+    <value>Pendidikan Islam 1</value>
+  </data>
+  <data name="PKPI1122" xml:space="preserve">
+    <value>Pendidikan Islam 2</value>
+  </data>
+  <data name="PKPI2112" xml:space="preserve">
+    <value>Pendidikan Islam 1</value>
+  </data>
+  <data name="PKPI2122" xml:space="preserve">
+    <value>Pendidikan Islam 2</value>
+  </data>
+  <data name="PKPI3112" xml:space="preserve">
+    <value>Pendidikan Islam 1</value>
+  </data>
+  <data name="PKPI3122" xml:space="preserve">
+    <value>Pendidikan Islam 2</value>
+  </data>
+  <data name="PKPJ1121" xml:space="preserve">
+    <value>Pendidikan Jasmani Bola Lisut/ Sofbol</value>
+  </data>
+  <data name="PKPJ1221" xml:space="preserve">
+    <value>Pendidikan Jasmani Badminton</value>
+  </data>
+  <data name="PKPJ2121" xml:space="preserve">
+    <value>Pendidikan Jasmani Bola Tampar</value>
+  </data>
+  <data name="PKPJ2221" xml:space="preserve">
+    <value>Pendidikan Jasmani Hoki</value>
+  </data>
+  <data name="PKPJ3121" xml:space="preserve">
+    <value>Pendidikan Jasmani Olahraga</value>
+  </data>
+  <data name="PKPJ3221" xml:space="preserve">
+    <value>Pendidikan Jasman Pendidikan Luar</value>
+  </data>
+  <data name="PKPK1111" xml:space="preserve">
+    <value>Pembangunan Diri</value>
+  </data>
+  <data name="PKPK1221" xml:space="preserve">
+    <value>Pembangunan Diri</value>
+  </data>
+  <data name="PKPK2111" xml:space="preserve">
+    <value>Pembangunan Kendiri</value>
+  </data>
+  <data name="PKPK2112" xml:space="preserve">
+    <value>Pembangunan Kendiri</value>
+  </data>
+  <data name="PKPK2121" xml:space="preserve">
+    <value>Asas kepada Perdagangan dan Keusahawanan 1</value>
+  </data>
+  <data name="PKPK2221" xml:space="preserve">
+    <value>Asas kepada Perdagangan dan Keusahawanan 2</value>
+  </data>
+  <data name="PKPK3111" xml:space="preserve">
+    <value>Pembangunan Kendiri</value>
+  </data>
+  <data name="PKPK3221" xml:space="preserve">
+    <value>Pembangunan Kendiri</value>
+  </data>
+  <data name="PKPM1111" xml:space="preserve">
+    <value>Pendidikan Moral 1</value>
+  </data>
+  <data name="PKPM1112" xml:space="preserve">
+    <value>Pendidikan Moral 2</value>
+  </data>
+  <data name="PKPM2111" xml:space="preserve">
+    <value>Pendidikan Moral 1</value>
+  </data>
+  <data name="PKPM2112" xml:space="preserve">
+    <value>Pendidikan Moral 2</value>
+  </data>
+  <data name="PKPM3111" xml:space="preserve">
+    <value>Pendidikan Moral 1</value>
+  </data>
+  <data name="PKPM3112" xml:space="preserve">
+    <value>Pendidikan Moral 2</value>
+  </data>
+  <data name="PKSJ1112" xml:space="preserve">
+    <value>Sejarah Dunia: Tamadun Awal 1</value>
+  </data>
+  <data name="PKSJ1222" xml:space="preserve">
+    <value>Sejarah Dunia: Tamadun Awal 2</value>
+  </data>
+  <data name="PKSJ2112" xml:space="preserve">
+    <value>Malaysia Pra Kemerdekaan 1</value>
+  </data>
+  <data name="PKSJ2222" xml:space="preserve">
+    <value>Malaysia: Pra Kemerdekaan 2</value>
+  </data>
+  <data name="PKSJ3111" xml:space="preserve">
+    <value>Malaysia Pasca Kemerdekaan 1</value>
+  </data>
+  <data name="PKSJ3221" xml:space="preserve">
+    <value>Malaysia Pasca Kemerdekaan 2</value>
+  </data>
+  <data name="PPRS1211" xml:space="preserve">
+    <value>Kemahiran Penyelidikan 1</value>
+  </data>
+  <data name="PPRS2221" xml:space="preserve">
+    <value>Kemahiran Penyelidikan 2</value>
+  </data>
+  <data name="PPRS3231" xml:space="preserve">
+    <value>Kemahiran Penyelidikan 3</value>
+  </data>
+  <data name="PSBG1112" xml:space="preserve">
+    <value>Asas Biologi</value>
+  </data>
+  <data name="PSBG1222" xml:space="preserve">
+    <value>Pengenalan Kepada Biologi Molekul dan Botani</value>
+  </data>
+  <data name="PSBG2112" xml:space="preserve">
+    <value>Fisiologi Haiwan 1</value>
+  </data>
+  <data name="PSBG2222" xml:space="preserve">
+    <value>Fisiologi Haiwan 2</value>
+  </data>
+  <data name="PSBG3112" xml:space="preserve">
+    <value>Fisiologi Tumbuhan</value>
+  </data>
+  <data name="PSBG3222" xml:space="preserve">
+    <value>Ekologi dan Biokepelbagaian</value>
+  </data>
+  <data name="PSFZ1112" xml:space="preserve">
+    <value>Asas Fizik 1</value>
+  </data>
+  <data name="PSFZ1222" xml:space="preserve">
+    <value>Mekanik 1</value>
+  </data>
+  <data name="PSFZ2112" xml:space="preserve">
+    <value>Asas Fizik 2</value>
+  </data>
+  <data name="PSFZ2222" xml:space="preserve">
+    <value>Gelombang dan Optik</value>
+  </data>
+  <data name="PSFZ3112" xml:space="preserve">
+    <value>Elektrik dan Magnetik 1</value>
+  </data>
+  <data name="PSFZ3222" xml:space="preserve">
+    <value>Fizik Lanjutan 1</value>
+  </data>
+  <data name="PSKM1112" xml:space="preserve">
+    <value>Kimia - Jirim</value>
+  </data>
+  <data name="PSKM1222" xml:space="preserve">
+    <value>Kimia – Jadual Berkala</value>
+  </data>
+  <data name="PSKM2112" xml:space="preserve">
+    <value>Formula Kimia dan Persamaan Kimia</value>
+  </data>
+  <data name="PSKM2222" xml:space="preserve">
+    <value>Kimia Industri</value>
+  </data>
+  <data name="PSKM3112" xml:space="preserve">
+    <value>Sintesis Garam</value>
+  </data>
+  <data name="PSKM3222" xml:space="preserve">
+    <value>Tindakbalas Pengoksidaan dan Penurunan</value>
+  </data>
+  <data name="PSMM1113" xml:space="preserve">
+    <value>Asas Matematik 1</value>
+  </data>
+  <data name="PSMM1223" xml:space="preserve">
+    <value>Asas Matematik 2</value>
+  </data>
+  <data name="PSMM2113" xml:space="preserve">
+    <value>Asas Matematik 3</value>
+  </data>
+  <data name="PSMM2223" xml:space="preserve">
+    <value>Asas Matematik 4</value>
+  </data>
+  <data name="PSMM3113" xml:space="preserve">
+    <value>Matematik Lanjutan 1</value>
+  </data>
+  <data name="PSMM3133" xml:space="preserve">
+    <value>Matematik Tambahan 1</value>
+  </data>
+  <data name="PSMM3221" xml:space="preserve">
+    <value>Matematik Tambahan 2</value>
+  </data>
+  <data name="PSMM3223" xml:space="preserve">
+    <value>Matematik Lanjutan 2</value>
+  </data>
+</root>

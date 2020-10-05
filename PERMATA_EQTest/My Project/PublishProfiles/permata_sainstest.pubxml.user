@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\permata_sainstest</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_GlobalResources/sainstest_2014.en-US.resx">
+      <publishTime>12/03/2014 04:28:20</publishTime>
+    </File>
+    <File Include="App_GlobalResources/sainstest_2014.ms-MY.resx">
+      <publishTime>12/03/2014 04:28:20</publishTime>
+    </File>
+    <File Include="App_GlobalResources/sainstest_2014.resx">
+      <publishTime>12/03/2014 04:28:48</publishTime>
+    </File>
+    <File Include="App_GlobalResources/stresstest_2014.en-US.resx">
+      <publishTime>11/28/2014 14:36:03</publishTime>
+    </File>
+    <File Include="App_GlobalResources/stresstest_2014.ms-MY.resx">
+      <publishTime>11/28/2014 14:36:03</publishTime>
+    </File>
+    <File Include="App_GlobalResources/stresstest_2014.resx">
+      <publishTime>11/28/2014 09:51:16</publishTime>
+    </File>
+    <File Include="bin/OpenFlashChart.dll">
+      <publishTime>05/27/2009 18:44:16</publishTime>
+    </File>
+    <File Include="bin/PERMATA_SainsTest.dll">
+      <publishTime>12/06/2014 08:09:41</publishTime>
+    </File>
+    <File Include="bin/PERMATA_SainsTest.xml">
+      <publishTime>12/06/2014 08:09:41</publishTime>
+    </File>
+    <File Include="commoncontrol/contact_us.ascx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="commoncontrol/sainstest_create.ascx">
+      <publishTime>12/04/2014 09:08:04</publishTime>
+    </File>
+    <File Include="contact.us.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="datafile/radar.aspx">
+      <publishTime>12/04/2014 23:40:47</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>12/03/2014 00:30:58</publishTime>
+    </File>
+    <File Include="default.Master">
+      <publishTime>12/04/2014 09:10:43</publishTime>
+    </File>
+    <File Include="error.invalid.link.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="esurvey.chart.aspx">
+      <publishTime>12/04/2014 23:27:09</publishTime>
+    </File>
+    <File Include="esurvey.page.done.aspx">
+      <publishTime>12/04/2014 23:12:33</publishTime>
+    </File>
+    <File Include="esurvey.page01.aspx">
+      <publishTime>12/06/2014 08:15:33</publishTime>
+    </File>
+    <File Include="esurvey.page02.aspx">
+      <publishTime>12/06/2014 08:57:09</publishTime>
+    </File>
+    <File Include="esurvey.page03.aspx">
+      <publishTime>12/06/2014 08:58:43</publishTime>
+    </File>
+    <File Include="esurvey.page04.aspx">
+      <publishTime>12/06/2014 08:59:26</publishTime>
+    </File>
+    <File Include="esurvey.page05.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="esurvey.page06.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="esurvey.page07.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/17/2011 22:52:26</publishTime>
+    </File>
+    <File Include="home.candidate.aspx">
+      <publishTime>12/03/2014 06:53:33</publishTime>
+    </File>
+    <File Include="images/arrow.gif">
+      <publishTime>07/02/2010 17:45:40</publishTime>
+    </File>
+    <File Include="images/colbg.png">
+      <publishTime>07/02/2010 17:45:40</publishTime>
+    </File>
+    <File Include="images/img01.gif">
+      <publishTime>01/09/2012 14:46:02</publishTime>
+    </File>
+    <File Include="images/img02.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img03.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img04.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img05.gif">
+      <publishTime>01/10/2012 15:19:08</publishTime>
+    </File>
+    <File Include="images/img06.gif">
+      <publishTime>01/09/2012 14:49:08</publishTime>
+    </File>
+    <File Include="images/img07.gif">
+      <publishTime>01/09/2012 14:49:12</publishTime>
+    </File>
+    <File Include="img/026.jpg">
+      <publishTime>12/02/2014 21:14:34</publishTime>
+    </File>
+    <File Include="img/027.jpg">
+      <publishTime>12/02/2014 21:15:02</publishTime>
+    </File>
+    <File Include="img/error.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/info.png">
+      <publishTime>10/10/2007 01:41:56</publishTime>
+    </File>
+    <File Include="img/permata-moto.png">
+      <publishTime>11/26/2014 09:53:02</publishTime>
+    </File>
+    <File Include="img/permatapintar.jpg">
+      <publishTime>02/28/2010 23:19:16</publishTime>
+    </File>
+    <File Include="img/success.png">
+      <publishTime>10/10/2007 01:47:48</publishTime>
+    </File>
+    <File Include="img/validation.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/warning.png">
+      <publishTime>10/10/2007 01:44:54</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>12/04/2014 09:13:05</publishTime>
+    </File>
+    <File Include="login.success.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="main.contact.us.aspx">
+      <publishTime>12/03/2014 00:30:51</publishTime>
+    </File>
+    <File Include="main.Master">
+      <publishTime>12/06/2014 08:09:14</publishTime>
+    </File>
+    <File Include="styles.css">
+      <publishTime>12/04/2014 23:22:58</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/04/2014 23:51:09</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

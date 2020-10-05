@@ -1,0 +1,1068 @@
+/* CSS Document */
+body
+{
+	padding: 0px;
+	margin: 0px;
+	background: #fff;
+	color: #582902;
+	font: 14px/16px Arial, Helvetica, sans-serif;
+}
+div, p, ul, form, input, h2, h3, h4, img
+{
+	padding: 0px;
+	margin: 0px;
+}
+ul
+{
+	list-style-type: none;
+}
+
+/*----MAIN PANEL----*/
+#mainPan
+{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+}
+
+/*----Left Panel----*/
+#leftPan
+{
+	width: 14%;
+	float: left;
+	background: #FFFCF4;
+	color: #582902;
+	border-bottom: 1px solid #E3DDCD;
+	border-left: 1px solid #E3DDCD;
+	border-right: 1px solid #E3DDCD;
+	padding: 20px 0 0;
+}
+
+#teest
+{
+	
+}
+#leftPan ul.one
+{
+	width: 150px;
+	height: 100%;
+	margin: 0 0 22px 5px;
+}
+#leftPan ul.one li
+{
+	width: 150px;
+	height: 21px;
+	border-bottom: 1px solid #E3DDCD;
+}
+#leftPan ul.one li a
+{
+	width: 150px;
+	height: 21px;
+	display: block;
+	background: url(images/arrow1.gif) 5px 8px no-repeat #FFFCF4;
+	color: #40361B;
+	font: 11px/22px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 0 0 12px;
+}
+#leftPan ul.one li a:hover
+{
+	background: url(images/arrow2.gif) 5px 8px no-repeat #CC0000;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 0 0 12px;
+}
+#leftPan ul.one li.home
+{
+	width: 150px;
+	height: 21px;
+	background: url(images/arrow2.gif) 5px 8px no-repeat #CC0000;
+	color: #fff;
+	text-decoration: none;
+	font: 11px/22px Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	padding: 0 0 0 12px;
+}
+#leftPan ul.one li.contact
+{
+	width: 150px;
+	height: 21px;
+	border-bottom: none;
+}
+
+#fastformPan
+{
+	width: 127px;
+	height: 141px;
+	background: #E3DDCD;
+	color: #574A22;
+	margin: 0 14px 11px;
+}
+#fastformPan form.formone
+{
+	width: 127px;
+	height: 141px;
+}
+#fastformPan form.formone h2
+{
+	width: 117px;
+	height: 23px;
+	background: #574A22;
+	color: #fff;
+	font: 20px/22px "Trebuchet MS" ,Arial, Helvetica, sans-serif;
+	padding: 0 0 0 10px;
+}
+#fastformPan form.formone select
+{
+	width: 104px;
+	height: 18px;
+	background: #fff;
+	color: #000;
+	font: 11px/18px Verdana, Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin: 7px 0 0 10px;
+}
+
+#submitPan
+{
+	width: 61px;
+	height: 20px;
+	position: absolute;
+	top: 360px;
+	left: 70px;
+}
+#fastformPan form input
+{
+	width: 61px;
+	height: 20px;
+	display: block;
+	background: url(images/button.gif) 0 0 no-repeat #E3DDCD;
+	color: #fff;
+	border: none;
+	font: 11px/20px Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#fastformPan form label
+{
+	width: 40px;
+	height: 10px;
+	display: block;
+	float: left;
+	background: #E3DDCD;
+	color: #574A22;
+	font: 10px/10px Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px 0 0;
+	padding: 0 0 0 5px;
+}
+#fastformPan form input.check
+{
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 10px 0 0;
+	background: none;
+}
+
+#leftPan h3
+{
+	height: 20px;
+	background: #FFFCF4;
+	color: #574A22;
+	font: 20px/22px "Trebuchet MS" ,Arial, Helvetica, sans-serif;
+	padding: 0 0 0 25px;
+}
+
+#leftPan ul.two
+{
+	width: 127px;
+	height: 113px;
+	margin: 23px 0 22px 14px;
+}
+#leftPan ul.two li
+{
+	width: 127px;
+	height: 18px;
+}
+#leftPan ul.two li a
+{
+	width: 105px;
+	height: 18px;
+	display: block;
+	background: url(images/arrow3.gif) 12px 6px no-repeat #FFFCF4;
+	color: #582902;
+	font-size: 13px;
+	text-decoration: underline;
+	padding: 0 0 0 22px;
+}
+#leftPan ul.two li a:hover
+{
+	background: url(images/arrow1.gif) 12px 6px no-repeat #FFFCF4;
+	color: #574A22;
+	font-size: 13px;
+	text-decoration: underline;
+}
+
+#secondformPan
+{
+	width: 127px;
+	height: 95px;
+	background: #E3DDCD;
+	color: #574A22;
+	margin: 0 14px 30px;
+}
+#secondformPan form.formtwo
+{
+	width: 127px;
+	height: 95px;
+}
+#secondformPan form.formtwo h2
+{
+	width: 117px;
+	height: 23px;
+	background: #574A22;
+	color: #fff;
+	font: 20px/22px "Trebuchet MS" ,Arial, Helvetica, sans-serif;
+	padding: 0 0 0 10px;
+}
+#secondformPan form.formtwo .input
+{
+	width: 61px;
+	height: 20px;
+	background: url(images/button.gif) 0 0 no-repeat #E3DDCD;
+	color: #fff;
+	border: none;
+	font: 11px/20px Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 10px 0 0 56px;
+}
+
+#secondformPan input
+{
+	width: 104px;
+	height: 18px;
+	display: block;
+	background: #fff;
+	color: #000;
+	font: 11px/18px Verdana, Arial, Helvetica, sans-serif;
+	margin: 8px 0 0 10px;
+}
+
+/*----/Left Panel----*/
+
+/*----Right Panel----*/
+#rightPan
+{
+	width: 85%;
+	float: left;
+}
+/*---Top Panel----*/
+#topPan
+{
+	width: 565px;
+	height: 96px;
+	padding: 0 0 0 10px;
+}
+#topPan img.logo
+{
+	width: 300px;
+	height: 30px;
+	margin: 41px 0 5px;
+}
+
+#topPan p
+{
+	width: 210px;
+	height: 18px;
+	border: 1px solid #D1C7A7;
+	background: #fff;
+	color: #010000;
+	text-align: center;
+	font-size: 14px;
+}
+
+#topPan ul
+{
+	width: 168px;
+	position: absolute;
+	top: 51px;
+	right: 127px;
+}
+#topPan ul li
+{
+	width: 55px;
+	height: 38px;
+	border-right: 1px solid #E3DDCD;
+	float: left;
+}
+#topPan ul li.pen
+{
+	width: 55px;
+	height: 38px;
+	background: url(images/icon1-normal.gif) 0 0 no-repeat;
+}
+#topPan ul li.pen a
+{
+	width: 55px;
+	height: 38px;
+	display: block;
+	background: url(images/icon1-normal.gif) 0 0 no-repeat;
+	text-indent: -20000px;
+}
+#topPan ul li.pen a:hover
+{
+	width: 55px;
+	height: 38px;
+	background: url(images/icon1-hover.gif) 0 0 no-repeat;
+	text-indent: -20000px;
+}
+
+#topPan ul li.book
+{
+	width: 55px;
+	height: 38px;
+	background: url(images/icon2-normal.gif) 0 0 no-repeat;
+}
+#topPan ul li.book a
+{
+	width: 55px;
+	height: 38px;
+	display: block;
+	background: url(images/icon1-norma2.gif) 0 0 no-repeat;
+	text-indent: -20000px;
+}
+#topPan ul li.book a:hover
+{
+	width: 55px;
+	height: 38px;
+	background: url(images/icon2-hover.gif) 0 0 no-repeat;
+	text-indent: -20000px;
+}
+
+#topPan ul li.calculator
+{
+	width: 55px;
+	height: 38px;
+	background: url(images/icon3-normal.gif) 0 0 no-repeat;
+	border: none;
+}
+#topPan ul li.calculator a
+{
+	width: 55px;
+	height: 38px;
+	display: block;
+	background: url(images/icon3-norma2.gif) 0 0 no-repeat;
+	text-indent: -20000px;
+}
+#topPan ul li.calculator a:hover
+{
+	width: 55px;
+	height: 38px;
+	background: url(images/icon3-hover.gif) 0 0 no-repeat;
+	text-indent: -20000px;
+}
+
+/*---/Top Panel----*/
+/*---Body Panel----*/
+#bodyPan
+{
+	width: 90%;
+	padding: 14px 40px 0 10px;
+}
+#bodyPan h2
+{
+	height: 25px;
+	background: #fff;
+	color: #40361B;
+	font: 30px/18px "Trebuchet MS" ,Arial, Helvetica, sans-serif;
+	padding: 10px 0 0 0;
+}
+
+#bodyPan p.contant1
+{
+	padding: 5px 0 0 5px;
+}
+
+#bodyPan p.contant2
+{
+	background: url(images/image2.gif) 0 15px no-repeat;
+	padding: 12px 0 0 98px;
+}
+#bodyPan p.contant3
+{
+	background: url(images/image3.gif) 0 15px no-repeat;
+	padding: 12px 0 0 98px;
+}
+
+#bodyPan p.moreline
+{
+	background: url(images/more-line.gif) 0 100% repeat-x;
+}
+#bodyPan p.moreline a
+{
+	background: #fff;
+	color: #CC0000;
+	font: 13px/14px "Trebuchet MS" , Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 0 0 0;
+}
+
+#bodyPan p.more
+{
+	background: url(images/more-line.gif) 0 90% repeat-x;
+}
+#bodyPan p.more a
+{
+	background: #fff;
+	color: #CC0000;
+	font: 13px/14px "Trebuchet MS" , Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 0 0 375px;
+}
+#bodyPan p.more a:hover
+{
+	background: #E3DDCD;
+	color: #CC0000;
+	text-decoration: none;
+}
+
+/*---Body Lower Panel----*/
+#bodylowerPan
+{
+	width: 90%;
+	padding: 11px 0 0;
+	position: relative;
+	margin: 0 auto;
+}
+#bodylowerLeftPan
+{
+	width: 90%;
+	padding: 0 40px 0 0;
+	float: left;
+}
+#bodylowerLeftPan p
+{
+	padding: 15px 0;
+}
+#bodylowerLeftPan h3
+{
+	height: 30px;
+	background: #fff;
+	color: #40361B;
+	font: 30px/30px "Trebuchet MS" ,Arial, Helvetica, sans-serif;
+}
+
+#bodylowerLeftPan ul.list
+{
+	width: 290px;
+}
+#bodylowerLeftPan ul.list li
+{
+	width: 290px;
+	height: 20px;
+}
+#bodylowerLeftPan ul.list li a
+{
+	height: 20px;
+	background: url(images/bullet1.gif) 0 3px no-repeat #fff;
+	color: #000;
+	line-height: 20px;
+	text-decoration: underline;
+	padding: 0 0 0 20px;
+}
+#bodylowerLeftPan ul.list li a:hover
+{
+	background: url(images/bullet2.gif) 0 3px no-repeat #fff;
+	color: #5E2401;
+	line-height: 20px;
+	text-decoration: underline;
+}
+
+#bodylowerLeftPan p.more
+{
+	background: url(images/more-line.gif) 0 90% repeat-x;
+	padding: 0px;
+}
+#bodylowerLeftPan p.more a
+{
+	background: #fff;
+	color: #CC0000;
+	font: 13px/14px "Trebuchet MS" , Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 0 0 193px;
+}
+#bodylowerLeftPan p.more a:hover
+{
+	background: #E3DDCD;
+	color: #CC0000;
+	text-decoration: none;
+}
+
+#bodylowerRightPan
+{
+	width: 194px;
+	float: left;
+}
+#bodylowerRightPan h4
+{
+	height: 50px;
+	background: #fff;
+	color: #40361B;
+	font: 30px/30px "Trebuchet MS" ,Arial, Helvetica, sans-serif;
+}
+
+#bodylowerRightPan ul
+{
+	width: 162px;
+	height: 144px;
+	padding: 16px 16px 0;
+	background: #574A22;
+	color: #fff;
+}
+#bodylowerRightPan ul li
+{
+	width: 162px;
+	height: 27px;
+	border-bottom: 1px solid #887B53;
+}
+#bodylowerRightPan ul li a
+{
+	width: 142px;
+	height: 27px;
+	background: url(images/arrow4.gif) 8px 6px no-repeat #574A22;
+	color: #fff;
+	text-decoration: none;
+	line-height: 27px;
+	padding: 0 0 0 20px;
+}
+#bodylowerRightPan ul li a:hover
+{
+	background: url(images/arrow5.gif) 8px 6px no-repeat #574A22;
+	color: #FCF0CD;
+	text-decoration: none;
+	padding: 0 0 0 20px;
+}
+#bodylowerRightPan ul li.lastlink
+{
+	border: none;
+}
+
+#bodylowerRightPan p.more
+{
+	width: 194px;
+	height: 38px;
+	background: url(images/more-bg.jpg) 24px 0 no-repeat #574A22;
+	color: #342B0D;
+	padding: 12px 0 0;
+}
+#bodylowerRightPan p.more a
+{
+	width: 72px;
+	background: #DED8C6;
+	color: #342B0D;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0 0 0 77px;
+	text-decoration: none;
+}
+#bodylowerRightPan p.more a:hover
+{
+	text-decoration: none;
+}
+/*---/Body Lower Panel----*/
+
+/*----FOOTER PANEL----*/
+#footermainPan
+{
+	height: 30px;
+	background: url(images/footerbg.gif) 0 0 repeat-x #FFFCF4;
+	color: #010101;
+	clear: both;
+	padding: 35px 0 0 0;
+}
+
+#footerPan
+{
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#footerPan ul
+{
+	width: 95%;
+	height: 20px;
+	margin: 0 0 0 10px;
+}
+#footerPan li
+{
+	float: left;
+}
+#footerPan ul li a
+{
+	padding: 0 20px 0 5px;
+	color: #574A22;
+	background: #FFFCF4;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+}
+#footerPan ul li a:hover
+{
+	text-decoration: underline;
+}
+
+#footerPan p.copyright
+{
+	width: 204px;
+	position: relative;
+	margin: 0 auto;
+	background: #FFFCF4;
+	color: #010000;
+	font-size: 11px;
+}
+
+#footerPan ul.templateworld
+{
+	width: 250px;
+	background: #FFFCF4;
+	color: #444;
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 300px;
+	font-size: 10px;
+}
+#footerPan ul.templateworld li
+{
+	height: 20px;
+}
+#footerPan ul.templateworld li a
+{
+	background: #FFFCF4;
+	display: block;
+	color: #444;
+	text-decoration: none;
+}
+#footerPan ul.templateworld li a:hover
+{
+	text-decoration: underline;
+}
+
+#footerPanhtml
+{
+	width: 60px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 320px;
+}
+#footerPanhtml a
+{
+	width: 58px;
+	height: 18px;
+	display: block;
+	background: #CC0000;
+	color: #fff;
+	line-height: 18px;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+}
+#footerPanhtml a:hover
+{
+	background: #574A22;
+	color: #fff;
+}
+
+#footerPancss
+{
+	width: 48px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 380px;
+}
+#footerPancss a
+{
+	width: 48px;
+	height: 18px;
+	display: block;
+	background: #574A22;
+	color: #fff;
+	line-height: 18px;
+	font-size: 11px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+#footerPancss a:hover
+{
+	background: #CC0000;
+	color: #fff;
+}
+
+.mybutton
+{
+	border-left: 1px solid #D9DFEA;
+    border-right: 1px solid #0e1f5b;
+    border-top: 1px solid #D9DFEA;
+    border-bottom: 1px solid #0e1f5b;
+    padding: 1px 5px 1px 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #3b5998;
+    color: #fff;
+    height: 30px;
+    width:150px;
+}
+.DigitButton
+{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #66CCFF;
+	font-weight: bold;
+}
+
+/*block design*/
+
+.mytablemain
+{
+	padding: inherit;
+	width: 100%;
+	border: 2px;
+	border-style: dotted;
+	border-width: thin;
+	margin: 10px 0 10px 0;
+	table-layout: auto;
+	border-spacing: 1px;
+	text-align: left;
+}
+
+.mytablemain_td
+{
+	width: auto;
+	vertical-align:middle;
+	border-bottom: dotted 1px;
+	border-right: dotted 1px;
+	border-top: dotted 1px;
+	border-left: dotted 1px;
+	border-color: #C0C0C0;
+}
+
+.mytableleft
+{
+	width: auto;
+	border-style: none;
+	padding: 0 0 0 0;
+}
+
+.mytableleft_td
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytableright
+{
+	width: auto;
+	border-style: none;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytableright_border
+{
+	width: auto;
+	border: 1px solid #000000;
+	vertical-align: top;
+}
+
+.mytableright_td
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytableright_noborder
+{
+	border: solid 1px;
+	width: auto;
+	padding: 0px;
+	border-spacing: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+.mytableright_td_noborder
+{
+	border: none 0px;
+	border-spacing: 0px;
+	padding: 0px;
+	vertical-align: top;
+}
+
+.mytablebottom
+{
+	width: auto;
+	border-style: none;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+.mytablebottom_td
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+}
+
+
+/*drag and drop*/
+
+.dragElement
+{
+	width: 80px;
+	height: 80px;
+	z-index: 5000;
+	border-width: 1px;
+	border-color: Black;
+}
+
+.dropZone
+{
+	background-color: #FFFF66;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	top: 200px;
+	left: 200px;
+	overflow: auto;
+}
+
+.highlightDropZone
+{
+	background-color: Yellow;
+}
+
+.DefaultDropZoneColor
+{
+	background-color: #FFFF99;
+}
+
+.lbl02
+{
+	font-size: large;
+	font-weight: bolder;
+	color: Black;
+}
+
+.myInput
+{
+	font-size: large;
+	font-weight: bolder;
+}
+
+.mytd_image
+{
+	border: 1px none #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+	width: 150px;
+	height: 150px;
+}
+
+
+.mypicture
+{
+	border: none;
+	width: 150px;
+	height: 150px;
+}
+
+.mytdcoding
+{
+	font-size: 16pt;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.mytd_codingtext
+{
+	font-size: 16pt;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align:middle;
+	 
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.mytd_codingimage
+{
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	vertical-align: top;
+	width: 50px;
+	height: 60px;
+}
+.lblHeader
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000000;
+}
+.InputDigit
+{
+	border: thin none #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+.imgNormal
+{
+	border: 2px solid #000000;
+	width: 150px;
+	height: 150px;
+}
+.imgSelect
+{
+	border: 2px solid #FF0000;
+	width: 150px;
+	height: 150px;
+}
+
+.drag05Element
+{
+	width: 60px;
+	height: 60px;
+	z-index: 5000;
+	border-width: 1px;
+	border-color: Black;
+}
+
+.mytd_10text
+{
+	font-size: 16pt;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid #CC3300;
+	padding: 0 0 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.mytd_10blank
+{
+	font-size: 16pt;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+	padding: 0 0 0 0;
+	width: 50px;
+	height: 50px;
+}
+
+.mytd_10answer
+{
+	font-size: 14pt;
+	font-weight: bolder;
+	text-align: center;
+	vertical-align:middle;
+	 
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	width: 80px;
+	height: 50px;
+}
+
+.textbox14
+{
+	font-size:18px;
+	font-weight:bold;
+}
+
+.tablelogin
+{
+	width: 80%;
+	vertical-align: middle;
+	text-align: left;
+	border: 3px dotted #FF3300;
+}
+
+.tableend
+{
+	width: 100%;
+	vertical-align: middle;
+	text-align: left;
+	border: 3px dotted #FF3300;
+}
+
+.tableform
+{
+	width: 100%;
+	vertical-align: middle;
+	text-align: left;
+	border: 3px dotted #FF3300;
+}
+
+
+.img08Normal
+{
+	border: 2px solid #000000;
+	width: 100px;
+	height: 100px;
+}
+
+.img08Select
+{
+	border: 2px solid #FF0000;
+	width: 100px;
+	height: 100px;
+	
+}
+.TDCoding
+{
+	background-color: #FFFF99;
+	border: solid 1px #000000;
+	padding: 0 0 0 0;
+	width: 50px;
+	height: 35px;
+	vertical-align:middle;
+	text-align:center;
+}
+.txtCoding
+{
+	font-size: 16pt;
+	font-weight: bolder;
+	text-align: center;
+	color: #663300;
+}
+.PictSel
+{
+	font-weight: bold;
+	font-size: large;
+	color: #FF0000;
+	border-style:none;
+}

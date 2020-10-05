@@ -1,0 +1,75 @@
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\csc.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\csi.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_admin.vbproj.GenerateResource.Cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.subjectDataMS.resources
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\csc.exe
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\csc.exe.config
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\csc.rsp
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\csi.exe
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\csi.rsp
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\System.AppContext.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\vbc.exe
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\vbc.exe.config
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\vbc.rsp
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\VBCSCompiler.exe
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.dll.config
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.pdb
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\bin\kolej_permatapintar.xml
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_admin.vbprojResolveAssemblyReference.cache
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.Resources.resources
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.subjectDataMS.resources
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_admin.vbproj.GenerateResource.Cache
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.dll
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.xml
+\\ARAKEN-STORAGE\Public\1.Software Development Team\Azizi\2017 project\new(PermataPintar)\WebApplication1\obj\Debug\kolej_permatapintar.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_admin.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\new(PermataPintar)\WebApplication1\obj\Debug\kolej_admin.vbproj.CopyComplete

@@ -1,0 +1,88 @@
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.vbprojResolveAssemblyReference.cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.vbprojResolveAssemblyReference.cache
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.Cache
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.CoreCompileInputs.cache
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.dll.config
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.dll
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.pdb
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\bin\UKM_KOKO.xml
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.vbprojResolveAssemblyReference.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\permatapintar.Resources.resources
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.GenerateResource.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.CoreCompileInputs.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.dll
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.xml
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKO\obj\Release\UKM_KOKO.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\UKM_KOKO.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKO\obj\Release\UKM_KOKO.vbprojResolveAssemblyReference.cache

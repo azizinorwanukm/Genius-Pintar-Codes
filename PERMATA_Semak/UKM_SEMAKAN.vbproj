@@ -1,0 +1,653 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A5E964F-B590-4281-9C54-D15387D7B76A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UKM_SEMAKAN</RootNamespace>
+    <AssemblyName>UKM_SEMAKAN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>UKM_SEMAKAN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>UKM_SEMAKAN.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="asasi.semak.aspx" />
+    <Content Include="download\ppcs201505\1.SURAT_PELAJAR.docx" />
+    <Content Include="download\ppcs201505\2.SENARAI_SEMAK.docx" />
+    <Content Include="download\ppcs201505\3.BORANG_A_JAWAPAN_PENERIMAAN.docx" />
+    <Content Include="download\ppcs201505\4.POLISI_DAN_PERATURAN.docx" />
+    <Content Include="download\ppcs201505\5.BORANG_B_MAKLUMAT_LENGKAP_PELAJAR.docx" />
+    <Content Include="images\adobe.png" />
+    <Content Include="images\get-adobe-reader.gif" />
+    <Content Include="kolej.aspx" />
+    <Content Include="kolej.result.aspx" />
+    <Content Include="kolej_asas1.aspx" />
+    <Content Include="kolej_semak.aspx" />
+    <Content Include="kolej_tahap1.aspx" />
+    <Content Include="mycontrol\kolej_info.ascx" />
+    <Content Include="mycontrol\kolej_list.ascx" />
+    <Content Include="mycontrol\ppcs_info.ascx" />
+    <Content Include="mycontrol\ppcs_list.ascx" />
+    <Content Include="mycontrol\state_pusatujianstatus.ascx" />
+    <Content Include="mycontrol\ukm2_list.ascx" />
+    <Content Include="pic\Background_kolej.png" />
+    <Content Include="pic\header2017.png" />
+    <Content Include="pic\header2017v2.png" />
+    <Content Include="pic\sijil-top-pdf.jpg.org" />
+    <Content Include="pic\yuran-2016.png" />
+    <Content Include="pic\yuran_ppcs_dis_2016.png" />
+    <Content Include="ppcs.semak.aspx" />
+    <Content Include="ppcs.ukm.aspx" />
+    <Content Include="ppcs.usim.aspx" />
+    <Content Include="ppmt.semak.aspx" />
+    <Content Include="saringan.semak.aspx" />
+    <Content Include="ukm2.semak.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="asasi.semak.aspx.designer.vb">
+      <DependentUpon>asasi.semak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="asasi.semak.aspx.vb">
+      <DependentUpon>asasi.semak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="contactus.aspx.designer.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contactus.aspx.vb">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.vb">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.vb">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kolej.aspx.designer.vb">
+      <DependentUpon>kolej.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kolej.aspx.vb">
+      <DependentUpon>kolej.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kolej.result.aspx.designer.vb">
+      <DependentUpon>kolej.result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kolej.result.aspx.vb">
+      <DependentUpon>kolej.result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kolej_asas1.aspx.designer.vb">
+      <DependentUpon>kolej_asas1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kolej_asas1.aspx.vb">
+      <DependentUpon>kolej_asas1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kolej_semak.aspx.designer.vb">
+      <DependentUpon>kolej_semak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kolej_semak.aspx.vb">
+      <DependentUpon>kolej_semak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kolej_tahap1.aspx.designer.vb">
+      <DependentUpon>kolej_tahap1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kolej_tahap1.aspx.vb">
+      <DependentUpon>kolej_tahap1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mycontrol\kolej_info.ascx.designer.vb">
+      <DependentUpon>kolej_info.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mycontrol\kolej_info.ascx.vb">
+      <DependentUpon>kolej_info.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mycontrol\kolej_list.ascx.designer.vb">
+      <DependentUpon>kolej_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mycontrol\kolej_list.ascx.vb">
+      <DependentUpon>kolej_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mycontrol\ppcs_info.ascx.designer.vb">
+      <DependentUpon>ppcs_info.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mycontrol\ppcs_info.ascx.vb">
+      <DependentUpon>ppcs_info.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mycontrol\ppcs_list.ascx.designer.vb">
+      <DependentUpon>ppcs_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mycontrol\ppcs_list.ascx.vb">
+      <DependentUpon>ppcs_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mycontrol\state_pusatujianstatus.ascx.designer.vb">
+      <DependentUpon>state_pusatujianstatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mycontrol\state_pusatujianstatus.ascx.vb">
+      <DependentUpon>state_pusatujianstatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mycontrol\ukm2_list.ascx.designer.vb">
+      <DependentUpon>ukm2_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="mycontrol\ukm2_list.ascx.vb">
+      <DependentUpon>ukm2_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ppcs.semak.aspx.designer.vb">
+      <DependentUpon>ppcs.semak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppcs.semak.aspx.vb">
+      <DependentUpon>ppcs.semak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ppcs.ukm.aspx.designer.vb">
+      <DependentUpon>ppcs.ukm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppcs.ukm.aspx.vb">
+      <DependentUpon>ppcs.ukm.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ppcs.usim.aspx.designer.vb">
+      <DependentUpon>ppcs.usim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppcs.usim.aspx.vb">
+      <DependentUpon>ppcs.usim.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ppmt.semak.aspx.designer.vb">
+      <DependentUpon>ppmt.semak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppmt.semak.aspx.vb">
+      <DependentUpon>ppmt.semak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="saringan.semak.aspx.designer.vb">
+      <DependentUpon>saringan.semak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="saringan.semak.aspx.vb">
+      <DependentUpon>saringan.semak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ukm2.semak.aspx.designer.vb">
+      <DependentUpon>ukm2.semak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ukm2.semak.aspx.vb">
+      <DependentUpon>ukm2.semak.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cert_pdf\dumy.txt" />
+    <Content Include="contactus.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="default.Master" />
+    <Content Include="favicon.ico" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\colbg.png" />
+    <Content Include="images\img01.gif" />
+    <Content Include="images\img02.gif" />
+    <Content Include="images\img03.gif" />
+    <Content Include="images\img04.gif" />
+    <Content Include="images\img05.gif" />
+    <Content Include="images\img06.gif" />
+    <Content Include="images\img07.gif" />
+    <Content Include="images\pp-logo.png" />
+    <Content Include="images\ppcs-readme.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\info.png" />
+    <Content Include="img\validation.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="mystyle.css" />
+    <Content Include="pic\4p-sijil-bottom.png" />
+    <Content Include="pic\4p-top-pdf.png" />
+    <Content Include="pic\sijil-bottom.png" />
+    <Content Include="pic\sijil-bottomv1.png" />
+    <Content Include="pic\sijil-top-pdf.png" />
+    <Content Include="pic\sijil-top.png" />
+    <Content Include="download\2015surat_tawaran_kolej\M000536.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000537.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000538.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000539.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000540.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000541.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000542.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000543.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000544.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000545.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000546.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000547.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000548.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000549.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000550.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000551.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000552.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000553.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000554.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000555.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000556.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000557.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000558.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000559.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000560.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000561.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000562.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000563.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000564.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000565.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000566.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000567.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000568.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000569.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000570.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000571.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000572.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000573.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000574.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000575.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000576.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000577.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000578.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000579.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000580.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000581.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000582.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000583.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000584.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000585.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000586.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000587.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000588.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000589.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000590.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000591.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000592.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000593.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000594.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000595.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000596.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000597.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000598.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000599.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000600.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000601.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000602.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000603.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000604.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000605.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000606.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000607.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000608.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000609.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000610.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000611.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000612.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000613.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000614.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000615.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000616.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000617.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000618.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000619.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000620.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000621.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000622.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000623.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000624.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000625.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000626.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000627.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000628.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000629.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000630.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000631.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000632.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000633.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000634.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000635.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000636.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000637.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000638.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000639.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000640.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000641.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000642.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000643.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000644.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000645.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000646.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000647.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000648.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000649.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000650.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000651.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000652.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000653.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000654.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000655.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000656.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000657.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000658.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000659.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000660.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000661.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000662.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000663.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000664.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000665.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000666.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000667.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000668.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000669.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000670.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000671.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000672.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000673.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000674.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000675.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000676.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000677.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000678.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000679.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000680.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000681.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000682.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000683.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000684.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000685.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000686.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000687.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000688.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000689.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000690.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000691.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000692.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000693.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000694.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000695.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000696.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000697.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000698.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000699.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000700.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000701.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000702.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000703.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000704.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000705.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000706.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000707.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000708.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000709.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000710.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000711.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000712.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000713.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000714.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000715.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000716.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000717.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000718.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000719.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000720.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000721.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000722.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000723.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000724.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000725.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000726.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000727.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000728.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000729.pdf" />
+    <Content Include="download\2015surat_tawaran_kolej\M000730.pdf" />
+    <Content Include="cert_pdf\1_SURAT_PELAJAR_010315030108.pdf" />
+    <None Include="download\4p\4P-Negara.zip" />
+    <Content Include="download\kolej2015\2015 1_Senarai Semak, Surat Tawaran dan Borang-Borang.pdf" />
+    <Content Include="download\kolej2015\2015 2_Senarai Semak Dokumen.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran A - Surat Jawapan Penerimaan.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran B - Borang Kebenaran Mengikuti Program.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran C - Maklumat Pelajar.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran D - Borang Pemeriksaan Kesihatan.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran E - Akuan Pembayaran Yuran.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran E1 - Tatacara Pembayaran Yuran.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran E2 - Senarai Yuran Bayaran.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran F - Tawaran Kolej Kediaman.pdf" />
+    <Content Include="download\kolej2015\2015 Lampiran F1 - Pakaian dan Peralatan yang perlu di bawa oleh pelajar.pdf" />
+    <Content Include="download\kolej2015\ORIENTATION TENTATIVE PROGRAMME 2015.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran A Jawapan Penerimaan Penolakan Kolej  2016.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran B - Borang Kebenaran Mengikuti Program.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran C - Maklumat Pelajar.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran D - Borang Laporan Pemeriksaan  Kesihatan.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran D1 Borang Perakuan Kebenaran Mendapatkan   Rawatan.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran E Akuan Pembayaran Yuran Pengajian Pelajar  Lama.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran E1 TATACARA_PEMBAYARAN_YURAN PELAJAR LAMA  .pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran E2 Senarai Yuran Pengajian Pelajar Lama.pdf" />
+    <Content Include="download\kolej2016\2016 Lampiran F Tawaran Kolej Kediaman 2016.pdf" />
+    <Content Include="download\kolej2016\2016 Senarai Semak Borang yg Perlu Diserahkan semasa sesi  Pendaftaran .pdf" />
+    <Content Include="download\kolej2016\2016 Senarai Semakan Dokumen .pdf" />
+    <Content Include="download\kolej2016\Lampiran F1 Pakaian &amp; Peralatan yang Pelajar Perlu   Bawa.pdf" />
+    <Content Include="download\asasi2016\Lampiran_1_Tatacara_Pembayaran_Yuran.docx" />
+    <Content Include="download\asasi2016\Lampiran_2_Akuan_Pembayaran_Yuran.docx" />
+    <Content Include="download\asasi2016\Lampiran_1_Tatacara_Pembayaran_Yuran.pdf" />
+    <Content Include="download\asasi2016\Lampiran_2_Akuan_Pembayaran_Yuran.pdf" />
+    <Content Include="download\asasi2017\Lampiran_1_Tatacara_Pembayaran_Yuran_Pemprosesan_UKM_ASASI.pdf" />
+    <Content Include="download\asasi2017\Lampiran_2_Akuan_Pembayaran_Yuran_UKM_ASASIpintar.pdf" />
+    <Content Include="download\kolej2018\DOKUMEN PENDAFTARAN KOLEJ PERMATAPINTAR UKM.zip" />
+    <Content Include="download\kolej2018\ATURCARA PENDAFTARAN PELAJAR BARU 2018.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN  A JAWAPAN PENERIMAAN %40 PENOLAKAN.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN B BORANG KEBENARAN MENGIKUTI PROGRAM.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN C BORANG MAKLUMAT PELAJAR 2018.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN D LAPORAN PEMERIKSAAN KESIHATAN.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN E BORANG PERAKUAN KEBENARAN MENDAPATKAN RAWATAN.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN F AKUAN PEMBAYARAN YURAN PENGAJIAN PELAJAR BAHARU.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN F1 TATACARA PEMBAYARAN YURAN PELAJAR BAHARU.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN F2 SENARAI YURAN PENGAJIAN PELAJAR BAHARU.pdf" />
+    <Content Include="download\kolej2018\LAMPIRAN G TAWARAN KOLEJ KEDIAMAN.pdf" />
+    <Content Include="download\kolej2018\PAKAIAN DAN PERALATAN YANG PERLU DIBAWA.pdf" />
+    <Content Include="download\kolej2018\SENARAI SEMAK BORANG_SERAH SEMASA PENDAFTARAN.pdf" />
+    <None Include="download\ppcs201406\BORANG-PPCS-201406.zip" />
+    <Content Include="download\ppcs201505\1.SURAT_PELAJAR.pdf" />
+    <Content Include="download\ppcs201505\2.SENARAI_SEMAK.pdf" />
+    <Content Include="download\ppcs201505\3.BORANG_A_JAWAPAN_PENERIMAAN.pdf" />
+    <Content Include="download\ppcs201505\4.POLISI_DAN_PERATURAN.pdf" />
+    <Content Include="download\ppcs201505\5.BORANG_B_MAKLUMAT_LENGKAP_PELAJAR.pdf" />
+    <Content Include="download\ppcs2015V2\2. SENARAI SEMAK.docx" />
+    <Content Include="download\ppcs2015V2\3. POLISI DAN PERATURAN.docx" />
+    <Content Include="download\ppcs2015V2\4. BORANG A - JAWAPAN PENERIMAAN.docx" />
+    <Content Include="download\ppcs2015V2\5. BORANG B - MAKLUMAT LENGKAP PELAJAR.docx" />
+    <Content Include="download\ppcs2015V2\6. BORANG C - PENGESAHAN PERJALANAN.docx" />
+    <Content Include="download\ppcs2015V2\7. BORANG D - KEBENARAN RAWATAN PERUBATAN.docx" />
+    <Content Include="download\ppcs201712\UKM\1 SENARAI SEMAK.pdf" />
+    <Content Include="download\ppcs201712\UKM\2  BORANG A-JAWAPAN PENERIMAAN.pdf" />
+    <Content Include="download\ppcs201712\UKM\3 POLISI DAN PERATURAN.pdf" />
+    <Content Include="download\ppcs201712\UKM\4 BORANG B - MAKLUMAT LENGKAP PELAJAR.pdf" />
+    <Content Include="download\ppcs201712\UKM\5 BORANG C - PENGESAHAN PERJALANAN.pdf" />
+    <Content Include="download\ppcs201712\UKM\6 BORANG D - KEBENARAN RAWATAN PERUBATAN.pdf" />
+    <Content Include="download\ppcs201712\UKM\SURAT TAWARAN PPCS -ukm.docx" />
+    <Content Include="download\ppcs201712\USIM\1. SENARAI SEMAK - ppcsusim.pdf" />
+    <Content Include="download\ppcs201712\USIM\2 BORANG A-JAWAPAN PENERIMAAN-PENOLAKAN.pdf" />
+    <Content Include="download\ppcs201712\USIM\3 POLISI DAN PERATURAN %281%29.pdf" />
+    <Content Include="download\ppcs201712\USIM\4 BORANG B - MAKLUMAT LENGKAP PELAJAR %281%29.pdf" />
+    <Content Include="download\ppcs201712\USIM\5  BORANG C - KEBENARAN RAWATAN PERUBATAN.pdf" />
+    <Content Include="download\ppcs201712\USIM\SURAT TAWARAN PPCS -usim %281%29.docx" />
+    <Content Include="download\ppcs201712\UKM\PPCS_201712_UKM.zip" />
+    <Content Include="download\ppcs201712\USIM\PPCS_201712_USIM.zip" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\permata_semak.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="download\ppcs201606\" />
+    <Folder Include="download\ppcs201612\" />
+    <Folder Include="download\ukm2\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50247</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

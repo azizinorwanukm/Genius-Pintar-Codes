@@ -1,0 +1,1479 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UKM3
+</name>
+</assembly>
+<members>
+<member name="T:UKM3.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UKM3.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:UKM3.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:UKM3.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:UKM3.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:UKM3.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:UKM3.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:UKM3.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:UKM3.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:UKM3.admin._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._lblUserType1">
+<summary>
+lblUserType1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._lblLoginID">
+<summary>
+lblLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._lblFullname">
+<summary>
+lblFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._lblUserType">
+<summary>
+lblUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._RaPCs_masukmarkah">
+<summary>
+RaPCs_masukmarkah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._Kpp_masukmarkah">
+<summary>
+Kpp_masukmarkah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._Ppcs_masukmarkah">
+<summary>
+Ppcs_masukmarkah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._Ta_ppcs">
+<summary>
+Ta_ppcs control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.admin._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kelas_courseView._txtCourseCode">
+<summary>
+txtCourseCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kelas_courseView._txtCourseNameBM">
+<summary>
+txtCourseNameBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kelas_List._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kelas_List._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._ddlSession">
+<summary>
+ddlSession control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._ddlKodKelas">
+<summary>
+ddlKodKelas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._ddlJantina">
+<summary>
+ddlJantina control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._txtsearch">
+<summary>
+txtsearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._btnSimpan">
+<summary>
+btnSimpan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection1._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._ddlSession">
+<summary>
+ddlSession control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._ddlKodKelas">
+<summary>
+ddlKodKelas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._ddlJantina">
+<summary>
+ddlJantina control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._txtsearch">
+<summary>
+txtsearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._btnSimpan">
+<summary>
+btnSimpan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection1._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List._lblUserType">
+<summary>
+lblUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List._btnRefresh">
+<summary>
+btnRefresh control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._ddlSession">
+<summary>
+ddlSession control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._ddlPpcsDate">
+<summary>
+ddlPpcsDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._txtsearch">
+<summary>
+txtsearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_prepostMark._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kelas_List1._kelas_courseView">
+<summary>
+kelas_courseView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kelas_List1._kelas_List">
+<summary>
+kelas_List control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_masukmarkah._kpp_studentlist_checklist">
+<summary>
+kpp_studentlist_checklist control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._ddlSession">
+<summary>
+ddlSession control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._ddlKodKelas">
+<summary>
+ddlKodKelas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._ddlJantina">
+<summary>
+ddlJantina control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._txtsearch">
+<summary>
+txtsearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._lblsahinfo">
+<summary>
+lblsahinfo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._btnSah">
+<summary>
+btnSah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._lblSah">
+<summary>
+lblSah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._lblNama">
+<summary>
+lblNama control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._lblMykad">
+<summary>
+lblMykad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._lblKodKelas">
+<summary>
+lblKodKelas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._ddlYear">
+<summary>
+ddlYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._InfoTable">
+<summary>
+InfoTable control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._lbl_text">
+<summary>
+lbl_text control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._txtQuestion15">
+<summary>
+txtQuestion15 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._txtPencapaian">
+<summary>
+txtPencapaian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._rbl_sokong">
+<summary>
+rbl_sokong control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._btnSimpan">
+<summary>
+btnSimpan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._btnKembali">
+<summary>
+btnKembali control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._btnSahkan">
+<summary>
+btnSahkan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._table_msg">
+<summary>
+table_msg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentlist_checklist._lblMsg_invi">
+<summary>
+lblMsg_invi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_default._kpp_studentlist">
+<summary>
+kpp_studentlist control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._txtLoginID">
+<summary>
+txtLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._lbl15_instruction">
+<summary>
+lbl15_instruction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._txtPwd">
+<summary>
+txtPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._btnLogin">
+<summary>
+btnLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._btnBackToUkm3">
+<summary>
+btnBackToUkm3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.login_trail._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.kpp_studentselection._kpp_studentselection">
+<summary>
+kpp_studentselection control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_masukmarkah._ppcs_studentlist_checklist">
+<summary>
+ppcs_studentlist_checklist control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._ddlSession">
+<summary>
+ddlSession control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._txtsearch">
+<summary>
+txtsearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._btnSah">
+<summary>
+btnSah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._ddlYear">
+<summary>
+ddlYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._datrespondent_kecekapan">
+<summary>
+datrespondent_kecekapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._datrespondent_komunikasi">
+<summary>
+datrespondent_komunikasi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._datrespondent_kepimpinan">
+<summary>
+datrespondent_kepimpinan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._InfoTable">
+<summary>
+InfoTable control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._txtComment">
+<summary>
+txtComment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._txtPencapaian">
+<summary>
+txtPencapaian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._rbl_sokong">
+<summary>
+rbl_sokong control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._btnSimpan">
+<summary>
+btnSimpan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._btnSahkan">
+<summary>
+btnSahkan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._table_msg">
+<summary>
+table_msg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_studentlist_checklist._lblMsg_invi">
+<summary>
+lblMsg_invi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ppcs_default._ppcs_studentlist">
+<summary>
+ppcs_studentlist control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.ra_studentselection._ra_studentselection">
+<summary>
+ra_studentselection control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_masukmarkah._rappcs_studentlist_checklist">
+<summary>
+rappcs_studentlist_checklist control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._ddlSession">
+<summary>
+ddlSession control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._ddlKodKelas">
+<summary>
+ddlKodKelas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._ddlJantina">
+<summary>
+ddlJantina control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._txtsearch">
+<summary>
+txtsearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._lblsahinfo">
+<summary>
+lblsahinfo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._btnSah">
+<summary>
+btnSah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._lblSah">
+<summary>
+lblSah control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._lblNama">
+<summary>
+lblNama control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._lblMykad">
+<summary>
+lblMykad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._lblKodKelas">
+<summary>
+lblKodKelas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._ddlYear">
+<summary>
+ddlYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._InfoTable">
+<summary>
+InfoTable control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._txtComment">
+<summary>
+txtComment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._txtPencapaian">
+<summary>
+txtPencapaian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._rbl_sokong">
+<summary>
+rbl_sokong control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._btnSimpan">
+<summary>
+btnSimpan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._btnKembali">
+<summary>
+btnKembali control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._btnSahkan">
+<summary>
+btnSahkan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._table_msg">
+<summary>
+table_msg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_studentlist_checklist._lblMsg_invi">
+<summary>
+lblMsg_invi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.rappcs_default._rappcs_studentlist">
+<summary>
+rappcs_studentlist control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3._default._login_trail">
+<summary>
+login_trail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.Site1._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.Site1._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.Site1._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.Site1._lbl_user">
+<summary>
+lbl_user control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.Site1._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.Site1._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.student_List1._student_List">
+<summary>
+student_List control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.subject_List1._student_List">
+<summary>
+student_List control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM3.tappcs_studentlist._tappcs_prepostMark">
+<summary>
+tappcs_prepostMark control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="popup.master.vb" Inherits="permatapintar.popup3" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Program Perkhemahan Cuti Sekolah</title>
+    <meta content="FREE Marketplace" name="iMarketplace" />
+    <meta content="Education, Pelajaran, UKM, Online Test, EQ, IQ, Test," name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+        function popitup(url) {
+            newwindow = window.open(url, 'name', 'top=200,left=200,height=350,width=600');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+
+        function popitupEx(url) {
+            newwindow = window.open(url, 'name', 'top=200,left=200,height=600,width=800');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+
+        function clickclear(thisfield, defaulttext) {
+            if (thisfield.value == defaulttext) {
+                thisfield.value = "";
+            }
+        }
+
+        function clickrecall(thisfield, defaulttext) {
+            if (thisfield.value == "") {
+                thisfield.value = defaulttext;
+            }
+        }
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+    <table class="fbheader_menu" width="100%" border="0px">
+        <tr>
+            <td style="width: 30%;">
+                :: <asp:Label ID="lblUserType" runat="server" Text=""></asp:Label> ::
+            </td>
+            <td style="width: 70%;">
+                &nbsp;Email :<asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0px">
+        <tr>
+            <td style="width: 100%; vertical-align: top;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">
+                <table width="100%" border="0px">
+                    <tr>
+                        <td class="fbsection_sap">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Designed and Developed ARAKEN SDN. BHD. 2010
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

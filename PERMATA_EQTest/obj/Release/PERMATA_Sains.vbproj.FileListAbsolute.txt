@@ -1,0 +1,9 @@
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\bin\PERMATA_Sains.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\bin\PERMATA_Sains.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\bin\PERMATA_Sains.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\bin\PERMATA_Sains.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\obj\Release\PERMATA_Sains.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\obj\Release\PERMATA_Sains.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\obj\Release\PERMATA_Sains.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\obj\Release\PERMATA_Sains.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Sains\obj\Release\PERMATA_Sains.pdb

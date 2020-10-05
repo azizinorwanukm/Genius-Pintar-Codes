@@ -1,0 +1,3 @@
+c:\users\azizi\onedrive\documents\visual studio 2017\Projects\PERMATApintar_UKM3\PERMATApintar_UKM3\obj\Debug\PERMATApintar_UKM3.Resources.resources
+c:\users\azizi\onedrive\documents\visual studio 2017\Projects\PERMATApintar_UKM3\PERMATApintar_UKM3\obj\Debug\PERMATApintar_UKM3.vbproj.GenerateResource.Cache
+c:\users\azizi\onedrive\documents\visual studio 2017\Projects\PERMATApintar_UKM3\PERMATApintar_UKM3\obj\Debug\PERMATApintar_UKM3.xml

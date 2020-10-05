@@ -1,0 +1,283 @@
+﻿
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #d58c00;
+    padding: 0;
+    margin: 0;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: #808080;
+        outline: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    a.discrete {
+        text-decoration: none;
+        color: #808080;
+        padding: 0;
+        margin: 0;
+    }
+
+        a.discrete:hover {
+            text-decoration: underline;
+            color: #808080;
+            border-bottom: 0;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+    a.title {
+        text-decoration: none;
+        color: #a99570;
+        padding: 0;
+        margin: 0;
+    }
+
+        a.title:hover {
+            text-decoration: none;
+            color: #a99570;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+h1 {
+    font-family: georgia, serif;
+    font-size: 7em;
+    font-weight: 100;
+    line-height: 65px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+dfn {
+    font-size: .7em;
+    font-style: normal;
+    line-height: 50px;
+}
+
+h2 {
+    font-family: georgia, serif;
+    font-size: 1.8em;
+    font-weight: 100;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+h3 {
+    font-family: georgia, serif;
+    font-size: 1.7em;
+    font-weight: 100;
+    line-height: 1em;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+
+
+#wrap {
+    width: 951px;
+    min-height: 500px;
+    height: auto !important;
+    height: 500px;
+    margin: 0 auto;
+}
+
+
+#header {
+    height: 145px;
+    background-image: url(imgs/header3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    padding: 140px 0 0 180px;
+}
+
+#content {
+    min-height: 250px;
+    height: auto !important;
+    height: 250px;
+    background-image: url(imgs/content.gif);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 40px 45px 0 45px;
+    margin: 0;
+}
+
+#menu {
+    float: left;
+    width: 16%;
+    padding: 0;
+    margin: 0;
+}
+
+    #menu p {
+        margin: 0 0 3px 0;
+    }
+
+.feed_mig {
+    float: left;
+    padding: 0;
+    margin: 1px 5px 0 0;
+}
+
+#menu ul {
+    list-style-type: none;
+    font-family: georgia, serif;
+    font-size: 1.1em;
+    padding: 0;
+    margin: 0 0 25px 0;
+}
+
+
+#menu li {
+    width: 140px;
+    line-height: 2.3em;
+    text-indent: 8px;
+    border-bottom: 1px dashed #d8d8d8;
+}
+
+
+    #menu li a {
+        padding: 0 0 0 15px;
+        background-image: url(imgs/dot_off.gif);
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+
+        #menu li a:hover {
+            padding: 0 0 0 15px;
+            background-image: url(imgs/dot.gif);
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+
+#main {
+    float: right;
+    width: 97%;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+
+.left {
+    float: left;
+    width: 61%;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main_content p {
+    text-align: justify;
+    margin: 0 0 10px 0;
+}
+
+
+.right {
+    float: right;
+    width: 34%;
+    padding: 0;
+    margin: 0;
+}
+
+    .right p {
+        margin: 0 0 10px 0;
+    }
+
+
+.three_columns {
+    clear: both;
+    text-align: justify;
+    padding: 10px 0 0 0;
+    margin: -40px 0 0 0;
+}
+
+
+    .three_columns p {
+        padding: 0 5px 0 5px;
+        margin: 0;
+    }
+
+
+.h3_foot {
+    background-image: url(imgs/h3_bg.gif);
+    background-repeat: repeat-x;
+    background-position: top center;
+    line-height: 1.5em;
+    text-align: center;
+    border-top: 1px solid #dbdbdb;
+}
+
+
+.two_left {
+    float: left;
+    width: 556px;
+}
+
+
+.foot_left {
+    float: left;
+    width: 250px;
+}
+
+
+.foot_mid {
+    float: right;
+    width: 250px;
+}
+
+
+.one_right {
+    float: right;
+    width: 29%;
+}
+
+
+.foot_right {
+    width: 250px;
+}
+
+
+#footer {
+    clear: both;
+    min-height: 75px;
+    height: auto !important;
+    height: 75px;
+    background-image: url(imgs/footer.gif);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 15px 45px 0 45px;
+    margin: 0;
+}
+
+
+.bottom {
+    text-align: center;
+    padding: 13px 0 0 0;
+    margin: 0;
+}
+
+
+#ffscrollbarfix {
+    border: 0;
+    position: absolute;
+    top: 0;
+    bottom: -0.1px;
+    width: 1em;
+    z-index: -1;
+}

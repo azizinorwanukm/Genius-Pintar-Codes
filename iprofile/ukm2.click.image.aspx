@@ -1,0 +1,90 @@
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="ukm2.click.image.aspx.vb" Inherits="permatapintar.ukm2_click_image" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <script type="text/javascript">
+        function clicked_on(strValue) {
+            aspnetForm.ctl00$ContentPlaceHolder1$Sel01.value = strValue;
+            document.onmousedown = CreateX;
+        }
+
+        function CreateX(e) {
+            //ASSIGN 0 or 1
+            var evt = e || window.event;
+            var evtTarget = evt.target || evt.srcElement;
+            //alert(evtTarget.id);
+
+            
+
+            //DISPLAY X
+            if ((evtTarget.id == "0") || (evtTarget.id == "1")) {
+                var the_element = document.getElementById("itemDiv01");
+                if (the_element !== null) {
+                    the_element.parentNode.removeChild(the_element);
+                }
+
+                var item = document.createElement('div');
+                item.id = 'itemDiv01'
+                var spaceNode = document.createTextNode('X');
+                item.appendChild(spaceNode);
+
+                startX = event.clientX;
+                startY = event.clientY;
+
+                item.className = "PictSel";
+                item.style.border = '0px';
+                item.style.position = 'absolute';
+                item.style.top = parseInt(startY) + parseInt(document.body.scrollTop) + parseInt(document.documentElement.scrollTop) + 'px';
+                item.style.left = parseInt(startX) + parseInt(document.body.scrollLeft) + parseInt(document.documentElement.scrollLeft) + 'px';
+                document.body.appendChild(item);
+
+                //To get the result
+                aspnetForm.ctl00$ContentPlaceHolder1$Sel01.value = evtTarget.id;
+            }
+        }
+
+    </script>
+
+    <map name="shapes" id="shapes" visible="false" style="border-style: none; border-color: White;">
+        <area onfocus="if(this.blur)this.blur()" class="mapnoborder" alt="X" shape="poly"
+            coords="110,195,160,195,160,245,110,220"
+            href="javascript:clicked_on('1');" id="1" />
+
+        <area onfocus="if(this.blur)this.blur()" class="mapnoborder" alt="X" shape="rect"
+            coords="0,0,400,400"
+            href="javascript:clicked_on('0');" id="0" />
+    </map>
+
+    <%--<a href="#">
+        <img src="images/logo.png" title="Araken I-PROFILE" alt="Araken I-PROFILE" width="400"
+            height="35" border="0" class="logo" /></a>--%>
+    <h1>Araken I-PROFILE</h1>
+
+    <h2>
+        <asp:Label ID="lblSample" runat="server" Text=""></asp:Label></h2>
+    <h2>
+        <asp:Label ID="ukm2_1100_header" runat="server" Text=""></asp:Label></h2>
+    <p>&nbsp;</p>
+
+    <asp:Label ID="lbl11_instruction_sample" runat="server" Text="Perhatikan gambar berikut. <b>Sila tunjuk dan klik pada bahagian yang tidak lengkap</b> untuk setiap paparan. Tanda X akan ditanda pada kawasan pilihan anda.<br/>
+        Ini adalah contoh dan latihan semata-mata, tiada permarkahan diambil."></asp:Label>
+
+    <table class="mytablemain">
+        <tr>
+            <td>
+                <div id="divPic">
+                    <div id="itemDiv01"></div>
+                    <img src="images/11.01.jpg" alt="pic1" style="cursor: default;" usemap="#shapes" border='0' />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="Sel01" runat="server" style="width: 10px;" /></td>
+        </tr>
+
+    </table>
+
+
+</asp:Content>

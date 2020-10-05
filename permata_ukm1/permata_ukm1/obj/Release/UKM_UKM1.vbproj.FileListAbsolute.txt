@@ -1,0 +1,13 @@
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\itextsharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\itextsharp.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\UKM_UKM1.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\UKM_UKM1.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\UKM_UKM1.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\UKM1.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\UKM1.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Release\UKM1.pdb

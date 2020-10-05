@@ -1,0 +1,878 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="KPP_MS.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="css/side_bar_frame.css">
+    <link rel="stylesheet" href="css/font_montserrat.css">
+    <link rel="stylesheet" href="css/font_awesome.css">
+    <link rel="stylesheet" href="css/plugin_export.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/jquerytable.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquerytable.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            -ms-overflow-style: none;
+        }
+
+        .ddl {
+            border-radius: 25px;
+        }
+
+        #testExam {
+            background-image: url("img/exam_transkrip_v13_2.jpg");
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
+        }
+
+        #testExamOfficial {
+            background-image: url("img/exam_official_v1.jpg");
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: none;
+        }
+
+
+
+        .w3-sidebar {
+            width: 180px;
+            background: #222;
+            color: white;
+            text-align: left
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 100%
+        }
+
+        .bootstrap-select .btn {
+            background-color: #ffffff;
+            border-style: solid;
+            border-width: 2px;
+            border-color: #b3b3ff;
+            color: black;
+            font-weight: 200;
+            font-size: 14px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        .bootstrap-select .dropdown-menu {
+            margin: 10px 0 0;
+        }
+
+        select::-ms-expand {
+            display: none;
+        }
+
+        .table-striped > tbody > tr:nth-child(odd) > td {
+            background-color: #dee4e5;
+        }
+
+        .senarai_pelajar {
+            text-align: left;
+            padding-left: 2%;
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .permata {
+            text-align: center;
+            width: 40%;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            margin-left: 15%
+        }
+
+        @media screen and (min-width: 801px) {
+            .messagealert {
+                width: 40%;
+                position: fixed;
+                bottom: 25px;
+                right: 0px;
+                z-index: 100000;
+                padding: 0;
+                font-size: 15px;
+            }
+
+            .sidenav {
+                height: 100%;
+                width: 15%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                overflow-x: scroll;
+                transition: 0.5s;
+            }
+
+                .sidenav a {
+                    font-size: 12px;
+                }
+
+            #main {
+                transition: margin-left .5s;
+                margin-left: 300px;
+                margin-right: 75px;
+            }
+
+            .font {
+                font-size: 12px
+            }
+
+            #tutupMenu {
+                display: none;
+            }
+
+            #header {
+                display: none
+            }
+
+            #mySidenav {
+                width: 250px;
+                height: 100%
+            }
+
+            #menu_smallScreen {
+                display: none
+            }
+
+            sidebar1 {
+                display: block
+            }
+
+            sidebar2 {
+                display: none
+            }
+
+            #mySidenav::-webkit-scrollbar {
+                display: none;
+            }
+
+
+            .GridPager {
+                padding: 2px;
+                margin: 2% auto;
+            }
+
+                .GridPager a {
+                    margin: auto 1%;
+                    border-radius: 50%;
+                    background-color: #444;
+                    padding: 5px 10px 5px 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    -moz-box-shadow: 1px 1px 1px #111;
+                    -webkit-box-shadow: 1px 1px 1px #111;
+                    box-shadow: 1px 1px 1px #111;
+                }
+
+                    .GridPager a:hover {
+                        background-color: #b1c9af;
+                        color: #fff;
+                    }
+
+                .GridPager span {
+                    background-color: #c6033e;
+                    color: #fff;
+                    -moz-box-shadow: 1px 1px 1px #111;
+                    -webkit-box-shadow: 1px 1px 1px #111;
+                    box-shadow: 1px 1px 1px #111;
+                    border-radius: 50%;
+                    padding: 5px 10px 5px 10px;
+                }
+
+            .blah {
+                Width: 200px;
+                Height: 150px;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .sidenav {
+                height: 100%;
+                width: 0%;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                overflow-x: scroll;
+                transition: 0.5s;
+            }
+
+            .messagealert {
+                width: 80%;
+                position: fixed;
+                bottom: 25px;
+                right: 0px;
+                z-index: 100000;
+                padding: 0;
+                font-size: 15px;
+            }
+
+            .sidenav a {
+                font-size: 2vw;
+            }
+
+            #main {
+                transition: margin-left .5s;
+                margin-left: 0;
+            }
+
+            #header {
+                display: block
+            }
+
+            #mySidenav {
+                height: 100%;
+                top: 15px;
+                left: -30px;
+                z-index: 100000;
+            }
+
+            #menu_smallScreen {
+                display: block
+            }
+
+            body::-webkit-scrollbar {
+                display: none;
+            }
+
+            #mySidenav::-webkit-scrollbar {
+                display: none;
+            }
+
+            .GridPager {
+                padding: 2px;
+                margin: 2% auto;
+            }
+
+                .GridPager a {
+                    margin: auto 1%;
+                    border-radius: 50%;
+                    background-color: #444;
+                    padding: 5px 10px 5px 10px;
+                    color: #fff;
+                    text-decoration: none;
+                    -moz-box-shadow: 1px 1px 1px #111;
+                    -webkit-box-shadow: 1px 1px 1px #111;
+                    box-shadow: 1px 1px 1px #111;
+                }
+
+                    .GridPager a:hover {
+                        background-color: #b1c9af;
+                        color: #fff;
+                    }
+
+                .GridPager span {
+                    background-color: #c6033e;
+                    color: #fff;
+                    -moz-box-shadow: 1px 1px 1px #111;
+                    -webkit-box-shadow: 1px 1px 1px #111;
+                    box-shadow: 1px 1px 1px #111;
+                    border-radius: 50%;
+                    padding: 5px 10px 5px 10px;
+                }
+
+            .gridViewRespond {
+                font-size: x-small;
+            }
+
+            .font {
+                font-size: 2vw
+            }
+
+            #tutupMenu {
+                display: block;
+            }
+
+            .blah {
+                Width: 100px;
+                Height: 50px;
+            }
+
+            i {
+                font-size: 2vw
+            }
+
+            sidebar1 {
+                display: none
+            }
+
+            sidebar2 {
+                display: block;
+            }
+        }
+
+        video {
+            width: 75%;
+            height: 50%;
+        }
+
+        #searchBTN {
+            display: inline-block;
+            float: right;
+        }
+
+        #chartdivLPE1, #chartdivLPE2, #chartdivLPE3, #chartdivLPE4, #chartdivLPPT3, #chartdivLPSPM {
+            width: 100%;
+            height: 300px;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        #chartdivMalayLanguage, #chartdivEnglishLanguage, #chartdivMathematic, #chartdivIslamicStudies_MoralValues, #chartdivHistory, #chartdivBiology,
+        #chartdivPhysics, #chartdivChemistry, #chartdivPhilosophy, #chartdivPhysicalEducation, #chartdivResearchSkill, #chartdivMusic, #chartdivArabLanguage,
+        #chartdivSelfDevelopment, #chartdivPerformingArts, #chartdivVisualArts, #chartdivEnterprenuership, #chartdivComputerProgramming, #chartdivEnglishLiterature,
+        #chartdivPsychology, #chartdivCitizenship, #chartdivIslamicStudies_MoralValues_AlquranSunnah, #chartdivEnglishLiterature1, #chartdivEnglishLiterature2,
+        #chartdivLinearAlgebra, #chartdivCalculus, #chartdivStatistic1, #chartdivStatistic2, #chartdivFranceLanguage, #chartdivMandarinLanguage {
+            width: 100%;
+            height: 300px;
+            align-items: center;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        function myDropOne() {
+            var x = document.getElementById("dropdown_one");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-hover-black";
+
+            } else {
+                x.className = x.className.replace(" w3-show", "w3-hide");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTwo() {
+            var x = document.getElementById("dropdown_two");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-hover-black";
+
+            } else {
+                x
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropThree() {
+            var x = document.getElementById("dropdown_three");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropFour() {
+            var x = document.getElementById("dropdown_four");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropFive() {
+            var x = document.getElementById("dropdown_five");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropSix() {
+            var x = document.getElementById("dropdown_six");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropSeven() {
+            var x = document.getElementById("dropdown_seven");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+        function myDropEight() {
+            var x = document.getElementById("dropdown_eight");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropEightOne() {
+            var x = document.getElementById("dropdown_eight_one");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropEightTwo() {
+            var x = document.getElementById("dropdown_eight_two");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropNine() {
+            var x = document.getElementById("dropdown_nine");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTen() {
+            var x = document.getElementById("dropdown_ten");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropEleven() {
+            var x = document.getElementById("dropdown_eleven");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTwelve() {
+            var x = document.getElementById("dropdown_twelve");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropThirdteen() {
+            var x = document.getElementById("dropdown_thirdteen");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTwentyOne() {
+            var x = document.getElementById("dropdown_twentyone");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTwentyTwo() {
+            var x = document.getElementById("dropdown_twentytwo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTwentyThree() {
+            var x = document.getElementById("dropdown_twentythree");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+    </script>
+
+    <script>
+        function openSideBar() {
+            document.getElementById("mySidenav").style.float = "left";
+            document.getElementById("mySidenav").style.width = "175px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <script type="text/javascript">
+
+        var clicked = false;
+        var data = '';
+
+        $(document).ready(function () {
+            data = document.getElementById('<%= hiddenData.ClientID %>').value;
+        });
+
+
+        function CheckBrowser() {
+            if (clicked == false) {
+                //Browser closed
+            }
+            else {
+                clicked = false;
+            }
+        }
+
+
+        function bodyUnload() {
+
+            if (clicked == false)//browser is closed
+            {
+                var request = GetRequest();
+
+                request.open("GET", "admin_CloseLogout.aspx?admin_ID=" + data + "", true);
+                request.send();
+
+            }
+        }
+
+        function GetRequest() {
+            var xmlhttp;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+
+            return xmlhttp;
+        }
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body style="background-color: #f2f2f2;" onunload="bodyUnload();" onclick="clicked=true;">
+    <form id="form1" runat="server">
+
+        <div id="header" style="background-color: #8c8c8c; width: 100%">
+            <asp:HyperLink ID="openMenu" runat="server" class="w3-bar-item w3-button" OnClick="openSideBar()"><i class="fa fa-align-justify w3-large w3-left"></i></asp:HyperLink>
+        </div>
+
+        <div id="mySidenav" class="sidenav w3-bar-block w3-small w3-center" style="margin-top: 30px; margin-left: 30px; height: 565px; overflow-y: scroll;">
+            <div style="border-radius: 25px; border: 5px solid #8c8c8c;">
+
+                <img src="img/permatapintar2.jpg" style="width: 100%; height: 17%; background-color: #f2f2f2" />
+
+                <div class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" style="text-align: left; background-color: #800000;">
+                    <asp:HyperLink ID="Home" runat="server" CssClass="w3-text-white">Home<i class="fa fa-home w3-large w3-right"></i></asp:HyperLink>
+                </div>
+
+                <div id="one" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropOne()" style="text-align: left; background-color: #800000; display: none">
+                    General Management <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-clipboard w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_one" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPeperiksaanPengurusanPeperiksaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Examination Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPeperiksaanPengurusanGred" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Grade Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPenilaian" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Assessment Management</asp:HyperLink>
+                </div>
+
+                <div id="two" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwo()" style="text-align: left; background-color: #800000; display: none">
+                    Student <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-child w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_two" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Courses Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengurusanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengurusanPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminCarianPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Search Student</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarPelajarBaru" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Student</asp:HyperLink>
+                    <asp:HyperLink ID="adminImportPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import Student</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarPenempatanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class & Course Placement</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarKehadiran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Attendance</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarKepastianKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Courses</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarKepastianKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Class</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarKepastianKokurikulum" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Cocurricular</asp:HyperLink>
+
+                    <asp:HyperLink ID="adminPelajarKepastianHostel" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Hostel</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarAgama" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Religion</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarDisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Discipline</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminDokumenPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Documents</asp:HyperLink>
+                </div>
+
+                <div id="three" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropThree()" style="text-align: left; background-color: #800000; display: none">
+                    Staff <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-group w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_three" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminCarianPengajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Search Staff</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarPengajarBaru" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Staff</asp:HyperLink>
+                    <asp:HyperLink ID="adminImportPengajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import Staff</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengajarPenempatanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class & Courses Placement</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengajarKepastianKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Course</asp:HyperLink>
+                </div>
+
+                <div id="twelve" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwelve()" style="text-align: left; background-color: #800000; display: none">
+                    Coordinator <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-group w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_twelve" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminDaftarKoordinator" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Coordinator</asp:HyperLink>
+                    <asp:HyperLink ID="adminViewKoordinator" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Coordinator</asp:HyperLink>
+                </div>
+
+                <div id="eleven" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropEleven()" style="text-align: left; background-color: #800000; display: none">
+                    Discipline <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-exclamation-triangle w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_eleven" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanDisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Discipline Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminConfigWarningLetter" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Warning Letters Management</asp:HyperLink>
+                    <asp:HyperLink ID="admineditdisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Case</asp:HyperLink>
+                    <asp:HyperLink ID="adminviewdisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Case</asp:HyperLink>
+                </div>
+
+                <div id="twentyone" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwentyOne()" style="text-align: left; background-color: #800000; display: none">
+                    Counselor <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-heartbeat w3-right w3-large"></i>
+                </div>
+                <div id="dropdown_twentyone" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminSenaraiKaunselorPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student List</asp:HyperLink>
+                    <asp:HyperLink ID="adminPerkembanganKendiri" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Self Development</asp:HyperLink>
+                    <asp:HyperLink ID="adminJatiDiri" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Personality Development</asp:HyperLink>
+                    <asp:HyperLink ID="adminPortfolio" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Portfolio</asp:HyperLink>
+                    <asp:HyperLink ID="adminAktivitiKounselor" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Counselling Activity</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengurusanBiasiswa" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Scholarship Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminBiasiswa" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Scholarship</asp:HyperLink>
+                    <asp:HyperLink ID="adminImportEksport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import/Export Result</asp:HyperLink>
+                    <asp:HyperLink ID="adminAlumni" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Alumni</asp:HyperLink>
+
+                </div>
+
+                <div id="twentytwo" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwentyTwo()" style="text-align: left; background-color: #800000; display: none">
+                    Research <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file-text w3-right w3-large"></i>
+                </div>
+                <div id="dropdown_twentytwo" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminDaftarKajianPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Student/Supervisor</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarKajianProjek" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Research Project/Field</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarKajianMentor" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Mentor</asp:HyperLink>
+                    <asp:HyperLink ID="adminViewKajian" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View List</asp:HyperLink>
+                </div>
+
+                <div id="four" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropFive()" style="text-align: left; background-color: #800000; display: none">
+                    Examination <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file-powerpoint-o w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_five" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminKemaskiniMarkah" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Update Academic Result</asp:HyperLink>
+                    <asp:HyperLink ID="adminKemaskiniMarkahKoko" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Update Co-curriculum Result</asp:HyperLink>
+                    <asp:HyperLink ID="adminPeperiksaanTranskrip" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Exam Transcript</asp:HyperLink>
+                    <asp:HyperLink ID="adminTranskripRasmi" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Official Transcript</asp:HyperLink>
+                    <asp:HyperLink ID="adminImportExport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import / Export Result </asp:HyperLink>
+                    <asp:HyperLink ID="admin_ExamImport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import GPA & CGPA</asp:HyperLink>
+                    <asp:HyperLink ID="adminImport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Import Previous Exam Data</asp:HyperLink>
+                </div>
+
+                <div id="five" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropSix()" style="text-align: left; background-color: #800000; display: none">
+                    Payment <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-cc-visa w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_six" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanPembayaran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Payment Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminTransaksiYuran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Information</asp:HyperLink>
+                    <asp:HyperLink ID="adminSemakYuran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Payment Information</asp:HyperLink>
+                </div>
+
+                <div id="six" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropSeven()" style="text-align: left; background-color: #800000; display: none">
+                    Hostel <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-building w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_seven" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanHostel" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Hostel Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarAsramaBaru" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Hostel</asp:HyperLink>
+                    <asp:HyperLink ID="adminPenempatanPelajarAsrama" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Placement</asp:HyperLink>
+                </div>
+
+                <div id="nine" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropThirdteen()" style="text-align: left; background-color: #800000; display: none">
+                    Co-Curricular <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-building w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_thirdteen" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanKokurikulum" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Co-Curricular Management</asp:HyperLink>
+                </div>
+
+                <div id="seven" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropEight()" style="text-align: left; background-color: #800000; display: none">
+                    Report <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_eight" class="w3-hide w3-black w3-card-4 font w3-text-black">
+                    <asp:HyperLink ID="adminLaporanPeperiksaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Examination Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPeperiksaanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class Examination Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPeperiksaanKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Courses Examination Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminCartaKedudukanPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Ranking List</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanKehadiran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Attendance Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanBayaran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Financial Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanUKM1" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">UKM1 History</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanUKM2" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">UKM2 History</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanUKM3" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">UKM3 History</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPPCS" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">PPCS History</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPCIS" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">PCIS History</asp:HyperLink>
+                </div>
+
+                <div id="twentythree" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwentyThree()" style="text-align: left; background-color: #800000; display: none">
+                    Alumni <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-graduation-cap w3-large w3-right"></i>
+                </div>
+                <%-- <div id="dropdown_twentythree" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminAlumniHistory" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">History</asp:HyperLink>
+                    <asp:HyperLink ID="adminAlumniMaklumatPembelajaran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Study Information</asp:HyperLink>
+                    <asp:HyperLink ID="adminAlumniMaklumatPekerjaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Occupation Information</asp:HyperLink>
+                </div>--%>
+
+                <div id="eight" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropNine()" style="text-align: left; background-color: #800000; display: none">
+                    Setting <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-wrench w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_nine" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminMastrerKonfigurasi" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Admin Configuration</asp:HyperLink>
+                    <asp:HyperLink ID="adminKonfigurasi" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">System Configuration</asp:HyperLink>
+                    <asp:HyperLink ID="adminUserAkses" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">User Access</asp:HyperLink>
+                    <asp:HyperLink ID="adminUserLogin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">User Login Trail</asp:HyperLink>
+                    <asp:HyperLink ID="adminTutorial" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Tutorial</asp:HyperLink>
+                </div>
+
+                <div class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTen()" style="text-align: left; background-color: #800000">
+                    Others <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-gear w3-large w3-right"></i>
+                </div>
+                <div id="dropdown_ten" class="w3-hide w3-white w3-card-4 font">
+
+                    <%-- <asp:HyperLink ID="adminImportStudent" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Temporary Import Student</asp:HyperLink>--%>
+                    <asp:HyperLink ID="adminKemaskiniProfil" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Update Profiles</asp:HyperLink>
+                    <asp:HyperLink ID="adminTukarKataLaluan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Update Pasword</asp:HyperLink>
+                    <asp:HyperLink ID="adminLogout" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Logout</asp:HyperLink>
+                </div>
+
+                <div id="tutupMenu">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-grey w3-border w3-padding-large w3-text-white font" onclick="closeNav()" style="text-align: left; background-color: #800000;">Close Menu
+                <i class="fa fa-close w3-right w3-large fa fa-fw"></i>
+                    </a>
+                </div>
+
+                <div id="testExam">
+                    <p></p>
+                </div>
+
+                <div id="testExamOfficial">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="main" class="w3-text-white" style="margin-top: 30px; height: 85%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <br />
+
+        <%--<asp:HiddenField ID="hiddenAccess" runat="server" />--%>
+        <asp:HiddenField ID="hiddenData" runat="server" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,520 @@
+.fbbody {
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 16px;
+    color: #333;
+    top: 0;
+}
+
+.fbbody a {
+        text-decoration: none;
+    }
+
+.fbbody a:active, .fbbody a:hover {
+            text-decoration: underline;
+        }
+
+.fbheader_title {
+    color: #900;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 0;
+    text-align: left;
+}
+
+.fbheader_title a {
+        color: #900;
+        text-decoration: none;
+        outline-style: none;
+        padding: 5px;
+    }
+
+.fbheader_title a:hover {
+            text-decoration: none;
+        }
+
+.fbheader_menu, .fbheader_menu td, .fbheader_menu tr {
+    border: 0;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #900;
+    color: #FFF;
+}
+
+.fbheader_menu a {
+        color: #FFF;
+        text-decoration: none;
+        outline-style: none;
+        padding: 5px;
+    }
+
+.fbheader_menu a:hover {
+            text-decoration: none;
+        }
+
+.fbheader_items {
+    background-color: #900;
+    color: #FFF;
+    padding: 5px 0 5px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbheader_items a {
+        color: #FFF;
+        text-decoration: none;
+        outline-style: none;
+        padding: 5px;
+    }
+
+.fbnav_header {
+    border: 0;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #CC6;
+    color: #FFF;
+}
+
+.fbnav_header a {
+        color: #FFF;
+        text-decoration: none;
+        outline-style: none;
+        padding: 5px;
+    }
+
+.fbnav_header a:hover {
+            background: #6D84B4;
+            padding: 5px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+.fbnav_items {
+    border-bottom: solid 1px #09F;
+    border-bottom-color: #6CF;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.fbnav_items a {
+        color: #000;
+        text-decoration: none;
+    }
+
+.fbnav_items a:hover {
+            text-decoration: none;
+        }
+
+.fbnav_items td:hover {
+        background-color: #CFF;
+    }
+
+.fbsection {
+    background-color: #FFF;
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+}
+
+.fbsection_header tr {
+    border: 0;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #CC6;
+    color: #000;
+}
+
+.fbsection_header td {
+    border: 0;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #CC6;
+    color: #000;
+}
+
+.fbsection_header a {
+    text-decoration: none;
+}
+
+.fbsection_title {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #000;
+}
+
+.fbsection_date {
+    text-align: left;
+    vertical-align: top;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.fbsection_sap {
+    border-bottom: dotted 1px #ccc;
+    vertical-align: middle;
+    padding: 0;
+    height: 0;
+}
+
+fbsection_normal {
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.fbsection_article {
+    text-align: left;
+    vertical-align: top;
+    font-size: 16px;
+}
+
+.fbsection_article a {
+        font-weight: 700;
+    }
+
+.fbsection_article a:hover {
+            text-decoration: none;
+        }
+
+.fbsection_article img {
+        text-align: left;
+        vertical-align: top;
+        background-color: #FFF;
+        border: 0;
+    }
+
+.fbaside_header {
+    border: 0;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #CC6;
+    color: #FFF;
+}
+
+.fbaside_header a, .fbaside_header a:hover {
+        text-decoration: none;
+    }
+
+.fbaside_image {
+    vertical-align: top;
+}
+
+.fbaside_items {
+    font-size: 16px;
+    vertical-align: middle;
+    border-bottom: solid 1px #09F;
+    border-bottom-color: #CCC;
+}
+
+.fbaside_tiny {
+    font-size: 10px;
+    color: #777;
+}
+
+.fbaside_sap {
+    border-bottom: solid 1px #ccc;
+    vertical-align: middle;
+    padding: 0;
+    height: 0;
+}
+
+.fbfooter {
+    border-top: solid 2px #900;
+}
+
+.fblogin_table {
+    background-color: Olive;
+    border: 1px solid #09F;
+    color: #FFF;
+    padding: 5px 0 5px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fblogin_table a {
+        color: #FFF;
+        text-decoration: none;
+        outline-style: none;
+        padding: 5px;
+    }
+
+    .fblogin_table a:hover {
+            padding: 5px;
+            text-decoration: underline;
+        }
+
+.fbform {
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+    border: solid 1px silver;
+    background-color: #eceff6;
+}
+
+.fbform_header tr {
+    border: 0;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #657383;
+    color: #000000;
+}
+
+.fbform_header td {
+    border: 0;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+    background: #E0E0E0;
+    color: #000000;
+}
+
+.fbform_header a {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.fbform_title td, .fbform_title tr {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: solid 1px;
+    padding: 8px 5px 8px 0;
+}
+
+.fbbutton {
+    border-left: 1px solid #D9DFEA;
+    border-right: 1px solid #0e1f5b;
+    border-top: 1px solid #D9DFEA;
+    border-bottom: 1px solid #0e1f5b;
+    padding: 1px 3px 1px 4px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #3b5998;
+    color: #fff;
+    height: 25px;
+}
+
+.fbbuttonnext, fbbuttoncancel {
+    background: #ddd;
+    color: #111;
+    border: 1px solid #666;
+    border-left-color: #ddd;
+    border-top-color: #ddd;
+}
+
+.fblabel_msg {
+    color: Red;
+    font-weight: 700;
+}
+
+.fblabel_view {
+    color: #000;
+    font-weight: 700;
+}
+
+.fbreadonly {
+    background-color: silver;
+}
+
+.fbform_sap {
+    border-bottom: solid 1px #ccc;
+    vertical-align: middle;
+    padding: 5px 0 0;
+}
+
+.error, .info, .success, .validation, .warning {
+    border: 1px solid;
+    margin: 10px 0;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+
+.info {
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url(img/info.png);
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url(img/success.png);
+}
+
+.warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url(img/warning.png);
+}
+
+.error {
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url(img/error.png);
+}
+
+.validation {
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url(img/validation.png);
+}
+
+.modal_bg {
+    background-color: Gray;
+}
+
+.popup_style {
+    font: 400 11px auto "Trebuchet MS",Verdana;
+    background-color: #fff;
+    color: #4f6b72;
+    padding: 6px;
+}
+
+.drag {
+    background-color: #ddd;
+    cursor: move;
+    border: solid 1px gray;
+}
+
+.lblQuestion {
+    font-weight: 700;
+    color: #000;
+    font-size: x-large;
+    font-style: normal;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.lblSelect {
+    font-weight: 700;
+    color: #000;
+    font-size: large;
+    font-style: normal;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.labelMsg {
+    font-weight: 700;
+    color: #03C;
+}
+
+.labelMsgRed {
+    font-weight: 700;
+    color: red;
+}
+
+.fbgreybox {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fbbluebox {
+    background-color: #eceff6;
+    border: 1px solid #d4dae8;
+    color: #333;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fbinfobox {
+    background-color: #fff9d7;
+    border: 1px solid #e2c822;
+    color: #333;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fberrorbox {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    color: #333;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.fbinstruction {
+    font-weight: 700;
+    color: #06C;
+    font-Size: 16px;
+}
+
+.fbform_msg tr
+{
+    border: 0px;
+    width: 100%;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    font-weight:normal;
+    text-align: left;
+    vertical-align: top;
+    background: #dedede; 
+    border-top:dotted 1px #ff3322;
+    color: #ff3322;
+    border-bottom:dotted 1px #ff3322;
+}
+
+.fbform_msg td
+{
+    border: 0px;
+    width: 100%;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: top;
+    background: #dedede; 
+    border-top:dotted 1px #ff3322;
+    color: #ff3322;
+    border-bottom:dotted 1px #ff3322;
+}
+
+

@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\permata_semak</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="asasi.semak.aspx">
+      <publishTime>04/14/2017 17:25:03</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>12/08/2009 10:05:04</publishTime>
+    </File>
+    <File Include="bin/UKM_SEMAKAN.dll">
+      <publishTime>12/29/2017 13:09:25</publishTime>
+    </File>
+    <File Include="bin/UKM_SEMAKAN.pdb">
+      <publishTime>12/29/2017 13:09:25</publishTime>
+    </File>
+    <File Include="bin/UKM_SEMAKAN.xml">
+      <publishTime>12/29/2017 13:09:25</publishTime>
+    </File>
+    <File Include="cert_pdf/1_SURAT_PELAJAR_010315030108.pdf">
+      <publishTime>12/21/2017 08:50:34</publishTime>
+    </File>
+    <File Include="cert_pdf/dumy.txt">
+      <publishTime>07/01/2013 19:12:42</publishTime>
+    </File>
+    <File Include="contactus.aspx">
+      <publishTime>07/19/2017 13:10:36</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>12/21/2017 00:54:39</publishTime>
+    </File>
+    <File Include="default.Master">
+      <publishTime>12/23/2015 12:27:36</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000536.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000537.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000538.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000539.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000540.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000541.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000542.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000543.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000544.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000545.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000546.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000547.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000548.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000549.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000550.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000551.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000552.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000553.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000554.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000555.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000556.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000557.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000558.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000559.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000560.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000561.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000562.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000563.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000564.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000565.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000566.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000567.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000568.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000569.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000570.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000571.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000572.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000573.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000574.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000575.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000576.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000577.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000578.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000579.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000580.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000581.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000582.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000583.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000584.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000585.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000586.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000587.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000588.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000589.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000590.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000591.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000592.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000593.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000594.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000595.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000596.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000597.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000598.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000599.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000600.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000601.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000602.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000603.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000604.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000605.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000606.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000607.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000608.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000609.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000610.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000611.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000612.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000613.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000614.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000615.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000616.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000617.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000618.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000619.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000620.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000621.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000622.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000623.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000624.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000625.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000626.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000627.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000628.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000629.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000630.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000631.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000632.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000633.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000634.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000635.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000636.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000637.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000638.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000639.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000640.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000641.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000642.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000643.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000644.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000645.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000646.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000647.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000648.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000649.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000650.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000651.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000652.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000653.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000654.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000655.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000656.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000657.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000658.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000659.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000660.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000661.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000662.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000663.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000664.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000665.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000666.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000667.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000668.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000669.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000670.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000671.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000672.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000673.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000674.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000675.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000676.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000677.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000678.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000679.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000680.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000681.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000682.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000683.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000684.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000685.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000686.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000687.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000688.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000689.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000690.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000691.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000692.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000693.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000694.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000695.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000696.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000697.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000698.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000699.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000700.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000701.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000702.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000703.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000704.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000705.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000706.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000707.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000708.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000709.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000710.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000711.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000712.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000713.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000714.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000715.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000716.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000717.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000718.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000719.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000720.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000721.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000722.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000723.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000724.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000725.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000726.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000727.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000728.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000729.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/2015surat_tawaran_kolej/M000730.pdf">
+      <publishTime>01/04/2015 20:47:00</publishTime>
+    </File>
+    <File Include="download/asasi2016/Lampiran_1_Tatacara_Pembayaran_Yuran.docx">
+      <publishTime>04/14/2016 08:03:48</publishTime>
+    </File>
+    <File Include="download/asasi2016/Lampiran_1_Tatacara_Pembayaran_Yuran.pdf">
+      <publishTime>04/14/2016 08:05:12</publishTime>
+    </File>
+    <File Include="download/asasi2016/Lampiran_2_Akuan_Pembayaran_Yuran.docx">
+      <publishTime>04/14/2016 08:03:51</publishTime>
+    </File>
+    <File Include="download/asasi2016/Lampiran_2_Akuan_Pembayaran_Yuran.pdf">
+      <publishTime>04/14/2016 08:05:48</publishTime>
+    </File>
+    <File Include="download/asasi2017/Lampiran_1_Tatacara_Pembayaran_Yuran_Pemprosesan_UKM_ASASI.pdf">
+      <publishTime>04/14/2017 16:36:30</publishTime>
+    </File>
+    <File Include="download/asasi2017/Lampiran_2_Akuan_Pembayaran_Yuran_UKM_ASASIpintar.pdf">
+      <publishTime>04/14/2017 16:36:49</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 1_Senarai Semak, Surat Tawaran dan Borang-Borang.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 2_Senarai Semak Dokumen.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran A - Surat Jawapan Penerimaan.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran B - Borang Kebenaran Mengikuti Program.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran C - Maklumat Pelajar.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran D - Borang Pemeriksaan Kesihatan.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran E - Akuan Pembayaran Yuran.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran E1 - Tatacara Pembayaran Yuran.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran E2 - Senarai Yuran Bayaran.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran F - Tawaran Kolej Kediaman.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/2015 Lampiran F1 - Pakaian dan Peralatan yang perlu di bawa oleh pelajar.pdf">
+      <publishTime>01/02/2015 09:22:00</publishTime>
+    </File>
+    <File Include="download/kolej2015/kolej_permatapintar2015.zip">
+      <publishTime>01/02/2015 10:44:16</publishTime>
+    </File>
+    <File Include="download/kolej2015/ORIENTATION TENTATIVE PROGRAMME 2015.pdf">
+      <publishTime>01/02/2015 10:40:58</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran A Jawapan Penerimaan Penolakan Kolej  2016.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran B - Borang Kebenaran Mengikuti Program.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran C - Maklumat Pelajar.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran D - Borang Laporan Pemeriksaan  Kesihatan.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran D1 Borang Perakuan Kebenaran Mendapatkan   Rawatan.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran E Akuan Pembayaran Yuran Pengajian Pelajar  Lama.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran E1 TATACARA_PEMBAYARAN_YURAN PELAJAR LAMA  .pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran E2 Senarai Yuran Pengajian Pelajar Lama.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Lampiran F Tawaran Kolej Kediaman 2016.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Senarai Semak Borang yg Perlu Diserahkan semasa sesi  Pendaftaran .pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/2016 Senarai Semakan Dokumen .pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/kolej2016.zip">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/kolej2016/Lampiran F1 Pakaian &amp; Peralatan yang Pelajar Perlu   Bawa.pdf">
+      <publishTime>12/23/2015 09:21:00</publishTime>
+    </File>
+    <File Include="download/kolej2018/ATURCARA PENDAFTARAN PELAJAR BARU 2018.pdf">
+      <publishTime>12/21/2017 23:14:28</publishTime>
+    </File>
+    <File Include="download/kolej2018/DOKUMEN PENDAFTARAN KOLEJ PERMATAPINTAR UKM.zip">
+      <publishTime>12/22/2017 01:02:14</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN  A JAWAPAN PENERIMAAN %40 PENOLAKAN.pdf">
+      <publishTime>12/21/2017 20:48:14</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN B BORANG KEBENARAN MENGIKUTI PROGRAM.pdf">
+      <publishTime>12/21/2017 20:50:16</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN C BORANG MAKLUMAT PELAJAR 2018.pdf">
+      <publishTime>12/21/2017 20:53:04</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN D LAPORAN PEMERIKSAAN KESIHATAN.pdf">
+      <publishTime>12/21/2017 20:59:48</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN E BORANG PERAKUAN KEBENARAN MENDAPATKAN RAWATAN.pdf">
+      <publishTime>12/21/2017 21:03:08</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN F AKUAN PEMBAYARAN YURAN PENGAJIAN PELAJAR BAHARU.pdf">
+      <publishTime>12/21/2017 21:18:44</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN F1 TATACARA PEMBAYARAN YURAN PELAJAR BAHARU.pdf">
+      <publishTime>12/21/2017 21:25:14</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN F2 SENARAI YURAN PENGAJIAN PELAJAR BAHARU.pdf">
+      <publishTime>12/21/2017 22:41:08</publishTime>
+    </File>
+    <File Include="download/kolej2018/LAMPIRAN G TAWARAN KOLEJ KEDIAMAN.pdf">
+      <publishTime>12/21/2017 22:58:32</publishTime>
+    </File>
+    <File Include="download/kolej2018/PAKAIAN DAN PERALATAN YANG PERLU DIBAWA.pdf">
+      <publishTime>12/21/2017 23:13:10</publishTime>
+    </File>
+    <File Include="download/kolej2018/SENARAI SEMAK BORANG_SERAH SEMASA PENDAFTARAN.pdf">
+      <publishTime>12/21/2017 23:12:24</publishTime>
+    </File>
+    <File Include="download/ppcs201505/1.SURAT PELAJAR.docx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/1.SURAT PELAJAR.pdf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/1.SURAT_PELAJAR.docx">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/1.SURAT_PELAJAR.pdf">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/2.SENARAI SEMAK.docx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/2.SENARAI SEMAK.pdf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/2.SENARAI_SEMAK.docx">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/2.SENARAI_SEMAK.pdf">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/3.BORANG A-JAWAPAN PENERIMAAN.docx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/3.BORANG A-JAWAPAN PENERIMAAN.pdf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/3.BORANG_A_JAWAPAN_PENERIMAAN.docx">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/3.BORANG_A_JAWAPAN_PENERIMAAN.pdf">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/4. POLISI DAN PERATURAN.docx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/4. POLISI DAN PERATURAN.pdf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/4.POLISI DAN PERATURAN.pdf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/4.POLISI_DAN_PERATURAN.docx">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/4.POLISI_DAN_PERATURAN.pdf">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/5.BORANG B - MAKLUMAT LENGKAP PELAJAR.docx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/5.BORANG B - MAKLUMAT LENGKAP PELAJAR.pdf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/5.BORANG_B_MAKLUMAT_LENGKAP_PELAJAR.docx">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/5.BORANG_B_MAKLUMAT_LENGKAP_PELAJAR.pdf">
+      <publishTime>03/28/2015 06:14:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/borangpcssesidisemberupdated.zip">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/fwdborangpcssesidisember2015.zip">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201505/PPCS201505.zip">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/2. SENARAI SEMAK.docx">
+      <publishTime>10/22/2015 10:09:48</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/3. POLISI DAN PERATURAN.docx">
+      <publishTime>10/22/2015 10:09:48</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/4. BORANG A - JAWAPAN PENERIMAAN.docx">
+      <publishTime>10/22/2015 10:09:48</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/5. BORANG B - MAKLUMAT LENGKAP PELAJAR.docx">
+      <publishTime>10/22/2015 10:09:48</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/6. BORANG C - PENGESAHAN PERJALANAN.docx">
+      <publishTime>10/22/2015 10:09:48</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/7. BORANG D - KEBENARAN RAWATAN PERUBATAN.docx">
+      <publishTime>10/22/2015 10:09:48</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/BorangPPCSdisember2015v2.rar">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs2015V2/BorangPPCSdisember2015v2.zip">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201606/ppcs201606_ALL.zip">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="download/ppcs201612/PPCS_DIS2016.zip">
+      <publishTime>10/07/2016 11:21:32</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/1 SENARAI SEMAK.pdf">
+      <publishTime>10/02/2017 11:37:54</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/2  BORANG A-JAWAPAN PENERIMAAN.pdf">
+      <publishTime>10/02/2017 11:37:58</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/3 POLISI DAN PERATURAN.pdf">
+      <publishTime>10/02/2017 11:38:01</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/4 BORANG B - MAKLUMAT LENGKAP PELAJAR.pdf">
+      <publishTime>10/02/2017 11:38:04</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/5 BORANG C - PENGESAHAN PERJALANAN.pdf">
+      <publishTime>10/02/2017 11:38:08</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/6 BORANG D - KEBENARAN RAWATAN PERUBATAN.pdf">
+      <publishTime>10/02/2017 11:38:10</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/PPCS_201712_UKM.zip">
+      <publishTime>10/03/2017 07:58:52</publishTime>
+    </File>
+    <File Include="download/ppcs201712/UKM/SURAT TAWARAN PPCS -ukm.docx">
+      <publishTime>10/02/2017 15:59:02</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/1. SENARAI SEMAK - ppcsusim.pdf">
+      <publishTime>10/02/2017 15:50:06</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/2 BORANG A-JAWAPAN PENERIMAAN-PENOLAKAN.pdf">
+      <publishTime>10/02/2017 15:50:10</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/3 POLISI DAN PERATURAN %281%29.pdf">
+      <publishTime>10/02/2017 15:50:13</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/4 BORANG B - MAKLUMAT LENGKAP PELAJAR %281%29.pdf">
+      <publishTime>10/02/2017 15:50:20</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/5  BORANG C - KEBENARAN RAWATAN PERUBATAN.pdf">
+      <publishTime>10/02/2017 15:50:24</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/PPCS_201712_USIM.zip">
+      <publishTime>10/06/2017 09:18:43</publishTime>
+    </File>
+    <File Include="download/ppcs201712/USIM/SURAT TAWARAN PPCS -usim %281%29.docx">
+      <publishTime>10/02/2017 15:56:29</publishTime>
+    </File>
+    <File Include="dummy.htm">
+      <publishTime>06/02/2014 22:47:38</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/17/2011 22:52:26</publishTime>
+    </File>
+    <File Include="images/adobe.png">
+      <publishTime>07/01/2016 07:47:42</publishTime>
+    </File>
+    <File Include="images/arrow.gif">
+      <publishTime>07/02/2010 17:45:40</publishTime>
+    </File>
+    <File Include="images/colbg.png">
+      <publishTime>07/02/2010 17:45:40</publishTime>
+    </File>
+    <File Include="images/get-adobe-reader.gif">
+      <publishTime>07/01/2016 07:48:16</publishTime>
+    </File>
+    <File Include="images/img01.gif">
+      <publishTime>01/09/2012 14:46:02</publishTime>
+    </File>
+    <File Include="images/img02.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img03.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img04.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img05.gif">
+      <publishTime>01/10/2012 15:19:10</publishTime>
+    </File>
+    <File Include="images/img06.gif">
+      <publishTime>01/09/2012 14:49:08</publishTime>
+    </File>
+    <File Include="images/img07.gif">
+      <publishTime>01/09/2012 14:49:12</publishTime>
+    </File>
+    <File Include="images/pp-logo.png">
+      <publishTime>05/30/2013 09:16:44</publishTime>
+    </File>
+    <File Include="images/ppcs-readme.png">
+      <publishTime>10/08/2013 09:19:12</publishTime>
+    </File>
+    <File Include="img/error.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/info.png">
+      <publishTime>10/10/2007 01:41:56</publishTime>
+    </File>
+    <File Include="img/validation.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/warning.png">
+      <publishTime>10/10/2007 01:44:54</publishTime>
+    </File>
+    <File Include="kolej.aspx">
+      <publishTime>01/04/2015 21:10:22</publishTime>
+    </File>
+    <File Include="kolej.result.aspx">
+      <publishTime>12/23/2017 08:11:37</publishTime>
+    </File>
+    <File Include="kolej_asas1.aspx">
+      <publishTime>12/20/2017 17:36:42</publishTime>
+    </File>
+    <File Include="kolej_semak.aspx">
+      <publishTime>12/23/2017 08:10:08</publishTime>
+    </File>
+    <File Include="kolej_tahap1.aspx">
+      <publishTime>12/29/2014 12:24:54</publishTime>
+    </File>
+    <File Include="mycontrol/kolej_info.ascx">
+      <publishTime>12/23/2015 09:24:06</publishTime>
+    </File>
+    <File Include="mycontrol/kolej_list.ascx">
+      <publishTime>12/23/2015 12:25:22</publishTime>
+    </File>
+    <File Include="mycontrol/ppcs_info.ascx">
+      <publishTime>07/18/2017 18:21:17</publishTime>
+    </File>
+    <File Include="mycontrol/ppcs_list.ascx">
+      <publishTime>12/23/2015 12:26:14</publishTime>
+    </File>
+    <File Include="mycontrol/state_pusatujianstatus.ascx">
+      <publishTime>06/16/2015 08:47:28</publishTime>
+    </File>
+    <File Include="mycontrol/ukm2_list.ascx">
+      <publishTime>12/23/2015 12:26:14</publishTime>
+    </File>
+    <File Include="mystyle.css">
+      <publishTime>12/23/2015 12:28:38</publishTime>
+    </File>
+    <File Include="pelajar.result.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="pic/4p-sijil-bottom.png">
+      <publishTime>01/01/2014 08:02:52</publishTime>
+    </File>
+    <File Include="pic/4p-top-pdf.png">
+      <publishTime>01/01/2014 07:28:46</publishTime>
+    </File>
+    <File Include="pic/Background_kolej.png">
+      <publishTime>12/22/2017 17:23:58</publishTime>
+    </File>
+    <File Include="pic/header2017.png">
+      <publishTime>09/29/2017 14:14:58</publishTime>
+    </File>
+    <File Include="pic/header2017v2.png">
+      <publishTime>09/29/2017 14:56:10</publishTime>
+    </File>
+    <File Include="pic/sijil-bottom.png">
+      <publishTime>07/18/2017 18:57:21</publishTime>
+    </File>
+    <File Include="pic/sijil-bottomv1.png">
+      <publishTime>07/03/2013 07:31:44</publishTime>
+    </File>
+    <File Include="pic/sijil-top-pdf.jpg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="pic/sijil-top-pdf.jpg.org">
+      <publishTime>02/04/2014 12:40:42</publishTime>
+    </File>
+    <File Include="pic/sijil-top-pdf.png">
+      <publishTime>07/18/2017 18:52:40</publishTime>
+    </File>
+    <File Include="pic/sijil-top.png">
+      <publishTime>02/04/2014 12:37:34</publishTime>
+    </File>
+    <File Include="pic/yuran-2016.png">
+      <publishTime>03/31/2016 22:50:36</publishTime>
+    </File>
+    <File Include="pic/yuran_ppcs_dis_2016.png">
+      <publishTime>10/07/2016 15:32:50</publishTime>
+    </File>
+    <File Include="ppcs.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ppcs.result.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ppcs.semak.aspx">
+      <publishTime>10/07/2017 07:28:23</publishTime>
+    </File>
+    <File Include="ppcs.ukm.aspx">
+      <publishTime>10/06/2017 08:09:46</publishTime>
+    </File>
+    <File Include="ppcs.usim.aspx">
+      <publishTime>10/06/2017 09:19:57</publishTime>
+    </File>
+    <File Include="ppcs_d.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ppcs_m.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ppmt.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ppmt.semak.aspx">
+      <publishTime>10/17/2016 12:19:38</publishTime>
+    </File>
+    <File Include="saringan.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="saringan.semak.aspx">
+      <publishTime>05/04/2016 23:51:03</publishTime>
+    </File>
+    <File Include="sekolah.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ukm2.asasi.semak.aspx">
+      <publishTime>01/07/2016 07:09:31</publishTime>
+    </File>
+    <File Include="ukm2.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="ukm2.result.aspx">
+      <publishTime>02/09/2015 13:47:22</publishTime>
+    </File>
+    <File Include="ukm2.semak.aspx">
+      <publishTime>07/26/2016 18:50:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/27/2017 21:13:16</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

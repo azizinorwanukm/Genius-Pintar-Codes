@@ -1,0 +1,1007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="lbldefault_01" xml:space="preserve">
+    <value>The PERMATApintar Emotional Quotient Test. is an assessment feedback process to assess the competence of the assessee on a number of core competencies. This assessment is to be based on your own personal experience with the assessee. Please provide your honest assessment and do not discuss your assessment with others or seek the view of others on the assessment you should give.  
+&lt;p&gt;The statements below are the behavioral descriptors of the core competencies to be assessed. Please use the scale below to provide your assessment. If you feel you cannot provide an assessment on any of the following behaviours, just choose the response “0”.  The assessment you provide will be treated as confidential. &lt;/p&gt;
+</value>
+  </data>
+  <data name="lblDomain01" xml:space="preserve">
+    <value>PERMATApintar Emotional Quotient Test</value>
+  </data>
+  <data name="lblDomain02" xml:space="preserve">
+    <value>PERMATApintar Emotional Quotient Test</value>
+  </data>
+  <data name="lblDomain03" xml:space="preserve">
+    <value>PERMATApintar Emotional Quotient Test</value>
+  </data>
+  
+  <data name="lblInstruction" xml:space="preserve">
+    <value>Please look at the statement and give your honest response. There is no wrong or right statement.</value>
+  </data>
+  <data name="lblFeedback" xml:space="preserve">
+    <value>Please provide your feedback on the improvements that you believe the assessee should undertake.</value>
+  </data>
+  <data name="lblYes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>No</value>
+  </data>
+
+  <data name="lblD1Level1" xml:space="preserve">
+    <value>Strongly Disagree</value>
+  </data>
+  <data name="lblD1Level2" xml:space="preserve">
+    <value>Disagree</value>
+  </data>
+  <data name="lblD1Level3" xml:space="preserve">
+    <value>Unsure</value>
+  </data>
+  <data name="lblD1Level4" xml:space="preserve">
+    <value>Agree</value>
+  </data>
+  <data name="lblD1Level5" xml:space="preserve">
+    <value>Strongly Agree</value>
+  </data>
+
+  <data name="lblD2Level1" xml:space="preserve">
+    <value>I do not want to beinvolved in this team at all</value>
+  </data>
+  <data name="lblD2Level2" xml:space="preserve">
+    <value>I would not enjoy working on this team at all</value>
+  </data>
+  <data name="lblD2Level3" xml:space="preserve">
+    <value>I would enjoy working on this team a little</value>
+  </data>
+  <data name="lblD2Level4" xml:space="preserve">
+    <value>I would enjoy working on this team a lot</value>
+  </data>
+  <data name="lblD2Level5" xml:space="preserve">
+    <value>I would really enjoy working on this team</value>
+  </data>
+
+  <data name="lblD3Level1" xml:space="preserve">
+    <value>I am not interested to learn about this topic at all</value>
+  </data>
+  <data name="lblD3Level2" xml:space="preserve">
+    <value>I would not enjoy learning about this topic at all</value>
+  </data>
+  <data name="lblD3Level3" xml:space="preserve">
+    <value>I would enjoy learning about this topic a little</value>
+  </data>
+  <data name="lblD3Level4" xml:space="preserve">
+    <value>I would enjoy learning about this topic a lot</value>
+  </data>
+  <data name="lblD3Level5" xml:space="preserve">
+    <value>I would enjoy learning about this topic a whole lot
+</value>
+  </data>
+
+  <data name="lblD4Level1" xml:space="preserve">
+    <value>I am not interested in the job at all</value>
+  </data>
+  <data name="lblD4Level2" xml:space="preserve">
+    <value>I would not enjoy having this job at all</value>
+  </data>
+  <data name="lblD4Level3" xml:space="preserve">
+    <value>I would enjoy having this job a little</value>
+  </data>
+  <data name="lblD4Level4" xml:space="preserve">
+    <value>I would enjoy having this job a lot</value>
+  </data>
+  <data name="lblD4Level5" xml:space="preserve">
+    <value>I would enjoy having this job a whole lot
+</value>
+  </data>
+
+
+  <data name="lnkNext" xml:space="preserve">
+    <value>Continue...</value>
+  </data>
+  <data name="lblNext" xml:space="preserve">
+    <value>Please answer all the questions. Click [Next] to proceed.</value>
+  </data>
+  <data name="lblDone" xml:space="preserve">
+    <value>Please answer all the questions. Click [Submit] to complete the assessment.</value>
+  </data>
+  <data name="lblDoneOptional" xml:space="preserve">
+    <value>Click [Submit] to complete the assessment.</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Next..</value>
+  </data>
+  <data name="btnPrev" xml:space="preserve">
+    <value>..Previous</value>
+  </data>
+  <data name="btnDone" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="lblDescriptor" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="lblRating" xml:space="preserve">
+    <value>Your rating</value>
+  </data>
+  <data name="lblAnswer" xml:space="preserve">
+    <value>Your answer</value>
+  </data>
+  
+  <data name="lblRemarks" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+
+  <!--1.Interest in Science Activities -->
+  <data name="lblQ001" xml:space="preserve">
+    <value>I can forgive myself for making a mistake.</value>
+  </data>
+  <data name="lblQ002" xml:space="preserve">
+    <value>My emotion is not continuously affected by my mistake. </value>
+  </data>
+  <data name="lblQ003" xml:space="preserve">
+    <value>I know when I think negatively about myself (example: no confidence, incompetent, not beautiful, not motivated etc.)</value>
+  </data>
+  <data name="lblQ004" xml:space="preserve">
+    <value>I can tell others precisely what I have gone through. </value>
+  </data>
+  <data name="lblQ005" xml:space="preserve">
+    <value>I can sense changes in my feelings when it is stimulated by an event(s). </value>
+  </data>
+  <data name="lblQ006" xml:space="preserve">
+    <value>I can develop behaviors that are more effective. </value>
+  </data>
+  <data name="lblQ007" xml:space="preserve">
+    <value>I am confident that others will accept my ideas.</value>
+  </data>
+  <data name="lblQ008" xml:space="preserve">
+    <value>I am what I intended to be. </value>
+  </data>
+  <data name="lblQ009" xml:space="preserve">
+    <value>I am not ashamed of sharing my ideas even when it is different from others. </value>
+  </data>
+  <data name="lblQ010" xml:space="preserve">
+    <value>I can execute what I have planned.</value>
+  </data>
+  <data name="lblQ011" xml:space="preserve">
+    <value>I feel satisfied when I know my own strengths. </value>
+  </data>
+  <data name="lblQ012" xml:space="preserve">
+    <value>I know the effect of my behaviors on others. </value>
+  </data>
+  <data name="lblQ013" xml:space="preserve">
+    <value>I can feel changes in my feelings when I work with purpose. </value>
+  </data>
+  <data name="lblQ014" xml:space="preserve">
+    <value>I always begin any job with good intention. </value>
+  </data>
+  <data name="lblQ015" xml:space="preserve">
+    <value>I can speak in public without feeling jumpy.</value>
+  </data>
+  <data name="lblQ016" xml:space="preserve">
+    <value>I want to change my lifestyle for the better.</value>
+  </data>
+  <data name="lblQ017" xml:space="preserve">
+    <value>It is important to finish what I have started.</value>
+  </data>
+  <data name="lblQ018" xml:space="preserve">
+    <value>I can make my friends happy. </value>
+  </data>
+  <data name="lblQ019" xml:space="preserve">
+    <value>I always do what I intended to do. </value>
+  </data>
+  <data name="lblQ020" xml:space="preserve">
+    <value>I always do things with purpose. </value>
+  </data>
+  <data name="lblQ021_0" xml:space="preserve">
+    <value>Setiap foto dibawah menggambarkan emosi tertentu. Tanpa mengambilkira jatina, gambarkan individu yang anda nilai adalah individu dalam foto tersebut. Gambarkan individu tersebut berada dalam pelbagai situasi yang melahirkan beberapa ekspresi wajah dan gambaran emosi yang boleh anda ingat apabila anda berinteraksi dengannya. Nyatakan tahap emosi beliau bagi setiap jenis ekspresi emosi dengan memilih butang radio yang disediakan. Setiap nombor menggambarkan tahap keamatan bagi emosi yang anda dapat perhatikan terhadap individu yang anda nilai. </value>
+  </data>
+  <data name="lblQ021" xml:space="preserve">
+    <value>1 - Not Angry at All | 2 - Not Angry | 3 - Not Sure | 4 - Angry | 5 - Very Angry.</value>
+  </data>
+  <data name="lblQ021_1" xml:space="preserve">
+    <value> Not Angry at All </value>
+  </data>
+  <data name="lblQ021_2" xml:space="preserve">
+    <value> Not Angry </value>
+  </data>
+  <data name="lblQ021_3" xml:space="preserve">
+    <value> Not Sure </value>
+  </data>
+  <data name="lblQ021_4" xml:space="preserve">
+    <value> Angry </value>
+  </data>
+  <data name="lblQ021_5" xml:space="preserve">
+    <value> Very Angry </value>
+  </data>
+  <data name="lblQ022" xml:space="preserve">
+    <value>1 - Not Amazed at All | 2 - Not Amazed | 3 - Not Sure | 4 - Amazed | 5 - Very Amazed. </value>
+  </data>
+  <data name="lblQ022_1" xml:space="preserve">
+    <value> Not Amazed at All </value>
+  </data>
+  <data name="lblQ022_2" xml:space="preserve">
+    <value> Not Amazed </value>
+  </data>
+  <data name="lblQ022_3" xml:space="preserve">
+    <value> Not Sure </value>
+  </data>
+  <data name="lblQ022_4" xml:space="preserve">
+    <value> Amazed </value>
+  </data>
+  <data name="lblQ022_5" xml:space="preserve">
+    <value> Very Amazed </value>
+  </data>
+  <data name="lblQ023" xml:space="preserve">
+    <value>1 - Not Happy at All | 2 - Not Happy | 3 - Not sure | 4 - Happy | 5 - Very Happy. </value>
+  </data>
+  <data name="lblQ023_1" xml:space="preserve">
+    <value> Not Happy at All </value>
+  </data>
+  <data name="lblQ023_2" xml:space="preserve">
+    <value> Not Happy </value>
+  </data>
+  <data name="lblQ023_3" xml:space="preserve">
+    <value> Not Sure </value>
+  </data>
+  <data name="lblQ023_4" xml:space="preserve">
+    <value> Happy </value>
+  </data>
+  <data name="lblQ023_5" xml:space="preserve">
+    <value> Very Happy </value>
+  </data>
+  <data name="lblQ024" xml:space="preserve">
+    <value>1 - Not Worried at All | 2 - Not Worried | 3 - Not Sure | 4 - Worried | 5 - Very Worried.</value>
+  </data>
+  <data name="lblQ024_1" xml:space="preserve">
+    <value> Not Worried at All </value>
+  </data>
+  <data name="lblQ024_2" xml:space="preserve">
+    <value> Not Worried </value>
+  </data>
+  <data name="lblQ024_3" xml:space="preserve">
+    <value> Not Sure </value>
+  </data>
+  <data name="lblQ024_4" xml:space="preserve">
+    <value> Worried </value>
+  </data>
+  <data name="lblQ024_5" xml:space="preserve">
+    <value> Very Worried </value>
+  </data>
+  <data name="lblQ025" xml:space="preserve">
+    <value>1 - Not Sad at All | 2 - Not Sad | 3 - Not Sure | 4 - Sad | 5 - Very Sad.</value>
+  </data>
+  <data name="lblQ025_1" xml:space="preserve">
+    <value> Not Sad at All </value>
+  </data>
+  <data name="lblQ025_2" xml:space="preserve">
+    <value> Not Sad </value>
+  </data>
+  <data name="lblQ025_3" xml:space="preserve">
+    <value> Not Sure </value>
+  </data>
+  <data name="lblQ025_4" xml:space="preserve">
+    <value> Sad </value>
+  </data>
+  <data name="lblQ025_5" xml:space="preserve">
+    <value> Very Sad </value>
+  </data>
+  <data name="lblQ026" xml:space="preserve">
+    <value>I get angry easily when scolded. </value>
+  </data>
+  <data name="lblQ027" xml:space="preserve">
+    <value>I always do what I say. </value>
+  </data>
+  <data name="lblQ028" xml:space="preserve">
+    <value>I am composed even when others are angry at me.</value>
+  </data>
+  <data name="lblQ029" xml:space="preserve">
+    <value>I do not like to use the same method/procedure even when it produces better results.</value>
+  </data>
+  <data name="lblQ030" xml:space="preserve">
+    <value>I always try to complete all job assigned to me.</value>
+  </data>
+  <data name="lblQ031" xml:space="preserve">
+    <value>I can calm myself when in anger quickly.</value>
+  </data>
+  <data name="lblQ032" xml:space="preserve">
+    <value>I feel responsible in executing instructions given by my superiors.</value>
+  </data>
+  <data name="lblQ033" xml:space="preserve">
+    <value>I do not feel belittled/bad when my work is being criticized. </value>
+  </data>
+  <data name="lblQ034" xml:space="preserve">
+    <value>I act honestly.</value>
+  </data>
+  <data name="lblQ035" xml:space="preserve">
+    <value>I acted calmly even when I am angry.</value>
+  </data>
+  <data name="lblQ036" xml:space="preserve">
+    <value>I am always punctual. </value>
+  </data>
+  <data name="lblQ037" xml:space="preserve">
+    <value>I can make others trust me. </value>
+  </data>
+  <data name="lblQ038" xml:space="preserve">
+    <value>I am always calm even when I am under pressure.</value>
+  </data>
+  <data name="lblQ039" xml:space="preserve">
+    <value>I do not get upset when others talk bad about me.</value>
+  </data>
+  <data name="lblQ040" xml:space="preserve">
+    <value>I feel guilty if the job given is not properly completed.</value>
+  </data>
+  <data name="lblQ041" xml:space="preserve">
+    <value>I can adapt easily in any situation. </value>
+  </data>
+  <data name="lblQ042" xml:space="preserve">
+    <value>I always complete the job given to me.</value>
+  </data>
+  <data name="lblQ043" xml:space="preserve">
+    <value>I can develop new behaviors according to situations. </value>
+  </data>
+  <data name="lblQ044" xml:space="preserve">
+    <value>I make sure that there is no mistake in my work.</value>
+  </data>
+  <data name="lblQ045" xml:space="preserve">
+    <value>I can do my work without supervision.</value>
+  </data>
+  <data name="lblQ046" xml:space="preserve">
+    <value>I can change my ineffective habits. </value>
+  </data>
+  <data name="lblQ047" xml:space="preserve">
+    <value>I always countercheck the work that I have completed.</value>
+  </data>
+  <data name="lblQ048" xml:space="preserve">
+    <value>I can adjust my views according to situations.</value>
+  </data>
+  <data name="lblQ049" xml:space="preserve">
+    <value>I like to try new things.</value>
+  </data>
+  <data name="lblQ050" xml:space="preserve">
+    <value>I am able to interact comfortably with people who have different personality from me.</value>
+  </data>
+  <data name="lblQ051" xml:space="preserve">
+    <value>I like to use the latest technology in my work.</value>
+  </data>
+  <data name="lblQ052" xml:space="preserve">
+    <value>I can adjust my views according to the current requirement. </value>
+  </data>
+  <data name="lblQ053" xml:space="preserve">
+    <value>I am open to new ideas. </value>
+  </data>
+  <data name="lblQ054" xml:space="preserve">
+    <value>I can control my feelings even when others are angry at me. </value>
+  </data>
+  <data name="lblQ055" xml:space="preserve">
+    <value>I like things that are challenging.</value>
+  </data>
+  <data name="lblQ056" xml:space="preserve">
+    <value>I like to find new ideas to complete a job.</value>
+  </data>
+  <data name="lblQ057" xml:space="preserve">
+    <value>I am prepared to work hard even when the job given is not interesting. </value>
+  </data>
+  <data name="lblQ058" xml:space="preserve">
+    <value>I am willing to put more effort to increase my job performance. </value>
+  </data>
+  <data name="lblQ059" xml:space="preserve">
+    <value>My personal goals is to strive for excellence.</value>
+  </data>
+  <data name="lblQ060" xml:space="preserve">
+    <value>I am always working hard to produce excellent results.</value>
+  </data>
+  <data name="lblQ061" xml:space="preserve">
+    <value>I am always ready to accept any job. </value>
+  </data>
+  <data name="lblQ062" xml:space="preserve">
+    <value>I am willing to work hard even when given a difficult job.</value>
+  </data>
+  <data name="lblQ063" xml:space="preserve">
+    <value>I always complete my work.</value>
+  </data>
+  <data name="lblQ064" xml:space="preserve">
+    <value>I am always excited when doing a job.</value>
+  </data>
+  <data name="lblQ065" xml:space="preserve">
+    <value>I am responsible for all the job given to me.</value>
+  </data>
+  <data name="lblQ066" xml:space="preserve">
+    <value>I will complete all my work.</value>
+  </data>
+  <data name="lblQ067" xml:space="preserve">
+    <value>I always ensure that my performance is excellent.</value>
+  </data>
+  <data name="lblQ068" xml:space="preserve">
+    <value>I always seek for opportunities that help me achieve my personal goals.</value>
+  </data>
+  <data name="lblQ069" xml:space="preserve">
+    <value>I always grab available opportunities in my career.</value>
+  </data>
+  <data name="lblQ070" xml:space="preserve">
+    <value>I will make decision inline to my organizational goals. </value>
+  </data>
+  <data name="lblQ071" xml:space="preserve">
+    <value>My interests drive me towards success in my career. </value>
+  </data>
+  <data name="lblQ072" xml:space="preserve">
+    <value>I always look at task given as a way to improve myself.</value>
+  </data>
+  <data name="lblQ073" xml:space="preserve">
+    <value>I am happy to offer myself for courses that can improve my career development.</value>
+  </data>
+  <data name="lblQ074" xml:space="preserve">
+    <value>I am not bored when doing job that I like. </value>
+  </data>
+  <data name="lblQ075" xml:space="preserve">
+    <value>Intensity of the feeling:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High.</value>
+  </data>
+  <data name="Keamatan1" xml:space="preserve">
+    <value> 1 - Very Low </value>
+  </data>
+  <data name="Keamatan2" xml:space="preserve">
+    <value> 2 - Low </value>
+  </data>
+  <data name="Keamatan3" xml:space="preserve">
+    <value> 3 - Not Sure </value>
+  </data>
+  <data name="Keamatan4" xml:space="preserve">
+    <value> 4 - High </value>
+  </data>
+  <data name="Keamatan5" xml:space="preserve">
+    <value> 5 - Very High </value>
+  </data>
+
+  <data name="lblQ076" xml:space="preserve">
+    <value>Intensity of the feeling:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High.</value>
+  </data>
+  <data name="lblQ077" xml:space="preserve">
+    <value>Intensity of the feeling:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High.</value>
+  </data>
+  <data name="lblQ078" xml:space="preserve">
+    <value>Intensity of the feeling:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High.</value>
+  </data>
+  <data name="lblQ079" xml:space="preserve">
+    <value>Intensity of the feeling:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High.</value>
+  </data>
+  <data name="lblQ080" xml:space="preserve">
+    <value>Intensity of the feeling:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High.</value>
+  </data>
+  <data name="lblQ081" xml:space="preserve">
+    <value>I can tell exactly how others feel.</value>
+  </data>
+  <data name="lblQ082" xml:space="preserve">
+    <value>I will help my friends to improve themselves. </value>
+  </data>
+  <data name="lblQ083" xml:space="preserve">
+    <value>I can feel others' grief.</value>
+  </data>
+  <data name="lblQ084" xml:space="preserve">
+    <value>I will help all my friends to develop their career. </value>
+  </data>
+  <data name="lblQ085" xml:space="preserve">
+    <value>I can understand others’ predicaments/difficulties.</value>
+  </data>
+  <data name="lblQ086" xml:space="preserve">
+    <value>I always help my friends to seek opportunities around them.</value>
+  </data>
+  <data name="lblQ087" xml:space="preserve">
+    <value>I will help those who need my help.</value>
+  </data>
+  <data name="lblQ088" xml:space="preserve">
+    <value>I can predict other people feelings just by observing their behaviors.</value>
+  </data>
+  <data name="lblQ089" xml:space="preserve">
+    <value>I will help others learn to solve their problems.</value>
+  </data>
+  <data name="lblQ090" xml:space="preserve">
+    <value>I know when someone is trying to hide his or her feelings.</value>
+  </data>
+  <data name="lblQ091" xml:space="preserve">
+    <value>I will guide my friends to complete their job.</value>
+  </data>
+  <data name="lblQ092" xml:space="preserve">
+    <value>Others always tell me their problems.</value>
+  </data>
+  <data name="lblQ093" xml:space="preserve">
+    <value>I always help various parties to cooperate to achieve a common goal. </value>
+  </data>
+  <data name="lblQ094" xml:space="preserve">
+    <value>I always ask my friends what they need before helping them.</value>
+  </data>
+  <data name="lblQ095" xml:space="preserve">
+    <value>I respect my friends’ views.</value>
+  </data>
+  <data name="lblQ096" xml:space="preserve">
+    <value>I am ready to provide my services to others at anytime.</value>
+  </data>
+  <data name="lblQ097" xml:space="preserve">
+    <value>I always ensure the services provided are satisfying.</value>
+  </data>
+  <data name="lblQ098" xml:space="preserve">
+    <value>I am happy when people are satisfied with my service. </value>
+  </data>
+  <data name="lblQ099" xml:space="preserve">
+    <value>I always encourage my friends to attend courses/programmes that could help them improve their job performance.</value>
+  </data>
+  <data name="lblQ100" xml:space="preserve">
+    <value>I accept criticism as a way to improve my services. </value>
+  </data>
+  <data name="lblQ101" xml:space="preserve">
+    <value>I try to create conducive working environment for everyone. </value>
+  </data>
+  <data name="lblQ102" xml:space="preserve">
+    <value>I am sad to know that others are ill-treated.</value>
+  </data>
+  <data name="lblQ103" xml:space="preserve">
+    <value>I am aware when others are not happy with my attitude. </value>
+  </data>
+  <data name="lblQ104" xml:space="preserve">
+    <value>I like to help friends who want to change.</value>
+  </data>
+  <data name="lblQ105" xml:space="preserve">
+    <value>At time I have to consider other people’s feelings.</value>
+  </data>
+  <data name="lblQ106" xml:space="preserve">
+    <value>I can change my friends opinion on certain issue.</value>
+  </data>
+  <data name="lblQ107" xml:space="preserve">
+    <value>I feel sad when someone is having a difficult time. </value>
+  </data>
+  <data name="lblQ108" xml:space="preserve">
+    <value>I will try to cool down my angry friend.</value>
+  </data>
+  <data name="lblQ109" xml:space="preserve">
+    <value>I know who is the most influential among my friends.</value>
+  </data>
+  <data name="lblQ110" xml:space="preserve">
+    <value>I allow for my friends to express their different opinions. </value>
+  </data>
+  <data name="lblQ111" xml:space="preserve">
+    <value>I understand why at time people behave unreasonably.</value>
+  </data>
+  <data name="lblQ112" xml:space="preserve">
+    <value>My friends always come to me to express their dissatisfaction. </value>
+  </data>
+  <data name="lblQ113" xml:space="preserve">
+    <value>I am concerned with others’ feelings towards me. </value>
+  </data>
+  <data name="lblQ114" xml:space="preserve">
+    <value>I am proud of my friends’ achievements.</value>
+  </data>
+  <data name="lblQ115" xml:space="preserve">
+    <value>I will help others understand who they are. </value>
+  </data>
+  <data name="lblQ116" xml:space="preserve">
+    <value>I do not like looking at others’ suffering.</value>
+  </data>
+  <data name="lblQ117" xml:space="preserve">
+    <value>I have always been asked to solve arguments at workplace.</value>
+  </data>
+  <data name="lblQ118" xml:space="preserve">
+    <value>I can make others think like me. </value>
+  </data>
+  <data name="lblQ119" xml:space="preserve">
+    <value>I will not avoid conflicts that I am facing. </value>
+  </data>
+  <data name="lblQ120" xml:space="preserve">
+    <value>I am able to help friends come to a consensus.</value>
+  </data>
+  <data name="lblQ121" xml:space="preserve">
+    <value>I always give moral support to my friends. </value>
+  </data>
+  <data name="lblQ122" xml:space="preserve">
+    <value>I can easily change other’s view on certain issue.</value>
+  </data>
+  <data name="lblQ123" xml:space="preserve">
+    <value>I prefer to sacrifice my personal interest for the sake of friendship. </value>
+  </data>
+  <data name="lblQ124" xml:space="preserve">
+    <value>I am able to make others accept my decision. </value>
+  </data>
+  <data name="lblQ125" xml:space="preserve">
+    <value>I try to create a situation where the conflicting individuals will benefit together.</value>
+  </data>
+  <data name="lblQ126" xml:space="preserve">
+    <value>Myfriends never rejected my ideas.</value>
+  </data>
+  <data name="lblQ127" xml:space="preserve">
+    <value>I always encourage my friends not to feel disheartened when given difficult job. </value>
+  </data>
+  <data name="lblQ128" xml:space="preserve">
+    <value>I will give my colleagues the opportunity to finish their job without interruption. </value>
+  </data>
+  <data name="lblQ129" xml:space="preserve">
+    <value>I will help my friend to find the most appropriate method in completing a difficult job.</value>
+  </data>
+  <data name="lblQ130" xml:space="preserve">
+    <value>I will introduce my new colleague to others.</value>
+  </data>
+  <data name="lblQ131" xml:space="preserve">
+    <value>I can identify what needs to be changed to increase my productivity. </value>
+  </data>
+  <data name="lblQ132" xml:space="preserve">
+    <value>I always invite close friends for lunch.</value>
+  </data>
+  <data name="lblQ133" xml:space="preserve">
+    <value>I always give ideas that lead to changes. </value>
+  </data>
+  <data name="lblQ134" xml:space="preserve">
+    <value>I will help my friends to produce positive changes.</value>
+  </data>
+  <data name="lblQ135" xml:space="preserve">
+    <value>I can easily develop close relationships with others.</value>
+  </data>
+  <data name="lblQ136" xml:space="preserve">
+    <value>I will ask my friends to join me in making changes that can increase work performance. </value>
+  </data>
+  <data name="lblQ137" xml:space="preserve">
+    <value>I will introduce new friend to others. </value>
+  </data>
+  <data name="lblQ138" xml:space="preserve">
+    <value>I always invite my friends to collaborate with me.</value>
+  </data>
+  <data name="lblQ139" xml:space="preserve">
+    <value>I am happy when others provide feedbacks to my idea.</value>
+  </data>
+  <data name="lblQ140" xml:space="preserve">
+    <value>I can develop collaborative spirit among colleagues.</value>
+  </data>
+  <data name="lblQ141" xml:space="preserve">
+    <value>I have no problem when asked to work with others.</value>
+  </data>
+  <data name="lblQ142" xml:space="preserve">
+    <value>I always encourage my friends to continue working together to achieve our goals.</value>
+  </data>
+  <data name="lblQ143" xml:space="preserve">
+    <value>I am able to provide clear explanation. </value>
+  </data>
+  <data name="lblQ144" xml:space="preserve">
+    <value>I always try to build harmonious working relationship with my colleagues.</value>
+  </data>
+  <data name="lblQ145" xml:space="preserve">
+    <value>I can work with others.</value>
+  </data>
+  <data name="lblQ146" xml:space="preserve">
+    <value>I will assist my friends with their work if requested.</value>
+  </data>
+  <data name="lblQ147" xml:space="preserve">
+    <value>I always discuss with colleagues when planning a new project.</value>
+  </data>
+  <data name="lblQ148" xml:space="preserve">
+    <value>I am willing to listen to others’ view. </value>
+  </data>
+  <data name="lblQ149" xml:space="preserve">
+    <value>I always share information with colleagues when working together. </value>
+  </data>
+  <data name="lblQ150" xml:space="preserve">
+    <value>I prefer to communicate openly. </value>
+  </data>
+  <data name="lblQ151" xml:space="preserve">
+    <value>I am close to all my colleagues.</value>
+  </data>
+  <data name="lblQ152" xml:space="preserve">
+    <value>Not all my opinion is correct.</value>
+  </data>
+  <data name="lblQ153" xml:space="preserve">
+    <value>I can start a conversation with anyone in a function.</value>
+  </data>
+  <data name="lblQ154" xml:space="preserve">
+    <value>Why I must know my own feelings?</value>
+  </data>
+  <data name="lblQ155" xml:space="preserve">
+    <value>Why I must know my strengths and weaknesses?</value>
+  </data>
+  <data name="lblQ156" xml:space="preserve">
+    <value>Why I must know my own abilities?</value>
+  </data>
+  <data name="lblQ157" xml:space="preserve">
+    <value>Why I must control my own feelings? </value>
+  </data>
+  <data name="lblQ158" xml:space="preserve">
+    <value>What should I do if I want to excel in my work?</value>
+  </data>
+  <data name="lblQ159" xml:space="preserve">
+    <value>Why I must think positive when doing a difficult job?</value>
+  </data>
+  <data name="lblQ160" xml:space="preserve">
+    <value>What must I do when there is power struggle at my work place?</value>
+  </data>
+  <data name="lblQ161" xml:space="preserve">
+    <value>Why must I guide others in their work?</value>
+  </data>
+  <data name="lblQ162" xml:space="preserve">
+    <value>I like to see people succeed in their lives. </value>
+  </data>
+  <data name="lblQ163" xml:space="preserve">
+    <value>My previous experiences made me more careful. </value>
+  </data>
+  <data name="lblQ164" xml:space="preserve">
+    <value>I do not want to destroy other people’s lives.</value>
+  </data>
+  <data name="lblQ165" xml:space="preserve">
+    <value>I do not like to say bad things about others.</value>
+  </data>
+  <data name="lblQ166" xml:space="preserve">
+    <value>I continuously learned to improve my understanding on certain things.</value>
+  </data>
+  <data name="lblQ167" xml:space="preserve">
+    <value>I do not inform others when giving help to the needy.</value>
+  </data>
+  <data name="lblQ168" xml:space="preserve">
+    <value>I lost my patience when being disgraced.</value>
+  </data>
+  <data name="lblQ169" xml:space="preserve">
+    <value>I see obstacles as challenges.</value>
+  </data>
+  <data name="lblQ170" xml:space="preserve">
+    <value>I like clean environment. </value>
+  </data>
+  <data name="lblQ171" xml:space="preserve">
+    <value>I learned a lot from difficult experiences in my life.</value>
+  </data>
+  <data name="lblQ172" xml:space="preserve">
+    <value>Whatever happened in my life is fated.</value>
+  </data>
+  <data name="lblQ173" xml:space="preserve">
+    <value>What I have learned from my previous experiences make me more acceptable to open criticism. </value>
+  </data>
+  <data name="lblQ174" xml:space="preserve">
+    <value>I do not give up easily when faced with adversity. </value>
+  </data>
+  <data name="lblQ175" xml:space="preserve">
+    <value>I do not hate others who hates me.</value>
+  </data>
+  <data name="lblQ176" xml:space="preserve">
+    <value>I always forgive others who hurts my feelings.</value>
+  </data>
+  <data name="lblQ177" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+  <data name="MotivasiLevel1" xml:space="preserve">
+    <value>1 - Very Low</value>
+  </data>
+  <data name="MotivasiLevel2" xml:space="preserve">
+    <value>2 - Low</value>
+  </data>
+  <data name="MotivasiLevel3" xml:space="preserve">
+    <value>3 - Not Sure</value>
+  </data>
+  <data name="MotivasiLevel4" xml:space="preserve">
+    <value>4 - High </value>
+  </data>
+  <data name="MotivasiLevel5" xml:space="preserve">
+    <value>5 - Very High</value>
+  </data>
+
+  <data name="lblQ178" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+  <data name="lblQ179" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+  <data name="lblQ180" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+  <data name="lblQ181" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+  <data name="lblQ182" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+  <data name="lblQ183" xml:space="preserve">
+    <value>Motivation Level:&lt;br/&gt;1 - Very Low | 2 - Low | 3 - Not Sure | 4 - High | 5 - Very High</value>
+  </data>
+
+
+  <data name="lblMsgsubmit" xml:space="preserve">
+    <value>Once you submit your assessment, you may not make any further changes.
+    </value>
+  </data>
+  <data name="lblThankheaderC" xml:space="preserve">
+    <value>Thank you for completing the PERMATApintar Emotional Quotient Test.</value>
+  </data>
+  <data name="lblThankcontentC" xml:space="preserve">
+    <value>The results will create a self-portrait of your leadership to guide you in your next steps towards fully developing as a leader. The PERMATApintar Emotional Quotient Test. Report will be forwarded to you and a one to one session will be arranged to walkthrough the results with you. During the one to one session, you will be able to discuss the insights from the assessment results in detail and structure a development plan for moving forward.</value>
+  </data>
+  <data name="lblThankheaderR" xml:space="preserve">
+    <value>Thank you for completing the PERMATApintar Emotional Quotient Test.</value>
+  </data>
+  <data name="lblThankcontentR" xml:space="preserve">
+    <value>Your contribution is highly appreciated and will contribute to the betterment of the entire organisaiton.</value>
+  </data>
+  <data name="lblThankAssignRaterDone" xml:space="preserve">
+    <value>
+    &lt;p&gt;Thank you for nominating your assessors. An email notification will be sent to all your assessors to complete the assessment.&lt;/p&gt;
+    You will also receive an email with a link for you to complete your self assessment.
+    </value>
+  </data>
+  <data name="lblThank" xml:space="preserve">
+    <value>Thank you.
+    </value>
+  </data>
+  <data name="lblThankcomplete" xml:space="preserve">
+    <value>Thank you for completing the PERMATApintar Emotional Quotient Test..
+    </value>
+  </data>
+  <data name="lblSaveExit" xml:space="preserve">
+    <value>Thanks you for attempting the PERMATApintar Emotional Quotient Test.. Your responses have been saved. To complete the assessment, please click on the original link emailed to you.
+    </value>
+  </data>
+  <data name="lblSaveExitAssignRater" xml:space="preserve">
+    <value>Thank you for your progress in completing the assessor nomination. Your selections have been saved. To re-visit the assessor nomination page, please click on the original link emailed to you.
+    </value>
+  </data>
+  <data name="lblHomeOverview" xml:space="preserve">
+    <value>Overview
+    </value>
+  </data>
+  <data name="lblHomeCandidate" xml:space="preserve">
+    <value>
+    How important do you think emotional intelligent is as compared to general intelligent in ensuring your success in life, academic work (while studying) and at work? I have conducted research in emotional intelligent in Malaysia and found that people attribute their success namely to emotional intelligent. They suggested that "you have to be able to connect to yourself, read yourself well, get to know your strengths and weaknesses, motivate yourself from within. That is the first step. Next you must know people that surround you, manage them appropriately, learn from them, understand and help them develop their potential, then look inwards towards the values in life that you hold. Will those values help you be a better person? and finally, learn from your past experiences". If this is true and you have all these, then you will be a highly successful people.  
+    </value>
+  </data>
+  <data name="lblHomeBenefit" xml:space="preserve">
+    <value>How will I benefit?
+    </value>
+  </data>
+  <data name="lblHomeBenefitContent" xml:space="preserve">
+    <value>
+     NA
+    </value>
+  </data>
+  <data name="lblHomeOverviewRater" xml:space="preserve">
+    <value>Overview
+    </value>
+  </data>
+  <data name="lblHomeRater" xml:space="preserve">
+    <value>
+    The PERMATApintar Emotional Quotient Test. is an assessment feedback process to assess the competence of the candidates on the Bank’s core competencies. Through this assessment, candidates have the opportunity to gather confidential feedback from those who work with them and compare it with their own perception of their capability.   
+    
+      &lt;p&gt;
+    As such the feedback is gathered from multiple assessors such as manager/supervisor, peers, internal customers, direct and indirect subordinates using an online survey. This assessment is to be based on the assessor’s own personal experience with the candidate. In order for the assessment to be beneficial and effective, it is very crucial for you to be completely honest with your assessment of the candidate’s capability. 
+    &lt;/p&gt;
+    
+      The assessment provided by all the assessors will be treated as private and confidential.
+      
+    </value>
+  </data>
+  <data name="lblHomeBenefitRater" xml:space="preserve">
+    <value>How will I benefit?
+    </value>
+  </data>
+  <data name="lblHomeBenefitContentRater" xml:space="preserve">
+    <value>
+      The PERMATApintar Emotional Quotient Test. will provide you with an opportunity to contribute to the development of your managers and peers. As the organization’s leaders develop their abilities to work, manage, and lead, the performance and productivity of the organisation will also improve. Therefore, the entire organization stands to benefit as individuals improve.
+    </value>
+  </data>
+  <data name="lblScore" xml:space="preserve">
+    <value>Your Score
+    </value>
+  </data>
+  <data name="lblLevel" xml:space="preserve">
+    <value>Level
+    </value>
+  </data>
+  <data name="lblTODO" xml:space="preserve">
+    <value>What you should do.
+    </value>
+  </data>
+
+</root>

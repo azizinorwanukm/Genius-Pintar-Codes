@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Root Title="Sistem Pengurusan Kokurikulum">
+  <Chapter Heading="Menu Utama">
+    <Section Heading=" Kehadiran Pelajar" NavigateUrl="../instruktor/instruktor.year.select.aspx?set=kehadiran" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+    <Section Heading=" Masukkan Markah" NavigateUrl="../instruktor/instruktor.year.select.markah.aspx?set=markah" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+    <Section Heading=" Jawatan Pelajar" NavigateUrl="../instruktor/instruktor.year.select.aspx?set=jawatan" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+    <Section Heading=" Kemaskini Profil" NavigateUrl="../instruktor/instruktor.year.select.aspx?set=profil" ImageUrl="../img/mens-emoticon.png"> 
+    </Section>
+  </Chapter>
+  <Chapter Heading="Carian">
+    <Section Heading="Carian Pelajar" NavigateUrl="../instruktor/instruktor.pelajar.list.aspx" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+  </Chapter>
+  <Chapter Heading="Senarai Pelajar">
+    <Section Heading="Kokurikulum" NavigateUrl="" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+    <Section Heading="Kelas" NavigateUrl="" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+  </Chapter>
+  <Chapter Heading="Laporan">
+    <Section Heading="Jadual Kokurikulum" NavigateUrl="" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+    <Section Heading="Takwim Kokurikulum" NavigateUrl="" ImageUrl="../img/mens-emoticon.png">
+    </Section>
+  </Chapter>
+  
+</Root>

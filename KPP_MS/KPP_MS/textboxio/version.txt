@@ -1,0 +1,5 @@
+Textbox.io 1.3.0.342
+Client build 1.3.0.406
+Included service versions:
+* ephox-spelling: 1.1.0
+* ephox-allowed-origins: 1.1.0

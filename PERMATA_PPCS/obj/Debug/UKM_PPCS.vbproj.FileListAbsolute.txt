@@ -1,0 +1,52 @@
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Debug\UKM_PPCS.Resources.resources
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Debug\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Debug\UKM_PPCS.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Debug\UKM_PPCS.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_PPCS\obj\Debug\UKM_PPCS.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\bin\UKM_PPCS.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\bin\UKM_PPCS.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\bin\UKM_PPCS.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Debug\permatapintar.Resources.resources
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Debug\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Debug\UKM_PPCS.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Debug\UKM_PPCS.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_PPCS\obj\Debug\UKM_PPCS.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\permatapintar.Resources.resources
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.GenerateResource.Cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.CoreCompileInputs.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\UKM_PPCS.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\UKM_PPCS.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\UKM_PPCS.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbprojResolveAssemblyReference.cache
+F:\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+F:\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.dll
+F:\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.pdb
+F:\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.xml
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbprojAssemblyReference.cache
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\permatapintar.Resources.resources
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.GenerateResource.cache
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.CopyComplete
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.dll
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.xml
+F:\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.pdb
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.dll.config
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.dll
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.pdb
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\bin\UKM_PPCS.xml
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbprojAssemblyReference.cache
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\permatapintar.Resources.resources
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.GenerateResource.cache
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.CoreCompileInputs.cache
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.vbproj.CopyComplete
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.dll
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.xml
+C:\Users\acapx\Desktop\PermataPintar\PERMATA_PPCS\obj\Debug\UKM_PPCS.pdb

@@ -1,0 +1,114 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="pelajar.master.vb" Inherits="permatapintar.pelajar" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sistem Pengurusan Kokurikulum Pelajar</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+    <link href="~/css/koko_style.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/koko_table.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+        <table style="width: 100%; border: solid 3px #000000;">
+            <tr>
+                <td colspan="2">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left;">
+                                <a href="pelajar.login.succcess.aspx?std_ID=<%=Request.QueryString("std_ID")%>">Sistem Pengurusan Kokurikulum Pelajar&nbsp;</a>|&nbsp;<asp:Label ID="lblUserType" runat="server" Text=""></asp:Label>
+                                |&nbsp;<asp:Label ID="lblDate" runat="server" Text=""></asp:Label>
+                            </td>
+                            <td style="width: 40%; text-align: right;">
+                                <%--<asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>|<a href="http://localhost/kpp_sys/pelajar_login_berjaya.aspx?std_ID=<%=Request.QueryString("std_ID")%>" >Kembali KPP</a>--%>
+                                <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>|<a href="http://kppportal.permatapintar.edu.my/pelajar_login_berjaya.aspx?std_ID=<%=Request.QueryString("std_ID")%>" >Kembali KPP</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="fbtd_left">
+                    <table id="newspaper-fb" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Menu Utama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../img/memo-sign-for-facebook.png" alt="::" height="15" width="15" />&nbsp;<a href="pelajar.year.select.aspx?set=koko&std_ID=<%=Request.QueryString("std_ID")%>" rel="nofollow" target="_self">Kemaskini KOKO</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/memo-sign-for-facebook.png" alt="::" height="15" width="15" />&nbsp;<a href="pelajar.year.select.aspx?set=pencapaian&std_ID=<%=Request.QueryString("std_ID")%>" rel="nofollow" target="_self">Kemaskini Pencapaian</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/mens-emoticon.png" alt="::" /><a href="pelajar.year.select.aspx?set=profil&std_ID=<%=Request.QueryString("std_ID")%>" rel="nofollow" target="_self">Kemaskini Profil</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table id="newspaper-fb" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Laporan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../img/text_calendar.png" alt="::" height="15" width="15" />&nbsp;<a href="pelajar.koko.jadual.uniform.aspx?std_ID=<%=Request.QueryString("std_ID")%>" rel="nofollow" target="_self">Jadual Kokurikulum</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/text_calendar.png" alt="::" height="15" width="15" />&nbsp;<a href="pelajar.takwim.uniform.aspx?std_ID=<%=Request.QueryString("std_ID")%>" rel="nofollow" target="_self">Takwim Kokurikulum</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/mens-emoticon.png" alt="::" height="15" width="15" />&nbsp;<a href="pelajar.koko.list.uniform.aspx?std_ID=<%=Request.QueryString("std_ID")%>" rel="nofollow" target="_self">Senarai Kokurikulum</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="width: 80%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; vertical-align: top;">
+                    <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fbfooter">|&nbsp; © 2010 Universiti Kebangsaan Malaysia&nbsp;|
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Untuk skrin 1024 X 768 dan ke atas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

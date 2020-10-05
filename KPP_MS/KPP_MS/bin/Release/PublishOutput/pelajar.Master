@@ -1,0 +1,148 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="pelajar.master.vb" Inherits="WebApplication1.pelajar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/side_bar_frame.css">
+    <link rel="stylesheet" href="css/font_montserrat.css">
+    <link rel="stylesheet" href="css/font_awesome.css">
+
+    <!-- Drop Down-->
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif
+        }
+
+        .w3-sidebar {
+            width: 180px;
+            background: #222;
+            color: white;
+            text-align: left
+        }
+
+        .mySlides {
+            display: none;
+            width: 100%;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .permata {
+            text-align: center;
+            width: 40%;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p{
+            font-family: "Montserrat", sans-serif;
+            font-size:20px
+        }
+    </style>
+
+    <script>
+        function myDropOne() {
+            var x = document.getElementById("dropdown_one");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropTwo() {
+            var x = document.getElementById("dropdown_two");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropThree() {
+            var x = document.getElementById("dropdown_three");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+        function myDropThreeOne() {
+            var x = document.getElementById("dropdown_three_one");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += "w3-hover-black";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                    x.previousElementSibling.className.replace(" w3-hover-black", "");
+            }
+        }
+
+    </script>
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="w3-grey">
+    <form id="form1" runat="server">
+
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+            <!-- Avatar image in top left corner -->
+
+            <a href="pelajar_login_berjaya.aspx" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <i class="fa fa-home w3-medium">HOME</i>
+            </a>
+
+            <div class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myDropOne()">
+                <i class="fa fa-tag w3-medium">KELAS</i>
+            </div>
+            <div id="dropdown_one" class="w3-hide w3-white w3-card-4">
+                <asp:HyperLink NavigateUrl="pelajar_pilih_kursus.aspx" runat="server" class="w3-bar-item w3-button w3-black w3-small">PEMILIHAN KURSUS</asp:HyperLink>
+            </div>
+
+            <div class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myDropTwo()">
+                <i class="fa fa-tag w3-medium">LAPORAN</i>
+            </div>
+            <div id="dropdown_two" class="w3-hide w3-white w3-card-4">
+                <asp:HyperLink NavigateUrl="pelajar_laporan_peperiksaan.aspx" runat="server" class="w3-bar-item w3-button w3-black w3-small">LAPORAN PEPERIKSAAN</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="pelajar_laporan_kehadiran.aspx" runat="server" class="w3-bar-item w3-button w3-black w3-small">LAPORAN KEHADIRAN</asp:HyperLink>
+            </div>
+
+            <div class="w3-bar-item w3-button w3-padding-large w3-hover-black" onclick="myDropThree()">
+                <i class="fa fa-power-off w3-medium">LAIN-LAIN</i>
+            </div>
+            <div id="dropdown_three" class="w3-hide w3-white w3-card-4">
+                <asp:HyperLink NavigateUrl="pelajar_kemas_profil.aspx" runat="server" class="w3-bar-item w3-button w3-black w3-small">KEMASKINI PROFIL</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="pelajar_password_baru.aspx" runat="server" class="w3-bar-item w3-button w3-black w3-small">TUKAR KATA LALUAN</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="default.aspx" runat="server" class="w3-bar-item w3-button w3-black w3-small">LOGOUT</asp:HyperLink>
+            </div>
+        </nav>
+
+        <div class="w3-main w3-center w3-text-black" style="margin-left: 13.2%; padding-top: 1%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

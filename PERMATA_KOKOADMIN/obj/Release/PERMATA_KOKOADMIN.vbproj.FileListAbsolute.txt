@@ -1,0 +1,106 @@
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\itextsharp.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\itextsharp.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\itextsharp.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\itextsharp.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbprojResolveAssemblyReference.cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\bin\itextsharp.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\bin\itextsharp.dll
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.Cache
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.CoreCompileInputs.cache
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\ARAKEN\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbprojResolveAssemblyReference.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll.config
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.dll
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.pdb
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\bin\PERMATA_KOKOADMIN.xml
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbprojResolveAssemblyReference.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\permatapintar.Resources.resources
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.GenerateResource.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.CoreCompileInputs.cache
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.CopyComplete
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.dll
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.xml
+C:\Users\mohdh\OneDrive\Desktop\ARAKEN2018\PERMATA KOKO\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_KOKOADMIN\obj\Release\PERMATA_KOKOADMIN.vbproj.CopyComplete

@@ -1,0 +1,431 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="permatapintar.admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sistem Pengurusan dan Pemantauan Ujian UKM1 & UKM2</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+
+    <script src="js/CalendarPopup.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">document.write(getCalendarStyles());</script>
+
+
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/table_style.css" rel="stylesheet" type="text/css" />
+
+   <%-- <script type="text/javascript">
+        window.history.forward();
+        function noBack() { 
+            window.history.forward();
+        }
+    </script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody" onload="noBack()">
+    <form id="form1" runat="server">
+        <table style="width: 100%; padding: 0px; border: 0px dotted green;">
+            <tr>
+                <td colspan="2">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left;">
+                                <a href="admin.default.aspx">Sistem Pengurusan dan Pemantauan Ujian UKM 3</a>|<asp:Label
+                                    ID="lblLoginID" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td style="width: 40%; text-align: right;">
+                                <a href="logout.aspx">Logout</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 10%; vertical-align: top;">
+                    <table class="newspaper-header" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Pengguna</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nama:<asp:Label ID="lblFullname" runat="server" Text="" CssClass="fblabel_view"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis:<asp:Label ID="lblUserType" runat="server" Text="" CssClass="fblabel_view"></asp:Label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    
+                    <div id="admin_petugas" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Petugas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <%--<tr>
+                                    <td><a href="ukm3.register_Staff.aspx" rel="nofollow" target="_self" id="01">Daftar Petugas</a></td>
+
+                                </tr>--%>
+                                <tr>
+                                    <td><a href="ukm3.assign_staff.aspx" rel="nofollow" target="_self" id="01">Carian Petugas</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="admin.petugasDilantik.aspx" rel="nofollow" target ="_self" id ="01" >Senarai Petugas Dilantik</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="admin_classList.aspx" rel ="nofollow" target ="_self" id ="01"> Senarai Kelas</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="admin_assignClass.aspx" rel ="nofollow" target ="_self" id ="01">Ubah Pembantu Pelajar</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                    &nbsp;
+                    <div id="ädmin_pelajar" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pelajar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ukm3.studentList.aspx" rel="nofollow" target="_self" id="01">Daftar Pelajar</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="ukm3.studentLayak.aspx" rel="nofollow" target="_self" id="01">Senarai Pelajar Yang Dilayakkan</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        &nbsp;
+                    </div>
+
+
+                    <div id="admin_markah" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Pentaksiran</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                 <tr>
+                                        <td>
+                                            <a href="ukm3_admin_kpp_markUpdate.aspx"rel="nofollow" target ="_self"id="edit_maarkahKPP" >Instruktor KPP</a>
+                                        </td>
+                                        </tr>
+                                <tr>
+                                        <td>
+                                            <a href="ukm3_admin_ppcs_markUpdate.aspx"rel="nofollow" target ="_self"id="edit_maarkahPPCS" >Instruktor PPCS</a>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                        <td>
+                                            <a href="ukm3_admin_rapcs_markUpdate.aspx"rel="nofollow" target ="_self"id="edit_maarkahRAPCS" >RA PPCS</a>
+                                        </td>
+                                        </tr>
+                                <tr>
+                                    <td>
+                                        <a  href="ukm3_admin.markahlist.aspx"  rel="nofollow" target ="_self" id ="ujian_stem">Ujian STEM</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <a href="admin.laporan.eqtest.search.aspx" rel="nofollow" target ="_self" id ="ujian_eq">Ujian EQ</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="ukm3_adminTAPPCS_prepostMark.aspx" rel="nofollow" target="_self" id="ujian_prePost">Ujian Pre-Post</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                     <td><a href="admin.pentaksiranAkademik.aspx" rel="nofollow" target="_self" id="01">Laporan Pentaksiran Akademik PPCS</a></td>
+                                </tr>
+                                    
+                            </tbody>
+                        </table>
+                        &nbsp;
+                    </div>
+
+                    <%--<div id="ädmin_exam" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Markah Keseluruhan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                  <tr>
+                                 <td><a href="admin.ubahmarkah.aspx" rel="nofollow" target="_self" id="kppmarktable">Ubah Markah Keseluruhan</a></td>
+                             </tr>
+                            </tbody>
+
+                        </table>
+                    </div>--%>
+                       <%-- <div id="admin_ubahMarkahInstruktor" runat="server">
+                            <table class="newspaper-a" summary="PERMATApintar Menu">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Ubah Markah Instruktor</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                   --%>
+<%--                                    <tr>
+                                        <td><a href="ukm3_Rapcs.studentupdate.aspx" rel="nofollow" target="_self" id="Ra_EditMarkah">Ubah Markah Insruktor Ra  PPCS</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="kpp.ubahmarkah.aspx" rel="nofollow" target="_self" id="Kpp_EditMarkah">Ubah Markah Instruktor KPP</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="ukm3_ppcs.studentupdate.aspx" rel="nofollow" target="_self" id="Ppcs_EditMarkah">Ubah Markah Insruktor Ppcs  PPCS</a></td>
+                                    </tr>--%>
+                                <%--</tbody>
+                            </table>
+                        </div>
+                     &nbsp;--%>
+                    <div id="admin_tawaran" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Tawaran</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td><a href="admin.ubahmarkah.aspx" rel="nofollow" target="_self" id="01">Paparan Markah Keseluruhan</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="admin.asas.classSelect.aspx" rel="nofollow" target="_self" id="01">Kelayakan Asas 1</a></td>
+                                </tr>
+                                 <tr>
+                                    <td><a href="admin.tahap.classSelect.aspx" rel="nofollow" target="_self" id="01">Kelayakan Tahap 1</a></td>
+                                </tr>
+                                 <tr>
+                                    <td><a href="admin.ppmt.statustawaran.aspx" rel="nofollow" target="_self" id="01">Status Tawaran</a></td>
+                                </tr>
+                                 <%--<tr>
+                                    <td><a href="ukm3_examQuestionConfig.aspx" rel="nofollow" target="_self" id="01">Senarai Pelajar</a></td>
+                                </tr>--%>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+
+                    &nbsp;
+                   <div id="kelayakan_kolej" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Kelayakan Kolej</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                               <%-- <tr>
+                                    <td><a href="admin.kelayakankolej.aspx" rel="nofollow" target="_self" id="01">Kelayakan</a></td>
+                                </tr>--%>
+                                <tr>
+                                    <td><a href="admin.kelayakankolej.config.aspx" rel="nofollow" target="_self" id="01">Config </a></td>
+                                </tr>
+                                 <%--<tr>
+                                    <td><a href="ukm3_examQuestionConfig.aspx" rel="nofollow" target="_self" id="01">Senarai Pelajar</a></td>
+                                </tr>--%>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                    <%--<div id="admin_kelayakan" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Ujian STEM</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        &nbsp;
+                    </div>--%>
+                    <%--<div id="admin_laporan" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Laporan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   
+                                </tr>
+                                <!--  <tr>
+                                 <td><a href="admin.ubahmarkah.aspx" rel="nofollow" target="_self" id="kppmarktable">Ubah Markah Keseluruhan</a></td>
+                             </tr>-->
+                            </tbody>
+
+                        </table>
+                    </div>--%>
+                    &nbsp;
+                    <div id="admin_config" runat="server">
+
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Config</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ukm3.config_system.aspx" rel="nofollow" target="_self" id="master_config">Master Config</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="admin.session_config.aspx" rel="nofollow" target ="_self" id="session_config">Config Session</a></td>
+                                </tr>                                
+                                <tr>
+                                    <td><a href="ukm3_examQuestionConfig.aspx" rel="nofollow" target="_self" id="01">Config Ujian STEM</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="ukm3_config_exam_question.aspx" rel="nofollow" target="_self" id="exam_config">Config Soalan Penilaian Instruktor</a></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="admin.formatPemarkahanKeseluruhan.aspx" rel="nofollow" target="_self" id="markFormat_config">
+                                            Config Format Permarkahan Keseluruhan
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="ukm3_tukarPassword.aspx" rel="nofollow" target="_self" id="exam_config">Kemaskini Profil</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        &nbsp;
+                    </div>
+
+                    <div id="RaPCs_masukmarkah" runat="server">
+
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Ra Pcs"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ukm3_Rapcs.studentlist.aspx" rel="nofollow" target="_self" id="Ra_masukmarkah">Kemasukan Markah Instruktor Ra PPCS</a></td>
+                                </tr>
+                                <%--<tr>
+                                    <td><a href="ukm3_Rapcs.studentupdate.aspx" rel="nofollow" target="_self" id="Ra_EditMarkah">Ubah Markah Insruktor Ra  PPCS</a></td>
+                                </tr>--%>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="Kpp_masukmarkah" runat="server">
+
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Kpp"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ukm3_kpp.markintake.aspx" rel="nofollow" target="_self" id="`kpp_studentlist">Kemasukan Markah Instruktor KPP</a></td>
+                                </tr>
+                                <%--<tr>
+                                    <td><a href="kpp.ubahmarkah.aspx" rel="nofollow" target="_self" id="Ubah_Markah">Ubah Markah Instruktor KPP</a></td>
+                                </tr>--%>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div id="Ppcs_masukmarkah" runat="server">
+
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Ppcs"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ukm3_ppcs.studentlist.aspx" rel="nofollow" target="_self" id="PPCS_Markah">Kemasukan Markah Instruktor Ppcs</a></td>
+                                </tr>
+                                <tr>
+                                   <!--<td><a href="ukm3_ppcs.kelayakan.aspx" rel="nofollow" target="_self" id="PPCS_Kelayakan">Senarai Pelajar</a></td>-->
+                                  <%--<<td><a href="ukm3_ppcs.studentupdate.aspx" rel="nofollow" target="_self" id="Ra_EditMarkah">Ubah Markah Insruktor Ppcs  PPCS</a></td> --%>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </td>
+                <td style="width: 90%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        &nbsp;
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; vertical-align: top;">
+                    <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fbfooter">|&nbsp; © 2010 Universiti Kebangsaan Malaysia&nbsp;<%--|&nbsp;Designed and Developed
+                            by ARAKEN SDN. BHD.&nbsp;--%>|
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Untuk skrin 1024 X 768 dan ke atas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

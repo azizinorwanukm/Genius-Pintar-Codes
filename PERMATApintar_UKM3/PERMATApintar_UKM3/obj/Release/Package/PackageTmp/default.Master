@@ -1,0 +1,247 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="default.master.vb" Inherits="permatapintar._default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>SISTEM PENGURUSAN PPCS</title>
+    <meta content="FREE Marketplace" name="iMarketplace" />
+    <meta content="Education, Pelajaran, UKM, Online Test, EQ, IQ, Test," name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta name="robots" content="noindex" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+    <table width="100%" border="0px">
+        <tr>
+            <td class="fbheader_title">
+                SISTEM PENGURUSAN PPCS
+            </td>
+            <td style="text-align: right;">
+                <img src="img/permatapintar.jpg" alt="PERMATApintar" style="width: 100px; height: 100px;" />
+            </td>
+        </tr>
+    </table>
+    <table class="fbheader_menu" width="100%" border="0px">
+        <tr>
+            <td style="width: 60%; text-align: left;">
+                <a href="default.aspx">Laman Utama</a>&nbsp;
+            </td>
+            <td style="width: 40%; text-align: right;">
+                <a href="default.contactus.aspx">Hubungi Kami</a>
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="0px">
+        <tr>
+            <td style="width: 15%; vertical-align: top;">
+                <table width="100%" border="0px">
+                    <tr>
+                        <td class="fbnav_header" colspan="2">
+                            Menu Utama
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/digg.gif" alt="" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="default.login.aspx" rel="nofollow" target="_self" title="">Sistem Pentaksiran
+                                Pelajar</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0px">
+                    <tr>
+                        <td class="fbnav_header" colspan="2">
+                            Pautan
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/fb.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="http://www.facebook.com/home.php?sk=group_136557486399247&ap=1" rel="nofollow"
+                                target="_blank">PPCS on Facebook</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="http://pusat-permatapintar-negara.blogspot.com" rel="nofollow" target="_blank">
+                                Blog PERMATApintar</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="http://www.permata.jpm.my/index.asp" rel="nofollow" target="_blank">PERMATA
+                                NEGARA</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="http://www.permatainsan.my" rel="nofollow" target="_blank">Permata Insan</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbmain_list">
+                            <a href="http://cty.jhu.edu/" rel="nofollow" target="_blank">Center for Talented Youth
+                            </a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbmain_list">
+                            <a href="http://www.nagcm.org/" rel="nofollow" target="_blank">National Association
+                                for Gifted Children, Malaysia</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbmain_list">
+                            <a href="http://www.ukm.my/portal/" rel="nofollow" target="_blank">Portal UKM</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="http://pkukmweb.ukm.my/~fpendidikan/" rel="nofollow" target="_blank">Fakulti
+                                Pendidikan UKM</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 16px;">
+                            <img style="vertical-align: middle;" src="icons/link.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="http://www.sengifted.org/" rel="nofollow" target="_blank">Supporting Emotional
+                                Needs of the Gifted</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width: 65%; vertical-align: top;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td style="width: 20%; vertical-align: top;">
+                <table width="100%" border="0px">
+                    <tr>
+                        <td class="fbaside_header">
+                            Twitter PERMATApintar
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fbaside_image">
+
+                            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+                            <script>
+                                new TWTR.Widget({
+                                    version: 2,
+                                    type: 'profile',
+                                    rpp: 4,
+                                    interval: 6000,
+                                    width: 250,
+                                    height: 300,
+                                    theme: {
+                                        shell: {
+                                            background: '#ffffff',
+                                            color: '#000000'
+                                        },
+                                        tweets: {
+                                            background: '#ffffff',
+                                            color: '#000000',
+                                            links: '#000000'
+                                        }
+                                    },
+                                    features: {
+                                        scrollbar: false,
+                                        loop: false,
+                                        live: false,
+                                        hashtags: true,
+                                        timestamp: true,
+                                        avatars: false,
+                                        behavior: 'all'
+                                    }
+                                }).render().setUser('permatapintar').start();
+                            </script>
+
+                        </td>
+                    </tr>
+                </table>
+                <table width="100%" border="0px">
+                    <tr>
+                        <td class="fbsection_header">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">
+                <table width="100%" border="0px">
+                    <tr>
+                        <td style="border-top: 1px solid #e2c822;">
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Designed and Developed ARAKEN SDN. BHD. 2010&nbsp;|&nbsp;versi 2.0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

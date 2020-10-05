@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\permata_eqtest</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_GlobalResources/eqtest_2014.en-US.resx">
+      <publishTime>12/08/2014 05:28:02</publishTime>
+    </File>
+    <File Include="App_GlobalResources/eqtest_2014.ms-MY.resx">
+      <publishTime>12/08/2014 05:28:02</publishTime>
+    </File>
+    <File Include="App_GlobalResources/eqtest_2014.resx">
+      <publishTime>12/08/2014 07:15:39</publishTime>
+    </File>
+    <File Include="App_GlobalResources/sainstest_2014.en-US.resx">
+      <publishTime>12/03/2014 04:28:20</publishTime>
+    </File>
+    <File Include="App_GlobalResources/sainstest_2014.ms-MY.resx">
+      <publishTime>12/03/2014 04:28:20</publishTime>
+    </File>
+    <File Include="App_GlobalResources/sainstest_2014.resx">
+      <publishTime>12/03/2014 04:28:48</publishTime>
+    </File>
+    <File Include="bin/OpenFlashChart.dll">
+      <publishTime>05/27/2009 18:44:16</publishTime>
+    </File>
+    <File Include="bin/PERMATA_EQTest.dll">
+      <publishTime>11/07/2017 09:57:46</publishTime>
+    </File>
+    <File Include="bin/PERMATA_EQTest.pdb">
+      <publishTime>11/07/2017 09:57:46</publishTime>
+    </File>
+    <File Include="bin/PERMATA_EQTest.xml">
+      <publishTime>11/07/2017 09:57:45</publishTime>
+    </File>
+    <File Include="commoncontrol/contact_us.ascx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="commoncontrol/eqtest_create.ascx">
+      <publishTime>12/07/2016 11:37:12</publishTime>
+    </File>
+    <File Include="commoncontrol/sainstest_create.ascx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="contact.us.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="datafile/radar.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>12/06/2014 10:38:58</publishTime>
+    </File>
+    <File Include="default.Master">
+      <publishTime>12/06/2014 10:18:12</publishTime>
+    </File>
+    <File Include="error.invalid.link.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="esurvey.chart.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="esurvey.closed.aspx">
+      <publishTime>12/10/2014 19:05:19</publishTime>
+    </File>
+    <File Include="esurvey.page.done.aspx">
+      <publishTime>12/10/2014 05:46:15</publishTime>
+    </File>
+    <File Include="esurvey.page01.aspx">
+      <publishTime>12/06/2014 22:15:32</publishTime>
+    </File>
+    <File Include="esurvey.page02.aspx">
+      <publishTime>12/07/2014 07:54:58</publishTime>
+    </File>
+    <File Include="esurvey.page03.aspx">
+      <publishTime>12/06/2014 22:16:12</publishTime>
+    </File>
+    <File Include="esurvey.page04.aspx">
+      <publishTime>12/07/2014 07:27:22</publishTime>
+    </File>
+    <File Include="esurvey.page05.aspx">
+      <publishTime>12/07/2014 07:30:53</publishTime>
+    </File>
+    <File Include="esurvey.page06.aspx">
+      <publishTime>12/07/2014 07:58:47</publishTime>
+    </File>
+    <File Include="esurvey.page07.aspx">
+      <publishTime>12/07/2014 08:18:01</publishTime>
+    </File>
+    <File Include="esurvey.page08.aspx">
+      <publishTime>12/07/2014 08:33:04</publishTime>
+    </File>
+    <File Include="esurvey.page09.aspx">
+      <publishTime>12/07/2014 08:44:04</publishTime>
+    </File>
+    <File Include="esurvey.page10.aspx">
+      <publishTime>12/07/2014 08:56:19</publishTime>
+    </File>
+    <File Include="esurvey.page11.aspx">
+      <publishTime>12/08/2014 04:08:13</publishTime>
+    </File>
+    <File Include="esurvey.page12.aspx">
+      <publishTime>12/08/2014 04:21:45</publishTime>
+    </File>
+    <File Include="esurvey.page13.aspx">
+      <publishTime>12/10/2014 07:10:48</publishTime>
+    </File>
+    <File Include="esurvey.page14.aspx">
+      <publishTime>12/08/2014 05:26:25</publishTime>
+    </File>
+    <File Include="esurvey.page15.aspx">
+      <publishTime>12/08/2014 05:30:41</publishTime>
+    </File>
+    <File Include="esurvey.page16.aspx">
+      <publishTime>12/08/2014 05:30:41</publishTime>
+    </File>
+    <File Include="esurvey.page17.aspx">
+      <publishTime>12/08/2014 05:31:48</publishTime>
+    </File>
+    <File Include="esurvey.page18.aspx">
+      <publishTime>12/08/2014 05:31:48</publishTime>
+    </File>
+    <File Include="esurvey.page19.aspx">
+      <publishTime>12/08/2014 05:31:48</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/17/2011 22:52:26</publishTime>
+    </File>
+    <File Include="home.candidate.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="images/arrow.gif">
+      <publishTime>07/02/2010 17:45:40</publishTime>
+    </File>
+    <File Include="images/colbg.png">
+      <publishTime>07/02/2010 17:45:40</publishTime>
+    </File>
+    <File Include="images/img01.gif">
+      <publishTime>01/09/2012 14:46:02</publishTime>
+    </File>
+    <File Include="images/img02.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img03.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img04.gif">
+      <publishTime>01/09/2012 14:20:06</publishTime>
+    </File>
+    <File Include="images/img05.gif">
+      <publishTime>01/10/2012 15:19:08</publishTime>
+    </File>
+    <File Include="images/img06.gif">
+      <publishTime>01/09/2012 14:49:08</publishTime>
+    </File>
+    <File Include="images/img07.gif">
+      <publishTime>01/09/2012 14:49:12</publishTime>
+    </File>
+    <File Include="img/026.jpg">
+      <publishTime>12/02/2014 21:14:34</publishTime>
+    </File>
+    <File Include="img/027.jpg">
+      <publishTime>12/02/2014 21:15:02</publishTime>
+    </File>
+    <File Include="img/error.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/Face1.jpg">
+      <publishTime>09/14/2012 10:43:06</publishTime>
+    </File>
+    <File Include="img/Face2.jpg">
+      <publishTime>09/14/2012 10:43:06</publishTime>
+    </File>
+    <File Include="img/Face3.jpg">
+      <publishTime>09/14/2012 10:43:05</publishTime>
+    </File>
+    <File Include="img/Face4.jpg">
+      <publishTime>09/14/2012 10:43:05</publishTime>
+    </File>
+    <File Include="img/Face5.jpg">
+      <publishTime>09/14/2012 10:43:04</publishTime>
+    </File>
+    <File Include="img/info.png">
+      <publishTime>10/10/2007 01:41:56</publishTime>
+    </File>
+    <File Include="img/java_panel.png">
+      <publishTime>12/07/2016 11:24:25</publishTime>
+    </File>
+    <File Include="img/Landscape1.jpg">
+      <publishTime>09/14/2012 10:43:04</publishTime>
+    </File>
+    <File Include="img/Landscape2.jpg">
+      <publishTime>09/14/2012 10:43:03</publishTime>
+    </File>
+    <File Include="img/Landscape3.jpg">
+      <publishTime>09/14/2012 10:43:03</publishTime>
+    </File>
+    <File Include="img/Landscape4.jpg">
+      <publishTime>09/14/2012 10:43:02</publishTime>
+    </File>
+    <File Include="img/Landscape5.jpg">
+      <publishTime>09/14/2012 10:43:02</publishTime>
+    </File>
+    <File Include="img/Landscape6.jpg">
+      <publishTime>09/14/2012 10:43:01</publishTime>
+    </File>
+    <File Include="img/maze.png">
+      <publishTime>12/08/2014 10:35:30</publishTime>
+    </File>
+    <File Include="img/permata-moto.png">
+      <publishTime>11/26/2014 09:53:02</publishTime>
+    </File>
+    <File Include="img/permatapintar.jpg">
+      <publishTime>02/28/2010 23:19:16</publishTime>
+    </File>
+    <File Include="img/success.png">
+      <publishTime>10/10/2007 01:47:48</publishTime>
+    </File>
+    <File Include="img/validation.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/warning.png">
+      <publishTime>10/10/2007 01:44:54</publishTime>
+    </File>
+    <File Include="jvm.help.aspx">
+      <publishTime>12/07/2016 11:26:07</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>05/31/2016 22:26:59</publishTime>
+    </File>
+    <File Include="login.success.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="main.contact.us.aspx">
+      <publishTime>12/06/2014 09:13:06</publishTime>
+    </File>
+    <File Include="main.Master">
+      <publishTime>12/06/2014 10:18:17</publishTime>
+    </File>
+    <File Include="mazejava/Maze%24MazeCanvas%241.class">
+      <publishTime>09/14/2012 12:18:33</publishTime>
+    </File>
+    <File Include="mazejava/Maze%24MazeCanvas%242.class">
+      <publishTime>09/14/2012 12:18:33</publishTime>
+    </File>
+    <File Include="mazejava/Maze%24MazeCanvas.class">
+      <publishTime>09/14/2012 12:18:33</publishTime>
+    </File>
+    <File Include="mazejava/maze.class">
+      <publishTime>09/14/2012 12:18:33</publishTime>
+    </File>
+    <File Include="styles.css">
+      <publishTime>12/06/2014 20:45:05</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/08/2017 16:13:58</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

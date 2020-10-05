@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{06D2BED9-335D-4291-AC11-8666E119E4E8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PERMATA_EQTest</RootNamespace>
+    <AssemblyName>PERMATA_EQTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PERMATA_EQTest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PERMATA_EQTest.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenFlashChart, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\OpenFlashChart.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="commoncontrol\contact_us.ascx" />
+    <Content Include="commoncontrol\eqtest_create.ascx" />
+    <Content Include="contact.us.aspx" />
+    <Content Include="datafile\radar.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="error.invalid.link.aspx" />
+    <Content Include="esurvey.chart.aspx" />
+    <Content Include="esurvey.closed.aspx" />
+    <Content Include="esurvey.page.done.aspx" />
+    <Content Include="esurvey.page01.aspx" />
+    <Content Include="esurvey.page02.aspx" />
+    <Content Include="esurvey.page03.aspx" />
+    <Content Include="esurvey.page04.aspx" />
+    <Content Include="esurvey.page05.aspx" />
+    <Content Include="esurvey.page06.aspx" />
+    <Content Include="esurvey.page07.aspx" />
+    <Content Include="esurvey.page08.aspx" />
+    <Content Include="esurvey.page09.aspx" />
+    <Content Include="esurvey.page10.aspx" />
+    <Content Include="esurvey.page11.aspx" />
+    <Content Include="esurvey.page12.aspx" />
+    <Content Include="esurvey.page13.aspx" />
+    <Content Include="esurvey.page14.aspx" />
+    <Content Include="esurvey.page15.aspx" />
+    <Content Include="esurvey.page16.aspx" />
+    <Content Include="esurvey.page17.aspx" />
+    <Content Include="esurvey.page18.aspx" />
+    <Content Include="esurvey.page19.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="home.candidate.aspx" />
+    <Content Include="images\arrow.gif" />
+    <Content Include="images\colbg.png" />
+    <Content Include="images\img01.gif" />
+    <Content Include="images\img02.gif" />
+    <Content Include="images\img03.gif" />
+    <Content Include="images\img04.gif" />
+    <Content Include="images\img05.gif" />
+    <Content Include="images\img06.gif" />
+    <Content Include="images\img07.gif" />
+    <Content Include="img\error.png" />
+    <Content Include="img\Face1.jpg" />
+    <Content Include="img\Face2.jpg" />
+    <Content Include="img\Face3.jpg" />
+    <Content Include="img\Face4.jpg" />
+    <Content Include="img\Face5.jpg" />
+    <Content Include="img\info.png" />
+    <Content Include="img\java_panel.png" />
+    <Content Include="img\Landscape1.jpg" />
+    <Content Include="img\Landscape2.jpg" />
+    <Content Include="img\Landscape3.jpg" />
+    <Content Include="img\Landscape4.jpg" />
+    <Content Include="img\Landscape5.jpg" />
+    <Content Include="img\Landscape6.jpg" />
+    <Content Include="img\maze.png" />
+    <Content Include="img\permata-moto.png" />
+    <Content Include="img\permatapintar.jpg" />
+    <Content Include="img\success.png" />
+    <Content Include="img\validation.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="jvm.help.aspx" />
+    <Content Include="login.aspx" />
+    <Content Include="login.success.aspx" />
+    <Content Include="logout.aspx" />
+    <Content Include="main.contact.us.aspx" />
+    <Content Include="styles.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_GlobalResources\eqtest_2014.en-US.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eqtest_2014.en-US.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\eqtest_2014.ms-MY.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eqtest_2014.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\eqtest_2014.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eqtest_2014.resx</DependentUpon>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="commoncontrol\contact_us.ascx.designer.vb">
+      <DependentUpon>contact_us.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\contact_us.ascx.vb">
+      <DependentUpon>contact_us.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\eqtest_create.ascx.designer.vb">
+      <DependentUpon>eqtest_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\eqtest_create.ascx.vb">
+      <DependentUpon>eqtest_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.us.aspx.designer.vb">
+      <DependentUpon>contact.us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.us.aspx.vb">
+      <DependentUpon>contact.us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="datafile\radar.aspx.designer.vb">
+      <DependentUpon>radar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datafile\radar.aspx.vb">
+      <DependentUpon>radar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.vb">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.vb">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.invalid.link.aspx.designer.vb">
+      <DependentUpon>error.invalid.link.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.invalid.link.aspx.vb">
+      <DependentUpon>error.invalid.link.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.chart.aspx.designer.vb">
+      <DependentUpon>esurvey.chart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.chart.aspx.vb">
+      <DependentUpon>esurvey.chart.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.closed.aspx.designer.vb">
+      <DependentUpon>esurvey.closed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.closed.aspx.vb">
+      <DependentUpon>esurvey.closed.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page.done.aspx.designer.vb">
+      <DependentUpon>esurvey.page.done.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page.done.aspx.vb">
+      <DependentUpon>esurvey.page.done.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page01.aspx.designer.vb">
+      <DependentUpon>esurvey.page01.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page01.aspx.vb">
+      <DependentUpon>esurvey.page01.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page02.aspx.designer.vb">
+      <DependentUpon>esurvey.page02.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page02.aspx.vb">
+      <DependentUpon>esurvey.page02.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page03.aspx.designer.vb">
+      <DependentUpon>esurvey.page03.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page03.aspx.vb">
+      <DependentUpon>esurvey.page03.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page04.aspx.designer.vb">
+      <DependentUpon>esurvey.page04.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page04.aspx.vb">
+      <DependentUpon>esurvey.page04.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page05.aspx.designer.vb">
+      <DependentUpon>esurvey.page05.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page05.aspx.vb">
+      <DependentUpon>esurvey.page05.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page06.aspx.designer.vb">
+      <DependentUpon>esurvey.page06.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page06.aspx.vb">
+      <DependentUpon>esurvey.page06.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page07.aspx.designer.vb">
+      <DependentUpon>esurvey.page07.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page07.aspx.vb">
+      <DependentUpon>esurvey.page07.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page08.aspx.designer.vb">
+      <DependentUpon>esurvey.page08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page08.aspx.vb">
+      <DependentUpon>esurvey.page08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page09.aspx.designer.vb">
+      <DependentUpon>esurvey.page09.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page09.aspx.vb">
+      <DependentUpon>esurvey.page09.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page10.aspx.designer.vb">
+      <DependentUpon>esurvey.page10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page10.aspx.vb">
+      <DependentUpon>esurvey.page10.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page11.aspx.designer.vb">
+      <DependentUpon>esurvey.page11.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page11.aspx.vb">
+      <DependentUpon>esurvey.page11.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page12.aspx.designer.vb">
+      <DependentUpon>esurvey.page12.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page12.aspx.vb">
+      <DependentUpon>esurvey.page12.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page13.aspx.designer.vb">
+      <DependentUpon>esurvey.page13.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page13.aspx.vb">
+      <DependentUpon>esurvey.page13.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page14.aspx.designer.vb">
+      <DependentUpon>esurvey.page14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page14.aspx.vb">
+      <DependentUpon>esurvey.page14.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page15.aspx.designer.vb">
+      <DependentUpon>esurvey.page15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page15.aspx.vb">
+      <DependentUpon>esurvey.page15.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page16.aspx.designer.vb">
+      <DependentUpon>esurvey.page16.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page16.aspx.vb">
+      <DependentUpon>esurvey.page16.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page17.aspx.designer.vb">
+      <DependentUpon>esurvey.page17.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page17.aspx.vb">
+      <DependentUpon>esurvey.page17.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page18.aspx.designer.vb">
+      <DependentUpon>esurvey.page18.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page18.aspx.vb">
+      <DependentUpon>esurvey.page18.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="esurvey.page19.aspx.designer.vb">
+      <DependentUpon>esurvey.page19.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="esurvey.page19.aspx.vb">
+      <DependentUpon>esurvey.page19.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="home.candidate.aspx.designer.vb">
+      <DependentUpon>home.candidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.candidate.aspx.vb">
+      <DependentUpon>home.candidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jvm.help.aspx.designer.vb">
+      <DependentUpon>jvm.help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jvm.help.aspx.vb">
+      <DependentUpon>jvm.help.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.success.aspx.designer.vb">
+      <DependentUpon>login.success.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.success.aspx.vb">
+      <DependentUpon>login.success.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="main.contact.us.aspx.designer.vb">
+      <DependentUpon>main.contact.us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main.contact.us.aspx.vb">
+      <DependentUpon>main.contact.us.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="main.Master.designer.vb">
+      <DependentUpon>main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="main.Master.vb">
+      <DependentUpon>main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\eqtest_2014.en-US.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>eqtest_2014.en-US.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\eqtest_2014.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>eqtest_2014.ms-MY.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\eqtest_2014.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>eqtest_2014.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.Master" />
+    <Content Include="main.Master" />
+    <Content Include="mazejava\Maze%24MazeCanvas%241.class" />
+    <Content Include="mazejava\Maze%24MazeCanvas%242.class" />
+    <Content Include="mazejava\Maze%24MazeCanvas.class" />
+    <Content Include="mazejava\maze.class" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\permata_eqtest.pubxml" />
+    <None Include="My Project\PublishProfiles\permata_sains.pubxml" />
+    <None Include="My Project\PublishProfiles\permata_sainstest.pubxml" />
+    <None Include="My Project\PublishProfiles\PERMATA_StressTest.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56637</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56616/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

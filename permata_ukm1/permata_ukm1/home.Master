@@ -1,0 +1,25 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="home.master.vb" Inherits="permatapintar.home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="description" content="UJIAN UKM1. Ujian UKM1 merupakan ujian saringan pertama untuk menyertai program PERMATApintar" />
+    <meta name="keywords" content="UKM1,UJIAN UKM1,PERMATApintar, Universiti Kebangsaan Malaysia,UKM,Program Perkhemahan Cuti Sekolah,PPCS,PERMATA Insan,USIM,Kolej PERMATApintar ASAS 1,Kolej PERMATApintar TAHAP 1" />
+    <meta name="author" content="araken.sdn.bhd" />
+    <title>UJIAN UKM1</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="portal.default.css"  type="text/css" />
+    <link rel="stylesheet" href="boxstyle.css" type="text/css" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

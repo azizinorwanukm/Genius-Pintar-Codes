@@ -1,0 +1,2181 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+araken.pcisadmin
+</name>
+</assembly>
+<members>
+<member name="T:araken.pcisadmin.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:araken.pcisadmin.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:araken.pcisadmin.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:araken.pcisadmin.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:araken.pcisadmin.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:araken.pcisadmin.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:araken.pcisadmin.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:araken.pcisadmin.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:araken.pcisadmin.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:araken.pcisadmin.admin_dobyear_summary_list._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_dobyear_summary_list._pcis_dobyear_list">
+<summary>
+pcis_dobyear_list control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._lblLoginID">
+<summary>
+lblLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._menu_left1">
+<summary>
+menu_left1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_config_create._pcis_config_create1">
+<summary>
+pcis_config_create1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_config_list._pcis_config_list1">
+<summary>
+pcis_config_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_config_update._pcis_config_update1">
+<summary>
+pcis_config_update1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_dobyear_summary._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_dobyear_summary._pcis_summary_age">
+<summary>
+pcis_summary_age control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_exam_year_create._pcis_exam_year_create1">
+<summary>
+pcis_exam_year_create1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_exam_year_list._pcis_exam_year_list1">
+<summary>
+pcis_exam_year_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_exam_year_update._pcis_exam_year_update1">
+<summary>
+pcis_exam_year_update1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_jsc._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_jsc._pcis_jsc_create">
+<summary>
+pcis_jsc_create control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_mark._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_mark._exam_mark1">
+<summary>
+exam_mark1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_progress._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcis_progress._exam_progress1">
+<summary>
+exam_progress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcisadmin_create._admin_create">
+<summary>
+admin_create control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcisadmin_list._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcisadmin_list._admin_list">
+<summary>
+admin_list control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_pcisadmin_update._admin_update">
+<summary>
+admin_update control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_create._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_create._userprofile_create1">
+<summary>
+userprofile_create1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_mark_view._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_mark_view._userprofile_view1">
+<summary>
+userprofile_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_mark_view._exam_history_list1">
+<summary>
+exam_history_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_search._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_search._userprofile_search1">
+<summary>
+userprofile_search1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_update._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_update._userprofile_update1">
+<summary>
+userprofile_update1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_view._lblBreadcrum">
+<summary>
+lblBreadcrum control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_view._userprofile_view1">
+<summary>
+userprofile_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_studentprofile_view._exam_history_list1">
+<summary>
+exam_history_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._txtFullname">
+<summary>
+txtFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._txtLoginID">
+<summary>
+txtLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._txtPwd">
+<summary>
+txtPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._txtUserType">
+<summary>
+txtUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._selIsActive">
+<summary>
+selIsActive control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._lnkList">
+<summary>
+lnkList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_create._lblLoginID">
+<summary>
+lblLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._ddlUserType">
+<summary>
+ddlUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._txtFullname">
+<summary>
+txtFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._ddlAktif">
+<summary>
+ddlAktif control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._btnActive">
+<summary>
+btnActive control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._btnDeactive">
+<summary>
+btnDeactive control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_list._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._txtFullname">
+<summary>
+txtFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._txtLoginID">
+<summary>
+txtLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._txtPwd">
+<summary>
+txtPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._txtUserType">
+<summary>
+txtUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._lnkList">
+<summary>
+lnkList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.admin_update._lblLoginID">
+<summary>
+lblLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_history_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_history_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_history_list._txtfullname">
+<summary>
+txtfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_history_list._txticno">
+<summary>
+txticno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_history_list._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._selStatus">
+<summary>
+selStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._txtfullname">
+<summary>
+txtfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._txticno">
+<summary>
+txticno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._selSort">
+<summary>
+selSort control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._selDir">
+<summary>
+selDir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_mark._btnExportDetail">
+<summary>
+btnExportDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._selStatus">
+<summary>
+selStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._txtfullname">
+<summary>
+txtfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._txticno">
+<summary>
+txticno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._selSort">
+<summary>
+selSort control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._selDir">
+<summary>
+selDir control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._btnReset">
+<summary>
+btnReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._btnDelete">
+<summary>
+btnDelete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._lblPCISReset">
+<summary>
+lblPCISReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.exam_progress._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.menu_left._lblLoginID">
+<summary>
+lblLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.menu_left._lblFullname">
+<summary>
+lblFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.menu_left._lblUserType">
+<summary>
+lblUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_create._txtconfigCode">
+<summary>
+txtconfigCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_create._txtconfigString">
+<summary>
+txtconfigString control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_create._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_create._lnkView">
+<summary>
+lnkView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_list._txtconfigCode">
+<summary>
+txtconfigCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_list._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_list._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_list._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_update._txtconfigCode">
+<summary>
+txtconfigCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_update._txtconfigString">
+<summary>
+txtconfigString control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_update._btnDelete">
+<summary>
+btnDelete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_update._lnkView">
+<summary>
+lnkView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_config_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_dobyear_list._lblExamYear">
+<summary>
+lblExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_dobyear_list._lblDOB_Year">
+<summary>
+lblDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_dobyear_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_dobyear_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_dobyear_list._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_create._txtdescription">
+<summary>
+txtdescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_create._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_create._lnkView">
+<summary>
+lnkView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._txtdescription">
+<summary>
+txtdescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_list._lblexam_year">
+<summary>
+lblexam_year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._txtdescription">
+<summary>
+txtdescription control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._txtstart_date">
+<summary>
+txtstart_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._txtend_date">
+<summary>
+txtend_date control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._btnDelete">
+<summary>
+btnDelete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._lnkExamYear">
+<summary>
+lnkExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._lnkView">
+<summary>
+lnkView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_exam_year_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._selStatus">
+<summary>
+selStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._txtfullname">
+<summary>
+txtfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._txticno">
+<summary>
+txticno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._selSort">
+<summary>
+selSort control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._ddlSessiJsc">
+<summary>
+ddlSessiJsc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._ddlStatusJsc">
+<summary>
+ddlStatusJsc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._btnKemaskini">
+<summary>
+btnKemaskini control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_jsc_create._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_summary_age._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_summary_age._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_summary_age._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_summary_age._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.pcis_summary_age._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblicno">
+<summary>
+lblicno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblfullname">
+<summary>
+lblfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lbladdress">
+<summary>
+lbladdress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblphoneno">
+<summary>
+lblphoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblemail">
+<summary>
+lblemail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblmothername">
+<summary>
+lblmothername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblmotheroccupation">
+<summary>
+lblmotheroccupation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblfathername">
+<summary>
+lblfathername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblfatheroccupation">
+<summary>
+lblfatheroccupation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lbllearningcentrename">
+<summary>
+lbllearningcentrename control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lbllearningcentreaddress">
+<summary>
+lbllearningcentreaddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._ddllearningcentrestatename">
+<summary>
+ddllearningcentrestatename control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lbllearningcentrephoneno">
+<summary>
+lbllearningcentrephoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblassistantname">
+<summary>
+lblassistantname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblassistantphoneno">
+<summary>
+lblassistantphoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._txtfullname">
+<summary>
+txtfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._txticno">
+<summary>
+txticno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_search._btnDelete">
+<summary>
+btnDelete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblicno">
+<summary>
+lblicno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblfullname">
+<summary>
+lblfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lbladdress">
+<summary>
+lbladdress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblphoneno">
+<summary>
+lblphoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblemail">
+<summary>
+lblemail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblmothername">
+<summary>
+lblmothername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblmotheroccupation">
+<summary>
+lblmotheroccupation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblfathername">
+<summary>
+lblfathername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblfatheroccupation">
+<summary>
+lblfatheroccupation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lbllearningcentrename">
+<summary>
+lbllearningcentrename control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lbllearningcentreaddress">
+<summary>
+lbllearningcentreaddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._ddllearningcentrestatename">
+<summary>
+ddllearningcentrestatename control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lbllearningcentrephoneno">
+<summary>
+lbllearningcentrephoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblassistantname">
+<summary>
+lblassistantname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblassistantphoneno">
+<summary>
+lblassistantphoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lnkView">
+<summary>
+lnkView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_update._lblicno_bak">
+<summary>
+lblicno_bak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lnkEdit">
+<summary>
+lnkEdit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lnkDelete">
+<summary>
+lnkDelete control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblicno">
+<summary>
+lblicno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblfullname">
+<summary>
+lblfullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lbladdress">
+<summary>
+lbladdress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblphoneno">
+<summary>
+lblphoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblemail">
+<summary>
+lblemail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblmothername">
+<summary>
+lblmothername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblmotheroccupation">
+<summary>
+lblmotheroccupation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblfathername">
+<summary>
+lblfathername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblfatheroccupation">
+<summary>
+lblfatheroccupation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lbllearningcentrename">
+<summary>
+lbllearningcentrename control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lbllearningcentreaddress">
+<summary>
+lbllearningcentreaddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lbllearningcentrestatename">
+<summary>
+lbllearningcentrestatename control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lbllearningcentrephoneno">
+<summary>
+lbllearningcentrephoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblassistantname">
+<summary>
+lblassistantname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblassistantphoneno">
+<summary>
+lblassistantphoneno control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.userprofile_view._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._txtLoginID">
+<summary>
+txtLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._lbl15_instruction">
+<summary>
+lbl15_instruction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._txtPwd">
+<summary>
+txtPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._btnLogin">
+<summary>
+btnLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.user_login._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin._default1._user_login1">
+<summary>
+user_login1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.default_contactus._our_address1">
+<summary>
+our_address1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin._default._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin._default._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin._default._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin._default._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin._default._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:araken.pcisadmin.system_error._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

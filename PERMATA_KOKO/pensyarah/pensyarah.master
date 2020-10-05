@@ -1,0 +1,107 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="pensyarah.master.vb" Inherits="permatapintar.pensyarah" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sistem Pengurusan Kokurikulum Pelajar</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+    <link href="~/css/koko_style.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/koko_table.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+        <table style="width: 100%; border: solid 3px #000000;">
+            <tr>
+                <td colspan="3">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left;">
+                                <a href="admin.login.success.aspx?stf_ID=<%=Request.QueryString("stf_ID")%>">Sistem Pengurusan Kokurikulum Pelajar&nbsp;</a>|&nbsp;<asp:Label ID="lblUserType" runat="server" Text=""></asp:Label>
+                                |&nbsp;<asp:Label ID="lblDate" runat="server" Text=""></asp:Label>
+                            </td>
+                            <td style="width: 40%; text-align: right;">
+                                 <%--<asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>|<a href="http://localhost/kpp_ms/pengajar_login_berjaya.aspx?stf_ID=<%=Request.QueryString("stf_ID")%>" >Kembali KPP</a>--%>
+                                <asp:Label ID="lblUsername" runat="server" Text=""></asp:Label>|<a href="http://kppms.permatapintar.edu.my/pengajar_login_berjaya.aspx?stf_ID=<%=Request.QueryString("stf_ID")%>" >Kembali KPP</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 20%; vertical-align: top;">
+                    <table id="newspaper-fb" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Menu Utama</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="../img/memo-sign-for-facebook.png" alt="::" height="15px" width="15px" />&nbsp;<a href="pensyarah.year.select.aspx?stf_ID=<%=Request.QueryString("stf_ID")%>" rel="nofollow" target="_self">Masukkan Markah</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/mens-emoticon.png" alt="::" /><a href="pensyarah.profil.update.aspx?stf_ID=<%=Request.QueryString("stf_ID")%>" rel="nofollow" target="_self">Kemaskini Profil</a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="../img/mens-emoticon.png" alt="::" /><a href="pensyarah.password.update.aspx?stf_ID=<%=Request.QueryString("stf_ID")%>" rel="nofollow" target="_self">Tukar Kata Laluan</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </td>
+                <td style="width: 60%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width: 20%; vertical-align: top;">
+                    <table id="newspaper-fb" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Pengumuman</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Maklumat pengumuman di sini....</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center; vertical-align: top;">
+                    <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fbfooter">|&nbsp; © 2010 Universiti Kebangsaan Malaysia&nbsp;|
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Untuk skrin 1024 X 768 dan ke atas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

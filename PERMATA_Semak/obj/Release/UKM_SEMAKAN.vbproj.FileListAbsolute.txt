@@ -1,0 +1,137 @@
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\bin\UKM_SEMAKAN.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\bin\UKM_SEMAKAN.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\bin\UKM_SEMAKAN.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\bin\UKM_SEMAKAN.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_SEMAKAN\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2015\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.CoreCompileInputs.cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.Cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.CoreCompileInputs.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\bin\UKM_SEMAKAN.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\bin\UKM_SEMAKAN.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\bin\UKM_SEMAKAN.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\bin\UKM_SEMAKAN.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_Semak\obj\Release\UKM_SEMAKAN.pdb

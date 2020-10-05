@@ -1,0 +1,142 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="main.master.vb" Inherits="permatapintar.main" %>
+
+<%@ Register Src="commoncontrol/studentprofile_master.ascx" TagName="studentprofile_master"
+    TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Portal Pelajar PERMATApintar Negara</title>
+    <meta name="description" content="UJIAN UKM1. Ujian UKM1 merupakan ujian saringan pertama untuk menyertai program-program berikut: (1) Program Perkhemahan Cuti Sekolah PERMATApintar UKM-JHU (untuk pelajar 9-15 tahun/Tingkatan 3 pada 2014) (2) Program PERMATA Insan Universiti Sains Islam Malaysia (untuk pelajar 8 tahun / Darjah 2 pada tahun 2014 dan beragama Islam) (3) Program Pendidikan PERMATApintar ASAS 1 2015 di UKM (untuk pelajar 11-12 thn pada tahun 2014) (4) Program Pendidikan PERMATApintar TAHAP 1 2015 di UKM (untuk pelajar 14-15 thn pada 2014)" />
+    <meta name="keywords" content="UKM1,UJIAN UKM1,PERMATApintar, Universiti Kebangsaan Malaysia,UKM,Program Perkhemahan Cuti Sekolah,PPCS,PERMATA Insan,USIM,Program Pendidikan PERMATApintar ASAS 1,Program Pendidikan PERMATApintar TAHAP 1" />
+    <meta name="author" content="jamain.johari" />
+    <meta charset="UTF-8" />
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+    <table style="width: 100%; border: solid 0px #000000;">
+        <tr>
+            <td colspan="3">
+                <table class="fbheader_menu">
+                    <tr>
+                        <td style="width: 60%; text-align: left;">
+                            <a href="default.main.aspx">Portal Pelajar
+                                PERMATApintar Negara</a>
+                        </td>
+                        <td style="width: 40%; text-align: right;">
+                            <a href="default.aspx">Logout</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 20%; vertical-align: top;">
+                <table style="width: 100%; text-align: left; vertical-align: top; border: none 0px;"
+                    border="0px">
+                    <tr>
+                        <td>
+                            <uc1:studentprofile_master id="studentprofile_master1" runat="server" />
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%; text-align: left; vertical-align: top; border: none 0px;"
+                    border="0px">
+                    <tr>
+                        <td class="fbnav_header" colspan="2">
+                            Profil Pelajar
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 1%;">
+                            <img style="vertical-align: middle;" src="icons/friend.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="student.studentprofile.view.aspx"
+                                rel="nofollow" target="_self">Maklumat Pelajar</a>
+                        </td>
+                    </tr>
+                    <tr class="fbnav_items">
+                        <td style="width: 1%;">
+                            <img style="vertical-align: middle;" src="icons/friend.png" width="16px" height="16px"
+                                alt="::" />
+                        </td>
+                        <td class="fbnav_items">
+                            <a href="default.aspx" rel="nofollow" target="_self">Logout</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table style="width: 100%; text-align: left; vertical-align: top; border: none 0px;"
+                    border="0px">
+                    <tr>
+                        <td class="fbaside_header" colspan="2">
+                            Berita PERMATApintar
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fbaside_items">
+                            <b>Kemaskini maklumat peribadi, sekolah dan ibubapa anda sebelum mengambil Ujian UKM1.</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="img/white_space.jpg" name="space" border="0" width="250px" height="150px"
+                                alt="PERMATApintar" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td style="width: 80%; vertical-align: top;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center; vertical-align: top;">
+                <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;"
+                    border="0px">
+                    <tr>
+                        <td>
+                            &nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fbfooter">
+                            |&nbsp; © 2010 Universiti Kebangsaan Malaysia&nbsp;|&nbsp;Designed and Developed
+                            by ARAKEN SDN. BHD.&nbsp;|
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Untuk skrin 1024 X 768 dan ke atas
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

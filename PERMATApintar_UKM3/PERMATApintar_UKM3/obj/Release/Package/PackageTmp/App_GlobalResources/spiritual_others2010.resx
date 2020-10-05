@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AgreeLevel1" xml:space="preserve">
+    <value> Sangat jarang </value>
+  </data>
+  <data name="AgreeLevel2" xml:space="preserve">
+    <value> Jarang </value>
+  </data>
+  <data name="AgreeLevel3" xml:space="preserve">
+    <value> Selalu </value>
+  </data>
+  <data name="AgreeLevel4" xml:space="preserve">
+    <value> Sangat Selalu </value>
+  </data>
+
+  <data name="lblJawapan" xml:space="preserve">
+    <value>Pilihan Penilaian</value>
+  </data>
+  <data name="lblperasaan" xml:space="preserve">
+    <value>Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan.</value>
+  </data>
+  <data name="lblSoalan" xml:space="preserve">
+    <value>Soalan</value>
+  </data>
+
+
+  <data name="btnUpdate" xml:space="preserve">
+    <value>Kemaskini </value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Seterusnya </value>
+  </data>
+
+
+
+  <data name="Q001" xml:space="preserve">
+    <value>Saya percaya Tuhan itu :</value>
+  </data>
+  <data name="Q001_1" xml:space="preserve">
+    <value>Wujud dan berpengaruh dalam hidup saya</value>
+  </data>
+  <data name="Q001_2" xml:space="preserve">
+    <value>Wujud tetapi tidak mempengaruhi hidup saya</value>
+  </data>
+  <data name="Q001_3" xml:space="preserve">
+    <value>Hanya khayalan </value>
+  </data>
+  <data name="Q001_4" xml:space="preserve">
+    <value>Tidak wujud sama sekali</value>
+  </data>
+
+  <data name="Q002" xml:space="preserve">
+    <value>Bagi saya, keyakinan kepada Tuhan itu bermaksud :</value>
+  </data>
+  <data name="Q002_1" xml:space="preserve">
+    <value>Keyakinan kepada Tuhan yang lebih hebat manusia</value>
+  </data>
+  <data name="Q002_2" xml:space="preserve">
+    <value>Keyakinan terhadap ajaran ketua agama seperti sami dan paderi</value>
+  </data>
+  <data name="Q002_3" xml:space="preserve">
+    <value>Keyakinan diri sendiri terhadap Tuhan</value>
+  </data>
+  <data name="Q002_4" xml:space="preserve">
+    <value>Keyakinan yang dipegang oleh ibu-bapa saya</value>
+  </data>
+
+  <data name="Q003" xml:space="preserve">
+    <value>Saya berkeyakinan bahawa :</value>
+  </data>
+  <data name="Q003_1" xml:space="preserve">
+    <value>Kitab Suci tidak wujud</value>
+  </data>
+  <data name="Q003_2" xml:space="preserve">
+    <value>Kitab Suci hanyalah cerita dongeng semata-mata</value>
+  </data>
+  <data name="Q003_3" xml:space="preserve">
+    <value>Kitab Suci sangat memberi inspirasi dalam kehidupan saya</value>
+  </data>
+  <data name="Q003_4" xml:space="preserve">
+    <value>Kitab Suci ditulis oleh manusia</value>
+  </data>
+
+
+
+  <data name="Q004" xml:space="preserve">
+    <value>Keyakinan kepada Tuhan sangat penting bagi saya kerana :</value>
+  </data>
+  <data name="Q004_1" xml:space="preserve">
+    <value>Ia membantu saya ketika saya dukacita dan susah hati</value>
+  </data>
+  <data name="Q004_2" xml:space="preserve">
+    <value>Ia menjadikan dunia ini lebih selamat</value>
+  </data>
+  <data name="Q004_3" xml:space="preserve">
+    <value>Ia tidak mungkin membantu apa-apa</value>
+  </data>
+  <data name="Q004_4" xml:space="preserve">
+    <value>Tuhan lebih sayang kepada saya</value>
+  </data>
+
+  <data name="Q005" xml:space="preserve">
+    <value>Saya percaya alam dan makhluk semua adalah :</value>
+  </data>
+  <data name="Q005_1" xml:space="preserve">
+    <value>Ciptaan Tuhan</value>
+  </data>
+  <data name="Q005_2" xml:space="preserve">
+    <value>Terjadi secara semulajadi</value>
+  </data>
+  <data name="Q005_3" xml:space="preserve">
+    <value>Ciptaan kuasa luarbiasa</value>
+  </data>
+  <data name="Q005_4" xml:space="preserve">
+    <value>Ciptaan makhluk asing</value>
+  </data>
+
+
+  <data name="Q006" xml:space="preserve">
+    <value>Saya selalu pergi ke rumah ibadat  untuk sembahyang</value>
+  </data>
+  <data name="Q007" xml:space="preserve">
+    <value>Saya bersembahyang setiap hari</value>
+  </data>
+  <data name="Q008" xml:space="preserve">
+    <value>Saya memberi derma kepada yang memerlukan</value>
+  </data>
+  <data name="Q009" xml:space="preserve">
+    <value>Saya selalu membuat dosa dan kesalahan</value>
+  </data>
+  <data name="Q010" xml:space="preserve">
+    <value>Saya selalu meminta ampun kepada Tuhan setiap kali melakukan kesalahan</value>
+  </data>
+  <data name="Q011" xml:space="preserve">
+    <value>Saya selalu membuat kebajikan kerana Tuhan</value>
+  </data>
+  <data name="Q012" xml:space="preserve">
+    <value>Saya sering bersangka baik kepada kawan </value>
+  </data>
+  <data name="Q013" xml:space="preserve">
+    <value>Saya bersyukur kepada Tuhan di atas nikmat-nikmat yang diberi </value>
+  </data>
+  <data name="Q014" xml:space="preserve">
+    <value>Saya sering memunkiri janji</value>
+  </data>
+  <data name="Q015" xml:space="preserve">
+    <value>Saya sering berbohong</value>
+  </data>
+  <data name="Q016" xml:space="preserve">
+    <value>Saya berupaya menahan nafsu marah</value>
+  </data>
+  <data name="Q017" xml:space="preserve">
+    <value>Saya membaca Kitab Suci setiap hari</value>
+  </data>
+  <data name="Q018" xml:space="preserve">
+    <value>Saya sering meminta ampun atas kesalahan yang lampau </value>
+  </data>
+  <data name="Q019" xml:space="preserve">
+    <value>Saya suka menolong rakan yang susah tanpa mengira agama</value>
+  </data>
+  <data name="Q020" xml:space="preserve">
+    <value>Adakah anda memikirkan pembalasan Tuhan terhadap kesalahan saya </value>
+  </data>
+  <data name="Q021" xml:space="preserve">
+    <value>Saya sentiasa menyakiti hati orang lain</value>
+  </data>
+  <data name="Q022" xml:space="preserve">
+    <value>Saya sering berbincang hal berkaitan agama dengan rakan-rakan</value>
+  </data>
+  <data name="Q023" xml:space="preserve">
+    <value>Saya sering berdoa agar Tuhan membantu saya</value>
+  </data>
+  <data name="Q024" xml:space="preserve">
+    <value>Saya disenangi oleh ramai orang </value>
+  </data>
+  <data name="Q025" xml:space="preserve">
+    <value>Saya selalu berbuat baik kepada kedua ibu –bapa</value>
+  </data>
+</root>

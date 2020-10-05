@@ -1,0 +1,66 @@
+<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="ukm2.main.master.vb"
+    Inherits="permatapintar.ukm2_main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Araken I-PROFILE</title>
+    <meta name="robots" content="noindex" />
+    <link href="ukm2style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script type="text/javascript">
+        if (window.history.forward(1) != null)
+            window.history.forward(1);
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off">
+        <div id="mainPan">
+            <div id="rightPan">
+                <div id="bodyPan">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div id="footermainPan">
+            <p>
+                &nbsp;
+            </p>
+            <p style="margin-left: 15px; margin-right: 10px;">
+                Anda perlu berhati-hati menggunakan <b>butang LANGKAU</b> modul. Ia bukannya untuk
+            melangkau ke soalan berikutnya dalam sesuatu modul. Ia hanya digunakan sekiranya
+            anda telah mengalami <b>KEBUNTUAN</b> untuk menjawab soalan dan masa yang lama diambil
+            dalam sesuatu modul ini. Anda tidak boleh berpatah balik ke modul yang sebelumnya.
+            </p>
+            <p>
+                &nbsp;
+            </p>
+            <div id="footerPan">
+                <ul>
+                    <li>© Universiti Kebangsaan Malaysia|&nbsp;</li>
+                    <li>developed by: ARAKEN SDN. BHD.|&nbsp;</li>
+                    <li>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Font-Bold="true">LOGOUT</asp:LinkButton>&nbsp;|&nbsp;</li>
+                    <li>Exam STOP Time: <asp:Label ID="lblExamStopTime" runat="server" Text="0"></asp:Label>&nbsp;|&nbsp;
+                        <asp:Label ID="lblSaringanExamYear" runat="server" Text=""></asp:Label>&nbsp;|&nbsp;
+                        <asp:Label ID="lblLang" runat="server" Text=""></asp:Label>&nbsp;|&nbsp;
+                        <asp:Label ID="lblSaringanLocation" runat="server" Text=""></asp:Label>&nbsp;|&nbsp;
+                        <asp:Label ID="lblSaringanDuration" runat="server" Text="0" Visible="true"></asp:Label>&nbsp;Minutes&nbsp;
+                        <asp:Label ID="lblPageDuration" runat="server" Text="0" Visible="true"></asp:Label>&nbsp;
+                        <asp:Label ID="lblTimeTaken" runat="server" Text="0" Visible="true"></asp:Label>&nbsp;
+                        <asp:Label ID="lblDebug" runat="server" Text="" Visible="true"></asp:Label>&nbsp;
+                        <asp:Label ID="lblExamStopTimeHide" runat="server" Text="" Visible="true"></asp:Label>&nbsp;|&nbsp;
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        
+    </form>
+</body>
+</html>

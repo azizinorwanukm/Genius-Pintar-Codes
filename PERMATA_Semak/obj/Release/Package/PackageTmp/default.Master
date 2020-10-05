@@ -1,0 +1,57 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="default.master.vb" Inherits="UKM_SEMAKAN._default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="google-site-verification" content="eLXfCQ_dTzbHRGXCuihcQ0yHcbGNRUzRi_LCrqmpP2k" />
+    <meta name="description" content="UJIAN UKM1. Ujian UKM1 merupakan ujian saringan pertama untuk menyertai program-program berikut: (1) Program Perkhemahan Cuti Sekolah PERMATApintar UKM-JHU (untuk pelajar 9-15 tahun/Tingkatan 3 pada 2014) (2) Program PERMATA Insan Universiti Sains Islam Malaysia (untuk pelajar 8 tahun / Darjah 2 pada tahun 2014 dan beragama Islam) (3) Program Pendidikan PERMATApintar ASAS 1 2015 di UKM (untuk pelajar 11-12 thn pada tahun 2014) (4) Program Pendidikan PERMATApintar TAHAP 1 2015 di UKM (untuk pelajar 14-15 thn pada 2014)" />
+    <meta name="keywords" content="SEMAK,UKM1,UKM2,UJIAN UKM1,UJIAN UKM2,PERMATApintar, Universiti Kebangsaan Malaysia,UKM,Program Perkhemahan Cuti Sekolah,PPCS,PERMATA Insan,USIM,PROGRAM PENDIDIKAN PERMATApintar,Program Pendidikan PERMATApintar ASAS 1,Program Pendidikan PERMATApintar TAHAP 1" />
+    <meta name="author" content="jamain.johari" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Sistem Semakan PERMATApintar</title>
+    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="mystyle.css" type="text/css" media="screen" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="myform" runat="server">
+    <div id="wrapper">
+        <!-- end #menu -->
+        <div id="page">
+            <div id="page-bgtop">
+                <div id="page-bgbtm">
+                    <div id="page-content">
+                        <div id="content">
+                            <div class="post">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                            <div style="clear: both;">
+                                &nbsp;</div>
+                        </div>
+                        <!-- end #content -->
+                        <div id="sidebar">
+                        </div>
+                        <!-- end #sidebar -->
+                    </div>
+                    <div style="clear: both;">
+                        &nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <!-- end #page -->
+    </div>
+    <div id="footer">
+        <p>
+           <a href="default.aspx" target="_self">Laman Utama</a> | © 2011 Universiti Kebangsaan Malaysia | Designed and Developed by ARAKEN SDN.
+            BHD. | <a href="http://www.permatapintar.edu.my" target="_blank">PERMATApintar Portal</a></p>
+        
+    </div>
+    <!-- end #footer -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\bin\UKM3.dll.config
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\bin\UKM3.dll
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\bin\UKM3.pdb
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\bin\UKM3.xml
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3.Resources.resources
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3_Taksir.vbproj.GenerateResource.Cache
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3_Taksir.vbproj.CoreCompileInputs.cache
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3.dll
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3.xml
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3.pdb
+C:\Users\ros\Desktop\GitHub\Permata_Taksir\obj\Release\UKM3_Taksir.vbprojAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\bin\UKM3.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\bin\UKM3.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\bin\UKM3.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\bin\UKM3.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3_Taksir.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3_Taksir.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3_Taksir.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Taksir\Permata_Taksir\obj\Release\UKM3.pdb

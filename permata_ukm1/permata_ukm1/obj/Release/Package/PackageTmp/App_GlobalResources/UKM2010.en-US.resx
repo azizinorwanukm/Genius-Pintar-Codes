@@ -1,0 +1,1625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1">this is my long string</data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        [base64 mime encoded serialized .NET Framework object]
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        [base64 mime encoded string representing a byte array form of the .NET Framework object]
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblModuleA" xml:space="preserve">
+    <value>SELECT PICTURE</value>
+  </data>
+  <data name="lblInstructionModuleA" xml:space="preserve">
+    <value>Please click on the picture to match the missing image on the left.</value>
+  </data>
+  <data name="lblOpen" xml:space="preserve">
+    <value>Please explain the meaning of every word below. All questions must be answered. If you do not know the answer, enter 'x'.</value>
+  </data>
+  <data name="lblSelect" xml:space="preserve">
+    <value>Answer all questions. Please choose the most similar word compared to the UPPERCASE word.</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Next &gt;&gt;</value>
+  </data>
+  <data name="Q061" xml:space="preserve">
+    <value>61. HEADCOVER</value>
+  </data>
+  <data name="Q062" xml:space="preserve">
+    <value>62. MANUSCRIPT</value>
+  </data>
+  <data name="Q063" xml:space="preserve">
+    <value>63. DISTRESS</value>
+  </data>
+  <data name="Q064" xml:space="preserve">
+    <value>64. NERVOUS</value>
+  </data>
+  <data name="Q065" xml:space="preserve">
+    <value>65. ADJACENT</value>
+  </data>
+  <data name="Q066" xml:space="preserve">
+    <value>66. OPINION</value>
+  </data>
+  <data name="Q067" xml:space="preserve">
+    <value>67. CONSTANT</value>
+  </data>
+  <data name="Q068" xml:space="preserve">
+    <value>68. STUNNED</value>
+  </data>
+  <data name="Q069" xml:space="preserve">
+    <value>69. AROMA</value>
+  </data>
+  <data name="Q070" xml:space="preserve">
+    <value>70. FRAIL</value>
+  </data>
+  <data name="Q071" xml:space="preserve">
+    <value>71. AGITATED</value>
+  </data>
+  <data name="Q072" xml:space="preserve">
+    <value>72. FEUD</value>
+  </data>
+  <data name="Q073" xml:space="preserve">
+    <value>73. RELATED</value>
+  </data>
+  <data name="Q074" xml:space="preserve">
+    <value>74. EXIST</value>
+  </data>
+  <data name="Q075" xml:space="preserve">
+    <value>75. CONDESCENDING</value>
+  </data>
+  <data name="Q076" xml:space="preserve">
+    <value>76. ASKEW</value>
+  </data>
+  <data name="Q077" xml:space="preserve">
+    <value>77. INTERWEAVE</value>
+  </data>
+  <data name="Q078" xml:space="preserve">
+    <value>78. STAUNCH</value>
+  </data>
+  <data name="Q079" xml:space="preserve">
+    <value>79. CERTIFIED</value>
+  </data>
+  <data name="Q080" xml:space="preserve">
+    <value>80. EXALTED</value>
+  </data>
+  <data name="Q081" xml:space="preserve">
+    <value>81. PERSEVERE</value>
+  </data>
+  <data name="Q082" xml:space="preserve">
+    <value>82. INDOLENT</value>
+  </data>
+  <data name="Q083" xml:space="preserve">
+    <value>83. NUTRIMENT</value>
+  </data>
+  <data name="Q084" xml:space="preserve">
+    <value>84. ADAMANT</value>
+  </data>
+  <data name="Q085" xml:space="preserve">
+    <value>85. ENTICE</value>
+  </data>
+  <data name="Q086" xml:space="preserve">
+    <value>86. ATTRIBUTE</value>
+  </data>
+  <data name="Q087" xml:space="preserve">
+    <value>87. MARINATE</value>
+  </data>
+  <data name="Q088" xml:space="preserve">
+    <value>88. VANISH</value>
+  </data>
+  <data name="Q089" xml:space="preserve">
+    <value>89. MOLD</value>
+  </data>
+  <data name="Q090" xml:space="preserve">
+    <value>90. SNITCH</value>
+  </data>
+  <data name="Q091" xml:space="preserve">
+    <value>91. IMITATION</value>
+  </data>
+  <data name="Q092" xml:space="preserve">
+    <value>92. ALLY</value>
+  </data>
+  <data name="Q093" xml:space="preserve">
+    <value>93. SIDEWAY</value>
+  </data>
+  <data name="Q094" xml:space="preserve">
+    <value>94. RELIEF</value>
+  </data>
+  <data name="Q095" xml:space="preserve">
+    <value>95. OBSTINATE</value>
+  </data>
+  <data name="Q096" xml:space="preserve">
+    <value>96. PACIFY</value>
+  </data>
+  <data name="Q097" xml:space="preserve">
+    <value>97. WORSHIP</value>
+  </data>
+  <data name="Q098" xml:space="preserve">
+    <value>98. ELEGANT</value>
+  </data>
+  <data name="Q099" xml:space="preserve">
+    <value>99. LEVEL</value>
+  </data>
+  <data name="Q100" xml:space="preserve">
+    <value>100. SECLUDED</value>
+  </data>
+  <data name="Q101" xml:space="preserve">
+    <value>101. SHREAK</value>
+  </data>
+  <data name="Q102" xml:space="preserve">
+    <value>102. MEAGRE</value>
+  </data>
+  <data name="Q103" xml:space="preserve">
+    <value>103. MYTH</value>
+  </data>
+  <data name="Q104" xml:space="preserve">
+    <value>104. SOVEREIGNTY</value>
+  </data>
+  <data name="Q105" xml:space="preserve">
+    <value>105.  PAPAYA</value>
+  </data>
+  <data name="Q105_1" xml:space="preserve">
+    <value>Sweet</value>
+  </data>
+  <data name="Q105_2" xml:space="preserve">
+    <value>Ripen</value>
+  </data>
+  <data name="Q105_3" xml:space="preserve">
+    <value>Food</value>
+  </data>
+  <data name="Q105_4" xml:space="preserve">
+    <value>Delicious</value>
+  </data>
+  <data name="Q105_5" xml:space="preserve">
+    <value>Fruit</value>
+  </data>
+  <data name="Q105_6" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="Q106" xml:space="preserve">
+    <value>106.  FLING</value>
+  </data>
+  <data name="Q106_1" xml:space="preserve">
+    <value>Bullet</value>
+  </data>
+  <data name="Q106_2" xml:space="preserve">
+    <value>Javelin</value>
+  </data>
+  <data name="Q106_3" xml:space="preserve">
+    <value>Stone</value>
+  </data>
+  <data name="Q106_4" xml:space="preserve">
+    <value>Hand</value>
+  </data>
+  <data name="Q106_5" xml:space="preserve">
+    <value>Throw</value>
+  </data>
+  <data name="Q106_6" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="Q107" xml:space="preserve">
+    <value>107.  WET</value>
+  </data>
+  <data name="Q107_1" xml:space="preserve">
+    <value>Fungus</value>
+  </data>
+  <data name="Q107_2" xml:space="preserve">
+    <value>Rain</value>
+  </data>
+  <data name="Q107_3" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="Q107_4" xml:space="preserve">
+    <value>Moist</value>
+  </data>
+  <data name="Q107_5" xml:space="preserve">
+    <value>Slow</value>
+  </data>
+  <data name="Q107_6" xml:space="preserve">
+    <value>Reluctant</value>
+  </data>
+  <data name="Q108" xml:space="preserve">
+    <value>108.  PAUSE</value>
+  </data>
+  <data name="Q108_1" xml:space="preserve">
+    <value>Intermit</value>
+  </data>
+  <data name="Q108_2" xml:space="preserve">
+    <value>Sleep</value>
+  </data>
+  <data name="Q108_3" xml:space="preserve">
+    <value>Tired</value>
+  </data>
+  <data name="Q108_4" xml:space="preserve">
+    <value>Absent</value>
+  </data>
+  <data name="Q108_5" xml:space="preserve">
+    <value>Awhile</value>
+  </data>
+  <data name="Q108_6" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Q109" xml:space="preserve">
+    <value>109.  MERCILESS</value>
+  </data>
+  <data name="Q109_1" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Q109_2" xml:space="preserve">
+    <value>Unkind</value>
+  </data>
+  <data name="Q109_3" xml:space="preserve">
+    <value>Whip</value>
+  </data>
+  <data name="Q109_4" xml:space="preserve">
+    <value>Cruel</value>
+  </data>
+  <data name="Q109_5" xml:space="preserve">
+    <value>Firm</value>
+  </data>
+  <data name="Q109_6" xml:space="preserve">
+    <value>Endure</value>
+  </data>
+  <data name="Q110" xml:space="preserve">
+    <value>110.  RECEIVE</value>
+  </data>
+  <data name="Q110_1" xml:space="preserve">
+    <value>Love</value>
+  </data>
+  <data name="Q110_2" xml:space="preserve">
+    <value>Thing</value>
+  </data>
+  <data name="Q110_3" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="Q110_4" xml:space="preserve">
+    <value>Fate</value>
+  </data>
+  <data name="Q110_5" xml:space="preserve">
+    <value>Recover</value>
+  </data>
+  <data name="Q110_6" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="Q111" xml:space="preserve">
+    <value>111.  CRASH</value>
+  </data>
+  <data name="Q111_1" xml:space="preserve">
+    <value>Enemy</value>
+  </data>
+  <data name="Q111_2" xml:space="preserve">
+    <value>Gun</value>
+  </data>
+  <data name="Q111_3" xml:space="preserve">
+    <value>Collide</value>
+  </data>
+  <data name="Q111_4" xml:space="preserve">
+    <value>Revenge</value>
+  </data>
+  <data name="Q111_5" xml:space="preserve">
+    <value>Accident</value>
+  </data>
+  <data name="Q111_6" xml:space="preserve">
+    <value>Banging</value>
+  </data>
+  <data name="Q112" xml:space="preserve">
+    <value>112.  STICKY</value>
+  </data>
+  <data name="Q112_1" xml:space="preserve">
+    <value>Adhere</value>
+  </data>
+  <data name="Q112_2" xml:space="preserve">
+    <value>Hollow</value>
+  </data>
+  <data name="Q112_3" xml:space="preserve">
+    <value>Rag</value>
+  </data>
+  <data name="Q112_4" xml:space="preserve">
+    <value>Torn</value>
+  </data>
+  <data name="Q112_5" xml:space="preserve">
+    <value>Gum</value>
+  </data>
+  <data name="Q112_6" xml:space="preserve">
+    <value>Leftover</value>
+  </data>
+  <data name="Q113" xml:space="preserve">
+    <value>113. INTERFERE</value>
+  </data>
+  <data name="Q113_1" xml:space="preserve">
+    <value>Shake</value>
+  </data>
+  <data name="Q113_2" xml:space="preserve">
+    <value>Ructions</value>
+  </data>
+  <data name="Q113_3" xml:space="preserve">
+    <value>Charge</value>
+  </data>
+  <data name="Q113_4" xml:space="preserve">
+    <value>Difficult</value>
+  </data>
+  <data name="Q113_5" xml:space="preserve">
+    <value>Disturb</value>
+  </data>
+  <data name="Q113_6" xml:space="preserve">
+    <value>Noisy</value>
+  </data>
+  <data name="Q114" xml:space="preserve">
+    <value>114.  BLAZE</value>
+  </data>
+  <data name="Q114_1" xml:space="preserve">
+    <value>Angry</value>
+  </data>
+  <data name="Q114_2" xml:space="preserve">
+    <value>Flare</value>
+  </data>
+  <data name="Q114_3" xml:space="preserve">
+    <value>Fire</value>
+  </data>
+  <data name="Q114_4" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Q114_5" xml:space="preserve">
+    <value>Burn</value>
+  </data>
+  <data name="Q114_6" xml:space="preserve">
+    <value>Tree</value>
+  </data>
+  <data name="Q115" xml:space="preserve">
+    <value>115. SICK</value>
+  </data>
+  <data name="Q115_1" xml:space="preserve">
+    <value>Influenza</value>
+  </data>
+  <data name="Q115_2" xml:space="preserve">
+    <value>Mosquito</value>
+  </data>
+  <data name="Q115_3" xml:space="preserve">
+    <value>Cholera</value>
+  </data>
+  <data name="Q115_4" xml:space="preserve">
+    <value>Fever</value>
+  </data>
+  <data name="Q115_5" xml:space="preserve">
+    <value>Tired</value>
+  </data>
+  <data name="Q115_6" xml:space="preserve">
+    <value>Epidemic</value>
+  </data>
+  <data name="Q116" xml:space="preserve">
+    <value>116.  AMAZED</value>
+  </data>
+  <data name="Q116_1" xml:space="preserve">
+    <value>Shocked</value>
+  </data>
+  <data name="Q116_2" xml:space="preserve">
+    <value>Astonished</value>
+  </data>
+  <data name="Q116_3" xml:space="preserve">
+    <value>Aback</value>
+  </data>
+  <data name="Q116_4" xml:space="preserve">
+    <value>Perculiar</value>
+  </data>
+  <data name="Q116_5" xml:space="preserve">
+    <value>Elegant</value>
+  </data>
+  <data name="Q116_6" xml:space="preserve">
+    <value>Ego</value>
+  </data>
+  <data name="Q117" xml:space="preserve">
+    <value>117. TENURE</value>
+  </data>
+  <data name="Q117_1" xml:space="preserve">
+    <value>Ownership</value>
+  </data>
+  <data name="Q117_2" xml:space="preserve">
+    <value>Fundamental</value>
+  </data>
+  <data name="Q117_3" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="Q117_4" xml:space="preserve">
+    <value>Supreme</value>
+  </data>
+  <data name="Q117_5" xml:space="preserve">
+    <value>Needs</value>
+  </data>
+  <data name="Q117_6" xml:space="preserve">
+    <value>Truth</value>
+  </data>
+  <data name="Q118" xml:space="preserve">
+    <value>118.  RIGID</value>
+  </data>
+  <data name="Q118_1" xml:space="preserve">
+    <value>Stiff</value>
+  </data>
+  <data name="Q118_2" xml:space="preserve">
+    <value>Core</value>
+  </data>
+  <data name="Q118_3" xml:space="preserve">
+    <value>Tense</value>
+  </data>
+  <data name="Q118_4" xml:space="preserve">
+    <value>Fixed</value>
+  </data>
+  <data name="Q118_5" xml:space="preserve">
+    <value>Brave</value>
+  </data>
+  <data name="Q118_6" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="Q119" xml:space="preserve">
+    <value>119.  ACCURATE</value>
+  </data>
+  <data name="Q119_1" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="Q119_2" xml:space="preserve">
+    <value>Precise</value>
+  </data>
+  <data name="Q119_3" xml:space="preserve">
+    <value>Honest</value>
+  </data>
+  <data name="Q119_4" xml:space="preserve">
+    <value>Small</value>
+  </data>
+  <data name="Q119_5" xml:space="preserve">
+    <value>Charp</value>
+  </data>
+  <data name="Q119_6" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Q120" xml:space="preserve">
+    <value>120.  COMPATIBLE</value>
+  </data>
+  <data name="Q120_1" xml:space="preserve">
+    <value>Match</value>
+  </data>
+  <data name="Q120_2" xml:space="preserve">
+    <value>Near</value>
+  </data>
+  <data name="Q120_3" xml:space="preserve">
+    <value>Countenance</value>
+  </data>
+  <data name="Q120_4" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="Q120_5" xml:space="preserve">
+    <value>Similar</value>
+  </data>
+  <data name="Q120_6" xml:space="preserve">
+    <value>Suitable</value>
+  </data>
+  <data name="Q121" xml:space="preserve">
+    <value>121.  PRESENT</value>
+  </data>
+  <data name="Q121_1" xml:space="preserve">
+    <value>Real</value>
+  </data>
+  <data name="Q121_2" xml:space="preserve">
+    <value>Exist</value>
+  </data>
+  <data name="Q121_3" xml:space="preserve">
+    <value>Everlasting</value>
+  </data>
+  <data name="Q121_4" xml:space="preserve">
+    <value>Perfect</value>
+  </data>
+  <data name="Q121_5" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Q121_6" xml:space="preserve">
+    <value>Live</value>
+  </data>
+  <data name="Q122" xml:space="preserve">
+    <value>122. BEAR</value>
+  </data>
+  <data name="Q122_1" xml:space="preserve">
+    <value>Money</value>
+  </data>
+  <data name="Q122_2" xml:space="preserve">
+    <value>Corrupt</value>
+  </data>
+  <data name="Q122_3" xml:space="preserve">
+    <value>Leg</value>
+  </data>
+  <data name="Q122_4" xml:space="preserve">
+    <value>Arm</value>
+  </data>
+  <data name="Q122_5" xml:space="preserve">
+    <value>Strong</value>
+  </data>
+  <data name="Q122_6" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="Q123" xml:space="preserve">
+    <value>123. CHORE</value>
+  </data>
+  <data name="Q123_1" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Q123_2" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="Q123_3" xml:space="preserve">
+    <value>Academic</value>
+  </data>
+  <data name="Q123_4" xml:space="preserve">
+    <value>Salient</value>
+  </data>
+  <data name="Q123_5" xml:space="preserve">
+    <value>Compulsary</value>
+  </data>
+  <data name="Q123_6" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="Q124" xml:space="preserve">
+    <value>124.  COURTEOUS</value>
+  </data>
+  <data name="Q124_1" xml:space="preserve">
+    <value>Polite</value>
+  </data>
+  <data name="Q124_2" xml:space="preserve">
+    <value>Goodness</value>
+  </data>
+  <data name="Q124_3" xml:space="preserve">
+    <value>Friend</value>
+  </data>
+  <data name="Q124_4" xml:space="preserve">
+    <value>Sense</value>
+  </data>
+  <data name="Q124_5" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Q124_6" xml:space="preserve">
+    <value>Respectful</value>
+  </data>
+  <data name="Q125" xml:space="preserve">
+    <value>125.  PEACEFUL</value>
+  </data>
+  <data name="Q125_1" xml:space="preserve">
+    <value>Pahang</value>
+  </data>
+  <data name="Q125_2" xml:space="preserve">
+    <value>Present</value>
+  </data>
+  <data name="Q125_3" xml:space="preserve">
+    <value>Flourishing</value>
+  </data>
+  <data name="Q125_4" xml:space="preserve">
+    <value>Serene</value>
+  </data>
+  <data name="Q125_5" xml:space="preserve">
+    <value>Comfortable</value>
+  </data>
+  <data name="Q125_6" xml:space="preserve">
+    <value>Safe</value>
+  </data>
+  <data name="Q126" xml:space="preserve">
+    <value>126.  COMFORT</value>
+  </data>
+  <data name="Q126_1" xml:space="preserve">
+    <value>Easy</value>
+  </data>
+  <data name="Q126_2" xml:space="preserve">
+    <value>Calm</value>
+  </data>
+  <data name="Q126_3" xml:space="preserve">
+    <value>Win</value>
+  </data>
+  <data name="Q126_4" xml:space="preserve">
+    <value>Peaceful</value>
+  </data>
+  <data name="Q126_5" xml:space="preserve">
+    <value>Prosperous</value>
+  </data>
+  <data name="Q126_6" xml:space="preserve">
+    <value>Silence</value>
+  </data>
+  <data name="Q127" xml:space="preserve">
+    <value>127.  SOAK</value>
+  </data>
+  <data name="Q127_1" xml:space="preserve">
+    <value>Bathe</value>
+  </data>
+  <data name="Q127_2" xml:space="preserve">
+    <value>Wash</value>
+  </data>
+  <data name="Q127_3" xml:space="preserve">
+    <value>Vengeance</value>
+  </data>
+  <data name="Q127_4" xml:space="preserve">
+    <value>Weep</value>
+  </data>
+  <data name="Q127_5" xml:space="preserve">
+    <value>Immerse</value>
+  </data>
+  <data name="Q127_6" xml:space="preserve">
+    <value>Suffocate</value>
+  </data>
+  <data name="Q128" xml:space="preserve">
+    <value>128.  INSIGHT</value>
+  </data>
+  <data name="Q128_1" xml:space="preserve">
+    <value>Hope</value>
+  </data>
+  <data name="Q128_2" xml:space="preserve">
+    <value>Purpose</value>
+  </data>
+  <data name="Q128_3" xml:space="preserve">
+    <value>Vision</value>
+  </data>
+  <data name="Q128_4" xml:space="preserve">
+    <value>Aim</value>
+  </data>
+  <data name="Q128_5" xml:space="preserve">
+    <value>Challenge</value>
+  </data>
+  <data name="Q128_6" xml:space="preserve">
+    <value>Thought</value>
+  </data>
+  <data name="Q129" xml:space="preserve">
+    <value>129.  AMULET</value>
+  </data>
+  <data name="Q129_1" xml:space="preserve">
+    <value>Power</value>
+  </data>
+  <data name="Q129_2" xml:space="preserve">
+    <value>Supernatural</value>
+  </data>
+  <data name="Q129_3" xml:space="preserve">
+    <value>Cured</value>
+  </data>
+  <data name="Q129_4" xml:space="preserve">
+    <value>Disease</value>
+  </data>
+  <data name="Q129_5" xml:space="preserve">
+    <value>Talisman</value>
+  </data>
+  <data name="Q129_6" xml:space="preserve">
+    <value>Immune</value>
+  </data>
+  <data name="Q130" xml:space="preserve">
+    <value>130. COMPLAIN</value>
+  </data>
+  <data name="Q130_1" xml:space="preserve">
+    <value>Speak</value>
+  </data>
+  <data name="Q130_2" xml:space="preserve">
+    <value>Uneasy</value>
+  </data>
+  <data name="Q130_3" xml:space="preserve">
+    <value>Voice</value>
+  </data>
+  <data name="Q130_4" xml:space="preserve">
+    <value>Obscene</value>
+  </data>
+  <data name="Q130_5" xml:space="preserve">
+    <value>Abuse</value>
+  </data>
+  <data name="Q130_6" xml:space="preserve">
+    <value>Grumble</value>
+  </data>
+  <data name="Q131" xml:space="preserve">
+    <value>131.  NEGLIGENT</value>
+  </data>
+  <data name="Q131_1" xml:space="preserve">
+    <value>Careless</value>
+  </data>
+  <data name="Q131_2" xml:space="preserve">
+    <value>Forget</value>
+  </data>
+  <data name="Q131_3" xml:space="preserve">
+    <value>Concern</value>
+  </data>
+  <data name="Q131_4" xml:space="preserve">
+    <value>Dawdling</value>
+  </data>
+  <data name="Q131_5" xml:space="preserve">
+    <value>Ray</value>
+  </data>
+  <data name="Q131_6" xml:space="preserve">
+    <value>Lazy</value>
+  </data>
+  <data name="Q132" xml:space="preserve">
+    <value>132. ENTHUSIASTIC</value>
+  </data>
+  <data name="Q132_1" xml:space="preserve">
+    <value>Excited</value>
+  </data>
+  <data name="Q132_2" xml:space="preserve">
+    <value>Stimulate</value>
+  </data>
+  <data name="Q132_3" xml:space="preserve">
+    <value>Catalyst</value>
+  </data>
+  <data name="Q132_4" xml:space="preserve">
+    <value>Attitude</value>
+  </data>
+  <data name="Q132_5" xml:space="preserve">
+    <value>Pleasant</value>
+  </data>
+  <data name="Q132_6" xml:space="preserve">
+    <value>Eagerness</value>
+  </data>
+  <data name="Q133" xml:space="preserve">
+    <value>133.  TACTIC</value>
+  </data>
+  <data name="Q133_1" xml:space="preserve">
+    <value>War</value>
+  </data>
+  <data name="Q133_2" xml:space="preserve">
+    <value>Trickery</value>
+  </data>
+  <data name="Q133_3" xml:space="preserve">
+    <value>Treacherous</value>
+  </data>
+  <data name="Q133_4" xml:space="preserve">
+    <value>Playbill</value>
+  </data>
+  <data name="Q133_5" xml:space="preserve">
+    <value>Deception</value>
+  </data>
+  <data name="Q133_6" xml:space="preserve">
+    <value>Initiative</value>
+  </data>
+  <data name="Q134" xml:space="preserve">
+    <value>134.  ANGRY</value>
+  </data>
+  <data name="Q134_1" xml:space="preserve">
+    <value>Fidgety</value>
+  </data>
+  <data name="Q134_2" xml:space="preserve">
+    <value>Anxious</value>
+  </data>
+  <data name="Q134_3" xml:space="preserve">
+    <value>Disappoint</value>
+  </data>
+  <data name="Q134_4" xml:space="preserve">
+    <value>Furious</value>
+  </data>
+  <data name="Q134_5" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="Q134_6" xml:space="preserve">
+    <value>Wrathful</value>
+  </data>
+  <data name="Q135" xml:space="preserve">
+    <value>135. RUFFLE</value>
+  </data>
+  <data name="Q135_1" xml:space="preserve">
+    <value>Wave</value>
+  </data>
+  <data name="Q135_2" xml:space="preserve">
+    <value>Wrinkle</value>
+  </data>
+  <data name="Q135_3" xml:space="preserve">
+    <value>Crease</value>
+  </data>
+  <data name="Q135_4" xml:space="preserve">
+    <value>Naughty</value>
+  </data>
+  <data name="Q135_5" xml:space="preserve">
+    <value>Proud</value>
+  </data>
+  <data name="Q135_6" xml:space="preserve">
+    <value>Arrogant</value>
+  </data>
+  <data name="Q136" xml:space="preserve">
+    <value>136.  FRUITFUL</value>
+  </data>
+  <data name="Q136_1" xml:space="preserve">
+    <value>Fertiliser</value>
+  </data>
+  <data name="Q136_2" xml:space="preserve">
+    <value>Grow</value>
+  </data>
+  <data name="Q136_3" xml:space="preserve">
+    <value>Fluffy</value>
+  </data>
+  <data name="Q136_4" xml:space="preserve">
+    <value>Healthy</value>
+  </data>
+  <data name="Q136_5" xml:space="preserve">
+    <value>Plump</value>
+  </data>
+  <data name="Q136_6" xml:space="preserve">
+    <value>Productive</value>
+  </data>
+  <data name="Q137" xml:space="preserve">
+    <value>137.  HABIT</value>
+  </data>
+  <data name="Q137_1" xml:space="preserve">
+    <value>Hobby</value>
+  </data>
+  <data name="Q137_2" xml:space="preserve">
+    <value>Always</value>
+  </data>
+  <data name="Q137_3" xml:space="preserve">
+    <value>Attitude</value>
+  </data>
+  <data name="Q137_4" xml:space="preserve">
+    <value>Personality</value>
+  </data>
+  <data name="Q137_5" xml:space="preserve">
+    <value>Behaviour</value>
+  </data>
+  <data name="Q137_6" xml:space="preserve">
+    <value>Conventional</value>
+  </data>
+  <data name="Q138" xml:space="preserve">
+    <value>138.  RESIDUE</value>
+  </data>
+  <data name="Q138_1" xml:space="preserve">
+    <value>Remnant</value>
+  </data>
+  <data name="Q138_2" xml:space="preserve">
+    <value>Turbid</value>
+  </data>
+  <data name="Q138_3" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Q138_4" xml:space="preserve">
+    <value>Wasted</value>
+  </data>
+  <data name="Q138_5" xml:space="preserve">
+    <value>Leftover</value>
+  </data>
+  <data name="Q138_6" xml:space="preserve">
+    <value>Dirty</value>
+  </data>
+  <data name="Q139" xml:space="preserve">
+    <value>139.  UNIVERSAL</value>
+  </data>
+  <data name="Q139_1" xml:space="preserve">
+    <value>Cosmos</value>
+  </data>
+  <data name="Q139_2" xml:space="preserve">
+    <value>Reality</value>
+  </data>
+  <data name="Q139_3" xml:space="preserve">
+    <value>Global</value>
+  </data>
+  <data name="Q139_4" xml:space="preserve">
+    <value>Context</value>
+  </data>
+  <data name="Q139_5" xml:space="preserve">
+    <value>Galaxy</value>
+  </data>
+  <data name="Q139_6" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="Q140" xml:space="preserve">
+    <value>140.  SUSTAINABLE</value>
+  </data>
+  <data name="Q140_1" xml:space="preserve">
+    <value>Tree</value>
+  </data>
+  <data name="Q140_2" xml:space="preserve">
+    <value>Conservation</value>
+  </data>
+  <data name="Q140_3" xml:space="preserve">
+    <value>Prolong</value>
+  </data>
+  <data name="Q140_4" xml:space="preserve">
+    <value>Environment</value>
+  </data>
+  <data name="Q140_5" xml:space="preserve">
+    <value>Forest</value>
+  </data>
+  <data name="Q140_6" xml:space="preserve">
+    <value>Park</value>
+  </data>
+  <data name="Q141" xml:space="preserve">
+    <value>141. ILLUSION</value>
+  </data>
+  <data name="Q141_1" xml:space="preserve">
+    <value>Mirror</value>
+  </data>
+  <data name="Q141_2" xml:space="preserve">
+    <value>Invisible</value>
+  </data>
+  <data name="Q141_3" xml:space="preserve">
+    <value>Silhouette</value>
+  </data>
+  <data name="Q141_4" xml:space="preserve">
+    <value>Mirage</value>
+  </data>
+  <data name="Q141_5" xml:space="preserve">
+    <value>Amaze</value>
+  </data>
+  <data name="Q141_6" xml:space="preserve">
+    <value>Beauty</value>
+  </data>
+  <data name="Q142" xml:space="preserve">
+    <value>142.  FELON</value>
+  </data>
+  <data name="Q142_1" xml:space="preserve">
+    <value>Beggar</value>
+  </data>
+  <data name="Q142_2" xml:space="preserve">
+    <value>Stubborn</value>
+  </data>
+  <data name="Q142_3" xml:space="preserve">
+    <value>Shrewish</value>
+  </data>
+  <data name="Q142_4" xml:space="preserve">
+    <value>Crook</value>
+  </data>
+  <data name="Q142_5" xml:space="preserve">
+    <value>Spitfire</value>
+  </data>
+  <data name="Q142_6" xml:space="preserve">
+    <value>Warrior</value>
+  </data>
+  <data name="Q143" xml:space="preserve">
+    <value>143. CONNECTION</value>
+  </data>
+  <data name="Q143_1" xml:space="preserve">
+    <value>Engagement</value>
+  </data>
+  <data name="Q143_2" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="Q143_3" xml:space="preserve">
+    <value>Chain</value>
+  </data>
+  <data name="Q143_4" xml:space="preserve">
+    <value>Brotherhood</value>
+  </data>
+  <data name="Q143_5" xml:space="preserve">
+    <value>Correlation</value>
+  </data>
+  <data name="Q143_6" xml:space="preserve">
+    <value>Association</value>
+  </data>
+  <data name="Q144" xml:space="preserve">
+    <value>144.  SELF-SUPPORTING</value>
+  </data>
+  <data name="Q144_1" xml:space="preserve">
+    <value>Selfish</value>
+  </data>
+  <data name="Q144_2" xml:space="preserve">
+    <value>Endure</value>
+  </data>
+  <data name="Q144_3" xml:space="preserve">
+    <value>Autonomous</value>
+  </data>
+  <data name="Q144_4" xml:space="preserve">
+    <value>Greedy</value>
+  </data>
+  <data name="Q144_5" xml:space="preserve">
+    <value>Entrepreneur</value>
+  </data>
+  <data name="Q144_6" xml:space="preserve">
+    <value>Freelance</value>
+  </data>
+  <data name="Q145" xml:space="preserve">
+    <value>145. MODE</value>
+  </data>
+  <data name="Q145_1" xml:space="preserve">
+    <value>Pipeline</value>
+  </data>
+  <data name="Q145_2" xml:space="preserve">
+    <value>Virtual</value>
+  </data>
+  <data name="Q145_3" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="Q145_4" xml:space="preserve">
+    <value>Place</value>
+  </data>
+  <data name="Q145_5" xml:space="preserve">
+    <value>Car</value>
+  </data>
+  <data name="Q145_6" xml:space="preserve">
+    <value>Method</value>
+  </data>
+  <data name="Q146" xml:space="preserve">
+    <value>146.  FLEXIBLE</value>
+  </data>
+  <data name="Q146_1" xml:space="preserve">
+    <value>Shape</value>
+  </data>
+  <data name="Q146_2" xml:space="preserve">
+    <value>Drawing</value>
+  </data>
+  <data name="Q146_3" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="Q146_4" xml:space="preserve">
+    <value>Elastic</value>
+  </data>
+  <data name="Q146_5" xml:space="preserve">
+    <value>Suitable</value>
+  </data>
+  <data name="Q146_6" xml:space="preserve">
+    <value>Rest</value>
+  </data>
+  <data name="Q147" xml:space="preserve">
+    <value>147.  THROB</value>
+  </data>
+  <data name="Q147_1" xml:space="preserve">
+    <value>Shake</value>
+  </data>
+  <data name="Q147_2" xml:space="preserve">
+    <value>Creepy</value>
+  </data>
+  <data name="Q147_3" xml:space="preserve">
+    <value>Anxious</value>
+  </data>
+  <data name="Q147_4" xml:space="preserve">
+    <value>Shudder</value>
+  </data>
+  <data name="Q147_5" xml:space="preserve">
+    <value>Rock</value>
+  </data>
+  <data name="Q147_6" xml:space="preserve">
+    <value>Frightened</value>
+  </data>
+  <data name="Q148" xml:space="preserve">
+    <value>148.  REASONING</value>
+  </data>
+  <data name="Q148_1" xml:space="preserve">
+    <value>Debate</value>
+  </data>
+  <data name="Q148_2" xml:space="preserve">
+    <value>Oppose</value>
+  </data>
+  <data name="Q148_3" xml:space="preserve">
+    <value>Cogitate</value>
+  </data>
+  <data name="Q148_4" xml:space="preserve">
+    <value>Discussion</value>
+  </data>
+  <data name="Q148_5" xml:space="preserve">
+    <value>Calculation</value>
+  </data>
+  <data name="Q148_6" xml:space="preserve">
+    <value>Disputation</value>
+  </data>
+  <data name="A001" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A002" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A003" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A004" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A005" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A006" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A007" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A008" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A009" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A010" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A011" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A012" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A013" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A014" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A015" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A016" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A017" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A018" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A019" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A020" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A021" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A022" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A023" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A024" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A025" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A026" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A027" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A028" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A029" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A030" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A031" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A032" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A033" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A034" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A035" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A036" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A037" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A038" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A039" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A040" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A041" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A042" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A043" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A044" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A045" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A046" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A047" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A048" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A049" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A050" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A051" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A052" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A053" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A054" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A055" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A056" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A057" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="A058" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="A059" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A060" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A061" xml:space="preserve">
+    <value>LINDUNG|TEDUH|PAYUNG</value>
+  </data>
+  <data name="A062" xml:space="preserve">
+    <value>BACA| BUKU</value>
+  </data>
+  <data name="A063" xml:space="preserve">
+    <value>DUKA|SUSAH HATI|SEDIH|KECEWA|DUKACITA</value>
+  </data>
+  <data name="A064" xml:space="preserve">
+    <value>GONCANGAN YANG CEPAT|BADAN KALAU KETAKUTAN|BUMI KALAU GEMPA|GELETAR|BERASA TAKUT|BIMBANG|TAKUT|BERDEBAR|RISAU</value>
+  </data>
+  <data name="A065" xml:space="preserve">
+    <value>BERDAMPINGAN|RAPAT|TIDAK JAUH|HAMPIR</value>
+  </data>
+  <data name="A066" xml:space="preserve">
+    <value>IDEA|PERSPEKTIF|PERSEPSI|BUAH FIKIRAN/PANDANGAN</value>
+  </data>
+  <data name="A067" xml:space="preserve">
+    <value>TIDAK PUTUS-PUTUS|TIDAK BERHENTI|TERUS</value>
+  </data>
+  <data name="A068" xml:space="preserve">
+    <value>TIDAK TERKATA|TERDIAM| TERGAMAM</value>
+  </data>
+  <data name="A069" xml:space="preserve">
+    <value>SEDAP BAUNYA|SEDAP BAU|ENAK BAUNYA| ENAK BAU|HARUMAN</value>
+  </data>
+  <data name="A070" xml:space="preserve">
+    <value>ORANG YANG SUDAH TUA|TIDAK BERDAYA/|UZUR|LEMBAB</value>
+  </data>
+  <data name="A071" xml:space="preserve">
+    <value>TERLALU MARAH|PANAS HATI|BERANG</value>
+  </data>
+  <data name="A072" xml:space="preserve">
+    <value>BERTELINGKAH|BERKELAHI|BERGADUH|BERBANTAH/BERBALAH</value>
+  </data>
+  <data name="A073" xml:space="preserve">
+    <value>BERSAMBUNG|BERKENAAN|BERHUBUNG</value>
+  </data>
+  <data name="A074" xml:space="preserve">
+    <value>MEMANG ADA|SIAP|SEDIA</value>
+  </data>
+  <data name="A075" xml:space="preserve">
+    <value>KEANGKUHAN|KESOMBONGAN|ANGKUH|LAGAK</value>
+  </data>
+  <data name="A076" xml:space="preserve">
+    <value>KEREKOT|TIDAK LURUS |BERLIKU-LIKU</value>
+  </data>
+  <data name="A077" xml:space="preserve">
+    <value>BERCAMPUR|BERGAUL</value>
+  </data>
+  <data name="A078" xml:space="preserve">
+    <value>KUKUH DAN KUAT|GAGAH SERTA KUAT|KUAT|KUKUH|UTUH |TEGAP</value>
+  </data>
+  <data name="A079" xml:space="preserve">
+    <value>MENGIYAKAN|PERAKUAN|SARANAN SERTA SOKONGAN|UNTUK DIPERTIMBANGKAN|DITERIMA</value>
+  </data>
+  <data name="A080" xml:space="preserve">
+    <value>TERAMAT SANGAT |GAGAH|BAGUS|HEBAT</value>
+  </data>
+  <data name="A081" xml:space="preserve">
+    <value> TETAP HATI | TERUS MENCUBA DENGAN PENUH SEMANGAT DAN AZAM|BERANI</value>
+  </data>
+  <data name="A082" xml:space="preserve">
+    <value>TIDAK MAHU BERBUAT SESUATU|ENGGAN|TIDAK RAJIN</value>
+  </data>
+  <data name="A083" xml:space="preserve">
+    <value>BANYAK MENGANDUNGI PELBAGAI VITAMIN|MAKANAN SEIMBANG</value>
+  </data>
+  <data name="A084" xml:space="preserve">
+    <value>CEKAL|WAJA|TIDAK PUTUS ASA|TEGAR HATI</value>
+  </data>
+  <data name="A085" xml:space="preserve">
+    <value>MENGURAT/MENGGODA/MENANGKAP</value>
+  </data>
+  <data name="A086" xml:space="preserve">
+    <value>CIRI|KELAKUAN|PERANGAI|PERIBADI</value>
+  </data>
+  <data name="A087" xml:space="preserve">
+    <value>SIMPAN LAMA|MEMUPUK|MENJERUK</value>
+  </data>
+  <data name="A088" xml:space="preserve">
+    <value>TIDAK KELIHATAN LAGI|HILANG</value>
+  </data>
+  <data name="A089" xml:space="preserve">
+    <value>PENJODOH BILANGAN|ALAT UNTUK MERAPIKAN RAMBUT</value>
+  </data>
+  <data name="A090" xml:space="preserve">
+    <value>MENCURI|MENGAMBIL SESUATU TANPA IZIN|ANGGOTA BADAN TIDAK BERASA SAKIT</value>
+  </data>
+  <data name="A091" xml:space="preserve">
+    <value>TIDAK BENAR|TIDAK TULEN</value>
+  </data>
+  <data name="A092" xml:space="preserve">
+    <value>BERKOMPLOT|BERPAKAT|SEKONGKOL</value>
+  </data>
+  <data name="A093" xml:space="preserve">
+    <value>PANDANGAN DENGAN EKOR MATA|KERLING| JELING</value>
+  </data>
+  <data name="A094" xml:space="preserve">
+    <value>TIDAK SEMPIT|LUAS|TENTERAM PERASAAN|AMAN|SENANG|TIDAK SIBUK</value>
+  </data>
+  <data name="A095" xml:space="preserve">
+    <value>TIDAK DAPAT DILENTURKAN|KERAS HATI|TIDAK DAPAT DIUBAH|TIDAK MENURUT KATA|KERAS KEPALA</value>
+  </data>
+  <data name="A096" xml:space="preserve">
+    <value>MEMIKAT |MEMUJUK|MEMBUJUK</value>
+  </data>
+  <data name="A097" xml:space="preserve">
+    <value>MEMUJA|MEMANDANG TINGGI|MENJADIKAN IDOLA</value>
+  </data>
+  <data name="A098" xml:space="preserve">
+    <value>BERBUDI PEKERTI|MEMPUNYAI BUDI PEKERTI YANG MULIA|BERHEMAH</value>
+  </data>
+  <data name="A099" xml:space="preserve">
+    <value>PERINGKAT|TINGKAT|TAHAP</value>
+  </data>
+  <data name="A100" xml:space="preserve">
+    <value>ASING|TERSENDIRI| MENJAUHKAN DIRI/PUTUS HUBUNGAN</value>
+  </data>
+  <data name="A101" xml:space="preserve">
+    <value>ILAI|KETAWA YANG PANJANG DAN NYARING|MENYERAMKAN</value>
+  </data>
+  <data name="A102" xml:space="preserve">
+    <value>TTERLALU KECIL|KENIT</value>
+  </data>
+  <data name="A103" xml:space="preserve">
+    <value>CERITA KHAYALAN|YANG DIADA-ADAKAN KEJADIANNYA| DONGENG</value>
+  </data>
+  <data name="A104" xml:space="preserve">
+    <value>MERDEKA|LEPAS|BERDIRI SENDIRI</value>
+  </data>
+  <data name="A105" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A106" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A107" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A108" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A109" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A110" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A111" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A112" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A113" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A114" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A115" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A116" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A117" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A118" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A119" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A120" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A121" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A122" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A123" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A124" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A125" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A126" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A127" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A128" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A129" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A130" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A131" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A132" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A133" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A134" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A135" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="A136" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A137" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A138" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="A139" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A140" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A141" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A142" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A143" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="A144" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="A145" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="A146" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A147" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="A148" xml:space="preserve">
+    <value>3</value>
+  </data>  
+</root>

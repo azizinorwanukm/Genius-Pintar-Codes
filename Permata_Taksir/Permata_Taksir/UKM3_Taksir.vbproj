@@ -1,0 +1,606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A5E964F-B590-4281-9C54-D15387D7B76A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UKM3</RootNamespace>
+    <AssemblyName>UKM3</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>UKM3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>UKM3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.default.aspx" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\UKM3.dll" />
+    <Content Include="bin\UKM3.pdb" />
+    <Content Include="bin\UKM3.xml" />
+    <Content Include="Control\kelas_courseView.ascx" />
+    <Content Include="Control\kelas_List.ascx" />
+    <Content Include="Control\KPP\kpp_studentselection.ascx" />
+    <Content Include="Control\RAPPCS\ra_studentselection.ascx" />
+    <Content Include="Control\student_List.ascx" />
+    <Content Include="Control\subject_List.ascx" />
+    <Content Include="Control\TAPPCS\tappcs_prepostMark.ascx" />
+    <Content Include="kelas.List.aspx" />
+    <Content Include="kpp.masukmarkah.aspx" />
+    <Content Include="Control\KPP\kpp_studentlist.ascx" />
+    <Content Include="Control\KPP\kpp_studentlist_checklist.ascx" />
+    <Content Include="kpp.studentlist.aspx" />
+    <Content Include="Control\login_trail.ascx" />
+    <Content Include="kpp.studentselection.aspx" />
+    <Content Include="ppcs.masukmarkah.aspx" />
+    <Content Include="Control\PPCS\ppcs_studentlist.ascx" />
+    <Content Include="Control\PPCS\ppcs_studentlist_checklist.ascx" />
+    <Content Include="ppcs.studentlist.aspx" />
+    <Content Include="ra.studentselection.aspx" />
+    <Content Include="rappcs.masukmarkah.aspx" />
+    <Content Include="Control\RAPPCS\rappcs_studentlist.ascx" />
+    <Content Include="Control\RAPPCS\rappcs_studentlist_checklist.ascx" />
+    <Content Include="rappcs.studentlist.aspx" />
+    <Content Include="css\grd_alt.png" />
+    <Content Include="css\grd_head.png" />
+    <Content Include="css\grd_pgr.png" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\jquery.datepick.css" />
+    <Content Include="css\material_button.css" />
+    <Content Include="css\portal.default.css" />
+    <Content Include="css\portal.default.old.css" />
+    <Content Include="css\StyleSheet1.css" />
+    <Content Include="css\table-images\back.png" />
+    <Content Include="css\table-images\blurry.jpg" />
+    <Content Include="css\table-images\botleft.png" />
+    <Content Include="css\table-images\botright.png" />
+    <Content Include="css\table-images\gradback.png" />
+    <Content Include="css\table-images\gradhead.png" />
+    <Content Include="css\table-images\gradhover.png" />
+    <Content Include="css\table-images\header.jpg" />
+    <Content Include="css\table-images\left.png" />
+    <Content Include="css\table-images\pattern-head.png" />
+    <Content Include="css\table-images\pattern.gif" />
+    <Content Include="css\table-images\pattern.png" />
+    <Content Include="css\table-images\patternb-head.png" />
+    <Content Include="css\table-images\patternb.png" />
+    <Content Include="css\table-images\right.png" />
+    <Content Include="css\table_style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="googlef9781b107c5c40a2.html" />
+    <Content Include="icons\band-aid.png" />
+    <Content Include="icons\button_post.png" />
+    <Content Include="icons\chat.png" />
+    <Content Include="icons\clock.png" />
+    <Content Include="icons\delicious.gif" />
+    <Content Include="icons\digg.gif" />
+    <Content Include="icons\event.png" />
+    <Content Include="icons\eye.png" />
+    <Content Include="icons\facebook.gif" />
+    <Content Include="icons\flag.png" />
+    <Content Include="icons\fork-and-knife.png" />
+    <Content Include="icons\friend.png" />
+    <Content Include="icons\furl.gif" />
+    <Content Include="icons\gear.png" />
+    <Content Include="icons\groups.png" />
+    <Content Include="icons\heart.png" />
+    <Content Include="icons\ilike.gif" />
+    <Content Include="icons\lastfm.gif" />
+    <Content Include="icons\lightning-bolt.png" />
+    <Content Include="icons\link.png" />
+    <Content Include="icons\magnifying-glass.png" />
+    <Content Include="icons\map-marker.png" />
+    <Content Include="icons\map-pin.png" />
+    <Content Include="icons\message.png" />
+    <Content Include="icons\microphone.png" />
+    <Content Include="icons\music-note.png" />
+    <Content Include="icons\mybloglog.gif" />
+    <Content Include="icons\news.png" />
+    <Content Include="icons\note.png" />
+    <Content Include="icons\paw.png" />
+    <Content Include="icons\photo.png" />
+    <Content Include="icons\plus.png" />
+    <Content Include="icons\puzzle.png" />
+    <Content Include="icons\reddit.gif" />
+    <Content Include="icons\star.png" />
+    <Content Include="icons\stumbleupon.gif" />
+    <Content Include="icons\tag.png" />
+    <Content Include="icons\technorati.gif" />
+    <Content Include="icons\tshirt.png" />
+    <Content Include="icons\twitter.gif" />
+    <Content Include="icons\watermark.png" />
+    <Content Include="icons\youtube.gif" />
+    <Content Include="imgs\bg.gif" />
+    <Content Include="imgs\blue.jpg" />
+    <Content Include="imgs\content.gif" />
+    <Content Include="imgs\dot.gif" />
+    <Content Include="imgs\dot_off.gif" />
+    <Content Include="imgs\feed.png" />
+    <Content Include="imgs\footer.gif" />
+    <Content Include="imgs\h3_bg.gif" />
+    <Content Include="imgs\head.jpg" />
+    <Content Include="imgs\header3.png" />
+    <Content Include="imgs\ppintar.png" />
+    <Content Include="img\ambulance-facebook-emoticon.png" />
+    <Content Include="img\bank-emoticon-for-facebook.png" />
+    <Content Include="img\boy-and-girl-holding-hands.png" />
+    <Content Include="img\bus-emoticon.png" />
+    <Content Include="img\cal.jpg" />
+    <Content Include="img\department-store-emoticon.png" />
+    <Content Include="img\drawline.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\facebook-policeman-symbol.png" />
+    <Content Include="img\front_page.jpg" />
+    <Content Include="img\girl-emoticon-for-facebook.png" />
+    <Content Include="img\header.png" />
+    <Content Include="img\info.png" />
+    <Content Include="img\keamatan01.png" />
+    <Content Include="img\left.gif" />
+    <Content Include="img\Majlis_Penutup_PPCS_2010.jpg" />
+    <Content Include="img\man-emoticon.png" />
+    <Content Include="img\megaphone-emoticon.png" />
+    <Content Include="img\memo-sign-for-facebook.png" />
+    <Content Include="img\mens-emoticon.png" />
+    <Content Include="img\mini_permatapintar.jpg" />
+    <Content Include="img\open-book-emoticon.png" />
+    <Content Include="img\permatanegara.jpg" />
+    <Content Include="img\permatapintar.jpg" />
+    <Content Include="img\permatapintar_old.jpg" />
+    <Content Include="img\permata_insan.jpg" />
+    <Content Include="img\permata_insan.png" />
+    <Content Include="img\permata_negara.jpg" />
+    <Content Include="img\permata_negara.png" />
+    <Content Include="img\peta-kampus-induk.jpg" />
+    <Content Include="img\peta-kampus-indukv2.jpg" />
+    <Content Include="img\phone-symbol.png" />
+    <Content Include="img\print.png" />
+    <Content Include="img\red-exclamation-mark.png" />
+    <Content Include="img\refresh.jpg" />
+    <Content Include="img\restroom-emoticon.png" />
+    <Content Include="img\right.gif" />
+    <Content Include="img\sample_que.jpg" />
+    <Content Include="img\school_info.png" />
+    <Content Include="img\sekolah1.jpg" />
+    <Content Include="img\sekolah2.JPG" />
+    <Content Include="img\soccer-ball-emoticon.png" />
+    <Content Include="img\spacing.png" />
+    <Content Include="img\success.png" />
+    <Content Include="img\t-shirt-emoticon-for-facebook.png" />
+    <Content Include="img\text_calendar.png" />
+    <Content Include="img\tie-emoticon-facebook.png" />
+    <Content Include="img\TKC.jpg" />
+    <Content Include="img\UKM1.JPG" />
+    <Content Include="img\ukm1_2011_mini.jpg" />
+    <Content Include="img\ukm1_old.JPG" />
+    <Content Include="img\validation.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="img\white_space.jpg" />
+    <Content Include="js\CalendarPopup.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="js\jquery-1.4.2.js" />
+    <Content Include="js\jquery-1.4.4.min.js" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.datepick.js" />
+    <Content Include="js\jquery.plugin.js" />
+    <Content Include="js\jquery.simplemodal-1.4.1.js" />
+    <Content Include="js\jquery.simplemodal.1.4.1.min.js" />
+    <Content Include="logout.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="img\Thumbs.db" />
+    <Content Include="icons\Thumbs.db" />
+    <Content Include="admin.Master" />
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\permata_ukm3.pubxml" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="student.List.aspx" />
+    <Content Include="subject.List.aspx" />
+    <Content Include="tappcs.studentlist.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="default.Master" />
+    <Content Include="ShowImage.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.default.aspx.designer.vb">
+      <DependentUpon>admin.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.default.aspx.vb">
+      <DependentUpon>admin.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="Control\kelas_courseView.ascx.designer.vb">
+      <DependentUpon>kelas_courseView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\kelas_courseView.ascx.vb">
+      <DependentUpon>kelas_courseView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\kelas_List.ascx.designer.vb">
+      <DependentUpon>kelas_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\kelas_List.ascx.vb">
+      <DependentUpon>kelas_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\KPP\kpp_studentselection.ascx.designer.vb">
+      <DependentUpon>kpp_studentselection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\KPP\kpp_studentselection.ascx.vb">
+      <DependentUpon>kpp_studentselection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\RAPPCS\ra_studentselection.ascx.designer.vb">
+      <DependentUpon>ra_studentselection.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\RAPPCS\ra_studentselection.ascx.vb">
+      <DependentUpon>ra_studentselection.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\student_List.ascx.designer.vb">
+      <DependentUpon>student_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\student_List.ascx.vb">
+      <DependentUpon>student_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\subject_List.ascx.designer.vb">
+      <DependentUpon>subject_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\subject_List.ascx.vb">
+      <DependentUpon>subject_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\TAPPCS\tappcs_prepostMark.ascx.designer.vb">
+      <DependentUpon>tappcs_prepostMark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\TAPPCS\tappcs_prepostMark.ascx.vb">
+      <DependentUpon>tappcs_prepostMark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kelas.List.aspx.designer.vb">
+      <DependentUpon>kelas.List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kelas.List.aspx.vb">
+      <DependentUpon>kelas.List.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="kpp.masukmarkah.aspx.designer.vb">
+      <DependentUpon>kpp.masukmarkah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpp.masukmarkah.aspx.vb">
+      <DependentUpon>kpp.masukmarkah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Control\KPP\kpp_studentlist.ascx.designer.vb">
+      <DependentUpon>kpp_studentlist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\KPP\kpp_studentlist.ascx.vb">
+      <DependentUpon>kpp_studentlist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\KPP\kpp_studentlist_checklist.ascx.designer.vb">
+      <DependentUpon>kpp_studentlist_checklist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\KPP\kpp_studentlist_checklist.ascx.vb">
+      <DependentUpon>kpp_studentlist_checklist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kpp.studentlist.aspx.designer.vb">
+      <DependentUpon>kpp.studentlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpp.studentlist.aspx.vb">
+      <DependentUpon>kpp.studentlist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Control\login_trail.ascx.designer.vb">
+      <DependentUpon>login_trail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\login_trail.ascx.vb">
+      <DependentUpon>login_trail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kpp.studentselection.aspx.designer.vb">
+      <DependentUpon>kpp.studentselection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kpp.studentselection.aspx.vb">
+      <DependentUpon>kpp.studentselection.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ppcs.masukmarkah.aspx.designer.vb">
+      <DependentUpon>ppcs.masukmarkah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppcs.masukmarkah.aspx.vb">
+      <DependentUpon>ppcs.masukmarkah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Control\PPCS\ppcs_studentlist.ascx.designer.vb">
+      <DependentUpon>ppcs_studentlist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PPCS\ppcs_studentlist.ascx.vb">
+      <DependentUpon>ppcs_studentlist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\PPCS\ppcs_studentlist_checklist.ascx.designer.vb">
+      <DependentUpon>ppcs_studentlist_checklist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PPCS\ppcs_studentlist_checklist.ascx.vb">
+      <DependentUpon>ppcs_studentlist_checklist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ppcs.studentlist.aspx.designer.vb">
+      <DependentUpon>ppcs.studentlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ppcs.studentlist.aspx.vb">
+      <DependentUpon>ppcs.studentlist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ra.studentselection.aspx.designer.vb">
+      <DependentUpon>ra.studentselection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ra.studentselection.aspx.vb">
+      <DependentUpon>ra.studentselection.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="rappcs.masukmarkah.aspx.designer.vb">
+      <DependentUpon>rappcs.masukmarkah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rappcs.masukmarkah.aspx.vb">
+      <DependentUpon>rappcs.masukmarkah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Control\RAPPCS\rappcs_studentlist.ascx.designer.vb">
+      <DependentUpon>rappcs_studentlist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\RAPPCS\rappcs_studentlist.ascx.vb">
+      <DependentUpon>rappcs_studentlist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control\RAPPCS\rappcs_studentlist_checklist.ascx.designer.vb">
+      <DependentUpon>rappcs_studentlist_checklist.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control\RAPPCS\rappcs_studentlist_checklist.ascx.vb">
+      <DependentUpon>rappcs_studentlist_checklist.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rappcs.studentlist.aspx.designer.vb">
+      <DependentUpon>rappcs.studentlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="rappcs.studentlist.aspx.vb">
+      <DependentUpon>rappcs.studentlist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="default.Master.designer.vb">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.vb">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Simple3Des.vb" />
+    <Compile Include="student.List.aspx.designer.vb">
+      <DependentUpon>student.List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="student.List.aspx.vb">
+      <DependentUpon>student.List.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="subject.List.aspx.designer.vb">
+      <DependentUpon>subject.List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="subject.List.aspx.vb">
+      <DependentUpon>subject.List.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="TaksirCommon.vb" />
+    <Compile Include="tappcs.studentlist.aspx.designer.vb">
+      <DependentUpon>tappcs.studentlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tappcs.studentlist.aspx.vb">
+      <DependentUpon>tappcs.studentlist.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebCustomControl1.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\UKM3.dll.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50247</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

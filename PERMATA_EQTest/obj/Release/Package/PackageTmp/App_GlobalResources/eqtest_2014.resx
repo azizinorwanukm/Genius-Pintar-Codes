@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <!--
+      Microsoft ResX Schema
+
+      Version 2.0
+
+      The primary goals of this format is to allow a simple XML format
+      that is mostly human readable. The generation and parsing of the
+      various data types are done through the TypeConverter classes
+      associated with the data types.
+
+      Example:
+
+      ... ado.net/XML headers & schema ...
+      <resheader name="resmimetype">text/microsoft-resx</resheader>
+      <resheader name="version">2.0</resheader>
+      <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+      <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+      <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+      <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+      <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+          <value>[base64 mime encoded serialized .NET Framework object]</value>
+      </data>
+      <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+          <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+          <comment>This is a comment</comment>
+      </data>
+
+      There are any number of "resheader" rows that contain simple
+      name/value pairs.
+
+      Each data row contains a name, and value. The row also contains a
+      type or mimetype. Type corresponds to a .NET class that support
+      text/value conversion through the TypeConverter architecture.
+      Classes that don't support this are serialized and stored with the
+      mimetype set.
+
+      The mimetype is used for serialized objects, and tells the
+      ResXResourceReader how to depersist the object. This is currently not
+      extensible. For a given mimetype the value must be set accordingly:
+
+      Note - application/x-microsoft.net.object.binary.base64 is the format
+      that the ResXResourceWriter will generate, however the reader can
+      read any of the formats listed below.
+
+      mimetype: application/x-microsoft.net.object.binary.base64
+      value   : The object must be serialized with
+              : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+              : and then encoded with base64 encoding.
+
+      mimetype: application/x-microsoft.net.object.soap.base64
+      value   : The object must be serialized with
+              : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+              : and then encoded with base64 encoding.
+
+      mimetype: application/x-microsoft.net.object.bytearray.base64
+      value   : The object must be serialized into a byte array
+              : using a System.ComponentModel.TypeConverter
+              : and then encoded with base64 encoding.
+      -->
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:isdataset="true">
+            <xsd:complextype>
+                <xsd:choice maxoccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complextype>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minoccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complextype>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complextype>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complextype>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complextype>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minoccurs="0" msdata:ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minoccurs="0" msdata:ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complextype>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complextype>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minoccurs="0" msdata:ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complextype>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complextype>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+  <data name="lbldefault_01" xml:space="preserve">
+    <value>Instrumen “Penilaian 360° Pemimpin” ini bertujuan untuk mendapatkan penilaian anda mengenai tahap kecekapan pegawai yang dinilai dalam beberapa kecekapan teras. Penilaian ini hendaklah diasaskan pada pengalaman peribadi anda dengan pegawai yang dinilai.  Sila beri penilaian jujur anda dan jangan membincangkan penilaian anda dengan orang lain atau mendapatkan pandangan pihak lain mengenai penilaian yang anda patut berikan. 
+&lt;p&gt;Kenyataan-kenyataan di bawah merupakan huraian kelakuan kecekapan-kecekapan teras yang perlu dinilai. Sila guna skala di bawah untuk memberi penilaian anda. Sekiranya anda tidak dapat memberi penilaian terhadap kelakuan tertentu, sila pilih respon ‘0’. Penilaian yang anda berikan akan dirahsiakan. &lt;/p&gt;
+</value>
+  </data>
+  <data name="lblDomain01" xml:space="preserve">
+    <value>PERMATApintar Emotional Quotient Test</value>
+  </data>
+  <data name="lblDomain02" xml:space="preserve">
+    <value>PERMATApintar Emotional Quotient Test</value>
+  </data>
+  <data name="lblDomain03" xml:space="preserve">
+    <value>PERMATApintar Emotional Quotient Test</value>
+  </data>
+  <data name="lblInstruction" xml:space="preserve">
+    <value>Sila lihat setiap pernyataan dan berikan respons anda dengan jujur. Tidak ada pernyataan yang betul atau salah. </value>
+  </data>
+  <data name="lblFeedback" xml:space="preserve">
+    <value>Sila berikan maklumbalas anda mengenai pembaikan yang perlu diambil oleh pegawai yang dinilai.</value>
+  </data>
+  <data name="lblYes" xml:space="preserve">
+    <value>Ya</value>
+  </data>
+  <data name="lblNo" xml:space="preserve">
+    <value>Tidak</value>
+  </data>
+
+  <data name="lblD1Level1" xml:space="preserve">
+    <value>Sangat Tidak Setuju</value>
+  </data>
+  <data name="lblD1Level2" xml:space="preserve">
+    <value>Tidak Setuju</value>
+  </data>
+  <data name="lblD1Level3" xml:space="preserve">
+    <value>Tidak Pasti</value>
+  </data>
+  <data name="lblD1Level4" xml:space="preserve">
+    <value>Setuju</value>
+  </data>
+  <data name="lblD1Level5" xml:space="preserve">
+    <value>Sangat Setuju</value>
+  </data>
+
+  <data name="lblD2Level1" xml:space="preserve">
+    <value>I do not want to beinvolved in this team at all</value>
+  </data>
+  <data name="lblD2Level2" xml:space="preserve">
+    <value>I would not enjoy working on this team at all</value>
+  </data>
+  <data name="lblD2Level3" xml:space="preserve">
+    <value>I would enjoy working on this team a little</value>
+  </data>
+  <data name="lblD2Level4" xml:space="preserve">
+    <value>I would enjoy working on this team a lot</value>
+  </data>
+  <data name="lblD2Level5" xml:space="preserve">
+    <value>I would really enjoy working on this team</value>
+  </data>
+
+  <data name="lblD3Level1" xml:space="preserve">
+    <value>I am not interested to learn about this topic at all</value>
+  </data>
+  <data name="lblD3Level2" xml:space="preserve">
+    <value>I would not enjoy learning about this topic at all</value>
+  </data>
+  <data name="lblD3Level3" xml:space="preserve">
+    <value>I would enjoy learning about this topic a little</value>
+  </data>
+  <data name="lblD3Level4" xml:space="preserve">
+    <value>I would enjoy learning about this topic a lot</value>
+  </data>
+  <data name="lblD3Level5" xml:space="preserve">
+    <value>I would enjoy learning about this topic a whole lot
+</value>
+  </data>
+
+  <data name="lblD4Level1" xml:space="preserve">
+    <value>I am not interested in the job at all</value>
+  </data>
+  <data name="lblD4Level2" xml:space="preserve">
+    <value>I would not enjoy having this job at all</value>
+  </data>
+  <data name="lblD4Level3" xml:space="preserve">
+    <value>I would enjoy having this job a little</value>
+  </data>
+  <data name="lblD4Level4" xml:space="preserve">
+    <value>I would enjoy having this job a lot</value>
+  </data>
+  <data name="lblD4Level5" xml:space="preserve">
+    <value>I would enjoy having this job a whole lot
+</value>
+  </data>
+
+
+  <data name="lnkNext" xml:space="preserve">
+    <value>Seterusnya...</value>
+  </data>
+  <data name="lblNext" xml:space="preserve">
+    <value>Sila jawab semua soalan. Tekan [Seterusnya] bila selesai.</value>
+  </data>
+  <data name="lblDone" xml:space="preserve">
+    <value>Sila jawab semua soalan. Tekan [Hantar] bila selesai.</value>
+  </data>
+  <data name="lblDoneOptional" xml:space="preserve">
+    <value>Tekan [Hantar] bila selesai.</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Seterusnya..</value>
+  </data>
+  <data name="btnPrev" xml:space="preserve">
+    <value>..Sebelumnya</value>
+  </data>
+  <data name="btnDone" xml:space="preserve">
+    <value>Hantar</value>
+  </data>
+  <data name="lblDescriptor" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="lblRating" xml:space="preserve">
+    <value>Penilaian Anda</value>
+  </data>
+  <data name="lblAnswer" xml:space="preserve">
+    <value>Jawapan anda</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>Komen</value>
+  </data>
+
+  <!--1.PERMATApintar Emotional Quotient Test -->
+  <data name="lblQ001" xml:space="preserve">
+    <value>Saya boleh memaafkan diri sendiri setelah melakukan kesilapan.</value>
+  </data>
+  <data name="lblQ002" xml:space="preserve">
+    <value>Kesilapan yang saya lakukan tidak memberi kesan yang berpanjangan terhadap perasaan saya.</value>
+  </data>
+  <data name="lblQ003" xml:space="preserve">
+    <value>Saya tahu apabila saya berfikir secara negatif terhadap diri sendiri (tidak yakin, tidak mampu, tidak cantik, tidak bergaya, tiada semangat dll.) </value>
+  </data>
+  <data name="lblQ004" xml:space="preserve">
+    <value>Saya boleh menceritakan dengan tepat apa yang saya alami kepada orang lain. </value>
+  </data>
+  <data name="lblQ005" xml:space="preserve">
+    <value>Saya boleh rasai perubahan perasaan apabila dirangsang oleh sesuatu perkara/peristiwaS. </value>
+  </data>
+  <data name="lblQ006" xml:space="preserve">
+    <value>Saya mampu membina tingkahlaku baru yang lebih berkesan. </value>
+  </data>
+  <data name="lblQ007" xml:space="preserve">
+    <value>Saya yakin bahawa pandangan saya boleh diterima oleh orang lain. </value>
+  </data>
+  <data name="lblQ008" xml:space="preserve">
+    <value>Saya adalah apa yang saya inginkan. </value>
+  </data>
+  <data name="lblQ009" xml:space="preserve">
+    <value>Saya tidak malu memberi pandangan saya walaupun ianya satu pandangan yang berbeza daripada pandangan orang lain. </value>
+  </data>
+  <data name="lblQ010" xml:space="preserve">
+    <value>Saya boleh melaksanakan apa yang telah saya rancang.</value>
+  </data>
+  <data name="lblQ011" xml:space="preserve">
+    <value>Saya akan berpuas hati apabila mengetahui kekuatan diri sendiri.</value>
+  </data>
+  <data name="lblQ012" xml:space="preserve">
+    <value>Saya tahu kesan tingkah laku saya ke atas orang lain.</value>
+  </data>
+  <data name="lblQ013" xml:space="preserve">
+    <value>Saya dapat merasakan perubahan perasaan saya apabila menjalankan sesuatu kerja dengan tujuan tertentu.</value>
+  </data>
+  <data name="lblQ014" xml:space="preserve">
+    <value>Saya selalu memulakan sesuatu tugas dengan niat yang baik.</value>
+  </data>
+  <data name="lblQ015" xml:space="preserve">
+    <value>Saya boleh bercakap di khalayak ramai tanpa berasa gelisah.</value>
+  </data>
+  <data name="lblQ016" xml:space="preserve">
+    <value>Saya ingin menukar gaya hidup saya supaya menjadi lebih baik.</value>
+  </data>
+  <data name="lblQ017" xml:space="preserve">
+    <value>Penting untuk saya menyelesaikan sesuatu tugas yang saya telah mulakan.</value>
+  </data>
+  <data name="lblQ018" xml:space="preserve">
+    <value>Saya mampu membuat rakan-rakan saya gembira. </value>
+  </data>
+  <data name="lblQ019" xml:space="preserve">
+    <value>Saya selalu lakukan apa yang saya niatkan. </value>
+  </data>
+  <data name="lblQ020" xml:space="preserve">
+    <value>Saya selalu lakukan sesuatu secara bertujuan.</value>
+  </data>
+  <data name="lblQ021_0" xml:space="preserve">
+    <value>Setiap foto dibawah menggambarkan emosi tertentu. Tanpa mengambilkira jatina, gambarkan individu yang anda nilai adalah individu dalam foto tersebut. Gambarkan individu tersebut berada dalam pelbagai situasi yang melahirkan beberapa ekspresi wajah dan gambaran emosi yang boleh anda ingat apabila anda berinteraksi dengannya. Nyatakan tahap emosi beliau bagi setiap jenis ekspresi emosi dengan memilih butang radio yang disediakan. Setiap nombor menggambarkan tahap keamatan bagi emosi yang anda dapat perhatikan terhadap individu yang anda nilai. </value>
+  </data>
+  <data name="lblQ021" xml:space="preserve">
+    <value>1 - Sangat Tidak Marah | 2- Tidak Marah | 3 - Tidak Pasti | 4 - Marah | 5 - Sangat Marah.</value>
+  </data>
+  <data name="lblQ021_1" xml:space="preserve">
+    <value> Sangat Tidak Marah </value>
+  </data>
+  <data name="lblQ021_2" xml:space="preserve">
+    <value> Tidak Marah </value>
+  </data>
+  <data name="lblQ021_3" xml:space="preserve">
+    <value> Tidak Pasti </value>
+  </data>
+  <data name="lblQ021_4" xml:space="preserve">
+    <value> Marah </value>
+  </data>
+  <data name="lblQ021_5" xml:space="preserve">
+    <value> Sangat Marah</value>
+  </data>
+  <data name="lblQ022" xml:space="preserve">
+    <value>1 - Sangat Tidak Hairan | 2 - Tidak Hairan | 3 - Tidak Pasti | 4 - Hairan | 5 - Sangat Hairan. </value>
+  </data>
+  <data name="lblQ022_1" xml:space="preserve">
+    <value> Sangat Tidak Hairan </value>
+  </data>
+  <data name="lblQ022_2" xml:space="preserve">
+    <value> Tidak Hairan </value>
+  </data>
+  <data name="lblQ022_3" xml:space="preserve">
+    <value> Tidak Pasti </value>
+  </data>
+  <data name="lblQ022_4" xml:space="preserve">
+    <value> Hairan </value>
+  </data>
+  <data name="lblQ022_5" xml:space="preserve">
+    <value> Sangat Hairan</value>
+  </data>
+  <data name="lblQ023" xml:space="preserve">
+    <value>1 - Sangat Tidak Seronok | 2 - Tidak Seronok | 3 - Tidak Pasti | 4 - Seronok | 5 - Sangat Seronok.</value>
+  </data>
+  <data name="lblQ023_1" xml:space="preserve">
+    <value> Sangat Tidak Seronok </value>
+  </data>
+  <data name="lblQ023_2" xml:space="preserve">
+    <value> Tidak Seronok </value>
+  </data>
+  <data name="lblQ023_3" xml:space="preserve">
+    <value> Tidak Pasti </value>
+  </data>
+  <data name="lblQ023_4" xml:space="preserve">
+    <value> Seronok </value>
+  </data>
+  <data name="lblQ023_5" xml:space="preserve">
+    <value> Sangat Seronok</value>
+  </data>
+  <data name="lblQ024" xml:space="preserve">
+    <value>1 - Sangat Tidak Risau | 2 - Tidak Risau | 3 - Tidak Pasti | 4 - Risau | 5 - Sangat Risau.</value>
+  </data>
+  <data name="lblQ024_1" xml:space="preserve">
+    <value> Sangat Tidak Risau </value>
+  </data>
+  <data name="lblQ024_2" xml:space="preserve">
+    <value> Tidak Risau </value>
+  </data>
+  <data name="lblQ024_3" xml:space="preserve">
+    <value> Tidak Pasti </value>
+  </data>
+  <data name="lblQ024_4" xml:space="preserve">
+    <value> Risau </value>
+  </data>
+  <data name="lblQ024_5" xml:space="preserve">
+    <value> Sangat Risau </value>
+  </data>
+  <data name="lblQ025" xml:space="preserve">
+    <value>1 - Sangat Tidak Sedih | 2 - Tidak Sedih | 3 - Tidak Pasti | 4 - Sedih | 5 - Sangat Sedih. </value>
+  </data>
+  <data name="lblQ025_1" xml:space="preserve">
+    <value> Sangat Tidak Sedih </value>
+  </data>
+  <data name="lblQ025_2" xml:space="preserve">
+    <value> Tidak Sedih </value>
+  </data>
+  <data name="lblQ025_3" xml:space="preserve">
+    <value> Tidak Pasti </value>
+  </data>
+  <data name="lblQ025_4" xml:space="preserve">
+    <value> Sedih </value>
+  </data>
+  <data name="lblQ025_5" xml:space="preserve">
+    <value> Sangat Sedih</value>
+  </data>
+  <data name="lblQ026" xml:space="preserve">
+    <value>Saya cepat naik marah apabila orang lain memarahi saya.</value>
+  </data>
+  <data name="lblQ027" xml:space="preserve">
+    <value>Saya sentiasa melakukan apa yang saya katakan.</value>
+  </data>
+  <data name="lblQ028" xml:space="preserve">
+    <value>Saya boleh bertenang walau pun orang lain memarahi saya.</value>
+  </data>
+  <data name="lblQ029" xml:space="preserve">
+    <value>Saya tidak gemar membuat sesuatu perkara dengan cara yang sama walau pun hasilnya bertambah baik.</value>
+  </data>
+  <data name="lblQ030" xml:space="preserve">
+    <value>Saya sentiasa menyelesaikan semua tugas yang diamanahkan kepada saya. </value>
+  </data>
+  <data name="lblQ031" xml:space="preserve">
+    <value>Saya boleh tenangkan diri dengan cepat apabila dalam keadaan marah.</value>
+  </data>
+  <data name="lblQ032" xml:space="preserve">
+    <value>Saya berasa bertanggungjawab melaksanakan arahan daripada pihak atasan.</value>
+  </data>
+  <data name="lblQ033" xml:space="preserve">
+    <value>Saya tidak kecil hati apabila hasil kerja yang saya lakukan dikritik.</value>
+  </data>
+  <data name="lblQ034" xml:space="preserve">
+    <value>Saya bersikap jujur dalam semua tindakan saya.</value>
+  </data>
+  <data name="lblQ035" xml:space="preserve">
+    <value>Saya mampu bertindak dengan tenang walau pun saya sedang marah.</value>
+  </data>
+  <data name="lblQ036" xml:space="preserve">
+    <value>Saya sentiasa menepati waktu.</value>
+  </data>
+  <data name="lblQ037" xml:space="preserve">
+    <value>Saya boleh membuat orang lain percayakan saya. </value>
+  </data>
+  <data name="lblQ038" xml:space="preserve">
+    <value>Saya sentiasa tenang walau pun dalam keadaan tertekan.</value>
+  </data>
+  <data name="lblQ039" xml:space="preserve">
+    <value>Saya tidak akan tersinggung apabila orang lain mengata saya. </value>
+  </data>
+  <data name="lblQ040" xml:space="preserve">
+    <value>Saya berasa bersalah sekiranya tugas yang diamanahkan tidak dapat diselesaikan dengan sempurna.</value>
+  </data>
+  <data name="lblQ041" xml:space="preserve">
+    <value>Saya boleh menyesuaikan diri dengan mudah dalam pelbagai situasi.</value>
+  </data>
+  <data name="lblQ042" xml:space="preserve">
+    <value>Saya sentiasa menyelesaikan tugas yang diberikan.</value>
+  </data>
+  <data name="lblQ043" xml:space="preserve">
+    <value>Saya boleh membina tingkahlaku baru mengikut keadaan.</value>
+  </data>
+  <data name="lblQ044" xml:space="preserve">
+    <value>Saya sentiasa memastikan tiada kesilapan dalam kerja saya.</value>
+  </data>
+  <data name="lblQ045" xml:space="preserve">
+    <value>Saya boleh menjalankan tugas tanpa diselia. </value>
+  </data>
+  <data name="lblQ046" xml:space="preserve">
+    <value>Saya boleh mengubah tabiat saya yang tidak berkesan </value>
+  </data>
+  <data name="lblQ047" xml:space="preserve">
+    <value>Saya sentiasa meneliti semula tugas yang saya telah lakukan </value>
+  </data>
+  <data name="lblQ048" xml:space="preserve">
+    <value>Saya boleh menyesuaikan pandangan saya mengikut keadaan. </value>
+  </data>
+  <data name="lblQ049" xml:space="preserve">
+    <value>Saya suka mencuba perkara-perkara baru.</value>
+  </data>
+  <data name="lblQ050" xml:space="preserve">
+    <value>Saya mampu berinteraksi secara selesa dengan orang yang berbeza personaliti daripada saya.</value>
+  </data>
+  <data name="lblQ051" xml:space="preserve">
+    <value>Saya suka menggunakan teknologi terkini dalam pekerjaan.</value>
+  </data>
+  <data name="lblQ052" xml:space="preserve">
+    <value>Saya boleh menyesuaikan pandangan saya mengikut keperluan semasa. </value>
+  </data>
+  <data name="lblQ053" xml:space="preserve">
+    <value>Saya sentiasa bersikap terbuka kepada idea baru. </value>
+  </data>
+  <data name="lblQ054" xml:space="preserve">
+    <value>Saya mampu mengawal perasaan walau pun orang lain marah kepada saya. </value>
+  </data>
+  <data name="lblQ055" xml:space="preserve">
+    <value>Saya suka kepada perkara yang mencabar.</value>
+  </data>
+  <data name="lblQ056" xml:space="preserve">
+    <value>Saya suka mencari idea baru bagi menyelesaikan sesuatu tugas atau masalah.</value>
+  </data>
+  <data name="lblQ057" xml:space="preserve">
+    <value>Saya sanggup bekerja bersungguh-sungguh walaupun kerja yang diberi tidak menarik. </value>
+  </data>
+  <data name="lblQ058" xml:space="preserve">
+    <value>Saya sanggup berusaha untuk meningkatkan prestasi kerja.</value>
+  </data>
+  <data name="lblQ059" xml:space="preserve">
+    <value>Matlamat peribadi saya adalah untuk mencapai kecemerlangan.</value>
+  </data>
+  <data name="lblQ060" xml:space="preserve">
+    <value>Saya sentiasa bekerja keras untuk menghasilkan kerja yang cemerlang.</value>
+  </data>
+  <data name="lblQ061" xml:space="preserve">
+    <value>Saya sentiasa bersedia untuk menerima sebarang tugas.</value>
+  </data>
+  <data name="lblQ062" xml:space="preserve">
+    <value>Saya sanggup bekerja keras walau pun diberikan tugas yang sukar. </value>
+  </data>
+  <data name="lblQ063" xml:space="preserve">
+    <value>Saya sentiasa menyelesaikan tugas saya. </value>
+  </data>
+  <data name="lblQ064" xml:space="preserve">
+    <value>Saya sentiasa bersemangat apabila menjalankan tugas. </value>
+  </data>
+  <data name="lblQ065" xml:space="preserve">
+    <value>Saya bertanggungjawab atas semua tugas yang diberikan kepada saya. </value>
+  </data>
+  <data name="lblQ066" xml:space="preserve">
+    <value>Saya akan menyiapkan semua kerja sehingga selesai. </value>
+  </data>
+  <data name="lblQ067" xml:space="preserve">
+    <value>Saya sentiasa memastikan prestasi kerja saya cemerlang. </value>
+  </data>
+  <data name="lblQ068" xml:space="preserve">
+    <value>Saya sentiasa mencari peluang untuk mencapai matlamat peribadi.</value>
+  </data>
+  <data name="lblQ069" xml:space="preserve">
+    <value>Saya sentiasa merebut peluang-peluang yang ada dalam kerjaya.</value>
+  </data>
+  <data name="lblQ070" xml:space="preserve">
+    <value>Saya akan membuat keputusan yang selari dengan matlamat organisasi saya.</value>
+  </data>
+  <data name="lblQ071" xml:space="preserve">
+    <value>Minat mendorong saya untuk berusaha sehingga berjaya.</value>
+  </data>
+  <data name="lblQ072" xml:space="preserve">
+    <value>Saya sentiasa melihat sesuatu kerja yang diberi sebagai cara untuk memperbaiki diri.</value>
+  </data>
+  <data name="lblQ073" xml:space="preserve">
+    <value>Saya suka menawarkan diri untuk mengikuti kursus-kursus yang boleh meningkatkan kerjaya saya.</value>
+  </data>
+  <data name="lblQ074" xml:space="preserve">
+    <value>Saya tidak jemu bila menjalankan tugas yang saya suka.</value>
+  </data>
+  <data name="lblQ075" xml:space="preserve">
+    <value>Keamatan Perasaan:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi.</value>
+  </data>
+  <data name="Keamatan1" xml:space="preserve">
+    <value> Sangat Rendah </value>
+  </data>
+  <data name="Keamatan2" xml:space="preserve">
+    <value> Rendah </value>
+  </data>
+  <data name="Keamatan3" xml:space="preserve">
+    <value> Tidak Pasti </value>
+  </data>
+  <data name="Keamatan4" xml:space="preserve">
+    <value> Tinggi </value>
+  </data>
+  <data name="Keamatan5" xml:space="preserve">
+    <value> Sangat Tinggi </value>
+  </data>
+
+  <data name="lblQ076" xml:space="preserve">
+    <value>Keamatan Perasaan:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi.</value>
+  </data>
+  <data name="lblQ077" xml:space="preserve">
+    <value>Keamatan Perasaan:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi.</value>
+  </data>
+  <data name="lblQ078" xml:space="preserve">
+    <value>Keamatan Perasaan:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi.</value>
+  </data>
+  <data name="lblQ079" xml:space="preserve">
+    <value>Keamatan Perasaan:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi.</value>
+  </data>
+  <data name="lblQ080" xml:space="preserve">
+    <value>Keamatan Perasaan:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi.</value>
+  </data>
+  <data name="lblQ081" xml:space="preserve">
+    <value>Saya boleh menyatakan perasaan orang lain dengan tepat. </value>
+  </data>
+  <data name="lblQ082" xml:space="preserve">
+    <value>Saya akan membantu rakan-rakan memperbaiki diri mereka. </value>
+  </data>
+  <data name="lblQ083" xml:space="preserve">
+    <value>Saya dapat merasakan kesedihan orang lain. </value>
+  </data>
+  <data name="lblQ084" xml:space="preserve">
+    <value>Saya akan membantu semua rakan-rakan memajukan diri dalam kerjaya.</value>
+  </data>
+  <data name="lblQ085" xml:space="preserve">
+    <value>Saya boleh memahami situasi sukar yang dialami oleh orang lain. </value>
+  </data>
+  <data name="lblQ086" xml:space="preserve">
+    <value>Saya sentiasa membantu rakan-rakan melihat peluang yang ada di sekitar mereka.</value>
+  </data>
+  <data name="lblQ087" xml:space="preserve">
+    <value>Saya akan membantu rakan yang memerlukan bantuan.</value>
+  </data>
+  <data name="lblQ088" xml:space="preserve">
+    <value>Saya dapat meneka perasaan orang lain dengan hanya memerhatikan tingkahlaku mereka.</value>
+  </data>
+  <data name="lblQ089" xml:space="preserve">
+    <value>Saya akan membantu orang lain belajar menyelesaikan masalah mereka.</value>
+  </data>
+  <data name="lblQ090" xml:space="preserve">
+    <value>Saya tahu apabila seseorang cuba menyembunyikan perasaannya. </value>
+  </data>
+  <data name="lblQ091" xml:space="preserve">
+    <value>Saya akan membimbing rakan-rakan menyelesaikan sesuatu tugas.</value>
+  </data>
+  <data name="lblQ092" xml:space="preserve">
+    <value>Orang lain selalu menceritakan masalah mereka kepada saya.</value>
+  </data>
+  <data name="lblQ093" xml:space="preserve">
+    <value>Saya sentiasa membantu pelbagai pihak untuk bekerjasama bagi mencapai satu matlamat yang dipersetujui bersama. </value>
+  </data>
+  <data name="lblQ094" xml:space="preserve">
+    <value>Saya sentiasa bertanya kepada rakan saya keperluan mereka sebelum menghulurkan bantuan. </value>
+  </data>
+  <data name="lblQ095" xml:space="preserve">
+    <value>Saya menghormati setiap pandangan rakan-rakan saya. </value>
+  </data>
+  <data name="lblQ096" xml:space="preserve">
+    <value>Saya sedia memberikan khidmat kepada orang lain pada bila-bila masa. </value>
+  </data>
+  <data name="lblQ097" xml:space="preserve">
+    <value>Saya sentiasa memastikan perkhidmatan yang saya berikan memuaskan. </value>
+  </data>
+  <data name="lblQ098" xml:space="preserve">
+    <value>Saya gembira apabila orang berpuas hati dengan perkhidmatan saya.</value>
+  </data>
+  <data name="lblQ099" xml:space="preserve">
+    <value>Saya selalu menggalakkan rakan-rakan untuk menghadiri kursus yang boleh membantu meningkatkan prestasi kerja mereka. </value>
+  </data>
+  <data name="lblQ100" xml:space="preserve">
+    <value>Saya menerima kritikan sebagai cara untuk memperbaiki perkhidmatan yang saya berikan.</value>
+  </data>
+  <data name="lblQ101" xml:space="preserve">
+    <value>Saya cuba membina persekitaran yang selesa untuk rakan dan saya bekerja.</value>
+  </data>
+  <data name="lblQ102" xml:space="preserve">
+    <value>Saya sedih apabila mendapat tahu orang lain teraniaya. </value>
+  </data>
+  <data name="lblQ103" xml:space="preserve">
+    <value>Saya sedar apabila orang lain tidak puas hati dengan sikap saya.</value>
+  </data>
+  <data name="lblQ104" xml:space="preserve">
+    <value>Saya suka membantu rakan yang ingin berubah.</value>
+  </data>
+  <data name="lblQ105" xml:space="preserve">
+    <value>Kadangkala saya terpaksa menjaga perasaan orang lain. </value>
+  </data>
+  <data name="lblQ106" xml:space="preserve">
+    <value>Saya boleh mengubah pendirian rakan-rakan tentang sesuatu isu. </value>
+  </data>
+  <data name="lblQ107" xml:space="preserve">
+    <value>Saya rasa sedih apabila melihat orang lain mengalami kesusahan.</value>
+  </data>
+  <data name="lblQ108" xml:space="preserve">
+    <value>Saya akan cuba mententeramkan rakan yang sedang marah.</value>
+  </data>
+  <data name="lblQ109" xml:space="preserve">
+    <value>Saya tahu siapa yang paling berpengaruh di kalangan rakan-rakan saya. </value>
+  </data>
+  <data name="lblQ110" xml:space="preserve">
+    <value>Saya membenarkan rakan-rakan menyatakan pandangan yang berbeza.</value>
+  </data>
+  <data name="lblQ111" xml:space="preserve">
+    <value>Saya faham kenapa kadangkala seseorang bertingkahlaku secara keterlaluan.</value>
+  </data>
+  <data name="lblQ112" xml:space="preserve">
+    <value>Saya selalu menjadi tempat rakan-rakan menyatakan rasa tidak puas hati.</value>
+  </data>
+  <data name="lblQ113" xml:space="preserve">
+    <value>Saya prehatin tentang perasaan orang lain terhadap saya.</value>
+  </data>
+  <data name="lblQ114" xml:space="preserve">
+    <value>Saya bangga melihat kejayaan yang dicapai oleh rakan saya. </value>
+  </data>
+  <data name="lblQ115" xml:space="preserve">
+    <value>Saya akan membantu orang lain memahami diri mereka.</value>
+  </data>
+  <data name="lblQ116" xml:space="preserve">
+    <value>Saya tidak suka melihat orang lain menderita.</value>
+  </data>
+  <data name="lblQ117" xml:space="preserve">
+    <value>Saya selalu diminta menyelesaikan pertelingkahan yang berlaku di tempat kerja.</value>
+  </data>
+  <data name="lblQ118" xml:space="preserve">
+    <value>Saya boleh membuat orang lain berfikir seperti saya. </value>
+  </data>
+  <data name="lblQ119" xml:space="preserve">
+    <value>Saya tidak akan mengelak daripada konflik yang saya hadapi.</value>
+  </data>
+  <data name="lblQ120" xml:space="preserve">
+    <value>Saya boleh membantu rakan-rakan mencapai kata sepakat. </value>
+  </data>
+  <data name="lblQ121" xml:space="preserve">
+    <value>Saya boleh membantu rakan-rakan mencapai kata sepakat.</value>
+  </data>
+  <data name="lblQ122" xml:space="preserve">
+    <value>Saya boleh mengubah pandangan orang lain terhadap sesuatu isu .</value>
+  </data>
+  <data name="lblQ123" xml:space="preserve">
+    <value>Saya lebih suka mengorbankan kepentingan peribadi demi persahabatan. </value>
+  </data>
+  <data name="lblQ124" xml:space="preserve">
+    <value>Saya boleh membuat orang lain menerima keputusan saya.</value>
+  </data>
+  <data name="lblQ125" xml:space="preserve">
+    <value>Saya cuba mengadakan situasi di mana semua individu yang berkonflik akan mendapat manafaat bersama .</value>
+  </data>
+  <data name="lblQ126" xml:space="preserve">
+    <value>Rakan-rakan tidak pernah menolak pandangan saya. </value>
+  </data>
+  <data name="lblQ127" xml:space="preserve">
+    <value>Saya sentiasa memberi perangsang kepada rakan-rakan agar tidak berputus asa jika mendapat tugas yang sukar. </value>
+  </data>
+  <data name="lblQ128" xml:space="preserve">
+    <value>Saya akan memberi peluang kepada rakan setugas menyelesaikan tugasnya tanpa diganggu.</value>
+  </data>
+  <data name="lblQ129" xml:space="preserve">
+    <value>Saya akan mencari kaedah yang paling sesuai untuk membantu rakan-rakan menyelesaikan sesuatu tugas yang sukar.</value>
+  </data>
+  <data name="lblQ130" xml:space="preserve">
+    <value>Saya akan memperkenalkan rakan setugas baru saya kepada orang lain.</value>
+  </data>
+  <data name="lblQ131" xml:space="preserve">
+    <value>Saya tahu apa yang perlu diubah untuk meningkatkan hasil kerja saya. </value>
+  </data>
+  <data name="lblQ132" xml:space="preserve">
+    <value>Saya selalu menjemput rakan-rakan rapat makan tengahari bersama saya.</value>
+  </data>
+  <data name="lblQ133" xml:space="preserve">
+    <value>Saya sentiasa memberikan ide yang membawa kepada perubahan. </value>
+  </data>
+  <data name="lblQ134" xml:space="preserve">
+    <value>Saya akan membantu rakan-rakan menjana perubahan yang positif.</value>
+  </data>
+  <data name="lblQ135" xml:space="preserve">
+    <value>Saya mudah membina hubungan mesra dengan sesiapa sahaja. </value>
+  </data>
+  <data name="lblQ136" xml:space="preserve">
+    <value>Saya akan mengajak rakan-rakan untuk sama-sama melakukan perubahan yang boleh meningkatkan prestasi kerja. </value>
+  </data>
+  <data name="lblQ137" xml:space="preserve">
+    <value>Saya akan memperkenalkan rakan baru kepada orang lain.</value>
+  </data>
+  <data name="lblQ138" xml:space="preserve">
+    <value>Saya sentiasa mengajak rakan-rakan untuk melakukan sesuatu tugas bersama-sama .  </value>
+  </data>
+  <data name="lblQ139" xml:space="preserve">
+    <value>Saya suka apabila orang lain memberi maklumbalas terhadap ide saya. </value>
+  </data>
+  <data name="lblQ140" xml:space="preserve">
+    <value>Saya boleh mewujudkan semangat bekerjasama di kalangan rakan-rakan setugas.</value>
+  </data>
+  <data name="lblQ141" xml:space="preserve">
+    <value>Saya tidak mempunyai sebarang masalah apabila diminta bekerja dengan orang lain.</value>
+  </data>
+  <data name="lblQ142" xml:space="preserve">
+    <value>Saya sentiasa menggalakkan rakan-rakan untuk terus bekerja bersama-sama bagi mencapai matlamat kami.</value>
+  </data>
+  <data name="lblQ143" xml:space="preserve">
+    <value>Saya mampu memberi keterangan dengan jelas. </value>
+  </data>
+  <data name="lblQ144" xml:space="preserve">
+    <value>Saya sentiasa cuba membina hubungan kerja yang harmoni dengan rakan-rakan setugas. </value>
+  </data>
+  <data name="lblQ145" xml:space="preserve">
+    <value>Saya boleh bekerja dengan sesiapa sahaja.</value>
+  </data>
+  <data name="lblQ146" xml:space="preserve">
+    <value>Saya akan membantu rakan-rakan dengan tugas mereka jika diminta.</value>
+  </data>
+  <data name="lblQ147" xml:space="preserve">
+    <value>Saya sentiasa berbincang dengan rakan setugas apabila merancang sesuatu projek baru. </value>
+  </data>
+  <data name="lblQ148" xml:space="preserve">
+    <value>Saya sedia mendengar pandangan orang lain.</value>
+  </data>
+  <data name="lblQ149" xml:space="preserve">
+    <value>Saya sentiasa berkongsi maklumat dengan rakan setugas apabila bekerja bersama-sama. </value>
+  </data>
+  <data name="lblQ150" xml:space="preserve">
+    <value>Saya lebih suka berkomunikasi secara terbuka.</value>
+  </data>
+  <data name="lblQ151" xml:space="preserve">
+    <value>Saya rapat dengan semua rakan setugas saya.</value>
+  </data>
+  <data name="lblQ152" xml:space="preserve">
+    <value>Tidak semua pandangan saya betul.</value>
+  </data>
+  <data name="lblQ153" xml:space="preserve">
+    <value>Saya boleh memulakan perbualan dengan sesiapa sahaja dalam sesuatu majlis </value>
+  </data>
+  <data name="lblQ154" xml:space="preserve">
+    <value>Mengapa saya perlu mengetahui perasaan saya sendiri?</value>
+  </data>
+  <data name="lblQ155" xml:space="preserve">
+    <value>Mengapa saya perlu tahu kekuatan dan kelemahan diri sendiri ?</value>
+  </data>
+  <data name="lblQ156" xml:space="preserve">
+    <value>Mengapa saya perlu tahu kebolehan diri sendiri?</value>
+  </data>
+  <data name="lblQ157" xml:space="preserve">
+    <value>Mengapa saya sentiasa perlu mengawal perasaan saya? </value>
+  </data>
+  <data name="lblQ158" xml:space="preserve">
+    <value>Apa yang perlu saya lakukan apabila inginkan kecemerlangan dalam tugas?</value>
+  </data>
+  <data name="lblQ159" xml:space="preserve">
+    <value>Mengapa saya sentiasa perlu berpandangan positif apabila menjalankan tugas yang sukar?</value>
+  </data>
+  <data name="lblQ160" xml:space="preserve">
+    <value>Apa yang perlu saya lakukan apabila terdapat perebutan kuasa di tempat saya bekerja?</value>
+  </data>
+  <data name="lblQ161" xml:space="preserve">
+    <value>Mengapa saya perlu membimbing orang lain dalam menjalankan tugas?</value>
+  </data>
+  <data name="lblQ162" xml:space="preserve">
+    <value>Saya suka melihat orang lain berjaya dalam hidup.</value>
+  </data>
+  <data name="lblQ163" xml:space="preserve">
+    <value>Pengalaman masa lalu membuatkan saya lebih berhati-hati.</value>
+  </data>
+  <data name="lblQ164" xml:space="preserve">
+    <value>Saya tidak mahu merosakkan kehidupan orang lain. </value>
+  </data>
+  <data name="lblQ165" xml:space="preserve">
+    <value>Saya tidak suka menyatakan sesuatu yang buruk tentang orang lain. </value>
+  </data>
+  <data name="lblQ166" xml:space="preserve">
+    <value>Saya sentiasa belajar untuk meningkatkan kefahaman tentang sesuatu perkara.</value>
+  </data>
+  <data name="lblQ167" xml:space="preserve">
+    <value>Saya tidak memaklumkan kepada sesiapa apabila menghulurkan bantuan kepada orang yang memerlukan.</value>
+  </data>
+  <data name="lblQ168" xml:space="preserve">
+    <value>Saya hilang sabar apabila di hina. </value>
+  </data>
+  <data name="lblQ169" xml:space="preserve">
+    <value>Saya melihat rintangan sebagai satu cabaran.</value>
+  </data>
+  <data name="lblQ170" xml:space="preserve">
+    <value>Saya suka kepada persekitaran yang bersih. </value>
+  </data>
+  <data name="lblQ171" xml:space="preserve">
+    <value>Saya banyak belajar dari kesukaran hidup yang pernah saya tempuhi. </value>
+  </data>
+  <data name="lblQ172" xml:space="preserve">
+    <value>Apa yang berlaku dalam hidup saya adalah takdir. </value>
+  </data>
+  <data name="lblQ173" xml:space="preserve">
+    <value>Apa yang saya pelajari dari pengalaman membolehkan saya menerima kritikan secara terbuka. </value>
+  </data>
+  <data name="lblQ174" xml:space="preserve">
+    <value>Saya tidak mudah berputus asa apabila berhadapan dengan kesukaran. </value>
+  </data>
+  <data name="lblQ175" xml:space="preserve">
+    <value>Saya tidak membenci orang yang membenci saya. </value>
+  </data>
+  <data name="lblQ176" xml:space="preserve">
+    <value>Saya selalu memaafkan orang yang menyakiti hati saya.</value>
+  </data>
+  <data name="lblQ177" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+  <data name="MotivasiLevel1" xml:space="preserve">
+    <value>Sangat Rendah</value>
+  </data>
+  <data name="MotivasiLevel2" xml:space="preserve">
+    <value>Rendah</value>
+  </data>
+  <data name="MotivasiLevel3" xml:space="preserve">
+    <value>Tidak Pasti</value>
+  </data>
+  <data name="MotivasiLevel4" xml:space="preserve">
+    <value>Tinggi</value>
+  </data>
+  <data name="MotivasiLevel5" xml:space="preserve">
+    <value>Sangat Tinggi</value>
+  </data>
+  <data name="lblQ178" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+  <data name="lblQ179" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+  <data name="lblQ180" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+  <data name="lblQ181" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+  <data name="lblQ182" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+  <data name="lblQ183" xml:space="preserve">
+    <value>Tahap Motivasi:&lt;br/&gt;1 - Sangat Rendah | 2 - Rendah | 3 - Tidak Pasti | 4 - Tinggi | 5 - Sangat Tinggi</value>
+  </data>
+
+
+  <data name="lblMsgsubmit" xml:space="preserve">
+    <value>Tiada perubahan boleh dilakukan selepas menghantar penilaian ini.
+    </value>
+  </data>
+  <data name="lblThankheaderC" xml:space="preserve">
+    <value>Terima Kasih kerana menamatkan PERMATApintar Emotional Quotient Test.</value>
+  </data>
+  <data name="lblThankcontentC" xml:space="preserve">
+    <value>The results will create a self-portrait of your leadership to guide you in your next steps towards fully developing as a leader. The PERMATApintar Emotional Quotient Test. Report will be forwarded to you and a one to one session will be arranged to walkthrough the results with you. During the one to one session, you will be able to discuss the insights from the assessment results in detail and structure a development plan for moving forward.</value>
+  </data>
+  <data name="lblThankheaderR" xml:space="preserve">
+    <value>Terima Kasih kerana menamatkan PERMATApintar Emotional Quotient Test.</value>
+  </data>
+  <data name="lblThankcontentR" xml:space="preserve">
+    <value>Your contribution is highly appreciated and will contribute to the betterment of the entire organisaiton.</value>
+  </data>
+  <data name="lblThankAssignRaterDone" xml:space="preserve">
+    <value>
+    Thank you for nominating your assessors. An email notification will be sent to all your assessors to complete the assessment.&lt;br/&gt;
+    You will also receive an email with a link for you to complete your self assessment.
+    </value>
+  </data>
+  <data name="lblThank" xml:space="preserve">
+    <value>Terima kasih.
+    </value>
+  </data>
+  <data name="lblThankcomplete" xml:space="preserve">
+    <value>Terima kasih di atas kerjasama anda
+    </value>
+  </data>
+  <data name="lblSaveExit" xml:space="preserve">
+    <value>Thanks you for attempting the PERMATApintar Emotional Quotient Test.. Your responses have been saved. To complete the assessment, please click on the original link emailed to you.
+    </value>
+  </data>
+  <data name="lblSaveExitAssignRater" xml:space="preserve">
+    <value>Thank you for your progress in completing the assessor nomination. Your selections have been saved. To re-visit the assessor nomination page, please click on the original link emailed to you.
+    </value>
+  </data>
+  <data name="lblHomeOverview" xml:space="preserve">
+    <value>Pengenalan
+    </value>
+  </data>
+  <data name="lblHomeCandidate" xml:space="preserve">
+    <value>
+    How important do you think emotional intelligent is as compared to general intelligent in ensuring your success in life, academic work (while studying) and at work? I have conducted research in emotional intelligent in Malaysia and found that people attribute their success namely to emotional intelligent. They suggested that "you have to be able to connect to yourself, read yourself well, get to know your strengths and weaknesses, motivate yourself from within. That is the first step. Next you must know people that surround you, manage them appropriately, learn from them, understand and help them develop their potential, then look inwards towards the values in life that you hold. Will those values help you be a better person? and finally, learn from your past experiences". If this is true and you have all these, then you will be a highly successful people.  
+    </value>
+  </data>
+  <data name="lblHomeBenefit" xml:space="preserve">
+    <value>Apakah manfaat bagi saya?
+    </value>
+  </data>
+  <data name="lblHomeBenefitContent" xml:space="preserve">
+    <value>
+      NA
+    </value>
+  </data>
+  <data name="lblHomeOverviewRater" xml:space="preserve">
+    <value>Pengenalan
+    </value>
+  </data>
+  <data name="lblHomeRater" xml:space="preserve">
+    <value>
+    Instrumen “Penilaian Kepimpinan 360°” ini bertujuan mendapatkan penilaian tahap kecekapan pegawai yang dinilai dalam kecekapan teras Bank.   Melalui penilaian ini, pegawai yang dinilai akan berpeluang mendapat maklumbalas dan berupaya membandingkannya dengan penilaian  sendiri mengenai tahap kecekapan beliau. 
+    
+      &lt;p&gt;
+   Oleh yang demikian, penilaian ini melibatkan pengurus, rakan sekerja, pelanggan dalaman, subordinat langsung dan tidak langsung dan dilaksanakan melalui tinjauan atas talian.   Penilaian ini hendaklah diasaskan pada pengalaman individu penilai dengan pegawai yang dinilai.  Bagi memastikan penilaian ini bermanfaat dan berkesan, adalah amat penting untuk anda memberi penilaian secara jujur dan ikhlas.  
+    &lt;/p&gt;
+    
+      Penilaian yang diberi adalah sulit dan rahsia.
+      
+    </value>
+  </data>
+  <data name="lblHomeBenefitRater" xml:space="preserve">
+    <value>Apakah manfaat bagi saya?
+    </value>
+  </data>
+  <data name="lblHomeBenefitContentRater" xml:space="preserve">
+    <value>
+      Instrumen “Penilaian Kepimpinan 360°” memberi peluang kepada anda untuk menyumbang kepada penambahbaikan pengurus dan rakan sekerja.  Peningkatan keupayaan kepimpinan untuk bekerja,mengurus dan memimpin akan menjurus kepada peningkatan  prestasi dan produktiviti organisasi.
+    </value>
+  </data>
+  <data name="lblScore" xml:space="preserve">
+    <value>Skor Anda
+    </value>
+  </data>
+  <data name="lblLevel" xml:space="preserve">
+    <value>Tahap
+    </value>
+  </data>
+  <data name="lblTODO" xml:space="preserve">
+    <value>Apa anda perlu lakukan.
+    </value>
+  </data>
+
+</root>

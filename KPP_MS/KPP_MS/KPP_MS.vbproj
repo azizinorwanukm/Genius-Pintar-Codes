@@ -1,0 +1,2748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{8CF82C8A-4223-4CC2-9EE5-051C40ADF5CA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KPP_MS</RootNamespace>
+    <AssemblyName>KPP_MS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>KPP_MS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>KPP_MS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=18.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.18.1.1\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\..\..\..\Downloads\TextboxioForAspDotNet\TextboxioForAspDotNet\aspdotnetcontrol\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xmlworker.5.5.13\lib\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OleDb, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.OleDb.5.0.0-preview.5.20278.1\lib\net461\System.Data.OleDb.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="TextboxioControl">
+      <HintPath>..\..\..\..\..\..\Downloads\TextboxioForAspDotNet\TextboxioForAspDotNet\aspdotnetcontrol\TextboxioControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="adminPengurusanPelajar.aspx" />
+    <Content Include="admin_alumni.aspx" />
+    <Content Include="admin_alumni_history.aspx" />
+    <Content Include="admin_alumni_maklumat_pekerjaan.aspx" />
+    <Content Include="admin_alumni_maklumat_pembelajaran.aspx" />
+    <Content Include="admin_asrama_penempatan_pelajar.aspx" />
+    <Content Include="admin_carian_pelajar.aspx" />
+    <Content Include="admin_carian_pelajar_kaunselor.aspx" />
+    <Content Include="admin_carian_pengajar.aspx" />
+    <Content Include="admin_carian_yuran.aspx" />
+    <Content Include="admin_CloseLogout.aspx" />
+    <Content Include="admin_config_disiplin.aspx" />
+    <Content Include="admin_config_warning_letter.aspx" />
+    <Content Include="admin_daftarPenyelidikanMentor.aspx" />
+    <Content Include="admin_daftarPenyelidikanPelajar.aspx" />
+    <Content Include="admin_daftarPenyelidikanProjek.aspx" />
+    <Content Include="admin_daftar_invois.aspx" />
+    <Content Include="admin_daftar_kelas.aspx" />
+    <Content Include="admin_daftar_koordinator.aspx" />
+    <Content Include="admin_daftar_asrama_baru.aspx" />
+    <Content Include="admin_daftar_kursus_baru.aspx" />
+    <Content Include="admin_daftar_pelajar_baru.aspx" />
+    <Content Include="admin_daftar_pengajar_baru.aspx" />
+    <Content Include="admin_daftar_yuran_baru.aspx" />
+    <Content Include="admin_detail_disiplin.aspx" />
+    <Content Include="admin_detail_kaunselor.aspx" />
+    <Content Include="admin_edit_asrama_data.aspx" />
+    <Content Include="admin_edit_biasiswa.aspx" />
+    <Content Include="admin_edit_coordinator.aspx" />
+    <Content Include="admin_edit_disiplin.aspx" />
+    <Content Include="admin_edit_exam_data.aspx" />
+    <Content Include="admin_edit_kelas_data.aspx" />
+    <Content Include="admin_edit_kursus_data.aspx" />
+    <Content Include="admin_edit_pelajar_data.aspx" />
+    <Content Include="admin_edit_pelajar_kursus_data.aspx" />
+    <Content Include="admin_edit_pengajar_data.aspx" />
+    <Content Include="admin_importexport_peperiksaan_markah.aspx" />
+    <Content Include="admin_import_pelajar.aspx" />
+    <Content Include="admin_import_pengajar.aspx" />
+    <Content Include="admin_kaunselor_aktivitikaunselor.aspx" />
+    <Content Include="admin_kaunselor_biasiswa.aspx" />
+    <Content Include="admin_kaunselor_importeksport.aspx" />
+    <Content Include="admin_kaunselor_jatidiri.aspx" />
+    <Content Include="admin_kaunselor_pengurusanbiasiswa.aspx" />
+    <Content Include="admin_kaunselor_perkembangankendiri.aspx" />
+    <Content Include="admin_kaunselor_portfolio.aspx" />
+    <Content Include="admin_kemaskini_markah_koko.aspx" />
+    <Content Include="admin_konfigurasi.aspx" />
+    <Content Include="admin_laporanPCIS.aspx" />
+    <Content Include="admin_laporanPelajar_laporanOlehPengajar.aspx" />
+    <Content Include="admin_laporanPelajar_peperiksaan.aspx" />
+    <Content Include="admin_laporanPelajar_peperiksaanDetail.aspx" />
+    <Content Include="admin_laporanPeperiksaan_kedudukan_pelajar.aspx" />
+    <Content Include="admin_laporanPeperiksaan_laporan_kehadiran.aspx" />
+    <Content Include="admin_laporanPeperiksaan_peperiksaanKelasDetail.aspx" />
+    <Content Include="admin_laporanPeperiksaan_peperiksaan_kelas.aspx" />
+    <Content Include="admin_laporanPeperiksaan_peperiksaan_kursus.aspx" />
+    <Content Include="admin_laporanPPCS.aspx" />
+    <Content Include="admin_laporanUKM1.aspx" />
+    <Content Include="admin_laporanUKM2.aspx" />
+    <Content Include="admin_laporanUKM3.aspx" />
+    <Content Include="admin_login_berjaya.aspx" />
+    <Content Include="admin_Master_Konfigurasi.aspx" />
+    <Content Include="admin_pelajar_kehadiran.aspx" />
+    <Content Include="admin_pelajar_kepastian_agama.aspx" />
+    <Content Include="admin_pelajar_kepastian_hostel.aspx" />
+    <Content Include="admin_pelajar_kepastian_kelas.aspx" />
+    <Content Include="admin_pelajar_kepastian_kokurikulum.aspx" />
+    <Content Include="admin_pelajar_kepastian_kursus.aspx" />
+    <Content Include="admin_pelajar_penempatan_kelas.aspx" />
+    <Content Include="admin_pengajar_kepastian_kursus.aspx" />
+    <Content Include="admin_pengajar_penempatan_kelas.aspx" />
+    <Content Include="admin_pengajar_penempatan_kursus.aspx" />
+    <Content Include="admin_pengurusan_am_hostel.aspx" />
+    <Content Include="admin_pengurusan_am_kelas.aspx" />
+    <Content Include="admin_pengurusan_am_kursus.aspx" />
+    <Content Include="admin_pengurusan_am_pelajar.aspx" />
+    <Content Include="admin_pengurusan_am_pengajar.aspx" />
+    <Content Include="admin_penilaian_konfig.aspx" />
+    <Content Include="admin_penyelidikanPelajar.aspx" />
+    <Content Include="admin_peperiksaan_daftar_baru.aspx" />
+    <Content Include="admin_peperiksaan_kemaskini_markah.aspx" />
+    <Content Include="admin_peperiksaan_pengurusan_gred.aspx" />
+    <Content Include="admin_peperiksaan_pengurusan_peperiksaan.aspx" />
+    <Content Include="admin_peperiksaan_popup.aspx" />
+    <Content Include="admin_peperiksaan_transkrip.aspx" />
+    <Content Include="admin_transaksi_email.aspx" />
+    <Content Include="admin_transaksi_yuran.aspx" />
+    <Content Include="admin_transaksi_yuran_gambar.aspx" />
+    <Content Include="admin_transkrip_rasmi.aspx" />
+    <Content Include="admin_tutorial.aspx" />
+    <Content Include="admin_userAkses.aspx" />
+    <Content Include="admin_userLogin.aspx" />
+    <Content Include="admin_view_disiplin.aspx" />
+    <Content Include="admin_view_koordinator.aspx" />
+    <Content Include="alumni_History_List.aspx" />
+    <Content Include="alumni_student_EditEduback.aspx" />
+    <Content Include="alumni_student_workStatusEdit.aspx" />
+    <Content Include="chart\pie_chart.css" />
+    <Content Include="color\theme.css" />
+    <Content Include="commoncontrol\admin_access.ascx" />
+    <Content Include="commoncontrol\admin_alumni.ascx" />
+    <Content Include="commoncontrol\admin_assessment_config.ascx" />
+    <Content Include="commoncontrol\alumni_student_Detail.ascx" />
+    <Content Include="commoncontrol\alumni_student_EditEduback.ascx" />
+    <Content Include="commoncontrol\alumni_Student_EduBack.ascx" />
+    <Content Include="commoncontrol\alumni_Student_Status.ascx" />
+    <Content Include="commoncontrol\alumni_student_workStatus.ascx" />
+    <Content Include="commoncontrol\alumni_student_workStatusEdit.ascx" />
+    <Content Include="commoncontrol\class_Create.ascx" />
+    <Content Include="commoncontrol\class_List_Table.ascx" />
+    <Content Include="commoncontrol\class_transfer.ascx" />
+    <Content Include="commoncontrol\class_Update.ascx" />
+    <Content Include="commoncontrol\cocurricular_Detail.ascx" />
+    <Content Include="commoncontrol\configuration_setting.ascx" />
+    <Content Include="commoncontrol\coordinator_assessment_remark.ascx" />
+    <Content Include="commoncontrol\coordinator_Create.ascx" />
+    <Content Include="commoncontrol\coordinator_student_marks.ascx" />
+    <Content Include="commoncontrol\coordinator_Update.ascx" />
+    <Content Include="commoncontrol\coordinator_View.ascx" />
+    <Content Include="commoncontrol\counselor_Detal_Case.ascx" />
+    <Content Include="commoncontrol\counselor_List_Table.ascx" />
+    <Content Include="commoncontrol\counselor_Personality_Development.ascx" />
+    <Content Include="commoncontrol\counselor_Portfolio.ascx" />
+    <Content Include="commoncontrol\counselor_Self_Development_Mark.ascx" />
+    <Content Include="commoncontrol\course_Create.ascx" />
+    <Content Include="commoncontrol\course_List_Table.ascx" />
+    <Content Include="commoncontrol\course_Transfer.ascx" />
+    <Content Include="commoncontrol\course_Update.ascx" />
+    <Content Include="commoncontrol\Disiplin_Case_Detail.ascx" />
+    <Content Include="commoncontrol\Disiplin_config.ascx" />
+    <Content Include="commoncontrol\Disiplin_Letter_List.ascx" />
+    <Content Include="commoncontrol\Disiplin_student_detail.ascx" />
+    <Content Include="commoncontrol\Disiplin_Update.ascx" />
+    <Content Include="commoncontrol\Disiplin_view.ascx" />
+    <Content Include="commoncontrol\Disiplin_warning_letter.ascx" />
+    <Content Include="commoncontrol\Disiplin_Warning_Letter_Form.ascx" />
+    <Content Include="commoncontrol\exam_Create.ascx" />
+    <Content Include="commoncontrol\exam_List_Table.ascx" />
+    <Content Include="commoncontrol\exam_Official_Transcript.ascx" />
+    <Content Include="commoncontrol\exam_Transcript.ascx" />
+    <Content Include="commoncontrol\exam_Update.ascx" />
+    <Content Include="commoncontrol\grade_List_Table.ascx" />
+    <Content Include="commoncontrol\guardian1_Detail.ascx" />
+    <Content Include="commoncontrol\guardian1_DetailStd.ascx" />
+    <Content Include="commoncontrol\guardian2_Detail.ascx" />
+    <Content Include="commoncontrol\guardian2_DetailStd.ascx" />
+    <Content Include="commoncontrol\homeroom_assessment_remark.ascx" />
+    <Content Include="commoncontrol\homeroom_ViewAttendance.ascx" />
+    <Content Include="commoncontrol\hostel_Create.ascx" />
+    <Content Include="commoncontrol\hostel_Detail.ascx" />
+    <Content Include="commoncontrol\hostel_EditStudentPlacement.ascx" />
+    <Content Include="commoncontrol\hostel_list_managae.ascx" />
+    <Content Include="commoncontrol\hostel_List_Table.ascx" />
+    <Content Include="commoncontrol\hostel_Update.ascx" />
+    <Content Include="commoncontrol\import_class.ascx" />
+    <Content Include="commoncontrol\import_course.ascx" />
+    <Content Include="commoncontrol\import_exam_marks.ascx" />
+    <Content Include="commoncontrol\Import_Export_student_marks.ascx" />
+    <Content Include="commoncontrol\import_lecturerPlacement.ascx" />
+    <Content Include="commoncontrol\import_staff.ascx" />
+    <Content Include="commoncontrol\import_student.ascx" />
+    <Content Include="commoncontrol\lecturer_attendanceData.ascx" />
+    <Content Include="commoncontrol\lecturer_counselor_Detail_Case.ascx" />
+    <Content Include="commoncontrol\lecturer_counselor_List_Table.ascx" />
+    <Content Include="commoncontrol\lecturer_CourseList.ascx" />
+    <Content Include="commoncontrol\lecturer_coursepage.ascx" />
+    <Content Include="commoncontrol\lecturer_Create.ascx" />
+    <Content Include="commoncontrol\lecturer_Detail.ascx" />
+    <Content Include="commoncontrol\lecturer_homepage.ascx" />
+    <Content Include="commoncontrol\lecturer_list_student.ascx" />
+    <Content Include="commoncontrol\lecturer_List_Table.ascx" />
+    <Content Include="commoncontrol\lecturer_RegClass.ascx" />
+    <Content Include="commoncontrol\lecturer_Update.ascx" />
+    <Content Include="commoncontrol\lecturer_update_result.ascx" />
+    <Content Include="commoncontrol\lecturer_view_course.ascx" />
+    <Content Include="commoncontrol\parent_guardian1Detail.ascx" />
+    <Content Include="commoncontrol\parent_guardian2Detail.ascx" />
+    <Content Include="commoncontrol\parent_guardianOne.ascx" />
+    <Content Include="commoncontrol\parent_guardianTwo.ascx" />
+    <Content Include="commoncontrol\parent_imagePayment.ascx" />
+    <Content Include="commoncontrol\parent_studentCourse.ascx" />
+    <Content Include="commoncontrol\parent_studentDetail.ascx" />
+    <Content Include="commoncontrol\parent_studentExam.ascx" />
+    <Content Include="commoncontrol\parent_studenthomepage.ascx" />
+    <Content Include="commoncontrol\parent_studentHostel.ascx" />
+    <Content Include="commoncontrol\parent_student_paymentInformation.ascx" />
+    <Content Include="commoncontrol\payment_admin_image.ascx" />
+    <Content Include="commoncontrol\payment_Create.ascx" />
+    <Content Include="commoncontrol\payment_Create_Invoice.ascx" />
+    <Content Include="commoncontrol\payment_Email.ascx" />
+    <Content Include="commoncontrol\payment_list_table.ascx" />
+    <Content Include="commoncontrol\payment_Transaction.ascx" />
+    <Content Include="commoncontrol\pengarah_examination_slip.ascx" />
+    <Content Include="commoncontrol\pengarah_laporan_kehadiran_table.ascx" />
+    <Content Include="commoncontrol\pengarah_laporan_peperiksaan_kelas_table.ascx" />
+    <Content Include="commoncontrol\pengarah_laporan_peperiksaan_kursus_table.ascx" />
+    <Content Include="commoncontrol\pengarah_laporan_peperiksaan_table.ascx" />
+    <Content Include="commoncontrol\report_PCIS.ascx" />
+    <Content Include="commoncontrol\report_PPCS.ascx" />
+    <Content Include="commoncontrol\report_UKM1.ascx" />
+    <Content Include="commoncontrol\report_UKM2.ascx" />
+    <Content Include="commoncontrol\report_UKM3.ascx" />
+    <Content Include="commoncontrol\scholarship_create.ascx" />
+    <Content Include="commoncontrol\scholarship_update.ascx" />
+    <Content Include="commoncontrol\student_AddClass.ascx" />
+    <Content Include="commoncontrol\student_AddHostel.ascx" />
+    <Content Include="commoncontrol\student_attendance.ascx" />
+    <Content Include="commoncontrol\student_CocurricularList.ascx" />
+    <Content Include="commoncontrol\student_CourseList.ascx" />
+    <Content Include="commoncontrol\student_course_information.ascx" />
+    <Content Include="commoncontrol\student_Create.ascx" />
+    <Content Include="commoncontrol\student_Detail.ascx" />
+    <Content Include="commoncontrol\student_DetailAdmin.ascx" />
+    <Content Include="commoncontrol\student_dicipline.ascx" />
+    <Content Include="commoncontrol\student_examData.ascx" />
+    <Content Include="commoncontrol\student_ExamList.ascx" />
+    <Content Include="commoncontrol\student_exam_information.ascx" />
+    <Content Include="commoncontrol\student_guardian_one.ascx" />
+    <Content Include="commoncontrol\student_guardian_two.ascx" />
+    <Content Include="commoncontrol\student_homepage.ascx" />
+    <Content Include="commoncontrol\student_hostel_information.ascx" />
+    <Content Include="commoncontrol\student_imagePayment.ascx" />
+    <Content Include="commoncontrol\student_List_Table.ascx" />
+    <Content Include="commoncontrol\student_marks.ascx" />
+    <Content Include="commoncontrol\Student_marks_koko.ascx" />
+    <Content Include="commoncontrol\student_payment_information.ascx" />
+    <Content Include="commoncontrol\student_Pcis_History.ascx" />
+    <Content Include="commoncontrol\student_Ppcs_History.ascx" />
+    <Content Include="commoncontrol\Student_RegisterMentor_List.ascx" />
+    <Content Include="commoncontrol\Student_RegisterProject_List.ascx" />
+    <Content Include="commoncontrol\Student_RegisterResearch_List.ascx" />
+    <Content Include="commoncontrol\student_Research_List.ascx" />
+    <Content Include="commoncontrol\student_Ukm1_History.ascx" />
+    <Content Include="commoncontrol\student_Ukm2_History.ascx" />
+    <Content Include="commoncontrol\student_Ukm3_History.ascx" />
+    <Content Include="commoncontrol\student_Update.ascx" />
+    <Content Include="commoncontrol\student_update_course.ascx" />
+    <Content Include="commoncontrol\student_update_coursePlacement.ascx" />
+    <Content Include="commoncontrol\student_view_class.ascx" />
+    <Content Include="commoncontrol\student_view_course.ascx" />
+    <Content Include="commoncontrol\student_view_religion.ascx" />
+    <Content Include="commoncontrol\test_import.ascx" />
+    <Content Include="commoncontrol\Tukar_KataLaluan.ascx" />
+    <Content Include="commoncontrol\User_Access.ascx" />
+    <Content Include="commoncontrol\àlumni_History.ascx" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\base.css" />
+    <Content Include="css\font_awesome.css" />
+    <Content Include="css\font_montserrat.css" />
+    <Content Include="css\frame.css" />
+    <Content Include="css\jquerytable.min.css" />
+    <Content Include="css\particles.css" />
+    <Content Include="css\plugin_export.css" />
+    <Content Include="css\side_bar_frame.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\topbar_dropdown.min.css" />
+    <Content Include="css\w3.css" />
+    <Content Include="default.aspx" />
+    <Content Include="homeroom_semak_kehadiran.aspx" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\doa_rezeki_banyak.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_official.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_official_v1.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_transkrip.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_transkrip_v13.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_transkrip_v13_1.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_transkrip_v13_2.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\time.png.jpg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\tree.jpeg" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\ukm.jpg" />
+    <Content Include="img\alumni.png" />
+    <Content Include="img\Box_Crate_With_Upwards_Arrow-512.png" />
+    <Content Include="img\cancel.png" />
+    <Content Include="img\doa_rezeki_banyak.jpg" />
+    <Content Include="img\edit-11-512.png" />
+    <Content Include="img\Empty.png" />
+    <Content Include="img\empty_space.png" />
+    <Content Include="img\exam_official.jpg" />
+    <Content Include="img\exam_official_v1.jpg" />
+    <Content Include="img\exam_transkrip.jpg" />
+    <Content Include="img\exam_transkrip_v13.jpg" />
+    <Content Include="img\exam_transkrip_v13_1.jpg" />
+    <Content Include="img\exam_transkrip_v13_2.jpg" />
+    <Content Include="img\Eye_Care_Services-512.png" />
+    <Content Include="img\front.jpg" />
+    <Content Include="img\front2.jpg" />
+    <Content Include="img\file_icon.png" />
+    <Content Include="img\img_tree.png" />
+    <Content Include="img\import.png" />
+    <Content Include="img\permatapintar2.jpg" />
+    <Content Include="img\permata_logo.png" />
+    <Content Include="img\permata_logo_v1.png" />
+    <Content Include="img\save.png" />
+    <Content Include="img\star.png" />
+    <Content Include="img\time.png" />
+    <Content Include="img\trash.png" />
+    <Content Include="img\tree.jpeg" />
+    <Content Include="img\ukm.jpg" />
+    <Content Include="img\update.png" />
+    <Content Include="Import_Data.aspx" />
+    <Content Include="Import_Exam_Data.aspx" />
+    <Content Include="Import_Student_Data_Temporary.aspx" />
+    <Content Include="js\amchart.js" />
+    <Content Include="js\anime.min.js" />
+    <Content Include="js\canvas.min.js" />
+    <Content Include="js\data_toogle.min.js" />
+    <Content Include="js\demo.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\jquery-ui.css" />
+    <Content Include="js\jquery-ui.js" />
+    <Content Include="js\jquery.js" />
+    <Content Include="js\jquerytable.min.js" />
+    <Content Include="js\particles.js" />
+    <Content Include="js\pie.js" />
+    <Content Include="js\plugins_export.min.js" />
+    <Content Include="js\resources\css\codemirror.css" />
+    <Content Include="js\resources\css\content.css" />
+    <Content Include="js\resources\css\textboxio.css" />
+    <Content Include="js\resources\flash\textboxpaste.swf" />
+    <Content Include="js\resources\html\help_ar.js" />
+    <Content Include="js\resources\html\help_ca.js" />
+    <Content Include="js\resources\html\help_cs.js" />
+    <Content Include="js\resources\html\help_da.js" />
+    <Content Include="js\resources\html\help_de.js" />
+    <Content Include="js\resources\html\help_el.js" />
+    <Content Include="js\resources\html\help_en.js" />
+    <Content Include="js\resources\html\help_es.js" />
+    <Content Include="js\resources\html\help_fa.js" />
+    <Content Include="js\resources\html\help_fi.js" />
+    <Content Include="js\resources\html\help_fr.js" />
+    <Content Include="js\resources\html\help_he.js" />
+    <Content Include="js\resources\html\help_hr.js" />
+    <Content Include="js\resources\html\help_hu.js" />
+    <Content Include="js\resources\html\help_it.js" />
+    <Content Include="js\resources\html\help_ja.js" />
+    <Content Include="js\resources\html\help_kk.js" />
+    <Content Include="js\resources\html\help_ko.js" />
+    <Content Include="js\resources\html\help_nb.js" />
+    <Content Include="js\resources\html\help_nl.js" />
+    <Content Include="js\resources\html\help_pl.js" />
+    <Content Include="js\resources\html\help_pt.js" />
+    <Content Include="js\resources\html\help_pt_pt.js" />
+    <Content Include="js\resources\html\help_ro.js" />
+    <Content Include="js\resources\html\help_ru.js" />
+    <Content Include="js\resources\html\help_sk.js" />
+    <Content Include="js\resources\html\help_sl.js" />
+    <Content Include="js\resources\html\help_sv.js" />
+    <Content Include="js\resources\html\help_th.js" />
+    <Content Include="js\resources\html\help_tr.js" />
+    <Content Include="js\resources\html\help_uk.js" />
+    <Content Include="js\resources\html\help_zh.js" />
+    <Content Include="js\resources\html\help_zh_tw.js" />
+    <Content Include="js\resources\html\textbox-licenses.html" />
+    <Content Include="js\resources\i18n\tbio_ar.js" />
+    <Content Include="js\resources\i18n\tbio_ca.js" />
+    <Content Include="js\resources\i18n\tbio_cs.js" />
+    <Content Include="js\resources\i18n\tbio_da.js" />
+    <Content Include="js\resources\i18n\tbio_de.js" />
+    <Content Include="js\resources\i18n\tbio_el.js" />
+    <Content Include="js\resources\i18n\tbio_en.js" />
+    <Content Include="js\resources\i18n\tbio_es.js" />
+    <Content Include="js\resources\i18n\tbio_fa.js" />
+    <Content Include="js\resources\i18n\tbio_fi.js" />
+    <Content Include="js\resources\i18n\tbio_fr.js" />
+    <Content Include="js\resources\i18n\tbio_he.js" />
+    <Content Include="js\resources\i18n\tbio_hr.js" />
+    <Content Include="js\resources\i18n\tbio_hu.js" />
+    <Content Include="js\resources\i18n\tbio_it.js" />
+    <Content Include="js\resources\i18n\tbio_ja.js" />
+    <Content Include="js\resources\i18n\tbio_kk.js" />
+    <Content Include="js\resources\i18n\tbio_ko.js" />
+    <Content Include="js\resources\i18n\tbio_nb.js" />
+    <Content Include="js\resources\i18n\tbio_nl.js" />
+    <Content Include="js\resources\i18n\tbio_pl.js" />
+    <Content Include="js\resources\i18n\tbio_pt.js" />
+    <Content Include="js\resources\i18n\tbio_pt_pt.js" />
+    <Content Include="js\resources\i18n\tbio_ro.js" />
+    <Content Include="js\resources\i18n\tbio_ru.js" />
+    <Content Include="js\resources\i18n\tbio_sk.js" />
+    <Content Include="js\resources\i18n\tbio_sl.js" />
+    <Content Include="js\resources\i18n\tbio_sv.js" />
+    <Content Include="js\resources\i18n\tbio_th.js" />
+    <Content Include="js\resources\i18n\tbio_tr.js" />
+    <Content Include="js\resources\i18n\tbio_uk.js" />
+    <Content Include="js\resources\i18n\tbio_zh.js" />
+    <Content Include="js\resources\i18n\tbio_zh_tw.js" />
+    <Content Include="js\resources\js\codeview.js" />
+    <Content Include="js\resources\js\wordimport.js" />
+    <Content Include="js\serial.js" />
+    <Content Include="js\serial_line_chart.js" />
+    <Content Include="js\sidegraph_light.js" />
+    <Content Include="js\textboxio.js" />
+    <Content Include="js\theme_light.js" />
+    <Content Include="js\theme_none.js" />
+    <Content Include="js\topbar_dropdown_bootstrap.min.js" />
+    <Content Include="js\topbar_dropdown_jquery.min.js" />
+    <Content Include="payment_Image\receipt.png" />
+    <Content Include="pegajar_koordinator_kemaskini_markah.aspx" />
+    <Content Include="pengajar_carian_pelajar_kaunselor.aspx" />
+    <Content Include="pengajar_CloseLogout.aspx" />
+    <Content Include="pengajar_detail_kaunselor.aspx" />
+    <Content Include="pengajar_kehadiran_pelajar.aspx" />
+    <Content Include="pengajar_kemaskini_profile.aspx" />
+    <Content Include="pengajar_kemasukan_markah.aspx" />
+    <Content Include="pengajar_koordinator_penilaian_pelajar.aspx" />
+    <Content Include="pengajar_laporan_pentaksiran.aspx" />
+    <Content Include="pengajar_login_berjaya.aspx" />
+    <Content Include="pengajar_password_baru.aspx" />
+    <Content Include="pengajar_pelajar_detail.aspx" />
+    <Content Include="pengajar_penilaian_pelajar.aspx" />
+    <Content Include="pengajar_senarai_pelajar.aspx" />
+    <Content Include="pengarah_CloseLogout.aspx" />
+    <Content Include="pengarah_laporan_kehadiran.aspx" />
+    <Content Include="pengarah_laporan_kursus.aspx" />
+    <Content Include="pengarah_laporan_peperiksaan.aspx" />
+    <Content Include="pengarah_laporan_peperiksaan_kelas.aspx" />
+    <Content Include="pengarah_login_berjaya.aspx" />
+    <Content Include="pengarah_password_baru.aspx" />
+    <Content Include="pengarah_slip_peperiksaan.aspx" />
+    <Content Include="staff_Image\user.png" />
+    <Content Include="student_Image\user.png" />
+    <Content Include="textboxio\changelog.html" />
+    <Content Include="textboxio\example.css" />
+    <Content Include="textboxio\index.html" />
+    <Content Include="textboxio\license.txt" />
+    <Content Include="textboxio\resources\css\codemirror.css" />
+    <Content Include="textboxio\resources\css\content.css" />
+    <Content Include="textboxio\resources\css\textboxio.css" />
+    <Content Include="textboxio\resources\flash\textboxpaste.swf" />
+    <Content Include="textboxio\resources\html\help\ar\about.html" />
+    <Content Include="textboxio\resources\html\help\ar\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\ar\markdown.html" />
+    <Content Include="textboxio\resources\html\help\ar\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\ca\about.html" />
+    <Content Include="textboxio\resources\html\help\ca\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\ca\markdown.html" />
+    <Content Include="textboxio\resources\html\help\ca\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\cs\about.html" />
+    <Content Include="textboxio\resources\html\help\cs\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\cs\markdown.html" />
+    <Content Include="textboxio\resources\html\help\cs\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\da\about.html" />
+    <Content Include="textboxio\resources\html\help\da\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\da\markdown.html" />
+    <Content Include="textboxio\resources\html\help\da\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\de\about.html" />
+    <Content Include="textboxio\resources\html\help\de\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\de\markdown.html" />
+    <Content Include="textboxio\resources\html\help\de\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\el\about.html" />
+    <Content Include="textboxio\resources\html\help\el\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\el\markdown.html" />
+    <Content Include="textboxio\resources\html\help\el\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\en\about.html" />
+    <Content Include="textboxio\resources\html\help\en\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\en\markdown.html" />
+    <Content Include="textboxio\resources\html\help\en\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\es\about.html" />
+    <Content Include="textboxio\resources\html\help\es\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\es\markdown.html" />
+    <Content Include="textboxio\resources\html\help\es\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\fa\about.html" />
+    <Content Include="textboxio\resources\html\help\fa\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\fa\markdown.html" />
+    <Content Include="textboxio\resources\html\help\fa\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\fi\about.html" />
+    <Content Include="textboxio\resources\html\help\fi\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\fi\markdown.html" />
+    <Content Include="textboxio\resources\html\help\fi\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\fr\about.html" />
+    <Content Include="textboxio\resources\html\help\fr\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\fr\markdown.html" />
+    <Content Include="textboxio\resources\html\help\fr\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\he\about.html" />
+    <Content Include="textboxio\resources\html\help\he\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\he\markdown.html" />
+    <Content Include="textboxio\resources\html\help\he\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\hr\about.html" />
+    <Content Include="textboxio\resources\html\help\hr\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\hr\markdown.html" />
+    <Content Include="textboxio\resources\html\help\hr\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\hu\about.html" />
+    <Content Include="textboxio\resources\html\help\hu\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\hu\markdown.html" />
+    <Content Include="textboxio\resources\html\help\hu\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\it\about.html" />
+    <Content Include="textboxio\resources\html\help\it\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\it\markdown.html" />
+    <Content Include="textboxio\resources\html\help\it\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\ja\about.html" />
+    <Content Include="textboxio\resources\html\help\ja\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\ja\markdown.html" />
+    <Content Include="textboxio\resources\html\help\ja\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\kk\about.html" />
+    <Content Include="textboxio\resources\html\help\kk\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\kk\markdown.html" />
+    <Content Include="textboxio\resources\html\help\kk\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\ko\about.html" />
+    <Content Include="textboxio\resources\html\help\ko\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\ko\markdown.html" />
+    <Content Include="textboxio\resources\html\help\ko\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\nb\about.html" />
+    <Content Include="textboxio\resources\html\help\nb\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\nb\markdown.html" />
+    <Content Include="textboxio\resources\html\help\nb\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\nl\about.html" />
+    <Content Include="textboxio\resources\html\help\nl\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\nl\markdown.html" />
+    <Content Include="textboxio\resources\html\help\nl\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\pl\about.html" />
+    <Content Include="textboxio\resources\html\help\pl\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\pl\markdown.html" />
+    <Content Include="textboxio\resources\html\help\pl\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\pt\about.html" />
+    <Content Include="textboxio\resources\html\help\pt\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\pt\markdown.html" />
+    <Content Include="textboxio\resources\html\help\pt\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\pt_pt\about.html" />
+    <Content Include="textboxio\resources\html\help\pt_pt\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\pt_pt\markdown.html" />
+    <Content Include="textboxio\resources\html\help\pt_pt\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\ro\about.html" />
+    <Content Include="textboxio\resources\html\help\ro\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\ro\markdown.html" />
+    <Content Include="textboxio\resources\html\help\ro\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\ru\about.html" />
+    <Content Include="textboxio\resources\html\help\ru\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\ru\markdown.html" />
+    <Content Include="textboxio\resources\html\help\ru\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\sk\about.html" />
+    <Content Include="textboxio\resources\html\help\sk\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\sk\markdown.html" />
+    <Content Include="textboxio\resources\html\help\sk\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\sl\about.html" />
+    <Content Include="textboxio\resources\html\help\sl\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\sl\markdown.html" />
+    <Content Include="textboxio\resources\html\help\sl\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\sv\about.html" />
+    <Content Include="textboxio\resources\html\help\sv\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\sv\markdown.html" />
+    <Content Include="textboxio\resources\html\help\sv\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\th\about.html" />
+    <Content Include="textboxio\resources\html\help\th\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\th\markdown.html" />
+    <Content Include="textboxio\resources\html\help\th\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\tr\about.html" />
+    <Content Include="textboxio\resources\html\help\tr\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\tr\markdown.html" />
+    <Content Include="textboxio\resources\html\help\tr\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\uk\about.html" />
+    <Content Include="textboxio\resources\html\help\uk\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\uk\markdown.html" />
+    <Content Include="textboxio\resources\html\help\uk\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\zh\about.html" />
+    <Content Include="textboxio\resources\html\help\zh\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\zh\markdown.html" />
+    <Content Include="textboxio\resources\html\help\zh\shortcuts.html" />
+    <Content Include="textboxio\resources\html\help\zh_tw\about.html" />
+    <Content Include="textboxio\resources\html\help\zh_tw\accessibility.html" />
+    <Content Include="textboxio\resources\html\help\zh_tw\markdown.html" />
+    <Content Include="textboxio\resources\html\help\zh_tw\shortcuts.html" />
+    <Content Include="textboxio\resources\html\licenses\textbox-licenses.html" />
+    <Content Include="textboxio\resources\js\wordimport.js" />
+    <Content Include="textboxio\services\thirdparty-licenses.txt" />
+    <Content Include="textboxio\textboxio.js" />
+    <Content Include="textboxio\thirdparty-licenses.html" />
+    <Content Include="textboxio\version.txt" />
+    <Content Include="Tukar_KataLaluan.aspx" />
+    <Content Include="video\test.mp4" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPengurusanPelajar.aspx.designer.vb">
+      <DependentUpon>adminPengurusanPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPengurusanPelajar.aspx.vb">
+      <DependentUpon>adminPengurusanPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_alumni.aspx.designer.vb">
+      <DependentUpon>admin_alumni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_alumni.aspx.vb">
+      <DependentUpon>admin_alumni.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_alumni_history.aspx.designer.vb">
+      <DependentUpon>admin_alumni_history.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_alumni_history.aspx.vb">
+      <DependentUpon>admin_alumni_history.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_alumni_maklumat_pekerjaan.aspx.designer.vb">
+      <DependentUpon>admin_alumni_maklumat_pekerjaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_alumni_maklumat_pekerjaan.aspx.vb">
+      <DependentUpon>admin_alumni_maklumat_pekerjaan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_alumni_maklumat_pembelajaran.aspx.designer.vb">
+      <DependentUpon>admin_alumni_maklumat_pembelajaran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_alumni_maklumat_pembelajaran.aspx.vb">
+      <DependentUpon>admin_alumni_maklumat_pembelajaran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_asrama_penempatan_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_asrama_penempatan_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_asrama_penempatan_pelajar.aspx.vb">
+      <DependentUpon>admin_asrama_penempatan_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_carian_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_carian_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_carian_pelajar.aspx.vb">
+      <DependentUpon>admin_carian_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_carian_pelajar_kaunselor.aspx.designer.vb">
+      <DependentUpon>admin_carian_pelajar_kaunselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_carian_pelajar_kaunselor.aspx.vb">
+      <DependentUpon>admin_carian_pelajar_kaunselor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_carian_pengajar.aspx.designer.vb">
+      <DependentUpon>admin_carian_pengajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_carian_pengajar.aspx.vb">
+      <DependentUpon>admin_carian_pengajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_carian_yuran.aspx.designer.vb">
+      <DependentUpon>admin_carian_yuran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_carian_yuran.aspx.vb">
+      <DependentUpon>admin_carian_yuran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_CloseLogout.aspx.designer.vb">
+      <DependentUpon>admin_CloseLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_CloseLogout.aspx.vb">
+      <DependentUpon>admin_CloseLogout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_config_disiplin.aspx.designer.vb">
+      <DependentUpon>admin_config_disiplin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_config_disiplin.aspx.vb">
+      <DependentUpon>admin_config_disiplin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_config_warning_letter.aspx.designer.vb">
+      <DependentUpon>admin_config_warning_letter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_config_warning_letter.aspx.vb">
+      <DependentUpon>admin_config_warning_letter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftarPenyelidikanMentor.aspx.designer.vb">
+      <DependentUpon>admin_daftarPenyelidikanMentor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftarPenyelidikanMentor.aspx.vb">
+      <DependentUpon>admin_daftarPenyelidikanMentor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftarPenyelidikanPelajar.aspx.designer.vb">
+      <DependentUpon>admin_daftarPenyelidikanPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftarPenyelidikanPelajar.aspx.vb">
+      <DependentUpon>admin_daftarPenyelidikanPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftarPenyelidikanProjek.aspx.designer.vb">
+      <DependentUpon>admin_daftarPenyelidikanProjek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftarPenyelidikanProjek.aspx.vb">
+      <DependentUpon>admin_daftarPenyelidikanProjek.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_invois.aspx.designer.vb">
+      <DependentUpon>admin_daftar_invois.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_invois.aspx.vb">
+      <DependentUpon>admin_daftar_invois.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_kelas.aspx.designer.vb">
+      <DependentUpon>admin_daftar_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_kelas.aspx.vb">
+      <DependentUpon>admin_daftar_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_koordinator.aspx.designer.vb">
+      <DependentUpon>admin_daftar_koordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_koordinator.aspx.vb">
+      <DependentUpon>admin_daftar_koordinator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_asrama_baru.aspx.designer.vb">
+      <DependentUpon>admin_daftar_asrama_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_asrama_baru.aspx.vb">
+      <DependentUpon>admin_daftar_asrama_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_kursus_baru.aspx.designer.vb">
+      <DependentUpon>admin_daftar_kursus_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_kursus_baru.aspx.vb">
+      <DependentUpon>admin_daftar_kursus_baru.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_pelajar_baru.aspx.designer.vb">
+      <DependentUpon>admin_daftar_pelajar_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_pelajar_baru.aspx.vb">
+      <DependentUpon>admin_daftar_pelajar_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_pengajar_baru.aspx.designer.vb">
+      <DependentUpon>admin_daftar_pengajar_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_pengajar_baru.aspx.vb">
+      <DependentUpon>admin_daftar_pengajar_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_daftar_yuran_baru.aspx.designer.vb">
+      <DependentUpon>admin_daftar_yuran_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_daftar_yuran_baru.aspx.vb">
+      <DependentUpon>admin_daftar_yuran_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_detail_disiplin.aspx.designer.vb">
+      <DependentUpon>admin_detail_disiplin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_detail_disiplin.aspx.vb">
+      <DependentUpon>admin_detail_disiplin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_detail_kaunselor.aspx.designer.vb">
+      <DependentUpon>admin_detail_kaunselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_detail_kaunselor.aspx.vb">
+      <DependentUpon>admin_detail_kaunselor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_asrama_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_asrama_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_asrama_data.aspx.vb">
+      <DependentUpon>admin_edit_asrama_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_biasiswa.aspx.designer.vb">
+      <DependentUpon>admin_edit_biasiswa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_biasiswa.aspx.vb">
+      <DependentUpon>admin_edit_biasiswa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_coordinator.aspx.designer.vb">
+      <DependentUpon>admin_edit_coordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_coordinator.aspx.vb">
+      <DependentUpon>admin_edit_coordinator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_disiplin.aspx.designer.vb">
+      <DependentUpon>admin_edit_disiplin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_disiplin.aspx.vb">
+      <DependentUpon>admin_edit_disiplin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_exam_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_exam_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_exam_data.aspx.vb">
+      <DependentUpon>admin_edit_exam_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_kelas_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_kelas_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_kelas_data.aspx.vb">
+      <DependentUpon>admin_edit_kelas_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_kursus_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_kursus_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_kursus_data.aspx.vb">
+      <DependentUpon>admin_edit_kursus_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_pelajar_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_pelajar_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_pelajar_data.aspx.vb">
+      <DependentUpon>admin_edit_pelajar_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_pelajar_kursus_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_pelajar_kursus_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_pelajar_kursus_data.aspx.vb">
+      <DependentUpon>admin_edit_pelajar_kursus_data.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_edit_pengajar_data.aspx.designer.vb">
+      <DependentUpon>admin_edit_pengajar_data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_pengajar_data.aspx.vb">
+      <DependentUpon>admin_edit_pengajar_data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_importexport_peperiksaan_markah.aspx.designer.vb">
+      <DependentUpon>admin_importexport_peperiksaan_markah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_importexport_peperiksaan_markah.aspx.vb">
+      <DependentUpon>admin_importexport_peperiksaan_markah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_import_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_import_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_import_pelajar.aspx.vb">
+      <DependentUpon>admin_import_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_import_pengajar.aspx.designer.vb">
+      <DependentUpon>admin_import_pengajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_import_pengajar.aspx.vb">
+      <DependentUpon>admin_import_pengajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_aktivitikaunselor.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_aktivitikaunselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_aktivitikaunselor.aspx.vb">
+      <DependentUpon>admin_kaunselor_aktivitikaunselor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_biasiswa.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_biasiswa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_biasiswa.aspx.vb">
+      <DependentUpon>admin_kaunselor_biasiswa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_importeksport.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_importeksport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_importeksport.aspx.vb">
+      <DependentUpon>admin_kaunselor_importeksport.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_jatidiri.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_jatidiri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_jatidiri.aspx.vb">
+      <DependentUpon>admin_kaunselor_jatidiri.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_pengurusanbiasiswa.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_pengurusanbiasiswa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_pengurusanbiasiswa.aspx.vb">
+      <DependentUpon>admin_kaunselor_pengurusanbiasiswa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_perkembangankendiri.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_perkembangankendiri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_perkembangankendiri.aspx.vb">
+      <DependentUpon>admin_kaunselor_perkembangankendiri.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_portfolio.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_portfolio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_portfolio.aspx.vb">
+      <DependentUpon>admin_kaunselor_portfolio.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kemaskini_markah_koko.aspx.designer.vb">
+      <DependentUpon>admin_kemaskini_markah_koko.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kemaskini_markah_koko.aspx.vb">
+      <DependentUpon>admin_kemaskini_markah_koko.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_konfigurasi.aspx.designer.vb">
+      <DependentUpon>admin_konfigurasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_konfigurasi.aspx.vb">
+      <DependentUpon>admin_konfigurasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPCIS.aspx.designer.vb">
+      <DependentUpon>admin_laporanPCIS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPCIS.aspx.vb">
+      <DependentUpon>admin_laporanPCIS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPelajar_laporanOlehPengajar.aspx.designer.vb">
+      <DependentUpon>admin_laporanPelajar_laporanOlehPengajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPelajar_laporanOlehPengajar.aspx.vb">
+      <DependentUpon>admin_laporanPelajar_laporanOlehPengajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPelajar_peperiksaan.aspx.designer.vb">
+      <DependentUpon>admin_laporanPelajar_peperiksaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPelajar_peperiksaan.aspx.vb">
+      <DependentUpon>admin_laporanPelajar_peperiksaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPelajar_peperiksaanDetail.aspx.designer.vb">
+      <DependentUpon>admin_laporanPelajar_peperiksaanDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPelajar_peperiksaanDetail.aspx.vb">
+      <DependentUpon>admin_laporanPelajar_peperiksaanDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_kedudukan_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_laporanPeperiksaan_kedudukan_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_kedudukan_pelajar.aspx.vb">
+      <DependentUpon>admin_laporanPeperiksaan_kedudukan_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_laporan_kehadiran.aspx.designer.vb">
+      <DependentUpon>admin_laporanPeperiksaan_laporan_kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_laporan_kehadiran.aspx.vb">
+      <DependentUpon>admin_laporanPeperiksaan_laporan_kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_peperiksaanKelasDetail.aspx.designer.vb">
+      <DependentUpon>admin_laporanPeperiksaan_peperiksaanKelasDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_peperiksaanKelasDetail.aspx.vb">
+      <DependentUpon>admin_laporanPeperiksaan_peperiksaanKelasDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_peperiksaan_kelas.aspx.designer.vb">
+      <DependentUpon>admin_laporanPeperiksaan_peperiksaan_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_peperiksaan_kelas.aspx.vb">
+      <DependentUpon>admin_laporanPeperiksaan_peperiksaan_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_peperiksaan_kursus.aspx.designer.vb">
+      <DependentUpon>admin_laporanPeperiksaan_peperiksaan_kursus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_peperiksaan_kursus.aspx.vb">
+      <DependentUpon>admin_laporanPeperiksaan_peperiksaan_kursus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPPCS.aspx.designer.vb">
+      <DependentUpon>admin_laporanPPCS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPPCS.aspx.vb">
+      <DependentUpon>admin_laporanPPCS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanUKM1.aspx.designer.vb">
+      <DependentUpon>admin_laporanUKM1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanUKM1.aspx.vb">
+      <DependentUpon>admin_laporanUKM1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanUKM2.aspx.designer.vb">
+      <DependentUpon>admin_laporanUKM2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanUKM2.aspx.vb">
+      <DependentUpon>admin_laporanUKM2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanUKM3.aspx.designer.vb">
+      <DependentUpon>admin_laporanUKM3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanUKM3.aspx.vb">
+      <DependentUpon>admin_laporanUKM3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_login_berjaya.aspx.designer.vb">
+      <DependentUpon>admin_login_berjaya.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_login_berjaya.aspx.vb">
+      <DependentUpon>admin_login_berjaya.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_Master_Konfigurasi.aspx.designer.vb">
+      <DependentUpon>admin_Master_Konfigurasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_Master_Konfigurasi.aspx.vb">
+      <DependentUpon>admin_Master_Konfigurasi.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_kehadiran.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_kehadiran.aspx.vb">
+      <DependentUpon>admin_pelajar_kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_agama.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_kepastian_agama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_agama.aspx.vb">
+      <DependentUpon>admin_pelajar_kepastian_agama.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_hostel.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_kepastian_hostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_hostel.aspx.vb">
+      <DependentUpon>admin_pelajar_kepastian_hostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_kelas.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_kepastian_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_kelas.aspx.vb">
+      <DependentUpon>admin_pelajar_kepastian_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_kokurikulum.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_kepastian_kokurikulum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_kokurikulum.aspx.vb">
+      <DependentUpon>admin_pelajar_kepastian_kokurikulum.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_kursus.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_kepastian_kursus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_kepastian_kursus.aspx.vb">
+      <DependentUpon>admin_pelajar_kepastian_kursus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pelajar_penempatan_kelas.aspx.designer.vb">
+      <DependentUpon>admin_pelajar_penempatan_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pelajar_penempatan_kelas.aspx.vb">
+      <DependentUpon>admin_pelajar_penempatan_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengajar_kepastian_kursus.aspx.designer.vb">
+      <DependentUpon>admin_pengajar_kepastian_kursus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengajar_kepastian_kursus.aspx.vb">
+      <DependentUpon>admin_pengajar_kepastian_kursus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengajar_penempatan_kelas.aspx.designer.vb">
+      <DependentUpon>admin_pengajar_penempatan_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengajar_penempatan_kelas.aspx.vb">
+      <DependentUpon>admin_pengajar_penempatan_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengajar_penempatan_kursus.aspx.designer.vb">
+      <DependentUpon>admin_pengajar_penempatan_kursus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengajar_penempatan_kursus.aspx.vb">
+      <DependentUpon>admin_pengajar_penempatan_kursus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_hostel.aspx.designer.vb">
+      <DependentUpon>admin_pengurusan_am_hostel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_hostel.aspx.vb">
+      <DependentUpon>admin_pengurusan_am_hostel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_kelas.aspx.designer.vb">
+      <DependentUpon>admin_pengurusan_am_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_kelas.aspx.vb">
+      <DependentUpon>admin_pengurusan_am_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_kursus.aspx.designer.vb">
+      <DependentUpon>admin_pengurusan_am_kursus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_kursus.aspx.vb">
+      <DependentUpon>admin_pengurusan_am_kursus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_pengurusan_am_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_pelajar.aspx.vb">
+      <DependentUpon>admin_pengurusan_am_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_pengajar.aspx.designer.vb">
+      <DependentUpon>admin_pengurusan_am_pengajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_pengurusan_am_pengajar.aspx.vb">
+      <DependentUpon>admin_pengurusan_am_pengajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_penilaian_konfig.aspx.designer.vb">
+      <DependentUpon>admin_penilaian_konfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_penilaian_konfig.aspx.vb">
+      <DependentUpon>admin_penilaian_konfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_penyelidikanPelajar.aspx.designer.vb">
+      <DependentUpon>admin_penyelidikanPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_penyelidikanPelajar.aspx.vb">
+      <DependentUpon>admin_penyelidikanPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_peperiksaan_daftar_baru.aspx.designer.vb">
+      <DependentUpon>admin_peperiksaan_daftar_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_peperiksaan_daftar_baru.aspx.vb">
+      <DependentUpon>admin_peperiksaan_daftar_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_peperiksaan_kemaskini_markah.aspx.designer.vb">
+      <DependentUpon>admin_peperiksaan_kemaskini_markah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_peperiksaan_kemaskini_markah.aspx.vb">
+      <DependentUpon>admin_peperiksaan_kemaskini_markah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_peperiksaan_pengurusan_gred.aspx.designer.vb">
+      <DependentUpon>admin_peperiksaan_pengurusan_gred.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_peperiksaan_pengurusan_gred.aspx.vb">
+      <DependentUpon>admin_peperiksaan_pengurusan_gred.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_peperiksaan_pengurusan_peperiksaan.aspx.designer.vb">
+      <DependentUpon>admin_peperiksaan_pengurusan_peperiksaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_peperiksaan_pengurusan_peperiksaan.aspx.vb">
+      <DependentUpon>admin_peperiksaan_pengurusan_peperiksaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_peperiksaan_popup.aspx.designer.vb">
+      <DependentUpon>admin_peperiksaan_popup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_peperiksaan_popup.aspx.vb">
+      <DependentUpon>admin_peperiksaan_popup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_peperiksaan_transkrip.aspx.designer.vb">
+      <DependentUpon>admin_peperiksaan_transkrip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_peperiksaan_transkrip.aspx.vb">
+      <DependentUpon>admin_peperiksaan_transkrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_transaksi_email.aspx.designer.vb">
+      <DependentUpon>admin_transaksi_email.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_transaksi_email.aspx.vb">
+      <DependentUpon>admin_transaksi_email.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_transaksi_yuran.aspx.designer.vb">
+      <DependentUpon>admin_transaksi_yuran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_transaksi_yuran.aspx.vb">
+      <DependentUpon>admin_transaksi_yuran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_transaksi_yuran_gambar.aspx.designer.vb">
+      <DependentUpon>admin_transaksi_yuran_gambar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_transaksi_yuran_gambar.aspx.vb">
+      <DependentUpon>admin_transaksi_yuran_gambar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_transkrip_rasmi.aspx.designer.vb">
+      <DependentUpon>admin_transkrip_rasmi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_transkrip_rasmi.aspx.vb">
+      <DependentUpon>admin_transkrip_rasmi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_tutorial.aspx.designer.vb">
+      <DependentUpon>admin_tutorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_tutorial.aspx.vb">
+      <DependentUpon>admin_tutorial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_userAkses.aspx.designer.vb">
+      <DependentUpon>admin_userAkses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_userAkses.aspx.vb">
+      <DependentUpon>admin_userAkses.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_userLogin.aspx.designer.vb">
+      <DependentUpon>admin_userLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_userLogin.aspx.vb">
+      <DependentUpon>admin_userLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_view_disiplin.aspx.designer.vb">
+      <DependentUpon>admin_view_disiplin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view_disiplin.aspx.vb">
+      <DependentUpon>admin_view_disiplin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_view_koordinator.aspx.designer.vb">
+      <DependentUpon>admin_view_koordinator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view_koordinator.aspx.vb">
+      <DependentUpon>admin_view_koordinator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="alumni_History_List.aspx.designer.vb">
+      <DependentUpon>alumni_History_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alumni_History_List.aspx.vb">
+      <DependentUpon>alumni_History_List.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="alumni_student_EditEduback.aspx.designer.vb">
+      <DependentUpon>alumni_student_EditEduback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alumni_student_EditEduback.aspx.vb">
+      <DependentUpon>alumni_student_EditEduback.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="alumni_student_workStatusEdit.aspx.designer.vb">
+      <DependentUpon>alumni_student_workStatusEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alumni_student_workStatusEdit.aspx.vb">
+      <DependentUpon>alumni_student_workStatusEdit.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="commoncontrol\admin_access.ascx.designer.vb">
+      <DependentUpon>admin_access.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\admin_access.ascx.vb">
+      <DependentUpon>admin_access.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\admin_alumni.ascx.designer.vb">
+      <DependentUpon>admin_alumni.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\admin_alumni.ascx.vb">
+      <DependentUpon>admin_alumni.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\admin_assessment_config.ascx.designer.vb">
+      <DependentUpon>admin_assessment_config.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\admin_assessment_config.ascx.vb">
+      <DependentUpon>admin_assessment_config.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_Detail.ascx.designer.vb">
+      <DependentUpon>alumni_student_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_Detail.ascx.vb">
+      <DependentUpon>alumni_student_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_EditEduback.ascx.designer.vb">
+      <DependentUpon>alumni_student_EditEduback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_EditEduback.ascx.vb">
+      <DependentUpon>alumni_student_EditEduback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_Student_EduBack.ascx.designer.vb">
+      <DependentUpon>alumni_Student_EduBack.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_Student_EduBack.ascx.vb">
+      <DependentUpon>alumni_Student_EduBack.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_Student_Status.ascx.designer.vb">
+      <DependentUpon>alumni_Student_Status.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_Student_Status.ascx.vb">
+      <DependentUpon>alumni_Student_Status.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_workStatus.ascx.designer.vb">
+      <DependentUpon>alumni_student_workStatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_workStatus.ascx.vb">
+      <DependentUpon>alumni_student_workStatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_workStatusEdit.ascx.designer.vb">
+      <DependentUpon>alumni_student_workStatusEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\alumni_student_workStatusEdit.ascx.vb">
+      <DependentUpon>alumni_student_workStatusEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\class_Create.ascx.designer.vb">
+      <DependentUpon>class_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\class_Create.ascx.vb">
+      <DependentUpon>class_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\class_List_Table.ascx.designer.vb">
+      <DependentUpon>class_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\class_List_Table.ascx.vb">
+      <DependentUpon>class_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\class_transfer.ascx.designer.vb">
+      <DependentUpon>class_transfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\class_transfer.ascx.vb">
+      <DependentUpon>class_transfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\class_Update.ascx.designer.vb">
+      <DependentUpon>class_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\class_Update.ascx.vb">
+      <DependentUpon>class_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\cocurricular_Detail.ascx.designer.vb">
+      <DependentUpon>cocurricular_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\cocurricular_Detail.ascx.vb">
+      <DependentUpon>cocurricular_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\configuration_setting.ascx.designer.vb">
+      <DependentUpon>configuration_setting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\configuration_setting.ascx.vb">
+      <DependentUpon>configuration_setting.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_assessment_remark.ascx.designer.vb">
+      <DependentUpon>coordinator_assessment_remark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_assessment_remark.ascx.vb">
+      <DependentUpon>coordinator_assessment_remark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_Create.ascx.designer.vb">
+      <DependentUpon>coordinator_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_Create.ascx.vb">
+      <DependentUpon>coordinator_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_student_marks.ascx.designer.vb">
+      <DependentUpon>coordinator_student_marks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_student_marks.ascx.vb">
+      <DependentUpon>coordinator_student_marks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_Update.ascx.designer.vb">
+      <DependentUpon>coordinator_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_Update.ascx.vb">
+      <DependentUpon>coordinator_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_View.ascx.designer.vb">
+      <DependentUpon>coordinator_View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\coordinator_View.ascx.vb">
+      <DependentUpon>coordinator_View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Detal_Case.ascx.designer.vb">
+      <DependentUpon>counselor_Detal_Case.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Detal_Case.ascx.vb">
+      <DependentUpon>counselor_Detal_Case.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_List_Table.ascx.designer.vb">
+      <DependentUpon>counselor_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_List_Table.ascx.vb">
+      <DependentUpon>counselor_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Personality_Development.ascx.designer.vb">
+      <DependentUpon>counselor_Personality_Development.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Personality_Development.ascx.vb">
+      <DependentUpon>counselor_Personality_Development.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Portfolio.ascx.designer.vb">
+      <DependentUpon>counselor_Portfolio.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Portfolio.ascx.vb">
+      <DependentUpon>counselor_Portfolio.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Self_Development_Mark.ascx.designer.vb">
+      <DependentUpon>counselor_Self_Development_Mark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Self_Development_Mark.ascx.vb">
+      <DependentUpon>counselor_Self_Development_Mark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\course_Create.ascx.designer.vb">
+      <DependentUpon>course_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\course_Create.ascx.vb">
+      <DependentUpon>course_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\course_List_Table.ascx.designer.vb">
+      <DependentUpon>course_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\course_List_Table.ascx.vb">
+      <DependentUpon>course_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\course_Transfer.ascx.designer.vb">
+      <DependentUpon>course_Transfer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\course_Transfer.ascx.vb">
+      <DependentUpon>course_Transfer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\course_Update.ascx.designer.vb">
+      <DependentUpon>course_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\course_Update.ascx.vb">
+      <DependentUpon>course_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Case_Detail.ascx.designer.vb">
+      <DependentUpon>Disiplin_Case_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Case_Detail.ascx.vb">
+      <DependentUpon>Disiplin_Case_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_config.ascx.designer.vb">
+      <DependentUpon>Disiplin_config.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_config.ascx.vb">
+      <DependentUpon>Disiplin_config.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Letter_List.ascx.designer.vb">
+      <DependentUpon>Disiplin_Letter_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Letter_List.ascx.vb">
+      <DependentUpon>Disiplin_Letter_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_student_detail.ascx.designer.vb">
+      <DependentUpon>Disiplin_student_detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_student_detail.ascx.vb">
+      <DependentUpon>Disiplin_student_detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Update.ascx.designer.vb">
+      <DependentUpon>Disiplin_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Update.ascx.vb">
+      <DependentUpon>Disiplin_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_view.ascx.designer.vb">
+      <DependentUpon>Disiplin_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_view.ascx.vb">
+      <DependentUpon>Disiplin_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_warning_letter.ascx.designer.vb">
+      <DependentUpon>Disiplin_warning_letter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_warning_letter.ascx.vb">
+      <DependentUpon>Disiplin_warning_letter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Warning_Letter_Form.ascx.designer.vb">
+      <DependentUpon>Disiplin_Warning_Letter_Form.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Warning_Letter_Form.ascx.vb">
+      <DependentUpon>Disiplin_Warning_Letter_Form.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Create.ascx.designer.vb">
+      <DependentUpon>exam_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Create.ascx.vb">
+      <DependentUpon>exam_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_List_Table.ascx.designer.vb">
+      <DependentUpon>exam_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_List_Table.ascx.vb">
+      <DependentUpon>exam_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Official_Transcript.ascx.designer.vb">
+      <DependentUpon>exam_Official_Transcript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Official_Transcript.ascx.vb">
+      <DependentUpon>exam_Official_Transcript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Transcript.ascx.designer.vb">
+      <DependentUpon>exam_Transcript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Transcript.ascx.vb">
+      <DependentUpon>exam_Transcript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Update.ascx.designer.vb">
+      <DependentUpon>exam_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_Update.ascx.vb">
+      <DependentUpon>exam_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\grade_List_Table.ascx.designer.vb">
+      <DependentUpon>grade_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\grade_List_Table.ascx.vb">
+      <DependentUpon>grade_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\guardian1_Detail.ascx.designer.vb">
+      <DependentUpon>guardian1_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\guardian1_Detail.ascx.vb">
+      <DependentUpon>guardian1_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\guardian1_DetailStd.ascx.designer.vb">
+      <DependentUpon>guardian1_DetailStd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\guardian1_DetailStd.ascx.vb">
+      <DependentUpon>guardian1_DetailStd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\guardian2_Detail.ascx.designer.vb">
+      <DependentUpon>guardian2_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\guardian2_Detail.ascx.vb">
+      <DependentUpon>guardian2_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\guardian2_DetailStd.ascx.designer.vb">
+      <DependentUpon>guardian2_DetailStd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\guardian2_DetailStd.ascx.vb">
+      <DependentUpon>guardian2_DetailStd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\homeroom_assessment_remark.ascx.designer.vb">
+      <DependentUpon>homeroom_assessment_remark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\homeroom_assessment_remark.ascx.vb">
+      <DependentUpon>homeroom_assessment_remark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\homeroom_ViewAttendance.ascx.designer.vb">
+      <DependentUpon>homeroom_ViewAttendance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\homeroom_ViewAttendance.ascx.vb">
+      <DependentUpon>homeroom_ViewAttendance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_Create.ascx.designer.vb">
+      <DependentUpon>hostel_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_Create.ascx.vb">
+      <DependentUpon>hostel_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_Detail.ascx.designer.vb">
+      <DependentUpon>hostel_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_Detail.ascx.vb">
+      <DependentUpon>hostel_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_EditStudentPlacement.ascx.designer.vb">
+      <DependentUpon>hostel_EditStudentPlacement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_EditStudentPlacement.ascx.vb">
+      <DependentUpon>hostel_EditStudentPlacement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_list_managae.ascx.designer.vb">
+      <DependentUpon>hostel_list_managae.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_list_managae.ascx.vb">
+      <DependentUpon>hostel_list_managae.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_List_Table.ascx.designer.vb">
+      <DependentUpon>hostel_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_List_Table.ascx.vb">
+      <DependentUpon>hostel_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_Update.ascx.designer.vb">
+      <DependentUpon>hostel_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_Update.ascx.vb">
+      <DependentUpon>hostel_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\import_class.ascx.designer.vb">
+      <DependentUpon>import_class.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\import_class.ascx.vb">
+      <DependentUpon>import_class.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\import_course.ascx.designer.vb">
+      <DependentUpon>import_course.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\import_course.ascx.vb">
+      <DependentUpon>import_course.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\import_exam_marks.ascx.designer.vb">
+      <DependentUpon>import_exam_marks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\import_exam_marks.ascx.vb">
+      <DependentUpon>import_exam_marks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Import_Export_student_marks.ascx.designer.vb">
+      <DependentUpon>Import_Export_student_marks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Import_Export_student_marks.ascx.vb">
+      <DependentUpon>Import_Export_student_marks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\import_lecturerPlacement.ascx.designer.vb">
+      <DependentUpon>import_lecturerPlacement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\import_lecturerPlacement.ascx.vb">
+      <DependentUpon>import_lecturerPlacement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\import_staff.ascx.designer.vb">
+      <DependentUpon>import_staff.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\import_staff.ascx.vb">
+      <DependentUpon>import_staff.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\import_student.ascx.designer.vb">
+      <DependentUpon>import_student.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\import_student.ascx.vb">
+      <DependentUpon>import_student.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_attendanceData.ascx.designer.vb">
+      <DependentUpon>lecturer_attendanceData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_attendanceData.ascx.vb">
+      <DependentUpon>lecturer_attendanceData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_counselor_Detail_Case.ascx.designer.vb">
+      <DependentUpon>lecturer_counselor_Detail_Case.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_counselor_Detail_Case.ascx.vb">
+      <DependentUpon>lecturer_counselor_Detail_Case.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_counselor_List_Table.ascx.designer.vb">
+      <DependentUpon>lecturer_counselor_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_counselor_List_Table.ascx.vb">
+      <DependentUpon>lecturer_counselor_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_CourseList.ascx.designer.vb">
+      <DependentUpon>lecturer_CourseList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_CourseList.ascx.vb">
+      <DependentUpon>lecturer_CourseList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_coursepage.ascx.designer.vb">
+      <DependentUpon>lecturer_coursepage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_coursepage.ascx.vb">
+      <DependentUpon>lecturer_coursepage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_Create.ascx.designer.vb">
+      <DependentUpon>lecturer_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_Create.ascx.vb">
+      <DependentUpon>lecturer_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_Detail.ascx.designer.vb">
+      <DependentUpon>lecturer_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_Detail.ascx.vb">
+      <DependentUpon>lecturer_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_homepage.ascx.designer.vb">
+      <DependentUpon>lecturer_homepage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_homepage.ascx.vb">
+      <DependentUpon>lecturer_homepage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_list_student.ascx.designer.vb">
+      <DependentUpon>lecturer_list_student.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_list_student.ascx.vb">
+      <DependentUpon>lecturer_list_student.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_List_Table.ascx.designer.vb">
+      <DependentUpon>lecturer_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_List_Table.ascx.vb">
+      <DependentUpon>lecturer_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_RegClass.ascx.designer.vb">
+      <DependentUpon>lecturer_RegClass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_RegClass.ascx.vb">
+      <DependentUpon>lecturer_RegClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_Update.ascx.designer.vb">
+      <DependentUpon>lecturer_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_Update.ascx.vb">
+      <DependentUpon>lecturer_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_update_result.ascx.designer.vb">
+      <DependentUpon>lecturer_update_result.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_update_result.ascx.vb">
+      <DependentUpon>lecturer_update_result.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_view_course.ascx.designer.vb">
+      <DependentUpon>lecturer_view_course.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_view_course.ascx.vb">
+      <DependentUpon>lecturer_view_course.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardian1Detail.ascx.designer.vb">
+      <DependentUpon>parent_guardian1Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardian1Detail.ascx.vb">
+      <DependentUpon>parent_guardian1Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardian2Detail.ascx.designer.vb">
+      <DependentUpon>parent_guardian2Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardian2Detail.ascx.vb">
+      <DependentUpon>parent_guardian2Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardianOne.ascx.designer.vb">
+      <DependentUpon>parent_guardianOne.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardianOne.ascx.vb">
+      <DependentUpon>parent_guardianOne.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardianTwo.ascx.designer.vb">
+      <DependentUpon>parent_guardianTwo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_guardianTwo.ascx.vb">
+      <DependentUpon>parent_guardianTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_imagePayment.ascx.designer.vb">
+      <DependentUpon>parent_imagePayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_imagePayment.ascx.vb">
+      <DependentUpon>parent_imagePayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentCourse.ascx.designer.vb">
+      <DependentUpon>parent_studentCourse.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentCourse.ascx.vb">
+      <DependentUpon>parent_studentCourse.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentDetail.ascx.designer.vb">
+      <DependentUpon>parent_studentDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentDetail.ascx.vb">
+      <DependentUpon>parent_studentDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentExam.ascx.designer.vb">
+      <DependentUpon>parent_studentExam.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentExam.ascx.vb">
+      <DependentUpon>parent_studentExam.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studenthomepage.ascx.designer.vb">
+      <DependentUpon>parent_studenthomepage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studenthomepage.ascx.vb">
+      <DependentUpon>parent_studenthomepage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentHostel.ascx.designer.vb">
+      <DependentUpon>parent_studentHostel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_studentHostel.ascx.vb">
+      <DependentUpon>parent_studentHostel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\parent_student_paymentInformation.ascx.designer.vb">
+      <DependentUpon>parent_student_paymentInformation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\parent_student_paymentInformation.ascx.vb">
+      <DependentUpon>parent_student_paymentInformation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_admin_image.ascx.designer.vb">
+      <DependentUpon>payment_admin_image.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_admin_image.ascx.vb">
+      <DependentUpon>payment_admin_image.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Create.ascx.designer.vb">
+      <DependentUpon>payment_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Create.ascx.vb">
+      <DependentUpon>payment_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Create_Invoice.ascx.designer.vb">
+      <DependentUpon>payment_Create_Invoice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Create_Invoice.ascx.vb">
+      <DependentUpon>payment_Create_Invoice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Email.ascx.designer.vb">
+      <DependentUpon>payment_Email.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Email.ascx.vb">
+      <DependentUpon>payment_Email.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_list_table.ascx.designer.vb">
+      <DependentUpon>payment_list_table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_list_table.ascx.vb">
+      <DependentUpon>payment_list_table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Transaction.ascx.designer.vb">
+      <DependentUpon>payment_Transaction.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Transaction.ascx.vb">
+      <DependentUpon>payment_Transaction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_examination_slip.ascx.designer.vb">
+      <DependentUpon>pengarah_examination_slip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_examination_slip.ascx.vb">
+      <DependentUpon>pengarah_examination_slip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_kehadiran_table.ascx.designer.vb">
+      <DependentUpon>pengarah_laporan_kehadiran_table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_kehadiran_table.ascx.vb">
+      <DependentUpon>pengarah_laporan_kehadiran_table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_peperiksaan_kelas_table.ascx.designer.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_kelas_table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_peperiksaan_kelas_table.ascx.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_kelas_table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_peperiksaan_kursus_table.ascx.designer.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_kursus_table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_peperiksaan_kursus_table.ascx.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_kursus_table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_peperiksaan_table.ascx.designer.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pengarah_laporan_peperiksaan_table.ascx.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\report_PCIS.ascx.designer.vb">
+      <DependentUpon>report_PCIS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\report_PCIS.ascx.vb">
+      <DependentUpon>report_PCIS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\report_PPCS.ascx.designer.vb">
+      <DependentUpon>report_PPCS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\report_PPCS.ascx.vb">
+      <DependentUpon>report_PPCS.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM1.ascx.designer.vb">
+      <DependentUpon>report_UKM1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM1.ascx.vb">
+      <DependentUpon>report_UKM1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM2.ascx.designer.vb">
+      <DependentUpon>report_UKM2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM2.ascx.vb">
+      <DependentUpon>report_UKM2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM3.ascx.designer.vb">
+      <DependentUpon>report_UKM3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM3.ascx.vb">
+      <DependentUpon>report_UKM3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\scholarship_create.ascx.designer.vb">
+      <DependentUpon>scholarship_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\scholarship_create.ascx.vb">
+      <DependentUpon>scholarship_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\scholarship_update.ascx.designer.vb">
+      <DependentUpon>scholarship_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\scholarship_update.ascx.vb">
+      <DependentUpon>scholarship_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_AddClass.ascx.designer.vb">
+      <DependentUpon>student_AddClass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_AddClass.ascx.vb">
+      <DependentUpon>student_AddClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_AddHostel.ascx.designer.vb">
+      <DependentUpon>student_AddHostel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_AddHostel.ascx.vb">
+      <DependentUpon>student_AddHostel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_attendance.ascx.designer.vb">
+      <DependentUpon>student_attendance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_attendance.ascx.vb">
+      <DependentUpon>student_attendance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_CocurricularList.ascx.designer.vb">
+      <DependentUpon>student_CocurricularList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_CocurricularList.ascx.vb">
+      <DependentUpon>student_CocurricularList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_CourseList.ascx.designer.vb">
+      <DependentUpon>student_CourseList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_CourseList.ascx.vb">
+      <DependentUpon>student_CourseList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_course_information.ascx.designer.vb">
+      <DependentUpon>student_course_information.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_course_information.ascx.vb">
+      <DependentUpon>student_course_information.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Create.ascx.designer.vb">
+      <DependentUpon>student_Create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Create.ascx.vb">
+      <DependentUpon>student_Create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Detail.ascx.designer.vb">
+      <DependentUpon>student_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Detail.ascx.vb">
+      <DependentUpon>student_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_DetailAdmin.ascx.designer.vb">
+      <DependentUpon>student_DetailAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_DetailAdmin.ascx.vb">
+      <DependentUpon>student_DetailAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_dicipline.ascx.designer.vb">
+      <DependentUpon>student_dicipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_dicipline.ascx.vb">
+      <DependentUpon>student_dicipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_examData.ascx.designer.vb">
+      <DependentUpon>student_examData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_examData.ascx.vb">
+      <DependentUpon>student_examData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_ExamList.ascx.designer.vb">
+      <DependentUpon>student_ExamList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_ExamList.ascx.vb">
+      <DependentUpon>student_ExamList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_exam_information.ascx.designer.vb">
+      <DependentUpon>student_exam_information.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_exam_information.ascx.vb">
+      <DependentUpon>student_exam_information.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_guardian_one.ascx.designer.vb">
+      <DependentUpon>student_guardian_one.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_guardian_one.ascx.vb">
+      <DependentUpon>student_guardian_one.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_guardian_two.ascx.designer.vb">
+      <DependentUpon>student_guardian_two.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_guardian_two.ascx.vb">
+      <DependentUpon>student_guardian_two.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_homepage.ascx.designer.vb">
+      <DependentUpon>student_homepage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_homepage.ascx.vb">
+      <DependentUpon>student_homepage.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_hostel_information.ascx.designer.vb">
+      <DependentUpon>student_hostel_information.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_hostel_information.ascx.vb">
+      <DependentUpon>student_hostel_information.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_imagePayment.ascx.designer.vb">
+      <DependentUpon>student_imagePayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_imagePayment.ascx.vb">
+      <DependentUpon>student_imagePayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_List_Table.ascx.designer.vb">
+      <DependentUpon>student_List_Table.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_List_Table.ascx.vb">
+      <DependentUpon>student_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_marks.ascx.designer.vb">
+      <DependentUpon>student_marks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_marks.ascx.vb">
+      <DependentUpon>student_marks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Student_marks_koko.ascx.designer.vb">
+      <DependentUpon>Student_marks_koko.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Student_marks_koko.ascx.vb">
+      <DependentUpon>Student_marks_koko.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_payment_information.ascx.designer.vb">
+      <DependentUpon>student_payment_information.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_payment_information.ascx.vb">
+      <DependentUpon>student_payment_information.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Pcis_History.ascx.designer.vb">
+      <DependentUpon>student_Pcis_History.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Pcis_History.ascx.vb">
+      <DependentUpon>student_Pcis_History.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ppcs_History.ascx.designer.vb">
+      <DependentUpon>student_Ppcs_History.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ppcs_History.ascx.vb">
+      <DependentUpon>student_Ppcs_History.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Student_RegisterMentor_List.ascx.designer.vb">
+      <DependentUpon>Student_RegisterMentor_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Student_RegisterMentor_List.ascx.vb">
+      <DependentUpon>Student_RegisterMentor_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Student_RegisterProject_List.ascx.designer.vb">
+      <DependentUpon>Student_RegisterProject_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Student_RegisterProject_List.ascx.vb">
+      <DependentUpon>Student_RegisterProject_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Student_RegisterResearch_List.ascx.designer.vb">
+      <DependentUpon>Student_RegisterResearch_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Student_RegisterResearch_List.ascx.vb">
+      <DependentUpon>Student_RegisterResearch_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Research_List.ascx.designer.vb">
+      <DependentUpon>student_Research_List.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Research_List.ascx.vb">
+      <DependentUpon>student_Research_List.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ukm1_History.ascx.designer.vb">
+      <DependentUpon>student_Ukm1_History.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ukm1_History.ascx.vb">
+      <DependentUpon>student_Ukm1_History.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ukm2_History.ascx.designer.vb">
+      <DependentUpon>student_Ukm2_History.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ukm2_History.ascx.vb">
+      <DependentUpon>student_Ukm2_History.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ukm3_History.ascx.designer.vb">
+      <DependentUpon>student_Ukm3_History.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Ukm3_History.ascx.vb">
+      <DependentUpon>student_Ukm3_History.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_Update.ascx.designer.vb">
+      <DependentUpon>student_Update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_Update.ascx.vb">
+      <DependentUpon>student_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_update_course.ascx.designer.vb">
+      <DependentUpon>student_update_course.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_update_course.ascx.vb">
+      <DependentUpon>student_update_course.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_update_coursePlacement.ascx.designer.vb">
+      <DependentUpon>student_update_coursePlacement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_update_coursePlacement.ascx.vb">
+      <DependentUpon>student_update_coursePlacement.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_view_class.ascx.designer.vb">
+      <DependentUpon>student_view_class.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_view_class.ascx.vb">
+      <DependentUpon>student_view_class.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_view_course.ascx.designer.vb">
+      <DependentUpon>student_view_course.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_view_course.ascx.vb">
+      <DependentUpon>student_view_course.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_view_religion.ascx.designer.vb">
+      <DependentUpon>student_view_religion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_view_religion.ascx.vb">
+      <DependentUpon>student_view_religion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\test_import.ascx.designer.vb">
+      <DependentUpon>test_import.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\test_import.ascx.vb">
+      <DependentUpon>test_import.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Tukar_KataLaluan.ascx.designer.vb">
+      <DependentUpon>Tukar_KataLaluan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Tukar_KataLaluan.ascx.vb">
+      <DependentUpon>Tukar_KataLaluan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\User_Access.ascx.designer.vb">
+      <DependentUpon>User_Access.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\User_Access.ascx.vb">
+      <DependentUpon>User_Access.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\àlumni_History.ascx.designer.vb">
+      <DependentUpon>àlumni_History.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\àlumni_History.ascx.vb">
+      <DependentUpon>àlumni_History.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GlobalResources\subjectDataMS.Designer.vb" />
+    <Compile Include="homeroom_semak_kehadiran.aspx.designer.vb">
+      <DependentUpon>homeroom_semak_kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="homeroom_semak_kehadiran.aspx.vb">
+      <DependentUpon>homeroom_semak_kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Import_Data.aspx.designer.vb">
+      <DependentUpon>Import_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Import_Data.aspx.vb">
+      <DependentUpon>Import_Data.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Import_Exam_Data.aspx.designer.vb">
+      <DependentUpon>Import_Exam_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Import_Exam_Data.aspx.vb">
+      <DependentUpon>Import_Exam_Data.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Import_Student_Data_Temporary.aspx.designer.vb">
+      <DependentUpon>Import_Student_Data_Temporary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Import_Student_Data_Temporary.aspx.vb">
+      <DependentUpon>Import_Student_Data_Temporary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pegajar_koordinator_kemaskini_markah.aspx.designer.vb">
+      <DependentUpon>pegajar_koordinator_kemaskini_markah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pegajar_koordinator_kemaskini_markah.aspx.vb">
+      <DependentUpon>pegajar_koordinator_kemaskini_markah.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar.Master.designer.vb">
+      <DependentUpon>pengajar.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar.Master.vb">
+      <DependentUpon>pengajar.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_carian_pelajar_kaunselor.aspx.designer.vb">
+      <DependentUpon>pengajar_carian_pelajar_kaunselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_carian_pelajar_kaunselor.aspx.vb">
+      <DependentUpon>pengajar_carian_pelajar_kaunselor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_CloseLogout.aspx.designer.vb">
+      <DependentUpon>pengajar_CloseLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_CloseLogout.aspx.vb">
+      <DependentUpon>pengajar_CloseLogout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_detail_kaunselor.aspx.designer.vb">
+      <DependentUpon>pengajar_detail_kaunselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_detail_kaunselor.aspx.vb">
+      <DependentUpon>pengajar_detail_kaunselor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_kehadiran_pelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_kehadiran_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_kehadiran_pelajar.aspx.vb">
+      <DependentUpon>pengajar_kehadiran_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_kemaskini_profile.aspx.designer.vb">
+      <DependentUpon>pengajar_kemaskini_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_kemaskini_profile.aspx.vb">
+      <DependentUpon>pengajar_kemaskini_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_kemasukan_markah.aspx.designer.vb">
+      <DependentUpon>pengajar_kemasukan_markah.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_kemasukan_markah.aspx.vb">
+      <DependentUpon>pengajar_kemasukan_markah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koordinator_penilaian_pelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_koordinator_penilaian_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koordinator_penilaian_pelajar.aspx.vb">
+      <DependentUpon>pengajar_koordinator_penilaian_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_laporan_pentaksiran.aspx.designer.vb">
+      <DependentUpon>pengajar_laporan_pentaksiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_laporan_pentaksiran.aspx.vb">
+      <DependentUpon>pengajar_laporan_pentaksiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_login_berjaya.aspx.designer.vb">
+      <DependentUpon>pengajar_login_berjaya.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_login_berjaya.aspx.vb">
+      <DependentUpon>pengajar_login_berjaya.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_password_baru.aspx.designer.vb">
+      <DependentUpon>pengajar_password_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_password_baru.aspx.vb">
+      <DependentUpon>pengajar_password_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_pelajar_detail.aspx.designer.vb">
+      <DependentUpon>pengajar_pelajar_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_pelajar_detail.aspx.vb">
+      <DependentUpon>pengajar_pelajar_detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_penilaian_pelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_penilaian_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_penilaian_pelajar.aspx.vb">
+      <DependentUpon>pengajar_penilaian_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_senarai_pelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_senarai_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_senarai_pelajar.aspx.vb">
+      <DependentUpon>pengajar_senarai_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah.Master.designer.vb">
+      <DependentUpon>pengarah.Master</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah.Master.vb">
+      <DependentUpon>pengarah.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_CloseLogout.aspx.designer.vb">
+      <DependentUpon>pengarah_CloseLogout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_CloseLogout.aspx.vb">
+      <DependentUpon>pengarah_CloseLogout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_laporan_kehadiran.aspx.designer.vb">
+      <DependentUpon>pengarah_laporan_kehadiran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_laporan_kehadiran.aspx.vb">
+      <DependentUpon>pengarah_laporan_kehadiran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_laporan_kursus.aspx.designer.vb">
+      <DependentUpon>pengarah_laporan_kursus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_laporan_kursus.aspx.vb">
+      <DependentUpon>pengarah_laporan_kursus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_laporan_peperiksaan.aspx.designer.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_laporan_peperiksaan.aspx.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_laporan_peperiksaan_kelas.aspx.designer.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_laporan_peperiksaan_kelas.aspx.vb">
+      <DependentUpon>pengarah_laporan_peperiksaan_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_login_berjaya.aspx.designer.vb">
+      <DependentUpon>pengarah_login_berjaya.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_login_berjaya.aspx.vb">
+      <DependentUpon>pengarah_login_berjaya.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_password_baru.aspx.designer.vb">
+      <DependentUpon>pengarah_password_baru.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_password_baru.aspx.vb">
+      <DependentUpon>pengarah_password_baru.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengarah_slip_peperiksaan.aspx.designer.vb">
+      <DependentUpon>pengarah_slip_peperiksaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengarah_slip_peperiksaan.aspx.vb">
+      <DependentUpon>pengarah_slip_peperiksaan.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Simple3Des.vb" />
+    <Compile Include="Tukar_KataLaluan.aspx.designer.vb">
+      <DependentUpon>Tukar_KataLaluan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tukar_KataLaluan.aspx.vb">
+      <DependentUpon>Tukar_KataLaluan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GlobalResources\subjectDataMS.resx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.Master" />
+    <Content Include="download\CourseProfileBatch.xlsx" />
+    <Content Include="download\ClassProfileBatch.xlsx" />
+    <Content Include="download\lecturer_classplacement.xlsx" />
+    <Content Include="download\staff_info.xlsx" />
+    <Content Include="download\student_info.xlsx" />
+    <Content Include="download\student_marks.xlsx" />
+    <Content Include="import\class_import\test.xlsx" />
+    <Content Include="import\course_import\test.xlsx" />
+    <Content Include="import\exam_import\test.xlsx" />
+    <Content Include="import\lecturerPlacement_import\test.xlsx" />
+    <Content Include="import\staff_import\test.xlsx" />
+    <Content Include="import\student_import\test.xlsx" />
+    <Content Include="download\student_pngs_pngk.xlsx" />
+    <Content Include="import\student_gpa_cgpa\test.xlsx" />
+    <Content Include="download\student_past_exam_data.xlsx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="pengajar.Master" />
+    <Content Include="pengarah.Master" />
+    <Content Include="textboxio\services\ephox-allowed-origins.war" />
+    <Content Include="textboxio\services\ephox-spelling.war" />
+    <Content Include="textboxio\services\examples\sample_application.conf" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58118</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58118/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.4.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

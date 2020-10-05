@@ -1,0 +1,41 @@
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\UKM1.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\itextsharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\bin\itextsharp.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM1.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM1.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\permata_ukm1\permata_ukm1\obj\Debug\UKM1.pdb
+F:\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.dll.config
+F:\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.dll
+F:\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.pdb
+F:\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.xml
+F:\PermataPintar\permata_ukm1\permata_ukm1\bin\itextsharp.dll
+F:\PermataPintar\permata_ukm1\permata_ukm1\bin\itextsharp.xml
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbprojAssemblyReference.cache
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\permatapintar.Resources.resources
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.GenerateResource.cache
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.CopyComplete
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM1.dll
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM1.xml
+F:\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM1.pdb
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.dll.config
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.dll
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.pdb
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\bin\UKM1.xml
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\bin\itextsharp.dll
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\bin\itextsharp.xml
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbprojAssemblyReference.cache
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\permatapintar.Resources.resources
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.GenerateResource.cache
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.CoreCompileInputs.cache
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM_UKM1.vbproj.CopyComplete
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM1.dll
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM1.xml
+C:\Users\acapx\Desktop\PermataPintar\permata_ukm1\permata_ukm1\obj\Debug\UKM1.pdb

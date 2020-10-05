@@ -1,0 +1,124 @@
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\bin\UKM_KPM.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\bin\UKM_KPM.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\bin\UKM_KPM.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\obj\Release\UKM_KPM.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\obj\Release\UKM_KPM.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\UKM_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\bin\UKM_KPM.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\bin\UKM_KPM.pdb
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\bin\UKM_KPM.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\obj\Release\UKM_KPM.dll
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\obj\Release\UKM_KPM.xml
+C:\Users\Jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2012\UKM_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\bin\UKM_KPM.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\bin\UKM_KPM.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\bin\UKM_KPM.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\obj\Release\UKM_KPM.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\obj\Release\UKM_KPM.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2013\UKM_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.pdb
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\ResolveAssemblyReference.cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.dll
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.xml
+C:\Users\jamain\Documents\Visual Studio 2008\Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\bin\UKM_KPM.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\UKM_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.vbprojResolveAssemblyReference.cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\Yoga 2 Pro 13\Documents\Visual Studio Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2014\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2013\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbprojResolveAssemblyReference.cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jamain.johari\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbprojResolveAssemblyReference.cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\User\Google Drive\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\PERMATAPINTAR_2015\PERMATA_KPM\obj\Release\UKM_KPM.vbprojResolveAssemblyReference.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\bin\UKM_KPM.dll.config
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\bin\UKM_KPM.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\bin\UKM_KPM.pdb
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\bin\UKM_KPM.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\UKM_KPM.vbprojResolveAssemblyReference.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\permatapintar.Resources.resources
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.GenerateResource.Cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\UKM_KPM.vbproj.CoreCompileInputs.cache
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\UKM_KPM.dll
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\UKM_KPM.xml
+C:\Users\ros\Documents\Visual Studio 2017\Project\PERMATApintar2017\PERMATA_KPM\obj\Release\UKM_KPM.pdb

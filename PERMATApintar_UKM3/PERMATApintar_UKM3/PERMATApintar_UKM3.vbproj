@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{D938A0D3-325B-43DF-B555-409A12DAD683}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PERMATApintar_UKM3</RootNamespace>
+    <AssemblyName>PERMATApintar_UKM3</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PERMATApintar_UKM3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PERMATApintar_UKM3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="img\admin\" />
+    <Folder Include="img\App_Data\" />
+    <Folder Include="img\App_GlobalResources\" />
+    <Folder Include="img\cert_pdf\" />
+    <Folder Include="img\commoncontrol\" />
+    <Folder Include="img\css\" />
+    <Folder Include="img\icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\admin.ppmt.status.update.aspx" />
+    <Content Include="admin\admin.ppmt.statustawaran.aspx" />
+    <Content Include="admin\admin.ppmt.studentprofile.create.aspx" />
+    <Content Include="admin\admin.ppmt.studentprofile.list.aspx" />
+    <Content Include="admin\admin.ppmt.studentprofile.nopelajar.update.aspx" />
+    <Content Include="admin\admin.ppmt.studentprofile.year.list.aspx" />
+    <Content Include="admin\admin.ukm3.mark.update.aspx" />
+    <Content Include="admin\cert_pdf\TextFile1.txt" />
+    <Content Include="admin\default.aspx" />
+    <Content Include="admin\img\cert_header-new.png" />
+    <Content Include="admin\img\cert_header.png" />
+    <Content Include="admin\img\drawline.png" />
+    <Content Include="admin\img\error.png" />
+    <Content Include="admin\img\info.png" />
+    <Content Include="admin\img\spacing.png" />
+    <Content Include="admin\img\success.png" />
+    <Content Include="admin\img\validation.png" />
+    <Content Include="admin\img\warning.png" />
+    <Content Include="admin\ppmt.studentprofile.alumniid.update.aspx" />
+    <Content Include="bin\itextsharp.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\PERMATApintar_UKM3.dll" />
+    <Content Include="bin\PERMATApintar_UKM3.pdb" />
+    <Content Include="bin\PERMATApintar_UKM3.xml" />
+    <Content Include="bin\RKLib.ExportData.dll" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\csi.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll" />
+    <Content Include="bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll" />
+    <Content Include="bin\roslyn\System.AppContext.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Diagnostics.StackTrace.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.dll" />
+    <Content Include="bin\roslyn\System.IO.FileSystem.Primitives.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\UKM_PPCS.dll" />
+    <Content Include="bin\UKM_PPCS.pdb" />
+    <Content Include="bin\UKM_PPCS.xml" />
+    <Content Include="cert_pdf\TextFile1.txt" />
+    <Content Include="commoncontrol\activity.list.ascx" />
+    <Content Include="commoncontrol\studentprofile_ukm3_alumniid_update.ascx" />
+    <Content Include="commoncontrol\studentprofile_ukm3_nopelajar_update.ascx" />
+    <Content Include="commoncontrol\ukm2.ppcs.login.control.ascx" />
+    <Content Include="commoncontrol\ukm3_mark_update.ascx" />
+    <Content Include="commoncontrol\ukm3_ppmt_list.ascx" />
+    <Content Include="commoncontrol\ukm3_ppmt_update.ascx" />
+    <Content Include="commoncontrol\ukm3_ppmt_year_list.ascx" />
+    <Content Include="commoncontrol\ukm3_statustawaran_list.ascx" />
+    <Content Include="css\error.png" />
+    <Content Include="css\info.png" />
+    <Content Include="css\portal.default.css" />
+    <Content Include="css\success.png" />
+    <Content Include="css\validation.png" />
+    <Content Include="css\warning.png" />
+    <Content Include="default.aspx" />
+    <Content Include="default.contactus.aspx" />
+    <Content Include="default.eval.aspx" />
+    <Content Include="default.login.aspx" />
+    <Content Include="default.register.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="icons\band-aid.png" />
+    <Content Include="icons\button_post.png" />
+    <Content Include="icons\chat.png" />
+    <Content Include="icons\clock.png" />
+    <Content Include="icons\delicious.gif" />
+    <Content Include="icons\digg.gif" />
+    <Content Include="icons\event.png" />
+    <Content Include="icons\eye.png" />
+    <Content Include="icons\facebook.gif" />
+    <Content Include="icons\fb.png" />
+    <Content Include="icons\flag.png" />
+    <Content Include="icons\fork-and-knife.png" />
+    <Content Include="icons\friend.png" />
+    <Content Include="icons\furl.gif" />
+    <Content Include="icons\gear.png" />
+    <Content Include="icons\groups.png" />
+    <Content Include="icons\heart.png" />
+    <Content Include="icons\ilike.gif" />
+    <Content Include="icons\lastfm.gif" />
+    <Content Include="icons\lightning-bolt.png" />
+    <Content Include="icons\link.png" />
+    <Content Include="icons\magnifying-glass.png" />
+    <Content Include="icons\map-marker.png" />
+    <Content Include="icons\map-pin.png" />
+    <Content Include="icons\message.png" />
+    <Content Include="icons\microphone.png" />
+    <Content Include="icons\music-note.png" />
+    <Content Include="icons\mybloglog.gif" />
+    <Content Include="icons\news.png" />
+    <Content Include="icons\note.png" />
+    <Content Include="icons\paw.png" />
+    <Content Include="icons\photo.png" />
+    <Content Include="icons\plus.png" />
+    <Content Include="icons\print-icon.png" />
+    <Content Include="icons\printer.jpg" />
+    <Content Include="icons\printer02.jpg" />
+    <Content Include="icons\puzzle.png" />
+    <Content Include="icons\reddit.gif" />
+    <Content Include="icons\star.png" />
+    <Content Include="icons\stumbleupon.gif" />
+    <Content Include="icons\tag.png" />
+    <Content Include="icons\technorati.gif" />
+    <Content Include="icons\tshirt.png" />
+    <Content Include="icons\twitter.gif" />
+    <Content Include="icons\watermark.png" />
+    <Content Include="icons\youtube.gif" />
+    <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\permatapintar.jpg" />
+    <Content Include="img\bin\itextsharp.dll" />
+    <Content Include="img\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="img\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="img\bin\RKLib.ExportData.dll" />
+    <Content Include="img\bin\UKM_PPCS.dll" />
+    <Content Include="img\bin\UKM_PPCS.pdb" />
+    <Content Include="img\bin\UKM_PPCS.xml" />
+    <Content Include="img\cert_header-100.png" />
+    <Content Include="img\cert_header-new.png" />
+    <Content Include="img\cert_header.png" />
+    <Content Include="img\drawline.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\info.png" />
+    <Content Include="img\keamatan01.png" />
+    <Content Include="img\permatapintar.jpg" />
+    <Content Include="img\PublishProfiles\permata_ppcs.pubxml.user" />
+    <Content Include="img\spacing.png" />
+    <Content Include="img\success.png" />
+    <Content Include="img\ukmlogo.jpg" />
+    <Content Include="img\validation.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-1.8.2.min.js" />
+    <Content Include="js\jquery-2.0.3.min.js" />
+    <Content Include="js\jquery.backstretch.min.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="My Project\PublishProfiles\permata_ppcs.pubxml.user" />
+    <Content Include="questionscontrol\semak.view.01.ascx" />
+    <Content Include="questionscontrol\semak.view.02.ascx" />
+    <Content Include="questionscontrol\semak.view.03.ascx" />
+    <Content Include="questionscontrol\semak.view.04.ascx" />
+    <Content Include="questionscontrol\spiritual.muslim.01.ascx" />
+    <Content Include="questionscontrol\spiritual.muslim.02.ascx" />
+    <Content Include="questionscontrol\spiritual.muslim.03.ascx" />
+    <Content Include="questionscontrol\spiritual.others.01.ascx" />
+    <Content Include="questionscontrol\spiritual.others.02.ascx" />
+    <Content Include="questionscontrol\spiritual.others.03.ascx" />
+    <Content Include="robot.txt" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.popup.Master.designer.vb">
+      <DependentUpon>admin.popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.popup.Master.vb">
+      <DependentUpon>admin.popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.status.update.aspx.designer.vb">
+      <DependentUpon>admin.ppmt.status.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.status.update.aspx.vb">
+      <DependentUpon>admin.ppmt.status.update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.statustawaran.aspx.designer.vb">
+      <DependentUpon>admin.ppmt.statustawaran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.statustawaran.aspx.vb">
+      <DependentUpon>admin.ppmt.statustawaran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.create.aspx.designer.vb">
+      <DependentUpon>admin.ppmt.studentprofile.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.create.aspx.vb">
+      <DependentUpon>admin.ppmt.studentprofile.create.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.list.aspx.designer.vb">
+      <DependentUpon>admin.ppmt.studentprofile.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.list.aspx.vb">
+      <DependentUpon>admin.ppmt.studentprofile.list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.nopelajar.update.aspx.designer.vb">
+      <DependentUpon>admin.ppmt.studentprofile.nopelajar.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.nopelajar.update.aspx.vb">
+      <DependentUpon>admin.ppmt.studentprofile.nopelajar.update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.year.list.aspx.designer.vb">
+      <DependentUpon>admin.ppmt.studentprofile.year.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ppmt.studentprofile.year.list.aspx.vb">
+      <DependentUpon>admin.ppmt.studentprofile.year.list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\admin.ukm3.mark.update.aspx.designer.vb">
+      <DependentUpon>admin.ukm3.mark.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\admin.ukm3.mark.update.aspx.vb">
+      <DependentUpon>admin.ukm3.mark.update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\popup.Master.designer.vb">
+      <DependentUpon>popup.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\popup.Master.vb">
+      <DependentUpon>popup.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\ppmt.studentprofile.alumniid.update.aspx.designer.vb">
+      <DependentUpon>ppmt.studentprofile.alumniid.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\ppmt.studentprofile.alumniid.update.aspx.vb">
+      <DependentUpon>ppmt.studentprofile.alumniid.update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="App_GlobalResources\eval2010.Designer.vb" />
+    <Compile Include="App_GlobalResources\eval2010.ms-MY.designer.vb" />
+    <Compile Include="App_GlobalResources\eval2010.ms-MY1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eval2010.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\eval20101.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eval2010.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\keterujaan2010.Designer.vb" />
+    <Compile Include="App_GlobalResources\keterujaan2010.ms-MY.designer.vb" />
+    <Compile Include="App_GlobalResources\keterujaan2010.ms-MY1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>keterujaan2010.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\keterujaan20101.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>keterujaan2010.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\komputer2010.Designer.vb" />
+    <Compile Include="App_GlobalResources\komputer2010.ms-MY.designer.vb" />
+    <Compile Include="App_GlobalResources\komputer2010.ms-MY1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>komputer2010.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\komputer20101.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>komputer2010.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\semak2010.Designer.vb" />
+    <Compile Include="App_GlobalResources\semak2010.ms-MY.designer.vb" />
+    <Compile Include="App_GlobalResources\semak2010.ms-MY1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>semak2010.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\semak20101.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>semak2010.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\spiritual2010.Designer.vb" />
+    <Compile Include="App_GlobalResources\spiritual2010.ms-MY.designer.vb" />
+    <Compile Include="App_GlobalResources\spiritual2010.ms-MY1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spiritual2010.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\spiritual20101.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spiritual2010.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\spiritual_others2010.Designer.vb" />
+    <Compile Include="App_GlobalResources\spiritual_others2010.ms-MY.designer.vb" />
+    <Compile Include="App_GlobalResources\spiritual_others2010.ms-MY1.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spiritual_others2010.ms-MY.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\spiritual_others20101.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>spiritual_others2010.resx</DependentUpon>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="commoncontrol\activity.list.ascx.designer.vb">
+      <DependentUpon>activity.list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\activity.list.ascx.vb">
+      <DependentUpon>activity.list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\studentprofile_ukm3_alumniid_update.ascx.designer.vb">
+      <DependentUpon>studentprofile_ukm3_alumniid_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\studentprofile_ukm3_alumniid_update.ascx.vb">
+      <DependentUpon>studentprofile_ukm3_alumniid_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\studentprofile_ukm3_nopelajar_update.ascx.designer.vb">
+      <DependentUpon>studentprofile_ukm3_nopelajar_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\studentprofile_ukm3_nopelajar_update.ascx.vb">
+      <DependentUpon>studentprofile_ukm3_nopelajar_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm2.ppcs.login.control.ascx.designer.vb">
+      <DependentUpon>ukm2.ppcs.login.control.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm2.ppcs.login.control.ascx.vb">
+      <DependentUpon>ukm2.ppcs.login.control.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_mark_update.ascx.designer.vb">
+      <DependentUpon>ukm3_mark_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_mark_update.ascx.vb">
+      <DependentUpon>ukm3_mark_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_ppmt_list.ascx.designer.vb">
+      <DependentUpon>ukm3_ppmt_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_ppmt_list.ascx.vb">
+      <DependentUpon>ukm3_ppmt_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_ppmt_update.ascx.designer.vb">
+      <DependentUpon>ukm3_ppmt_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_ppmt_update.ascx.vb">
+      <DependentUpon>ukm3_ppmt_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_ppmt_year_list.ascx.designer.vb">
+      <DependentUpon>ukm3_ppmt_year_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_ppmt_year_list.ascx.vb">
+      <DependentUpon>ukm3_ppmt_year_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_statustawaran_list.ascx.designer.vb">
+      <DependentUpon>ukm3_statustawaran_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\ukm3_statustawaran_list.ascx.vb">
+      <DependentUpon>ukm3_statustawaran_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.contactus.aspx.designer.vb">
+      <DependentUpon>default.contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.contactus.aspx.vb">
+      <DependentUpon>default.contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.eval.aspx.designer.vb">
+      <DependentUpon>default.eval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.eval.aspx.vb">
+      <DependentUpon>default.eval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.login.aspx.designer.vb">
+      <DependentUpon>default.login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.login.aspx.vb">
+      <DependentUpon>default.login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.vb">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.vb">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.register.aspx.designer.vb">
+      <DependentUpon>default.register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.register.aspx.vb">
+      <DependentUpon>default.register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PrintHelper.vb" />
+    <Compile Include="questionscontrol\semak.view.01.ascx.designer.vb">
+      <DependentUpon>semak.view.01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.01.ascx.vb">
+      <DependentUpon>semak.view.01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.02.ascx.designer.vb">
+      <DependentUpon>semak.view.02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.02.ascx.vb">
+      <DependentUpon>semak.view.02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.03.ascx.designer.vb">
+      <DependentUpon>semak.view.03.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.03.ascx.vb">
+      <DependentUpon>semak.view.03.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.04.ascx.designer.vb">
+      <DependentUpon>semak.view.04.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\semak.view.04.ascx.vb">
+      <DependentUpon>semak.view.04.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.muslim.01.ascx.designer.vb">
+      <DependentUpon>spiritual.muslim.01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.muslim.01.ascx.vb">
+      <DependentUpon>spiritual.muslim.01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.muslim.02.ascx.designer.vb">
+      <DependentUpon>spiritual.muslim.02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.muslim.02.ascx.vb">
+      <DependentUpon>spiritual.muslim.02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.muslim.03.ascx.designer.vb">
+      <DependentUpon>spiritual.muslim.03.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.muslim.03.ascx.vb">
+      <DependentUpon>spiritual.muslim.03.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.others.01.ascx.designer.vb">
+      <DependentUpon>spiritual.others.01.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.others.01.ascx.vb">
+      <DependentUpon>spiritual.others.01.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.others.02.ascx.designer.vb">
+      <DependentUpon>spiritual.others.02.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.others.02.ascx.vb">
+      <DependentUpon>spiritual.others.02.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.others.03.ascx.designer.vb">
+      <DependentUpon>spiritual.others.03.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="questionscontrol\spiritual.others.03.ascx.vb">
+      <DependentUpon>spiritual.others.03.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowImage.ashx.vb">
+      <DependentUpon>ShowImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Simple3Des.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\eval2010.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>eval2010.ms-MY1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\eval2010.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>eval20101.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\keterujaan2010.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>keterujaan2010.ms-MY1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\keterujaan2010.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>keterujaan20101.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\komputer2010.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>komputer2010.ms-MY1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\komputer2010.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>komputer20101.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\semak2010.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>semak2010.ms-MY1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\semak2010.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>semak20101.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\spiritual2010.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>spiritual2010.ms-MY1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\spiritual2010.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>spiritual20101.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\spiritual_others2010.ms-MY.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>spiritual_others2010.ms-MY1.designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\spiritual_others2010.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>spiritual_others20101.designer.vb</LastGenOutput>
+    </Content>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.Master" />
+    <Content Include="img\bin\UKM_PPCS.dll.config" />
+    <Content Include="icons\Thumbs.db" />
+    <Content Include="css\Thumbs.db" />
+    <Content Include="cert_pdf\BIOLOGI PECUTAN2010121613.pdf" />
+    <Content Include="cert_pdf\BIOLOGI PECUTAN2010121634.pdf" />
+    <Content Include="bin\UKM_PPCS.dll.config" />
+    <Content Include="admin\admin.Master" />
+    <Content Include="admin\admin.popup.Master" />
+    <Content Include="admin\log\Error20101026.log" />
+    <Content Include="admin\popup.Master" />
+    <Content Include="bin\PERMATApintar_UKM3.dll.config" />
+    <Content Include="bin\roslyn\csc.exe.config" />
+    <Content Include="bin\roslyn\csc.rsp" />
+    <Content Include="bin\roslyn\csi.rsp" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\vbc.exe.config" />
+    <Content Include="bin\roslyn\vbc.rsp" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <None Include="img\PublishProfiles\permata_ppcs.pubxml" />
+    <Content Include="img\Thumbs.db" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\permata_ppcs.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="packages.config" />
+    <Content Include="ShowImage.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59468</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59468/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,42 @@
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\bin\UKM_Admin.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\bin\UKM_Admin.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\bin\UKM_Admin.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\bin\UKM_Admin.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\bin\itextsharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\bin\itextsharp.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\bin\itextsharp.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\bin\itextsharp.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\permatapintar.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.CopyComplete
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.CoreCompileInputs.cache
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.dll.config
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.dll
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.pdb
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\bin\UKM_Admin.xml
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\bin\itextsharp.dll
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\bin\itextsharp.xml
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbprojAssemblyReference.cache
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\permatapintar.Resources.resources
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.GenerateResource.cache
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.CopyComplete
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.dll
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.xml
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.pdb
+C:\Users\acapx\Desktop\PermataPintar\Permata_Admin\Permata_Admin\obj\Release\UKM_Admin.vbproj.CoreCompileInputs.cache

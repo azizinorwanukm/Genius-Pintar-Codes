@@ -1,0 +1,1947 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PERMATA_StressTest
+</name>
+</assembly>
+<members>
+<member name="F:PERMATA_StressTest.stresstest_create.lblCompanyname">
+	<summary>
+lblCompanyname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.lblFullname">
+	<summary>
+lblFullname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.txtFullname">
+	<summary>
+txtFullname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.lblAge">
+	<summary>
+lblAge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.txtAge">
+	<summary>
+txtAge control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.lblEmailAdd">
+	<summary>
+lblEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.txtEmailAdd">
+	<summary>
+txtEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.lblPosition">
+	<summary>
+lblPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.txtPosition">
+	<summary>
+txtPosition control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.lblMsgOK">
+	<summary>
+lblMsgOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.stresstest_create.lblMsgNOK">
+	<summary>
+lblMsgNOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.home_candidate.lblHomeOverview">
+	<summary>
+lblHomeOverview control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.home_candidate.lblHomeCandidate">
+	<summary>
+lblHomeCandidate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.home_candidate.lblHomeBenefit">
+	<summary>
+lblHomeBenefit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.home_candidate.lblHomeBenefitContent">
+	<summary>
+lblHomeBenefitContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.home_candidate.lnkNext">
+	<summary>
+lnkNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.login.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.login.txtAlumniID">
+	<summary>
+txtAlumniID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.login.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.login.lblLoginMsg">
+	<summary>
+lblLoginMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblDomain02">
+	<summary>
+lblDomain02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page04.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.main.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.main.myform">
+	<summary>
+myform control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.main.lblCandidatename">
+	<summary>
+lblCandidatename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.main.lnkLanguage">
+	<summary>
+lnkLanguage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.main.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest._default.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest._default.myform">
+	<summary>
+myform control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest._default.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblDomain02">
+	<summary>
+lblDomain02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page03.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.contact_us.contact_us1">
+	<summary>
+contact_us1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest._default1.stresstest_create1">
+	<summary>
+stresstest_create1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblDomain01">
+	<summary>
+lblDomain01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page02.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblNo">
+	<summary>
+lblNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblYes">
+	<summary>
+lblYes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblDomain03">
+	<summary>
+lblDomain03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page07.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblDomain01">
+	<summary>
+lblDomain01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page01.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.btnDone">
+	<summary>
+  Looks up a localized string similar to Submit.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.btnNext">
+	<summary>
+  Looks up a localized string similar to Next.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.btnPrev">
+	<summary>
+  Looks up a localized string similar to Previous.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lbldefault_01">
+	<summary>
+  Looks up a localized string similar to The PERMATApintar Stress Test. is an assessment feedback process to assess the competence of the assessee on a number of core competencies. This assessment is to be based on your own personal experience with the assessee. Please provide your honest assessment and do not discuss your assessment with others or seek the view of others on the assessment you should give.  
+&lt;p&gt;The statements below are the behavioral descriptors of the core competencies to be assessed. Please use the scale below to provide your a [rest of string was truncated]";.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblDescriptor">
+	<summary>
+  Looks up a localized string similar to Item.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblDomain01">
+	<summary>
+  Looks up a localized string similar to PERMATApintar Stress Test.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblDomain02">
+	<summary>
+  Looks up a localized string similar to PERMATApintar Stress Test.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblDomain03">
+	<summary>
+  Looks up a localized string similar to PERMATApintar Stress Test.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblDone">
+	<summary>
+  Looks up a localized string similar to Please answer all the questions. Click [Submit] to complete the assessment..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblDoneOptional">
+	<summary>
+  Looks up a localized string similar to Click [Submit] to complete the assessment..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblFeedback">
+	<summary>
+  Looks up a localized string similar to Please provide your feedback on the improvements that you believe the assessee should undertake..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeBenefit">
+	<summary>
+  Looks up a localized string similar to How will I benefit?
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeBenefitContent">
+	<summary>
+  Looks up a localized string similar to 
+      PERMATApintar Stress Test will provide you:&lt;br/&gt;
+•	Scoring or level of your stress.&lt;br/&gt;
+•	What you should do in order to handle your stress.&lt;br/&gt;
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeBenefitContentRater">
+	<summary>
+  Looks up a localized string similar to 
+      The PERMATApintar Stress Test. will provide you with an opportunity to contribute to the development of your managers and peers. As the organization’s leaders develop their abilities to work, manage, and lead, the performance and productivity of the organisation will also improve. Therefore, the entire organization stands to benefit as individuals improve.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeBenefitRater">
+	<summary>
+  Looks up a localized string similar to How will I benefit?
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeCandidate">
+	<summary>
+  Looks up a localized string similar to 
+    This stress test will help evaluate your present stress level. You will receive your score at the end of the test and you can view the coping mechanism that we propose for each level of stress.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeOverview">
+	<summary>
+  Looks up a localized string similar to Overview
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeOverviewRater">
+	<summary>
+  Looks up a localized string similar to Overview
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblHomeRater">
+	<summary>
+  Looks up a localized string similar to 
+    The PERMATApintar Stress Test. is an assessment feedback process to assess the competence of the candidates on the Bank’s core competencies. Through this assessment, candidates have the opportunity to gather confidential feedback from those who work with them and compare it with their own perception of their capability.   
+    
+      &lt;p&gt;
+    As such the feedback is gathered from multiple assessors such as manager/supervisor, peers, internal customers, direct and indirect subordinates using an onlin [rest of string was truncated]";.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblInstruction">
+	<summary>
+  Looks up a localized string similar to This is a self-report stress test. Please look at the statement and give your honest response. There is no wrong or right statement..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel0">
+	<summary>
+  Looks up a localized string similar to NA.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel1">
+	<summary>
+  Looks up a localized string similar to Always True.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel2">
+	<summary>
+  Looks up a localized string similar to Often True.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel3">
+	<summary>
+  Looks up a localized string similar to Sometimes True.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel4">
+	<summary>
+  Looks up a localized string similar to Seldom True.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel5">
+	<summary>
+  Looks up a localized string similar to Never True.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblLevel6">
+	<summary>
+  Looks up a localized string similar to NA.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblMsgsubmit">
+	<summary>
+  Looks up a localized string similar to Once you submit your assessment, you may not make any further changes.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblNext">
+	<summary>
+  Looks up a localized string similar to Please answer all the questions. Click [Next] to proceed..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblNo">
+	<summary>
+  Looks up a localized string similar to No.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ001">
+	<summary>
+  Looks up a localized string similar to I eat at least one hot, balanced meal a day.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ002">
+	<summary>
+  Looks up a localized string similar to I get 7 to 8 hours of sleep at least 4 nights a week.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ003">
+	<summary>
+  Looks up a localized string similar to I have at least 1 person who lives nearby from whom I can ask a favour.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ004">
+	<summary>
+  Looks up a localized string similar to I exercise to the point of perspiration at least twice a week.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ005">
+	<summary>
+  Looks up a localized string similar to I do not smoke.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ006">
+	<summary>
+  Looks up a localized string similar to I am the appropriate weight for my height.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ007">
+	<summary>
+  Looks up a localized string similar to I drink fewer than two cups of coffee (or tea or cola) a day.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ008">
+	<summary>
+  Looks up a localized string similar to I have a network of friends, family and acquaintances on whom I can rely.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ009">
+	<summary>
+  Looks up a localized string similar to I confide with at least one person in my network about personal matters.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ010">
+	<summary>
+  Looks up a localized string similar to I am generally in good health.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ011">
+	<summary>
+  Looks up a localized string similar to I am able to speak openly about my feelings when angry, stressed or worried.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ012">
+	<summary>
+  Looks up a localized string similar to I do something for fun at least once a week.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ013">
+	<summary>
+  Looks up a localized string similar to I recognise stress symptoms.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ014">
+	<summary>
+  Looks up a localized string similar to I take quiet time for myself during the day.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ015">
+	<summary>
+  Looks up a localized string similar to I have an income adequate to meet my basic expenses.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ016">
+	<summary>
+  Looks up a localized string similar to I spend less than an hour each day traveling to and from work.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ017">
+	<summary>
+  Looks up a localized string similar to I am calm when I am kept waiting/stuck in traffic/late for an appointment?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ018">
+	<summary>
+  Looks up a localized string similar to I have regular calm conversations with the people I live with about domestic problems, e.g., chores, money and daily living issues.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ019">
+	<summary>
+  Looks up a localized string similar to I never try to do everything myself.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ020">
+	<summary>
+  Looks up a localized string similar to I never race through a day.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ021">
+	<summary>
+  Looks up a localized string similar to I never complain about time wasted and the past.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ022">
+	<summary>
+  Looks up a localized string similar to I feel organized and in control.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ023">
+	<summary>
+  Looks up a localized string similar to I am able to organize my time effectively.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ024">
+	<summary>
+  Looks up a localized string similar to I recognise when I am not coping well under pressure.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ025">
+	<summary>
+  Looks up a localized string similar to I constantly have headache  when under pressure.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ026">
+	<summary>
+  Looks up a localized string similar to Do you feel any movement in the pictures?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ027">
+	<summary>
+  Looks up a localized string similar to Do you feel any movement in the pictures?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ028">
+	<summary>
+  Looks up a localized string similar to Read the passage below and answer the following questions:&lt;br/&gt;like his it me cat him ball can will we with jump hill old yes love his it we hill with jump can ball yes like with old will cat him ball jump love hill old can we me his cat ball jump will his yes me love with hill ball can old it cat me yes his like hill can old him cat love ball it his me cat jump me with old me ball it love can his like yes we cat him will jump ball me it old his with hill cat him ball we jump me him old love can like it wit [rest of string was truncated]";.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ029">
+	<summary>
+  Looks up a localized string similar to Do the letters move?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ030">
+	<summary>
+  Looks up a localized string similar to Are the letters blurred, fuzzy or difficult to see?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ031">
+	<summary>
+  Looks up a localized string similar to Is the page too bright?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblQ032">
+	<summary>
+  Looks up a localized string similar to Does it hurt your eyes to look at the page?.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblRating">
+	<summary>
+  Looks up a localized string similar to Your rating.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblRemarks">
+	<summary>
+  Looks up a localized string similar to Comments.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblSaveExit">
+	<summary>
+  Looks up a localized string similar to Thanks you for attempting the PERMATApintar Stress Test.. Your responses have been saved. To complete the assessment, please click on the original link emailed to you.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblSaveExitAssignRater">
+	<summary>
+  Looks up a localized string similar to Thank you for your progress in completing the assessor nomination. Your selections have been saved. To re-visit the assessor nomination page, please click on the original link emailed to you.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThank">
+	<summary>
+  Looks up a localized string similar to Thank you.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThankAssignRaterDone">
+	<summary>
+  Looks up a localized string similar to 
+    &lt;p&gt;Thank you for nominating your assessors. An email notification will be sent to all your assessors to complete the assessment.&lt;/p&gt;
+    You will also receive an email with a link for you to complete your self assessment.
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThankcomplete">
+	<summary>
+  Looks up a localized string similar to Thank you for completing the PERMATApintar Stress Test..
+    .
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThankcontentC">
+	<summary>
+  Looks up a localized string similar to The results will create a self-portrait of your leadership to guide you in your next steps towards fully developing as a leader. The PERMATApintar Stress Test. Report will be forwarded to you and a one to one session will be arranged to walkthrough the results with you. During the one to one session, you will be able to discuss the insights from the assessment results in detail and structure a development plan for moving forward..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThankcontentR">
+	<summary>
+  Looks up a localized string similar to Your contribution is highly appreciated and will contribute to the betterment of the entire organisaiton..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThankheaderC">
+	<summary>
+  Looks up a localized string similar to Thank you for completing the PERMATApintar Stress Test..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblThankheaderR">
+	<summary>
+  Looks up a localized string similar to Thank you for participating in the PERMATApintar Stress Test..
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lblYes">
+	<summary>
+  Looks up a localized string similar to Yes.
+</summary>
+</member><member name="P:PERMATA_StressTest.Resources.stresstest_2014.lnkNext">
+	<summary>
+  Looks up a localized string similar to Continue....
+</summary>
+</member><member name="T:PERMATA_StressTest.Resources.stresstest_2014">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblThankheader">
+	<summary>
+lblThankheader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblScore">
+	<summary>
+lblScore control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblLevel">
+	<summary>
+lblLevel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblTODO">
+	<summary>
+lblTODO control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblScorePercentage">
+	<summary>
+lblScorePercentage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblStressLevel">
+	<summary>
+lblStressLevel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblStressDescBI">
+	<summary>
+lblStressDescBI control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.btnEmail">
+	<summary>
+btnEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblEmailAdd">
+	<summary>
+lblEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page_done.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.main_contact_us.contact_us1">
+	<summary>
+contact_us1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PERMATA_StressTest.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PERMATA_StressTest.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PERMATA_StressTest.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblNo">
+	<summary>
+lblNo control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblYes">
+	<summary>
+lblYes control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblDomain03">
+	<summary>
+lblDomain03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.img026">
+	<summary>
+img026 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.img027">
+	<summary>
+img027 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page06.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PERMATA_StressTest.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:PERMATA_StressTest.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:PERMATA_StressTest.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:PERMATA_StressTest.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:PERMATA_StressTest.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:PERMATA_StressTest.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:PERMATA_StressTest.error_invalid_link.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblDomain03">
+	<summary>
+lblDomain03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_StressTest.esurvey_page05.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,3612 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UKM_Pelajar
+</name>
+</assembly>
+<members>
+<member name="T:permatapintar.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:permatapintar.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:permatapintar.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:permatapintar.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:permatapintar.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:permatapintar.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:permatapintar.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:permatapintar.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:permatapintar.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtFatherMYKADNo">
+<summary>
+txtFatherMYKADNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtFatherFullname">
+<summary>
+txtFatherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtFatherJob">
+<summary>
+txtFatherJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._selFatherEducation">
+<summary>
+selFatherEducation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtMotherMYKADNo">
+<summary>
+txtMotherMYKADNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtMotherFullname">
+<summary>
+txtMotherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtMotherJob">
+<summary>
+txtMotherJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._selMotherEducation">
+<summary>
+selMotherEducation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._selFamilyIncome">
+<summary>
+selFamilyIncome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._txtFamilyContactNo">
+<summary>
+txtFamilyContactNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtFatherMYKADNo">
+<summary>
+txtFatherMYKADNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtFatherFullname">
+<summary>
+txtFatherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtFatherJob">
+<summary>
+txtFatherJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._selFatherEducation">
+<summary>
+selFatherEducation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtMotherMYKADNo">
+<summary>
+txtMotherMYKADNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtMotherFullname">
+<summary>
+txtMotherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtMotherJob">
+<summary>
+txtMotherJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._selMotherEducation">
+<summary>
+selMotherEducation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._selFamilyIncome">
+<summary>
+selFamilyIncome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._selJumlahAnak">
+<summary>
+selJumlahAnak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtFamilyContactNo">
+<summary>
+txtFamilyContactNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._txtFamilyContactNoIbu">
+<summary>
+txtFamilyContactNoIbu control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._lnkStudentProfileView">
+<summary>
+lnkStudentProfileView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_update._lblParentID">
+<summary>
+lblParentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lnkEdit">
+<summary>
+lnkEdit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFatherMYKADNo">
+<summary>
+lblFatherMYKADNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFatherFullname">
+<summary>
+lblFatherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFatherJob">
+<summary>
+lblFatherJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFatherEducation">
+<summary>
+lblFatherEducation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblMotherMYKADNo">
+<summary>
+lblMotherMYKADNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblMotherFullname">
+<summary>
+lblMotherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblMotherJob">
+<summary>
+lblMotherJob control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblMotherEducation">
+<summary>
+lblMotherEducation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFamilyIncome">
+<summary>
+lblFamilyIncome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblJumlahAnak">
+<summary>
+lblJumlahAnak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFamilyContactNo">
+<summary>
+lblFamilyContactNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.parentprofile_view._lblFamilyContactNoIbu">
+<summary>
+lblFamilyContactNoIbu control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_history_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_history_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lnkEdit">
+<summary>
+lnkEdit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblPPCSCourse">
+<summary>
+lblPPCSCourse control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblPPCSClass">
+<summary>
+lblPPCSClass control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblTempat">
+<summary>
+lblTempat control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblPPCSStatus">
+<summary>
+lblPPCSStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblNamaAsrama">
+<summary>
+lblNamaAsrama control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblNoBilik">
+<summary>
+lblNoBilik control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblSaizBaju">
+<summary>
+lblSaizBaju control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblSakitAlahan">
+<summary>
+lblSakitAlahan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ppcs_view._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._txtSchoolCode">
+<summary>
+txtSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._txtSchoolName">
+<summary>
+txtSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._txtSchoolAddress">
+<summary>
+txtSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._txtSchoolPostcode">
+<summary>
+txtSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._txtSchoolCity">
+<summary>
+txtSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selSchoolState">
+<summary>
+selSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._ddlSchoolType">
+<summary>
+ddlSchoolType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._lblSchoolID">
+<summary>
+lblSchoolID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selStartDate_day">
+<summary>
+selStartDate_day control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selStartDate_month">
+<summary>
+selStartDate_month control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selStartDate_year">
+<summary>
+selStartDate_year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selEndDate_day">
+<summary>
+selEndDate_day control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selEndDate_month">
+<summary>
+selEndDate_month control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._selEndDate_year">
+<summary>
+selEndDate_year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._btnConfirm">
+<summary>
+btnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_select1._txtSchoolName">
+<summary>
+txtSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_select1._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_select1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_select1._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolCode">
+<summary>
+lblSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolPPD">
+<summary>
+lblSchoolPPD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view._lblSchoolType">
+<summary>
+lblSchoolType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolCode">
+<summary>
+lblSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolPPD">
+<summary>
+lblSchoolPPD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.schoolprofile_view_change._lblSchoolType">
+<summary>
+lblSchoolType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentDOB_day">
+<summary>
+selStudentDOB_day control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentDOB_month">
+<summary>
+selStudentDOB_month control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentDOB_year">
+<summary>
+selStudentDOB_year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentForm">
+<summary>
+selStudentForm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentRace">
+<summary>
+selStudentRace control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentReligion">
+<summary>
+selStudentReligion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkTalkBM">
+<summary>
+chkTalkBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkTalkBI">
+<summary>
+chkTalkBI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkTalkMan">
+<summary>
+chkTalkMan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkTalkTamil">
+<summary>
+chkTalkTamil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkTalkArab">
+<summary>
+chkTalkArab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkWriteBM">
+<summary>
+chkWriteBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkWriteBI">
+<summary>
+chkWriteBI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkWriteMan">
+<summary>
+chkWriteMan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkWriteTamil">
+<summary>
+chkWriteTamil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._chkWriteArab">
+<summary>
+chkWriteArab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentAddress1">
+<summary>
+txtStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentAddress2">
+<summary>
+txtStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentPostcode">
+<summary>
+txtStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentCity">
+<summary>
+txtStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._selStudentState">
+<summary>
+selStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._ddlCountry">
+<summary>
+ddlCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentEmail">
+<summary>
+txtStudentEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._txtStudentContactNo">
+<summary>
+txtStudentContactNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_create._lblPCInfo">
+<summary>
+lblPCInfo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_header._lblMYKAD">
+<summary>
+lblMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_header._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_master._lblMYKAD">
+<summary>
+lblMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_master._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_master._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._imgStudent">
+<summary>
+imgStudent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._imgUpload">
+<summary>
+imgUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._btnUpload">
+<summary>
+btnUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._selStudentDOB_day">
+<summary>
+selStudentDOB_day control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._selStudentDOB_month">
+<summary>
+selStudentDOB_month control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._ddlStudentForm">
+<summary>
+ddlStudentForm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._ddlStudentRace">
+<summary>
+ddlStudentRace control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._ddlStudentReligion">
+<summary>
+ddlStudentReligion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkTalkBM">
+<summary>
+chkTalkBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkTalkBI">
+<summary>
+chkTalkBI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkTalkMan">
+<summary>
+chkTalkMan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkTalkTamil">
+<summary>
+chkTalkTamil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkTalkArab">
+<summary>
+chkTalkArab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkWriteBM">
+<summary>
+chkWriteBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkWriteBI">
+<summary>
+chkWriteBI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkWriteMan">
+<summary>
+chkWriteMan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkWriteTamil">
+<summary>
+chkWriteTamil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._chkWriteArab">
+<summary>
+chkWriteArab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentAddress1">
+<summary>
+txtStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentAddress2">
+<summary>
+txtStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentPostcode">
+<summary>
+txtStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentCity">
+<summary>
+txtStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._ddlStudentState">
+<summary>
+ddlStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._ddlStudentCountry">
+<summary>
+ddlStudentCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentEmail">
+<summary>
+txtStudentEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtPwd">
+<summary>
+txtPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._txtStudentContactNo">
+<summary>
+txtStudentContactNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._selKecenderungan">
+<summary>
+selKecenderungan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblAlumniID">
+<summary>
+lblAlumniID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblNoPelajar">
+<summary>
+lblNoPelajar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lnkStudentProfileView">
+<summary>
+lnkStudentProfileView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblLog">
+<summary>
+lblLog control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblMYKAD_ori">
+<summary>
+lblMYKAD_ori control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblAlumniID_ori">
+<summary>
+lblAlumniID_ori control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblNoPelajar_ori">
+<summary>
+lblNoPelajar_ori control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblStudentType">
+<summary>
+lblStudentType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lnkEdit">
+<summary>
+lnkEdit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._imgStudent">
+<summary>
+imgStudent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblMYKAD">
+<summary>
+lblMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentGender">
+<summary>
+lblStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentDOB">
+<summary>
+lblStudentDOB control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentForm">
+<summary>
+lblStudentForm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentRace">
+<summary>
+lblStudentRace control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentReligion">
+<summary>
+lblStudentReligion control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkTalkBM">
+<summary>
+chkTalkBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkTalkBI">
+<summary>
+chkTalkBI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkTalkMan">
+<summary>
+chkTalkMan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkTalkTamil">
+<summary>
+chkTalkTamil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkTalkArab">
+<summary>
+chkTalkArab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkWriteBM">
+<summary>
+chkWriteBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkWriteBI">
+<summary>
+chkWriteBI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkWriteMan">
+<summary>
+chkWriteMan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkWriteTamil">
+<summary>
+chkWriteTamil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._chkWriteArab">
+<summary>
+chkWriteArab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentCountry">
+<summary>
+lblStudentCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentEmail">
+<summary>
+lblStudentEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblPwd">
+<summary>
+lblPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentContactNo">
+<summary>
+lblStudentContactNo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblKecenderungan">
+<summary>
+lblKecenderungan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblAlumniID">
+<summary>
+lblAlumniID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblNoPelajar">
+<summary>
+lblNoPelajar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_view1._lblStudentType">
+<summary>
+lblStudentType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lnkEdit">
+<summary>
+lnkEdit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolCode">
+<summary>
+lblSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolPPD">
+<summary>
+lblSchoolPPD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentschool_view._lblSchoolType">
+<summary>
+lblSchoolType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._txtUniName">
+<summary>
+txtUniName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._txtUniTajaan">
+<summary>
+txtUniTajaan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._ddlUniCountry">
+<summary>
+ddlUniCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._txtUniCourse">
+<summary>
+txtUniCourse control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._ddlUniLevel">
+<summary>
+ddlUniLevel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._ddlUniStartYear">
+<summary>
+ddlUniStartYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._ddlUniEndYear">
+<summary>
+ddlUniEndYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_update._lnkStudentProfileView">
+<summary>
+lnkStudentProfileView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lnkEdit">
+<summary>
+lnkEdit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniName">
+<summary>
+lblUniName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniTajaan">
+<summary>
+lblUniTajaan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniCountry">
+<summary>
+lblUniCountry control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniCourse">
+<summary>
+lblUniCourse control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniLevel">
+<summary>
+lblUniLevel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniStartYear">
+<summary>
+lblUniStartYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentuni_view._lblUniEndYear">
+<summary>
+lblUniEndYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_history_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_history_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_history_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_history_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._selMYKAD">
+<summary>
+selMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._lblMYKADSearch">
+<summary>
+lblMYKADSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._txtMYKADSearch">
+<summary>
+txtMYKADSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._btnNext">
+<summary>
+btnNext control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._btnReset">
+<summary>
+btnReset control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_check._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._txtLoginID">
+<summary>
+txtLoginID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._lbl15_instruction">
+<summary>
+lbl15_instruction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._txtPwd">
+<summary>
+txtPwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._btnLogin">
+<summary>
+btnLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._btnRegister">
+<summary>
+btnRegister control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.user_login._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar._default1._user_check1">
+<summary>
+user_check1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.default_contactus._our_address1">
+<summary>
+our_address1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.default_main._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar._default._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar._default._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar._default._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar._default._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar._default._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.main._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.main._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.main._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.main._studentprofile_master1">
+<summary>
+studentprofile_master1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.main._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.main._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.pelajar_contactus._our_address1">
+<summary>
+our_address1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.popup._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.popup._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.popup._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.popup._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.popup._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_parentprofile_create._studentprofile_header1">
+<summary>
+studentprofile_header1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_parentprofile_create._parentprofile_create1">
+<summary>
+parentprofile_create1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_parentprofile_update._studentprofile_header1">
+<summary>
+studentprofile_header1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_parentprofile_update._parentprofile_update1">
+<summary>
+parentprofile_update1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_confirm_change._studentprofile_header1">
+<summary>
+studentprofile_header1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_confirm_change._schoolprofile_view_change1">
+<summary>
+schoolprofile_view_change1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_confirm_change._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_confirm_change._btnConfirm">
+<summary>
+btnConfirm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_confirm_change._lnkStudentProfileView">
+<summary>
+lnkStudentProfileView control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_confirm_change._lblLog">
+<summary>
+lblLog control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_create._studentprofile_header1">
+<summary>
+studentprofile_header1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_create._schoolprofile_create1">
+<summary>
+schoolprofile_create1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._studentprofile_header1">
+<summary>
+studentprofile_header1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._ddlSchoolState">
+<summary>
+ddlSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._ddlSchoolPPD">
+<summary>
+ddlSchoolPPD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._txtSchoolCode">
+<summary>
+txtSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._txtSchoolName">
+<summary>
+txtSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_schoolprofile_search_change._lblNewSchool">
+<summary>
+lblNewSchool control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_print._studentprofile_view1">
+<summary>
+studentprofile_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_print._studentschool_view1">
+<summary>
+studentschool_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_print._parentprofile_view1">
+<summary>
+parentprofile_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_print._ppcs_history_list1">
+<summary>
+ppcs_history_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_print._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_update._studentprofile_update_mykad1">
+<summary>
+studentprofile_update_mykad1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._studentprofile_view1">
+<summary>
+studentprofile_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._parentprofile_view1">
+<summary>
+parentprofile_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._studentschool_view1">
+<summary>
+studentschool_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._studentuni_view1">
+<summary>
+studentuni_view1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._studentschool_list">
+<summary>
+studentschool_list control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._ukm1_history_list1">
+<summary>
+ukm1_history_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._ukm2_history_list1">
+<summary>
+ukm2_history_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentprofile_view._ppcs_history_list1">
+<summary>
+ppcs_history_list1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentuni_update._studentprofile_header1">
+<summary>
+studentprofile_header1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.student_studentuni_update._studentuni_update1">
+<summary>
+studentuni_update1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad1._studentprofile_update_mykad1">
+<summary>
+studentprofile_update_mykad1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.studentprofile_update_mykad1._lblIPAddress">
+<summary>
+lblIPAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.system_error._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.system_message._lblPerhatian">
+<summary>
+lblPerhatian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.system_message._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._StudentFullname">
+<summary>
+StudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._MYKAD">
+<summary>
+MYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._SchoolName">
+<summary>
+SchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._SchoolState">
+<summary>
+SchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._ExamEnd">
+<summary>
+ExamEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._ExamYear">
+<summary>
+ExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_cert_print._UKM1Result">
+<summary>
+UKM1Result control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._pnlLayak">
+<summary>
+pnlLayak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._StudentFullname">
+<summary>
+StudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._MYKAD">
+<summary>
+MYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblSchoolCode">
+<summary>
+lblSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._SchoolName">
+<summary>
+SchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblSchoolcity">
+<summary>
+lblSchoolcity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._SchoolState">
+<summary>
+SchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblExamYear">
+<summary>
+lblExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblExamStartDisp">
+<summary>
+lblExamStartDisp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblExamEndDisp">
+<summary>
+lblExamEndDisp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._UKM1Result">
+<summary>
+UKM1Result control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblLevel">
+<summary>
+lblLevel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._pnlTidakLayak">
+<summary>
+pnlTidakLayak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblTidakLayak">
+<summary>
+lblTidakLayak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblTotalMin">
+<summary>
+lblTotalMin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblDOB_Year">
+<summary>
+lblDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblDuration">
+<summary>
+lblDuration control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblExamStartDB">
+<summary>
+lblExamStartDB control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblExamStart">
+<summary>
+lblExamStart control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblExamEnd">
+<summary>
+lblExamEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_permata_end._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._lblTotalMin">
+<summary>
+lblTotalMin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._lblDOB_Year">
+<summary>
+lblDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._lblDuration">
+<summary>
+lblDuration control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._lblExamStart">
+<summary>
+lblExamStart control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm1_semak._lblExamEnd">
+<summary>
+lblExamEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._StudentFullname">
+<summary>
+StudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._MYKAD">
+<summary>
+MYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblSchoolCode">
+<summary>
+lblSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._SchoolName">
+<summary>
+SchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblSchoolcity">
+<summary>
+lblSchoolcity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._SchoolState">
+<summary>
+SchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblExamYear">
+<summary>
+lblExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblExamStartDisp">
+<summary>
+lblExamStartDisp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblExamEndDisp">
+<summary>
+lblExamEndDisp control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._btnCreate">
+<summary>
+btnCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._UKM2Result">
+<summary>
+UKM2Result control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblLevel">
+<summary>
+lblLevel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblTotalMin">
+<summary>
+lblTotalMin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblDOB_Year">
+<summary>
+lblDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblDuration">
+<summary>
+lblDuration control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblExamStart">
+<summary>
+lblExamStart control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_permata_end._lblExamEnd">
+<summary>
+lblExamEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._btnSearch">
+<summary>
+btnSearch control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._lblTotalMin">
+<summary>
+lblTotalMin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._lblDOB_Year">
+<summary>
+lblDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._lblDuration">
+<summary>
+lblDuration control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._lblExamStart">
+<summary>
+lblExamStart control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:permatapintar.ukm2_semak._lblExamEnd">
+<summary>
+lblExamEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

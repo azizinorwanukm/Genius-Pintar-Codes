@@ -1,0 +1,698 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CCEB2038-8069-4807-9BD8-71F11A00E584}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>araken.pcisadmin</RootNamespace>
+    <AssemblyName>araken.pcisadmin</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>araken.pcisadmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>araken.pcisadmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.default.aspx" />
+    <Content Include="admin.dobyear.summary.list.aspx" />
+    <Content Include="admin.masterconfig.update.aspx" />
+    <Content Include="admin.notification.list.aspx" />
+    <Content Include="admin.pcis.config.create.aspx" />
+    <Content Include="admin.pcis.config.list.aspx" />
+    <Content Include="admin.pcis.config.update.aspx" />
+    <Content Include="admin.pcis.config.view.aspx" />
+    <Content Include="admin.pcis.dobyear.summary.aspx" />
+    <Content Include="admin.pcis.exam.year.create.aspx" />
+    <Content Include="admin.pcis.exam.year.list.aspx" />
+    <Content Include="admin.pcis.exam.year.update.aspx" />
+    <Content Include="admin.pcis.gender.summary.aspx" />
+    <Content Include="admin.pcis.jsc.aspx" />
+    <Content Include="admin.pcis.mark.aspx" />
+    <Content Include="admin.pcis.progress.aspx" />
+    <Content Include="admin.pcis.teststart.summary.aspx" />
+    <Content Include="admin.pcisadmin.create.aspx" />
+    <Content Include="admin.pcisadmin.list.aspx" />
+    <Content Include="admin.pcisadmin.update.aspx" />
+    <Content Include="admin.security_login_trail.list.aspx" />
+    <Content Include="admin.studentprofile.create.aspx" />
+    <Content Include="admin.studentprofile.mark.view.aspx" />
+    <Content Include="admin.studentprofile.search.aspx" />
+    <Content Include="admin.studentprofile.update.aspx" />
+    <Content Include="admin.studentprofile.view.aspx" />
+    <Content Include="admin.TransactionLog.list.aspx" />
+    <Content Include="commoncontrol\admin_create.ascx" />
+    <Content Include="commoncontrol\admin_list.ascx" />
+    <Content Include="commoncontrol\admin_update.ascx" />
+    <Content Include="commoncontrol\exam_history_list.ascx" />
+    <Content Include="commoncontrol\exam_mark.ascx" />
+    <Content Include="commoncontrol\exam_progress.ascx" />
+    <Content Include="commoncontrol\menu_left.ascx" />
+    <Content Include="commoncontrol\our_address.ascx" />
+    <Content Include="commoncontrol\pcis_config_create.ascx" />
+    <Content Include="commoncontrol\pcis_config_list.ascx" />
+    <Content Include="commoncontrol\pcis_config_update.ascx" />
+    <Content Include="commoncontrol\pcis_dobyear_list.ascx" />
+    <Content Include="commoncontrol\pcis_exam_year_create.ascx" />
+    <Content Include="commoncontrol\pcis_exam_year_list.ascx" />
+    <Content Include="commoncontrol\pcis_exam_year_update.ascx" />
+    <Content Include="commoncontrol\pcis_jsc_create.ascx" />
+    <Content Include="commoncontrol\pcis_summary_age.ascx" />
+    <Content Include="commoncontrol\userprofile_create.ascx" />
+    <Content Include="commoncontrol\userprofile_search.ascx" />
+    <Content Include="commoncontrol\userprofile_update.ascx" />
+    <Content Include="commoncontrol\userprofile_view.ascx" />
+    <Content Include="commoncontrol\user_login.ascx" />
+    <Content Include="css\grd_alt.png" />
+    <Content Include="css\grd_head.png" />
+    <Content Include="css\grd_pgr.png" />
+    <Content Include="css\jquery-ui.css" />
+    <Content Include="css\material_button.css" />
+    <Content Include="css\portal.default.css" />
+    <Content Include="css\portal.default.old.css" />
+    <Content Include="css\table-images\back.png" />
+    <Content Include="css\table-images\blurry.jpg" />
+    <Content Include="css\table-images\botleft.png" />
+    <Content Include="css\table-images\botright.png" />
+    <Content Include="css\table-images\gradback.png" />
+    <Content Include="css\table-images\gradhead.png" />
+    <Content Include="css\table-images\gradhover.png" />
+    <Content Include="css\table-images\header.jpg" />
+    <Content Include="css\table-images\left.png" />
+    <Content Include="css\table-images\pattern-head.png" />
+    <Content Include="css\table-images\pattern.gif" />
+    <Content Include="css\table-images\pattern.png" />
+    <Content Include="css\table-images\patternb-head.png" />
+    <Content Include="css\table-images\patternb.png" />
+    <Content Include="css\table-images\right.png" />
+    <Content Include="css\table_style.css" />
+    <Content Include="default.aspx" />
+    <Content Include="default.contactus.aspx" />
+    <Content Include="img\ambulance-facebook-emoticon.png" />
+    <Content Include="img\boy-and-girl-holding-hands.png" />
+    <Content Include="img\bus-emoticon.png" />
+    <Content Include="img\cal.jpg" />
+    <Content Include="img\department-store-emoticon.png" />
+    <Content Include="img\drawline.png" />
+    <Content Include="img\error.png" />
+    <Content Include="img\facebook-policeman-symbol.png" />
+    <Content Include="img\front_page.jpg" />
+    <Content Include="img\girl-emoticon-for-facebook.png" />
+    <Content Include="img\home-small.png" />
+    <Content Include="img\home.png" />
+    <Content Include="img\info.png" />
+    <Content Include="img\keamatan01.png" />
+    <Content Include="img\left.gif" />
+    <Content Include="img\man-emoticon.png" />
+    <Content Include="img\megaphone-emoticon.png" />
+    <Content Include="img\memo-sign-for-facebook.png" />
+    <Content Include="img\mens-emoticon.png" />
+    <Content Include="img\mini_permatapintar.jpg" />
+    <Content Include="img\ncdrc-logo.png" />
+    <Content Include="img\open-book-emoticon.png" />
+    <Content Include="img\pcis-login.png" />
+    <Content Include="img\permatanegara.jpg" />
+    <Content Include="img\permatapintar.jpg" />
+    <Content Include="img\permatapintar_old.jpg" />
+    <Content Include="img\permata_insan.png" />
+    <Content Include="img\permata_negara.jpg" />
+    <Content Include="img\permata_negara.png" />
+    <Content Include="img\phone-symbol.png" />
+    <Content Include="img\print.png" />
+    <Content Include="img\red-exclamation-mark.png" />
+    <Content Include="img\refresh.jpg" />
+    <Content Include="img\restroom-emoticon.png" />
+    <Content Include="img\right.gif" />
+    <Content Include="img\sample_que.jpg" />
+    <Content Include="img\school_info.png" />
+    <Content Include="img\soccer-ball-emoticon.png" />
+    <Content Include="img\spacing.png" />
+    <Content Include="img\success.png" />
+    <Content Include="img\t-shirt-emoticon-for-facebook.png" />
+    <Content Include="img\text_calendar.png" />
+    <Content Include="img\tie-emoticon-facebook.png" />
+    <Content Include="img\UKM1.JPG" />
+    <Content Include="img\ukm1_2011_mini.jpg" />
+    <Content Include="img\validation.png" />
+    <Content Include="img\warning.png" />
+    <Content Include="img\white_space.jpg" />
+    <Content Include="logout.aspx" />
+    <Content Include="system.error.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.default.aspx.designer.vb">
+      <DependentUpon>admin.default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.default.aspx.vb">
+      <DependentUpon>admin.default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.dobyear.summary.list.aspx.designer.vb">
+      <DependentUpon>admin.dobyear.summary.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.dobyear.summary.list.aspx.vb">
+      <DependentUpon>admin.dobyear.summary.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.Master.designer.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin.Master.vb">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.masterconfig.update.aspx.designer.vb">
+      <DependentUpon>admin.masterconfig.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.masterconfig.update.aspx.vb">
+      <DependentUpon>admin.masterconfig.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.notification.list.aspx.designer.vb">
+      <DependentUpon>admin.notification.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.notification.list.aspx.vb">
+      <DependentUpon>admin.notification.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.config.create.aspx.designer.vb">
+      <DependentUpon>admin.pcis.config.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.config.create.aspx.vb">
+      <DependentUpon>admin.pcis.config.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.config.list.aspx.designer.vb">
+      <DependentUpon>admin.pcis.config.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.config.list.aspx.vb">
+      <DependentUpon>admin.pcis.config.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.config.update.aspx.designer.vb">
+      <DependentUpon>admin.pcis.config.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.config.update.aspx.vb">
+      <DependentUpon>admin.pcis.config.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.config.view.aspx.designer.vb">
+      <DependentUpon>admin.pcis.config.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.config.view.aspx.vb">
+      <DependentUpon>admin.pcis.config.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.dobyear.summary.aspx.designer.vb">
+      <DependentUpon>admin.pcis.dobyear.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.dobyear.summary.aspx.vb">
+      <DependentUpon>admin.pcis.dobyear.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.exam.year.create.aspx.designer.vb">
+      <DependentUpon>admin.pcis.exam.year.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.exam.year.create.aspx.vb">
+      <DependentUpon>admin.pcis.exam.year.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.exam.year.list.aspx.designer.vb">
+      <DependentUpon>admin.pcis.exam.year.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.exam.year.list.aspx.vb">
+      <DependentUpon>admin.pcis.exam.year.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.exam.year.update.aspx.designer.vb">
+      <DependentUpon>admin.pcis.exam.year.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.exam.year.update.aspx.vb">
+      <DependentUpon>admin.pcis.exam.year.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.gender.summary.aspx.designer.vb">
+      <DependentUpon>admin.pcis.gender.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.gender.summary.aspx.vb">
+      <DependentUpon>admin.pcis.gender.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.jsc.aspx.designer.vb">
+      <DependentUpon>admin.pcis.jsc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.jsc.aspx.vb">
+      <DependentUpon>admin.pcis.jsc.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.mark.aspx.designer.vb">
+      <DependentUpon>admin.pcis.mark.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.mark.aspx.vb">
+      <DependentUpon>admin.pcis.mark.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.progress.aspx.designer.vb">
+      <DependentUpon>admin.pcis.progress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.progress.aspx.vb">
+      <DependentUpon>admin.pcis.progress.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcis.teststart.summary.aspx.designer.vb">
+      <DependentUpon>admin.pcis.teststart.summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcis.teststart.summary.aspx.vb">
+      <DependentUpon>admin.pcis.teststart.summary.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcisadmin.create.aspx.designer.vb">
+      <DependentUpon>admin.pcisadmin.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcisadmin.create.aspx.vb">
+      <DependentUpon>admin.pcisadmin.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcisadmin.list.aspx.designer.vb">
+      <DependentUpon>admin.pcisadmin.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcisadmin.list.aspx.vb">
+      <DependentUpon>admin.pcisadmin.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.pcisadmin.update.aspx.designer.vb">
+      <DependentUpon>admin.pcisadmin.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.pcisadmin.update.aspx.vb">
+      <DependentUpon>admin.pcisadmin.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.security_login_trail.list.aspx.designer.vb">
+      <DependentUpon>admin.security_login_trail.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.security_login_trail.list.aspx.vb">
+      <DependentUpon>admin.security_login_trail.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.studentprofile.create.aspx.designer.vb">
+      <DependentUpon>admin.studentprofile.create.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.studentprofile.create.aspx.vb">
+      <DependentUpon>admin.studentprofile.create.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.studentprofile.mark.view.aspx.designer.vb">
+      <DependentUpon>admin.studentprofile.mark.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.studentprofile.mark.view.aspx.vb">
+      <DependentUpon>admin.studentprofile.mark.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.studentprofile.search.aspx.designer.vb">
+      <DependentUpon>admin.studentprofile.search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.studentprofile.search.aspx.vb">
+      <DependentUpon>admin.studentprofile.search.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.studentprofile.update.aspx.designer.vb">
+      <DependentUpon>admin.studentprofile.update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.studentprofile.update.aspx.vb">
+      <DependentUpon>admin.studentprofile.update.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.studentprofile.view.aspx.designer.vb">
+      <DependentUpon>admin.studentprofile.view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.studentprofile.view.aspx.vb">
+      <DependentUpon>admin.studentprofile.view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin.TransactionLog.list.aspx.designer.vb">
+      <DependentUpon>admin.TransactionLog.list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.TransactionLog.list.aspx.vb">
+      <DependentUpon>admin.TransactionLog.list.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="common.function.vb" />
+    <Compile Include="commoncontrol\admin_create.ascx.designer.vb">
+      <DependentUpon>admin_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\admin_create.ascx.vb">
+      <DependentUpon>admin_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\admin_list.ascx.designer.vb">
+      <DependentUpon>admin_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\admin_list.ascx.vb">
+      <DependentUpon>admin_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\admin_update.ascx.designer.vb">
+      <DependentUpon>admin_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\admin_update.ascx.vb">
+      <DependentUpon>admin_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_history_list.ascx.designer.vb">
+      <DependentUpon>exam_history_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_history_list.ascx.vb">
+      <DependentUpon>exam_history_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_mark.ascx.designer.vb">
+      <DependentUpon>exam_mark.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_mark.ascx.vb">
+      <DependentUpon>exam_mark.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\exam_progress.ascx.designer.vb">
+      <DependentUpon>exam_progress.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\exam_progress.ascx.vb">
+      <DependentUpon>exam_progress.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\menu_left.ascx.designer.vb">
+      <DependentUpon>menu_left.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\menu_left.ascx.vb">
+      <DependentUpon>menu_left.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\our_address.ascx.designer.vb">
+      <DependentUpon>our_address.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\our_address.ascx.vb">
+      <DependentUpon>our_address.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_config_create.ascx.designer.vb">
+      <DependentUpon>pcis_config_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_config_create.ascx.vb">
+      <DependentUpon>pcis_config_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_config_list.ascx.designer.vb">
+      <DependentUpon>pcis_config_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_config_list.ascx.vb">
+      <DependentUpon>pcis_config_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_config_update.ascx.designer.vb">
+      <DependentUpon>pcis_config_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_config_update.ascx.vb">
+      <DependentUpon>pcis_config_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_dobyear_list.ascx.designer.vb">
+      <DependentUpon>pcis_dobyear_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_dobyear_list.ascx.vb">
+      <DependentUpon>pcis_dobyear_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_exam_year_create.ascx.designer.vb">
+      <DependentUpon>pcis_exam_year_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_exam_year_create.ascx.vb">
+      <DependentUpon>pcis_exam_year_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_exam_year_list.ascx.designer.vb">
+      <DependentUpon>pcis_exam_year_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_exam_year_list.ascx.vb">
+      <DependentUpon>pcis_exam_year_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_exam_year_update.ascx.designer.vb">
+      <DependentUpon>pcis_exam_year_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_exam_year_update.ascx.vb">
+      <DependentUpon>pcis_exam_year_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_jsc_create.ascx.designer.vb">
+      <DependentUpon>pcis_jsc_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_jsc_create.ascx.vb">
+      <DependentUpon>pcis_jsc_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_summary_age.ascx.designer.vb">
+      <DependentUpon>pcis_summary_age.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\pcis_summary_age.ascx.vb">
+      <DependentUpon>pcis_summary_age.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_create.ascx.designer.vb">
+      <DependentUpon>userprofile_create.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_create.ascx.vb">
+      <DependentUpon>userprofile_create.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_search.ascx.designer.vb">
+      <DependentUpon>userprofile_search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_search.ascx.vb">
+      <DependentUpon>userprofile_search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_update.ascx.designer.vb">
+      <DependentUpon>userprofile_update.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_update.ascx.vb">
+      <DependentUpon>userprofile_update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_view.ascx.designer.vb">
+      <DependentUpon>userprofile_view.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\userprofile_view.ascx.vb">
+      <DependentUpon>userprofile_view.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\user_login.ascx.designer.vb">
+      <DependentUpon>user_login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\user_login.ascx.vb">
+      <DependentUpon>user_login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.contactus.aspx.designer.vb">
+      <DependentUpon>default.contactus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.contactus.aspx.vb">
+      <DependentUpon>default.contactus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.vb">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
+    <Compile Include="default.Master.vb">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.vb">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="system.error.aspx.designer.vb">
+      <DependentUpon>system.error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="system.error.aspx.vb">
+      <DependentUpon>system.error.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.Master" />
+    <Content Include="admin.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="My Project\PublishProfiles\pcisadmin.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60420</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:60420/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

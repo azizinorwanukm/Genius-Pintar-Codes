@@ -1,0 +1,4134 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UKM_SEMAKAN
+</name>
+</assembly>
+<members>
+<member name="T:UKM_SEMAKAN.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UKM_SEMAKAN.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:UKM_SEMAKAN.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:UKM_SEMAKAN.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:UKM_SEMAKAN.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:UKM_SEMAKAN.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:UKM_SEMAKAN.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:UKM_SEMAKAN.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:UKM_SEMAKAN.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblASASITitle">
+<summary>
+lblASASITitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblASASIExamYear">
+<summary>
+lblASASIExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._imgPDF">
+<summary>
+imgPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._pnlDownload">
+<summary>
+pnlDownload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label9">
+<summary>
+Label9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblTarikhUjian">
+<summary>
+lblTarikhUjian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label12">
+<summary>
+Label12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblSessiASASI">
+<summary>
+lblSessiASASI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label11">
+<summary>
+Label11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatName">
+<summary>
+lblPusatName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatAddress">
+<summary>
+lblPusatAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatPostcode">
+<summary>
+lblPusatPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label8">
+<summary>
+Label8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatCity">
+<summary>
+lblPusatCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label10">
+<summary>
+Label10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatState">
+<summary>
+lblPusatState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatNoTel">
+<summary>
+lblPusatNoTel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblPusatCode">
+<summary>
+lblPusatCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblASASIEnd">
+<summary>
+lblASASIEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.asasi_semak._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._pnlSTOPALL">
+<summary>
+pnlSTOPALL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lblSemak">
+<summary>
+lblSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._pnlUKM2">
+<summary>
+pnlUKM2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lnkUKM2Title">
+<summary>
+lnkUKM2Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lblUKM2Title">
+<summary>
+lblUKM2Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._pnlPPCS">
+<summary>
+pnlPPCS control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lnkPPCSTitle">
+<summary>
+lnkPPCSTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lblPPCSTitle">
+<summary>
+lblPPCSTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._pnlASASI">
+<summary>
+pnlASASI control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lnkASASITitle">
+<summary>
+lnkASASITitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lblASASITitle">
+<summary>
+lblASASITitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._pnlPPMT">
+<summary>
+pnlPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lnkPPMTTitle">
+<summary>
+lnkPPMTTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lblPPMTTitle">
+<summary>
+lblPPMTTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._pnlKolej">
+<summary>
+pnlKolej control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lnkKOLEJitle">
+<summary>
+lnkKOLEJitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default1._lblKOLEJTitle">
+<summary>
+lblKOLEJTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default._myform">
+<summary>
+myform control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN._default._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblPPYear">
+<summary>
+lblPPYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblNoPelajar">
+<summary>
+lblNoPelajar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblProgram">
+<summary>
+lblProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._pnlDownload">
+<summary>
+pnlDownload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lnkTawaran">
+<summary>
+lnkTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblFatherFullname">
+<summary>
+lblFatherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblPPYear">
+<summary>
+lblPPYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblMYKAD">
+<summary>
+lblMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblPPMT">
+<summary>
+lblPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblProgram">
+<summary>
+lblProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStatusTawaran">
+<summary>
+lblStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._pnlreason">
+<summary>
+pnlreason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStatusReason">
+<summary>
+lblStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._PnlStatus">
+<summary>
+PnlStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._pnltolak">
+<summary>
+pnltolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblUKM3ID">
+<summary>
+lblUKM3ID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblPPCSTarikhProgram">
+<summary>
+lblPPCSTarikhProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_result._lblSQLDebug">
+<summary>
+lblSQLDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblPPYear">
+<summary>
+lblPPYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblProgram">
+<summary>
+lblProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblFatherFullname">
+<summary>
+lblFatherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_asas1._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_semak._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_semak._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_semak._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_semak._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblPPYear">
+<summary>
+lblPPYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblProgram">
+<summary>
+lblProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblFatherFullname">
+<summary>
+lblFatherFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_tahap1._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.kolej_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.state_pusatujianstatus._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.state_pusatujianstatus._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblPPCSTitle">
+<summary>
+lblPPCSTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblPPSCDateUKM">
+<summary>
+lblPPSCDateUKM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblPPSCDateUSIM">
+<summary>
+lblPPSCDateUSIM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblPPCSStatus">
+<summary>
+lblPPCSStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblIsPos">
+<summary>
+lblIsPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblIsScan">
+<summary>
+lblIsScan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_semak._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSTitle">
+<summary>
+lblPPCSTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSSessi">
+<summary>
+lblPPCSSessi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblMYKAD">
+<summary>
+lblMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblCourseCode">
+<summary>
+lblCourseCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblCourseNameBM">
+<summary>
+lblCourseNameBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSStatus">
+<summary>
+lblPPCSStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblStatusTawaran">
+<summary>
+lblStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._Label8">
+<summary>
+Label8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblIsPosMsg">
+<summary>
+lblIsPosMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._imgPDF">
+<summary>
+imgPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSTarikhProgram">
+<summary>
+lblPPCSTarikhProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSLokasiProgram">
+<summary>
+lblPPCSLokasiProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSTarikhDaftar">
+<summary>
+lblPPCSTarikhDaftar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSMasa">
+<summary>
+lblPPCSMasa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSTempatDaftar">
+<summary>
+lblPPCSTempatDaftar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblIsPos">
+<summary>
+lblIsPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblIsScan">
+<summary>
+lblIsScan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_ukm._lblPPCSPPNTradeMark">
+<summary>
+lblPPCSPPNTradeMark control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSTitle">
+<summary>
+lblPPCSTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSSessi">
+<summary>
+lblPPCSSessi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblMYKAD">
+<summary>
+lblMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblCourseCode">
+<summary>
+lblCourseCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblCourseNameBM">
+<summary>
+lblCourseNameBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSStatus">
+<summary>
+lblPPCSStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblStatusTawaran">
+<summary>
+lblStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._Label8">
+<summary>
+Label8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblIsPosMsg">
+<summary>
+lblIsPosMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._imgPDF">
+<summary>
+imgPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSTarikhProgram">
+<summary>
+lblPPCSTarikhProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSLokasiProgram">
+<summary>
+lblPPCSLokasiProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSTarikhDaftar">
+<summary>
+lblPPCSTarikhDaftar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSMasa">
+<summary>
+lblPPCSMasa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSTempatDaftar">
+<summary>
+lblPPCSTempatDaftar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblIsPos">
+<summary>
+lblIsPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblIsScan">
+<summary>
+lblIsScan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppcs_usim._lblPPCSPPNTradeMark">
+<summary>
+lblPPCSPPNTradeMark control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTTitle">
+<summary>
+lblPPMTTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTSessi">
+<summary>
+lblPPMTSessi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblCourseCode">
+<summary>
+lblCourseCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblCourseNameBM">
+<summary>
+lblCourseNameBM control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTStatus">
+<summary>
+lblPPMTStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblStatusTawaran">
+<summary>
+lblStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblStatusDate">
+<summary>
+lblStatusDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._Label8">
+<summary>
+Label8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblIsPosMsg">
+<summary>
+lblIsPosMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._imgPDF">
+<summary>
+imgPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTTarikhProgram">
+<summary>
+lblPPMTTarikhProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTLokasiProgram">
+<summary>
+lblPPMTLokasiProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTTarikhDaftar">
+<summary>
+lblPPMTTarikhDaftar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTMasa">
+<summary>
+lblPPMTMasa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblPPMTTempatDaftar">
+<summary>
+lblPPMTTempatDaftar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._btnTerima">
+<summary>
+btnTerima control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._btnTolak">
+<summary>
+btnTolak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._pnlExpired">
+<summary>
+pnlExpired control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblTarikhTutup">
+<summary>
+lblTarikhTutup control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblSchoolName">
+<summary>
+lblSchoolName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblSchoolAddress">
+<summary>
+lblSchoolAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblSchoolPostcode">
+<summary>
+lblSchoolPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblSchoolCity">
+<summary>
+lblSchoolCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblSchoolState">
+<summary>
+lblSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblIsPos">
+<summary>
+lblIsPos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ppmt_semak._lblIsScan">
+<summary>
+lblIsScan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblSaringanTitle">
+<summary>
+lblSaringanTitle control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblSaringanExamYear">
+<summary>
+lblSaringanExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label9">
+<summary>
+Label9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblTarikhUjian">
+<summary>
+lblTarikhUjian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label12">
+<summary>
+Label12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblSessiUKM2">
+<summary>
+lblSessiUKM2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label11">
+<summary>
+Label11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatName">
+<summary>
+lblPusatName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatAddress">
+<summary>
+lblPusatAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatPostcode">
+<summary>
+lblPusatPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label8">
+<summary>
+Label8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatCity">
+<summary>
+lblPusatCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label10">
+<summary>
+Label10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatState">
+<summary>
+lblPusatState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatNoTel">
+<summary>
+lblPusatNoTel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblPusatCode">
+<summary>
+lblPusatCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblSaringanEnd">
+<summary>
+lblSaringanEnd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.saringan_semak._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblUKM2Title">
+<summary>
+lblUKM2Title control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label5">
+<summary>
+Label5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblUKM2ExamYear">
+<summary>
+lblUKM2ExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentFullname">
+<summary>
+lblStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._btnSemak">
+<summary>
+btnSemak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._btnPrint">
+<summary>
+btnPrint control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._imgPDF">
+<summary>
+imgPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._hyPDF">
+<summary>
+hyPDF control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._pnlDisplay">
+<summary>
+pnlDisplay control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label9">
+<summary>
+Label9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblTarikhUjian">
+<summary>
+lblTarikhUjian control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label12">
+<summary>
+Label12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblSessiUKM2">
+<summary>
+lblSessiUKM2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label11">
+<summary>
+Label11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatName">
+<summary>
+lblPusatName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatAddress">
+<summary>
+lblPusatAddress control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label6">
+<summary>
+Label6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatPostcode">
+<summary>
+lblPusatPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label8">
+<summary>
+Label8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatCity">
+<summary>
+lblPusatCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label10">
+<summary>
+Label10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatState">
+<summary>
+lblPusatState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._Label7">
+<summary>
+Label7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatNoTel">
+<summary>
+lblPusatNoTel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentID">
+<summary>
+lblStudentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblPusatCode">
+<summary>
+lblPusatCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblUKM2End">
+<summary>
+lblUKM2End control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentAddress1">
+<summary>
+lblStudentAddress1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentAddress2">
+<summary>
+lblStudentAddress2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentPostcode">
+<summary>
+lblStudentPostcode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentCity">
+<summary>
+lblStudentCity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UKM_SEMAKAN.ukm2_semak._lblStudentState">
+<summary>
+lblStudentState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

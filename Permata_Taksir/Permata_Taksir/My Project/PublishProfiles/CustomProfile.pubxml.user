@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>http://localhost/permata_taksir</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="admin.default.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="admin.Master">
+      <publishTime>01/02/2019 11:21:15</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>11/04/2010 07:54:10</publishTime>
+    </File>
+    <File Include="bin/UKM3.dll">
+      <publishTime>12/16/2019 10:56:28</publishTime>
+    </File>
+    <File Include="bin/UKM3.dll.config">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="bin/UKM3.pdb">
+      <publishTime>12/16/2019 10:56:28</publishTime>
+    </File>
+    <File Include="bin/UKM3.xml">
+      <publishTime>12/16/2019 10:56:28</publishTime>
+    </File>
+    <File Include="Control/kelas_courseView.ascx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="Control/kelas_List.ascx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="Control/KPP/kpp_studentlist.ascx">
+      <publishTime>12/19/2018 09:24:14</publishTime>
+    </File>
+    <File Include="Control/KPP/kpp_studentlist_checklist.ascx">
+      <publishTime>03/04/2019 01:28:50</publishTime>
+    </File>
+    <File Include="Control/KPP/kpp_studentselection.ascx">
+      <publishTime>12/19/2018 09:24:14</publishTime>
+    </File>
+    <File Include="Control/login_trail.ascx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="Control/PPCS/ppcs_studentlist.ascx">
+      <publishTime>12/19/2018 09:24:14</publishTime>
+    </File>
+    <File Include="Control/PPCS/ppcs_studentlist_checklist.ascx">
+      <publishTime>03/04/2019 01:22:49</publishTime>
+    </File>
+    <File Include="Control/RAPPCS/rappcs_studentlist.ascx">
+      <publishTime>12/18/2018 12:27:44</publishTime>
+    </File>
+    <File Include="Control/RAPPCS/rappcs_studentlist_checklist.ascx">
+      <publishTime>03/04/2019 01:21:28</publishTime>
+    </File>
+    <File Include="Control/RAPPCS/ra_studentselection.ascx">
+      <publishTime>12/18/2018 12:27:44</publishTime>
+    </File>
+    <File Include="Control/student_List.ascx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="Control/subject_List.ascx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="Control/TAPPCS/tappcs_prepostMark.ascx">
+      <publishTime>01/02/2019 11:21:15</publishTime>
+    </File>
+    <File Include="css/grd_alt.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/grd_head.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/grd_pgr.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/jquery-ui.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/jquery.datepick.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/material_button.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/portal.default.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/portal.default.old.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/StyleSheet1.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/back.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/blurry.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/botleft.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/botright.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/gradback.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/gradhead.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/gradhover.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/header.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/left.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/pattern-head.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/pattern.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/pattern.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/patternb-head.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/patternb.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table-images/right.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="css/table_style.css">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="default.Master">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="googlef9781b107c5c40a2.html">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/band-aid.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/button_post.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/chat.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/clock.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/delicious.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/digg.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/event.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/eye.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/facebook.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/flag.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/fork-and-knife.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/friend.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/furl.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/gear.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/groups.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/heart.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/ilike.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/lastfm.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/lightning-bolt.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/link.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/magnifying-glass.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/map-marker.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/map-pin.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/message.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/microphone.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/music-note.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/mybloglog.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/news.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/note.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/paw.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/photo.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/plus.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/puzzle.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/reddit.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/star.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/stumbleupon.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/tag.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/technorati.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/Thumbs.db">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/tshirt.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/twitter.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/watermark.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="icons/youtube.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/ambulance-facebook-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/bank-emoticon-for-facebook.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/boy-and-girl-holding-hands.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/bus-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/cal.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/department-store-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/drawline.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/error.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/facebook-policeman-symbol.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/front_page.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/girl-emoticon-for-facebook.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/header.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/info.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/keamatan01.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/left.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/Majlis_Penutup_PPCS_2010.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/man-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/megaphone-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/memo-sign-for-facebook.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/mens-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/mini_permatapintar.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/open-book-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permatanegara.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permatapintar.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permatapintar_old.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permata_insan.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permata_insan.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permata_negara.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/permata_negara.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/peta-kampus-induk.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/peta-kampus-indukv2.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/phone-symbol.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/print.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/red-exclamation-mark.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/refresh.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/restroom-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/right.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/sample_que.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/school_info.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/sekolah1.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/sekolah2.JPG">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/soccer-ball-emoticon.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/spacing.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/success.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/t-shirt-emoticon-for-facebook.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/text_calendar.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/Thumbs.db">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/tie-emoticon-facebook.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/TKC.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/UKM1.JPG">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/ukm1_2011_mini.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/ukm1_old.JPG">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/validation.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/warning.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="img/white_space.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/bg.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/blue.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/content.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/dot.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/dot_off.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/feed.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/footer.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/h3_bg.gif">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/head.jpg">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/header3.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="imgs/ppintar.png">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/CalendarPopup.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery-1.4.2.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery-1.4.4.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery-ui.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery.datepick.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery.plugin.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery.simplemodal-1.4.1.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="js/jquery.simplemodal.1.4.1.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="kelas.List.aspx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="kpp.masukmarkah.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="kpp.studentlist.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="kpp.studentselection.aspx">
+      <publishTime>12/14/2018 11:24:21</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="ppcs.masukmarkah.aspx">
+      <publishTime>12/17/2018 11:57:30</publishTime>
+    </File>
+    <File Include="ppcs.studentlist.aspx">
+      <publishTime>12/18/2018 12:27:35</publishTime>
+    </File>
+    <File Include="ra.studentselection.aspx">
+      <publishTime>12/17/2018 09:07:21</publishTime>
+    </File>
+    <File Include="rappcs.masukmarkah.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="rappcs.studentlist.aspx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="ShowImage.ashx">
+      <publishTime>12/12/2018 22:08:24</publishTime>
+    </File>
+    <File Include="student.List.aspx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="subject.List.aspx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="tappcs.studentlist.aspx">
+      <publishTime>12/13/2018 17:11:41</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/16/2019 10:53:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

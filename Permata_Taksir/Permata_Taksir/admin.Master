@@ -1,0 +1,171 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="UKM3.admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sistem Pengurusan dan Pemantauan Ujian UKM1 & UKM2</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+
+    <script src="js/CalendarPopup.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">document.write(getCalendarStyles());</script>
+
+
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/table_style.css" rel="stylesheet" type="text/css" />
+
+<%--    <script type="text/javascript">
+        window.history.forward();
+        function noBack() {
+            window.history.forward();
+        }
+    </script>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody" onload="noBack()">
+    <form id="form1" runat="server">
+        <table style="width: 100%; padding: 0px; border: 0px dotted green;">
+            <tr>
+                <td colspan="2">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left;">
+                                <a href="admin.default.aspx">Pentaksiran
+                                    <asp:Label runat="server" ID="lblUserType1" Text=""></asp:Label>
+                                </a>|<asp:Label
+                                    ID="lblLoginID" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td style="width: 40%; text-align: right;">
+                                <a href="logout.aspx">Logout</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 10%; vertical-align: top;">
+                    <table class="newspaper-header" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Pengguna</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nama:<asp:Label ID="lblFullname" runat="server" Text="" CssClass="fblabel_view"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis:<asp:Label ID="lblUserType" runat="server" Text="" CssClass="fblabel_view"></asp:Label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    
+                    <div id="RaPCs_masukmarkah" runat="server">
+
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Ra Pcs"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ra.studentselection.aspx" rel="nofollow" target="_self" id="Ra_pemilihanpelajar">Pemilihan Pelajar</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="rappcs.studentlist.aspx" rel="nofollow" target="_self" id="Ra_masukmarkah">Kemasukan Markah Ra PPCS</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="Kpp_masukmarkah" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Kpp"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="kpp.studentselection.aspx" rel="nofollow" target="_self" id="`kpp_studentselection">Pemilihan Pelajar</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="kpp.studentlist.aspx" rel="nofollow" target="_self" id="`kpp_studentlist">Kemasukan Markah Instruktor KPP</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="Ppcs_masukmarkah" runat="server">
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Ppcs"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="ppcs.studentlist.aspx" rel="nofollow" target="_self" id="PPCS_Markah">Kemasukan Markah Instruktor Ppcs</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Ta_ppcs" runat="server">
+
+                        <table class="newspaper-a" summary="PERMATApintar Menu">
+                            <thead>
+                                <tr>
+                                    <th scope="Ta Pcs"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="tappcs.studentlist.aspx" rel="nofollow" target="_self" id="ta_masukmarkah">Kemasukan Markah Ta PPCS</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </td>
+
+                <td style="width: 90%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        &nbsp;
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; vertical-align: top;">
+                    <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fbfooter">|&nbsp; © 2010 Universiti Kebangsaan Malaysia&nbsp;<%--|&nbsp;Designed and Developed
+                            by ARAKEN SDN. BHD.&nbsp;--%>|
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Untuk skrin 1024 X 768 dan ke atas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

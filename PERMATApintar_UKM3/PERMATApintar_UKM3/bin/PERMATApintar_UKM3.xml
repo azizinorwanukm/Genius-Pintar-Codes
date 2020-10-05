@@ -1,0 +1,6157 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PERMATApintar_UKM3
+</name>
+</assembly>
+<members>
+<member name="T:PERMATApintar_UKM3.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:PERMATApintar_UKM3.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:PERMATApintar_UKM3.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:PERMATApintar_UKM3.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:PERMATApintar_UKM3.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:PERMATApintar_UKM3.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:PERMATApintar_UKM3.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._lblDate">
+<summary>
+lblDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._lblUsername">
+<summary>
+lblUsername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.permatapintar.admin._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.admin_popup._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.admin_popup._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.admin_popup._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.admin_popup._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.admin_popup._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._lblUserType">
+<summary>
+lblUserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._lblUsername">
+<summary>
+lblUsername control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.popup3._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:PERMATApintar_UKM3.Resources.eval2010">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel1">
+<summary>
+  Looks up a localized string similar to  1 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel10">
+<summary>
+  Looks up a localized string similar to  10 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel2">
+<summary>
+  Looks up a localized string similar to  2 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel3">
+<summary>
+  Looks up a localized string similar to  3 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel4">
+<summary>
+  Looks up a localized string similar to  4 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel5">
+<summary>
+  Looks up a localized string similar to  5 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel6">
+<summary>
+  Looks up a localized string similar to  6 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel7">
+<summary>
+  Looks up a localized string similar to  7 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel8">
+<summary>
+  Looks up a localized string similar to  8 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.AgreeLevel9">
+<summary>
+  Looks up a localized string similar to  9 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.lblJawapan">
+<summary>
+  Looks up a localized string similar to Pilihan Penilaian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.lblperasaan">
+<summary>
+  Looks up a localized string similar to Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.lblSoalan">
+<summary>
+  Looks up a localized string similar to Soalan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q001">
+<summary>
+  Looks up a localized string similar to Pelajar menunjukkan penguasaan ilmu modul..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q002">
+<summary>
+  Looks up a localized string similar to Pelajar mengaplikasi pengetahuan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q003">
+<summary>
+  Looks up a localized string similar to Pelajar menguasai kemahiran..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q004">
+<summary>
+  Looks up a localized string similar to Pelajar mengaplikasi kemahiran ..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q005">
+<summary>
+  Looks up a localized string similar to Pelajar mengintegrasi pengetahuan dan kemahiran..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q006">
+<summary>
+  Looks up a localized string similar to Pelajar menunjukkan sikap, nilai serta tanggungjawab..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q007">
+<summary>
+  Looks up a localized string similar to Pelajar berkomunikasi dengan baik..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q008">
+<summary>
+  Looks up a localized string similar to Pelajar menunjukkan ciri-ciri kepimpinan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q009">
+<summary>
+  Looks up a localized string similar to Pelajar menunjukkan kemahiran menyelesaikan masalah, berfikir secara kreatif, kritis serta inovatif..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.eval2010.Q010">
+<summary>
+  Looks up a localized string similar to Pelajar menunjukkan kemahiran ICT..
+</summary>
+</member>
+<member name="T:PERMATApintar_UKM3.Resources.keterujaan2010">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.AgreeLevel1">
+<summary>
+  Looks up a localized string similar to  Saya sama sekali tidak seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.AgreeLevel2">
+<summary>
+  Looks up a localized string similar to  Saya tidaklah sangat seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.AgreeLevel3">
+<summary>
+  Looks up a localized string similar to  Saya adalah seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.AgreeLevel4">
+<summary>
+  Looks up a localized string similar to  Saya memang seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.AgreeLevel5">
+<summary>
+  Looks up a localized string similar to  Saya memang sangat seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.btnNext">
+<summary>
+  Looks up a localized string similar to Seterusnya .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.btnUpdate">
+<summary>
+  Looks up a localized string similar to Kemaskini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.lblJawapan">
+<summary>
+  Looks up a localized string similar to Pilihan Penilaian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.lblperasaan">
+<summary>
+  Looks up a localized string similar to Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.lblSoalan">
+<summary>
+  Looks up a localized string similar to Soalan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q001">
+<summary>
+  Looks up a localized string similar to Saya suka berimaginasi/berangan/berfantasi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q002">
+<summary>
+  Looks up a localized string similar to Saya seorang yang suka bersaing.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q003">
+<summary>
+  Looks up a localized string similar to Pelbagai bunyi dan warna  menceriakan hidup saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q004">
+<summary>
+  Looks up a localized string similar to Dunia imaginasi/fantasi seolah-olah sangat nyata bagi saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q005">
+<summary>
+  Looks up a localized string similar to Saya seorang pemikir yang bebas.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q006">
+<summary>
+  Looks up a localized string similar to Saya boleh merasai perasaan orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q007">
+<summary>
+  Looks up a localized string similar to Aktiviti fizikal yang berat/memenatkan, memberikan kepuasan kepada saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q008">
+<summary>
+  Looks up a localized string similar to Menatap hasil seni adalah satu pengalaman mengasyikkan bagi saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q009">
+<summary>
+  Looks up a localized string similar to Saya sering merasa bimbang.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q010">
+<summary>
+  Looks up a localized string similar to Saya sangat suka bergerak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q011">
+<summary>
+  Looks up a localized string similar to Saya merasa sedih melihat seseorang yang menyendiri dalam sesuatu kumpulan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q012">
+<summary>
+  Looks up a localized string similar to Saya boleh memahami konsep yang rumit dan menterjemahkannya kepada sesuatu yang lebih mudah untuk difahami.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q013">
+<summary>
+  Looks up a localized string similar to Saya terpesona melihat hasil karya seni orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q014">
+<summary>
+  Looks up a localized string similar to Bila saya bosan, saya akan mula berimaginasi/berangan/berfantasi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q015">
+<summary>
+  Looks up a localized string similar to Bila saya rasa sangat bertenaga, saya hendak membuat sesuatu yang benar-benar fizikal.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q016">
+<summary>
+  Looks up a localized string similar to Saya mempersoalkan semua perkara seperti bagaimana alat berfungsi, apa maksud sesuatu  benda, kenapa sesuatu benda dijadikan seperti itu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q017">
+<summary>
+  Looks up a localized string similar to Saya boleh merasa sangat gembira sehinggakan saya hendak ketawa dan menangis pada masa yang sama.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q018">
+<summary>
+  Looks up a localized string similar to Saya rasa lebih bertenaga daripada rakan sebaya saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q019">
+<summary>
+  Looks up a localized string similar to Saya boleh membina konsep baru dengan menggabungkan beberapa perkara yang berbeza.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q020">
+<summary>
+  Looks up a localized string similar to Adakalanya saya mengimaginasi diri saya  sebagai orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q021">
+<summary>
+  Looks up a localized string similar to Lebih lama saya kena duduk diam, semakin gelisah saya dibuatnya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q022">
+<summary>
+  Looks up a localized string similar to Perkara yang saya gambarkan dalam minda saya sangat jelas sehingga terasa bagaikan satu realiti.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q023">
+<summary>
+  Looks up a localized string similar to Saya suka memerhati dan menganalisis semua perkara.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q024">
+<summary>
+  Looks up a localized string similar to Saya suka mencampur adukkan kebenaran dan fantasi dalam fikiran saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q025">
+<summary>
+  Looks up a localized string similar to Teori membuatkan minda saya berfikir.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q026">
+<summary>
+  Looks up a localized string similar to Saya mempunyai perasaan yang mendalam apabila merasa gembira, marah, seronok dan sedih.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q027">
+<summary>
+  Looks up a localized string similar to Saya dapat merasakan irama muzik menyerap ke seluruh tubuh badan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q028">
+<summary>
+  Looks up a localized string similar to Saya suka menokok tambah apabila bercerita tentang sesuatu perkara yang benar.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q029">
+<summary>
+  Looks up a localized string similar to Saya merasakan seperti tubuh badan saya sentiasa bergerak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q030">
+<summary>
+  Looks up a localized string similar to Saya suka menyelesaikan masalah dan membina konsep baru.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q031">
+<summary>
+  Looks up a localized string similar to Saya amat prihatin terhadap perasaan orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q032">
+<summary>
+  Looks up a localized string similar to Saya suka dengan warna, bentuk dan tekstur sesuatu benda berbanding orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q033">
+<summary>
+  Looks up a localized string similar to Saya percaya bahawa barang permainan berbentuk orang dan haiwan atau watak dalam buku adalah hidup dan mempunyai perasaan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q034">
+<summary>
+  Looks up a localized string similar to Perkataan dan bunyi-bunyian menghasilkan imej yang luar biasa dalam minda saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q035">
+<summary>
+  Looks up a localized string similar to Perasaan yang mendalam akan membuat saya menangis.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q036">
+<summary>
+  Looks up a localized string similar to Saya suka mendalami sesuatu isu .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q037">
+<summary>
+  Looks up a localized string similar to Saya sangat terpesona dengan keindahan alam.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q038">
+<summary>
+  Looks up a localized string similar to Saya tidak peka dengan warna, bentuk atau tekstur sesuatu benda .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q039">
+<summary>
+  Looks up a localized string similar to Bila saya gelisah, saya perlu lakukan sesuatu yang fizikal.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q040">
+<summary>
+  Looks up a localized string similar to Saya selalu cuba menganalisis pemikiran dan tindakan saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q041">
+<summary>
+  Looks up a localized string similar to Saya boleh merasakan emosi yang berbeza bercampur aduk pada masa yang sama.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q042">
+<summary>
+  Looks up a localized string similar to Saya seorang yang perlu menjadi aktif seperti berjalan, membersihkan sesuatu, mengorganisasikan atau membuat sesuatu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q043">
+<summary>
+  Looks up a localized string similar to Saya suka bermain dengan idea dan cuba memikirkan bagaimana hendak menggunakannya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q044">
+<summary>
+  Looks up a localized string similar to Saya seorang yang tiada perasaan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q045">
+<summary>
+  Looks up a localized string similar to Saya sukakan sensasi pada warna, bentuk dan rekacipta.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q046">
+<summary>
+  Looks up a localized string similar to Keharuman yang berbeza menarik perhatian saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q047">
+<summary>
+  Looks up a localized string similar to Saya mempunyai kebolehan untuk berimaginasi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q048">
+<summary>
+  Looks up a localized string similar to Saya sangat suka mendengar bunyi-bunyian alam sekitar.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q049">
+<summary>
+  Looks up a localized string similar to Saya akan menghayati semua perkara dalam hidup saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.keterujaan2010.Q050">
+<summary>
+  Looks up a localized string similar to Saya berbakat dalam aktiviti fizikal yang tangkas seperti permainan dan sukan yang pantas .
+</summary>
+</member>
+<member name="T:PERMATApintar_UKM3.Resources.komputer2010">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AgreeLevel1">
+<summary>
+  Looks up a localized string similar to  Saya sama sekali tidak seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AgreeLevel2">
+<summary>
+  Looks up a localized string similar to  Saya tidaklah sangat seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AgreeLevel3">
+<summary>
+  Looks up a localized string similar to  Saya adalah seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AgreeLevel4">
+<summary>
+  Looks up a localized string similar to  Saya memang seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AgreeLevel5">
+<summary>
+  Looks up a localized string similar to  Saya memang sangat seperti ini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AnswerPage03_1">
+<summary>
+  Looks up a localized string similar to 1.	Tidak Pernah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AnswerPage03_2">
+<summary>
+  Looks up a localized string similar to 2.	Kurang daripada 5 kali seminggu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AnswerPage03_3">
+<summary>
+  Looks up a localized string similar to 3.	6 – 10 kali seminggu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.AnswerPage03_4">
+<summary>
+  Looks up a localized string similar to 4.	Lebih daripada 10 kali seminggu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.btnNext">
+<summary>
+  Looks up a localized string similar to Seterusnya .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.btnUpdate">
+<summary>
+  Looks up a localized string similar to Kemaskini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.lblAPage02">
+<summary>
+  Looks up a localized string similar to Jawapan Anda.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.lblJawapan">
+<summary>
+  Looks up a localized string similar to Pilihan Penilaian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.lblperasaan">
+<summary>
+  Looks up a localized string similar to Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.lblQPage02">
+<summary>
+  Looks up a localized string similar to Kemahiran komputer.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.lblSoalan">
+<summary>
+  Looks up a localized string similar to Soalan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q001">
+<summary>
+  Looks up a localized string similar to Adakah anda mempunyai komputer peribadi/ komputer riba/ netbook di rumah?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q001_1">
+<summary>
+  Looks up a localized string similar to Ya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q001_2">
+<summary>
+  Looks up a localized string similar to Tidak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q002">
+<summary>
+  Looks up a localized string similar to Nyatakan kekerapan anda menggunakan komputer dalam tempoh seminggu?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q002_1">
+<summary>
+  Looks up a localized string similar to 1-3 Kali.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q002_2">
+<summary>
+  Looks up a localized string similar to 4-6 Kali.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q002_3">
+<summary>
+  Looks up a localized string similar to Lebih dari 6.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q003">
+<summary>
+  Looks up a localized string similar to Nyatakan jumlah jam  anda menggunakan komputer dalam tempoh seminggu?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q003_1">
+<summary>
+  Looks up a localized string similar to Kurang daripada 1 jam.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q003_2">
+<summary>
+  Looks up a localized string similar to 2-4 jam .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q003_3">
+<summary>
+  Looks up a localized string similar to Lebih dari 4 jam.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q004">
+<summary>
+  Looks up a localized string similar to Adakah terdapat perkhidmatan internet di rumah anda?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q004_1">
+<summary>
+  Looks up a localized string similar to Ya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q004_2">
+<summary>
+  Looks up a localized string similar to Tidak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q005">
+<summary>
+  Looks up a localized string similar to Adakah terdapat perkhidmatan internet di sekolah anda?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q005_1">
+<summary>
+  Looks up a localized string similar to Ya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q005_2">
+<summary>
+  Looks up a localized string similar to Tidak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q006">
+<summary>
+  Looks up a localized string similar to Adakah anda menggunakan komputer di luar waktu persekolahan?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q006_1">
+<summary>
+  Looks up a localized string similar to Ya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q006_2">
+<summary>
+  Looks up a localized string similar to Tidak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q007">
+<summary>
+  Looks up a localized string similar to Di manakah anda menggunakan komputer di  luar waktu persekolahan?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q007_1">
+<summary>
+  Looks up a localized string similar to Makmal sekolah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q007_2">
+<summary>
+  Looks up a localized string similar to Rumah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q007_3">
+<summary>
+  Looks up a localized string similar to Kafe siber.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q007_4">
+<summary>
+  Looks up a localized string similar to Pejabat Ibu/bapa.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q007_5">
+<summary>
+  Looks up a localized string similar to Lain-lain tempat.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q008">
+<summary>
+  Looks up a localized string similar to Apakah tujuan anda menggunakan komputer di  luar waktu persekolahan?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q008_1">
+<summary>
+  Looks up a localized string similar to Bermain &quot;Games&quot;.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q008_2">
+<summary>
+  Looks up a localized string similar to Internet.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q008_3">
+<summary>
+  Looks up a localized string similar to Menyiapkan tugasan sekolah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q008_4">
+<summary>
+  Looks up a localized string similar to Mempelajari suatu perisian yang baru.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q008_5">
+<summary>
+  Looks up a localized string similar to Lain-lain tujuan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009">
+<summary>
+  Looks up a localized string similar to Dari manakah anda mendapat pengalaman tentang kemahiran komputer:.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_1">
+<summary>
+  Looks up a localized string similar to Belajar sendiri.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_10">
+<summary>
+  Looks up a localized string similar to ain-lain tempat.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_2">
+<summary>
+  Looks up a localized string similar to Buku-buku / majalah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_3">
+<summary>
+  Looks up a localized string similar to Kelab komputer.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_4">
+<summary>
+  Looks up a localized string similar to Kelas ICT.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_5">
+<summary>
+  Looks up a localized string similar to Kursus.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_6">
+<summary>
+  Looks up a localized string similar to Rakan-rakan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_7">
+<summary>
+  Looks up a localized string similar to Keluarga.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_8">
+<summary>
+  Looks up a localized string similar to Belajar sendiri.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q009_9">
+<summary>
+  Looks up a localized string similar to Media massa.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q010">
+<summary>
+  Looks up a localized string similar to Kenapa anda menggunakan komputer?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q010_1">
+<summary>
+  Looks up a localized string similar to Minat.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q010_2">
+<summary>
+  Looks up a localized string similar to Keperluan pembelajaran.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q010_3">
+<summary>
+  Looks up a localized string similar to Bermain &quot;games&quot;.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q010_4">
+<summary>
+  Looks up a localized string similar to Paksaan Ibu bapa/guru .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q010_5">
+<summary>
+  Looks up a localized string similar to Lain-lain sebab.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q011">
+<summary>
+  Looks up a localized string similar to Adakah anda berminat untuk mempelajari kemahiran komputer jika anda berpeluang?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q011_1">
+<summary>
+  Looks up a localized string similar to Ya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q011_2">
+<summary>
+  Looks up a localized string similar to Tidak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q012">
+<summary>
+  Looks up a localized string similar to Apakah kaedah  pembelajaran yang anda minati?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q012_1">
+<summary>
+  Looks up a localized string similar to Pembelajaran berbantukan  jurulatih .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q012_2">
+<summary>
+  Looks up a localized string similar to Pembelajaran kendiri menggunakan modul bercetak.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q012_3">
+<summary>
+  Looks up a localized string similar to Pembelajaran dalam talian (online).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q013">
+<summary>
+  Looks up a localized string similar to Perisian Microsoft Office.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q013_1">
+<summary>
+  Looks up a localized string similar to Telah dipelajari.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q013_2">
+<summary>
+  Looks up a localized string similar to Ingin dipelajari .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q014">
+<summary>
+  Looks up a localized string similar to Perisian OpenOffice.org.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q015">
+<summary>
+  Looks up a localized string similar to Perisian penyuntingan grafik.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q016">
+<summary>
+  Looks up a localized string similar to Perisian penyuntingan video.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q017">
+<summary>
+  Looks up a localized string similar to Perisian penyuntingan audio.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q018">
+<summary>
+  Looks up a localized string similar to Perisian penyuntingan animasi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q019">
+<summary>
+  Looks up a localized string similar to Perisian  pengarangan multimedia .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q020">
+<summary>
+  Looks up a localized string similar to Bahasa Pengaturcaraan Visual Basic.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q021">
+<summary>
+  Looks up a localized string similar to Bahasa Pengaturcaraan  C.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q022">
+<summary>
+  Looks up a localized string similar to Bahasa Pengaturcaraan  Java.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q023">
+<summary>
+  Looks up a localized string similar to Baik pulih komputer.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q024">
+<summary>
+  Looks up a localized string similar to Pembangunan Laman Web.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q025">
+<summary>
+  Looks up a localized string similar to Pembangunan Permainan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q026">
+<summary>
+  Looks up a localized string similar to Pembangunan Perisian Kursus (perisian pembelajaran).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q027">
+<summary>
+  Looks up a localized string similar to Pembangunan Sistem Maklumat Pengurusan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q028">
+<summary>
+  Looks up a localized string similar to Pencarian Maklumat secara berkesan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q029">
+<summary>
+  Looks up a localized string similar to Facebook.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q030">
+<summary>
+  Looks up a localized string similar to Blog.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q031">
+<summary>
+  Looks up a localized string similar to Wiki.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q032">
+<summary>
+  Looks up a localized string similar to Aplikasi telefon mudahalih.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q033">
+<summary>
+  Looks up a localized string similar to Aplikasi Facebook.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q034">
+<summary>
+  Looks up a localized string similar to Saya menggunakan  bahan-bahan dari laman web  untuk tujuan pembelajaran dengan menyatakan sumber rujukan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q035">
+<summary>
+  Looks up a localized string similar to Saya menyatakan sumber rujukan  bagi bahan-bahan yang diambil dari laman web untuk laporan tugasan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q036">
+<summary>
+  Looks up a localized string similar to Saya mengamalkan salin-tampal (copy-paste) dalam tugasan saya..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q037">
+<summary>
+  Looks up a localized string similar to Saya memuat turun (download) bahan yang dibenarkan daripada Internet..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q038">
+<summary>
+  Looks up a localized string similar to Saya menggunakan bahasa yang sopan semasa berinteraksi menggunakan mel elektronik (e-mail).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q039">
+<summary>
+  Looks up a localized string similar to Saya menggunakan bahasa yang sopan semasa berbual/bersimbang  maya (chatting).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q040">
+<summary>
+  Looks up a localized string similar to Saya menggunakan bahasa yang sopan semasa berinteraksi dalam kumpulan perbincangan elektronik (e-group).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q041">
+<summary>
+  Looks up a localized string similar to Saya menggunakan bahasa yang sopan semasa menggunakan Laman Web Sosial seperti Facebook atau  MySpace.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q042">
+<summary>
+  Looks up a localized string similar to Saya menyebarkan maklumat palsu kepada orang lain..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q043">
+<summary>
+  Looks up a localized string similar to Saya membaca dokumen di dalam komputer peribadi orang lain..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q044">
+<summary>
+  Looks up a localized string similar to Saya membuka kata laluan orang lain..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q045">
+<summary>
+  Looks up a localized string similar to Saya membuka dan menonton video yang berunsur keganasan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q046">
+<summary>
+  Looks up a localized string similar to Saya membuka  video yang berunsur lucah dari laman web..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q047">
+<summary>
+  Looks up a localized string similar to Saya menonton video yang berunsur pendidikan dari laman web..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q048">
+<summary>
+  Looks up a localized string similar to Saya  menyamar sebagai orang lain dalam  Laman Web Sosial.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049">
+<summary>
+  Looks up a localized string similar to Tujuan saya melayari laman web adalah untuk (boleh memilih lebih daripada satu jawapan).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049_1">
+<summary>
+  Looks up a localized string similar to Berbual/simbang elektronik (Chatting).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049_2">
+<summary>
+  Looks up a localized string similar to Bermain dengan permainan dalam talian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049_3">
+<summary>
+  Looks up a localized string similar to Menonton video .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049_4">
+<summary>
+  Looks up a localized string similar to Mencari kawan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049_5">
+<summary>
+  Looks up a localized string similar to Mencari maklumat untuk tugasan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q049_6">
+<summary>
+  Looks up a localized string similar to Mencari maklumat untuk menambah lagi ilmu pengetahuan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.komputer2010.Q050">
+<summary>
+  Looks up a localized string similar to .
+</summary>
+</member>
+<member name="T:PERMATApintar_UKM3.Resources.semak2010">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.AgreeLevel1">
+<summary>
+  Looks up a localized string similar to  1 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.AgreeLevel10">
+<summary>
+  Looks up a localized string similar to  10 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.AgreeLevel2">
+<summary>
+  Looks up a localized string similar to  2 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.AgreeLevel3">
+<summary>
+  Looks up a localized string similar to  3 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.AgreeLevel4">
+<summary>
+  Looks up a localized string similar to  4 .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.btnNext">
+<summary>
+  Looks up a localized string similar to Seterusnya .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.btnUpdate">
+<summary>
+  Looks up a localized string similar to Kemaskini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.lblCatatan">
+<summary>
+  Looks up a localized string similar to Catatan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.lblJawapan">
+<summary>
+  Looks up a localized string similar to Pilihan Penilaian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.lblperasaan">
+<summary>
+  Looks up a localized string similar to Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.lblSoalan">
+<summary>
+  Looks up a localized string similar to Soalan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q001">
+<summary>
+  Looks up a localized string similar to Apabila marah atau cemas, akan berjalan mundar mandir.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q002">
+<summary>
+  Looks up a localized string similar to Banyak bercakap.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q003">
+<summary>
+  Looks up a localized string similar to Berada dalam keadaan bersedia untuk bergerak membuat sesuatu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q004">
+<summary>
+  Looks up a localized string similar to Tingkah laku gemuruh seperti menggigit  atau mengetuk pensel, menggigit kuku, menggoyangkan kaki dan lain-lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q005">
+<summary>
+  Looks up a localized string similar to Apabila rasa seronok -  melompat, bertepuk tangan, bersorak atau tingkah laku dramatik yang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q006">
+<summary>
+  Looks up a localized string similar to Tidak boleh duduk diam.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q007">
+<summary>
+  Looks up a localized string similar to Mengamuk atau bertindak di luar batasan (menumbuk meja, menendang atau menghentak kaki) apabila kecewa/marah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q008">
+<summary>
+  Looks up a localized string similar to Makan banyak terutamanya makanan manis seperti gula-gula, coklat, aiskrim dan lain-lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q009">
+<summary>
+  Looks up a localized string similar to Merungut apabila berlaku perubahan cahaya atau suhu.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q010">
+<summary>
+  Looks up a localized string similar to Amat menghargai sesuatu keindahan yang dilihat dalam gambar, poster atau susunan dalam sesuatu ruang (dalam kelas/makmal).
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q011">
+<summary>
+  Looks up a localized string similar to Amat menyukai atau membenci makanan dan minuman yang dirasai.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q012">
+<summary>
+  Looks up a localized string similar to Merungut apabila keadaan menjadi bising atau ada bunyi yang kuat.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q013">
+<summary>
+  Looks up a localized string similar to Berangan/berimaginasi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q014">
+<summary>
+  Looks up a localized string similar to Menconteng-conteng atau melukis gambar atas kertas apabila rasa bosan atau tertekan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q015">
+<summary>
+  Looks up a localized string similar to Menyatakan idea yang tidak praktikal dan di luar jangkaan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q016">
+<summary>
+  Looks up a localized string similar to Menulis frasa-frasa sajak atau cerita bila ada masa terluang.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q017">
+<summary>
+  Looks up a localized string similar to Minat yang mendalam dalam sains fiksyen atau cerita fantasi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q018">
+<summary>
+  Looks up a localized string similar to Minat yang tinggi dalam mencari penyelesaian terhadap sesuatu masalah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q019">
+<summary>
+  Looks up a localized string similar to Boleh memahami hampir semua non verbal cues atau implikasi sesuatu perkara, sedangkan pelajar lain perlukan penerangan lanjut.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q020">
+<summary>
+  Looks up a localized string similar to Bertanya dengan menggunakan soalan terbuka yang mencabar.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q021">
+<summary>
+  Looks up a localized string similar to Rasa ingin tahu yang tinggi dan bertanya banyak soalan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q022">
+<summary>
+  Looks up a localized string similar to Menjadi begitu taksub dalam sesuatu tajuk sehingga tidak mahu menukar ke tajuk lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q023">
+<summary>
+  Looks up a localized string similar to Sangat terpesona dengan sesuatu tajuk sehinggakan mendorong untuk mengetahui dengan lebih mendalam lagi..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q024">
+<summary>
+  Looks up a localized string similar to Menentang pendapat atau pandangan  orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q025">
+<summary>
+  Looks up a localized string similar to Menguasai atau memonopoli perbincangan atau aktiviti.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q026">
+<summary>
+  Looks up a localized string similar to Perasaan bimbang terhadap sesuatu perkara.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q027">
+<summary>
+  Looks up a localized string similar to Sukar melakukan sesuatu tugasan atau aktiviti apabila rasa beremosi/tertekan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q028">
+<summary>
+  Looks up a localized string similar to Menunjukkan rasa empati terhadap orang lain atau bersimpati dengan penuh keikhlasan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q029">
+<summary>
+  Looks up a localized string similar to Perubahan mood yang mendadak .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q030">
+<summary>
+  Looks up a localized string similar to Menerima kritikan dengan penuh emosi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q031">
+<summary>
+  Looks up a localized string similar to Sangat teliti dalam sesuatu yang berkaitan antara betul dan salah, adil dan tidak adil.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q032">
+<summary>
+  Looks up a localized string similar to Berlagak atau menunjuk-nunjuk kelebihan yang dimilikinya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.semak2010.Q033">
+<summary>
+  Looks up a localized string similar to Memberontak apabila tidak puashati.
+</summary>
+</member>
+<member name="T:PERMATApintar_UKM3.Resources.spiritual2010">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.AgreeLevel1">
+<summary>
+  Looks up a localized string similar to  Sangat jarang .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.AgreeLevel2">
+<summary>
+  Looks up a localized string similar to  Jarang .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.AgreeLevel3">
+<summary>
+  Looks up a localized string similar to  Selalu .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.AgreeLevel4">
+<summary>
+  Looks up a localized string similar to  Sangat Selalu .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.btnNext">
+<summary>
+  Looks up a localized string similar to Seterusnya .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.btnUpdate">
+<summary>
+  Looks up a localized string similar to Kemaskini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.lblJawapan">
+<summary>
+  Looks up a localized string similar to Pilihan Penilaian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.lblperasaan">
+<summary>
+  Looks up a localized string similar to Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.lblSoalan">
+<summary>
+  Looks up a localized string similar to Soalan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q001">
+<summary>
+  Looks up a localized string similar to Saya percaya Allah itu :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q001_1">
+<summary>
+  Looks up a localized string similar to Wujud dan berpengaruh dalam hidup saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q001_2">
+<summary>
+  Looks up a localized string similar to Wujud tetapi tidak mempengaruhi hidup saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q001_3">
+<summary>
+  Looks up a localized string similar to Hanya khayalan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q001_4">
+<summary>
+  Looks up a localized string similar to Tidak wujud sama sekali.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q002">
+<summary>
+  Looks up a localized string similar to Bagi saya, keyakinan kepada Allah itu bermaksud :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q002_1">
+<summary>
+  Looks up a localized string similar to Keyakinan kepada Tuhan yang lebih hebat manusia.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q002_2">
+<summary>
+  Looks up a localized string similar to Keyakinan terhadap ajaran Ulama.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q002_3">
+<summary>
+  Looks up a localized string similar to Keyakinan diri sendiri terhadap Tuhan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q002_4">
+<summary>
+  Looks up a localized string similar to Keyakinan yang dipegang oleh ibu-bapa saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q003">
+<summary>
+  Looks up a localized string similar to Saya berkeyakinan bahawa :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q003_1">
+<summary>
+  Looks up a localized string similar to Kitab Suci al-Quran tidak wujud.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q003_2">
+<summary>
+  Looks up a localized string similar to Kitab Suci al-Quran hanyalah cerita dongeng semata-mata.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q003_3">
+<summary>
+  Looks up a localized string similar to Kitab Suci al-Quran sangat memberi inspirasi dalam kehidupan saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q003_4">
+<summary>
+  Looks up a localized string similar to Kitab Suci al-Quran ditulis oleh manusia.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q004">
+<summary>
+  Looks up a localized string similar to Keyakinan kepada Allah sangat penting bagi saya kerana :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q004_1">
+<summary>
+  Looks up a localized string similar to Ia membantu saya ketika saya dukacita dan susah hati.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q004_2">
+<summary>
+  Looks up a localized string similar to Ia menjadikan dunia ini lebih selamat.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q004_3">
+<summary>
+  Looks up a localized string similar to Ia tidak mungkin membantu apa-apa.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q004_4">
+<summary>
+  Looks up a localized string similar to Allah lebih sayang kepada saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q005">
+<summary>
+  Looks up a localized string similar to Saya percaya alam dan makhluk semua adalah :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q005_1">
+<summary>
+  Looks up a localized string similar to Ciptaan Allah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q005_2">
+<summary>
+  Looks up a localized string similar to Terjadi secara semulajadi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q005_3">
+<summary>
+  Looks up a localized string similar to Ciptaan kuasa luarbiasa.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q005_4">
+<summary>
+  Looks up a localized string similar to Ciptaan makhluk asing.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q006">
+<summary>
+  Looks up a localized string similar to Adakah anda seorang yang bersembahyang penuh khusyuk ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q007">
+<summary>
+  Looks up a localized string similar to Adakah anda seorang yang sentiasa beristighfar meminta ampun kepada Allah ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q008">
+<summary>
+  Looks up a localized string similar to Adakah anda redha dengan Allah keatas setiap ujian-Nya ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q009">
+<summary>
+  Looks up a localized string similar to Adakah anda sentiasa mengingati mati dan bersiap sedia untuk menghadapinya ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q010">
+<summary>
+  Looks up a localized string similar to Adakah anda sentiasa berselawat kepada junjugan besar Rasulullah s.a.w ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q011">
+<summary>
+  Looks up a localized string similar to Adakah anda sentiasa menjauhi setiap perbuatan haram ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q012">
+<summary>
+  Looks up a localized string similar to Adakah anda sering menangis bila mengenang dosa ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q013">
+<summary>
+  Looks up a localized string similar to Adakah anda sering bersangka baik kepada kawan ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q014">
+<summary>
+  Looks up a localized string similar to Adakah anda sering bersyukur kepada Allah diatas nikmat-nikmat yang diberi ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q015">
+<summary>
+  Looks up a localized string similar to Adakah anda bangun di waktu malam untuk bermunajat kepada Allah ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q016">
+<summary>
+  Looks up a localized string similar to Adakah anda seorang yang sering munkiri janji ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q017">
+<summary>
+  Looks up a localized string similar to Adakah anda seorang yang suka berbohong ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q018">
+<summary>
+  Looks up a localized string similar to Adakah anda berupaya menahan nafsu marah ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q019">
+<summary>
+  Looks up a localized string similar to Adakah anda melakukan sembahyang fardhu lima kali setiap hari ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q020">
+<summary>
+  Looks up a localized string similar to Adakah anda seorang yang membaca Al quran setiap hari ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q021">
+<summary>
+  Looks up a localized string similar to Adakah anda sering bertaubat atas dosa-dosa yang lampau ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q022">
+<summary>
+  Looks up a localized string similar to Adakah anda sembahyang berjemaah setiap hari ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q023">
+<summary>
+  Looks up a localized string similar to Adakah anda memikirkan tentang syurga dan neraka ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q024">
+<summary>
+  Looks up a localized string similar to Adakah anda sentiasa menyakiti hati orang lain ?.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual2010.Q025">
+<summary>
+  Looks up a localized string similar to Adakah anda seorang yang gelisah apabila berbuat dosa ?.
+</summary>
+</member>
+<member name="T:PERMATApintar_UKM3.Resources.spiritual_others2010">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.AgreeLevel1">
+<summary>
+  Looks up a localized string similar to  Sangat jarang .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.AgreeLevel2">
+<summary>
+  Looks up a localized string similar to  Jarang .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.AgreeLevel3">
+<summary>
+  Looks up a localized string similar to  Selalu .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.AgreeLevel4">
+<summary>
+  Looks up a localized string similar to  Sangat Selalu .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.btnNext">
+<summary>
+  Looks up a localized string similar to Seterusnya .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.btnUpdate">
+<summary>
+  Looks up a localized string similar to Kemaskini .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.lblJawapan">
+<summary>
+  Looks up a localized string similar to Pilihan Penilaian.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.lblperasaan">
+<summary>
+  Looks up a localized string similar to Sila nyatakan perasaan anda berdasarkan gambar yang dipaparkan..
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.lblSoalan">
+<summary>
+  Looks up a localized string similar to Soalan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q001">
+<summary>
+  Looks up a localized string similar to Saya percaya Tuhan itu :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q001_1">
+<summary>
+  Looks up a localized string similar to Wujud dan berpengaruh dalam hidup saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q001_2">
+<summary>
+  Looks up a localized string similar to Wujud tetapi tidak mempengaruhi hidup saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q001_3">
+<summary>
+  Looks up a localized string similar to Hanya khayalan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q001_4">
+<summary>
+  Looks up a localized string similar to Tidak wujud sama sekali.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q002">
+<summary>
+  Looks up a localized string similar to Bagi saya, keyakinan kepada Tuhan itu bermaksud :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q002_1">
+<summary>
+  Looks up a localized string similar to Keyakinan kepada Tuhan yang lebih hebat manusia.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q002_2">
+<summary>
+  Looks up a localized string similar to Keyakinan terhadap ajaran ketua agama seperti sami dan paderi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q002_3">
+<summary>
+  Looks up a localized string similar to Keyakinan diri sendiri terhadap Tuhan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q002_4">
+<summary>
+  Looks up a localized string similar to Keyakinan yang dipegang oleh ibu-bapa saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q003">
+<summary>
+  Looks up a localized string similar to Saya berkeyakinan bahawa :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q003_1">
+<summary>
+  Looks up a localized string similar to Kitab Suci tidak wujud.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q003_2">
+<summary>
+  Looks up a localized string similar to Kitab Suci hanyalah cerita dongeng semata-mata.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q003_3">
+<summary>
+  Looks up a localized string similar to Kitab Suci sangat memberi inspirasi dalam kehidupan saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q003_4">
+<summary>
+  Looks up a localized string similar to Kitab Suci ditulis oleh manusia.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q004">
+<summary>
+  Looks up a localized string similar to Keyakinan kepada Tuhan sangat penting bagi saya kerana :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q004_1">
+<summary>
+  Looks up a localized string similar to Ia membantu saya ketika saya dukacita dan susah hati.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q004_2">
+<summary>
+  Looks up a localized string similar to Ia menjadikan dunia ini lebih selamat.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q004_3">
+<summary>
+  Looks up a localized string similar to Ia tidak mungkin membantu apa-apa.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q004_4">
+<summary>
+  Looks up a localized string similar to Tuhan lebih sayang kepada saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q005">
+<summary>
+  Looks up a localized string similar to Saya percaya alam dan makhluk semua adalah :.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q005_1">
+<summary>
+  Looks up a localized string similar to Ciptaan Tuhan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q005_2">
+<summary>
+  Looks up a localized string similar to Terjadi secara semulajadi.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q005_3">
+<summary>
+  Looks up a localized string similar to Ciptaan kuasa luarbiasa.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q005_4">
+<summary>
+  Looks up a localized string similar to Ciptaan makhluk asing.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q006">
+<summary>
+  Looks up a localized string similar to Saya selalu pergi ke rumah ibadat  untuk sembahyang.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q007">
+<summary>
+  Looks up a localized string similar to Saya bersembahyang setiap hari.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q008">
+<summary>
+  Looks up a localized string similar to Saya memberi derma kepada yang memerlukan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q009">
+<summary>
+  Looks up a localized string similar to Saya selalu membuat dosa dan kesalahan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q010">
+<summary>
+  Looks up a localized string similar to Saya selalu meminta ampun kepada Tuhan setiap kali melakukan kesalahan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q011">
+<summary>
+  Looks up a localized string similar to Saya selalu membuat kebajikan kerana Tuhan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q012">
+<summary>
+  Looks up a localized string similar to Saya sering bersangka baik kepada kawan .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q013">
+<summary>
+  Looks up a localized string similar to Saya bersyukur kepada Tuhan di atas nikmat-nikmat yang diberi .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q014">
+<summary>
+  Looks up a localized string similar to Saya sering memunkiri janji.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q015">
+<summary>
+  Looks up a localized string similar to Saya sering berbohong.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q016">
+<summary>
+  Looks up a localized string similar to Saya berupaya menahan nafsu marah.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q017">
+<summary>
+  Looks up a localized string similar to Saya membaca Kitab Suci setiap hari.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q018">
+<summary>
+  Looks up a localized string similar to Saya sering meminta ampun atas kesalahan yang lampau .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q019">
+<summary>
+  Looks up a localized string similar to Saya suka menolong rakan yang susah tanpa mengira agama.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q020">
+<summary>
+  Looks up a localized string similar to Adakah anda memikirkan pembalasan Tuhan terhadap kesalahan saya .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q021">
+<summary>
+  Looks up a localized string similar to Saya sentiasa menyakiti hati orang lain.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q022">
+<summary>
+  Looks up a localized string similar to Saya sering berbincang hal berkaitan agama dengan rakan-rakan.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q023">
+<summary>
+  Looks up a localized string similar to Saya sering berdoa agar Tuhan membantu saya.
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q024">
+<summary>
+  Looks up a localized string similar to Saya disenangi oleh ramai orang .
+</summary>
+</member>
+<member name="P:PERMATApintar_UKM3.Resources.spiritual_others2010.Q025">
+<summary>
+  Looks up a localized string similar to Saya selalu berbuat baik kepada kedua ibu –bapa.
+</summary>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._calToday">
+<summary>
+calToday control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._btnRefresh">
+<summary>
+btnRefresh control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._lblSelectedDate">
+<summary>
+lblSelectedDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._lblMsgTop">
+<summary>
+lblMsgTop control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._lblTotal">
+<summary>
+lblTotal control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.activity_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._ddlClassCode">
+<summary>
+ddlClassCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_alumniid_update._lblMsgFunc">
+<summary>
+lblMsgFunc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._selStatusTawaran">
+<summary>
+selStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.studentprofile_ukm3_nopelajar_update._lblMsgFunc">
+<summary>
+lblMsgFunc control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm2_ppcs_login_control._txtemailid">
+<summary>
+txtemailid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm2_ppcs_login_control._txtpwd">
+<summary>
+txtpwd control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm2_ppcs_login_control._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm2_ppcs_login_control._btnLogin">
+<summary>
+btnLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm2_ppcs_login_control._btnCancel">
+<summary>
+btnCancel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._selStatusTawaran">
+<summary>
+selStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._btnTransfer">
+<summary>
+btnTransfer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._btnUpdate">
+<summary>
+btnUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_mark_update._lblIsTransfered">
+<summary>
+lblIsTransfered control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._selStatusTawaran">
+<summary>
+selStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selStatusTawaran">
+<summary>
+selStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selOrderBy">
+<summary>
+selOrderBy control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selProgramUpdate">
+<summary>
+selProgramUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._selDisplayStatusUKM3">
+<summary>
+selDisplayStatusUKM3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._btnLayak">
+<summary>
+btnLayak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._btnTidakLayak">
+<summary>
+btnTidakLayak control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_update._lblDebug">
+<summary>
+lblDebug control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._ddlExamYear">
+<summary>
+ddlExamYear control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._ddlSchoolState">
+<summary>
+ddlSchoolState control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._selStatusTawaran">
+<summary>
+selStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._txtSchoolCode">
+<summary>
+txtSchoolCode control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._txtSchoolname">
+<summary>
+txtSchoolname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_ppmt_year_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._ddlPPCSDate">
+<summary>
+ddlPPCSDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._selProgram">
+<summary>
+selProgram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._selStudentGender">
+<summary>
+selStudentGender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._ddlDOB_Year">
+<summary>
+ddlDOB_Year control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._selLayakPPMT">
+<summary>
+selLayakPPMT control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._selStatusTawaran">
+<summary>
+selStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._txtMYKAD">
+<summary>
+txtMYKAD control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._txtStudentFullname">
+<summary>
+txtStudentFullname control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._btnLoad">
+<summary>
+btnLoad control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._datRespondent">
+<summary>
+datRespondent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._btnExport">
+<summary>
+btnExport control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._selStatusTawaranUpdate">
+<summary>
+selStatusTawaranUpdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._txtStatusReason">
+<summary>
+txtStatusReason control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._btnUpdateStatusTawaran">
+<summary>
+btnUpdateStatusTawaran control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._divMsg">
+<summary>
+divMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.ukm3_statustawaran_list._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3._default._Head1">
+<summary>
+Head1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3._default._head">
+<summary>
+head control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3._default._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3._default._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3._default._lblFooterMsg">
+<summary>
+lblFooterMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_01._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_02._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo11">
+<summary>
+lblNo11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ011">
+<summary>
+lblQ011 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q11">
+<summary>
+Q11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblNo12">
+<summary>
+lblNo12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblQ012">
+<summary>
+lblQ012 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._Q12">
+<summary>
+Q12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_03._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo11">
+<summary>
+lblNo11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ011">
+<summary>
+lblQ011 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q11">
+<summary>
+Q11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo12">
+<summary>
+lblNo12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ012">
+<summary>
+lblQ012 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q12">
+<summary>
+Q12 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo13">
+<summary>
+lblNo13 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ013">
+<summary>
+lblQ013 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q13">
+<summary>
+Q13 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo14">
+<summary>
+lblNo14 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ014">
+<summary>
+lblQ014 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q14">
+<summary>
+Q14 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo15">
+<summary>
+lblNo15 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ015">
+<summary>
+lblQ015 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q15">
+<summary>
+Q15 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblNo16">
+<summary>
+lblNo16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblQ016">
+<summary>
+lblQ016 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._Q16">
+<summary>
+Q16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.semak_view_04._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_01._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_02._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_muslim_03._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_01._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_02._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblSoalan">
+<summary>
+lblSoalan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblJawapan">
+<summary>
+lblJawapan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo01">
+<summary>
+lblNo01 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ001">
+<summary>
+lblQ001 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q1">
+<summary>
+Q1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo02">
+<summary>
+lblNo02 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ002">
+<summary>
+lblQ002 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q2">
+<summary>
+Q2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo03">
+<summary>
+lblNo03 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ003">
+<summary>
+lblQ003 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q3">
+<summary>
+Q3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo04">
+<summary>
+lblNo04 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ004">
+<summary>
+lblQ004 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q4">
+<summary>
+Q4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo05">
+<summary>
+lblNo05 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ005">
+<summary>
+lblQ005 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q5">
+<summary>
+Q5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo06">
+<summary>
+lblNo06 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ006">
+<summary>
+lblQ006 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q6">
+<summary>
+Q6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo07">
+<summary>
+lblNo07 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ007">
+<summary>
+lblQ007 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q7">
+<summary>
+Q7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo08">
+<summary>
+lblNo08 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ008">
+<summary>
+lblQ008 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q8">
+<summary>
+Q8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo09">
+<summary>
+lblNo09 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ009">
+<summary>
+lblQ009 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q9">
+<summary>
+Q9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblNo10">
+<summary>
+lblNo10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblQ010">
+<summary>
+lblQ010 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._Q10">
+<summary>
+Q10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:PERMATApintar_UKM3.spiritual_others_03._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

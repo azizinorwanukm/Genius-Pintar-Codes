@@ -1,0 +1,1263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+    <!--
+      Microsoft ResX Schema
+
+      Version 2.0
+
+      The primary goals of this format is to allow a simple XML format
+      that is mostly human readable. The generation and parsing of the
+      various data types are done through the TypeConverter classes
+      associated with the data types.
+
+      Example:
+
+      ... ado.net/XML headers & schema ...
+      <resheader name="resmimetype">text/microsoft-resx</resheader>
+      <resheader name="version">2.0</resheader>
+      <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+      <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+      <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+      <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+      <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+          <value>[base64 mime encoded serialized .NET Framework object]</value>
+      </data>
+      <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+          <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+          <comment>This is a comment</comment>
+      </data>
+
+      There are any number of "resheader" rows that contain simple
+      name/value pairs.
+
+      Each data row contains a name, and value. The row also contains a
+      type or mimetype. Type corresponds to a .NET class that support
+      text/value conversion through the TypeConverter architecture.
+      Classes that don't support this are serialized and stored with the
+      mimetype set.
+
+      The mimetype is used for serialized objects, and tells the
+      ResXResourceReader how to depersist the object. This is currently not
+      extensible. For a given mimetype the value must be set accordingly:
+
+      Note - application/x-microsoft.net.object.binary.base64 is the format
+      that the ResXResourceWriter will generate, however the reader can
+      read any of the formats listed below.
+
+      mimetype: application/x-microsoft.net.object.binary.base64
+      value   : The object must be serialized with
+              : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+              : and then encoded with base64 encoding.
+
+      mimetype: application/x-microsoft.net.object.soap.base64
+      value   : The object must be serialized with
+              : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+              : and then encoded with base64 encoding.
+
+      mimetype: application/x-microsoft.net.object.bytearray.base64
+      value   : The object must be serialized into a byte array
+              : using a System.ComponentModel.TypeConverter
+              : and then encoded with base64 encoding.
+      -->
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+        <xsd:element name="root" msdata:isdataset="true">
+            <xsd:complextype>
+                <xsd:choice maxoccurs="unbounded">
+                    <xsd:element name="metadata">
+                        <xsd:complextype>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minoccurs="0" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" use="required" type="xsd:string" />
+                            <xsd:attribute name="type" type="xsd:string" />
+                            <xsd:attribute name="mimetype" type="xsd:string" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complextype>
+                    </xsd:element>
+                    <xsd:element name="assembly">
+                        <xsd:complextype>
+                            <xsd:attribute name="alias" type="xsd:string" />
+                            <xsd:attribute name="name" type="xsd:string" />
+                        </xsd:complextype>
+                    </xsd:element>
+                    <xsd:element name="data">
+                        <xsd:complextype>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minoccurs="0" msdata:ordinal="1" />
+                                <xsd:element name="comment" type="xsd:string" minoccurs="0" msdata:ordinal="2" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" msdata:ordinal="1" />
+                            <xsd:attribute name="type" type="xsd:string" msdata:ordinal="3" />
+                            <xsd:attribute name="mimetype" type="xsd:string" msdata:ordinal="4" />
+                            <xsd:attribute ref="xml:space" />
+                        </xsd:complextype>
+                    </xsd:element>
+                    <xsd:element name="resheader">
+                        <xsd:complextype>
+                            <xsd:sequence>
+                                <xsd:element name="value" type="xsd:string" minoccurs="0" msdata:ordinal="1" />
+                            </xsd:sequence>
+                            <xsd:attribute name="name" type="xsd:string" use="required" />
+                        </xsd:complextype>
+                    </xsd:element>
+                </xsd:choice>
+            </xsd:complextype>
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+
+    <data name="lbllogin_id" xml:space="preserve">
+    <value>TEL#:</value>
+    </data>
+    <data name="default_01" xml:space="preserve">
+    <value>LOGIN DI SINI</value>
+    </data>
+    <data name="default_02" xml:space="preserve">
+    <value>Nota: Sila pilih bahasa yang anda ingin gunakan untuk menjawab ujian ini. Anda TIDAK dibenarkan menukar bahasa setelah membuat pilihan. Pilihan Bahasa:</value>
+    </data>
+    <data name="default_03" xml:space="preserve">
+    <value>Sila masukkan TEL# dan tekan [Login >>].</value>
+    </data>
+    <data name="default_04" xml:space="preserve">
+    <value>Pilih bahasa pilihan:</value>
+    </data>
+    <data name="default_05" xml:space="preserve">
+    <value>Jumlah keseluruhan modul ialah 15. Anda dikehendaki menjawab dalam masa 3 jam (180 minit). Jika ada sebarang masalah, masa tambahan akan diberi oleh Pengawas Bertugas.</value>
+    </data>
+    <data name="default_06" xml:space="preserve">
+    <value>Sila jawab menggunakan bahasa pilihan untuk modul di bawah:</value>
+    </data>
+    <data name="default_07" xml:space="preserve">
+    <value>02. PERSAMAAN</value>
+  </data>
+    <data name="default_08" xml:space="preserve">
+    <value>06. PERBENDAHARAAN KATA</value>
+  </data>
+    <data name="09. KOMPREHENSIF" xml:space="preserve">
+    <value></value>
+  </data>
+    <data name="default_10" xml:space="preserve">
+    <value>13. MAKLUMAT</value>
+  </data>
+    <data name="default_11" xml:space="preserve">
+    <value>14. ARITMATIK</value>
+  </data>
+    <data name="default_12" xml:space="preserve">
+    <value>15. PENA'AKULAN PERKATAAN</value>
+  </data>
+    <data name="default_13" xml:space="preserve">
+    <value>Keperluan sistem:</value>
+  </data>
+    <data name="default_14" xml:space="preserve">
+    <value>Gunakan hanya MS Internet Explorer.</value>
+  </data>
+    <data name="default_15" xml:space="preserve">
+    <value>MS Internet Explorer 9. Muat turun di sini.</value>
+  </data>
+    <data name="default_16" xml:space="preserve">
+    <value>Menguji kelajuan server. Klik di sini.</value>
+  </data>
+    <data name="default_17" xml:space="preserve">
+    <value>Menguji kepantasan talian. Klik di sini.</value>
+  </data>
+    <data name="default_drag" xml:space="preserve"> 
+    <value>Menguji tarik dan lepas. Klik di sini.</value>
+  </data>
+    <data name="Perhatian" xml:space="preserve">
+    <value>Perhatian!</value>
+  </data>
+    <data name="Cubalagi" xml:space="preserve">
+    <value>USERID atau PASSWORD tidak sah! Sila cuba sekali lagi.!</value>
+  </data>
+    <data name="Examtime" xml:space="preserve">
+    <value>Ujian hanya boleh dijalankan sebelum 7 malam!</value>
+  </data>
+    <data name="Examday" xml:space="preserve">
+    <value>Anda tidak dibenarkan menduduki ujian ini pada hari yang lain dari yang telah ditetapkan. Hubungi ketua pengawas.</value>
+  </data>
+    <data name="Mandatory" xml:space="preserve">
+    <value>Anda dikehendaki menjawab soalan ini. Jika tidak tahu jawapannya sila tekan [Langkau Modul]</value>
+  </data>
+
+
+
+    <data name="ukm2_default_01" xml:space="preserve">
+    <value>Araken I-PROFILE adalah ujian saringan secara atas talian. Ujian saringan ini mempunyai 15
+        bahagian yang menguji pelbagai aspek kepintaran kognisi termasuk aspek perbendaharaan
+        kata, pencarian symbol, pengulangan nombor, pemadanan pola atau bentuk, pemahaman
+        dan koding. Ia dibina dalam talian dan boleh dicapai dari laman web http://esaringan.arakenonline.biz&lt;br /&gt;&lt;br /&gt;
+        &lt;br /&gt;
+        Hasil ujian saringan ini akan dipaparkan mengikut kategori berikut:&lt;br /&gt;
+        (a) Indeks Pemahaman Lisan&lt;br /&gt;
+        (b) Indeks Penaakulan Persepsi&lt;br /&gt;
+        (c) Indeks Daya Ingatan Bekerja&lt;br /&gt;
+        (d) Indeks Kelajuan Memproses Maklumat.
+      </value>
+  </data>
+    <data name="ukm2_default_02" xml:space="preserve">
+    <value>:: PROFIL ANDA ::</value>
+  </data>
+    <data name="ukm2_default_03" xml:space="preserve">
+    <value>MYKAD/Surat Beranak</value>
+  </data>
+    <data name="ukm2_default_04" xml:space="preserve">
+    <value>Nama Anda</value>
+  </data>
+    <data name="ukm2_default_05" xml:space="preserve">
+    <value>Darjah/Tingkatan</value>
+  </data>
+    <data name="ukm2_default_06" xml:space="preserve">
+    <value>Nama Sekolah</value>
+  </data>
+    <data name="ukm2_default_07" xml:space="preserve">
+    <value>Bandar</value>
+  </data>
+    <data name="ukm2_default_08" xml:space="preserve">
+    <value>Negeri</value>
+  </data>
+    <data name="ukm2_default_09" xml:space="preserve">
+    <value>Negara</value>
+  </data>
+    <data name="ukm2_default_11" xml:space="preserve">
+    <value>Bahasa Pilihan</value>
+  </data>
+
+    <data name="btnNext" xml:space="preserve">
+    <value>Seterusnya</value>
+  </data>
+    <data name="btnStart" xml:space="preserve">
+    <value>Mula</value>
+  </data>
+    <data name="btnSkip" xml:space="preserve">
+    <value>Langkau Modul</value>
+  </data>
+
+    <data name="ukm2_testend" xml:space="preserve">
+    <value>Tamatkan Ujian</value>
+  </data>
+
+
+    <data name="lbl01_instruction_sample" xml:space="preserve">
+    <value>
+    Anda dikehendaki menyusun bentuk yang disediakan untuk membentuk rajah yang dipamerkan di bawah. &lt;b&gt;KLIK dan HERET&lt;/b&gt; bentuk pilihan ke ruangan yang disediakan. Ini adalah contoh dan latihan semata-mata, tiada permarkahan diberi.
+    </value>
+  </data>
+    <data name="lbl01_instruction" xml:space="preserve">
+    <value>
+    Anda dikehendaki menyusun bentuk yang disediakan untuk membentuk rajah yang dipamerkan di bawah. &lt;b&gt;KLIK dan HERET&lt;/b&gt; bentuk pilihan ke ruangan yang disediakan. 
+    </value>
+  </data>
+
+    <data name="ukm2_0100_01" xml:space="preserve">
+    <value>01. MENYUSUN BLOK</value>
+  </data>
+    <data name="lblSample" xml:space="preserve">
+    <value>[Ini adalah contoh, tiada permarkahan diberi]</value>
+  </data>
+
+
+    <data name="ukm2_0100_02" xml:space="preserve">
+    <value>Heret bentuk yang disediakan ke ruangan ini.&lt;br /&gt;Klik sekali lagi diruangan ini untuk menukar pilihan. </value>
+  </data>
+    <data name="ukm2_0100_03" xml:space="preserve">
+    <value>Lihat gambarajah ini.&lt;br /&gt;Ini adalah gambarajah yang perlu dibina. </value>
+  </data>
+    <data name="ukm2_0100_04" xml:space="preserve">
+    <value>
+      Bentuk yang disediakan.&lt;br /&gt;Sila klik dan heret bentuk yang disediakan ke atas.&lt;br /&gt;Klik sekali lagi pada ruangan pilihan untuk melepaskannya.
+    </value>
+  </data>
+    <data name="ukm2_0100_05" xml:space="preserve">
+    <value>Tekan [Mula &gt;&gt;] jika anda sudah bersedia. </value>
+  </data>
+
+
+    <data name="ukm2_0200_header" xml:space="preserve">
+    <value>02. PERSAMAAN</value>
+  </data>
+    <data name="lbl02_instruction" xml:space="preserve">
+    <value>Sila teliti padanan item di bawah dan TAIPKAN PERSAMAANNYA di dalam ruangan yang disediakan.</value>
+  </data>
+
+    <data name="txt02_00" xml:space="preserve">
+    <value>warna primer, warna lampu trafik, cahaya lampu trafik, bendera Selangor</value>
+  </data>
+    <data name="ukm2_0200_01" xml:space="preserve">
+    <value>Contoh jawapan untuk soalan di atas.&lt;br /&gt;
+    (warna primer, warna lampu trafik, cahaya lampu trafik, bendera Selangor)
+    </value>
+  </data>
+    <data name="ukm2_0200_02" xml:space="preserve">
+    <value>Tekan [Mula ] jika anda sudah bersedia. </value>
+  </data>
+
+    <data name="lbl02_00" xml:space="preserve">
+    <value>MERAH - KUNING</value>
+  </data>
+    <data name="lbl02_01" xml:space="preserve">
+    <value>MERAH - KUNING</value>
+  </data>
+    <data name="lbl02_02" xml:space="preserve">
+    <value>NASI - ROTI</value>
+  </data>
+    <data name="lbl02_03" xml:space="preserve">
+    <value>BAJU - SELUAR</value>
+  </data>
+    <data name="lbl02_04" xml:space="preserve">
+    <value>DURIAN - RAMBUTAN</value>
+  </data>
+    <data name="lbl02_05" xml:space="preserve">
+    <value>KATAK - ULAR</value>
+  </data>
+    <data name="lbl02_06" xml:space="preserve">
+    <value>NYAMUK - LALAT</value>
+  </data>
+    <data name="lbl02_07" xml:space="preserve">
+    <value>PERIUK - KUALI</value>
+  </data>
+    <data name="lbl02_08" xml:space="preserve">
+    <value>SAYANG - BENCI</value>
+  </data>
+    <data name="lbl02_09" xml:space="preserve">
+    <value>LIDAH - BIBIR</value>
+  </data>
+    <data name="lbl02_10" xml:space="preserve">
+    <value>EMAS - PERAK</value>
+  </data>
+    <data name="lbl02_11" xml:space="preserve">
+    <value>BERENANG - BERLARI</value>
+  </data>
+    <data name="lbl02_12" xml:space="preserve">
+    <value>LENTUK - TUNDUK</value>
+  </data>
+    <data name="lbl02_13" xml:space="preserve">
+    <value>HIDROGEN - OKSIGEN</value>
+  </data>
+    <data name="lbl02_14" xml:space="preserve">
+    <value>PENYANYI - PELAKON</value>
+  </data>
+    <data name="lbl02_15" xml:space="preserve">
+    <value>TSUNAMI - GEMPA</value>
+  </data>
+    <data name="lbl02_16" xml:space="preserve">
+    <value>PUNCAK - JURANG</value>
+  </data>
+    <data name="lbl02_17" xml:space="preserve">
+    <value>JOHAN - COROT</value>
+  </data>
+    <data name="lbl02_18" xml:space="preserve">
+    <value>BERSYUKUR - SOMBONG</value>
+  </data>
+    <data name="lbl02_19" xml:space="preserve">
+    <value>TAYAR - PEMADAM</value>
+  </data>
+    <data name="lbl02_20" xml:space="preserve">
+    <value>SEMPADAN - BATASAN</value>
+  </data>
+    <data name="lbl02_21" xml:space="preserve">
+    <value>GULA - MADU</value>
+  </data>
+    <data name="lbl02_22" xml:space="preserve">
+    <value>FANA - ABADI</value>
+  </data>
+    <data name="lbl02_23" xml:space="preserve">
+    <value>LAPANG - PADAT</value>
+  </data>
+
+
+    <data name="ukm2_0300_header" xml:space="preserve">
+    <value>03. TEMPOH MENYUSUN DIGIT</value>
+  </data>
+    <data name="lbl03_instruction_sample" xml:space="preserve">
+    <value>Sila beri perhatian pada skrin anda. Lihat nombor yang dipaparkan dan TAIPKAN NOMBOR ITU SEMULA MENGIKUT URUTAN seperti yang dipaparkan dari hadapan ke belakang pada ruangan yang disediakan. </value>
+  </data>
+    <data name="lbl03_instruction" xml:space="preserve">
+    <value>Sila beri perhatian pada skrin anda. Lihat nombor yang dipaparkan dan TAIPKAN NOMBOR ITU SEMULA MENGIKUT URUTAN seperti yang dipaparkan dari hadapan ke belakang pada ruangan yang disediakan.</value>
+  </data>
+    <data name="ukm2_0300_01" xml:space="preserve">
+    <value>1. Tekan butang [Mula ] untuk mula menjawab.</value>
+  </data>
+    <data name="ukm2_0300_02" xml:space="preserve">
+    <value>2. Taipkan apa yang dipaparkan di sini. (Jawapan kepada soalan ini ialah 364)</value>
+  </data>
+    <data name="ukm2_0300_03" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+    <data name="Q38" xml:space="preserve">
+    <value>3 6</value>
+  </data>
+    <data name="Q39" xml:space="preserve">
+    <value>6 8</value>
+  </data>
+    <data name="Q40" xml:space="preserve">
+    <value>1 6 4</value>
+  </data>
+    <data name="Q41" xml:space="preserve">
+    <value>8 3 6</value>
+  </data>
+    <data name="Q42" xml:space="preserve">
+    <value>5 6 3 9</value>
+  </data>
+    <data name="Q43" xml:space="preserve">
+    <value>4 3 7 9</value>
+  </data>
+    <data name="Q44" xml:space="preserve">
+    <value>6 2 4 5 7</value>
+  </data>
+    <data name="Q45" xml:space="preserve">
+    <value>7 4 3 6 4</value>
+  </data>
+    <data name="Q46" xml:space="preserve">
+    <value>1 4 7 3 5 2</value>
+  </data>
+    <data name="Q47" xml:space="preserve">
+    <value>5 7 4 2 6 1</value>
+  </data>
+    <data name="Q48" xml:space="preserve">
+    <value>7 3 9 6 4 5 6</value>
+  </data>
+    <data name="Q49" xml:space="preserve">
+    <value>7 6 3 4 5 8 1</value>
+  </data>
+    <data name="Q50" xml:space="preserve">
+    <value>3 6 2 7 1 5 8 9</value>
+  </data>
+    <data name="Q51" xml:space="preserve">
+    <value>4 7 5 2 1 3 9 6</value>
+  </data>
+    <data name="Q52" xml:space="preserve">
+    <value>3 1 6 9 5 4 8 2 7</value>
+  </data>
+    <data name="Q53" xml:space="preserve">
+    <value>8 4 2 7 3 5 6 1 9</value>
+  </data>
+
+    <data name="lblRow01" xml:space="preserve">
+    <value>BARIS</value>
+  </data>
+    <data name="lblRow02" xml:space="preserve">
+    <value>BARIS</value>
+  </data>
+
+    <data name="ukm2_0400_header" xml:space="preserve">
+    <value>04. KONSEP GAMBAR</value>
+  </data>
+    <data name="lbl04_instruction_sample" xml:space="preserve">
+    <value>Sila klik atau pilih SATU GAMBAR DARI SETIAP BARIS yang mewakili kategori yang sama.</value>
+  </data>
+    <data name="lbl04_instruction" xml:space="preserve">
+    <value>Sila klik atau pilih SATU GAMBAR DARI SETIAP BARIS yang mewakili kategori yang sama.</value>
+  </data>
+    <data name="lblRow01" xml:space="preserve">
+    <value>BARIS</value>
+  </data>
+    <data name="lblRow02" xml:space="preserve">
+    <value>BARIS</value>
+  </data>
+
+    <data name="ukm2_0400_01" xml:space="preserve">
+    <value>Klik sekali lagi pada pilihan anda untuk membatalkan pilihan tersebut. Pilihan anda akan berwarna MERAH.</value>
+  </data>
+    <data name="ukm2_0400_02" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+    <data name="ukm2_0500_header" xml:space="preserve">
+    <value>05. PENGKODAN</value>
+  </data>
+    <data name="lbl05_instruction_sample" xml:space="preserve">
+    <value>Jadual di bawah menunjukkan simbol-simbol yang mewakili nombor 1 hingga 9. Sila PADANKAN SIMBOL KEPADA NOMBOR-NOMBOR berikut dengan cara menaipkan nombor bagi setiap kod di dalam ruang yang disediakan. </value>
+  </data>
+    <data name="lbl05_instruction" xml:space="preserve">
+    <value>Jadual di bawah menunjukkan simbol-simbol yang mewakili nombor 1 hingga 9. Sila PADANKAN SIMBOL KEPADA NOMBOR-NOMBOR berikut dengan cara menaipkan nombor bagi setiap kod di dalam ruang yang disediakan.</value>
+  </data>
+    <data name="ukm2_0500_01" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+
+    <data name="ukm2_0600_header" xml:space="preserve">
+    <value>06. PERBENDAHARAAN KATA</value>
+  </data>
+    <data name="lbl06_instruction_sample" xml:space="preserve">
+    <value>Taipkan MAKSUD BAGI PERKATAAN-PERKATAAN berikut dalam ruangan yang disediakan. </value>
+  </data>
+
+    <data name="lbl06_instruction" xml:space="preserve">
+    <value>Taipkan MAKSUD BAGI PERKATAAN-PERKATAAN berikut dalam ruangan yang disediakan.</value>
+  </data>
+    <data name="ukm2_0600_01" xml:space="preserve">
+    <value>Contoh jawapan bagi soalan di atas.&lt;br /&gt; 
+    (alat untuk menulis atau melukis, diperbuat daripada kayu dan karbon atau lead, alat tulis)
+  </value>
+  </data>
+    <data name="ukm2_0600_02" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+
+    <data name="lbl06_00" xml:space="preserve">
+    <value>PENSEL</value>
+  </data>
+    <data name="txt06_00" xml:space="preserve">
+    <value>alat untuk menulis atau melukis, diperbuat daripada kayu dan karbon atau lead, alat tulis</value>
+  </data>
+
+    <data name="lbl06_01" xml:space="preserve">
+    <value>PENSEL</value>
+  </data>
+    <data name="lbl06_02" xml:space="preserve">
+    <value>KUCING</value>
+  </data>
+    <data name="lbl06_03" xml:space="preserve">
+    <value>ROMPAK</value>
+  </data>
+    <data name="lbl06_04" xml:space="preserve">
+    <value>BECA</value>
+  </data>
+    <data name="lbl06_05" xml:space="preserve">
+    <value>ANGKA</value>
+  </data>
+    <data name="lbl06_06" xml:space="preserve">
+    <value>KEMBALI</value>
+  </data>
+    <data name="lbl06_07" xml:space="preserve">
+    <value>TRADISIONAL</value>
+  </data>
+    <data name="lbl06_08" xml:space="preserve">
+    <value>ROSAK</value>
+  </data>
+    <data name="lbl06_09" xml:space="preserve">
+    <value>JUJUR</value>
+  </data>
+    <data name="lbl06_10" xml:space="preserve">
+    <value>TEKUN</value>
+  </data>
+    <data name="lbl06_11" xml:space="preserve">
+    <value>TASIK</value>
+  </data>
+    <data name="lbl06_12" xml:space="preserve">
+    <value>MITOS</value>
+  </data>
+    <data name="lbl06_13" xml:space="preserve">
+    <value>KEDAP</value>
+  </data>
+    <data name="lbl06_14" xml:space="preserve">
+    <value>JERNIH</value>
+  </data>
+    <data name="lbl06_15" xml:space="preserve">
+    <value>TELITI</value>
+  </data>
+    <data name="lbl06_16" xml:space="preserve">
+    <value>AKSI</value>
+  </data>
+    <data name="lbl06_17" xml:space="preserve">
+    <value>SEJARAH</value>
+  </data>
+    <data name="lbl06_18" xml:space="preserve">
+    <value>ALIH</value>
+  </data>
+    <data name="lbl06_19" xml:space="preserve">
+    <value>SAING</value>
+  </data>
+    <data name="lbl06_20" xml:space="preserve">
+    <value>WAWASAN</value>
+  </data>
+    <data name="lbl06_21" xml:space="preserve">
+    <value>KERAP</value>
+  </data>
+    <data name="lbl06_22" xml:space="preserve">
+    <value>SANTAI</value>
+  </data>
+    <data name="lbl06_23" xml:space="preserve">
+    <value>BANTAH</value>
+  </data>
+    <data name="lbl06_24" xml:space="preserve">
+    <value>SAMAR</value>
+  </data>
+    <data name="lbl06_25" xml:space="preserve">
+    <value>TEKAL</value>
+  </data>
+    <data name="lbl06_26" xml:space="preserve">
+    <value>SUKARELA</value>
+  </data>
+    <data name="lbl06_27" xml:space="preserve">
+    <value>CERIA</value>
+  </data>
+    <data name="lbl06_28" xml:space="preserve">
+    <value>PETAH</value>
+  </data>
+    <data name="lbl06_29" xml:space="preserve">
+    <value>ABAI</value>
+  </data>
+    <data name="lbl06_30" xml:space="preserve">
+    <value>NORMA</value>
+  </data>
+
+
+    <data name="ukm2_0700_header" xml:space="preserve">
+    <value>07. URUTAN NOMBOR DAN ABJAD</value>
+  </data>
+    <data name="lbl07_instruction_sample" xml:space="preserve">
+    <value>Lihat nombor dan abjad yang dipaparkan pada skrin anda selepas menekan butang [Mula >>]. Taipkan semula NOMBOR mengikut urutan MENAIK diikuti oleh ABJAD urutan MENAIK dalam ruangan yang disediakan. </value>
+  </data>
+    <data name="lbl07_instruction" xml:space="preserve">
+    <value>Lihat nombor dan abjad yang dipaparkan pada skrin anda selepas menekan butang [Mula >>]. Taipkan semula NOMBOR mengikut urutan MENAIK diikuti oleh ABJAD urutan MENAIK dalam ruangan yang disediakan.</value>
+  </data>
+    <data name="ukm2_0700_01" xml:space="preserve">
+    <value>1. Tekan butang [Mula ] untuk mula menjawab.</value>
+  </data>
+    <data name="ukm2_0700_02" xml:space="preserve">
+    <value>2. Taipkan apa yang dipaparkan di sini. (Jawapan kepada soalan ini ialah 1 5 C E)</value>
+  </data>
+    <data name="ukm2_0700_03" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+  <data name="Q115" xml:space="preserve">
+    <value>5 B</value>
+  </data>
+  <data name="Q116" xml:space="preserve">
+    <value>A 4</value>
+  </data>
+  <data name="Q117" xml:space="preserve">
+    <value>3 D</value>
+  </data>
+  <data name="Q118" xml:space="preserve">
+    <value>5 D</value>
+  </data>
+  <data name="Q119" xml:space="preserve">
+    <value>F 6</value>
+  </data>
+  <data name="Q120" xml:space="preserve">
+    <value>A 2</value>
+  </data>
+  <data name="Q121" xml:space="preserve">
+    <value>D 3 4</value>
+  </data>
+  <data name="Q122" xml:space="preserve">
+    <value>3 5 E</value>
+  </data>
+  <data name="Q123" xml:space="preserve">
+    <value>4 B 5</value>
+  </data>
+  <data name="Q124" xml:space="preserve">
+    <value>E 4 8</value>
+  </data>
+  <data name="Q125" xml:space="preserve">
+    <value>T 3 S</value>
+  </data>
+  <data name="Q126" xml:space="preserve">
+    <value>K 7 M</value>
+  </data>
+  <data name="Q127" xml:space="preserve">
+    <value>5 F 4</value>
+  </data>
+  <data name="Q128" xml:space="preserve">
+    <value>7 T 6</value>
+  </data>
+  <data name="Q129" xml:space="preserve">
+    <value>E 7 C</value>
+  </data>
+  <data name="Q130" xml:space="preserve">
+    <value>3 D 5 F</value>
+  </data>
+  <data name="Q131" xml:space="preserve">
+    <value>7 C 9 D</value>
+  </data>
+  <data name="Q132" xml:space="preserve">
+    <value>C 6 T 3</value>
+  </data>
+  <data name="Q133" xml:space="preserve">
+    <value>3 C 5 T 9</value>
+  </data>
+  <data name="Q134" xml:space="preserve">
+    <value>7 W 3 R 5</value>
+  </data>
+  <data name="Q135" xml:space="preserve">
+    <value>Q 1 T 3 R</value>
+  </data>
+  <data name="Q136" xml:space="preserve">
+    <value>3 F 6 0 7 S</value>
+  </data>
+  <data name="Q137" xml:space="preserve">
+    <value>S 1 A 2 N 6</value>
+  </data>
+  <data name="Q138" xml:space="preserve">
+    <value>5 P 4 F 1 Y</value>
+  </data>
+  <data name="Q139" xml:space="preserve">
+    <value>T 1 M 2 V 5 K</value>
+  </data>
+  <data name="Q140" xml:space="preserve">
+    <value>9 T 7 Q 3 M 8</value>
+  </data>
+  <data name="Q141" xml:space="preserve">
+    <value>K 4 H 8 P 1 D</value>
+  </data>
+  <data name="Q142" xml:space="preserve">
+    <value>2 C 6 S 3 K 9 D</value>
+  </data>
+  <data name="Q143" xml:space="preserve">
+    <value>K 4 T 6 B 3 D 2</value>
+  </data>
+  <data name="Q144" xml:space="preserve">
+    <value>4 K 3 Y 7 F 6 V</value>
+  </data>
+  
+    <data name="ukm2_0800_header" xml:space="preserve">
+    <value>08. PENA'AKULAN MATRIKS </value>
+  </data>
+    <data name="lbl08_instruction_sample" xml:space="preserve">
+    <value>Sila KLIK PADA OBJEK ATAU RAJAH di bawah yang SEPADAN untuk ruangan kosong yang bertanda '?'. </value>
+  </data>
+    <data name="lbl08_instruction" xml:space="preserve">
+    <value>Sila KLIK PADA OBJEK ATAU RAJAH di bawah yang SEPADAN untuk ruangan kosong yang bertanda '?'.</value>
+  </data>
+    <data name="ukm2_0800_01" xml:space="preserve">
+    <value>Sila klik pada objek atau rajah di bawah. Apabila sudah membuat pilihan, tekan sekali lagi untuk membatalkan pilihan tersebut.</value>
+  </data>
+    <data name="ukm2_0800_02" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+
+
+    <data name="ukm2_0900_header" xml:space="preserve">
+    <value>09. KOMPREHENSIF</value>
+  </data>
+    <data name="lbl09_instruction" xml:space="preserve">
+    <value>Baca soalan berikut dengan teliti.  Huraikan jawapan anda dalam ruangan yang disediakan.</value>
+  </data>
+    <data name="lbl09_instruction_sample" xml:space="preserve">
+    <value>Baca soalan berikut dengan teliti.  Huraikan jawapan anda dalam ruangan yang disediakan. </value>
+  </data>
+    <data name="ukm2_0900_01" xml:space="preserve">
+    <value>Contoh jawapan bagi soalan ini.&lt;br /&gt; 
+    (Ambil dan pulang balik. Ambil dan beri pada ibu atau bapa. Ambil dan beri pada guru. Hubungi empunya telefon)
+    </value>
+  </data>
+    <data name="ukm2_0900_02" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+    <data name="lbl09_00" xml:space="preserve">
+    <value>Apakah yang akan anda lakukan sekiranya terjumpa telefon bimbit?</value>
+  </data>
+    <data name="txt09_00" xml:space="preserve">
+    <value>ambil dan pulang balik. ambil dan beri pada ibu atau bapa. ambil dan beri pada guru. hubungi empunya telefon</value>
+  </data>
+
+    <data name="lbl09_01" xml:space="preserve">
+    <value>Apakah yang akan anda lakukan sekiranya terjumpa telefon bimbit?</value>
+  </data>
+    <data name="lbl09_02" xml:space="preserve">
+    <value>Mengapa perlu menutup paip air selepas digunakan?</value>
+  </data>
+    <data name="lbl09_03" xml:space="preserve">
+    <value>Mengapa perlu memakai jaket keselamatan bila menaiki bot?</value>
+  </data>
+    <data name="lbl09_04" xml:space="preserve">
+    <value>Apakah yang perlu anda lakukan bila rakan anda dibuli di kawasan sekolah?</value>
+  </data>
+    <data name="lbl09_05" xml:space="preserve">
+    <value>Apakah yang perlu anda buat sekiranya rakan anda menyuruh anda menyiapkan kerja sekolahnya?</value>
+  </data>
+    <data name="lbl09_06" xml:space="preserve">
+    <value>Apakah kebaikan kegiatan rekreasi? </value>
+  </data>
+    <data name="lbl09_07" xml:space="preserve">
+    <value>Mengapakah anda perlu membantu rakan yang kehilangan wang saku sekolah?</value>
+  </data>
+    <data name="lbl09_08" xml:space="preserve">
+    <value>Mengapakah kita tidak patut membazirkan makanan?</value>
+  </data>
+    <data name="lbl09_09" xml:space="preserve">
+    <value>Mengapakah kerajaan melarang merokok di tempat awam? </value>
+  </data>
+    <data name="lbl09_10" xml:space="preserve">
+    <value>Apakah kebaikan kemudahan pengangkutan awam? </value>
+  </data>
+    <data name="lbl09_11" xml:space="preserve">
+    <value>Mengapakah kita perlu terus belajar walaupun telah bekerja? </value>
+  </data>
+    <data name="lbl09_12" xml:space="preserve">
+    <value>Apakah kebaikan belajar melalui komputer berbanding buku?</value>
+  </data>
+    <data name="lbl09_13" xml:space="preserve">
+    <value>Mengapakah kita perlu sentiasa bercakap benar?</value>
+  </data>
+    <data name="lbl09_14" xml:space="preserve">
+    <value>Mengapakah kerajaan perlu membanteras kegiatan cetak rompak?</value>
+  </data>
+    <data name="lbl09_15" xml:space="preserve">
+    <value>Kenapa kita perlu memiliki MyKad? </value>
+  </data>
+    <data name="lbl09_16" xml:space="preserve">
+    <value>Mengapa terdapat pelbagai jenis surat khabar dalam banyak bahasa? </value>
+  </data>
+    <data name="lbl09_17" xml:space="preserve">
+    <value>Mengapakah perlu disediakan kemudahan untuk Orang Kurang Upaya (OKU) di sekolah? </value>
+  </data>
+    <data name="lbl09_18" xml:space="preserve">
+    <value>Apakah kesan negatif daripada kemajuan Teknologi Maklumat dan Komunikasi (ICT)? </value>
+  </data>
+    <data name="lbl09_19" xml:space="preserve">
+    <value>Mengapa kita perlu menghormati pendapat orang lain? </value>
+  </data>
+
+
+    <data name="ukm2_1000_header" xml:space="preserve">
+    <value>10. CARIAN SIMBOL</value>
+  </data>
+    <data name="lbl10_instruction_sample" xml:space="preserve">
+    <value>Lihat simbol di sebelah kiri (berwarna MERAH).&lt;br /&gt;Klik ADA sekiranya simbol itu terdapat pada sebelah kanan atau TIADA sekiranya tiada persamaan.  </value>
+  </data>
+    <data name="lbl10_instruction" xml:space="preserve">
+    <value>Lihat simbol di sebelah kiri (berwarna MERAH).&lt;br /&gt;Klik ADA sekiranya simbol itu terdapat pada sebelah kanan atau TIADA sekiranya tiada persamaan.</value>
+  </data>
+    <data name="ukm2_1000_01" xml:space="preserve">
+    <value>Jawapan bagi soalan ini ialah ADA.</value>
+  </data>
+    <data name="ukm2_1000_02" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+
+    <data name="ukm2_YES" xml:space="preserve">
+    <value> ADA </value>
+  </data>
+    <data name="ukm2_NO" xml:space="preserve">
+    <value> TIADA </value>
+  </data>
+
+
+    <data name="ukm2_1100_header" xml:space="preserve">
+    <value>11.  PEMERHATIAN GAMBAR</value>
+  </data>
+    <data name="lbl11_instruction_sample" xml:space="preserve">
+    <value>Perhatikan gambar berikut. Sila KLIK pada bahagian yang TIDAK LENGKAP dalam gambar ini. "X" akan ditanda pada tempat pilihan anda. </value>
+  </data>
+    <data name="lbl11_instruction" xml:space="preserve">
+    <value>Perhatikan gambar berikut. Sila KLIK pada bahagian yang TIDAK LENGKAP dalam gambar ini. "X" akan ditanda pada tempat pilihan anda.</value>
+  </data>
+    <data name="ukm2_1100_01" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+
+    <data name="ukm2_1200_header" xml:space="preserve">
+    <value>12. PILIHAN SEJENIS</value>
+  </data>
+    <data name="lbl12_instruction_sample" xml:space="preserve">
+    <value>Pada laman seterusnya, sila klik pada semua gambar BUAH-BUAHAN atau BINATANG sahaja. Baca dengan teliti arahan yang diberikan.</value>
+  </data>
+    <data name="lbl12_instruction_01" xml:space="preserve">
+    <value>Sila klik pada semua gambar BUAH-BUAHAN sahaja. Klik sekali lagi pada pilihan anda untuk membatalkan pilihan tersebut. Pilihan anda akan berwarna MERAH.</value>
+  </data>
+    <data name="lbl12_instruction_02" xml:space="preserve">
+    <value>Sila klik pada semua gambar BINATANG sahaja. Klik sekali lagi pada pilihan anda untuk membatalkan pilihan tersebut. Pilihan anda akan berwarna MERAH.</value>
+  </data>
+
+
+    <data name="ukm2_1300_header" xml:space="preserve">
+    <value>13. MAKLUMAT</value>
+  </data>
+    <data name="lbl13_instruction_sample" xml:space="preserve">
+    <value>Baca soalan berikut dengan teliti dan taipkan jawapan anda dalam ruangan yang disediakan. </value>
+  </data>
+    <data name="lbl13_instruction" xml:space="preserve">
+    <value>Baca soalan berikut dengan teliti dan taipkan jawapan anda dalam ruangan yang disediakan.</value>
+  </data>
+    <data name="lbl13_00" xml:space="preserve">
+    <value>Berapa bulankah dalam setahun?</value>
+  </data>
+    <data name="txt13_00" xml:space="preserve">
+    <value>12</value>
+  </data>
+    <data name="ukm2_1300_01" xml:space="preserve">
+    <value>Contoh jawapan.&lt;br /&gt;
+    (12)
+    
+    </value>
+  </data>
+    <data name="ukm2_1300_02" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+
+
+    <data name="lbl13_01" xml:space="preserve">
+    <value>Berapa bulankah dalam setahun?</value>
+  </data>
+    <data name="lbl13_02" xml:space="preserve">
+    <value>Apakah keperluan asas untuk tumbuhan hidup? </value>
+  </data>
+    <data name="lbl13_03" xml:space="preserve">
+    <value>Namakan tiga (3) lautan dunia.</value>
+  </data>
+    <data name="lbl13_04" xml:space="preserve">
+    <value>Apakah fungsi jantung anda? </value>
+  </data>
+    <data name="lbl13_05" xml:space="preserve">
+    <value>Berapa meter bersamaan dengan satu kilometer?</value>
+  </data>
+    <data name="lbl13_06" xml:space="preserve">
+    <value>Namakan satu bulan yang mengandungi 31 hari. </value>
+  </data>
+    <data name="lbl13_07" xml:space="preserve">
+    <value>Namakan bahan api semula jadi. </value>
+  </data>
+    <data name="lbl13_08" xml:space="preserve">
+    <value>Berapakah jumlah benua di dunia? </value>
+  </data>
+    <data name="lbl13_09" xml:space="preserve">
+    <value>Apakah itu artifak sejarah? </value>
+  </data>
+    <data name="lbl13_10" xml:space="preserve">
+    <value>Bagaimanakah hujan terjadi? </value>
+  </data>
+    <data name="lbl13_11" xml:space="preserve">
+    <value>Kenapa kapal tidak kelihatan apabila melepasi kaki langit? </value>
+  </data>
+    <data name="lbl13_12" xml:space="preserve">
+    <value>Siapa yang mencipta telefon? </value>
+  </data>
+    <data name="lbl13_13" xml:space="preserve">
+    <value>Apakah makna "kesan rumah hijau"? </value>
+  </data>
+    <data name="lbl13_14" xml:space="preserve">
+    <value>Apakah pulau yang terbesar di dunia? </value>
+  </data>
+    <data name="lbl13_15" xml:space="preserve">
+    <value>Negara manakah yang terletak di bawah paras laut? </value>
+  </data>
+    <data name="lbl13_16" xml:space="preserve">
+    <value>Mengapa ketulan ais terapung di atas air? </value>
+  </data>
+    <data name="lbl13_17" xml:space="preserve">
+    <value>Apa itu prisma? </value>
+  </data>
+    <data name="lbl13_18" xml:space="preserve">
+    <value>Di manakah Dataran Tiananmen? </value>
+  </data>
+    <data name="lbl13_19" xml:space="preserve">
+    <value>Apakah garisan yang menentukan perbezaan masa di dunia? </value>
+  </data>
+    <data name="lbl13_20" xml:space="preserve">
+    <value>Berapakah jarak bumi ke bulan? </value>
+  </data>
+    <data name="lbl13_21" xml:space="preserve">
+    <value>Apakah unsur-unsur yang bergabung untuk menjadi air? </value>
+  </data>
+    <data name="lbl13_22" xml:space="preserve">
+    <value>Apakah proses metabolisma? </value>
+  </data>
+    <data name="lbl13_23" xml:space="preserve">
+    <value>Siapakah Tunku Abdul Rahman Putra Al-Haj? </value>
+  </data>
+    <data name="lbl13_24" xml:space="preserve">
+    <value>Dari manakah datangnya asteroid? </value>
+  </data>
+
+    <data name="ukm2_1400_header" xml:space="preserve">
+    <value>14. ARITMATIK</value>
+  </data>
+    <data name="lbl14_instruction_sample" xml:space="preserve">
+    <value>Baca soalan dengan teliti, KIRA JAWAPAN SECARA MENTAL (CONGAK). Isi jawapan di ruangan yang disediakan. </value>
+  </data>
+    <data name="lbl14_instruction" xml:space="preserve">
+    <value>Baca soalan dengan teliti, KIRA JAWAPAN SECARA MENTAL (CONGAK). Isi jawapan di ruangan yang disediakan.</value>
+  </data>
+    <data name="lbl14_00" xml:space="preserve">
+    <value>Terdapat dua batang pembaris plastik dan tiga batang pembaris besi. Berapakah jumlah pembaris?</value>
+  </data>
+    <data name="txt14_00" xml:space="preserve">
+    <value>5</value>
+  </data>
+    <data name="ukm2_1400_01" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+    <data name="lbl14_01" xml:space="preserve">
+    <value>Terdapat dua batang pembaris plastik dan tiga batang pembaris besi. Berapakah jumlah pembaris?</value>
+  </data>
+    <data name="lbl14_02" xml:space="preserve">
+    <value>Borhan mempunyai lima buah buku cerita. Sebuah buku telah hilang. Berapa buah buku masih ada padanya?</value>
+  </data>
+    <data name="lbl14_03" xml:space="preserve">
+    <value>Johari ada lima potong kek. Sepotong kek diberikan kepada Bala dan sepotong lagi diberikan kepada Ali. Berapa potong kek yang masih tinggal? </value>
+  </data>
+    <data name="lbl14_04" xml:space="preserve">
+    <value>Jika sebiji tembikai dibelah dua, berapa bahagian buah tembikai yang saya ada? </value>
+  </data>
+    <data name="lbl14_05" xml:space="preserve">
+    <value>Johan mempunyai RM4.00 dan ibunya memberikan RM2.00 lagi kepadanya. Berapakah jumlah wang yang ada pada Johan?  </value>
+  </data>
+    <data name="lbl14_06" xml:space="preserve">
+    <value>Jika anda memegang tiga batang pen pada setiap tangan, berapakah jumlah pen yang ada pada anda? </value>
+  </data>
+    <data name="lbl14_07" xml:space="preserve">
+    <value>Jika anda ada 10 keping roti dan memakan tiga keping, berapa keping roti yang tinggal? </value>
+  </data>
+    <data name="lbl14_08" xml:space="preserve">
+    <value>Tiga orang pelajar baru telah ditempatkan ke dalam kelas yang telah mempunyai 12 orang pelajar. Berapakah jumlah pelajar dalam kelas tersebut?</value>
+  </data>
+    <data name="lbl14_09" xml:space="preserve">
+    <value>Mansor ada enam keping penanda buku dan membeli enam keping lagi. Berapakah jumlah penanda buku yang ada padanya?</value>
+  </data>
+    <data name="lbl14_10" xml:space="preserve">
+    <value>Ah Meng mengumpul 10 setem pada hari Sabtu dan 15 setem pada hari Ahad. Berapakah jumlah setem yang dikumpulkannya?</value>
+  </data>
+    <data name="lbl14_11" xml:space="preserve">
+    <value>Terdapat tiga ekor kambing di sebuah padang ragut. Dua ekor kambing lain datang. Kemudian dua ekor pula meninggalkan padang ragut. Berapa ekor kambing yang tinggal di padang ragut?</value>
+  </data>
+    <data name="lbl14_12" xml:space="preserve">
+    <value>Kuldip membeli empat biji limau dari sebuah gerai buah-buahan dan dua biji lagi dari gerai yang lain. Sampai di rumah, ibunya memberi tiga biji buah limau lagi. Berapa banyak buah limau yang dimilikinya?</value>
+  </data>
+    <data name="lbl14_13" xml:space="preserve">
+    <value>Pak Ali ada 12 biji durian. Lima biji dijual kepada pelanggan. Berapa biji durian yang tinggal?</value>
+  </data>
+    <data name="lbl14_14" xml:space="preserve">
+    <value>Dalam sebuah bas terdapat lapan orang penumpang. Apabila tiba di perhentian, empat orang turun dan dua orang penumpang naik. Berapa orang penumpang yang berada dalam bas sekarang?</value>
+  </data>
+    <data name="lbl14_15" xml:space="preserve">
+    <value>Dalam satu permainan, Latifah mendapat 17 mata pada pusingan pertama dan 15 mata dalam pusingan kedua. Berapakah jumlah mata yang diperoleh Latifah?</value>
+  </data>
+    <data name="lbl14_16" xml:space="preserve">
+    <value>Jika anda membeli tiga keping poskad pada harga 50 sen setiap satu, berapakah wang baki yang akan dikembalikan daripada wang RM5?</value>
+  </data>
+    <data name="lbl14_17" xml:space="preserve">
+    <value>Faris mempunyai RM30 dan telah membelanjakan separuh daripadanya. Jika sebuah majalah berharga RM5, berapa banyak majalah boleh dibeli sekiranya Faris menggunakan semua baki yang dia ada?</value>
+  </data>
+    <data name="lbl14_18" xml:space="preserve">
+    <value>Terdapat lapan acara pertandingan dalam satu pesta makanan. Jika setiap pertandingan memerlukan tiga buah pinggan, berapa banyak pinggan yang diperlukan sekiranya pertandingan dijalankan serentak?</value>
+  </data>
+    <data name="lbl14_19" xml:space="preserve">
+    <value>Tiga puluh orang pelajar mendaftar kelas Bahasa Jepun. Pada bulan berikutnya 11 orang menarik diri. Berapa orang pelajar yang tinggal dalam kelas tersebut?</value>
+  </data>
+    <data name="lbl14_20" xml:space="preserve">
+    <value>Rosnah membeli dua buah buku latihan berharga RM1 setiap satu dan sekotak pensel warna RM4. Jika dia membayar dengan wang RM10, berapakah baki wang yang akan dikembalikan kepadanya?</value>
+  </data>
+    <data name="lbl14_21" xml:space="preserve">
+    <value>Shahrir mempunyai dua kali ganda wang yang dimiliki Basri. Shahrir mempunyai RM17. Berapa ringgit wang yang dimiliki oleh Basri?</value>
+  </data>
+    <data name="lbl14_22" xml:space="preserve">
+    <value>Dua ratus empat puluh orang pelancong mendaftar untuk melancong ke Johor. Sekiranya sebuah bas boleh membawa 40 orang, berapa buah bas diperlukan untuk membawa semua pelancong itu?</value>
+  </data>
+    <data name="lbl14_23" xml:space="preserve">
+    <value>Ahmad membeli sehelai baju dengan harga diskaun satu pertiga kurang berbanding harga asal. Jika Ahmad membayar RM40, berapakah harga asal baju tersebut?</value>
+  </data>
+    <data name="lbl14_24" xml:space="preserve">
+    <value>Jarak perjalanan pulang ke kampung Kamal ialah 500 km. Selepas memandu selama tiga jam, dia berhenti rehat. Kemudian dia memandu semula selama dua jam. Berapakah purata kelajuan Kamal memandu?</value>
+  </data>
+    <data name="lbl14_25" xml:space="preserve">
+    <value>Harga tambang murah penerbangan dari LCCT, Kuala Lumpur ke Bali, Indonesia ialah RM135 setelah diberi diskaun sebanyak 70%. Berapakah harga asal tambang tersebut?</value>
+  </data>
+    <data name="lbl14_26" xml:space="preserve">
+    <value>Harga minyak telah diturunkan sebanyak lima kali sejak Jun 2008. Jika Harga asal RM2.70 dan kali terakhir minyak diturunkan kepada RM1.90 berapakah purata penurunan minyak?</value>
+  </data>
+    <data name="lbl14_27" xml:space="preserve">
+    <value>Dua orang dapat menyiapkan 8 buah bakul rotan sehari. Berapa orang pekerja yang diperlukan untuk menyiapkan tempahan 60 bakul dalam sehari?</value>
+  </data>
+    <data name="lbl14_28" xml:space="preserve">
+    <value>Perjalanan Zamri menaiki KLIA Transit dari KLIA ke Putra Sentral ialah 1 jam 45 minit. Lim tinggal 50 km dari Putra Sentral. Dia memandu 100km/jam. Jika Zamri bertolak dari KLIA pada pukul 3.45 petang, pukul berapa Lim perlu bertolak dari rumahnya supaya sampai 15 minit lebih awal daripada Zamri?</value>
+  </data>
+    <data name="lbl14_29" xml:space="preserve">
+    <value>Bas ekspres bertolak satu jam awal daripada teksi. Bas ekspres dipandu dengan kelajuan purata 80km/jam dan teksi 100km/jam. Jika kedua-duanya mempunyai destinasi yang sama, berapa jauh bas ekspres mendahului teksi selepas tiga jam perjalanan?</value>
+  </data>
+
+    <data name="ukm2_1500_header" xml:space="preserve">
+    <value>15. PENA'AKULAN PERKATAAN</value>
+  </data>
+    <data name="lbl15_instruction_sample" xml:space="preserve">
+    <value>Sila BACA PEMBAYANG DAN TULISKAN JAWAPAN di ruangan yang disediakan. </value>
+  </data>
+    <data name="lbl15_instruction" xml:space="preserve">
+    <value>Sila BACA PEMBAYANG DAN TULISKAN JAWAPAN di ruangan yang disediakan.</value>
+  </data>
+    <data name="ukm2_1500_01" xml:space="preserve">
+    <value>Tekan [Seterusnya &gt;&gt; ] jika anda sudah bersedia.</value>
+  </data>
+
+    <data name="lbl15_00" xml:space="preserve">
+    <value>Ia ada pintu, ada rak dan boleh menyimpan pakaian.</value>
+  </data>
+    <data name="txt15_00" xml:space="preserve">
+    <value>Almari pakaian, gerobok</value>
+  </data>
+
+    <data name="lbl15_01" xml:space="preserve">
+    <value>Ia ada pintu, ada rak dan boleh menyimpan pakaian.</value>
+  </data>
+    <data name="lbl15_02" xml:space="preserve">
+    <value>Ia adalah sesuatu yang digunakan untuk melindungi kaki anda.</value>
+  </data>
+    <data name="lbl15_03" xml:space="preserve">
+    <value>Ia berada di langit, dan akan kelihatan bila hari hendak hujan.</value>
+  </data>
+    <data name="lbl15_04" xml:space="preserve">
+    <value>Ia mempunyai beberapa bilah, dan tergantung di siling rumah.</value>
+  </data>
+    <data name="lbl15_05" xml:space="preserve">
+    <value>Ia adalah tempat orang membaca,dan terdapat banyak bahan bacaan. </value>
+  </data>
+    <data name="lbl15_06" xml:space="preserve">
+    <value>Ia terapung di udara, menyebabkan kita sesak nafas.</value>
+  </data>
+    <data name="lbl15_07" xml:space="preserve">
+    <value>Jika dilakukan, badan akan berpeluh, baik untuk kesihatan.</value>
+  </data>
+    <data name="lbl15_08" xml:space="preserve">
+    <value>Ia membuat pakaian kita bersih, dan ia boleh dibeli di kedai runcit.</value>
+  </data>
+    <data name="lbl15_09" xml:space="preserve">
+    <value>Ia memberikan cahaya yang terang pada siang hari, dan ia tidak boleh diganti.</value>
+  </data>
+    <data name="lbl15_10" xml:space="preserve">
+    <value>Ia dibentuk oleh masyarakat, dan dijadikan panduan untuk kehidupan masyarakat.</value>
+  </data>
+    <data name="lbl15_11" xml:space="preserve">
+    <value>Ia adalah satu bentuk muka bumi, dan terletak di antara dua gunung.</value>
+  </data>
+    <data name="lbl15_12" xml:space="preserve">
+    <value>Ia dihasilkan oleh pelbagai alat, ia mempunyai rentak dan irama, dan sedap didengar.</value>
+  </data>
+    <data name="lbl15_13" xml:space="preserve">
+    <value>Ia dianugerahkan kepada kita sejak lahir, ia sebahagian dari organ badan, dan ia membolehkan kita berfikir. </value>
+  </data>
+    <data name="lbl15_14" xml:space="preserve">
+    <value>Ia berada di mana-mana, tidak boleh dilihat, tetapi diperlukan oleh manusia dan haiwan untuk hidup. </value>
+  </data>
+    <data name="lbl15_15" xml:space="preserve">
+    <value>Digubal dan diluluskan oleh Parlimen, masyarakat memerlukannya, dan diperlukan untuk menjaga keamanan negara. </value>
+  </data>
+    <data name="lbl15_16" xml:space="preserve">
+    <value>Dianugerahkan setelah berjaya menamatkan pengajian, memenuhi piawai dan diiktiraf,diperlukan semasa memohon pekerjaan. </value>
+  </data>
+    <data name="lbl15_17" xml:space="preserve">
+    <value>Ia adalah alat komunikasi tanpa wayar, boleh digunakan di merata tempat, dan mempunyai pelbagai bentuk serta saiz. </value>
+  </data>
+    <data name="lbl15_18" xml:space="preserve">
+    <value>Berkait dengan pendapatan dan perbelanjaan, berskala kecil atau besar, dan bermatlamatkan keuntungan. </value>
+  </data>
+    <data name="lbl15_19" xml:space="preserve">
+    <value>Ia adalah satu harapan, yang merupakan perancangan masa hadapan, dan dikonseptualisasi. </value>
+  </data>
+    <data name="lbl15_20" xml:space="preserve">
+    <value>Ia merupakan satu proses demokrasi, perlu calon dan penyokong, menang berdasarkan bilangan majoriti. </value>
+  </data>
+
+
+
+    <data name="ukm2_end_header" xml:space="preserve">
+    <value>Araken I-PROFILE Tamat.</value>
+  </data>
+    <data name="lblend_instruction" xml:space="preserve">
+    <value>Terima kasih kerana telah tamat menjawab soalan yang telah disediakan.</value>
+  </data>
+
+    <data name="lblend_01" xml:space="preserve">
+    <value>TEL#</value>
+  </data>
+    <data name="lblend_02" xml:space="preserve">
+    <value>Nama</value>
+  </data>
+    <data name="lblend_03" xml:space="preserve">
+    <value>Darjah/Tingkatan</value>
+  </data>
+    <data name="lblend_04" xml:space="preserve">
+    <value>Umur</value>
+  </data>
+    <data name="lblend_05" xml:space="preserve">
+    <value>tahun.</value>
+  </data>
+    <data name="lblend_06" xml:space="preserve">
+    <value>Nama Sekolah</value>
+  </data>
+    <data name="lblend_07" xml:space="preserve">
+    <value>Bandar</value>
+  </data>
+    <data name="lblend_08" xml:space="preserve">
+    <value>Negeri</value>
+  </data>
+    <data name="lblend_09" xml:space="preserve">
+    <value>Tarikh dan masa ujian tamat</value>
+  </data>
+    <data name="lblend_10" xml:space="preserve">
+    <value>Klik disini untuk memilih modul Program Perkhemahan Cuti Sekolah</value>
+  </data>
+
+
+
+    <data name="lblcourse_header" xml:space="preserve">
+    <value>Program Perkhemahan Cuti Sekolah</value>
+  </data>
+    <data name="lblcourse_instruction" xml:space="preserve">
+    <value>Pilih modul-modul mengikut susunan keutamaan minat anda.</value>
+  </data>
+
+    <data name="lblcourse_scale" xml:space="preserve">
+    <value>Skala:</value>
+  </data>
+
+    <data name="lblcourse_rate" xml:space="preserve">
+    <value>1: Paling diminati     ->         6: Kurang diminati</value>
+  </data>
+
+    <data name="lblcourse_01" xml:space="preserve">
+    <value>Mengarang penulisan</value>
+  </data>
+    <data name="lblcourse_02" xml:space="preserve">
+    <value>Reka Cipta</value>
+  </data>
+    <data name="lblcourse_03" xml:space="preserve">
+    <value>Robotik</value>
+  </data>
+    <data name="lblcourse_04" xml:space="preserve">
+    <value>Sains Penerbangan</value>
+  </data>
+    <data name="lblcourse_05" xml:space="preserve">
+    <value>Kriptologi</value>
+  </data>
+    <data name="lblcourse_06" xml:space="preserve">
+    <value>Kebarangkalian dan Teori Permainan</value>
+  </data>
+    <data name="lblcourse_07" xml:space="preserve">
+    <value>Bioteknologi</value>
+  </data>
+    <data name="lblcourse_08" xml:space="preserve">
+    <value>Biologi Pecutan</value>
+  </data>
+    <data name="lblcourse_09" xml:space="preserve">
+    <value>Kristal dan Polimer</value>
+  </data>
+    <data name="lblcourse_10" xml:space="preserve">
+    <value>Pengenalan kepada Teknologi Hijau</value>
+  </data>
+    <data name="lblcourse_11" xml:space="preserve">
+    <value>Menjadi Saintis</value>
+  </data>
+    <data name="lblcourse_12" xml:space="preserve">
+    <value>Penaakulan Mantik</value>
+  </data>
+    <data name="lblcourse_13" xml:space="preserve">
+    <value>Penulisan dan Imaginasi</value>
+  </data>
+    <data name="lblcourse_14" xml:space="preserve">
+    <value>Robotik</value>
+  </data>
+</root>

@@ -1,0 +1,30 @@
+E:\Source\code\PCIS\code\PERMATA_UPSI\bin\permata_upsi.dll.config
+E:\Source\code\PCIS\code\PERMATA_UPSI\bin\permata_upsi.dll
+E:\Source\code\PCIS\code\PERMATA_UPSI\bin\permata_upsi.pdb
+E:\Source\code\PCIS\code\PERMATA_UPSI\bin\permata_upsi.xml
+E:\Source\code\PCIS\code\PERMATA_UPSI\obj\Release\permata_upsi.Resources.resources
+E:\Source\code\PCIS\code\PERMATA_UPSI\obj\Release\permata_upsi.vbproj.GenerateResource.Cache
+E:\Source\code\PCIS\code\PERMATA_UPSI\obj\Release\permata_upsi.dll
+E:\Source\code\PCIS\code\PERMATA_UPSI\obj\Release\permata_upsi.xml
+E:\Source\code\PCIS\code\PERMATA_UPSI\obj\Release\permata_upsi.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\bin\permata_upsi.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\bin\permata_upsi.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\bin\permata_upsi.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\bin\permata_upsi.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\obj\Release\permata_upsi.vbprojResolveAssemblyReference.cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\obj\Release\permata_upsi.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\obj\Release\permata_upsi.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\obj\Release\permata_upsi.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\obj\Release\permata_upsi.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\PERMATA_UPSI\obj\Release\permata_upsi.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\bin\permata_upsi.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\bin\permata_upsi.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\bin\permata_upsi.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\bin\permata_upsi.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\PERMATA_UPSI\obj\Release\permata_upsi.pdb

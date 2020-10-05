@@ -1,0 +1,75 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="admin.master.vb" Inherits="araken.pcisadmin.admin" %>
+
+<%@ Register Src="commoncontrol/menu_left.ascx" TagName="menu_left" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>PCIS ADMIN ::PERMATA Children Intelligence Scale::</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/table_style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+        <table style="width: 100%; padding: 0px; border: 0px dotted green;">
+            <tr>
+                <td colspan="2">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left; vertical-align:text-bottom;"><a href="admin.default.aspx"><img src="img/home-small.png" alt="NCDRC"/>
+                            PCIS ADMIN ::PERMATA Children Intelligence Scale::</a>|<asp:Label
+                                    ID="lblLoginID" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td style="width: 40%; text-align: right; vertical-align:text-bottom;">
+                                <a href="admin.notification.list.aspx">Notification</a>|<a href="logout.aspx">Logout</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 10%; vertical-align: top;">
+                    <uc2:menu_left ID="menu_left1" runat="server" />
+                </td>
+                <td style="width: 90%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        &nbsp;
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; vertical-align: top;">
+                    <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fbfooter">
+                            |&nbsp; © 2015 National Child Data Centre&nbsp;|&nbsp;Universiti Kebangsaan Malaysia&nbsp;|&nbsp;Designed and Developed
+                            by ARAKEN SDN. BHD.&nbsp;|
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>Untuk skrin 1024 X 768 dan ke atas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\permata_kokoadmin</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="admin/admin.arahan.list.aspx">
+      <publishTime>12/25/2014 08:26:49</publishTime>
+    </File>
+    <File Include="admin/admin.default.contactus.aspx">
+      <publishTime>12/24/2014 16:42:19</publishTime>
+    </File>
+    <File Include="admin/admin.facility.list.aspx">
+      <publishTime>12/24/2014 20:02:55</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.create.aspx">
+      <publishTime>01/02/2015 10:55:45</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.list.aspx">
+      <publishTime>12/27/2014 16:01:24</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.mark.aspx">
+      <publishTime>12/30/2014 15:12:57</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.mark.update.aspx">
+      <publishTime>12/30/2014 15:12:41</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.persatuan.update.aspx">
+      <publishTime>12/31/2014 08:53:54</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.sukan.update.aspx">
+      <publishTime>12/31/2014 08:53:54</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.uniform.update.aspx">
+      <publishTime>12/31/2014 08:52:12</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.update.aspx">
+      <publishTime>12/27/2014 16:14:38</publishTime>
+    </File>
+    <File Include="admin/admin.instruktor.view.aspx">
+      <publishTime>12/30/2014 10:54:39</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.create.aspx">
+      <publishTime>12/29/2014 18:49:56</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.instruktor.assign.aspx">
+      <publishTime>12/27/2014 16:35:30</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.list.aspx">
+      <publishTime>12/26/2014 19:16:13</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.pelajar.assign.aspx">
+      <publishTime>12/27/2014 00:45:15</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.pelajar.list.aspx">
+      <publishTime>12/31/2014 10:42:00</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.pensyarah.assign.aspx">
+      <publishTime>12/27/2014 11:47:31</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.select.aspx">
+      <publishTime>12/27/2014 00:43:04</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.update.aspx">
+      <publishTime>12/30/2014 09:20:35</publishTime>
+    </File>
+    <File Include="admin/admin.kelas.view.aspx">
+      <publishTime>12/31/2014 10:02:00</publishTime>
+    </File>
+    <File Include="admin/admin.kemudahan.create.aspx">
+      <publishTime>01/12/2015 18:30:33</publishTime>
+    </File>
+    <File Include="admin/admin.kemudahan.list.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.koko.instruktor.assign.aspx">
+      <publishTime>12/29/2014 10:50:06</publishTime>
+    </File>
+    <File Include="admin/admin.koko.list.all.aspx">
+      <publishTime>12/29/2014 09:33:19</publishTime>
+    </File>
+    <File Include="admin/admin.koko.list.persatuan.aspx">
+      <publishTime>01/12/2015 18:30:33</publishTime>
+    </File>
+    <File Include="admin/admin.koko.list.rumahsukan.aspx">
+      <publishTime>01/05/2015 11:12:35</publishTime>
+    </File>
+    <File Include="admin/admin.koko.list.sukan.aspx">
+      <publishTime>01/12/2015 18:33:07</publishTime>
+    </File>
+    <File Include="admin/admin.koko.list.uniform.aspx">
+      <publishTime>12/30/2014 12:10:49</publishTime>
+    </File>
+    <File Include="admin/admin.koko.pelajar.list.aspx">
+      <publishTime>12/29/2014 11:04:10</publishTime>
+    </File>
+    <File Include="admin/admin.koko.select.aspx">
+      <publishTime>12/26/2014 23:56:21</publishTime>
+    </File>
+    <File Include="admin/admin.koko.update.aspx">
+      <publishTime>12/29/2014 16:13:15</publishTime>
+    </File>
+    <File Include="admin/admin.login.success.aspx">
+      <publishTime>01/12/2015 13:22:53</publishTime>
+    </File>
+    <File Include="admin/admin.logout.aspx">
+      <publishTime>12/24/2014 19:51:56</publishTime>
+    </File>
+    <File Include="admin/admin.Master">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.pelajar.list.aspx">
+      <publishTime>01/05/2015 06:43:00</publishTime>
+    </File>
+    <File Include="admin/admin.pelajar.view.aspx">
+      <publishTime>12/27/2014 00:15:32</publishTime>
+    </File>
+    <File Include="admin/admin.pengarah.create.aspx">
+      <publishTime>01/02/2015 10:55:45</publishTime>
+    </File>
+    <File Include="admin/admin.pengarah.list.aspx">
+      <publishTime>01/02/2015 10:15:39</publishTime>
+    </File>
+    <File Include="admin/admin.pengarah.update.aspx">
+      <publishTime>01/04/2015 18:53:14</publishTime>
+    </File>
+    <File Include="admin/admin.pengarah.view.aspx">
+      <publishTime>01/02/2015 11:01:00</publishTime>
+    </File>
+    <File Include="admin/admin.pengumuman.create.aspx">
+      <publishTime>01/13/2015 11:16:42</publishTime>
+    </File>
+    <File Include="admin/admin.pengumuman.list.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.pengumuman.update.aspx">
+      <publishTime>01/13/2015 11:16:29</publishTime>
+    </File>
+    <File Include="admin/admin.pengumuman.view.aspx">
+      <publishTime>01/12/2015 17:30:29</publishTime>
+    </File>
+    <File Include="admin/admin.pensyarah.create.aspx">
+      <publishTime>12/27/2014 16:03:25</publishTime>
+    </File>
+    <File Include="admin/admin.pensyarah.list.aspx">
+      <publishTime>12/27/2014 15:46:12</publishTime>
+    </File>
+    <File Include="admin/admin.pensyarah.update.aspx">
+      <publishTime>12/27/2014 10:23:55</publishTime>
+    </File>
+    <File Include="admin/admin.pensyarah.view.aspx">
+      <publishTime>12/27/2014 10:09:19</publishTime>
+    </File>
+    <File Include="admin/admin.persatuan.create.aspx">
+      <publishTime>01/12/2015 18:30:33</publishTime>
+    </File>
+    <File Include="admin/admin.persatuan.list.aspx">
+      <publishTime>01/12/2015 18:30:33</publishTime>
+    </File>
+    <File Include="admin/admin.persatuan.update.aspx">
+      <publishTime>01/12/2015 18:30:33</publishTime>
+    </File>
+    <File Include="admin/admin.persatuan.view.aspx">
+      <publishTime>01/12/2015 18:30:33</publishTime>
+    </File>
+    <File Include="admin/admin.rumahsukan.create.aspx">
+      <publishTime>01/05/2015 09:12:52</publishTime>
+    </File>
+    <File Include="admin/admin.rumahsukan.list.aspx">
+      <publishTime>01/05/2015 09:04:35</publishTime>
+    </File>
+    <File Include="admin/admin.rumahsukan.update.aspx">
+      <publishTime>01/05/2015 09:23:31</publishTime>
+    </File>
+    <File Include="admin/admin.rumahsukan.view.aspx">
+      <publishTime>01/05/2015 09:17:47</publishTime>
+    </File>
+    <File Include="admin/admin.sukan.create.aspx">
+      <publishTime>01/12/2015 18:33:07</publishTime>
+    </File>
+    <File Include="admin/admin.sukan.list.aspx">
+      <publishTime>01/12/2015 18:35:15</publishTime>
+    </File>
+    <File Include="admin/admin.sukan.update.aspx">
+      <publishTime>01/12/2015 18:35:15</publishTime>
+    </File>
+    <File Include="admin/admin.sukan.view.aspx">
+      <publishTime>01/12/2015 18:35:15</publishTime>
+    </File>
+    <File Include="admin/admin.tempahan.create.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.tempahan.print.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.tempahan.search.aspx">
+      <publishTime>01/12/2015 10:55:45</publishTime>
+    </File>
+    <File Include="admin/admin.tempahan.view.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.transfer.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="admin/admin.uniform.create.aspx">
+      <publishTime>12/29/2014 19:00:51</publishTime>
+    </File>
+    <File Include="admin/admin.uniform.list.aspx">
+      <publishTime>12/26/2014 09:07:03</publishTime>
+    </File>
+    <File Include="admin/admin.uniform.update.aspx">
+      <publishTime>12/30/2014 08:48:33</publishTime>
+    </File>
+    <File Include="admin/admin.uniform.view.aspx">
+      <publishTime>12/30/2014 08:48:33</publishTime>
+    </File>
+    <File Include="admin/print.Master">
+      <publishTime>01/09/2015 11:02:56</publishTime>
+    </File>
+    <File Include="bin/UKM_KOKO.dll">
+      <publishTime>01/15/2015 09:45:11</publishTime>
+    </File>
+    <File Include="bin/UKM_KOKO.xml">
+      <publishTime>01/15/2015 09:45:11</publishTime>
+    </File>
+    <File Include="commoncontrol/contact_us.ascx">
+      <publishTime>12/24/2014 20:18:44</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_create.ascx">
+      <publishTime>01/12/2015 18:06:48</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_list.ascx">
+      <publishTime>01/05/2015 10:07:15</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_login.ascx">
+      <publishTime>01/01/2015 21:55:52</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_select.ascx">
+      <publishTime>01/05/2015 11:08:02</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_update.ascx">
+      <publishTime>01/12/2015 18:06:48</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_update_koko.ascx">
+      <publishTime>01/12/2015 18:22:08</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_update_profile.ascx">
+      <publishTime>01/05/2015 10:23:15</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_update_pwd.ascx">
+      <publishTime>01/01/2015 12:01:38</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_view.ascx">
+      <publishTime>01/05/2015 10:14:15</publishTime>
+    </File>
+    <File Include="commoncontrol/instruktor_view_header.ascx">
+      <publishTime>01/05/2015 10:25:39</publishTime>
+    </File>
+    <File Include="commoncontrol/kelas_create.ascx">
+      <publishTime>01/12/2015 18:26:12</publishTime>
+    </File>
+    <File Include="commoncontrol/kelas_list.ascx">
+      <publishTime>12/29/2014 18:35:15</publishTime>
+    </File>
+    <File Include="commoncontrol/kelas_pelajar_list.ascx">
+      <publishTime>01/05/2015 10:10:52</publishTime>
+    </File>
+    <File Include="commoncontrol/kelas_update.ascx">
+      <publishTime>01/12/2015 18:26:12</publishTime>
+    </File>
+    <File Include="commoncontrol/kelas_view.ascx">
+      <publishTime>12/29/2014 18:41:09</publishTime>
+    </File>
+    <File Include="commoncontrol/kemudahan_create.ascx">
+      <publishTime>01/12/2015 18:13:32</publishTime>
+    </File>
+    <File Include="commoncontrol/kemudahan_list.ascx">
+      <publishTime>01/05/2015 07:58:52</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_list.ascx">
+      <publishTime>01/05/2015 10:05:36</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_list_all.ascx">
+      <publishTime>01/12/2015 18:40:10</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_list_persatuan.ascx">
+      <publishTime>01/12/2015 18:37:51</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_list_rumahsukan.ascx">
+      <publishTime>01/12/2015 18:19:12</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_list_sukan.ascx">
+      <publishTime>01/12/2015 18:40:10</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_list_uniform.ascx">
+      <publishTime>01/12/2015 18:17:16</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_pelajar_list.ascx">
+      <publishTime>01/05/2015 10:06:49</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_pelajar_mark.ascx">
+      <publishTime>12/30/2014 15:40:17</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_pelajar_mark_persatuan.ascx">
+      <publishTime>12/31/2014 09:18:02</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_pelajar_mark_sukan.ascx">
+      <publishTime>12/31/2014 09:19:38</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_pelajar_mark_uniform.ascx">
+      <publishTime>12/31/2014 09:19:05</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_select.ascx">
+      <publishTime>01/05/2015 09:56:17</publishTime>
+    </File>
+    <File Include="commoncontrol/koko_update.ascx">
+      <publishTime>01/12/2015 19:00:06</publishTime>
+    </File>
+    <File Include="commoncontrol/pelajar_list.ascx">
+      <publishTime>01/13/2015 08:52:34</publishTime>
+    </File>
+    <File Include="commoncontrol/pelajar_login.ascx">
+      <publishTime>01/01/2015 22:08:42</publishTime>
+    </File>
+    <File Include="commoncontrol/pelajar_select.ascx">
+      <publishTime>01/05/2015 11:02:56</publishTime>
+    </File>
+    <File Include="commoncontrol/pengarah_create.ascx">
+      <publishTime>01/12/2015 18:10:32</publishTime>
+    </File>
+    <File Include="commoncontrol/pengarah_list.ascx">
+      <publishTime>01/02/2015 10:10:36</publishTime>
+    </File>
+    <File Include="commoncontrol/pengarah_login.ascx">
+      <publishTime>01/04/2015 19:06:36</publishTime>
+    </File>
+    <File Include="commoncontrol/pengarah_update.ascx">
+      <publishTime>01/12/2015 18:10:32</publishTime>
+    </File>
+    <File Include="commoncontrol/pengarah_view.ascx">
+      <publishTime>01/02/2015 11:01:58</publishTime>
+    </File>
+    <File Include="commoncontrol/pengumuman_create.ascx">
+      <publishTime>01/12/2015 18:04:19</publishTime>
+    </File>
+    <File Include="commoncontrol/pengumuman_list.ascx">
+      <publishTime>01/13/2015 11:08:38</publishTime>
+    </File>
+    <File Include="commoncontrol/pengumuman_list_pub.ascx">
+      <publishTime>01/13/2015 10:54:51</publishTime>
+    </File>
+    <File Include="commoncontrol/pengumuman_update.ascx">
+      <publishTime>01/13/2015 11:16:29</publishTime>
+    </File>
+    <File Include="commoncontrol/pengumuman_view.ascx">
+      <publishTime>01/13/2015 10:39:30</publishTime>
+    </File>
+    <File Include="commoncontrol/pengumuman_view_pub.ascx">
+      <publishTime>01/13/2015 11:43:24</publishTime>
+    </File>
+    <File Include="commoncontrol/pensyarah_create.ascx">
+      <publishTime>12/27/2014 11:22:49</publishTime>
+    </File>
+    <File Include="commoncontrol/pensyarah_list.ascx">
+      <publishTime>12/31/2014 13:04:22</publishTime>
+    </File>
+    <File Include="commoncontrol/pensyarah_login.ascx">
+      <publishTime>01/01/2015 07:10:43</publishTime>
+    </File>
+    <File Include="commoncontrol/pensyarah_select.ascx">
+      <publishTime>12/27/2014 11:53:34</publishTime>
+    </File>
+    <File Include="commoncontrol/pensyarah_update.ascx">
+      <publishTime>01/12/2015 18:06:14</publishTime>
+    </File>
+    <File Include="commoncontrol/pensyarah_view.ascx">
+      <publishTime>12/27/2014 11:12:07</publishTime>
+    </File>
+    <File Include="commoncontrol/persatuan_create.ascx">
+      <publishTime>01/12/2015 18:37:51</publishTime>
+    </File>
+    <File Include="commoncontrol/persatuan_list.ascx">
+      <publishTime>01/12/2015 18:41:40</publishTime>
+    </File>
+    <File Include="commoncontrol/persatuan_update.ascx">
+      <publishTime>01/12/2015 18:38:54</publishTime>
+    </File>
+    <File Include="commoncontrol/persatuan_view.ascx">
+      <publishTime>01/12/2015 18:37:51</publishTime>
+    </File>
+    <File Include="commoncontrol/rumahsukan_create.ascx">
+      <publishTime>01/12/2015 18:25:40</publishTime>
+    </File>
+    <File Include="commoncontrol/rumahsukan_list.ascx">
+      <publishTime>01/05/2015 09:14:13</publishTime>
+    </File>
+    <File Include="commoncontrol/rumahsukan_update.ascx">
+      <publishTime>01/12/2015 18:25:40</publishTime>
+    </File>
+    <File Include="commoncontrol/rumahsukan_view.ascx">
+      <publishTime>01/12/2015 18:25:40</publishTime>
+    </File>
+    <File Include="commoncontrol/studentprofile_update_mykad.ascx">
+      <publishTime>01/13/2015 09:28:12</publishTime>
+    </File>
+    <File Include="commoncontrol/studentprofile_view.ascx">
+      <publishTime>12/26/2014 16:03:37</publishTime>
+    </File>
+    <File Include="commoncontrol/studentprofile_view_header.ascx">
+      <publishTime>12/26/2014 18:28:22</publishTime>
+    </File>
+    <File Include="commoncontrol/sukan_create.ascx">
+      <publishTime>01/12/2015 18:25:40</publishTime>
+    </File>
+    <File Include="commoncontrol/sukan_list.ascx">
+      <publishTime>01/12/2015 18:41:40</publishTime>
+    </File>
+    <File Include="commoncontrol/sukan_update.ascx">
+      <publishTime>01/12/2015 18:25:40</publishTime>
+    </File>
+    <File Include="commoncontrol/sukan_view.ascx">
+      <publishTime>01/12/2015 18:25:40</publishTime>
+    </File>
+    <File Include="commoncontrol/tempahandetail_list.ascx">
+      <publishTime>01/09/2015 11:36:47</publishTime>
+    </File>
+    <File Include="commoncontrol/tempahan_create.ascx">
+      <publishTime>01/12/2015 18:13:32</publishTime>
+    </File>
+    <File Include="commoncontrol/tempahan_list.ascx">
+      <publishTime>01/09/2015 11:36:01</publishTime>
+    </File>
+    <File Include="commoncontrol/tempahan_search.ascx">
+      <publishTime>01/12/2015 13:08:03</publishTime>
+    </File>
+    <File Include="commoncontrol/tempahan_update.ascx">
+      <publishTime>01/05/2015 12:40:55</publishTime>
+    </File>
+    <File Include="commoncontrol/tempahan_view.ascx">
+      <publishTime>01/12/2015 11:24:45</publishTime>
+    </File>
+    <File Include="commoncontrol/tor_instruktor.ascx">
+      <publishTime>01/04/2015 22:59:17</publishTime>
+    </File>
+    <File Include="commoncontrol/ukm3_transfer.ascx">
+      <publishTime>12/30/2014 09:45:10</publishTime>
+    </File>
+    <File Include="commoncontrol/uniform_create.ascx">
+      <publishTime>01/12/2015 18:24:10</publishTime>
+    </File>
+    <File Include="commoncontrol/uniform_list.ascx">
+      <publishTime>12/29/2014 18:53:44</publishTime>
+    </File>
+    <File Include="commoncontrol/uniform_update.ascx">
+      <publishTime>01/12/2015 18:24:10</publishTime>
+    </File>
+    <File Include="commoncontrol/uniform_view.ascx">
+      <publishTime>01/12/2015 18:24:10</publishTime>
+    </File>
+    <File Include="commoncontrol/user_login.ascx">
+      <publishTime>01/01/2015 21:56:27</publishTime>
+    </File>
+    <File Include="css/koko_style.css">
+      <publishTime>12/26/2014 08:33:21</publishTime>
+    </File>
+    <File Include="css/koko_table.css">
+      <publishTime>12/25/2014 07:57:33</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>12/26/2014 08:12:26</publishTime>
+    </File>
+    <File Include="default.contactus.aspx">
+      <publishTime>12/24/2014 20:25:31</publishTime>
+    </File>
+    <File Include="default.master">
+      <publishTime>01/15/2015 09:53:50</publishTime>
+    </File>
+    <File Include="default.timeout.aspx">
+      <publishTime>12/26/2014 08:19:50</publishTime>
+    </File>
+    <File Include="download/PERATURAN PENILAIAN KOKURIKULUM.pdf">
+      <publishTime>01/04/2015 22:47:41</publishTime>
+    </File>
+    <File Include="download/PERATURAN _PERLEMBAGAAN PERSATUAN.pdf">
+      <publishTime>01/04/2015 22:48:22</publishTime>
+    </File>
+    <File Include="download/Tanggungjawab Ahli Jawatankuasa Persatuan dan kelab.pdf">
+      <publishTime>01/04/2015 22:49:15</publishTime>
+    </File>
+    <File Include="facility/facility.login.succcess.aspx">
+      <publishTime>12/24/2014 20:16:47</publishTime>
+    </File>
+    <File Include="facility/facility.master">
+      <publishTime>01/12/2015 18:33:07</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>02/17/2011 22:52:26</publishTime>
+    </File>
+    <File Include="img/ambulance-facebook-emoticon.png">
+      <publishTime>01/05/2015 07:15:33</publishTime>
+    </File>
+    <File Include="img/bank-emoticon-for-facebook.png">
+      <publishTime>12/25/2014 08:15:34</publishTime>
+    </File>
+    <File Include="img/bus-emoticon.png">
+      <publishTime>12/25/2014 08:51:08</publishTime>
+    </File>
+    <File Include="img/department-store-emoticon.png">
+      <publishTime>01/05/2015 08:09:07</publishTime>
+    </File>
+    <File Include="img/error.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/facebook-policeman-symbol.png">
+      <publishTime>01/02/2015 09:20:02</publishTime>
+    </File>
+    <File Include="img/girl-emoticon-for-facebook.png">
+      <publishTime>12/29/2014 09:13:36</publishTime>
+    </File>
+    <File Include="img/info.png">
+      <publishTime>10/10/2007 01:41:56</publishTime>
+    </File>
+    <File Include="img/man-emoticon.png">
+      <publishTime>12/29/2014 09:12:02</publishTime>
+    </File>
+    <File Include="img/megaphone-emoticon.png">
+      <publishTime>12/25/2014 08:19:24</publishTime>
+    </File>
+    <File Include="img/memo-sign-for-facebook.png">
+      <publishTime>12/25/2014 08:16:00</publishTime>
+    </File>
+    <File Include="img/mens-emoticon.png">
+      <publishTime>12/24/2014 15:59:10</publishTime>
+    </File>
+    <File Include="img/permatapintar.jpg">
+      <publishTime>02/28/2010 23:19:16</publishTime>
+    </File>
+    <File Include="img/phone-symbol.png">
+      <publishTime>01/05/2015 07:16:50</publishTime>
+    </File>
+    <File Include="img/red-exclamation-mark.png">
+      <publishTime>12/25/2014 08:20:01</publishTime>
+    </File>
+    <File Include="img/restroom-emoticon.png">
+      <publishTime>12/25/2014 08:12:56</publishTime>
+    </File>
+    <File Include="img/soccer-ball-emoticon.png">
+      <publishTime>12/25/2014 08:10:32</publishTime>
+    </File>
+    <File Include="img/success.png">
+      <publishTime>10/10/2007 01:47:48</publishTime>
+    </File>
+    <File Include="img/t-shirt-emoticon-for-facebook.png">
+      <publishTime>01/05/2015 09:03:28</publishTime>
+    </File>
+    <File Include="img/validation.png">
+      <publishTime>10/10/2007 01:34:28</publishTime>
+    </File>
+    <File Include="img/warning.png">
+      <publishTime>10/10/2007 01:44:54</publishTime>
+    </File>
+    <File Include="instruktor.forgot.aspx">
+      <publishTime>01/01/2015 20:14:42</publishTime>
+    </File>
+    <File Include="instruktor.login.aspx">
+      <publishTime>01/01/2015 07:32:58</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.login.succcess.aspx">
+      <publishTime>01/04/2015 22:52:39</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.mark.update.aspx">
+      <publishTime>01/01/2015 11:01:03</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.Master">
+      <publishTime>01/01/2015 11:19:32</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.password.update.aspx">
+      <publishTime>01/01/2015 11:37:24</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.persatuan.update.aspx">
+      <publishTime>01/01/2015 10:03:23</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.profil.update.aspx">
+      <publishTime>01/01/2015 11:01:03</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.sukan.update.aspx">
+      <publishTime>01/01/2015 10:03:35</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.uniform.update.aspx">
+      <publishTime>01/01/2015 08:01:06</publishTime>
+    </File>
+    <File Include="instruktor/instruktor.year.select.aspx">
+      <publishTime>01/01/2015 11:22:47</publishTime>
+    </File>
+    <File Include="js/jquery-1.9.1.min.js">
+      <publishTime>03/26/2013 11:41:10</publishTime>
+    </File>
+    <File Include="js/modernizr.js">
+      <publishTime>01/24/2014 13:51:58</publishTime>
+    </File>
+    <File Include="js/tabs.js">
+      <publishTime>02/11/2014 11:45:28</publishTime>
+    </File>
+    <File Include="pelajar.login.aspx">
+      <publishTime>12/25/2014 08:04:34</publishTime>
+    </File>
+    <File Include="pelajar/pelajar.koko.update.aspx">
+      <publishTime>01/02/2015 05:41:38</publishTime>
+    </File>
+    <File Include="pelajar/pelajar.login.succcess.aspx">
+      <publishTime>01/01/2015 22:00:38</publishTime>
+    </File>
+    <File Include="pelajar/pelajar.master">
+      <publishTime>01/05/2015 06:38:51</publishTime>
+    </File>
+    <File Include="pelajar/pelajar.password.update.aspx">
+      <publishTime>01/02/2015 05:38:41</publishTime>
+    </File>
+    <File Include="pelajar/pelajar.profil.update.aspx">
+      <publishTime>01/13/2015 09:11:53</publishTime>
+    </File>
+    <File Include="pelajar/pelajar.year.select.aspx">
+      <publishTime>01/01/2015 23:21:10</publishTime>
+    </File>
+    <File Include="pengarah.login.aspx">
+      <publishTime>01/04/2015 19:16:57</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.facility.update.aspx">
+      <publishTime>01/04/2015 19:20:16</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.login.succcess.aspx">
+      <publishTime>01/04/2015 19:11:47</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.Master">
+      <publishTime>01/12/2015 10:55:45</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.password.update.aspx">
+      <publishTime>01/04/2015 19:20:47</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.pelajar.list.aspx">
+      <publishTime>01/05/2015 06:43:00</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.pelajar.view.aspx">
+      <publishTime>01/05/2015 06:51:50</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.profil.update.aspx">
+      <publishTime>01/04/2015 19:25:40</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.tempahan.search.aspx">
+      <publishTime>01/12/2015 10:55:45</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.tempahan.view.aspx">
+      <publishTime>01/12/2015 16:00:54</publishTime>
+    </File>
+    <File Include="pengarah/pengarah.year.select.aspx">
+      <publishTime>01/04/2015 19:12:46</publishTime>
+    </File>
+    <File Include="pensyarah.login.aspx">
+      <publishTime>01/01/2015 07:11:54</publishTime>
+    </File>
+    <File Include="pensyarah/instruktor.mark.update.aspx">
+      <publishTime>01/01/2015 07:22:47</publishTime>
+    </File>
+    <File Include="pensyarah/pensyarah.login.succcess.aspx">
+      <publishTime>12/24/2014 20:16:29</publishTime>
+    </File>
+    <File Include="pensyarah/pensyarah.master">
+      <publishTime>01/01/2015 07:14:07</publishTime>
+    </File>
+    <File Include="pensyarah/pensyarah.password.update.aspx">
+      <publishTime>01/01/2015 06:58:40</publishTime>
+    </File>
+    <File Include="pensyarah/pensyarah.profil.update.aspx">
+      <publishTime>01/01/2015 06:58:24</publishTime>
+    </File>
+    <File Include="pensyarah/pensyarah.year.select.aspx">
+      <publishTime>01/01/2015 07:20:41</publishTime>
+    </File>
+    <File Include="public.pengumuman.view.aspx">
+      <publishTime>01/13/2015 09:54:29</publishTime>
+    </File>
+    <File Include="ShowImage.ashx">
+      <publishTime>01/20/2012 11:20:38</publishTime>
+    </File>
+    <File Include="user.login.aspx">
+      <publishTime>12/24/2014 16:38:04</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/15/2015 09:45:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

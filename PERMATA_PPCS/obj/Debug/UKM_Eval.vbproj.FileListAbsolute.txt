@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\bin\UKM_Eval.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\bin\UKM_Eval.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\bin\UKM_Eval.xml
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\obj\Debug\UKM_Eval.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\obj\Debug\UKM_Eval.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\obj\Debug\UKM_Eval.dll
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\obj\Debug\UKM_Eval.xml
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\UKM1_Eval_20100713v2\UKM1_Eval\obj\Debug\UKM_Eval.pdb

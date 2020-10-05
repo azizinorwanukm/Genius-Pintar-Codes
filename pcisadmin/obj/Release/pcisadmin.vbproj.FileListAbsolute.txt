@@ -1,0 +1,57 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\bin\pcisadmin.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\bin\pcisadmin.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\bin\pcisadmin.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\obj\Release\pcisadmin.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\obj\Release\pcisadmin.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\obj\Release\pcisadmin.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\obj\Release\pcisadmin.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\pcisadmin\obj\Release\pcisadmin.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.dll.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\pcisadmin.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.dll.config
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.pdb
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\bin\araken.pcisadmin.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.Resources.resources
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\pcisadmin.vbproj.GenerateResource.Cache
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.dll
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.xml
+C:\Users\jjama\Documents\Visual Studio 2015\Projects\UPSI2015\pcisadmin\obj\Release\araken.pcisadmin.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\bin\araken.pcisadmin.dll.config
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\bin\araken.pcisadmin.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\bin\araken.pcisadmin.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\bin\araken.pcisadmin.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\obj\Release\araken.pcisadmin.Resources.resources
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\obj\Release\pcisadmin.vbproj.GenerateResource.Cache
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\obj\Release\araken.pcisadmin.dll
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\obj\Release\araken.pcisadmin.xml
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\obj\Release\araken.pcisadmin.pdb
+C:\Users\jjama\OneDrive\Projects\PERMATAPINTAR_UPSI2017\pcisadmin\obj\Release\pcisadmin.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\bin\araken.pcisadmin.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\bin\araken.pcisadmin.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\bin\araken.pcisadmin.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\bin\araken.pcisadmin.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\pcisadmin.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\araken.pcisadmin.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\pcisadmin.vbproj.GenerateResource.Cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\araken.pcisadmin.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\araken.pcisadmin.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\araken.pcisadmin.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\pcisadmin\obj\Release\pcisadmin.vbproj.CoreCompileInputs.cache
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\bin\araken.pcisadmin.dll.config
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\bin\araken.pcisadmin.dll
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\bin\araken.pcisadmin.pdb
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\bin\araken.pcisadmin.xml
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\obj\Release\pcisadmin.vbprojAssemblyReference.cache
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\obj\Release\araken.pcisadmin.Resources.resources
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\obj\Release\pcisadmin.vbproj.GenerateResource.cache
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\obj\Release\araken.pcisadmin.dll
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\obj\Release\araken.pcisadmin.xml
+C:\Users\acapx\Desktop\PermataPintar\pcisadmin\obj\Release\araken.pcisadmin.pdb

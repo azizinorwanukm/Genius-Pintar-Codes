@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Web
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UKM_KOKO", "UKM_KOKO.vbproj", "{F06F74F7-2EA6-4397-B4E3-854D235E6C20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F06F74F7-2EA6-4397-B4E3-854D235E6C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06F74F7-2EA6-4397-B4E3-854D235E6C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06F74F7-2EA6-4397-B4E3-854D235E6C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06F74F7-2EA6-4397-B4E3-854D235E6C20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

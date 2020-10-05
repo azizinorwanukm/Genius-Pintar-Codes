@@ -1,0 +1,391 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="adminoperator.master.vb" Inherits="permatapintar.adminoperator" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Sistem Pengurusan dan Pemantauan Ujian UKM1 & UKM2</title>
+    <meta name="robots" content="noindex" />
+    <meta content="" name="Keywords" />
+    <meta content="Global" name="Distribution" />
+    <meta content="jjamain@yahoo.com" name="Author" />
+    <meta content="index,follow" name="Robots" />
+
+    <script src="../js/CalendarPopup.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">document.write(getCalendarStyles());</script>
+
+    <link href="~/css/portal.default.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/table_style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="fbbody">
+    <form id="form1" runat="server">
+        <table style="width: 100%; padding: 0px; border: 0px dotted green;">
+            <tr>
+                <td colspan="2">
+                    <table class="fbheader_menu">
+                        <tr>
+                            <td style="width: 60%; text-align: left;">
+                                <a href="default.aspx">Sistem Pengurusan dan Pemantauan Ujian UKM1 & UKM2-ADMIN</a>|<asp:Label
+                                    ID="lblLoginID" runat="server" Text="Label"></asp:Label>
+                            </td>
+                            <td style="width: 40%; text-align: right;">
+                                <a href="notification.list.aspx">Notification</a>|<a href="msginbox.list.aspx">Mesej
+                                Inbox</a>|<a href="logout.aspx">Logout</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 10%; vertical-align: top;">
+                    <table class="newspaper-header" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Pengguna</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Nama:<asp:Label ID="lblFullname" runat="server" Text="" CssClass="fblabel_view"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td>Jenis:<asp:Label ID="lblUserType" runat="server" Text="" CssClass="fblabel_view"></asp:Label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Maklumat Pelajar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="studentprofile.search.aspx" rel="nofollow" target="_self" id="01">Carian Pelajar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.alumni.list.aspx" rel="nofollow" target="_self">Senarai Alumni</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Profil Sekolah</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="schoolprofile.studentprofile.select.aspx" rel="nofollow" target="_self">Carian Sekolah</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="schoolprofile.create.aspx" rel="nofollow" target="_self">Daftar Sekolah Baru</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="schoolprofile.select.pindah.aspx" rel="nofollow" target="_self">Pindah Sekolah</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ujian UKM1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="ukm1.progress.aspx" rel="nofollow" target="_self">Senarai Pelajar Terkini</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.schoolprofile.list.aspx" rel="nofollow" target="_self">Senarai Sekolah</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.state.student.list.aspx" rel="nofollow" target="_self">Senarai Negeri</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.schoolprofile.select.aspx" rel="nofollow" target="_self">Pindah Sekolah</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ringkasan Ujian UKM1</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="ukm1.schoolprofile.list.mas.aspx" rel="nofollow" target="_self">Ringkasan Ujian Sekolah</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.schoolstate.summary.aspx" rel="nofollow" target="_self">Ringkasan Ujian Negeri</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.schoolppd.summary.aspx" rel="nofollow" target="_self">Ringkasan Ujian PPD</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.examend.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Tarikh</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.dobyear.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Umur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.studentgender.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Jantina</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.studentrace.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Bangsa</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.schoollokasi.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Lokasi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm1.schooltype.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Jenis Sekolah</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Pusat Ujian UKM2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="schoolprofile.pusatujian.select.aspx" rel="nofollow" target="_self">Daftar Pusat Ujian</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pusatujian.list.aspx" rel="nofollow" target="_self">Senarai Pusat Ujian</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pusatujian.schedule.aspx" rel="nofollow" target="_self">Jadual Pusat Ujian</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pusatujian.petugas.create.aspx" rel="nofollow" target="_self">Daftar Petugas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pusatujian.list.all.aspx" rel="nofollow" target="_self">Senarai Petugas</a></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ujian UKM2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td><a href="ukm2.ukm2.list.aspx" rel="nofollow" target="_self">Senarai Pelajar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="pusatujian.kehadiran.aspx" rel="nofollow" target="_self">Kehadiran Pelajar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.status.aspx" rel="nofollow" target="_self">Status Ujian UKM2</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ringkasan Ujian UKM2</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="ukm2.schoolprofile.list.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Sekolah</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.schoolstate.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Negeri</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.schoolppd.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian PPD</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.dobyear.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Umur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.studentgender.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Jantina</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.studentrace.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Bangsa</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.schoollokasi.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Lokasi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ukm2.schooltype.summary.aspx"
+                                    rel="nofollow" target="_self">Ringkasan Ujian Jenis Sekolah</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">PPCS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="ppcs.user.assign.aspx" rel="nofollow" target="_self" title="">Pilih Petugas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.user.list.aspx" rel="nofollow" target="_self" title="">Senarai Petugas</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.student.search.aspx" rel="nofollow" target="_self">Carian Pelajar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.offer.status.aspx" rel="nofollow" target="_self">Status Tawaran</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.list.kehadiran.aspx" rel="nofollow" target="_self" title="">Kehadiran Pelajar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                    <table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Ringkasan PPCS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="ppcs.schoolprofile.list.aspx" rel="nofollow" target="_self">Ringkasan Sekolah</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.schoolstate.summary.aspx" rel="nofollow" target="_self">Ringkasan Negeri</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.schoolppd.summary.aspx" rel="nofollow" target="_self">Ringkasan PPD</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.dobyear.summary.aspx" rel="nofollow" target="_self">Ringkasan Umur</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.studentgender.summary.aspx" rel="nofollow" target="_self">Ringkasan Jantina</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.studentrace.summary.aspx" rel="nofollow" target="_self">Ringkasan Bangsa</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.schoollokasi.summary.aspx" rel="nofollow" target="_self">Ringkasan Lokasi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="ppcs.schooltype.summary.aspx" rel="nofollow" target="_self">Ringkasan Jenis Sekolah</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    &nbsp;
+                  <%--<table class="newspaper-a" summary="PERMATApintar Menu">
+                        <thead>
+                            <tr>
+                                <th scope="col">Kolej PERMATApintar Negara</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Import</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Ujian Kreativiti</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Etika, Moral & Disiplin</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Kemahiran Komunikasi</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Kemahiran Kepimpinan</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Temuduga</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Matematik</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Sains</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Eksport UKM1, UKM2 & UKM3</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Kelayakan ke Kolej PERMATApintar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Status Tawaran</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Senarai Pelajar</a></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" rel="nofollow" target="_self">Kemaskini No Pelajar</a></td>
+                            </tr>
+                        </tbody>
+                    </table>--%>
+                </td>
+                <td style="width: 90%; vertical-align: top;">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        &nbsp;
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center; vertical-align: top;">
+                    <table style="width: 100%; text-align: center; vertical-align: top; border: none 0px;">
+                        <tr>
+                            <td>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fbfooter">|&nbsp; © 2010 Universiti Kebangsaan Malaysia&nbsp;|&nbsp;Designed and Developed
+                            by ARAKEN SDN. BHD.&nbsp;|
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Untuk skrin 1024 X 768 dan ke atas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <asp:Label ID="lblFooterMsg" runat="server" Text=""></asp:Label>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

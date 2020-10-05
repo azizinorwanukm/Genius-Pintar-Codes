@@ -1,0 +1,1250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lbl02_instruction" xml:space="preserve">
+    <value>Study the following pairs and type their SIMILARITIES in the space provided.</value>
+  </data>
+  <data name="lbl06_instruction" xml:space="preserve">
+    <value>Please type the meanings of the following words in the space provided.</value>
+  </data>
+  <data name="lbllogin_id" xml:space="preserve">
+    <value>TEL#:</value>
+  </data>
+  <data name="default_01" xml:space="preserve">
+    <value>LOGIN HERE</value>
+  </data>
+  <data name="default_02" xml:space="preserve">
+    <value>Note: Please choose your preferred language. You are NOT allowed to change the language after you have made your choice. Language Selection: </value>
+  </data>
+  <data name="default_03" xml:space="preserve">
+    <value>Insert TEL# and click [Login>>].</value>
+  </data>
+  <data name="default_04" xml:space="preserve">
+    <value>Pilih bahasa pilihan:</value> 
+  </data>
+  <data name="default_05" xml:space="preserve">
+    <value>Total of modules is 15. You are required to answer in 3 hours (180 minutes). If there is any problem, extra time will be given by the invigilator.</value>
+  </data>
+  <data name="default_06" xml:space="preserve">
+    <value>Please answer using the language of your choice.</value>
+  </data>
+  <data name="default_07" xml:space="preserve">
+    <value>02. PERSAMAAN</value>
+  </data>
+  <data name="default_08" xml:space="preserve">
+    <value>06. PERBENDAHARAAN KATA</value>
+  </data>
+  <data name="09. KOMPREHENSIF" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="default_10" xml:space="preserve">
+    <value>13. MAKLUMAT</value>
+  </data>
+  <data name="default_11" xml:space="preserve">
+    <value>14. ARITMATIK</value>
+  </data>
+  <data name="default_12" xml:space="preserve">
+    <value>15. PENA'AKULAN PERKATAAN</value>
+  </data>
+  <data name="default_13" xml:space="preserve">
+    <value>System Requirements:</value>
+  </data>
+  <data name="default_14" xml:space="preserve">
+    <value>Use only MS Internet Explorer.</value>
+  </data>
+  <data name="default_15" xml:space="preserve">
+    <value>Internet Explorer 9. Download here.</value>
+  </data>
+  <data name="default_16" xml:space="preserve">
+    <value>Test response time. Click here.</value>
+  </data>
+  <data name="default_17" xml:space="preserve">
+    <value>Test Internet connection speed. Click here.</value>
+  </data>
+  <data name="default_drag" xml:space="preserve">
+    <value>Test browser drag and drop. Click here.</value>
+  </data>
+  <data name="Perhatian" xml:space="preserve">
+    <value>Attention!</value>
+  </data>
+  <data name="Cubalagi" xml:space="preserve">
+    <value>Invalid USERID or PASSWORD! Please try again!</value>
+  </data>
+  <data name="Examtime" xml:space="preserve">
+    <value>The test is CLOSED after 7 PM! Please contact system admin.</value>
+  </data>
+  <data name="Examday" xml:space="preserve">
+    <value>Your USERID has been LOCKED. You had login before on a different day. Please contact person in-charge.</value>
+  </data>
+  <data name="Mandatory" xml:space="preserve">
+    <value>You are required to answer this question. Click [Skip Module] if you cannot answer this question.</value>
+  </data>
+  <data name="ukm2_default_01" xml:space="preserve">
+    <value>Araken I-PROFILE Online Test is a web-based application. This test consists of 15 modules that test various cognitive intelligence including vocabulary, symbol search, number repetition, matching patterns and shapes, comprehension and coding . It is built on-line and can be accessed from http://esaringan.arakenonline.biz.&lt;br /&gt;&lt;br /&gt;
+      </value>
+  </data>
+  <data name="ukm2_default_02" xml:space="preserve">
+    <value>:: YOUR PROFILE ::</value>
+  </data>
+  <data name="ukm2_default_03" xml:space="preserve">
+    <value>Identification Number</value>
+  </data>
+  <data name="ukm2_default_04" xml:space="preserve">
+    <value>Full name</value>
+  </data>
+  <data name="ukm2_default_05" xml:space="preserve">
+    <value>Standard/Form</value>
+  </data>
+  <data name="ukm2_default_06" xml:space="preserve">
+    <value>School Name</value>
+  </data>
+  <data name="ukm2_default_07" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="ukm2_default_08" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="ukm2_default_09" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="ukm2_default_11" xml:space="preserve">
+    <value>Selected Language</value>
+  </data>
+
+  <data name="btnNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="btnSkip" xml:space="preserve">
+    <value>Skip Module</value>
+  </data>
+
+
+
+  <data name="ukm2_testend" xml:space="preserve">
+    <value>End Test</value>
+  </data>
+
+
+
+  <data name="lbl01_instruction_sample" xml:space="preserve">
+    <value>
+    You are required to arrange the shapes provided to form the figure shown below.&lt;br /&gt;CLICK on the shape and DRAG it onto the YELLOW area provided.
+    </value>
+  </data>
+  <data name="lbl01_instruction" xml:space="preserve">
+    <value>
+    You are required to arrange the shapes provided to form the figure shown below.&lt;br /&gt;CLICK on the shape and DRAG it onto the YELLOW area provided.
+    </value>
+  </data>
+
+  <data name="ukm2_0100_01" xml:space="preserve">
+    <value>01. BLOCK DESIGN</value>
+  </data>
+  <data name="lblSample" xml:space="preserve">
+    <value>[This is an example, no mark is granted]</value>
+  </data>
+
+  <data name="ukm2_0100_02" xml:space="preserve">
+    <value>Drag the shape provided onto this YELLOW area.&lt;br /&gt; To make changes, click once more on the area.</value>
+  </data>
+  <data name="ukm2_0100_03" xml:space="preserve">
+    <value>Look at this figure. This is the figure to be formed.</value>
+  </data>
+  <data name="ukm2_0100_04" xml:space="preserve">
+    <value>
+      Below are shapes provided.&lt;br /&gt;Click on the shape and drag it.&lt;br /&gt;Click again on the area to place it in the area.
+    </value>
+  </data>
+  <data name="ukm2_0100_05" xml:space="preserve">
+    <value>Click [Start&gt;&gt;] if you are ready.</value>
+  </data>
+
+
+
+  <data name="ukm2_0200_header" xml:space="preserve">
+    <value>02. SIMILARITIES</value>
+  </data>
+
+  <data name="txt02_00" xml:space="preserve">
+    <value>Primer colours, Colours of the traffic lights, Lights on the traffic lights, Selangor‘s flag.</value>
+  </data>
+  <data name="ukm2_0200_01" xml:space="preserve">
+    <value>Sample answer for the above question.&lt;br /&gt;
+    (Primer colours, Colours of the traffic lights, Lights on the traffic lights, Selangor‘s flag)
+    </value>
+  </data>
+  <data name="ukm2_0200_02" xml:space="preserve">
+    <value>Click [Next ] if you are ready.</value>
+  </data>
+
+
+
+  <data name="lbl02_00" xml:space="preserve">
+    <value>RED - YELLOW</value>
+  </data>
+  <data name="lbl02_01" xml:space="preserve">
+    <value>RED - YELLOW</value>
+  </data>
+  <data name="lbl02_02" xml:space="preserve">
+    <value>RICE - BREAD</value>
+  </data>
+  <data name="lbl02_03" xml:space="preserve">
+    <value>SHIRT - TROUSERS</value>
+  </data>
+  <data name="lbl02_04" xml:space="preserve">
+    <value>GRAPE - PEAR</value>
+  </data>
+  <data name="lbl02_05" xml:space="preserve">
+    <value>FROG - SNAKE</value>
+  </data>
+  <data name="lbl02_06" xml:space="preserve">
+    <value>MOSQUITO - FLY</value>
+  </data>
+  <data name="lbl02_07" xml:space="preserve">
+    <value>COOKING POT - FRYING PAN</value>
+  </data>
+  <data name="lbl02_08" xml:space="preserve">
+    <value>LOVE - HATRED</value>
+  </data>
+  <data name="lbl02_09" xml:space="preserve">
+    <value>TOUNGE - LIP</value>
+  </data>
+  <data name="lbl02_10" xml:space="preserve">
+    <value>GOLD - SILVER</value>
+  </data>
+  <data name="lbl02_11" xml:space="preserve">
+    <value>SWIMMING - RUNNING</value>
+  </data>
+  <data name="lbl02_12" xml:space="preserve">
+    <value>SUPPLE - BOW</value>
+  </data>
+  <data name="lbl02_13" xml:space="preserve">
+    <value>HYDROGEN - OXYGEN</value>
+  </data>
+  <data name="lbl02_14" xml:space="preserve">
+    <value>SINGER - ACTOR</value>
+  </data>
+  <data name="lbl02_15" xml:space="preserve">
+    <value>TSUNAMI - EARTHQUAKE</value>
+  </data>
+  <data name="lbl02_16" xml:space="preserve">
+    <value>SUMMIT - CANYON</value>
+  </data>
+  <data name="lbl02_17" xml:space="preserve">
+    <value>WINNER - LOSER</value>
+  </data>
+  <data name="lbl02_18" xml:space="preserve">
+    <value>GRATEFUL - ARROGANT</value>
+  </data>
+  <data name="lbl02_19" xml:space="preserve">
+    <value>TYRE - ERASER</value>
+  </data>
+  <data name="lbl02_20" xml:space="preserve">
+    <value>BORDER - BOUNDARY</value>
+  </data>
+  <data name="lbl02_21" xml:space="preserve">
+    <value>SUGAR - HONEY</value>
+  </data>
+  <data name="lbl02_22" xml:space="preserve">
+    <value>TEMPORARY - FOREVER</value>
+  </data>
+  <data name="lbl02_23" xml:space="preserve">
+    <value>SPACIOUS - PACK</value>
+  </data>
+
+  <data name="ukm2_0300_header" xml:space="preserve">
+    <value>03. DIGIT SPAN</value>
+  </data>
+  <data name="lbl03_instruction_sample" xml:space="preserve">
+    <value>Look at the number that will be displayed and RETYPE ACCORDING TO THE SEQUENCE displayed in descending order in the space provided.</value>
+  </data>
+  <data name="lbl03_instruction" xml:space="preserve">
+    <value>Look at the number that will be displayed and RETYPE ACCORDING TO THE SEQUENCE displayed in descending order in the space provided.</value>
+  </data>
+  <data name="ukm2_0300_01" xml:space="preserve">
+    <value>1. Click the [Start] button to begin answering.</value>
+  </data>
+  <data name="ukm2_0300_02" xml:space="preserve">
+    <value>2. Type what is displayed here. (The answer to this question is 364)</value>
+  </data>
+  <data name="ukm2_0300_03" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+  <data name="Q38" xml:space="preserve">
+    <value>3 6</value>
+  </data>
+  <data name="Q39" xml:space="preserve">
+    <value>6 8</value>
+  </data>
+  <data name="Q40" xml:space="preserve">
+    <value>1 6 4</value>
+  </data>
+  <data name="Q41" xml:space="preserve">
+    <value>8 3 6</value>
+  </data>
+  <data name="Q42" xml:space="preserve">
+    <value>5 6 3 9</value>
+  </data>
+  <data name="Q43" xml:space="preserve">
+    <value>4 3 7 9</value>
+  </data>
+  <data name="Q44" xml:space="preserve">
+    <value>6 2 4 5 7</value>
+  </data>
+  <data name="Q45" xml:space="preserve">
+    <value>7 4 3 6 4</value>
+  </data>
+  <data name="Q46" xml:space="preserve">
+    <value>1 4 7 3 5 2</value>
+  </data>
+  <data name="Q47" xml:space="preserve">
+    <value>5 7 4 2 6 1</value>
+  </data>
+  <data name="Q48" xml:space="preserve">
+    <value>7 3 9 6 4 5 6</value>
+  </data>
+  <data name="Q49" xml:space="preserve">
+    <value>7 6 3 4 5 8 1</value>
+  </data>
+  <data name="Q50" xml:space="preserve">
+    <value>3 6 2 7 1 5 8 9</value>
+  </data>
+  <data name="Q51" xml:space="preserve">
+    <value>4 7 5 2 1 3 9 6</value>
+  </data>
+  <data name="Q52" xml:space="preserve">
+    <value>3 1 6 9 5 4 8 2 7</value>
+  </data>
+  <data name="Q53" xml:space="preserve">
+    <value>8 4 2 7 3 5 6 1 9</value>
+  </data>
+
+
+  <data name="ukm2_0400_header" xml:space="preserve">
+    <value>04. PICTURE CONCEPT</value>
+  </data>
+  <data name="lbl04_instruction_sample" xml:space="preserve">
+    <value>Look at the following pictures. Click or choose ONE PICTURE FROM EACH ROW that represents similar category.</value>
+  </data>
+  <data name="lbl04_instruction" xml:space="preserve">
+    <value>Look at the following pictures. Click or choose ONE PICTURE FROM EACH ROW that represents similar category.</value>
+  </data>
+  <data name="lblRow01" xml:space="preserve">
+    <value>ROW</value>
+  </data>
+  <data name="lblRow02" xml:space="preserve">
+    <value>ROW</value>
+  </data>
+
+
+
+  <data name="ukm2_0400_01" xml:space="preserve">
+    <value>Click once more on your choice to change your answer. Your choice will be in RED.</value>
+  </data>
+  <data name="ukm2_0400_02" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+  <data name="ukm2_0500_header" xml:space="preserve">
+    <value>05. CODING </value>
+  </data>
+  <data name="lbl05_instruction_sample" xml:space="preserve">
+    <value>The following table shows symbols that represent numbers 1 to 9. Please MATCH THE SYMBOLS TO THE FOLLOWING NUMBER by typing the number for each code in the space provided.</value>
+  </data>
+  <data name="lbl05_instruction" xml:space="preserve">
+    <value>The following table shows symbols that represent numbers 1 to 9. Please MATCH THE SYMBOLS TO THE FOLLOWING NUMBER by typing the number for each code in the space provided.</value>
+  </data>
+  <data name="ukm2_0500_01" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+  <data name="ukm2_0600_header" xml:space="preserve">
+    <value>06. VOCABULARY</value>
+  </data>
+  <data name="lbl06_instruction_sample" xml:space="preserve">
+    <value>Please type the MEANINGS OF THE FOLLOWING WORDS in the space provided.</value>
+  </data>
+  <data name="lbl06_instruction" xml:space="preserve">
+    <value>Please type the MEANINGS OF THE FOLLOWING WORDS in the space provided.</value>
+  </data>
+  <data name="ukm2_0600_01" xml:space="preserve">
+    <value>Sample of answers to the above question.&lt;br /&gt; 
+    (Tool to write, draw. Made from wood and carbon, lead. Made from wood, stationary tools)
+    </value>
+  </data>
+  <data name="ukm2_0600_02" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+  <data name="lbl06_00" xml:space="preserve">
+    <value>PENCIL</value>
+  </data>
+  <data name="txt06_00" xml:space="preserve">
+    <value>Tool to write, draw. Made from wood and carbon, lead. Made from wood, stationary tools</value>
+  </data>
+
+  <data name="lbl06_01" xml:space="preserve">
+    <value>PENCIL</value>
+  </data>
+  <data name="lbl06_02" xml:space="preserve">
+    <value>CAT</value>
+  </data>
+  <data name="lbl06_03" xml:space="preserve">
+    <value>ROB</value>
+  </data>
+  <data name="lbl06_04" xml:space="preserve">
+    <value>TRISHAW</value>
+  </data>
+  <data name="lbl06_05" xml:space="preserve">
+    <value>NUMERICAL</value>
+  </data>
+  <data name="lbl06_06" xml:space="preserve">
+    <value>RETURN</value>
+  </data>
+  <data name="lbl06_07" xml:space="preserve">
+    <value>TRADITIONAL</value>
+  </data>
+  <data name="lbl06_08" xml:space="preserve">
+    <value>RUIN</value>
+  </data>
+  <data name="lbl06_09" xml:space="preserve">
+    <value>HONEST</value>
+  </data>
+  <data name="lbl06_10" xml:space="preserve">
+    <value>DEDICATED</value>
+  </data>
+  <data name="lbl06_11" xml:space="preserve">
+    <value>LAKE</value>
+  </data>
+  <data name="lbl06_12" xml:space="preserve">
+    <value>SUPERSTITION</value>
+  </data>
+  <data name="lbl06_13" xml:space="preserve">
+    <value>IMPERVIOUS</value>
+  </data>
+  <data name="lbl06_14" xml:space="preserve">
+    <value>CLEAR</value>
+  </data>
+  <data name="lbl06_15" xml:space="preserve">
+    <value>METICULOUS</value>
+  </data>
+  <data name="lbl06_16" xml:space="preserve">
+    <value>ACTION</value>
+  </data>
+  <data name="lbl06_17" xml:space="preserve">
+    <value>HISTORY</value>
+  </data>
+  <data name="lbl06_18" xml:space="preserve">
+    <value>SHIFT</value>
+  </data>
+  <data name="lbl06_19" xml:space="preserve">
+    <value>PEER</value>
+  </data>
+  <data name="lbl06_20" xml:space="preserve">
+    <value>VISION</value>
+  </data>
+  <data name="lbl06_21" xml:space="preserve">
+    <value>FREQUENT</value>
+  </data>
+  <data name="lbl06_22" xml:space="preserve">
+    <value>LEISURE</value>
+  </data>
+  <data name="lbl06_23" xml:space="preserve">
+    <value>PROTEST</value>
+  </data>
+  <data name="lbl06_24" xml:space="preserve">
+    <value>VAGUE</value>
+  </data>
+  <data name="lbl06_25" xml:space="preserve">
+    <value>STEADFAST</value>
+  </data>
+  <data name="lbl06_26" xml:space="preserve">
+    <value>VOLUNTARY</value>
+  </data>
+  <data name="lbl06_27" xml:space="preserve">
+    <value>CHEERFUL</value>
+  </data>
+  <data name="lbl06_28" xml:space="preserve">
+    <value>ELOQUENT</value>
+  </data>
+  <data name="lbl06_29" xml:space="preserve">
+    <value>NEGLECT</value>
+  </data>
+  <data name="lbl06_30" xml:space="preserve">
+    <value>NORM</value>
+  </data>
+
+  <data name="ukm2_0700_header" xml:space="preserve">
+    <value>07. ALPHABETICAL AND NUMBER ORDER</value>
+  </data>
+  <data name="lbl07_instruction_sample" xml:space="preserve">
+    <value>Look at the numbers and alphabets that will be displayed on your screen after clicking the [ Start ] button.&lt;br /&gt;Retype the NUMBERS in an ASCENDING order followed by ALPHABETS in the spaces provided. </value>
+  </data>
+  <data name="lbl07_instruction" xml:space="preserve">
+    <value>Look at the numbers and alphabets that will be displayed on your screen after clicking the [ Start ] button.&lt;br /&gt;Retype the NUMBERS in an ASCENDING order followed by ALPHABETS in the spaces provided.</value>
+  </data>
+  <data name="ukm2_0700_01" xml:space="preserve">
+    <value>1. Click the [Start] button to begin answering.</value>
+  </data>
+  <data name="ukm2_0700_02" xml:space="preserve">
+    <value>2. Type what is displayed here. (The answer to this question is 1 5 C E)</value>
+  </data>
+  <data name="ukm2_0700_03" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+  <data name="Q115" xml:space="preserve">
+    <value>5 B</value>
+  </data>
+  <data name="Q116" xml:space="preserve">
+    <value>A 4</value>
+  </data>
+  <data name="Q117" xml:space="preserve">
+    <value>3 D</value>
+  </data>
+  <data name="Q118" xml:space="preserve">
+    <value>5 D</value>
+  </data>
+  <data name="Q119" xml:space="preserve">
+    <value>F 6</value>
+  </data>
+  <data name="Q120" xml:space="preserve">
+    <value>A 2</value>
+  </data>
+  <data name="Q121" xml:space="preserve">
+    <value>D 3 4</value>
+  </data>
+  <data name="Q122" xml:space="preserve">
+    <value>3 5 E</value>
+  </data>
+  <data name="Q123" xml:space="preserve">
+    <value>4 B 5</value>
+  </data>
+  <data name="Q124" xml:space="preserve">
+    <value>E 4 8</value>
+  </data>
+  <data name="Q125" xml:space="preserve">
+    <value>T 3 S</value>
+  </data>
+  <data name="Q126" xml:space="preserve">
+    <value>K 7 M</value>
+  </data>
+  <data name="Q127" xml:space="preserve">
+    <value>5 F 4</value>
+  </data>
+  <data name="Q128" xml:space="preserve">
+    <value>7 T 6</value>
+  </data>
+  <data name="Q129" xml:space="preserve">
+    <value>E 7 C</value>
+  </data>
+  <data name="Q130" xml:space="preserve">
+    <value>3 D 5 F</value>
+  </data>
+  <data name="Q131" xml:space="preserve">
+    <value>7 C 9 D</value>
+  </data>
+  <data name="Q132" xml:space="preserve">
+    <value>C 6 T 3</value>
+  </data>
+  <data name="Q133" xml:space="preserve">
+    <value>3 C 5 T 9</value>
+  </data>
+  <data name="Q134" xml:space="preserve">
+    <value>7 W 3 R 5</value>
+  </data>
+  <data name="Q135" xml:space="preserve">
+    <value>Q 1 T 3 R</value>
+  </data>
+  <data name="Q136" xml:space="preserve">
+    <value>3 F 6 0 7 S</value>
+  </data>
+  <data name="Q137" xml:space="preserve">
+    <value>S 1 A 2 N 6</value>
+  </data>
+  <data name="Q138" xml:space="preserve">
+    <value>5 P 4 F 1 Y</value>
+  </data>
+  <data name="Q139" xml:space="preserve">
+    <value>T 1 M 2 V 5 K</value>
+  </data>
+  <data name="Q140" xml:space="preserve">
+    <value>9 T 7 Q 3 M 8</value>
+  </data>
+  <data name="Q141" xml:space="preserve">
+    <value>K 4 H 8 P 1 D</value>
+  </data>
+  <data name="Q142" xml:space="preserve">
+    <value>2 C 6 S 3 K 9 D</value>
+  </data>
+  <data name="Q143" xml:space="preserve">
+    <value>K 4 T 6 B 3 D 2</value>
+  </data>
+  <data name="Q144" xml:space="preserve">
+    <value>4 K 3 Y 7 F 6 V</value>
+  </data>
+  
+
+  <data name="ukm2_0800_header" xml:space="preserve">
+    <value>08. MATRIX REASONING</value>
+  </data>
+  <data name="lbl08_instruction_sample" xml:space="preserve">
+    <value>Please CLICK ON THE SUITABLE OBJECT/ PICTURE BELOW to match the pattern.</value>
+  </data>
+  <data name="lbl08_instruction" xml:space="preserve">
+    <value>Please CLICK ON THE SUITABLE OBJECT/ PICTURE BELOW to match the pattern.</value>
+  </data>
+  <data name="ukm2_0800_01" xml:space="preserve">
+    <value>Please click on the object/picture below. Click again on the selected answer to cancel the answer.</value>
+  </data>
+  <data name="ukm2_0800_02" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+  <data name="ukm2_0900_header" xml:space="preserve">
+    <value>09. COMPREHENSIVE</value>
+  </data>
+  <data name="lbl09_instruction_sample" xml:space="preserve">
+    <value>Read the following question carefully. Type your anwer in the space provided.</value>
+  </data>
+  <data name="lbl09_instruction" xml:space="preserve">
+    <value>Read the following questions carefully. Type your anwer in the space provided.</value>
+  </data>
+
+  <data name="ukm2_0900_01" xml:space="preserve">
+    <value>Example of answers for this question.&lt;br /&gt;
+    (Take and return it. Take and give it to mother. Take and give it to teacher. Take and give it to school's Office.)
+    </value>
+  </data>
+  <data name="ukm2_0900_02" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+  <data name="lbl09_00" xml:space="preserve">
+    <value>What are you going to do if you found a handphone?</value>
+  </data>
+  <data name="txt09_00" xml:space="preserve">
+    <value>take and return. take and give it to mother. take and give it to teacher. take and give it to school's Office.</value>
+  </data>
+
+  <data name="lbl09_01" xml:space="preserve">
+    <value>What are you going to do if you found a handphone?</value>
+  </data>
+  <data name="lbl09_02" xml:space="preserve">
+    <value>Why do we have to close the water tap after using it?</value>
+  </data>
+  <data name="lbl09_03" xml:space="preserve">
+    <value>Why do we have to wear safety jacket when we ride on the boat?</value>
+  </data>
+  <data name="lbl09_04" xml:space="preserve">
+    <value>What are you going to do when your friend is being bullied in the school area?</value>
+  </data>
+  <data name="lbl09_05" xml:space="preserve">
+    <value>What are you going to do when your friend ask you to finish his/her assignment?</value>
+  </data>
+  <data name="lbl09_06" xml:space="preserve">
+    <value>What are the benefit of  recreational activity?</value>
+  </data>
+  <data name="lbl09_07" xml:space="preserve">
+    <value>Why do you need to help your friend when his/her pocket money has lost?</value>
+  </data>
+  <data name="lbl09_08" xml:space="preserve">
+    <value>Why  we should not wasting the food?</value>
+  </data>
+  <data name="lbl09_09" xml:space="preserve">
+    <value>Why government prevent people from smoking at public area?</value>
+  </data>
+  <data name="lbl09_10" xml:space="preserve">
+    <value>What is the benefit of public transportation facilities?</value>
+  </data>
+  <data name="lbl09_11" xml:space="preserve">
+    <value>Why do we need to study although we already working?</value>
+  </data>
+  <data name="lbl09_12" xml:space="preserve">
+    <value>What is the benefit of learning with computer compared to the book?</value>
+  </data>
+  <data name="lbl09_13" xml:space="preserve">
+    <value>Why do we need to tell the truth?</value>
+  </data>
+  <data name="lbl09_14" xml:space="preserve">
+    <value>Why do government must eliminate fraudulent activities? </value>
+  </data>
+  <data name="lbl09_15" xml:space="preserve">
+    <value>Why do we need MyKad?</value>
+  </data>
+  <data name="lbl09_16" xml:space="preserve">
+    <value>Why there are many types of newspaper?</value>
+  </data>
+  <data name="lbl09_17" xml:space="preserve">
+    <value>Why do we need to provide facilities for disable? </value>
+  </data>
+  <data name="lbl09_18" xml:space="preserve">
+    <value>What are the negative effects from information technology development and communication (ICT)?</value>
+  </data>
+  <data name="lbl09_19" xml:space="preserve">
+    <value>Why do we need to respect others opinion?</value>
+  </data>
+
+
+  <data name="ukm2_1000_header" xml:space="preserve">
+    <value>10. SYMBOL SEARCH</value>
+  </data>
+  <data name="lbl10_instruction_sample" xml:space="preserve">
+    <value>Look at the symbols on the  left ( RED colored).&lt;br /&gt; Click YES if there are similar symbols exist on the right side or  NO if there is no similar symbol. </value>
+  </data>
+  <data name="lbl10_instruction" xml:space="preserve">
+    <value>Look at the symbols on the  left ( RED colored).&lt;br /&gt; Click YES if there are similar symbols exist on the right side or  NO if there is no similar symbol. </value>
+  </data>
+  <data name="ukm2_1000_01" xml:space="preserve">
+    <value>Answer for this question is YES.</value>
+  </data>
+  <data name="ukm2_1000_02" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+  <data name="ukm2_YES" xml:space="preserve">
+    <value> YES </value>
+  </data>
+  <data name="ukm2_NO" xml:space="preserve">
+    <value> NO </value>
+  </data>
+
+
+  <data name="ukm2_1100_header" xml:space="preserve">
+    <value>11. PICTURE COMPLETION</value>
+  </data>
+  <data name="lbl11_instruction_sample" xml:space="preserve">
+    <value>Look at the picture. Please CLICK at the MISSING PART of the picture. ‘X’ will be marked at your selected area.</value>
+  </data>
+  <data name="lbl11_instruction" xml:space="preserve">
+    <value>Look at the picture. Please CLICK at the MISSING PART of the picture. ‘X’ will be marked at your selected area.</value>
+  </data>
+  <data name="ukm2_1100_01" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+  <data name="ukm2_1200_header" xml:space="preserve">
+    <value>12. CANCELLATION</value>
+  </data>
+  <data name="lbl12_instruction_sample" xml:space="preserve">
+    <value>On the next page, please click only on pictures of FRUITS or ANIMALS. Read carefully the questions given.</value>
+  </data>
+  <data name="lbl12_instruction_01" xml:space="preserve">
+    <value>Click ALL the FRUITS in the pictures below. Click again on the selected picture to undo your choice. Your choice will be in RED.</value>
+  </data>
+  <data name="lbl12_instruction_02" xml:space="preserve">
+    <value>Click ALL the ANIMALS in the pictures below. Click again on the selected picture to undo your choice. Your choice will be in RED.</value>
+  </data>
+
+  <data name="ukm2_1300_header" xml:space="preserve">
+    <value>13. INFORMATION </value>
+  </data>
+  <data name="lbl13_instruction_sample" xml:space="preserve">
+    <value>Read the following question carefully and please type your anwer in the space provided.</value>
+  </data>
+  <data name="lbl13_instruction" xml:space="preserve">
+    <value>Read the following questions carefully and please type your anwer in the space provided.</value>
+  </data>
+  <data name="lbl13_00" xml:space="preserve">
+    <value>How many months in a year?</value>
+  </data>
+  <data name="txt13_00" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="ukm2_1300_01" xml:space="preserve">
+    <value>Example of answer.&lt;br /&gt;
+    (12)
+    </value>
+  </data>
+  <data name="ukm2_1300_02" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+
+  <data name="lbl13_01" xml:space="preserve">
+    <value>How many months in a year?</value>
+  </data>
+  <data name="lbl13_02" xml:space="preserve">
+    <value>What are the basic needs of plant to live?</value>
+  </data>
+  <data name="lbl13_03" xml:space="preserve">
+    <value>Name 3 oceans in the world.</value>
+  </data>
+  <data name="lbl13_04" xml:space="preserve">
+    <value>What is the function of your heart?</value>
+  </data>
+  <data name="lbl13_05" xml:space="preserve">
+    <value>How many meter in one kilometre?</value>
+  </data>
+  <data name="lbl13_06" xml:space="preserve">
+    <value>Name a month that contain 31 days.</value>
+  </data>
+  <data name="lbl13_07" xml:space="preserve">
+    <value>Name a natural fuel.</value>
+  </data>
+  <data name="lbl13_08" xml:space="preserve">
+    <value>How many continents in this world?</value>
+  </data>
+  <data name="lbl13_09" xml:space="preserve">
+    <value>What is historical artefact?</value>
+  </data>
+  <data name="lbl13_10" xml:space="preserve">
+    <value>How does rain form?</value>
+  </data>
+  <data name="lbl13_11" xml:space="preserve">
+    <value>Why does a ship cannot be seen when it is beyond the horizon?</value>
+  </data>
+  <data name="lbl13_12" xml:space="preserve">
+    <value>Who is telephone inventor?</value>
+  </data>
+  <data name="lbl13_13" xml:space="preserve">
+    <value>What does it mean by greenhouse effect?</value>
+  </data>
+  <data name="lbl13_14" xml:space="preserve">
+    <value>What is the largest island in the world?</value>
+  </data>
+  <data name="lbl13_15" xml:space="preserve">
+    <value>Which country is located under the sea level?</value>
+  </data>
+  <data name="lbl13_16" xml:space="preserve">
+    <value>Why an ice cube floats above the water?</value>
+  </data>
+  <data name="lbl13_17" xml:space="preserve">
+    <value>What is prism?</value>
+  </data>
+  <data name="lbl13_18" xml:space="preserve">
+    <value>Where is the Tiananmen square?</value>
+  </data>
+  <data name="lbl13_19" xml:space="preserve">
+    <value>What is meridian line that determined time differences in the world?</value>
+  </data>
+  <data name="lbl13_20" xml:space="preserve">
+    <value>What is the distance between the earth and the moon?</value>
+  </data>
+  <data name="lbl13_21" xml:space="preserve">
+    <value>What are the elements that combined to form water?</value>
+  </data>
+  <data name="lbl13_22" xml:space="preserve">
+    <value>What is metabolism process?</value>
+  </data>
+  <data name="lbl13_23" xml:space="preserve">
+    <value>Who is Tunku Abdul Rahman Al-Haj?</value>
+  </data>
+  <data name="lbl13_24" xml:space="preserve">
+    <value>Where does asteroid come from?</value>
+  </data>
+
+
+  <data name="ukm2_1400_header" xml:space="preserve">
+    <value>14. ARITHMETIC </value>
+  </data>
+  <data name="lbl14_instruction_sample" xml:space="preserve">
+    <value>Read the question carefully. ANSWER THE QUESTION BY USING MENTAL ARITHMETIC.&lt;br /&gt; Please type your answer in the space provided.</value>
+  </data>
+  <data name="lbl14_instruction" xml:space="preserve">
+    <value>Read the questions carefully. ANSWER THE QUESTIONS BY USING MENTAL ARITHMETIC.&lt;br /&gt; Please type your answer in the space provided.</value>
+  </data>
+  <data name="lbl14_00" xml:space="preserve">
+    <value>What is the sum of two plastic rulers and three iron rulers? </value>
+  </data>
+  <data name="txt14_00" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ukm2_1400_01" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+
+
+  <data name="lbl14_01" xml:space="preserve">
+    <value>What is the sum of two plastic rulers and three iron rulers? </value>
+  </data>
+  <data name="lbl14_02" xml:space="preserve">
+    <value>Borhan has five storybooks. A book is lost. How many books are left? </value>
+  </data>
+  <data name="lbl14_03" xml:space="preserve">
+    <value>Johari has five slices of cake. A piece of cake is given to Bala and another piece is given to Ali. How many slices of cake are left?</value>
+  </data>
+  <data name="lbl14_04" xml:space="preserve">
+    <value>If I cut two watermelons into half, how many piece of watermelon do I have?</value>
+  </data>
+  <data name="lbl14_05" xml:space="preserve">
+    <value>Johan has RM4.00 and his mother give him another RM2.00. How much amount of money that Johan has?</value>
+  </data>
+  <data name="lbl14_06" xml:space="preserve">
+    <value>If you hold three pens with every hands, how many pens will be on you?</value>
+  </data>
+  <data name="lbl14_07" xml:space="preserve">
+    <value>If you have 10 slices of bread and eat three pieces, how many slices of bread left?</value>
+  </data>
+  <data name="lbl14_08" xml:space="preserve">
+    <value>Three new students have been placed into a class that already contains 12 students. What is the sum of students in that class?</value>
+  </data>
+  <data name="lbl14_09" xml:space="preserve">
+    <value>Mansor has six bookmarks and buy 6 pieces again. How many numbers of bookmarks with her?</value>
+  </data>
+  <data name="lbl14_10" xml:space="preserve">
+    <value>Ah Meng collects 10 stamps on Saturday and 15 stamps on Sunday. How many number of stamps does he collects?</value>
+  </data>
+  <data name="lbl14_11" xml:space="preserve">
+    <value>There are three goats at a pasture. Then, another two goats come. Then, 2 goats leave the pasture. How many goats remain in the pasture?</value>
+  </data>
+  <data name="lbl14_12" xml:space="preserve">
+    <value>Kuldip buys four citrus fruits from one fruit stall and another 2 citrus fruits from different stall. When he reached at home, his mother gives another three citrus fruits. How many citrus fruits he has?  </value>
+  </data>
+  <data name="lbl14_13" xml:space="preserve">
+    <value>Pak Ali has 12 durians. Five durians are sold to the buyers. How many durians left?</value>
+  </data>
+  <data name="lbl14_14" xml:space="preserve">
+    <value>There are eight passengers found in a bus. When the bus arrived at the station,  four people go out and two passengers come in. How many passengers in the bus at present?</value>
+  </data>
+  <data name="lbl14_15" xml:space="preserve">
+    <value>In one game, Latifah got 17 points in the first round and 15 points in the second round. How many total points Latifah obtained?</value>
+  </data>
+  <data name="lbl14_16" xml:space="preserve">
+    <value>If you buy three postcards at prices of 50 cents each, how many change will you get from RM5?</value>
+  </data>
+  <data name="lbl14_17" xml:space="preserve">
+    <value>Faris has RM30 and he spent half from it. If a magazine cost RM5, how many magazines can be bought if Faris use all the balances he has?</value>
+  </data>
+  <data name="lbl14_18" xml:space="preserve">
+    <value>There are eight competitions in the food festival. If every competition need three plates, how many plates are required if the competition is carried out simultaneously?</value>
+  </data>
+  <data name="lbl14_19" xml:space="preserve">
+    <value>Thirty students register for Japanese class. In the next month 11 people draw out. How many students remain in that class?</value>
+  </data>
+  <data name="lbl14_20" xml:space="preserve">
+    <value>Rosnah buys two exercise books with a price of RM1 each and a pack of RM4 color pencil. If she pays with RM10, how many balances will be returned to him?</value>
+  </data>
+  <data name="lbl14_21" xml:space="preserve">
+    <value>Shahrir has money two times more than Basri.  Shahrir has RM17. How many money does Basri has?</value>
+  </data>
+  <data name="lbl14_22" xml:space="preserve">
+    <value>Two hundreds and fourty tourists have registered to go to Johor. If a bus can bring 40 people, how many buses are required to carry all the tourists?</value>
+  </data>
+  <data name="lbl14_23" xml:space="preserve">
+    <value>Ahmad buys a shirt with a discount price one third less compared to the original price. If Ahmad pays RM40, how much the original price of that shirt? </value>
+  </data>
+  <data name="lbl14_24" xml:space="preserve">
+    <value>A distance travelled to Kamal's village was 500 KMs. After driving for three hours, he stopped for a rest. Then he drove again for 2 hours. What is the average speed of Kamal's driving?</value>
+  </data>
+  <data name="lbl14_25" xml:space="preserve">
+    <value>A cheap fare price flight from Kuala Lumpur LCCT to Bali, Indonesia was RM135 after being given discount as much as 70%. What is the original price of that fare?</value>
+  </data>
+  <data name="lbl14_26" xml:space="preserve">
+    <value>Oil price is reduced five times since June 2008. If the original price is RM2.70 and the price is reduced to RM1.90. What is the average of oil price reduction?</value>
+  </data>
+  <data name="lbl14_27" xml:space="preserve">
+    <value>Two persons can finish eight baskets for one day. How many employees are required to finish up 60 baskets in a day?</value>
+  </data>
+  <data name="lbl14_28" xml:space="preserve">
+    <value>Zamri  travel  from KLIA to Putra Sentral by using KLIA TRANSIT is 1 hours 45 minutes. Lim lives 50 kms from Putra Sentral. He drives 100km / hour. If Zamri departs from KLIA at 3.45 pm, at what time Lim had to leave from his house so that he reach 15 minutes earlier from Zamri?</value>
+  </data>
+  <data name="lbl14_29" xml:space="preserve">
+    <value>An express bus set off 1 hour earlier than taxi. An express bus  drives with an average speed of 80km / hour and taxi 100km / hour. If both having same destination, how far does express bus lead a taxi after 3 hours of travelling?</value>
+  </data>
+
+
+  <data name="ukm2_1500_header" xml:space="preserve">
+    <value>15. WORD REASONING</value>
+  </data>
+  <data name="lbl15_instruction_sample" xml:space="preserve">
+    <value>Please READ THE CLUES GIVEN BELOW AND WRITE YOUR ANSWER in the space provided.</value>
+  </data>
+  <data name="lbl15_instruction" xml:space="preserve">
+    <value>Please READ THE CLUES GIVEN BELOW AND WRITE YOUR ANSWER in the space provided.</value>
+  </data>
+  <data name="ukm2_1500_01" xml:space="preserve">
+    <value>Click [Next &gt;&gt; ] if you are ready.</value>
+  </data>
+
+  <data name="lbl15_00" xml:space="preserve">
+    <value>It has doors, shelves, and it can be used to keep clothes</value>
+  </data>
+  <data name="txt15_00" xml:space="preserve">
+    <value>Wardrobe</value>
+  </data>
+
+  <data name="lbl15_01" xml:space="preserve">
+    <value>It has doors, shelves, and it can be used to keep clothes</value>
+  </data>
+  <data name="lbl15_02" xml:space="preserve">
+    <value>It is something used to protect your feet</value>
+  </data>
+  <data name="lbl15_03" xml:space="preserve">
+    <value>It is on the sky, and will appear when it is going to be rained.</value>
+  </data>
+  <data name="lbl15_04" xml:space="preserve">
+    <value>It has some strips, and it hangs at the ceiling</value>
+  </data>
+  <data name="lbl15_05" xml:space="preserve">
+    <value>It is a place where people read, and it has a lot of reading materials</value>
+  </data>
+  <data name="lbl15_06" xml:space="preserve">
+    <value>It is something floating in the air, causing us short of breath </value>
+  </data>
+  <data name="lbl15_07" xml:space="preserve">
+    <value>If it is conducted, our body is sweating, good for health </value>
+  </data>
+  <data name="lbl15_08" xml:space="preserve">
+    <value>It makes our clothes clean, and it can be bought at the shop </value>
+  </data>
+  <data name="lbl15_09" xml:space="preserve">
+    <value>It gives a bright light in the day, and it cannot be replaced</value>
+  </data>
+  <data name="lbl15_10" xml:space="preserve">
+    <value>It is formed by communities, and it becomes a guide for community life</value>
+  </data>
+  <data name="lbl15_11" xml:space="preserve">
+    <value>It is an earth formation, and it is located in between two mountains</value>
+  </data>
+  <data name="lbl15_12" xml:space="preserve">
+    <value>It is produced from many instruments, it has tempo and rhythm, and it is good to listen</value>
+  </data>
+  <data name="lbl15_13" xml:space="preserve">
+    <value>It is a gift to us since born, it is part from organ’s body, and it can make us think</value>
+  </data>
+  <data name="lbl15_14" xml:space="preserve">
+    <value>It is everywhere, cannot be seen, but it required by humans and animals to live</value>
+  </data>
+  <data name="lbl15_15" xml:space="preserve">
+    <value>Legislated and approved by parliament, required by community, and it is needed to protect the harmony of one country</value>
+  </data>
+  <data name="lbl15_16" xml:space="preserve">
+    <value>It is granted after successfully finishing studies, Fulfil the standard and recognised, required when apply for a job</value>
+  </data>
+  <data name="lbl15_17" xml:space="preserve">
+    <value>It is wireless communication tool, It can be used anywhere, and it has various form and size</value>
+  </data>
+  <data name="lbl15_18" xml:space="preserve">
+    <value>It is related with salary and  expenditure, small scale or big, and the motif is profit</value>
+  </data>
+  <data name="lbl15_19" xml:space="preserve">
+    <value>It is a hope, it is a future planning, and it is conceptualise</value>
+  </data>
+  <data name="lbl15_20" xml:space="preserve">
+    <value>It is a democracy process, need candidates and supporters, Win based on number of majority</value>
+  </data>
+
+
+  <data name="ukm2_end_header" xml:space="preserve">
+    <value>Araken I-PROFILE Online Screening Test Ends.</value>
+  </data>
+  <data name="lblend_instruction" xml:space="preserve">
+    <value>Thank you for completing the test.</value>
+  </data>
+
+  <data name="lblend_01" xml:space="preserve">
+    <value>Student ID</value>
+  </data>
+  <data name="lblend_02" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblend_03" xml:space="preserve">
+    <value>Year/Form</value>
+  </data>
+  <data name="lblend_04" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="lblend_05" xml:space="preserve">
+    <value>year.</value>
+  </data>
+  <data name="lblend_06" xml:space="preserve">
+    <value>School Name</value>
+  </data>
+  <data name="lblend_07" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="lblend_08" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="lblend_09" xml:space="preserve">
+    <value>Date and time test ends</value>
+  </data>
+  <data name="lblend_10" xml:space="preserve">
+    <value>Click here to choose the module for the ARAKEN School Holiday Camp</value>
+  </data>
+
+
+  <data name="lblcourse_header" xml:space="preserve">
+    <value>ARAKEN School Holiday Camp</value>
+  </data>
+  <data name="lblcourse_instruction" xml:space="preserve">
+    <value>Choose the following modules according to your preference  from the scale of 1 to 6.</value>
+  </data>
+  <data name="lblcourse_scale" xml:space="preserve">
+    <value>Scale:</value>
+  </data>
+  <data name="lblcourse_rate" xml:space="preserve">
+    <value>1 – Most preferred                  6 – Least preferred</value>
+  </data>
+
+  <data name="lblcourse_01" xml:space="preserve">
+    <value>Crafting the essay</value>
+  </data>
+  <data name="lblcourse_02" xml:space="preserve">
+    <value>Invention</value>
+  </data>
+  <data name="lblcourse_03" xml:space="preserve">
+    <value>Advanced Robotic</value>
+  </data>
+  <data name="lblcourse_04" xml:space="preserve">
+    <value>Flight Science</value>
+  </data>
+  <data name="lblcourse_05" xml:space="preserve">
+    <value>Cryptology</value>
+  </data>
+  <data name="lblcourse_06" xml:space="preserve">
+    <value>Probability and Game Theory</value>
+  </data>
+  <data name="lblcourse_07" xml:space="preserve">
+    <value>Biotechnology</value>
+  </data>
+  <data name="lblcourse_08" xml:space="preserve">
+    <value>Fast-Paced Biology</value>
+  </data>
+  <data name="lblcourse_09" xml:space="preserve">
+    <value>Crystal and Polymer</value>
+  </data>
+  <data name="lblcourse_10" xml:space="preserve">
+    <value>Introduction to Green Technology</value>
+  </data>
+  <data name="lblcourse_11" xml:space="preserve">
+    <value>Be a Scientist</value>
+  </data>
+  <data name="lblcourse_12" xml:space="preserve">
+    <value>Mathematical Reasoning</value>
+  </data>
+  <data name="lblcourse_13" xml:space="preserve">
+    <value>Writing and Imagination</value>
+  </data>
+  <data name="lblcourse_14" xml:space="preserve">
+    <value>Introduction to Robotic</value>
+  </data>
+</root>

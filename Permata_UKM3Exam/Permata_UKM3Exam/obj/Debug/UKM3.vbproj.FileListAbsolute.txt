@@ -1,0 +1,11 @@
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\bin\UKM3.dll.config
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\bin\UKM3.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\bin\UKM3.pdb
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\bin\UKM3.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.vbprojResolveAssemblyReference.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.Resources.resources
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.vbproj.GenerateResource.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.vbproj.CoreCompileInputs.cache
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.dll
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.xml
+C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\Permata_UKM3Exam\Permata_UKM3Exam\obj\Debug\UKM3.pdb

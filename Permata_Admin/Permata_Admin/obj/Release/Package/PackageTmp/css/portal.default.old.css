@@ -1,0 +1,508 @@
+/* Jamain Johari Default CSS 20101218*/
+.fbbody
+{
+    font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    color: #333333;
+}
+
+.fbbody a
+{
+    text-decoration: none;
+}
+
+.fbbody a:hover
+{
+    text-decoration: underline;
+}
+
+.fbbody a:active
+{
+    text-decoration: underline;
+}
+
+/*fbheader*/
+.fbheader_title
+{
+    color: Maroon;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 0px;
+    text-align: left;
+}
+
+.fbheader_title a
+{
+    color: Maroon;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+
+.fbheader_title a:hover
+{
+    text-decoration: none;
+}
+
+.fbheader_menu
+{
+    background-color: Maroon; /* #3B5998;*/
+    color: #FFFFFF;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+}
+
+.fbheader_menu a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+.fbheader_menu a:hover
+{
+    background: #6D84B4;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fbheader_items
+{
+    background-color: Maroon; /* #3B5998;*/
+    color: #FFFFFF;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbheader_items a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+
+
+/*fbnav*/
+.fbnav_header
+{
+    border: 0px;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    background: Maroon; /* #3B5998;*/
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbnav_header a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+
+.fbnav_header a:hover
+{
+    background: #6D84B4;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.fbnav_items
+{
+    border-bottom: solid 1px #0099FF;
+    border-bottom-color: #66CCFF;
+    font-size: 11px;
+    vertical-align: middle;
+}
+
+.fbnav_items a
+{
+    color: #000000;
+    text-decoration: none;
+}
+
+.fbnav_items a:hover
+{
+    text-decoration: none;
+}
+
+.fbnav_items td:hover
+{
+    background-color: #CCFFFF;
+}
+
+/*fbsection*/
+.fbsection
+{
+    background-color: #FFFFFF;
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+}
+
+/*fbsection_header*/
+.fbsection_header tr
+{
+    border: 0px;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    background: #3B5998; 
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbsection_header td
+{
+    border: 0px;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    background: #3B5998;
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbsection_header a
+{
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+.fbsection_title
+{
+    font-size: 14px;
+    color: Black;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #000000; 
+}
+
+.fbsection_date
+{
+    text-align: left;
+    vertical-align: top;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+    /*padding-left: 5px;*/
+}
+
+.fbsection_sap
+{
+    border-bottom: dotted 1px #cccccc;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    height: 0px;
+}
+
+fbsection_normal
+{
+    text-align: left;
+    vertical-align: top;
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+/*fbsection_article*/
+.fbsection_article
+{
+    text-align: left;
+    vertical-align: top;
+    font-size: 12px;
+    /*padding-left: 5px;*/
+}
+
+.fbsection_article a
+{
+    font-weight: bold;
+}
+
+.fbsection_article a:hover
+{
+    text-decoration: none;
+}
+
+.fbsection_article img
+{
+    text-align: left;
+    vertical-align: top;
+    background-color: #FFFFFF;
+    border: 0px;
+}
+
+
+/*fbsection_footer*/
+.fbsection_footer
+{
+}
+
+/*fbaside*/
+.fbaside_header
+{
+    color: Olive; /*#3B5998;*/
+    border-bottom: solid 1px #CCCCCC;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.fbaside_header a
+{
+}
+
+.fbaside_header a:hover
+{
+}
+
+.fbaside_image
+{
+    vertical-align: top;
+}
+
+.fbaside_items
+{
+    vertical-align: top;
+    font-size: 12px;
+}
+
+.fbaside_items a
+{
+}
+
+.fbaside_items a:hover
+{
+}
+
+.fbaside_tiny
+{
+    font-size: 10px;
+    color: #777;
+}
+
+.fbaside_sap
+{
+    border-bottom: solid 1px #cccccc;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+    height: 0px;
+}
+
+/*fbfooter*/
+.fbfooter
+{
+    border-top: solid 2px Maroon; /*1px solid #e2c822;*/
+}
+
+
+/*login table*/
+.fblogin_table
+{
+    background-color: Olive;
+    border: 1px solid #0099FF;
+    color: #FFFFFF;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fblogin_table a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+    outline-style: none;
+    padding: 5px;
+}
+
+.fblogin_table a:hover
+{
+    padding: 5px;
+    text-decoration: underline;
+}
+
+
+/*FORM*/
+.fbform
+{
+    background-color: #eceff6;
+    vertical-align: top;
+    text-align: left;
+    width: 100%;
+    border:solid 1px #000000;
+}
+
+.fbform label
+{
+    
+}
+
+.fbform td
+{
+    vertical-align:top;
+}
+
+
+.fbform_header tr
+{
+    border: 0px;
+    width: 100%;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    background: #3B5998; 
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbform_header td
+{
+    border: 0px;
+    text-decoration: none;
+    outline-style: none;
+    padding: 8px 5px 8px 5px;
+    background: #3B5998; 
+    color: #FFFFFF;
+    font-weight: bolder;
+    text-align: left;
+    vertical-align: top;
+}
+
+.fbform_header a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.fbform_title tr
+{
+    color: #000000;
+    text-decoration: none;
+    font-weight:bold;
+    border-bottom:solid 1px;
+    padding: 8px 5px 8px 0px;
+}
+
+.fbform_title td
+{
+    color: #000000;
+    text-decoration: none;
+    font-weight:bold;
+    border-bottom:solid 1px;
+    padding: 8px 5px 8px 0px;
+}
+
+
+.fbbutton
+{
+    border-left: 1px solid #D9DFEA;
+    border-right: 1px solid #0e1f5b;
+    border-top: 1px solid #D9DFEA;
+    border-bottom: 1px solid #0e1f5b;
+    padding: 1px 3px 1px 4px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #3b5998;
+    color: #fff;
+    height: 25px;
+}
+
+.fbbuttonnext, fbbuttoncancel
+{
+    background: #ddd;
+    color: #111;
+    border: 1px solid #666;
+    border-left-color: #ddd;
+    border-top-color: #ddd;
+}
+
+.fblabel_msg
+{
+    color: Red;
+    font-weight: bold;
+}
+
+.fblabel_view
+{
+    color: Black;
+    font-weight: bold;
+}
+
+.fbreadonly
+{
+    background-color: GrayText;
+}
+
+.fbform_sap
+{
+    border-bottom: solid 1px #cccccc;
+    vertical-align: middle;
+    padding: 2px 0px 2px 0px;
+}
+
+/*MESSSAGE BOX */
+.info, .success, .warning, .error, .validation
+{
+    border: 1px solid;
+    margin: 10px 0px;
+    padding: 15px 10px 15px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+}
+.info
+{
+    color: #00529B;
+    background-color: #BDE5F8;
+    background-image: url('info.png');
+}
+.success
+{
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    background-image: url('success.png');
+}
+.warning
+{
+    color: #9F6000;
+    background-color: #FEEFB3;
+    background-image: url('warning.png');
+}
+.error
+{
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('error.png');
+}
+
+.validation
+{
+    color: #D63301;
+    background-color: #FFCCBA;
+    background-image: url('validation.png');
+}

@@ -1,0 +1,2193 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PERMATA_SainsTest
+</name>
+</assembly>
+<members>
+<member name="F:PERMATA_SainsTest.esurvey_page04.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblDomain02">
+	<summary>
+lblDomain02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ006">
+	<summary>
+lblQ006 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q6">
+	<summary>
+Q6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ007">
+	<summary>
+lblQ007 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q7">
+	<summary>
+Q7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblQ008">
+	<summary>
+lblQ008 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.Q8">
+	<summary>
+Q8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page04.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.btnDone">
+	<summary>
+  Looks up a localized string similar to Submit.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.btnNext">
+	<summary>
+  Looks up a localized string similar to Next.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.btnPrev">
+	<summary>
+  Looks up a localized string similar to Previous.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD1Level1">
+	<summary>
+  Looks up a localized string similar to Very Strongly Disagree.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD1Level2">
+	<summary>
+  Looks up a localized string similar to Strongly Disagree.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD1Level3">
+	<summary>
+  Looks up a localized string similar to Not Sure.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD1Level4">
+	<summary>
+  Looks up a localized string similar to Strongly Agree.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD1Level5">
+	<summary>
+  Looks up a localized string similar to Very Strongly Agree.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD2Level1">
+	<summary>
+  Looks up a localized string similar to I do not want to beinvolved in this team at all.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD2Level2">
+	<summary>
+  Looks up a localized string similar to I would not enjoy working on this team at all.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD2Level3">
+	<summary>
+  Looks up a localized string similar to I would enjoy working on this team a little.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD2Level4">
+	<summary>
+  Looks up a localized string similar to I would enjoy working on this team a lot.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD2Level5">
+	<summary>
+  Looks up a localized string similar to I would really enjoy working on this team.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD3Level1">
+	<summary>
+  Looks up a localized string similar to I am not interested to learn about this topic at all.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD3Level2">
+	<summary>
+  Looks up a localized string similar to I would not enjoy learning about this topic at all.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD3Level3">
+	<summary>
+  Looks up a localized string similar to I would enjoy learning about this topic a little.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD3Level4">
+	<summary>
+  Looks up a localized string similar to I would enjoy learning about this topic a lot.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD3Level5">
+	<summary>
+  Looks up a localized string similar to I would enjoy learning about this topic a whole lot
+.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD4Level1">
+	<summary>
+  Looks up a localized string similar to I am not interested in the job at all.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD4Level2">
+	<summary>
+  Looks up a localized string similar to I would not enjoy having this job at all.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD4Level3">
+	<summary>
+  Looks up a localized string similar to I would enjoy having this job a little.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD4Level4">
+	<summary>
+  Looks up a localized string similar to I would enjoy having this job a lot.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblD4Level5">
+	<summary>
+  Looks up a localized string similar to I would enjoy having this job a whole lot
+.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lbldefault_01">
+	<summary>
+  Looks up a localized string similar to The PERMATApintar Science Interests Inventory. is an assessment feedback process to assess the competence of the assessee on a number of core competencies. This assessment is to be based on your own personal experience with the assessee. Please provide your honest assessment and do not discuss your assessment with others or seek the view of others on the assessment you should give.  
+&lt;p&gt;The statements below are the behavioral descriptors of the core competencies to be assessed. Please use the scale below t [rest of string was truncated]";.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblDescriptor">
+	<summary>
+  Looks up a localized string similar to Item.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblDomain01">
+	<summary>
+  Looks up a localized string similar to PERMATApintar Science Interests Inventory.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblDomain02">
+	<summary>
+  Looks up a localized string similar to PERMATApintar Science Interests Inventory.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblDomain03">
+	<summary>
+  Looks up a localized string similar to PERMATApintar Science Interests Inventory.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblDone">
+	<summary>
+  Looks up a localized string similar to Please answer all the questions. Click [Submit] to complete the assessment..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblDoneOptional">
+	<summary>
+  Looks up a localized string similar to Click [Submit] to complete the assessment..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblFeedback">
+	<summary>
+  Looks up a localized string similar to Please provide your feedback on the improvements that you believe the assessee should undertake..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeBenefit">
+	<summary>
+  Looks up a localized string similar to How will I benefit?
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeBenefitContent">
+	<summary>
+  Looks up a localized string similar to 
+      PERMATApintar Science Interests Inventory will provide you:&lt;br/&gt;
+•	Scoring or level of your stress.&lt;br/&gt;
+•	What you should do in order to handle your stress.&lt;br/&gt;
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeBenefitContentRater">
+	<summary>
+  Looks up a localized string similar to 
+      The PERMATApintar Science Interests Inventory. will provide you with an opportunity to contribute to the development of your managers and peers. As the organization’s leaders develop their abilities to work, manage, and lead, the performance and productivity of the organisation will also improve. Therefore, the entire organization stands to benefit as individuals improve.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeBenefitRater">
+	<summary>
+  Looks up a localized string similar to How will I benefit?
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeCandidate">
+	<summary>
+  Looks up a localized string similar to 
+    This stress test will help evaluate your present stress level. You will receive your score at the end of the test and you can view the coping mechanism that we propose for each level of stress.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeOverview">
+	<summary>
+  Looks up a localized string similar to Overview
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeOverviewRater">
+	<summary>
+  Looks up a localized string similar to Overview
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblHomeRater">
+	<summary>
+  Looks up a localized string similar to 
+    The PERMATApintar Science Interests Inventory. is an assessment feedback process to assess the competence of the candidates on the Bank’s core competencies. Through this assessment, candidates have the opportunity to gather confidential feedback from those who work with them and compare it with their own perception of their capability.   
+    
+      &lt;p&gt;
+    As such the feedback is gathered from multiple assessors such as manager/supervisor, peers, internal customers, direct and indirect subordinate [rest of string was truncated]";.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblInstruction">
+	<summary>
+  Looks up a localized string similar to Please look at the statement and give your honest response. There is no wrong or right statement..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblMsgsubmit">
+	<summary>
+  Looks up a localized string similar to Once you submit your assessment, you may not make any further changes.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblNext">
+	<summary>
+  Looks up a localized string similar to Please answer all the questions. Click [Next] to proceed..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblNo">
+	<summary>
+  Looks up a localized string similar to No.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ001">
+	<summary>
+  Looks up a localized string similar to I like the idea of rock climbing or exploring caves..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ002">
+	<summary>
+  Looks up a localized string similar to Whenever I find pictures of volcanoes, I stop, look, and wonder about them..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ003">
+	<summary>
+  Looks up a localized string similar to I find earthquakes and the damage they do to be really mysterious..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ004">
+	<summary>
+  Looks up a localized string similar to I like the idea of collecting unique rocks and stones..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ005">
+	<summary>
+  Looks up a localized string similar to When I wake up in the morning, I check the weather to determine what to wear..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ006">
+	<summary>
+  Looks up a localized string similar to During lightning or thunderstorms I like to watch the lightning and the rain..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ007">
+	<summary>
+  Looks up a localized string similar to I look at clouds and think about where they came from and what they mean..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ008">
+	<summary>
+  Looks up a localized string similar to Tornadoes and hurricanes fascinate me.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ009">
+	<summary>
+  Looks up a localized string similar to I like to swim and I would like to scuba dive to see the beautiful underwater creatures.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ010">
+	<summary>
+  Looks up a localized string similar to I like to canoe, sail, or motorboat and explore..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ011">
+	<summary>
+  Looks up a localized string similar to I like to walk and play in the rain..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ012">
+	<summary>
+  Looks up a localized string similar to I enjoy fishing or watching fish swim..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ013">
+	<summary>
+  Looks up a localized string similar to I have a pet or pets and I enjoy taking care of them..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ014">
+	<summary>
+  Looks up a localized string similar to I have a garden or work in my family’s garden whenever I am at home.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ015">
+	<summary>
+  Looks up a localized string similar to I enjoy visiting the zoo, aviary, or botanical gardens..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ016">
+	<summary>
+  Looks up a localized string similar to I would like to dissect an animal and understand how its organs work..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ017">
+	<summary>
+  Looks up a localized string similar to Inventing food crops for farmers that will resist disease..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ018">
+	<summary>
+  Looks up a localized string similar to Studying and predicting the behavior of a volcano that is threatening a city or town full of people and animals..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ019">
+	<summary>
+  Looks up a localized string similar to Trying to figure out how weather patterns like hailstorms, heatwaves, or frosts form and then to make recommendations to farmers about when and where to plant things or protect their crops..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ020">
+	<summary>
+  Looks up a localized string similar to Examining water to find out what new chemicals might be in it, and then figuring out where they came from and what affect they might have on the water’s quality..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ021">
+	<summary>
+  Looks up a localized string similar to Studying natural hazards such as insect-borne diseases or overpopulation of predators to find out how to help humans who are suffering..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ022">
+	<summary>
+  Looks up a localized string similar to Exploring and finding new sources of natural resources, such as drinkable water, oil, natural gas , and important metals or gems..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ023">
+	<summary>
+  Looks up a localized string similar to Studying how factory and automobile emissions are changing the air we breathe..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ024">
+	<summary>
+  Looks up a localized string similar to Studying what man-made things like businesses are doing that affect the water cycle: water evaporates, forms clouds, returns as rain, is transported via streams and rivers, and is stored in oceans or lakes..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ025">
+	<summary>
+  Looks up a localized string similar to Plants which can be used to make medicine.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ026">
+	<summary>
+  Looks up a localized string similar to What a particular kind of soil is made of and how it might be made better for plants or food crops..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ027">
+	<summary>
+  Looks up a localized string similar to Air pollution and how we might fix it..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ028">
+	<summary>
+  Looks up a localized string similar to The composition of the ocean’s waters and how we could alter them to conserve the Earth's resources.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ029">
+	<summary>
+  Looks up a localized string similar to New types of organisms that live in oceans, streams or lakes.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ030">
+	<summary>
+  Looks up a localized string similar to What makes a continent move, or a mountain form?.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ031">
+	<summary>
+  Looks up a localized string similar to The ozone layer and what it does for the Earth and its inhabitants..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ032">
+	<summary>
+  Looks up a localized string similar to What effects will shrinking glaciers have on the oceans ?.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ033">
+	<summary>
+  Looks up a localized string similar to Average global temperatures increased by about 1 degree Celsius over the 20th century.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ034">
+	<summary>
+  Looks up a localized string similar to Almost all the cells in our body have DNA with the exception of red blood cells.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ035">
+	<summary>
+  Looks up a localized string similar to If unwound and tied together, the strands of DNA in one cell would stretch almost six feet but would be only 50 trillionths of an inch wide.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ036">
+	<summary>
+  Looks up a localized string similar to Methane is a natural colorless gas that is emitted to the atmosphere through many natural pathways as well as by human activities..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ037">
+	<summary>
+  Looks up a localized string similar to A single covalent bond contains 1 pair of shared electrons.  A chlorine atom has 7 valence electrons, so if it shares 1 electron with another chlorine atom, they both will have an octet (8 valence electrons).  Therefore, Cl2 contains a single bond..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ038">
+	<summary>
+  Looks up a localized string similar to Every kind of light moves at a certain wavelength..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ039">
+	<summary>
+  Looks up a localized string similar to Some animals can see waveslengths of light that humans cannot. Those waveslengths would be just outside the edges of human visible light..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ040">
+	<summary>
+  Looks up a localized string similar to The Sun or Sol, is the star at the centre of our solar system and is responsible for the Earth’s climate and weather..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ041">
+	<summary>
+  Looks up a localized string similar to Biological ecologists study how humans interact with other living things as they try to design better places to live, as they discover new animals and try to save them, and as they try to protect the environment from pollution..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ042">
+	<summary>
+  Looks up a localized string similar to Seismologists study the how and why and what of earthquakes, and they analyze the earthquake’s tremors to try and understand the structure of the Earth’s plates and core..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ043">
+	<summary>
+  Looks up a localized string similar to Atmospheric scientists study weather’s processes; the global dynamics of climates and how they change; what solar radiation is and how it effects the air’s gases; and the role of atmospheric chemistry in ozone depletion, climate change, and pollution..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ044">
+	<summary>
+  Looks up a localized string similar to Hydrologists are concerned with the Earth’s water from the moment of precipitation until it evaporates into the atmosphere or is discharged into the ocean; for example, they study river systems to predict what affects a flood might have on a particular place..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ045">
+	<summary>
+  Looks up a localized string similar to Paleoecologists study ancient organisms like dinosaurs, or now-fossilized miniature bugs and plants, and the history of their relationships to their environment..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ046">
+	<summary>
+  Looks up a localized string similar to Mineralogists study how rocks and metal deposits are formed underground, and where to find them..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ047">
+	<summary>
+  Looks up a localized string similar to Environmental Meteorologists study the concentration and movement of air pollutants.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblQ048">
+	<summary>
+  Looks up a localized string similar to Marine geologists study the processes that lead to the formation of the ocean’s basins, and the ways in which geothermal and other geological processes interact with seawater..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblRating">
+	<summary>
+  Looks up a localized string similar to Your rating.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblRemarks">
+	<summary>
+  Looks up a localized string similar to Comments.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblSaveExit">
+	<summary>
+  Looks up a localized string similar to Thanks you for attempting the PERMATApintar Science Interests Inventory.. Your responses have been saved. To complete the assessment, please click on the original link emailed to you.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblSaveExitAssignRater">
+	<summary>
+  Looks up a localized string similar to Thank you for your progress in completing the assessor nomination. Your selections have been saved. To re-visit the assessor nomination page, please click on the original link emailed to you.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThank">
+	<summary>
+  Looks up a localized string similar to Thank you.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThankAssignRaterDone">
+	<summary>
+  Looks up a localized string similar to 
+    &lt;p&gt;Thank you for nominating your assessors. An email notification will be sent to all your assessors to complete the assessment.&lt;/p&gt;
+    You will also receive an email with a link for you to complete your self assessment.
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThankcomplete">
+	<summary>
+  Looks up a localized string similar to Thank you for completing the PERMATApintar Science Interests Inventory..
+    .
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThankcontentC">
+	<summary>
+  Looks up a localized string similar to The results will create a self-portrait of your leadership to guide you in your next steps towards fully developing as a leader. The PERMATApintar Science Interests Inventory. Report will be forwarded to you and a one to one session will be arranged to walkthrough the results with you. During the one to one session, you will be able to discuss the insights from the assessment results in detail and structure a development plan for moving forward..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThankcontentR">
+	<summary>
+  Looks up a localized string similar to Your contribution is highly appreciated and will contribute to the betterment of the entire organisaiton..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThankheaderC">
+	<summary>
+  Looks up a localized string similar to Thank you for completing the PERMATApintar Science Interests Inventory..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblThankheaderR">
+	<summary>
+  Looks up a localized string similar to Thank you for participating in the PERMATApintar Science Interests Inventory..
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lblYes">
+	<summary>
+  Looks up a localized string similar to Yes.
+</summary>
+</member><member name="P:PERMATA_SainsTest.Resources.sainstest_2014.lnkNext">
+	<summary>
+  Looks up a localized string similar to Continue....
+</summary>
+</member><member name="T:PERMATA_SainsTest.Resources.sainstest_2014">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:PERMATA_SainsTest.radar.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest._default.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest._default.myform">
+	<summary>
+myform control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest._default.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.error_invalid_link.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_chart_aspx.ofc_radar">
+	<summary>
+ofc_radar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_chart_aspx.lnkBack">
+	<summary>
+lnkBack control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblDomain02">
+	<summary>
+lblDomain02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ006">
+	<summary>
+lblQ006 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q6">
+	<summary>
+Q6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ007">
+	<summary>
+lblQ007 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q7">
+	<summary>
+Q7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ008">
+	<summary>
+lblQ008 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q8">
+	<summary>
+Q8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ009">
+	<summary>
+lblQ009 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q9">
+	<summary>
+Q9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ010">
+	<summary>
+lblQ010 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q10">
+	<summary>
+Q10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ011">
+	<summary>
+lblQ011 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q11">
+	<summary>
+Q11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ012">
+	<summary>
+lblQ012 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q12">
+	<summary>
+Q12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ013">
+	<summary>
+lblQ013 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q13">
+	<summary>
+Q13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ014">
+	<summary>
+lblQ014 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q14">
+	<summary>
+Q14 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ015">
+	<summary>
+lblQ015 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q15">
+	<summary>
+Q15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblQ016">
+	<summary>
+lblQ016 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.Q16">
+	<summary>
+Q16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page03.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.main.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.main.myform">
+	<summary>
+myform control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.main.lblCandidatename">
+	<summary>
+lblCandidatename control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.main.lnkLanguage">
+	<summary>
+lnkLanguage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.main.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PERMATA_SainsTest.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:PERMATA_SainsTest.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:PERMATA_SainsTest.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:PERMATA_SainsTest.main_contact_us.contact_us1">
+	<summary>
+contact_us1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblCompanyname">
+	<summary>
+lblCompanyname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblFullname">
+	<summary>
+lblFullname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtFullname">
+	<summary>
+txtFullname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblEmailAdd">
+	<summary>
+lblEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtEmailAdd">
+	<summary>
+txtEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblSchoolname">
+	<summary>
+lblSchoolname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtSchoolname">
+	<summary>
+txtSchoolname control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblGender">
+	<summary>
+lblGender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtGender">
+	<summary>
+txtGender control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblFatherOccupation">
+	<summary>
+lblFatherOccupation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtFatherOccupation">
+	<summary>
+txtFatherOccupation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblMotherOccupation">
+	<summary>
+lblMotherOccupation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtMotherOccupation">
+	<summary>
+txtMotherOccupation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblFavScientist">
+	<summary>
+lblFavScientist control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtFavScientist">
+	<summary>
+txtFavScientist control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblScienceField">
+	<summary>
+lblScienceField control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtScienceField">
+	<summary>
+txtScienceField control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblDegree">
+	<summary>
+lblDegree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.txtDegree">
+	<summary>
+txtDegree control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.btnSave">
+	<summary>
+btnSave control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblMsgOK">
+	<summary>
+lblMsgOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.sainstest_create.lblMsgNOK">
+	<summary>
+lblMsgNOK control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.contact_us.contact_us1">
+	<summary>
+contact_us1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:PERMATA_SainsTest.My.MyWebExtension.Computer">
+	<summary>
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:PERMATA_SainsTest.My.MyWebExtension.User">
+	<summary>
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:PERMATA_SainsTest.My.MyWebExtension.Request">
+	<summary>
+ Returns Request object.
+ </summary>
+</member><member name="P:PERMATA_SainsTest.My.MyWebExtension.Response">
+	<summary>
+ Returns Response object.
+ </summary>
+</member><member name="P:PERMATA_SainsTest.My.MyWebExtension.Log">
+	<summary>
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:PERMATA_SainsTest.My.MyWebExtension">
+	<summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblDomain01">
+	<summary>
+lblDomain01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ006">
+	<summary>
+lblQ006 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q6">
+	<summary>
+Q6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ007">
+	<summary>
+lblQ007 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q7">
+	<summary>
+Q7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblQ008">
+	<summary>
+lblQ008 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.Q8">
+	<summary>
+Q8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.btnPrev">
+	<summary>
+btnPrev control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page02.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.login.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.login.txtAlumniID">
+	<summary>
+txtAlumniID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.login.btnLogin">
+	<summary>
+btnLogin control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.login.lblLoginMsg">
+	<summary>
+lblLoginMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblInstruction">
+	<summary>
+lblInstruction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel1">
+	<summary>
+lblLevel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel2">
+	<summary>
+lblLevel2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel3">
+	<summary>
+lblLevel3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel4">
+	<summary>
+lblLevel4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel5">
+	<summary>
+lblLevel5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblDomain01">
+	<summary>
+lblDomain01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblRating">
+	<summary>
+lblRating control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ001">
+	<summary>
+lblQ001 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q1">
+	<summary>
+Q1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ002">
+	<summary>
+lblQ002 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q2">
+	<summary>
+Q2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ003">
+	<summary>
+lblQ003 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q3">
+	<summary>
+Q3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ004">
+	<summary>
+lblQ004 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q4">
+	<summary>
+Q4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ005">
+	<summary>
+lblQ005 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q5">
+	<summary>
+Q5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ006">
+	<summary>
+lblQ006 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q6">
+	<summary>
+Q6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ007">
+	<summary>
+lblQ007 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q7">
+	<summary>
+Q7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ008">
+	<summary>
+lblQ008 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q8">
+	<summary>
+Q8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ009">
+	<summary>
+lblQ009 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q9">
+	<summary>
+Q9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ010">
+	<summary>
+lblQ010 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q10">
+	<summary>
+Q10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ011">
+	<summary>
+lblQ011 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q11">
+	<summary>
+Q11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ012">
+	<summary>
+lblQ012 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q12">
+	<summary>
+Q12 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ013">
+	<summary>
+lblQ013 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q13">
+	<summary>
+Q13 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ014">
+	<summary>
+lblQ014 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q14">
+	<summary>
+Q14 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ015">
+	<summary>
+lblQ015 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q15">
+	<summary>
+Q15 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblQ016">
+	<summary>
+lblQ016 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.Q16">
+	<summary>
+Q16 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblNext">
+	<summary>
+lblNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.btnNext">
+	<summary>
+btnNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel0">
+	<summary>
+lblLevel0 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page01.lblLevel6">
+	<summary>
+lblLevel6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest._default1.sainstest_create1">
+	<summary>
+sainstest_create1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblThankheader">
+	<summary>
+lblThankheader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.Label2">
+	<summary>
+Label2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblDomain01">
+	<summary>
+lblDomain01 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblDomain02">
+	<summary>
+lblDomain02 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblDomain03">
+	<summary>
+lblDomain03 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblDomain04">
+	<summary>
+lblDomain04 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblScorePercentage">
+	<summary>
+lblScorePercentage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.btnEmail">
+	<summary>
+btnEmail control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblEmailAdd">
+	<summary>
+lblEmailAdd control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lnkChart">
+	<summary>
+lnkChart control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.esurvey_page_done.lblMsg">
+	<summary>
+lblMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.home_candidate.lblHomeOverview">
+	<summary>
+lblHomeOverview control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.home_candidate.lblHomeCandidate">
+	<summary>
+lblHomeCandidate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.home_candidate.lblHomeBenefit">
+	<summary>
+lblHomeBenefit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.home_candidate.lblHomeBenefitContent">
+	<summary>
+lblHomeBenefitContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:PERMATA_SainsTest.home_candidate.lnkNext">
+	<summary>
+lnkNext control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
