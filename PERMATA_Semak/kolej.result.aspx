@@ -1,14 +1,14 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/default.Master" CodeBehind="kolej.result.aspx.vb" Inherits="UKM_SEMAKAN.kolej_result" %>
+<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/default.Master" CodeBehind="kolej.result.aspx.vb" Inherits="UKM_SEMAKAN.kolej_result" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <a href="default.aspx">
         <img src="images/pp-logo.png" alt="logo" /></a>
-    <h2>Selamat Datang ke Laman Semakan PERMATApintar</h2>
+    <h2>Selamat Datang ke Laman Semakan GENIUS@Pintar UKM</h2>
     <table id="mycustomtable">
         <tr>
-            <th colspan="2">SEMAKAN KELAYAKAN KE KOLEJ PERMATApintar® UKM
+            <th colspan="2">SEMAKAN KELAYAKAN KE KOLEJ GENIUS@Pintar UKM
             </th>
         </tr>
         <tr>
@@ -92,55 +92,54 @@
             <td>
                 <asp:Panel ID="pnlDisplay" runat="server">
 
-                    <p> <b>Sila muat turun SURAT JAWAPAN PENERIMAAN dan Polisi Kolej PERMATApintar® UKM jika anda menerima tawaran
+                    <p> <b>Sila muat turun borang yang di sediakan di bawah jika anda menerima tawaran ke Kolej GENIUS@Pintar UKM
                         ini.</b></p>
-                    <p><a href="download/kolej2018/DOKUMEN PENDAFTARAN KOLEJ PERMATAPINTAR UKM.zip" target="_blank">Klik disini untuk memuat turun file secara pukal .zip file
-                            (3.4MB).</a></p>
+                    <p><a href="download/kolej2021/DOKUMEN PENDAFTARAN KOLEJ GENIUS@Pintar UKM 2021.zip" target="_blank">Klik disini untuk memuat turun file secara pukal .zip file</a></p>
+                    <p><a href="download/kolej2021/DOKUMEN PENDAFTARAN KOLEJ GENIUS@Pintar UKM 2021.rar" target="_blank">Klik disini untuk memuat turun file secara pukal .rar file</a></p>
 
                     <p> <b>ATAU sila memuat turun semua fail dibawah</b></p>
 
                     <p>
-                        <a href="download/kolej2018/LAMPIRAN  A JAWAPAN PENERIMAAN @ PENOLAKAN.pdf" target="_blank">LAMPIRAN  A JAWAPAN PENERIMAAN @ PENOLAKAN.pdf</a>
+                        <a href="download/kolej2021/LAMPIRAN A POLISI & PERATURAN KGPN.pdf" target="_blank">LAMPIRAN A POLISI & PERATURAN KGPN</a>
                     </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN B BORANG KEBENARAN MENGIKUTI PROGRAM.pdf" target="_blank">LAMPIRAN B BORANG KEBENARAN MENGIKUTI PROGRAM.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN B BORANG KEBENARAN MENGIKUTI PENGAJIAN.pdf" target="_blank">LAMPIRAN B BORANG KEBENARAN MENGIKUTI PENGAJIAN</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN C BORANG MAKLUMAT PELAJAR 2018.pdf" target="_blank">LAMPIRAN C BORANG MAKLUMAT PELAJAR 2018.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN C BORANG MAKLUMAT MURID 2021.pdf" target="_blank">LAMPIRAN C BORANG MAKLUMAT MURID 2021</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN D LAPORAN PEMERIKSAAN KESIHATAN.pdf" target="_blank">LAMPIRAN D LAPORAN PEMERIKSAAN KESIHATAN.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN D LAPORAN PEMERIKSAAN KESIHATAN.pdf" target="_blank">LAMPIRAN D LAPORAN PEMERIKSAAN KESIHATAN</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN E BORANG PERAKUAN KEBENARAN MENDAPATKAN RAWATAN.pdf" target="_blank">LAMPIRAN E BORANG PERAKUAN KEBENARAN MENDAPATKAN RAWATAN.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN D1 BORANG PERAKUAN KEBENARAN MENDAPATKAN RAWATAN.pdf" target="_blank">LAMPIRAN D1 BORANG PERAKUAN KEBENARAN MENDAPATKAN RAWATAN</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN F AKUAN PEMBAYARAN YURAN PENGAJIAN PELAJAR BAHARU.pdf" target="_blank">LAMPIRAN F AKUAN PEMBAYARAN YURAN PENGAJIAN PELAJAR BAHARU.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN E AKUAN PEMBAYARAN YURAN PENGAJIAN.pdf" target="_blank">LAMPIRAN E AKUAN PEMBAYARAN YURAN PENGAJIAN</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN G TAWARAN KOLEJ KEDIAMAN.pdf" target="_blank">LAMPIRAN G TAWARAN KOLEJ KEDIAMAN.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN E1 TATACARA PEMBAYARAN YURAN PELAJAR BAHARU.pdf" target="_blank">LAMPIRAN E1 TATACARA PEMBAYARAN YURAN PELAJAR BAHARU</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/LAMPIRAN F1 TATACARA PEMBAYARAN YURAN PELAJAR BAHARU.pdf" target="_blank">LAMPIRAN F1 TATACARA PEMBAYARAN YURAN PELAJAR BAHARU.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN E2 SENARAI YURAN PENGAJIAN MURID BAHARU.pdf" target="_blank">LAMPIRAN E2 SENARAI YURAN PENGAJIAN MURID BAHARU</a>
                      </p>
                     <p>
-                        <a href="download/kolej2018/LAMPIRAN F2 SENARAI YURAN PENGAJIAN PELAJAR BAHARU.pdf" target="_blank">LAMPIRAN F2 SENARAI YURAN PENGAJIAN PELAJAR BAHARU.pdf</a>
+                        <a href="download/kolej2021/LAMPIRAN F BORANG AKUJANJI KOLEJ KEDIAMAN.pdf" target="_blank">LAMPIRAN F BORANG AKUJANJI KOLEJ KEDIAMAN</a>
                     </p> 
                      <p>
-                         <a href="download/kolej2018/SENARAI SEMAK BORANG_SERAH SEMASA PENDAFTARAN.pdf" target="_blank">SENARAI SEMAK BORANG_SERAH SEMASA PENDAFTARAN.pdf</a>
+                         <a href="download/kolej2021/LAMPIRAN F1 PAKAIAN DAN PERALATAN YANG PERLU DIBAWA OLEH MURID.pdf" target="_blank">LAMPIRAN F1 PAKAIAN DAN PERALATAN YANG PERLU DIBAWA OLEH MURID</a>
                      </p>
                      <p>
-                         <a href="download/kolej2018/PAKAIAN DAN PERALATAN YANG PERLU DIBAWA.pdf" target="_blank">PAKAIAN DAN PERALATAN YANG PERLU DIBAWA.pdf</a>
+                         <a href="download/kolej2021/SENARAI SEMAK BORANG_SERAH SEMASA PENDAFTARAN.pdf" target="_blank">SENARAI SEMAK BORANG SERAH SEMASA PENDAFTARAN</a>
                      </p>
-                     <p>
-                         <a href="download/kolej2018/ATURCARA PENDAFTARAN PELAJAR BARU 2018.pdf" target="_blank">ATURCARA PENDAFTARAN PELAJAR BARU 2018.pdf
-                            (3.4MB).</a>
-                     </p>
+                    <%-- <p>
+                         <a href="download/kolej2021/ATURCARA PENDAFTARAN PELAJAR BARU 2018.pdf" target="_blank">ATURCARA PENDAFTARAN PELAJAR BARU 2018</a>
+                     </p>--%>
 
                      <p>
-                        Tarikh penerimaan dan penolakan tawaran ke Kolej PERMATApintar® UKM ialah
+                        Tarikh penerimaan dan penolakan tawaran ke Kolej GENIUS@Pintar UKM ialah
                         <asp:Label ID="lblTarikhTutup" runat="server" Text="" ForeColor="Red" Font-Bold="true"></asp:Label>.
-                        Bagi pelajar yang tidak menjawab tawaran ke Kolej PERMATApintar® UKM sama ada melalui sistem atau tidak mengembalikan borang jawapan penawaran maka tawaran anda telah terbatal secara automatik.
+                        Bagi pelajar yang tidak menjawab tawaran ke Kolej GENIUS@Pintar UKM sama ada melalui sistem atau tidak mengembalikan borang jawapan penawaran maka tawaran anda telah terbatal secara automatik.
                     </p>
                     <p>
                         Saya mengaku telah membaca, memahami dan mempersetujui polisi dan syarat-syarat yang telah dimeterai.
@@ -149,7 +148,7 @@
                 </asp:Panel>
                 <asp:Panel ID="PnlStatus" runat="server">
                     <p>
-                        Sila klik <b>[Terima]</b> jika anda menerima tawaran ke Kolej PERMATApintar® UKM ini dan klik <b>[Tolak]</b> serta isikan kenapa jika anda menolak tawaran ke Kolej PERMATApintar® UKM ini.
+                        Sila klik <b>[Terima]</b> jika anda menerima tawaran ke Kolej GENIUS@Pintar UKM ini dan klik <b>[Tolak]</b> serta isikan kenapa jika anda menolak tawaran ke Kolej GENIUS@Pintar UKM ini.
                     </p>
                     <p>
                         Sebab tawaran ditolak:<asp:TextBox ID="txtStatusReason" runat="server" Width="350px"
@@ -162,7 +161,7 @@
                 </asp:Panel>
                 <asp:Panel ID="pnltolak" runat="server">
                     <p>
-                        <b>Sila hubungi Kolej PERMATApintar® UKM jika ingin MENERIMA semula tawaran.</b> 
+                        <b>Sila hubungi Kolej GENIUS@Pintar UKM jika ingin MENERIMA semula tawaran.</b> 
                     </p>
                 </asp:Panel>
             </td>
