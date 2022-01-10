@@ -11,14 +11,14 @@
     <p class="w3-text-white gridViewRespond" style="background-color: #800000; text-align: center; width: 100%; border-radius: 25px">Search Student Data</p>
     <div class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px">
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddl_year" runat="server" AutoPostBack="true" class="btn btn-default ddl" Style="border-radius: 25px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddl_exam" runat="server" AutoPostBack="true" class="btn btn-default ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlExam_SelectedIndexChanged"></asp:DropDownList>
-            <asp:DropDownList ID="ddl_level" runat="server" AutoPostBack="true" class="btn btn-default ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlLevel_SelectedIndexChanged"></asp:DropDownList>
-            <asp:DropDownList ID="ddl_class" runat="server" AutoPostBack="true" class="btn btn-default ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlClass_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_year" runat="server" AutoPostBack="true" class="btn btn-default font ddl" Style="border-radius: 25px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_exam" runat="server" AutoPostBack="true" class="btn btn-default font ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlExam_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_level" runat="server" AutoPostBack="true" class="btn btn-default font ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlLevel_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_class" runat="server" AutoPostBack="true" class="btn btn-default font ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlClass_SelectedIndexChanged"></asp:DropDownList>
         </div>
         <div class="col-md-12 w3-text-black" style="text-align: left; padding-left: 23px; margin-top: 5px;">            
-            <asp:DropDownList ID="ddl_coccuriculum" runat="server" AutoPostBack="true" class="btn btn-default ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlCoccuriculum_SelectedIndexChanged"></asp:DropDownList>
-            <asp:DropDownList ID="ddl_list" runat="server" AutoPostBack="true" class="btn btn-default ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlList_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_coccuriculum" runat="server" AutoPostBack="true" class="btn btn-default font ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlCoccuriculum_SelectedIndexChanged"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_list" runat="server" AutoPostBack="true" class="btn btn-default font ddl" Style="border-radius: 25px;" OnSelectedIndexChanged="ddlList_SelectedIndexChanged"></asp:DropDownList>
         </div>
     </div>
 </div>

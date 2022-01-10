@@ -42,9 +42,9 @@
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; border-radius: 25px; border: 5px solid #8c8c8c;">
     <p style="background-color: #800000; text-align: center; display: inline-block; width: 100%; border-radius: 25px">Student List</p>
     <div class="w3-text-black" style="margin-left: 23px; margin-top: 10px; margin-bottom: 10px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <div class="w3-text-black" style="margin-left: 23px; margin-top: 10px; margin-bottom: 5px">
         <asp:Label CssClass="Label" runat="server"> Search : </asp:Label>

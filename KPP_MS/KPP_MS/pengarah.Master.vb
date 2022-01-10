@@ -12,8 +12,12 @@ Public Class Site1
     Dim oCommon As New Commonfunction
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
         Try
+
+            If Not Request.IsSecureConnection Then
+                Response.Redirect(Request.Url.AbsoluteUri.Replace("http://", "https://"))
+            End If
+
             If Not IsPostBack Then
 
                 Dim id As String = Request.QueryString("pengarah_ID")
@@ -83,13 +87,23 @@ Public Class Site1
         pengarahLaporanKehadiran.NavigateUrl = String.Format("pengarah_laporan_kehadiran.aspx?pengarah_ID=" + running_ID)
         pengarahSlipPeperiksaan.NavigateUrl = String.Format("pengarah_slip_peperiksaan.aspx?pengarah_ID=" + running_ID)
 
-        pengarahKemaskiniProfil.NavigateUrl = String.Format("#" + running_ID)
-        pengarahTukarKataLaluan.NavigateUrl = String.Format("#" + running_ID)
-
         pengarahPengurusanKokurikulum.NavigateUrl = String.Format("http://koko.permatapintar.edu.my/pengarah/pengarah.login.succcess.aspx?pengarah_ID=" + Request.QueryString("pengarah_ID"))
         'pengarahPengurusanKokurikulum.NavigateUrl = String.Format("http://localhost/permata_koko/pengarah/pengarah.login.succcess.aspx?pengarah_ID=" + Request.QueryString("pengarah_ID"))
 
-        pengarahLogout.NavigateUrl = String.Format("default.aspx?result=90&pengarah_ID=" + running_ID)
+        strSQL = "  select staff_Name from staff_info
+                    where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("pengarah_ID")) & "'"
+
+        Dim strSQLPosition As String = "Select Parameter from setting where Value = 'Pengarah'"
+
+        txtstaffName.Text = " [ WELCOME ,  &nbsp;&nbsp; " & oCommon.getFieldValue(strSQL) & " &nbsp;&nbsp; - &nbsp;&nbsp; " & oCommon.getFieldValue(strSQLPosition).ToUpper & " ] "
+
+        txtcurrentDate.Text = DateTime.Now.ToString("dd/MM/yyyy")
+    End Sub
+
+    Private Sub btnLogout_ServerClick(sender As Object, e As EventArgs) Handles btnLogout.ServerClick
+
+        Response.Redirect("pengarah_CloseLogout.aspx?pengarah_ID=" + Request.QueryString("pengarah_ID"))
+
     End Sub
 
 End Class

@@ -32,38 +32,71 @@ Public Class Commonfunction
         If getAppsettings("isDebug") = "Y" Then
             Return strMsg
         End If
+        Return strMsg
     End Function
 
     Public Function PNG(ByVal strKey As String, ByVal ddlexam_Name As String, ByVal ddlyear As String) As String
 
-        ''calculate (grade value*credit hour) * count subject without 'Pembangunan Diri and Penyelidikan and kokurikullum and Portfolio'
         Dim Calsumgrade As String = ""
-        Calsumgrade = "select sum(gpa * subject_info.subject_CreditHour) 
+        Dim Calsumcredithour As String = ""
+
+        Dim findCampus As String = "Select student_Campus from student_info where std_ID = '" & strKey & "'"
+        Dim getCampus As String = getFieldValue(findCampus)
+
+        If ddlyear = "2020" Then
+
+            If ddlexam_Name = "Exam 2" Or ddlexam_Name = "Exam 4" Or ddlexam_Name = "Exam 6" Or ddlexam_Name = "Exam 8" Or ddlexam_Name = "Exam 10" Or ddlexam_Name = "Exam 12" Then
+
+                ''calculate (grade value*credit hour) * count subject without 'Pembangunan Diri and Penyelidikan and kokurikullum and Portfolio'
+                Calsumgrade = " select sum(gpa * subject_info.subject_CreditHour) 
+                                from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade
+                                left join course on exam_result.course_ID=course.course_ID 
+                                left join student_info on course.std_ID=student_info.std_ID 
+                                left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                                and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
+
+                ''calculate (credit hour * count subject) without 'Pembangunan Diri and Penyelidikan and kokurikullum and Portfolio'
+                Calsumcredithour = "Select sum(subject_info.subject_CreditHour) 
+                                    from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
+                                    left join course on exam_result.course_ID=course.course_ID 
+                                    left join student_info on course.std_ID=student_info.std_ID 
+                                    left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                    left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                    where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                    and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                                    and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
+
+            End If
+        Else
+
+            ''calculate (grade value*credit hour) * count subject without 'Pembangunan Diri and Penyelidikan and kokurikullum and Portfolio'
+            Calsumgrade = " select sum(gpa * subject_info.subject_CreditHour) 
                             from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade
                             left join course on exam_result.course_ID=course.course_ID 
                             left join student_info on course.std_ID=student_info.std_ID 
                             left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
                             left join subject_info on course.subject_ID=subject_info.subject_ID 
-                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                            and subject_info.subject_Name != 'Self Development' and  subject_info.subject_NameBM != 'Pembangunan Diri'
-                            and subject_info.subject_Name not like '%Personality Development%' and  subject_info.subject_NameBM not like '%Jati Diri%'
-                            and subject_info.subject_Name  not like '%Research%' and  subject_info.subject_NameBM not like '%Penyelidikan%'
-                            and subject_info.subject_Name  not like '%Portfolio%' and  subject_info.subject_NameBM not like '%Portfolio%'"
-        Dim valueA As Decimal = Decimal.Parse(getFieldValue(Calsumgrade))
+                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                            and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                            and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
 
-        ''calculate (credit hour * count subject) without 'Pembangunan Diri and Penyelidikan and kokurikullum and Portfolio'
-        Dim Calsumcredithour As String = ""
-        Calsumcredithour = "Select sum(subject_info.subject_CreditHour) 
+            ''calculate (credit hour * count subject) without 'Pembangunan Diri and Penyelidikan and kokurikullum and Portfolio'
+            Calsumcredithour = "Select sum(subject_info.subject_CreditHour) 
                                 from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
                                 left join course on exam_result.course_ID=course.course_ID 
                                 left join student_info on course.std_ID=student_info.std_ID 
                                 left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
                                 left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                and subject_info.subject_Name != 'Self Development' and  subject_info.subject_NameBM != 'Pembangunan Diri'
-                                and subject_info.subject_Name not like '%Personality Development%' and  subject_info.subject_NameBM not like '%Jati Diri%'
-                                and subject_info.subject_Name  not like '%Research%' and  subject_info.subject_NameBM not like '%Penyelidikan%'
-                                and subject_info.subject_Name  not like '%Portfolio%' and  subject_info.subject_NameBM not like '%Portfolio%'"
+                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                                and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
+        End If
+
+
+        Dim valueA As Decimal = Decimal.Parse(getFieldValue(Calsumgrade))
         Dim valueB As Decimal = Decimal.Parse(getFieldValue(Calsumcredithour))
 
         Dim pngData_STUDENT As Decimal
@@ -81,25 +114,40 @@ Public Class Commonfunction
             pngData_STUDENT = 0.00
         End If
 
-        ''get academic percentage on / off
-        Dim check_academic_percen As String = "select Value from setting where Type = 'Academic_Percentage'"
-        Dim Confirm_Academic As String = getFieldValue(check_academic_percen)
+        ''get student level
+        Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & strKey & "' and year = '" & ddlyear & "'"
+        Dim GetStudentLevel As String = getFieldValue(FindStudentLevel)
+
+        Dim check_academic_percen As String = ""
+        Dim Confirm_Academic As String = ""
+        Dim check_portfolio_percen As String = ""
+        Dim Confirm_Portfolio As String = ""
+        Dim check_cocuricullum_percen As String = ""
+        Dim Confirm_Cocuricullum As String = ""
+        Dim check_research_percen As String = ""
+        Dim Confirm_Research As String = ""
+        Dim check_self_percen As String = ""
+        Dim Confirm_Self As String = ""
+
+        'get academic percentage on / off
+        check_academic_percen = "select Value from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+        Confirm_Academic = getFieldValue(check_academic_percen)
 
         ''get Portfolio percentage on / off
-        Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-        Dim Confirm_Portfolio As String = getFieldValue(check_portfolio_percen)
+        check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+        Confirm_Portfolio = getFieldValue(check_portfolio_percen)
 
         ''get cocuricullum percentage on / off
-        Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-        Dim Confirm_Cocuricullum As String = getFieldValue(check_cocuricullum_percen)
+        check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+        Confirm_Cocuricullum = getFieldValue(check_cocuricullum_percen)
 
         ''get research percentage on / off
-        Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-        Dim Confirm_Research As String = getFieldValue(check_research_percen)
+        check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+        Confirm_Research = getFieldValue(check_research_percen)
 
         ''get self development percentage on / off
-        Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-        Dim Confirm_Self As String = getFieldValue(check_self_percen)
+        check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+        Confirm_Self = getFieldValue(check_self_percen)
 
         Dim PNG_Academic As Decimal = 0.0
         Dim PNG_Cocuricullum As Decimal = 0.0
@@ -115,7 +163,7 @@ Public Class Commonfunction
 
         '' Confirm Academic
         If Confirm_Academic = "on" Or Confirm_Academic = "On" Then
-            Dim data_academic_percen As String = "select Parameter from setting where Type = 'Academic_Percentage'"
+            Dim data_academic_percen As String = "select Parameter from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
             percen_academic = Decimal.Parse(getFieldValue(data_academic_percen))
 
             PNG_Academic = pngData_STUDENT
@@ -126,17 +174,17 @@ Public Class Commonfunction
 
         '' Confirm Portfolio
         If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
-            Dim data_portfolio_percen As String = "select Parameter from setting where Type = 'Portfolio_Percentage'"
+            Dim data_portfolio_percen As String = "select Parameter from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
             percen_portfolio = Decimal.Parse(getFieldValue(data_portfolio_percen))
 
-            Dim get_portfolio As String = "Select gpa
-                                              from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
-                                              left join course on exam_result.course_ID=course.course_ID 
-                                              left join student_info on course.std_ID=student_info.std_ID 
-                                              left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
-                                              left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                              where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                              and subject_info.subject_Name like '%Portfolio%' and  subject_info.subject_NameBM like '%Portfolio%'"
+            Dim get_portfolio As String = " Select gpa
+                                            from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
+                                            left join course on exam_result.course_ID=course.course_ID 
+                                            left join student_info on course.std_ID=student_info.std_ID 
+                                            left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                            left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                            and subject_info.course_Name = 'Portfolio'"
             PNG_PortFolio = Decimal.Parse(getFieldValue(get_portfolio))
         Else
             percen_portfolio = 0.0
@@ -145,17 +193,17 @@ Public Class Commonfunction
 
         '' Confirm Research
         If Confirm_Research = "on" Or Confirm_Research = "On" Then
-            Dim data_research_percen As String = "select Parameter from setting where Type = 'Research_Percentage'"
+            Dim data_research_percen As String = "select Parameter from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
             percen_research = Decimal.Parse(getFieldValue(data_research_percen))
 
-            Dim get_research As String = "Select gpa
-                                              from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
-                                              left join course on exam_result.course_ID=course.course_ID 
-                                              left join student_info on course.std_ID=student_info.std_ID 
-                                              left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
-                                              left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                              where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                              and subject_info.subject_Name like '%Research%' and  subject_info.subject_NameBM like '%Penyelidikan%'"
+            Dim get_research As String = "  Select gpa
+                                            from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
+                                            left join course on exam_result.course_ID=course.course_ID 
+                                            left join student_info on course.std_ID=student_info.std_ID 
+                                            left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                            left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                            and subject_info.course_Name = 'Penyelidikan'"
             PNG_Research = Decimal.Parse(getFieldValue(get_research))
         Else
             percen_research = 0.0
@@ -164,7 +212,7 @@ Public Class Commonfunction
 
         '' Confirm Cocuricullum
         If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
-            Dim data_cocuricullum_percen As String = "select Parameter from setting where Type = 'Cocuricullum_Percentage'"
+            Dim data_cocuricullum_percen As String = "select Parameter from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
             percen_cocuricullum = Decimal.Parse(getFieldValue(data_cocuricullum_percen))
 
             Dim get_Mykad As String = "select student_Mykad from student_info where std_ID = '" & strKey & "'"
@@ -203,17 +251,16 @@ Public Class Commonfunction
 
         '' Confirm Self Developmemnt
         If Confirm_Self = "on" Or Confirm_Self = "On" Then
-            Dim data_self_percen As String = "select Parameter from setting where Type = 'Self_Development_Percentage'"
+            Dim data_self_percen As String = "select Parameter from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
             percen_selfdevelopment = Decimal.Parse(getFieldValue(data_self_percen))
 
-            Dim get_selfdevelopment As String = "Select gpa
+            Dim get_selfdevelopment As String = "   Select gpa
                                                     from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
                                                     left join course on exam_result.course_ID=course.course_ID 
                                                     left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
                                                     left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                                    where course.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                                    and (subject_info.subject_Name = 'Self Development' or  subject_info.subject_NameBM = 'Pembangunan Diri'
-                                                    or subject_info.subject_Name like '%Personality Development%' or  subject_info.subject_NameBM like '%Jati Diri%')"
+                                                    where course.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                                    and (subject_info.course_Name = 'Pembangunan Kendiri' or subject_info.course_Name = 'Jati Diri')"
             PNG_SelfDevelopment = Decimal.Parse(getFieldValue(get_selfdevelopment))
 
         Else
@@ -225,33 +272,31 @@ Public Class Commonfunction
         Dim PNGS_academic As Decimal = (PNG_Academic / 4) * percen_academic
         Dim PNGS_cocuricullum As Decimal = PNG_Cocuricullum
         Dim PNGS_portfolio As Decimal = (PNG_PortFolio / 4) * percen_portfolio
-        Dim PNGS_research As Decimal = (PNG_Research / 4) * percen_research
         Dim PNGS_selfdevelopment As Decimal = (PNG_SelfDevelopment / 4) * percen_selfdevelopment
-
+        Dim PNGS_research As Decimal = (PNG_Research / 4) * percen_research
 
         Dim total_percentage As Decimal = percen_cocuricullum + percen_academic + percen_portfolio + percen_research + percen_selfdevelopment
-
         Dim sun_pngk As Decimal = (PNGS_academic + PNGS_cocuricullum + PNGS_portfolio + PNGS_research + PNGS_selfdevelopment)
-        Dim PNGS As Decimal = (sun_pngk * 4) / total_percentage
-        PNGS = Math.Round(PNGS, 2)
 
+        Dim PNGS As Decimal = (sun_pngk * 4) / total_percentage
+        PNGS = Math.Round(PNGS, 2, MidpointRounding.AwayFromZero)
 
         ''step to insert PNG value into db
         ''select exam code
         Dim exmCode As String = ""
         Dim dataExmCode As String = ""
 
-        exmCode = "select exam_Name from exam_Info where exam_Name = '" & ddlexam_Name & "' and exam_Year = '" & ddlyear & "'"
+        exmCode = "select exam_Name from exam_Info where exam_Name = '" & ddlexam_Name & "' and exam_Year = '" & ddlyear & "' and exam_Institutions = '" & getCampus & "'"
         dataExmCode = getFieldValue(exmCode)
 
         ''check student data if already exist
         Dim exist As String = ""
         Dim dataExist As String = ""
 
-        exist = "select exam_Name from student_Png where std_ID = '" & strKey & "' and year = '" & ddlyear & "' and exam_Name = '" & dataExmCode & "'"
+        exist = "select exam_Name from student_Png where std_ID = '" & strKey & "' and year = '" & ddlyear & "' and exam_Name = '" & dataExmCode & "' "
         dataExist = getFieldValue(exist)
 
-        strSQL = "select exam_EndDate from exam_Info where exam_year = '" & ddlyear & "' and exam_Name = '" & ddlexam_Name & "'"
+        strSQL = "select exam_EndDate from exam_Info where exam_year = '" & ddlyear & "' and exam_Name = '" & ddlexam_Name & "' and exam_Institutions = '" & getCampus & "'"
         strRet = getFieldValue(strSQL)
 
         Dim get_date As String = DateTime.Now.ToString("dd/MM/yyyy")
@@ -260,7 +305,7 @@ Public Class Commonfunction
 
         If strRet >= get_date Then
 
-            If dataExist <> dataExmCode Then
+            If dataExist.Length = 0 Then
                 '' save in db
                 Using PNGDATA As New SqlCommand("INSERT into student_Png(std_ID,exam_Name,year,png,komp_akademik,komp_kokurikulum,komp_portfolio,komp_penyelidikan,komp_kendiri,stat_akademik,stat_kokurikulum,stat_portfolio,stat_penyelidikan,stat_kendiri) 
                                                  values ('" & strKey & "','" & dataExmCode & "','" & ddlyear & "','" & PNGS & "',
@@ -271,7 +316,7 @@ Public Class Commonfunction
                     objConn.Close()
                 End Using
 
-            ElseIf dataExist = dataExmCode Then
+            ElseIf dataExist.Length > 0 Then
 
                 ''update grades and gpa
                 strSQL = "UPDATE student_Png SET png ='" & PNGS & "', komp_akademik = '" & percen_academic & "', komp_kokurikulum = '" & percen_cocuricullum & "', komp_portfolio = '" & percen_portfolio & "',
@@ -299,20 +344,44 @@ Public Class Commonfunction
         Dim Calsumgrade As String = ""
         Dim Calsumcredithour As String = ""
 
-        If ddlexam_Name = "Exam 1" Or ddlexam_Name = "Exam 3" Or ddlexam_Name = "Exam 5" Or ddlexam_Name = "Exam 7" Or ddlexam_Name = "Exam 9" Or ddlexam_Name = "Exam 11" Then
+        Dim findCampus As String = "Select student_Campus from student_info where std_ID = '" & strKey & "'"
+        Dim getCampus As String = getFieldValue(findCampus)
 
-            Calsumgrade = "select sum(gpa * subject_info.subject_CreditHour) 
+        If ddlyear = "2020" Then
+
+            If ddlexam_Name = "Exam 2" Or ddlexam_Name = "Exam 4" Or ddlexam_Name = "Exam 6" Or ddlexam_Name = "Exam 8" Or ddlexam_Name = "Exam 10" Or ddlexam_Name = "Exam 12" Then
+
+                Calsumgrade = " select sum(gpa * subject_info.subject_CreditHour) 
+                                from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade    
+                                left join course on exam_result.course_ID=course.course_ID 
+                                left join student_info on course.std_ID=student_info.std_ID 
+                                left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                                and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
+
+                Calsumcredithour = "Select sum(subject_info.subject_CreditHour) 
+                                    from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
+                                    left join course on exam_result.course_ID=course.course_ID 
+                                    left join student_info on course.std_ID=student_info.std_ID 
+                                    left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                    left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                    where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                    and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                                    and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
+            End If
+        Else
+
+            Calsumgrade = " select sum(gpa * subject_info.subject_CreditHour) 
                             from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade    
                             left join course on exam_result.course_ID=course.course_ID 
                             left join student_info on course.std_ID=student_info.std_ID 
                             left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
                             left join subject_info on course.subject_ID=subject_info.subject_ID 
-                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                            and subject_info.subject_Name != 'Self Development' and  subject_info.subject_NameBM != 'Pembangunan Diri'
-                            and subject_info.subject_Name not like '%Personality Development%' and  subject_info.subject_NameBM not like '%Jati Diri%'
-                            and subject_info.subject_Name  not like '%Research%' and  subject_info.subject_NameBM not like '%Penyelidikan%'
-                            and subject_info.subject_Name  not like '%Portfolio%' and  subject_info.subject_NameBM not like '%Portfolio%'
-                            and subject_info.subject_Name  not like '%AP English Language and Composition%' and  subject_info.subject_NameBM not like '%AP English Language and Composition%'"
+                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                            and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                            and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
 
             Calsumcredithour = "Select sum(subject_info.subject_CreditHour) 
                                 from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
@@ -320,39 +389,9 @@ Public Class Commonfunction
                                 left join student_info on course.std_ID=student_info.std_ID 
                                 left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
                                 left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                and subject_info.subject_Name != 'Self Development' and  subject_info.subject_NameBM != 'Pembangunan Diri'
-                                and subject_info.subject_Name not like '%Personality Development%' and  subject_info.subject_NameBM not like '%Jati Diri%'
-                                and subject_info.subject_Name  not like '%Research%' and  subject_info.subject_NameBM not like '%Penyelidikan%'
-                                and subject_info.subject_Name  not like '%Portfolio%' and  subject_info.subject_NameBM not like '%Portfolio%'
-                                and subject_info.subject_Name  not like '%AP English Language and Composition%' and  subject_info.subject_NameBM not like '%AP English Language and Composition%'"
-
-        ElseIf ddlexam_Name = "Exam 2" Or ddlexam_Name = "Exam 4" Or ddlexam_Name = "Exam 6" Or ddlexam_Name = "Exam 8" Or ddlexam_Name = "Exam 10" Or ddlexam_Name = "Exam 12" Then
-
-            Calsumgrade = "select sum(gpa * subject_info.subject_CreditHour) 
-                            from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade    
-                            left join course on exam_result.course_ID=course.course_ID 
-                            left join student_info on course.std_ID=student_info.std_ID 
-                            left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
-                            left join subject_info on course.subject_ID=subject_info.subject_ID 
-                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                            and subject_info.subject_Name != 'Self Development' and  subject_info.subject_NameBM != 'Pembangunan Diri'
-                            and subject_info.subject_Name not like '%Personality Development%' and  subject_info.subject_NameBM not like '%Jati Diri%'
-                            and subject_info.subject_Name  not like '%Research%' and  subject_info.subject_NameBM not like '%Penyelidikan%'
-                            and subject_info.subject_Name  not like '%Portfolio%' and  subject_info.subject_NameBM not like '%Portfolio%'"
-
-            Calsumcredithour = "Select sum(subject_info.subject_CreditHour) 
-                                from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
-                                left join course on exam_result.course_ID=course.course_ID 
-                                left join student_info on course.std_ID=student_info.std_ID 
-                                left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
-                                left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                and subject_info.subject_Name != 'Self Development' and  subject_info.subject_NameBM != 'Pembangunan Diri'
-                                and subject_info.subject_Name not like '%Personality Development%' and  subject_info.subject_NameBM not like '%Jati Diri%'
-                                and subject_info.subject_Name  not like '%Research%' and  subject_info.subject_NameBM not like '%Penyelidikan%'
-                                and subject_info.subject_Name  not like '%Portfolio%' and  subject_info.subject_NameBM not like '%Portfolio%'"
-
+                                where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                and subject_info.course_Name != 'Pembangunan Kendiri' and subject_info.course_Name != 'Jati Diri'
+                                and subject_info.course_Name != 'Penyelidikan' and subject_info.course_Name != 'Portfolio'"
         End If
 
         Dim valueA As Decimal = Decimal.Parse(getFieldValue(Calsumgrade))
@@ -374,26 +413,41 @@ Public Class Commonfunction
             pngData_STUDENT = 0.00
         End If
 
+        ''get student level
+        Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & strKey & "' and year = '" & ddlyear & "'"
+        Dim GetStudentLevel As String = getFieldValue(FindStudentLevel)
 
-        ''get academic percentage on / off
-        Dim check_academic_percen As String = "select Value from setting where Type = 'Academic_Percentage'"
-        Dim Confirm_Academic As String = getFieldValue(check_academic_percen)
+        Dim check_academic_percen As String = ""
+        Dim Confirm_Academic As String = ""
+        Dim check_portfolio_percen As String = ""
+        Dim Confirm_Portfolio As String = ""
+        Dim check_cocuricullum_percen As String = ""
+        Dim Confirm_Cocuricullum As String = ""
+        Dim check_research_percen As String = ""
+        Dim Confirm_Research As String = ""
+        Dim check_self_percen As String = ""
+        Dim Confirm_Self As String = ""
+
+        'get academic percentage on / off
+        check_academic_percen = "select Value from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+        Confirm_Academic = getFieldValue(check_academic_percen)
 
         ''get Portfolio percentage on / off
-        Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-        Dim Confirm_Portfolio As String = getFieldValue(check_portfolio_percen)
+        check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+        Confirm_Portfolio = getFieldValue(check_portfolio_percen)
 
         ''get cocuricullum percentage on / off
-        Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-        Dim Confirm_Cocuricullum As String = getFieldValue(check_cocuricullum_percen)
+        check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+        Confirm_Cocuricullum = getFieldValue(check_cocuricullum_percen)
 
         ''get research percentage on / off
-        Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-        Dim Confirm_Research As String = getFieldValue(check_research_percen)
+        check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+        Confirm_Research = getFieldValue(check_research_percen)
 
         ''get self development percentage on / off
-        Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-        Dim Confirm_Self As String = getFieldValue(check_self_percen)
+        check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+        Confirm_Self = getFieldValue(check_self_percen)
+
 
         Dim PNG_Academic As Decimal
         Dim PNG_Cocuricullum As Decimal
@@ -409,7 +463,7 @@ Public Class Commonfunction
 
         '' Confirm Academic
         If Confirm_Academic = "on" Or Confirm_Academic = "On" Then
-            Dim data_academic_percen As String = "select Parameter from setting where Type = 'Academic_Percentage'"
+            Dim data_academic_percen As String = "select Parameter from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
             percen_academic = Decimal.Parse(getFieldValue(data_academic_percen))
 
             PNG_Academic = pngData_STUDENT
@@ -420,17 +474,17 @@ Public Class Commonfunction
 
         '' Confirm Portfolio
         If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
-            Dim data_portfolio_percen As String = "select Parameter from setting where Type = 'Portfolio_Percentage'"
+            Dim data_portfolio_percen As String = "select Parameter from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
             percen_portfolio = Decimal.Parse(getFieldValue(data_portfolio_percen))
 
-            Dim get_portfolio As String = "Select gpa
-                                              from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
-                                              left join course on exam_result.course_ID=course.course_ID 
-                                              left join student_info on course.std_ID=student_info.std_ID 
-                                              left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
-                                              left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                              where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                              and subject_info.subject_Name like '%Portfolio%' and  subject_info.subject_NameBM like '%Portfolio%'"
+            Dim get_portfolio As String = " Select gpa
+                                            from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
+                                            left join course on exam_result.course_ID=course.course_ID 
+                                            left join student_info on course.std_ID=student_info.std_ID 
+                                            left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                            left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                            subject_info.course_Name = 'Portfolio'"
             PNG_PortFolio = Decimal.Parse(getFieldValue(get_portfolio))
 
         Else
@@ -440,17 +494,17 @@ Public Class Commonfunction
 
         '' Confirm Research
         If Confirm_Research = "on" Or Confirm_Research = "On" Then
-            Dim data_research_percen As String = "select Parameter from setting where Type = 'Research_Percentage'"
+            Dim data_research_percen As String = "select Parameter from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
             percen_research = Decimal.Parse(getFieldValue(data_research_percen))
 
-            Dim get_research As String = "Select gpa
-                                              from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
-                                              left join course on exam_result.course_ID=course.course_ID 
-                                              left join student_info on course.std_ID=student_info.std_ID 
-                                              left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
-                                              left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                              where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                              and subject_info.subject_Name like '%Research%' and  subject_info.subject_NameBM like '%Penyelidikan%'"
+            Dim get_research As String = "  Select gpa
+                                            from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
+                                            left join course on exam_result.course_ID=course.course_ID 
+                                            left join student_info on course.std_ID=student_info.std_ID 
+                                            left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
+                                            left join subject_info on course.subject_ID=subject_info.subject_ID 
+                                            where student_info.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                            and subject_info.course_Name = 'Penyelidikan'"
             PNG_Research = Decimal.Parse(getFieldValue(get_research))
 
         Else
@@ -460,7 +514,7 @@ Public Class Commonfunction
 
         '' Confirm Cocuricullum
         If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
-            Dim data_cocuricullum_percen As String = "select Parameter from setting where Type = 'Cocuricullum_Percentage'"
+            Dim data_cocuricullum_percen As String = "select Parameter from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
             percen_cocuricullum = Decimal.Parse(getFieldValue(data_cocuricullum_percen))
 
             Dim get_Mykad As String = "select student_Mykad from student_info where std_ID = '" & strKey & "'"
@@ -499,17 +553,16 @@ Public Class Commonfunction
 
         '' Confirm Self Developmemnt
         If Confirm_Self = "on" Or Confirm_Self = "On" Then
-            Dim data_self_percen As String = "select Parameter from setting where Type = 'Self_Development_Percentage'"
+            Dim data_self_percen As String = "select Parameter from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
             percen_selfdevelopment = Decimal.Parse(getFieldValue(data_self_percen))
 
-            Dim get_selfdevelopment As String = "Select gpa
+            Dim get_selfdevelopment As String = "   Select gpa
                                                     from grade_info left join exam_result on grade_info.grade_Name=exam_result.grade 
                                                     left join course on exam_result.course_ID=course.course_ID 
                                                     left join exam_Info on exam_result.exam_ID=exam_Info.exam_ID 
                                                     left join subject_info on course.subject_ID=subject_info.subject_ID 
-                                                    where course.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "'
-                                                    and (subject_info.subject_Name = 'Self Development' or  subject_info.subject_NameBM = 'Pembangunan Diri'
-                                                    or subject_info.subject_Name like '%Personality Development%' or  subject_info.subject_NameBM like '%Jati Diri%')"
+                                                    where course.std_ID = '" & strKey & "' and exam_Info.exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Year = '" & ddlyear & "' and exam_info.exam_Institutions = '" & getCampus & "'
+                                                    and (subject_info.course_Name = 'Pembangunan Kendiri' subject_info.course_Name = 'Jati Diri')"
             PNG_SelfDevelopment = Decimal.Parse(getFieldValue(get_selfdevelopment))
 
         Else
@@ -521,14 +574,16 @@ Public Class Commonfunction
         Dim PNGS_academic As Decimal = (PNG_Academic / 4) * percen_academic
         Dim PNGS_cocuricullum As Decimal = PNG_Cocuricullum
         Dim PNGS_portfolio As Decimal = (PNG_PortFolio / 4) * percen_portfolio
-        Dim PNGS_research As Decimal = (PNG_Research / 4) * percen_research
         Dim PNGS_selfdevelopment As Decimal = (PNG_SelfDevelopment / 4) * percen_selfdevelopment
+        Dim PNGS_research As Decimal = (PNG_Research / 4) * percen_research
 
         Dim total_percentage As Decimal = percen_cocuricullum + percen_academic + percen_portfolio + percen_research + percen_selfdevelopment
-
         Dim sun_pngk As Decimal = (PNGS_academic + PNGS_cocuricullum + PNGS_portfolio + PNGS_research + PNGS_selfdevelopment)
-        Dim PNGS As Decimal = (sun_pngk * 4) / total_percentage
-        PNGS = Math.Round(PNGS, 2)
+
+        '' Calculate PNGS - current semester png
+        Dim PNGS As Decimal = 0.0
+        PNGS = (sun_pngk * 4) / total_percentage
+        PNGS = Math.Round(PNGS, 2, MidpointRounding.AwayFromZero)
 
 
         ''step to insert PNG value into db
@@ -536,7 +591,7 @@ Public Class Commonfunction
         Dim exmCode As String = ""
         Dim dataExmCode As String = ""
 
-        exmCode = "select exam_Name from exam_Info where exam_Name = '" & ddlexam_Name & "' and exam_Year = '" & ddlyear & "'"
+        exmCode = "select exam_Name from exam_Info where exam_Name = '" & ddlexam_Name & "' and exam_Year = '" & ddlyear & "' and exam_Institutions = '" & getCampus & "'"
         dataExmCode = getFieldValue(exmCode)
 
         ''check student data if already exist
@@ -546,7 +601,7 @@ Public Class Commonfunction
         exist = "select exam_Name from student_Png where std_ID = '" & strKey & "' and year = '" & ddlyear & "' and exam_Name = '" & dataExmCode & "'"
         dataExist = getFieldValue(exist)
 
-        strSQL = "select exam_EndDate from exam_Info where exam_year = '" & ddlyear & "' and exam_Name = '" & ddlexam_Name & "'"
+        strSQL = "select exam_EndDate from exam_Info where exam_year = '" & ddlyear & "' and exam_Name = '" & ddlexam_Name & "' and exam_info.exam_Institutions = '" & getCampus & "'"
         strRet = getFieldValue(strSQL)
 
         Dim get_date As String = DateTime.Now.ToString("dd/MM/yyyy")
@@ -555,7 +610,7 @@ Public Class Commonfunction
 
         If strRet >= get_date Then
 
-            If dataExist <> dataExmCode Then
+            If dataExist.Length = 0 Then
                 '' save in db
                 Using PNGDATA As New SqlCommand("INSERT into student_Png(std_ID,exam_Name,year,png,komp_akademik,komp_kokurikulum,komp_portfolio,komp_penyelidikan,komp_kendiri,stat_akademik,stat_kokurikulum,stat_portfolio,stat_penyelidikan,stat_kendiri) 
                                                  values ('" & strKey & "','" & dataExmCode & "','" & ddlyear & "','" & PNGS & "',
@@ -566,7 +621,7 @@ Public Class Commonfunction
                     objConn.Close()
                 End Using
 
-            ElseIf dataExist = dataExmCode Then
+            ElseIf dataExist.Length > 0 Then
 
                 ''update grades and gpa
                 strSQL = "UPDATE student_Png SET png ='" & PNGS & "', komp_akademik = '" & percen_academic & "', komp_kokurikulum = '" & percen_cocuricullum & "', komp_portfolio = '" & percen_portfolio & "',
@@ -1421,13 +1476,14 @@ Public Class Commonfunction
         Try
             If Not IsDBNull(strValue) Then
                 If intLevel > 0 Then
-                    strValue = Replace(strValue, "'", "") ' Most important one! This line alone can prevent most injection attacks
+                    strValue = Replace(strValue, "'", "''") ' Most important one! This line alone can prevent most injection attacks
                     strValue = Replace(strValue, "--", "")
                     strValue = Replace(strValue, "-", "")
                     strValue = Replace(strValue, "(", "")
                     strValue = Replace(strValue, ")", "")
                     strValue = Replace(strValue, "/", "")
                     strValue = Replace(strValue, ".", "")
+                    strValue = Replace(strValue, "@", "")
                     strValue = Replace(strValue, "x", "")
                     strValue = Replace(strValue, "[", "(")
                     strValue = Replace(strValue, "%", "[%]")
@@ -1646,10 +1702,6 @@ Public Class Commonfunction
             ExecuteSQL = "*System error (Contact system admin): No query string pass."
             Exit Function
         End If
-        'If isBlockText(strSQL) = True Then
-        '    ExecuteSQL = "*Security alert (Contact system admin): IP address and SQL command logged."
-        '    Exit Function
-        'End If
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -1669,9 +1721,6 @@ Public Class Commonfunction
                 objConn.Close()
             End If
 
-            ''--detach the SqlParameters from the command object, so they can be used again
-            'cmdSQL.Parameters.Clear()
-            'objConn.Dispose()
         End Try
 
     End Function
@@ -1858,6 +1907,7 @@ Public Class Commonfunction
             If ds.Tables(0).Rows.Count > 0 Then
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item(0).ToString) Then
                     strFieldValue = ds.Tables(0).Rows(0).Item(0).ToString
+                    Return strFieldValue
                 Else
                     Return ""
                 End If
@@ -1977,6 +2027,86 @@ Public Class Commonfunction
         End Try
 
         Return strFieldValue
+    End Function
+
+    Public Function set_pelajar_Gred(ByVal strTahun As String, ByVal strPeperiksaan As String) As String
+        Dim strSQL As String = ""
+        Dim strRet As String = "0"
+
+        '--update Uniform_Gred" & strPeperiksaan & "
+        strSQL = "UPDATE koko_pelajar SET Uniform_Gred" & strPeperiksaan & "=(SELECT Gred FROM koko_gred WHERE koko_gred.Markah=koko_pelajar.Uniform_Jumlah" & strPeperiksaan & " AND Tahun='" & strTahun & "')"
+        strSQL += " WHERE Tahun='" & strTahun & "'"
+        strRet = ExecuteSQL(strSQL)
+        If Not strRet = "0" Then
+            Return strRet
+        End If
+
+        '--update Persatuan_Gred" & strPeperiksaan & "
+        strSQL = "UPDATE koko_pelajar SET Persatuan_Gred" & strPeperiksaan & "=(SELECT Gred FROM koko_gred WHERE koko_gred.Markah=koko_pelajar.Persatuan_Jumlah" & strPeperiksaan & " AND Tahun='" & strTahun & "')"
+        strSQL += " WHERE Tahun='" & strTahun & "'"
+        strRet = ExecuteSQL(strSQL)
+        If Not strRet = "0" Then
+            Return strRet
+        End If
+
+        '--update Sukan_Gred" & strPeperiksaan & "
+        strSQL = "UPDATE koko_pelajar SET Sukan_Gred" & strPeperiksaan & "=(SELECT Gred FROM koko_gred WHERE koko_gred.Markah=koko_pelajar.Sukan_Jumlah" & strPeperiksaan & " AND Tahun='" & strTahun & "')"
+        strSQL += " WHERE Tahun='" & strTahun & "'"
+        strRet = ExecuteSQL(strSQL)
+        If Not strRet = "0" Then
+            Return strRet
+        End If
+
+        Return "0"
+    End Function
+
+    Public Function set_pelajar_Jumlah(ByVal strTahun As String, ByVal strPeperiksaan As String) As String
+        Dim strSQL As String = ""
+        Dim strRet As String = "0"
+
+        '--get GRED MOD
+        Dim strKehadiran As String = ""
+        strSQL = "SELECT Kehadiran FROM koko_gred_mod WHERE Tahun='" & strTahun & "'"
+        strKehadiran = getFieldValue(strSQL)
+
+        Dim strJawatan As String = ""
+        strSQL = "SELECT Jawatan FROM koko_gred_mod WHERE Tahun='" & strTahun & "'"
+        strJawatan = getFieldValue(strSQL)
+
+        Dim strPenglibatan As String = ""
+        strSQL = "SELECT Penglibatan FROM koko_gred_mod WHERE Tahun='" & strTahun & "'"
+        strPenglibatan = getFieldValue(strSQL)
+
+        Dim strPencapaian As String = ""
+        strSQL = "SELECT Pencapaian FROM koko_gred_mod WHERE Tahun='" & strTahun & "'"
+        strPencapaian = getFieldValue(strSQL)
+
+        '--update Uniform_Jumlah" & strPeperiksaan & "%
+        strSQL = "UPDATE koko_pelajar SET Uniform_Jumlah" & strPeperiksaan & "=ROUND((Uniform_Kehadiran" & strPeperiksaan & "*" & strKehadiran & ")+(Uniform_Jawatan" & strPeperiksaan & "*" & strJawatan & ")+(Uniform_Penglibatan" & strPeperiksaan & "*" & strPenglibatan & ")+(Uniform_Pencapaian" & strPeperiksaan & "*" & strPencapaian & "),0)"
+        strSQL += " WHERE Tahun='" & strTahun & "'"
+        strRet = ExecuteSQL(strSQL)
+        If Not strRet = "0" Then
+            Return strRet
+        End If
+
+        '--update Persatuan_Jumlah" & strPeperiksaan & "%
+        strSQL = "UPDATE koko_pelajar SET Persatuan_Jumlah" & strPeperiksaan & "=ROUND((Persatuan_Kehadiran" & strPeperiksaan & "*" & strKehadiran & ")+(Persatuan_Jawatan" & strPeperiksaan & "*" & strJawatan & ")+(Persatuan_Penglibatan" & strPeperiksaan & "*" & strPenglibatan & ")+(Persatuan_Pencapaian" & strPeperiksaan & "*" & strPencapaian & "),0)"
+        strSQL += " WHERE Tahun='" & strTahun & "'"
+        strRet = ExecuteSQL(strSQL)
+        If Not strRet = "0" Then
+            Return strRet
+        End If
+
+        '--update Sukan_Jumlah" & strPeperiksaan & "%
+        strSQL = "UPDATE koko_pelajar SET Sukan_Jumlah" & strPeperiksaan & "=ROUND((Sukan_Kehadiran" & strPeperiksaan & "*" & strKehadiran & ")+(Sukan_Jawatan" & strPeperiksaan & "*" & strJawatan & ")+(Sukan_Penglibatan" & strPeperiksaan & "*" & strPenglibatan & ")+(Sukan_Pencapaian" & strPeperiksaan & "*" & strPencapaian & "),0)"
+        strSQL += " WHERE Tahun='" & strTahun & "'"
+        strRet = ExecuteSQL(strSQL)
+        If Not strRet = "0" Then
+            Return strRet
+        End If
+
+        Return "0"
+
     End Function
 
     Public Function ppcs_activity_insert(ByVal strcreatedby As String, ByVal strusertype As String, ByVal stractivitydesc As String) As String

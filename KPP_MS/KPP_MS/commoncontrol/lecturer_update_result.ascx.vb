@@ -16,41 +16,18 @@ Public Class lecturer_update_result
         Try
             If Not IsPostBack Then
 
-                ''Generate_Table()
-                ddl_class.Enabled = False
-                ddl_subject.Enabled = False
+                ddlExamClass.Enabled = False
+                ddlExamCourse.Enabled = False
 
                 ddlYear()
-
+                ddlProgram()
                 ddlExam()
+                ddlLevel()
 
             End If
         Catch ex As Exception
 
         End Try
-    End Sub
-
-    Private Sub load_page()
-        strSQL = "SELECT Parameter from setting where Type ='Exam' and Parameter = 'Exam 1'"
-
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddl_exam.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddl_exam.SelectedValue = ""
-            End If
-        End If
     End Sub
 
     Private Sub datRespondent_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles datRespondent.PageIndexChanging
@@ -75,9 +52,7 @@ Public Class lecturer_update_result
 
             If gvTable.Rows.Count = 0 Then
                 Btnsimpan.Visible = False
-                nodatamessage.Visible = True
             Else
-                nodatamessage.Visible = False
                 Btnsimpan.Visible = True
             End If
 
@@ -95,33 +70,34 @@ Public Class lecturer_update_result
 
         Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = "order by student_info.student_Name ASC"
+        Dim strOrderby As String = " order by student_info.student_Name ASC"
 
         tmpSQL = "select distinct exam_result.ID, exam_result.course_ID, student_info.student_ID, student_info.student_Name, class_info.class_Name, exam_Info.exam_Name, subject_info.subject_Name, exam_result.marks, exam_result.grade
-                  From exam_result Join course On exam_result.course_ID = course.course_ID
+                  From exam_result 
+                  Left Join course On exam_result.course_ID = course.course_ID
                   Left Join exam_info On exam_result.exam_ID = exam_Info.exam_ID
                   Left Join student_info On course.std_ID = student_info.std_ID
                   Left Join class_info On course.class_ID = class_info.class_ID
-                  Left Join subject_info On course.subject_ID = subject_info.subject_ID left Join student_Png On student_info.std_ID=student_Png.std_ID
-                  Where exam_result.ID Is Not null"
+                  Left Join subject_info On course.subject_ID = subject_info.subject_ID 
+                  left Join student_Png On student_info.std_ID=student_Png.std_ID
+                  Where exam_result.ID Is Not null and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and (student_info.student_Status = 'Access' or student_info.student_Status = 'Graduate') and student_info.student_Campus = '" & Session("SchoolCampus") & "'
+                  and subject_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "' and subject_info.subject_Campus = '" & Session("SchoolCampus") & "'"
 
-        If ddl_year.SelectedIndex > 0 Then
-            strWhere += " And exam_Info.exam_Year = '" & ddl_year.SelectedValue & "'"
+        If ddlExamYear.SelectedIndex > 0 Then
+            strWhere += " And exam_Info.exam_Year = '" & ddlExamYear.SelectedValue & "' and (exam_Info.exam_Institutions = '" & Session("SchoolCampus") & "' or exam_Info.exam_Institutions = 'ALL')"
         Else
             strWhere += " And exam_Info.exam_Year = '" & Now.Year & "'"
         End If
 
-        If ddl_exam.SelectedIndex > 0 Then
-            strWhere += " And exam_Info.exam_Name = '" & ddl_exam.SelectedValue & "'"
+        If ddlExamName.SelectedIndex > 0 Then
+            strWhere += " And exam_Info.exam_Name = '" & ddlExamName.SelectedValue & "'"
         End If
 
-        If ddl_class.SelectedIndex > 0 Then
-            strWhere += " And course.class_ID = '" & ddl_class.SelectedValue & "'"
+        If ddlExamClass.SelectedIndex > 0 Then
+            strWhere += " And course.class_ID = '" & ddlExamClass.SelectedValue & "'"
         End If
 
-        If ddl_subject.SelectedIndex > 0 Then
-            strWhere += " And subject_info.subject_Name = '" & ddl_subject.SelectedValue & "'"
-        End If
+        strWhere += " And subject_info.subject_ID = '" & ddlExamCourse.SelectedValue & "'"
 
         getSQL = tmpSQL & strWhere & strOrderby
         '--debug
@@ -155,52 +131,61 @@ Public Class lecturer_update_result
         Return strvalue
     End Function
 
-    Protected Sub ddlLevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_level.SelectedIndexChanged
+    Protected Sub ddlExamLevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamLevel.SelectedIndexChanged
 
         Dim DATA_STAFFID As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
 
-        If Not ddl_level.SelectedValue = "-1" Then
+        Dim get_ExamSem As String = ""
+
+        If ddlExamLevel.SelectedIndex > 0 Then
+
+            If ddlExamName.SelectedValue = "Exam 1" Or ddlExamName.SelectedValue = "Exam 2" Or ddlExamName.SelectedValue = "Exam 5" Or ddlExamName.SelectedValue = "Exam 6" Or ddlExamName.SelectedValue = "Exam 9" Or ddlExamName.SelectedValue = "Exam 10" Then
+                get_ExamSem = "Sem 1"
+            Else
+                get_ExamSem = "Sem 2"
+            End If
+
             Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
             Dim objConn As SqlConnection = New SqlConnection(strConn)
             Dim STDLEVEL As New SqlDataAdapter()
 
-            strSQL = "select distinct lecturer.class_ID,class_info.class_Name from class_info
-                      left join lecturer on class_info.class_ID = lecturer.class_ID
-                      where class_Level ='" & ddl_level.SelectedValue & "' And class_year = '" & ddl_year.SelectedValue & "' And lecturer.stf_ID = '" & DATA_STAFFID & "'"
+            strSQL = "  select distinct lecturer.class_ID,class_info.class_Name from class_info
+                        left join lecturer on class_info.class_ID = lecturer.class_ID
+                        where class_Level ='" & ddlExamLevel.SelectedValue & "' And class_year = '" & ddlExamYear.SelectedValue & "' And lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "ClassTable")
 
-            ddl_class.DataSource = ds
-            ddl_class.DataTextField = "class_Name"
-            ddl_class.DataValueField = "class_ID"
-            ddl_class.DataBind()
-            ddl_class.Items.Insert(0, New ListItem("-Select Class-", "-1"))
+            ddlExamClass.DataSource = ds
+            ddlExamClass.DataTextField = "class_Name"
+            ddlExamClass.DataValueField = "class_ID"
+            ddlExamClass.DataBind()
+            ddlExamClass.Items.Insert(0, New ListItem("Select Class", String.Empty))
 
-            strSQL = "select distinct subject_info.subject_Name from subject_info
+            strSQL = "select distinct subject_info.subject_Name, subject_info.subject_ID from subject_info
                       left join lecturer on subject_info.subject_ID = lecturer.subject_ID
-                      where subject_StudentYear ='" & ddl_level.SelectedValue & "'
-                      and subject_info.subject_year = '" & ddl_year.SelectedValue & "' and lecturer.stf_ID = '" & DATA_STAFFID & "'"
+                      where subject_StudentYear ='" & ddlExamLevel.SelectedValue & "' and subject_info.subject_sem = '" & get_ExamSem & "'
+                      and subject_info.subject_year = '" & ddlExamYear.SelectedValue & "' and lecturer.stf_ID = '" & DATA_STAFFID & "'and subject_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and subject_info.subject_Campus = '" & Session("SchoolCampus") & "'"
             Dim sqlSub As New SqlDataAdapter(strSQL, objConn)
 
             Dim subds As DataSet = New DataSet
             sqlSub.Fill(subds, "SubjectTable")
 
-            ddl_subject.DataSource = subds
-            ddl_subject.DataTextField = "subject_Name"
-            ddl_subject.DataValueField = "subject_Name"
-            ddl_subject.DataBind()
-            ddl_subject.Items.Insert(0, New ListItem("-Select subject-", "-1"))
+            ddlExamCourse.DataSource = subds
+            ddlExamCourse.DataTextField = "subject_Name"
+            ddlExamCourse.DataValueField = "subject_ID"
+            ddlExamCourse.DataBind()
+            ddlExamCourse.Items.Insert(0, New ListItem("Select Course", String.Empty))
 
-            ddl_class.Enabled = True
-            ddl_subject.Enabled = True
+            ddlExamClass.Enabled = True
+            ddlExamCourse.Enabled = True
 
         Else
-            ddl_class.Items.Clear()
-            ddl_subject.Items.Clear()
-            ddl_class.Enabled = False
-            ddl_subject.Enabled = False
+            ddlExamClass.Items.Clear()
+            ddlExamCourse.Items.Clear()
+            ddlExamClass.Enabled = False
+            ddlExamCourse.Enabled = False
 
         End If
 
@@ -208,102 +193,126 @@ Public Class lecturer_update_result
 
     Protected Sub ddlYear()
         Try
-            Dim stryear As String = "Select distinct exam_Year from exam_Info"
+            Dim stryear As String = "select distinct lecturer_year from lecturer where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'"
             Dim sqlYearDA As New SqlDataAdapter(stryear, objConn)
 
             Dim yrds As DataSet = New DataSet
             sqlYearDA.Fill(yrds, "YrTable")
 
-            ddl_year.DataSource = yrds
-            ddl_year.DataValueField = "exam_Year"
-            ddl_year.DataTextField = "exam_Year"
-            ddl_year.DataBind()
-            ddl_year.Items.Insert(0, New ListItem("Select Year", 0))
-        Catch ex As Exception
+            ddlExamYear.DataSource = yrds
+            ddlExamYear.DataValueField = "lecturer_year"
+            ddlExamYear.DataTextField = "lecturer_year"
+            ddlExamYear.DataBind()
+            ddlExamYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
 
+        Catch ex As Exception
         End Try
     End Sub
 
-    Protected Sub ddlLevel()
+    Private Sub ddlProgram()
+
+        If Session("SchoolCampus") = "APP" Then
+            strSQL = "select Parameter, Value from setting where type = 'Stream' and Value = 'PS'"
+        Else
+            strSQL = "select Parameter, Value from setting where type = 'Stream' and Value <> 'Temp'"
+        End If
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlExamProgram.DataSource = ds
+            ddlExamProgram.DataTextField = "Parameter"
+            ddlExamProgram.DataValueField = "Value"
+            ddlExamProgram.DataBind()
+            ddlExamProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
+            ddlExamProgram.SelectedIndex = 0
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Protected Sub ddlExam()
+
+        Try
+            Dim strLevelSql As String = "Select * from setting where Type = 'Exam'"
+            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "ExamTable")
+
+            ddlExamName.DataSource = levds
+            ddlExamName.DataValueField = "Parameter"
+            ddlExamName.DataTextField = "Parameter"
+            ddlExamName.DataBind()
+            ddlExamName.Items.Insert(0, New ListItem("Select Examination", String.Empty))
+        Catch ex As Exception
+
+        End Try
+
+    End Sub
+
+    Private Sub ddlLevel()
         Try
             Dim DATA_STAFFID As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
 
             Dim strLevelSql As String = ""
 
-            If ddl_exam.SelectedValue = "Exam 1" Or ddl_exam.SelectedValue = "Exam 2" Then
+            If ddlExamName.SelectedValue = "Exam 1" Or ddlExamName.SelectedValue = "Exam 2" Then
 
+                strLevelSql = " select distinct class_info.class_Level from class_info
+                                left join lecturer on class_info.class_ID = lecturer.class_ID
+                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and (class_info.class_Level = 'Foundation 1' or  class_info.class_Level = 'Level 1') and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
+
+            ElseIf ddlExamName.SelectedValue = "Exam 3" Or ddlExamName.SelectedValue = "Exam 4" Then
+                strLevelSql = " select distinct class_info.class_Level from class_info
+                                left join lecturer on class_info.class_ID = lecturer.class_ID
+                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and (class_info.class_Level = 'Foundation 1' or  class_info.class_Level = 'Level 1') and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
+
+            ElseIf ddlExamName.SelectedValue = "Exam 5" Or ddlExamName.SelectedValue = "Exam 6" Then
                 strLevelSql = "select distinct class_info.class_Level from class_info
                                 left join lecturer on class_info.class_ID = lecturer.class_ID
-                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 1' or  class_info.class_Level = 'Level 1' "
+                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and (class_info.class_Level = 'Foundation 2' or  class_info.class_Level = 'Level 2') and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
 
-            ElseIf ddl_exam.SelectedValue = "Exam 3" Or ddl_exam.SelectedValue = "Exam 4" Then
-                strLevelSql = "select distinct class_info.class_Level from class_info
+            ElseIf ddlExamName.SelectedValue = "Exam 7" Or ddlExamName.SelectedValue = "Exam 8" Then
+                strLevelSql = " select distinct class_info.class_Level from class_info
                                 left join lecturer on class_info.class_ID = lecturer.class_ID
-                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 1' or  class_info.class_Level = 'Level 1' "
+                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and (class_info.class_Level = 'Foundation 2' or  class_info.class_Level = 'Level 2') and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
 
-            ElseIf ddl_exam.SelectedValue = "Exam 5" Or ddl_exam.SelectedValue = "Exam 6" Then
-                strLevelSql = "select distinct class_info.class_Level from class_info
+            ElseIf ddlExamName.SelectedValue = "Exam 9" Or ddlExamName.SelectedValue = "Exam 10" Then
+                strLevelSql = " select distinct class_info.class_Level from class_info
                                 left join lecturer on class_info.class_ID = lecturer.class_ID
-                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 2' or  class_info.class_Level = 'Level 2' "
+                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 3' and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
 
-            ElseIf ddl_exam.SelectedValue = "Exam 7" Or ddl_exam.SelectedValue = "Exam 8" Then
-                strLevelSql = "select distinct class_info.class_Level from class_info
+            ElseIf ddlExamName.SelectedValue = "Exam 11" Or ddlExamName.SelectedValue = "Exam 12" Then
+                strLevelSql = " select distinct class_info.class_Level from class_info
                                 left join lecturer on class_info.class_ID = lecturer.class_ID
-                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 2' or  class_info.class_Level = 'Level 2' "
-
-            ElseIf ddl_exam.SelectedValue = "Exam 9" Or ddl_exam.SelectedValue = "Exam 10" Then
-                strLevelSql = "select distinct class_info.class_Level from class_info
-                                left join lecturer on class_info.class_ID = lecturer.class_ID
-                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 3'"
-
-            ElseIf ddl_exam.SelectedValue = "Exam 11" Or ddl_exam.SelectedValue = "Exam 12" Then
-                strLevelSql = "select distinct class_info.class_Level from class_info
-                                left join lecturer on class_info.class_ID = lecturer.class_ID
-                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 3'"
-
+                                where lecturer.stf_ID = '" & DATA_STAFFID & "' and class_info.class_Level = 'Foundation 3' and class_info.course_Program = '" & ddlExamProgram.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "'"
 
             End If
-
 
             Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
 
             Dim levds As DataSet = New DataSet
             sqlLevelDA.Fill(levds, "LevTable")
 
-            ddl_level.DataSource = levds
-            ddl_level.DataValueField = "class_Level"
-            ddl_level.DataTextField = "class_Level"
-            ddl_level.DataBind()
-            ddl_level.Items.Insert(0, New ListItem("-Select Foundation/Level-", "-1"))
+            ddlExamLevel.DataSource = levds
+            ddlExamLevel.DataValueField = "class_Level"
+            ddlExamLevel.DataTextField = "class_Level"
+            ddlExamLevel.DataBind()
+            ddlExamLevel.Items.Insert(0, New ListItem("Select Level", String.Empty))
+
         Catch ex As Exception
-
         End Try
-
     End Sub
 
-    Protected Sub ddlExam()
-
-        Try
-            Dim strLevelSql As String = "Select Parameter from setting where Type = 'Exam'"
-            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
-
-            Dim levds As DataSet = New DataSet
-            sqlLevelDA.Fill(levds, "ExamTable")
-
-            ddl_exam.DataSource = levds
-            ddl_exam.DataValueField = "Parameter"
-            ddl_exam.DataTextField = "Parameter"
-            ddl_exam.DataBind()
-            ddl_exam.DataBind()
-            ddl_exam.Items.Insert(0, New ListItem("Select Exam", 0))
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
-
-
-    Protected Sub ddlSubject_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_subject.SelectedIndexChanged
+    Protected Sub ddlExamCourse_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamCourse.SelectedIndexChanged
         Try
 
             strRet = BindData(datRespondent)
@@ -317,48 +326,85 @@ Public Class lecturer_update_result
     Private Sub BtnSimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
         Dim errorCount As Integer = 0
 
-        For i As Integer = 0 To datRespondent.Rows.Count - 1
+        Dim find_examEndDate As String = "Select exam_EndDate from exam_info where exam_Year = '" & ddlExamYear.SelectedValue & "' and exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Institutions = '" & Session("SchoolCampus") & "'"
+        Dim get_examEndDate As String = oCommon.getFieldValue(find_examEndDate)
 
-            Dim marks As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtmarks"), TextBox)
-            Dim strKeyID As String = datRespondent.DataKeys(i).Value.ToString
+        Dim convertToDate_examEndDate As DateTime = DateTime.ParseExact(get_examEndDate, "dd/MM/yyyy", DateTimeFormatInfo.InvariantInfo)
+        Dim formatted_examEndDate As String = convertToDate_examEndDate.ToString("yyyyMMdd", DateTimeFormatInfo.InvariantInfo)
 
-            ''update marks
-            strSQL = "UPDATE exam_result SET marks='" & marks.Text & "' WHERE ID ='" & strKeyID & "'"
-            strRet = oCommon.ExecuteSQL(strSQL)
+        Dim get_currentDate As String = DateTime.Now.ToString("yyyyMMdd")
 
-            Dim ResultGrades As String = ""
+        If get_currentDate < formatted_examEndDate Then
 
-            If marks.Text = "100" Or marks.Text = "100.00" Or marks.Text = "100.0" Then
-                ''select grades based on marks 
+            For i As Integer = 0 To datRespondent.Rows.Count - 1
 
-                ResultGrades = "select grade_Name from grade_info where grade_min_range <= " & marks.Text & " and grade_max_range >= " & marks.Text & ""
+                Dim marks As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtmarks"), TextBox)
+                Dim strKeyID As String = datRespondent.DataKeys(i).Value.ToString
 
-            Else
-                ''select grades based on marks 
+                ''update marks
+                strSQL = "UPDATE exam_result SET marks='" & marks.Text & "' WHERE ID ='" & strKeyID & "'"
+                strRet = oCommon.ExecuteSQL(strSQL)
 
-                ResultGrades = "select grade_Name from grade_info where grade_min_range <= '" & marks.Text & "' and grade_max_range >= '" & marks.Text & "'"
+                Dim ResultGrades As String = ""
 
-            End If
+                If marks.Text = "100" Or marks.Text = "100.00" Or marks.Text = "100.0" Then
+                    ''select grades based on marks 
 
-            Dim grades As String = getFieldValue(ResultGrades, strConn)
+                    ResultGrades = "select grade_Name from grade_info where grade_min_range <= '" & marks.Text & "' and grade_max_range >= '" & marks.Text & "'"
 
-            ''update grades and gpa
-            strSQL = "UPDATE exam_result SET grade='" & grades & "' WHERE ID ='" & strKeyID & "'"
-            strRet = oCommon.ExecuteSQL(strSQL)
+                Else
+                    ''select grades based on marks 
 
-            If strRet = "0" Then
-                errorCount = 0
-            Else
-                errorCount = 1
-            End If
+                    ResultGrades = "select grade_Name from grade_info where grade_min_range <= '" & marks.Text & "' and grade_max_range >= '" & marks.Text & "'"
 
-        Next
+                End If
+
+                Dim grades As String = getFieldValue(ResultGrades, strConn)
+
+                ''update grades and gpa
+                strSQL = "UPDATE exam_result SET grade='" & grades & "' WHERE ID ='" & strKeyID & "'"
+                strRet = oCommon.ExecuteSQL(strSQL)
+
+                If strRet = "0" Then
+                    errorCount = 0
+                Else
+                    errorCount = 1
+                End If
+
+            Next
+
+        Else
+            ShowMessage(" Unable To Update Student Result After " & get_examEndDate, MessageType.Error)
+        End If
 
         strRet = BindData(datRespondent)
 
     End Sub
 
-    Private Sub ddl_exam_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_exam.SelectedIndexChanged
+    Private Sub ddlExamName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamName.SelectedIndexChanged
         ddlLevel()
     End Sub
+
+    Protected Sub ddlExamProgram_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamProgram.SelectedIndexChanged
+        Try
+            ddlLevel()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ddlExamClass_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamClass.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
+    End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
 End Class

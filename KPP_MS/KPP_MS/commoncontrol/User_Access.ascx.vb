@@ -15,41 +15,84 @@ Public Class User_Access
         Try
             If Not IsPostBack Then
 
-                data_year_list()
+                Checking_MenuAccess_Load()
+
+                StatusPosition.Visible = False
+                StudentDisplayData.Visible = False
+                StaffDisplayData.Visible = False
+
                 data_user_list()
                 data_akses_list()
                 data_position_list()
-
-                ddlPosition.Enabled = False
 
             End If
         Catch ex As Exception
         End Try
     End Sub
 
-    Private Sub data_year_list()
-        strSQL = "select Parameter from setting where Type = 'Year'"
+    Private Sub Checking_MenuAccess_Load()
 
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+        btnUpdateData.Visible = False
 
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
+        Dim accessID As String = "select MAX(stf_ID) from security_ID where loginID_Number = '" & Request.QueryString("admin_ID") & "'"
+        Dim stf_ID_Data As String = oCommon.getFieldValue(accessID)
 
-            ddlyear.DataSource = ds
-            ddlyear.DataTextField = "Parameter"
-            ddlyear.DataValueField = "Parameter"
-            ddlyear.DataBind()
-            ddlyear.Items.Insert(0, New ListItem("Select Year", String.Empty))
-            ddlyear.SelectedIndex = 0
+        Dim str_user_position As String = CType(Session.Item("user_position"), String)
 
-        Catch ex As Exception
+        ''Get Login ID from Staff_Login
+        strSQL = "Select login_ID from staff_Login where stf_ID = '" & stf_ID_Data & "' and staff_Access = '" & str_user_position & "'"
+        Dim find_LoginID As String = oCommon.getFieldValue(strSQL)
 
-        Finally
-            objConn.Dispose()
-        End Try
+        ''Get Count from Menu_master_User
+        strSQL = "select count(*) Count_No from menu_master_user where stf_ID = '" & stf_ID_Data & "' and login_ID = '" & find_LoginID & "'"
+        Dim find_CountNo_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        Dim Get_ViewSystemConfiguration As String = ""
+        Dim Get_RegistersystemConfiguration As String = ""
+
+        ''Loop The Count_No
+        For num As Integer = 0 To find_CountNo_LoginID - 1 Step 1
+
+            ''Get Main Menu Data
+            strSQL = "  Select A.Menu From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_Menu_Data As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Sub Menu 1 Data
+            strSQL = "  Select A.Menu_Sub1 From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_SubMenu1 As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 Edit Data 
+            strSQL = "  Select B.F1_Edit From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1Edit As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 Delete Data 
+            strSQL = "  Select B.F1_Delete From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1Delete As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 Register Data 
+            strSQL = "  Select B.F1_Register From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1Register As String = oCommon.getFieldValue(strSQL)
+
+            If find_Data_SubMenu1 = "User Access" And find_Data_SubMenu1.Length > 0 Then
+                btnUpdateData.Visible = True
+            End If
+
+            If find_Data_SubMenu1.Length = 0 And find_Data_Menu_Data = "All" Then
+                btnUpdateData.Visible = True
+            End If
+
+        Next
+
     End Sub
 
     Private Sub data_position_list()
@@ -68,18 +111,16 @@ Public Class User_Access
             ddlPosition.DataValueField = "Value"
             ddlPosition.DataBind()
             ddlPosition.Items.Insert(0, New ListItem("Select Position", String.Empty))
-            ddlPosition.Items.Insert(1, New ListItem("All", "All"))
             ddlPosition.SelectedIndex = 0
 
         Catch ex As Exception
-
         Finally
             objConn.Dispose()
         End Try
     End Sub
 
     Private Sub data_user_list()
-        strSQL = "select Parameter from setting where Type = 'TEST GOD'"
+        strSQL = "select Parameter from setting where Type = 'TEST GOD'" ''must be error or null
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -93,13 +134,11 @@ Public Class User_Access
             ddlUser.DataTextField = "Parameter"
             ddlUser.DataValueField = "Parameter"
             ddlUser.DataBind()
-            ddlUser.Items.Insert(0, New ListItem("Select User", String.Empty))
+            ddlUser.Items.Insert(0, New ListItem("Select User Type", String.Empty))
             ddlUser.Items.Insert(1, New ListItem("Staff", "Staff"))
             ddlUser.Items.Insert(2, New ListItem("Student", "Student"))
 
-
         Catch ex As Exception
-
         Finally
             objConn.Dispose()
         End Try
@@ -121,6 +160,12 @@ Public Class User_Access
             ddlAccess.DataValueField = "Parameter"
             ddlAccess.DataBind()
             ddlAccess.Items.Insert(0, New ListItem("Select Access", String.Empty))
+
+            ddlUpdateStatus.DataSource = ds
+            ddlUpdateStatus.DataTextField = "Parameter"
+            ddlUpdateStatus.DataValueField = "Parameter"
+            ddlUpdateStatus.DataBind()
+            ddlUpdateStatus.Items.Insert(0, New ListItem("Select Status", String.Empty))
 
         Catch ex As Exception
 
@@ -153,14 +198,13 @@ Public Class User_Access
         Dim strWhere As String = ""
         Dim strOrderby As String = " ORDER BY staff_Name ASC"
 
-        tmpSQL = "select staff_Login.login_ID, staff_Info.staff_Name, staff_Login.staff_Login, staff_Login.staff_Password, staff_Login.staff_Status from staff_Info
+        tmpSQL = "select staff_Login.login_ID, staff_Info.staff_Name, staff_Login.staff_Login, staff_Login.staff_Password, staff_Login.staff_Status, staff_Login.staff_Access from staff_Info
                   left join staff_Login on staff_Info.stf_ID = staff_Login.stf_ID"
-        strWhere = " where staff_Login.staff_Status = 'Access'
-                     and staff_Login.staff_Access <> ''"
 
-        strWhere += " AND (staff_ID = '" & txt_User.Text & "' OR staff_Name like '%" & txt_User.Text & "%' OR staff_Mykad = '" & txt_User.Text & "') "
+        strWhere = " where staff_Login.staff_Status = '" & ddlAccess.SelectedValue & "'
+                     and staff_Login.staff_Access <> '' and staff_Name not like '%araken%'"
 
-        If ddlPosition.SelectedValue <> "" and ddlPosition.SelectedValue <> "All" Then
+        If ddlPosition.SelectedValue <> "" And ddlPosition.SelectedValue <> "All" Then
             strWhere += " And staff_Login.staff_Access = '" & ddlPosition.SelectedValue & "'"
         End If
 
@@ -193,99 +237,130 @@ Public Class User_Access
         Dim strWhere As String = ""
         Dim strOrderby As String = " ORDER BY student_info.student_Name ASC"
 
-        tmpSQL = "select distinct student_info.std_ID, student_info.student_Name, student_info.student_Mykad, student_info.student_Password, student_info.student_Status from student_info
-                  left join course on student_info.std_ID = course.std_ID"
-        strWhere = " where course.year = '" & ddlyear.SelectedValue & "' and student_info.student_Status = '" & ddlAccess.SelectedValue & "' "
+        tmpSQL = "select * from student_info where student_ID Is Not null And student_ID <> '' and student_ID like '%M%'"
 
-        strWhere += " AND (student_info.student_ID = '" & txt_User.Text & "' OR student_info.student_Name like '%" & txt_User.Text & "%' OR student_info.student_Mykad = '" & txt_User.Text & "') "
+        strWhere = " and student_Status = '" & ddlAccess.SelectedValue & "' "
 
         getSQLStudent = tmpSQL & strWhere & strOrderby
-        ''--debug
+
         Return getSQLStudent
+
     End Function
 
-    Private Sub datRespondentStaff_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondentStaff.RowEditing
-
-        datRespondentStaff.EditIndex = e.NewEditIndex
-        Me.BindDataStaff(datRespondentStaff)
-
-    End Sub
-
-    Protected Sub StaffCancelEdit(sender As Object, e As EventArgs)
-        datRespondentStaff.EditIndex = -1
-        Me.BindDataStaff(datRespondentStaff)
-    End Sub
-
-    Protected Sub StaffUpdate(ByVal sender As Object, ByVal e As GridViewUpdateEventArgs)
-
-        Dim txtstaffLogin As TextBox = DirectCast(datRespondentStaff.Rows(e.RowIndex).FindControl("txtstaff_Login"), TextBox)
-        Dim txtstaffPassword As TextBox = DirectCast(datRespondentStaff.Rows(e.RowIndex).FindControl("txtstaff_Password"), TextBox)
-        Dim txtstaffStatus As TextBox = DirectCast(datRespondentStaff.Rows(e.RowIndex).FindControl("txtstaff_Status"), TextBox)
-
-        Dim strKeyID As String = datRespondentStaff.DataKeys(e.RowIndex).Value.ToString
-
-        ''update the data in table
-        strSQL = "UPDATE staff_Login SET staff_Login ='" & txtstaffLogin.Text & "', staff_Status ='" & txtstaffStatus.Text & "', staff_Password ='" & txtstaffPassword.Text & "' 
-                  WHERE login_ID ='" & strKeyID & "' "
-        strRet = oCommon.ExecuteSQL(strSQL)
-
-        If txtstaffStatus.Text = "Access" Then
-            strSQL = "UPDATE staff_Info set staff_Status = 'Access' WHERE stf_ID ='" & strKeyID & "' "
-            strRet = oCommon.ExecuteSQL(strSQL)
-        End If
-
-        datRespondentStaff.EditIndex = -1
-        Me.BindDataStaff(datRespondentStaff)
-    End Sub
-
-    Private Sub datRespondentStudent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondentStudent.RowEditing
-
-        datRespondentStudent.EditIndex = e.NewEditIndex
-        Me.BindDataStudent(datRespondentStudent)
-
-    End Sub
-
-    Protected Sub StudentCancelEdit(sender As Object, e As EventArgs)
-        datRespondentStudent.EditIndex = -1
-        Me.BindDataStudent(datRespondentStudent)
-    End Sub
-
-    Protected Sub StudentUpdate(ByVal sender As Object, ByVal e As GridViewUpdateEventArgs)
-
-        Dim txtstudentPassword As TextBox = DirectCast(datRespondentStudent.Rows(e.RowIndex).FindControl("txtstudent_Password"), TextBox)
-        Dim txtstudentStatus As TextBox = DirectCast(datRespondentStudent.Rows(e.RowIndex).FindControl("txtstudent_Status"), TextBox)
-
-        Dim strKeyID As String = datRespondentStudent.DataKeys(e.RowIndex).Value.ToString
-
-        ''update the data in table
-        strSQL = "UPDATE student_info SET student_Password ='" & txtstudentPassword.Text & "', student_Status ='" & txtstudentStatus.Text & "' WHERE std_ID ='" & strKeyID & "'"
-        strRet = oCommon.ExecuteSQL(strSQL)
-
-        datRespondentStudent.EditIndex = -1
-        Me.BindDataStudent(datRespondentStudent)
-    End Sub
-
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-
-        If ddlUser.SelectedIndex = 1 Then
-
-            UserType_HF.Value = "Staff"
-            strRet = BindDataStaff(datRespondentStaff)
-
-        ElseIf ddlUser.SelectedIndex = 2 Then
-
-            UserType_HF.Value = "Student"
-            strRet = BindDataStudent(datRespondentStudent)
-
-        End If
-    End Sub
-
     Protected Sub ddlAccess_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlAccess.SelectedIndexChanged
+        Try
+            If ddlUser.SelectedValue = "Student" Then
+                strRet = BindDataStudent(datRespondentStudent)
+            Else
+                strRet = BindDataStaff(datRespondentStaff)
+            End If
 
-        If ddlUser.SelectedValue = "Staff" And ddlAccess.SelectedValue = "Access" Then
-            ddlPosition.Enabled = True
-        Else
-            ddlPosition.Enabled = False
-        End If
+        Catch ex As Exception
+        End Try
     End Sub
+
+    Protected Sub ddlUser_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlUser.SelectedIndexChanged
+        Try
+            data_akses_list()
+            data_position_list()
+
+            If ddlUser.SelectedValue = "Student" Then
+                StatusPosition.Visible = False
+                StudentDisplayData.Visible = True
+                StaffDisplayData.Visible = False
+
+                strRet = BindDataStudent(datRespondentStudent)
+            Else
+                StatusPosition.Visible = True
+                StaffDisplayData.Visible = True
+                StudentDisplayData.Visible = False
+
+                strRet = BindDataStaff(datRespondentStaff)
+            End If
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ddlPosition_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlPosition.SelectedIndexChanged
+        Try
+            data_akses_list()
+
+            If ddlUser.SelectedValue = "Student" Then
+                strRet = BindDataStudent(datRespondentStudent)
+            Else
+                strRet = BindDataStaff(datRespondentStaff)
+            End If
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub btnUpdateData_ServerClick(sender As Object, e As EventArgs) Handles btnUpdateData.ServerClick
+
+        Dim i As Integer
+
+        If ddlUser.SelectedValue = "Student" Then
+
+            For i = 0 To datRespondentStudent.Rows.Count - 1 Step i + 1
+                Dim chkUpdate As CheckBox = CType(datRespondentStudent.Rows(i).Cells(5).FindControl("chkSelectStudent"), CheckBox)
+                If Not chkUpdate Is Nothing Then
+                    ' Get the values of textboxes using findControl
+                    Dim strKey As String = datRespondentStudent.DataKeys(i).Value.ToString
+                    If chkUpdate.Checked = True Then
+
+                        strSQL = "Update student_info set student_Status = '" & ddlUpdateStatus.SelectedValue & "', student_LoginAttempt = '0' where std_ID = '" & strKey & "'"
+                        strRet = oCommon.ExecuteSQL(strSQL)
+
+                    End If
+                End If
+            Next
+
+            If strRet = "0" Then
+                ShowMessage(" Update Student Status", MessageType.Success)
+            Else
+                ShowMessage(" Unsuccessful Update Student Status", MessageType.Error)
+            End If
+
+        Else
+
+            For i = 0 To datRespondentStaff.Rows.Count - 1 Step i + 1
+                Dim chkUpdate As CheckBox = CType(datRespondentStaff.Rows(i).Cells(5).FindControl("chkSelectStaff"), CheckBox)
+                If Not chkUpdate Is Nothing Then
+                    ' Get the values of textboxes using findControl
+                    Dim strKey As String = datRespondentStaff.DataKeys(i).Value.ToString
+                    If chkUpdate.Checked = True Then
+
+                        strSQL = "Update staff_Login set staff_Status = '" & ddlUpdateStatus.SelectedValue & "', staff_LoginAttempt = '0' where login_ID = '" & strKey & "'"
+                        strRet = oCommon.ExecuteSQL(strSQL)
+
+                    End If
+                End If
+
+            Next
+
+            If strRet = "0" Then
+                ShowMessage(" Update Staff Status", MessageType.Success)
+            Else
+                ShowMessage(" Unsuccessful Update Staff Status", MessageType.Error)
+            End If
+
+        End If
+
+        If ddlUser.SelectedValue = "Student" Then
+            strRet = BindDataStudent(datRespondentStudent)
+        Else
+            strRet = BindDataStaff(datRespondentStaff)
+        End If
+
+    End Sub
+
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
+    End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
 End Class

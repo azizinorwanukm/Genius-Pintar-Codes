@@ -11,7 +11,6 @@ Public Class pengajar_senarai_kelas
     Dim objConn As SqlConnection = New SqlConnection(strConn)
     Dim oCommon As New Commonfunction
 
-
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then

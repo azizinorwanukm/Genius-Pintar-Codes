@@ -9,8 +9,8 @@
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
-    <ProjectView>ShowAllFiles</ProjectView>
-    <NameOfLastUsedPublishProfile>FolderProfile1</NameOfLastUsedPublishProfile>
+    <ProjectView>ProjectFiles</ProjectView>
+    <NameOfLastUsedPublishProfile>C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\My Project\PublishProfiles\CustomProfile.pubxml</NameOfLastUsedPublishProfile>
     <ActiveDebugTarget />
   </PropertyGroup>
   <ProjectExtensions>

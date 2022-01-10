@@ -19,9 +19,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 
@@ -223,7 +220,7 @@
     </script>
     <uc1:student_DetailAdmin runat="server" ID="student_DetailAdmin" />
 
-    <uc2:guardian1_Detail runat="server" ID="guardian1_Detail" />
+  <%--  <uc2:guardian1_Detail runat="server" ID="guardian1_Detail" />
 
     <uc3:guardian2_Detail runat="server" ID="guardian2_Detail" />
 
@@ -279,7 +276,7 @@
 
     <uc1:student_Ukm3_History runat="server" id="student_Ukm3_History" />
 
-    <uc1:student_Pcis_History runat="server" id="student_Pcis_History" />
+    <uc1:student_Pcis_History runat="server" id="student_Pcis_History" />--%>
 
     <div class="messagealert" id="alert_container" style="text-align: center"></div>
 </asp:Content>

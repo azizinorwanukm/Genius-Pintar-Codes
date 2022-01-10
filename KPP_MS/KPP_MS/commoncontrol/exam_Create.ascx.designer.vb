@@ -14,65 +14,65 @@ Option Explicit On
 Partial Public Class exam_Create
     
     '''<summary>
-    '''ddlExam_Name control.
+    '''previousPage control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlExam_Name As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''ddlExam_Year control.
+    '''ddlExamName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlExam_Year As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlExamName As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''exam_Code control.
+    '''ddlExamYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents exam_Code As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlExamYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''exam_StartDate control.
+    '''txtExamCode control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents exam_StartDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtExamCode As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''exam_EndDate control.
+    '''txtStartDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents exam_EndDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtStartDate As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Btnsimpan control.
+    '''txtEndDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents txtEndDate As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Btnback control.
+    '''btnUpdate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents btnUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

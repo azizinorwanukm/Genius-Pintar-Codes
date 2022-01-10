@@ -83,7 +83,7 @@ Public Class counselor_List_Table
     End Sub
 
     Private Sub counselorstatus_list()
-        strSQL = "SELECT Value FROM setting WHERE Type='Counselor'"
+        strSQL = "SELECT Parameter , Value FROM setting WHERE Type='Counselor'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -94,7 +94,7 @@ Public Class counselor_List_Table
 
             ddlcounselorstatus.DataSource = ds
             ddlcounselorstatus.DataTextField = "Value"
-            ddlcounselorstatus.DataValueField = "Value"
+            ddlcounselorstatus.DataValueField = "Parameter"
             ddlcounselorstatus.DataBind()
             ddlcounselorstatus.Items.Insert(0, New ListItem("Select Counselor Status", String.Empty))
         Catch ex As Exception

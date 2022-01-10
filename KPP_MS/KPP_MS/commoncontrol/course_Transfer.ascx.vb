@@ -236,23 +236,52 @@ Public Class course_Transfer
 
                     If check_subjectID.Length = 0 Then
 
-                        Using PJGDATA As New SqlCommand("INSERT INTO subject_info(subject_Name, subject_NameBM, subject_code, subject_year, subject_type, subject_religions, subject_StudentYear, subject_CreditHour, subject_sem, course_Name)
-                                                         Values('" & get_subjectName & "','" & get_subjectNameBM & "','" & check_code & "','" & ddlyear_Transfer.SelectedValue & "','" & get_subjectType & "','" & get_subjectReligions & "',
-                                                         '" & get_subjectLevel & "','" & Integer.Parse(get_subjectHour) & "','" & get_subjectSem & "','" & get_subjectCourseName & "')", objConn)
-                            objConn.Open()
-                            Dim j = PJGDATA.ExecuteNonQuery()
-                            objConn.Close()
-                            If j <> 0 Then
-                                errorCount = 1
-                            Else
-                                errorCount = 2
-                            End If
-                        End Using
+                        If get_subjectType <> "Choose" Then
 
-                    Else
+                            Using PJGDATA As New SqlCommand("   INSERT INTO subject_info(subject_Name, subject_NameBM, subject_code, subject_year, subject_type, subject_religions, subject_StudentYear, subject_CreditHour, subject_sem, course_Name)
+                                                                Values('" & get_subjectName & "','" & get_subjectNameBM & "','" & check_code & "','" & ddlyear_Transfer.SelectedValue & "','" & get_subjectType & "','" & get_subjectReligions & "',
+                                                                '" & get_subjectLevel & "','" & Integer.Parse(get_subjectHour) & "','" & get_subjectSem & "','" & get_subjectCourseName & "')", objConn)
+                                objConn.Open()
+                                Dim j = PJGDATA.ExecuteNonQuery()
+                                objConn.Close()
+                                If j <> 0 Then
+                                    errorCount = 1
+                                Else
+                                    errorCount = 2
+                                End If
+                            End Using
+
+                        ElseIf get_subjectType = "Choose" Then
+
+                            Dim find_old_subjectLevel As String = "select subject_StudentYear from subject_info where subject_ID = '" & strKey & "'"
+                            Dim get_old_subjectLevel As String = oCommon.getFieldValue(find_old_subjectLevel)
+
+                            If get_old_subjectLevel = "Foundation 1" Then
+                                get_old_subjectLevel = "Foundation 2"
+                            ElseIf get_old_subjectLevel = "Foundation 2" Then
+                                get_old_subjectLevel = "Foundation 3"
+                            ElseIf get_old_subjectLevel = "Foundation 3" Then
+                                get_old_subjectLevel = "Level 1"
+                            ElseIf get_old_subjectLevel = "Level 1" Then
+                                get_old_subjectLevel = "Level 2"
+                            End If
+
+                            Using PJGDATA As New SqlCommand("   INSERT INTO subject_info(subject_Name, subject_NameBM, subject_code, subject_year, subject_type, subject_religions, subject_StudentYear, subject_CreditHour, subject_sem, course_Name)
+                                                                Values('" & get_subjectName & "','" & get_subjectNameBM & "','" & check_code & "','" & ddlyear_Transfer.SelectedValue & "','" & get_subjectType & "','" & get_subjectReligions & "',
+                                                                '" & get_old_subjectLevel & "','" & Integer.Parse(get_subjectHour) & "','" & get_subjectSem & "','" & get_subjectCourseName & "')", objConn)
+                                objConn.Open()
+                                Dim j = PJGDATA.ExecuteNonQuery()
+                                objConn.Close()
+                                If j <> 0 Then
+                                    errorCount = 1
+                                Else
+                                    errorCount = 2
+                                End If
+                            End Using
+
+                        End If
 
                     End If
-
 
                 End If
             End If
@@ -264,5 +293,33 @@ Public Class course_Transfer
             Response.Redirect("admin_daftar_kursus_baru.aspx?admin_ID=" + Request.QueryString("admin_ID") + "&result=" & errorCount)
         End If
 
+    End Sub
+
+    Private Sub ddl_Level_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Level.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddl_Sem_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Sem.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddl_type_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_type.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddl_Year_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Year.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
     End Sub
 End Class

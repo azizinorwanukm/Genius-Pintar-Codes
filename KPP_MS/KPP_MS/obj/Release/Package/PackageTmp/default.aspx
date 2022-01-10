@@ -13,31 +13,41 @@
     <link rel="stylesheet" href="css/font_montserrat.css">
     <link rel="stylesheet" href="css/font_awesome.css">
     <link rel="stylesheet" href="css/plugin_export.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/font_awesome_470.min.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/jquerytable.min.css">
+    <link rel="stylesheet" href="css/bootstrap_337.min.css">
+    <link rel="stylesheet" href="css/bootstrap_select_1100.min.css">
+    <link rel="stylesheet" href="css/bootstrap_335.min.css">
+
     <script src="js/jquery.js"></script>
     <script src="js/jquerytable.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery_211.min.js"></script>
+    <script src="js/bootstrap_select_1100.min.js"></script>
+    <script src="js/bootstrap_337.min.js"></script>
+    <script src="js/jquery_321.min.js"></script>
+    <script src="js/jquery_1113.min.js"></script>
+    <script src="js/bootstrap_335.min.js"></script>
+
+    <%-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/w3.css">
-
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>--%>
 
     <script type="text/javascript">
         function ShowMessage(message, messagetype) {
@@ -69,15 +79,9 @@
         }
 
         .backImage {
-            background-image: url("img/front.jpg");
+            background: linear-gradient(to bottom, #00203FFF 0%, #FFFFFF 100%);
             height: 100%;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
-
-       
 
         .messagealert {
             width: 40%;
@@ -98,7 +102,7 @@
                 top: 35%;
                 left: 50%;
                 margin: -100px 0 0 -150px;
-                opacity: 0.75;
+                /*opacity: 0.75;*/
             }
 
             #btnLogin {
@@ -111,11 +115,12 @@
             #front_page {
                 position: absolute;
                 width: 300px;
-                height: 170px;
+                height: 60vh;
                 top: 40%;
                 left: 50%;
                 margin: -100px 0 0 -150px;
-                opacity: 0.75;
+                overflow-y: scroll;
+                /*opacity: 0.75;*/
             }
 
             #btnLogin {
@@ -129,20 +134,38 @@
 <body>
     <div class="backImage">
         <form id="form1" runat="server">
-            <div id="front_page" style="background-color: #b3b3b3">
-                <div class="row" style="background-color: #b3b3b3; text-align: left; padding-left: 23px">
+            <div id="front_page">
+                <div class="row" style="background-color: #FFFFFF; text-align: center;">
+                    <table style="border: hidden; width: 100%">
+                        <tr>
+                            <td>
+                                <button id="BtnLoginPGPN" runat="server" style="display: inline-block; font-size: 0.8vw; width: 100%">Genius Pintar</button></td>
+                            <td>
+                                <button id="BtnLoginAPP" runat="server" style="display: inline-block; font-size: 0.8vw; width: 100%">Akademik Pintar</button></td>
+                        </tr>
+                    </table>
                     <br />
-                    <img src="img/permatapintar2.jpg" width="270" height="140" class="w3-circle" />
+                    <img width="150" height="80" id="logo_pgpn" runat="server" />
+                    <img width="230" height="80" id="logo_app" runat="server" />
                     <br />
-                    <asp:Label runat="server"> Username : </asp:Label>
-                    <asp:TextBox class="form-control w3-text-black" ID="txtloginUsername" Style="width: 90%" runat="server"></asp:TextBox>
-                    <p></p>
-                    <asp:Label runat="server"> Password : </asp:Label>
-                    <asp:TextBox type="password" class="form-control w3-text-black" ID="txtloginPassword" Style="width: 90%" runat="server"></asp:TextBox>
+                    <br />
+                    <div style="padding-left: 23px">
+                        <asp:TextBox class="form-control w3-text-black" ID="txtloginUsername" Placeholder="Username : " Style="width: 90%;" runat="server"></asp:TextBox>
+                        <p></p>
+                        <asp:TextBox type="password" class="form-control w3-text-black" ID="txtloginPassword" Placeholder="Password : " Style="width: 90%;" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="row" style="background-color: #b3b3b3; text-align: center">
+
+                <div class="row" style="background-color: #FFFFFF; text-align: center" id="login_inf_btn_PGPN" runat="server">
                     <p></p>
-                    <asp:Button ID="btnLogin" runat="server" Text="Login" Style="text-align: center" CssClass="btn btn-success" />
+                    <asp:Button ID="btnLogin_PGPN" runat="server" Text="Login" Style="text-align: center" CssClass="btn btn-success" />
+                    <p></p>
+                </div>
+
+                <div class="row" style="background-color: #FFFFFF; text-align: center" id="login_inf_btn_APP" runat="server">
+                    <p></p>
+                    <asp:Button ID="btnLogin_APP" runat="server" Text="Login" Style="text-align: center" CssClass="btn btn-success" />
+                    <p></p>
                 </div>
             </div>
             <div class="messagealert" id="alert_container" style="text-align: center"></div>

@@ -12,7 +12,133 @@ Option Explicit On
 
 
 Partial Public Class student_DetailAdmin
-    
+
+    '''<summary>
+    '''txtbreadcrum2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum2 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''previousPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''txtbreadcrum1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''btnStudentInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnStudentInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnParentInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnParentInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnCourseInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCourseInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnCocurInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCocurInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnExamInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnExamInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnHostelInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnHostelInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnDiscInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnDiscInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnExamHistoryInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnExamHistoryInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnRefInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnRefInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''StudentInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents StudentInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''txtstudentID control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstudentID As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
     '''student_Photo control.
     '''</summary>
@@ -21,7 +147,7 @@ Partial Public Class student_DetailAdmin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents student_Photo As Global.System.Web.UI.WebControls.Image
-    
+
     '''<summary>
     '''uploadPhoto control.
     '''</summary>
@@ -30,61 +156,25 @@ Partial Public Class student_DetailAdmin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents uploadPhoto As Global.System.Web.UI.WebControls.FileUpload
-    
+
     '''<summary>
-    '''student_Name control.
+    '''txtstudentName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_Name As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtstudentName As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''student_Mykad control.
+    '''txtstudentMykad control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_Mykad As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''student_ID control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_ID As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''student_Email control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_Email As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''student_FonNo control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_FonNo As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''student_Sex control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents student_Sex As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtstudentMykad As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
     '''ddlRace control.
     '''</summary>
@@ -93,7 +183,7 @@ Partial Public Class student_DetailAdmin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlRace As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
     '''ddlReligion control.
     '''</summary>
@@ -102,25 +192,61 @@ Partial Public Class student_DetailAdmin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlReligion As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
-    '''student_Address control.
+    '''txtstudentGender control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_Address As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtstudentGender As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''txtCity control.
+    '''txtstudentEmail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtCity As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents txtstudentEmail As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtstudentPhone control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstudentPhone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtstudentAddress control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstudentAddress As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtstudentCity control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstudentCity As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtstudentPostcode control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstudentPostcode As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
     '''ddlState control.
     '''</summary>
@@ -129,67 +255,400 @@ Partial Public Class student_DetailAdmin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlState As Global.System.Web.UI.WebControls.DropDownList
-    
+
     '''<summary>
-    '''student_PostCode control.
+    '''ddlStateOfBirth control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_PostCode As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents ddlStateOfBirth As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''ddlYear_registered control.
+    '''ddlStream control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlYear_registered As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents ddlStream As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''ddlLevel control.
+    '''ddlCountryOfBirth control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlLevel As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents ddlCountryOfBirth As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''ddlSem control.
+    '''ddlCampus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlSem As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''resetButton control.
+    '''txtstudentYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents resetButton As Global.System.Web.UI.WebControls.Button
-    
+    Protected WithEvents txtstudentYear As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''btnStudentUpdate control.
+    '''txtstudentLevel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnStudentUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+    Protected WithEvents txtstudentLevel As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''Label1 control.
+    '''txtstudentSem control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtstudentSem As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnUpdateStudentInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdateStudentInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''ParentInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ParentInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''lblGuardian1Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian1Name As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian2Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian2Name As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian1Mykad control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian1Mykad As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian2Mykad control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian2Mykad As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian1Phone control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian1Phone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian2Phone control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian2Phone As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian1Relationship control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian1Relationship As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian2Relationship control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian2Relationship As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian1Job control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian1Job As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian2Job control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian2Job As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian1Salary control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian1Salary As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''lblGuardian2Salary control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblGuardian2Salary As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnUpdateParentInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdateParentInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''CourseInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CourseInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ddlCourseYear control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlCourseYear As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddlCourseSemester control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlCourseSemester As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''datRespondent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''CocurricularInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CocurricularInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''datRespondentKOKO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentKOKO As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''ExaminationInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ExaminationInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ddlExamYear control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlExamYear As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddllExamName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddllExamName As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''datRespondentExam control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentExam As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''HostelInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents HostelInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''datRespondentHostel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentHostel As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''DisciplineInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents DisciplineInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''datRespondent_Discipline control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondent_Discipline As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''ExaminationHistoryInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ExaminationHistoryInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''datRespondentUKM1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentUKM1 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''datRespondentUKM2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentUKM2 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''datRespondentPPCS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentPPCS As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''datRespondentUKM3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentUKM3 As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''ReferenceInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ReferenceInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ddlView_Year control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlView_Year As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''datRespondentReference control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentReference As Global.System.Web.UI.WebControls.GridView
 End Class

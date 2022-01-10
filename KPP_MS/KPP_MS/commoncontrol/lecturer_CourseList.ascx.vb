@@ -29,7 +29,7 @@ Public Class lecturer_CourseList
     End Sub
 
     Private Sub sem_list()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Sem' "
+        strSQL = "SELECT * FROM setting WHERE Type='Sem' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -40,7 +40,7 @@ Public Class lecturer_CourseList
 
             ddlSemn.DataSource = ds
             ddlSemn.DataTextField = "Parameter"
-            ddlSemn.DataValueField = "Parameter"
+            ddlSemn.DataValueField = "Value"
             ddlSemn.DataBind()
             ddlSemn.Items.Insert(0, New ListItem("Select Sem", String.Empty))
         Catch ex As Exception
@@ -51,8 +51,7 @@ Public Class lecturer_CourseList
     End Sub
 
     Private Sub load_page()
-        strSQL = "Select Parameter from setting where Type = 'Year' and Value = '" & Now.Year & "'"
-
+        strSQL = "Select MAX(Parameter) as year from setting where type = 'year'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -157,17 +156,16 @@ Public Class lecturer_CourseList
 
         Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY subject_info.subject_ID ASC"
 
-        tmpSQL = "Select * From lecturer 
+        tmpSQL = "Select distinct lecturer.ID, subject_name, subject_code, class_Name, class_level From lecturer 
                   left join subject_info on lecturer.subject_ID=subject_info.subject_ID 
                   left join class_info on lecturer.class_ID=class_info.class_ID 
                   left join staff_Info on lecturer.stf_ID=staff_Info.stf_ID"
         strWhere = " WHERE staff_Info.stf_ID = '" & Request.QueryString("stf_ID") & "'"
-        strWhere += " and lecturer.lecturer_year = '" & ddlYear.SelectedValue & "' and staff_Info.staff_Status = 'Access'"
+        strWhere += " and lecturer.lecturer_year = '" & ddlYear.SelectedValue & "'  and staff_Info.staff_Status = 'Access'"
 
         If ddlSemn.SelectedIndex > 0 Then
-            strWhere += " and subject_info.subject_sem = '" & ddlSemn.SelectedValue & "'"
+            strWhere += " and subject_info.subject_sem = '" & ddlSemn.SelectedValue & "' "
         End If
 
         getSQL = tmpSQL & strWhere

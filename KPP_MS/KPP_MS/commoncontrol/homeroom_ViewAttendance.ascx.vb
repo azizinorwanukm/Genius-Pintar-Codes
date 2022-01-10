@@ -15,12 +15,12 @@ Public Class homeroom_ViewAttendance
         Try
             If Not IsPostBack Then
 
-                ddlSem_List()
-                ddlClass_List()
                 ddlYear_List()
+                ddlProgram_List()
                 ddlMonth_list()
+                ddlLevel_List()
+                ddlSem_List()
 
-                load_page()
                 strRet = BindData(datRespondent)
 
             End If
@@ -30,57 +30,44 @@ Public Class homeroom_ViewAttendance
         End Try
     End Sub
 
-    Private Sub load_page()
+    Private Sub run_color()
+        Dim col As Integer = 0
+        Dim row As Integer = 0
+        Dim lblDay As Label
 
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+        For col = 3 To datRespondent.Columns.Count - 3 Step col + 1
+            row = 0
 
-        ''ddl month date
-        strSQL = "SELECT Parameter from setting where value ='" & Now.Month & "' and Type = 'month'"
+            For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
+                lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
+                If lblDay.Text = "0" Then
 
-        Dim dmonth As DataSet = New DataSet
-        sqlDA.Fill(dmonth, "AnyTable")
+                    lblDay.Text = "OO"
+                    lblDay.BackColor = Drawing.Color.Red
+                    lblDay.ForeColor = Drawing.Color.Red
+                    lblDay.CssClass = "lblAbsent"
 
-        Dim nRowsMonth As Integer = 0
-        Dim nCountMonth As Integer = 1
-        Dim MyTableMonth As DataTable = New DataTable
-        MyTableMonth = dmonth.Tables(0)
-        If MyTableMonth.Rows.Count > 0 Then
-            If Not IsDBNull(dmonth.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlMonth.SelectedValue = dmonth.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddlMonth.SelectedValue = ""
-            End If
-        End If
-    End Sub
+                End If
 
-    Private Sub datRespondent_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles datRespondent.PageIndexChanging
-        datRespondent.PageIndex = e.NewPageIndex
-        strRet = BindData(datRespondent)
-    End Sub
+                If lblDay.Text = "1" Then
 
-    Private Sub datRespondent_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles datRespondent.RowDeleting
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim strKeyName As String = datRespondent.DataKeys(e.RowIndex).Value.ToString
+                    lblDay.Text = "OO"
+                    lblDay.BackColor = Drawing.Color.Green
+                    lblDay.ForeColor = Drawing.Color.Green
+                    lblDay.CssClass = "lblAttend"
 
-        Try
-            Dim MyConnection As SqlConnection = New SqlConnection(strConn)
-            Dim Dlt_ClassData As New SqlDataAdapter()
+                End If
 
-            Dim dlt_Class As String
+                If lblDay.Text = "2" Then
 
-            Dlt_ClassData.SelectCommand = New SqlCommand()
-            Dlt_ClassData.SelectCommand.Connection = MyConnection
-            Dlt_ClassData.SelectCommand.CommandText = "delete attendance where ID ='" & strKeyName & "'"
-            MyConnection.Open()
-            dlt_Class = Dlt_ClassData.SelectCommand.ExecuteScalar()
-            MyConnection.Close()
+                    lblDay.Text = "OO"
+                    lblDay.BackColor = Drawing.Color.Yellow
+                    lblDay.ForeColor = Drawing.Color.Yellow
+                    lblDay.CssClass = "lblOthers"
 
-            strRet = BindData(datRespondent)
-        Catch ex As Exception
-            ''lblMsg.Text = "System Error: " & ex.Message
-        End Try
+                End If
+            Next
+        Next
     End Sub
 
     Private Function BindData(ByVal gvTable As GridView) As Boolean
@@ -92,6 +79,36 @@ Public Class homeroom_ViewAttendance
 
             gvTable.DataSource = myDataSet
             gvTable.DataBind()
+
+            Dim col As Integer = 0
+            Dim row As Integer = 0
+            Dim lblDay As Label
+
+            Dim CountPost As Integer = 0
+            Dim CountNega As Integer = 0
+
+            For col = 3 To datRespondent.Columns.Count Step col + 1
+                row = 0
+
+                CountPost = 0
+                CountNega = 0
+
+                For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
+                    lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
+                    If lblDay.Text <> "0" And lblDay.Text <> "1" Then
+                        CountNega += 1
+                    Else
+                        CountPost += 1
+                    End If
+                Next
+
+                If CountPost > 0 Then
+                    gvTable.Columns(col).Visible = True
+                Else
+                    gvTable.Columns(col).Visible = False
+                End If
+            Next
+
             objConn.Close()
 
         Catch ex As Exception
@@ -99,18 +116,17 @@ Public Class homeroom_ViewAttendance
         End Try
 
         Return True
-
     End Function
 
     Private Function getSQL() As String
         'A left outer join will give all rows in A, plus any common rows in B.
 
-        Dim tmpSQL As String
-        Dim tmpSQL2 As String
+        Dim tmpSQL As String = ""
+        Dim tmpSQL2 As String = ""
         Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY attendance.ID ASC"
+        Dim strOrderby As String = " ORDER BY student_Name ASC"
 
-        tmpSQL = "SELECT student_info.student_ID, student_info.student_Name, attendance.course_ID, 
+        tmpSQL = "SELECT student_info.student_ID, UPPER(student_info.student_Name) student_Name, attendance.course_ID, class_info.class_Name,
                     MAX(CASE WHEN date_day = 1 THEN attendance_Status ELSE NULL END) AS '1',
                     MAX(CASE WHEN date_day = 2 THEN attendance_Status ELSE NULL END) AS '2',
                     MAX(CASE WHEN date_day = 3 THEN attendance_Status ELSE NULL END) AS '3',
@@ -172,47 +188,33 @@ Public Class homeroom_ViewAttendance
                     MAX(CASE WHEN date_day = 28 THEN attendance_Remarks ELSE NULL END) AS 'R28',
                     MAX(CASE WHEN date_day = 29 THEN attendance_Remarks ELSE NULL END) AS 'R29',
                     MAX(CASE WHEN date_day = 30 THEN attendance_Remarks ELSE NULL END) AS 'R30',
-		            MAX(CASE WHEN date_day = 31 THEN attendance_Remarks ELSE NULL END) AS 'R31',
-                    COUNT(attendance_Status)-SUM(attendance_Status) AS 'Total Absence',
-					CONCAT(SUM(attendance_Status)*100/COUNT(attendance_Status),'%') AS 'Percentage'	
+		            MAX(CASE WHEN date_day = 31 THEN attendance_Remarks ELSE NULL END) AS 'R31'
                     FROM attendance
 	                LEFT JOIN course ON attendance.course_ID = course.course_ID
-	                LEFT JOIN student_info ON course.std_ID = student_info.std_ID
-	                LEFT JOIN subject_info ON course.subject_ID = subject_info.subject_ID
-	                LEFT JOIN student_level ON course.student_ID = student_level.student_ID
-	                LEFT JOIN class_info ON course.class_ID = class_info.class_ID"
+                    LEFT JOIN student_info ON course.std_ID = student_info.std_ID
+                    LEFT JOIN subject_info ON course.subject_ID = subject_info.subject_ID
+                    LEFT JOIN student_level ON course.std_ID = student_level.std_ID
+                    LEFT JOIN class_info ON course.class_ID = class_info.class_ID
+                    LEFT JOIN lecturer ON class_info.class_ID = lecturer.class_ID
+                    LEFT JOIN staff_Info ON lecturer.stf_ID = staff_Info.stf_ID"
 
-        tmpSQL2 = " GROUP BY attendance.course_ID, student_info.student_ID, student_info.student_Name"
+        tmpSQL2 = " GROUP BY attendance.course_ID, student_info.student_ID, student_info.student_Name, class_info.class_Name"
 
-        strWhere = " WHERE subject_info.subject_sem = '" & ddlStudent_Sem.SelectedValue & "'"
-
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " And (student_info.student_ID Like '%" & txtstudent.Text & "%'"
+        If ddlStudent_Sem.SelectedIndex = 0 And ddlClass_Name.SelectedIndex = 0 And ddlSubject_Name.SelectedIndex = 0 Then
+            strWhere += " WHERE  attendance.date_year = '9999999'" ''impossible
+        Else
+            strWhere = " where attendance.date_year = '" & ddlYear.SelectedValue & "' and student_info.student_Stream = '" & ddlProgram.SelectedValue & "' and student_info.student_Campus = '" & Session("SchoolCampus") & "'"
         End If
 
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " OR student_info.student_Name LIKE '%" & txtstudent.Text & "%'"
-        End If
+        strWhere += " And (student_info.student_Status = 'Access' or student_info.student_Status = 'Graduate') and student_info.student_ID is not null and student_info.student_ID <> '' and (student_info.student_ID like '%M%' or student_info.student_ID like '%P%')"
 
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " OR student_info.student_Mykad LIKE '%" & txtstudent.Text & "%')"
-        End If
+        strWhere += " And course.subject_ID = '" & ddlSubject_Name.SelectedValue & "'"
 
-        If ddlSubject_Name.SelectedIndex > 0 Then
-            strWhere += " And class_info.class_Name = '" & ddlClass_Name.SelectedValue & "'"
-        End If
+        strWhere += " And course.class_ID = '" & ddlClass_Name.SelectedValue & "'"
 
-        If ddlClass_Name.SelectedIndex > 0 Then
-            strWhere += " And subject_info.subject_ID = '" & ddlSubject_Name.SelectedValue & "'"
-        End If
+        strWhere += " And attendance.date_month = '" & ddlMonth.SelectedValue & "'"
 
-        If ddlMonth.SelectedValue > 0 Then
-            strWhere += " And attendance.date_month = '" & ddlMonth.SelectedValue & "'"
-        End If
-
-        If ddlYear.SelectedIndex > 0 Then
-            strWhere += " And attendance.date_year = '" & ddlYear.SelectedValue & "'"
-        End If
+        strWhere += " And subject_info.subject_sem = '" & ddlStudent_Sem.SelectedValue & "'"
 
         getSQL = tmpSQL & strWhere & tmpSQL2
 
@@ -220,83 +222,185 @@ Public Class homeroom_ViewAttendance
 
     End Function
 
-    Public Function getFieldValue(ByVal data As String, ByVal MyConnection As String) As String
-        If data.Length = 0 Then
-            Return "0"
-        End If
-        Dim conn As SqlConnection = New SqlConnection(MyConnection)
-        Dim sqlAdapter As New SqlDataAdapter(data, conn)
-        Dim strvalue As String = ""
+    Protected Sub ddlProgram_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlProgram.SelectedIndexChanged
         Try
-            Dim ds As DataSet = New DataSet
-            sqlAdapter.Fill(ds, "AnyTable")
-
-            If ds.Tables(0).Rows.Count > 0 Then
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item(0).ToString) Then
-                    strvalue = ds.Tables(0).Rows(0).Item(0).ToString
-                Else
-                    Return "0"
-                End If
-            End If
+            ddlCourse_List()
+            ddlClass_List()
         Catch ex As Exception
-            Return "0"
-        Finally
-            conn.Dispose()
         End Try
-        Return strvalue
-    End Function
+        run_color()
+    End Sub
 
     Protected Sub ddlSubjectName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlSubject_Name.SelectedIndexChanged
         Try
+            ddlClass_List()
             strRet = BindData(datRespondent)
-
         Catch ex As Exception
-
         End Try
-
-        'edit UI
-
-        Dim col As Integer
-        Dim row As Integer
-        Dim lblDay As Label
-
-        For col = 3 To datRespondent.Columns.Count - 3 Step col + 1
-            row = 0
-
-            For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
-                lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
-                If lblDay.Text = "0" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.Red
-                    lblDay.ForeColor = Drawing.Color.Red
-                    lblDay.CssClass = "lblAbsent"
-
-                End If
-
-                If lblDay.Text = "1" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.LightGreen
-                    lblDay.ForeColor = Drawing.Color.LightGreen
-                    lblDay.CssClass = "lblAttend"
-
-                End If
-            Next
-        Next
-
+        run_color()
     End Sub
 
     Protected Sub ddlClassName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClass_Name.SelectedIndexChanged
         Try
-            Dim subjectLevel As String = ""
-            subjectLevel = "select class_Level from class_info where class_Name ='" & ddlClass_Name.SelectedValue & "'"
-            Dim dataSubjectLevel As String = getFieldValue(subjectLevel, strConn)
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+        run_color()
+    End Sub
 
-            strSQL = "select subject_Name, subject_ID from subject_info"
-            strSQL += " where subject_year ='" & Now.Year & "'"
-            strSQL += " and  subject_StudentYear ='" & dataSubjectLevel & "'"
-            strSQL += " and  subject_sem ='" & ddlStudent_Sem.SelectedValue & "'"
+    Protected Sub ddlStudentSem_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlStudent_Sem.SelectedIndexChanged
+        Try
+            ddlCourse_List()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+        run_color()
+    End Sub
+
+    Protected Sub ddlStudent_Level_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlStudent_Level.SelectedIndexChanged
+        Try
+            ddlCourse_List()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+        run_color()
+    End Sub
+
+    Protected Sub ddlMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlMonth.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+            run_color()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
+        Try
+            ddlLevel_List()
+            strRet = BindData(datRespondent)
+            run_color()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddlClass_List()
+
+        Dim sem As String = ""
+
+        If ddlStudent_Sem.SelectedValue = "Sem 1" Then
+            sem = "Sem 2"
+        ElseIf ddlStudent_Sem.SelectedValue = "Sem 2" Then
+            sem = "Sem 1"
+        End If
+
+        Try
+            Dim checkLevel As String = "select Subject_type from subject_info where subject_ID = '" & ddlSubject_Name.SelectedValue & "'"
+            Dim getLevel As String = oCommon.getFieldValue(checkLevel)
+
+            If getLevel = "Compulsory" Then
+                strSQL = "select class_ID, class_Name from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_type = 'Compulsory' and class_Level = '" & ddlStudent_Level.SelectedValue & "' and stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' and class_Campus = '" & Session("SchoolCampus") & "' and course_Program = '" & ddlProgram.SelectedValue & "' order by class_Name ASC "
+            Else
+                strSQL = "select class_ID, class_Name from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_type <> 'Compulsory' and class_Level = '" & ddlStudent_Level.SelectedValue & "' and subject_ID = '" & ddlSubject_Name.SelectedValue & "' and class_Campus = '" & Session("SchoolCampus") & "' and course_Program = '" & ddlProgram.SelectedValue & "' order by class_Name ASC "
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlClass_Name.DataSource = levds
+            ddlClass_Name.DataValueField = "class_ID"
+            ddlClass_Name.DataTextField = "class_Name"
+            ddlClass_Name.DataBind()
+            ddlClass_Name.Items.Insert(0, New ListItem("Select Class", String.Empty))
+            ddlClass_Name.SelectedIndex = 0
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddlYear_List()
+        Try
+            Dim strLevelSql As String = "select class_year from class_info where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' order by class_Year asc "
+            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlYear.DataSource = levds
+            ddlYear.DataValueField = "class_year"
+            ddlYear.DataTextField = "class_year"
+            ddlYear.DataBind()
+            ddlYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddlProgram_List()
+        Try
+            If Session("SchoolCampus") = "APP" Then
+                strSQL = "select Parameter, Value from setting where type = 'Stream' and Value = 'PS'"
+            Else
+                strSQL = "select Parameter, Value from setting where type = 'Stream'"
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlProgram.DataSource = levds
+            ddlProgram.DataValueField = "Value"
+            ddlProgram.DataTextField = "Parameter"
+            ddlProgram.DataBind()
+            ddlProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddlSem_List()
+        Try
+            Dim strLevelSql As String = "Select * from setting where Type = 'Sem'"
+            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlStudent_Sem.DataSource = levds
+            ddlStudent_Sem.DataValueField = "Value"
+            ddlStudent_Sem.DataTextField = "Parameter"
+            ddlStudent_Sem.DataBind()
+            ddlStudent_Sem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
+            ddlStudent_Sem.SelectedIndex = 0
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddlLevel_List()
+        Try
+            Dim strLevelSql As String = "select class_Level from class_info where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' and class_year = '" & ddlYear.SelectedValue & "' order by class_Level asc "
+            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlStudent_Level.DataSource = levds
+            ddlStudent_Level.DataValueField = "class_Level"
+            ddlStudent_Level.DataTextField = "class_Level"
+            ddlStudent_Level.DataBind()
+            ddlStudent_Level.Items.Insert(0, New ListItem("Select Level", String.Empty))
+            ddlStudent_Level.SelectedIndex = 0
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub ddlCourse_List()
+        Try
+            strSQL = "select subject_info.subject_Name, subject_info.subject_ID from subject_info"
+            strSQL += " where subject_info.subject_year ='" & ddlYear.SelectedValue & "' and subject_Campus = '" & Session("SchoolCampus") & "' and course_Program = '" & ddlProgram.SelectedValue & "'"
+            strSQL += " and subject_info.subject_StudentYear ='" & ddlStudent_Level.SelectedValue & "'"
+            strSQL += " and subject_info.subject_sem ='" & ddlStudent_Sem.SelectedValue & "'"
 
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
@@ -309,229 +413,7 @@ Public Class homeroom_ViewAttendance
             ddlSubject_Name.DataBind()
             ddlSubject_Name.Items.Insert(0, New ListItem("Select Course", String.Empty))
             ddlSubject_Name.SelectedIndex = 0
-
-            strRet = BindData(datRespondent)
         Catch ex As Exception
-
-        End Try
-
-        'edit UI
-
-        Dim col As Integer
-        Dim row As Integer
-        Dim lblDay As Label
-
-        For col = 3 To datRespondent.Columns.Count - 3 Step col + 1
-            row = 0
-
-            For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
-                lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
-                If lblDay.Text = "0" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.Red
-                    lblDay.ForeColor = Drawing.Color.Red
-                    lblDay.CssClass = "lblAbsent"
-
-                End If
-
-                If lblDay.Text = "1" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.LightGreen
-                    lblDay.ForeColor = Drawing.Color.LightGreen
-                    lblDay.CssClass = "lblAttend"
-
-                End If
-            Next
-        Next
-
-    End Sub
-
-    Protected Sub ddlStudentSem_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlStudent_Sem.SelectedIndexChanged
-        Try
-            strRet = BindData(datRespondent)
-
-        Catch ex As Exception
-
-        End Try
-
-        'edit UI
-
-        Dim col As Integer
-        Dim row As Integer
-        Dim lblDay As Label
-
-        For col = 3 To datRespondent.Columns.Count - 3 Step col + 1
-            row = 0
-
-            For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
-                lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
-                If lblDay.Text = "0" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.Red
-                    lblDay.ForeColor = Drawing.Color.Red
-                    lblDay.CssClass = "lblAbsent"
-
-                End If
-
-                If lblDay.Text = "1" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.LightGreen
-                    lblDay.ForeColor = Drawing.Color.LightGreen
-                    lblDay.CssClass = "lblAttend"
-
-                End If
-            Next
-        Next
-
-    End Sub
-
-    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
-
-        Try
-            strRet = BindData(datRespondent)
-
-        Catch ex As Exception
-
-        End Try
-
-        'edit UI
-
-        Dim col As Integer
-        Dim row As Integer
-        Dim lblDay As Label
-
-        For col = 3 To datRespondent.Columns.Count - 3 Step col + 1
-            row = 0
-
-            For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
-                lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
-                If lblDay.Text = "0" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.Red
-                    lblDay.ForeColor = Drawing.Color.Red
-                    lblDay.CssClass = "lblAbsent"
-
-                End If
-
-                If lblDay.Text = "1" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.LightGreen
-                    lblDay.ForeColor = Drawing.Color.LightGreen
-                    lblDay.CssClass = "lblAttend"
-
-                End If
-            Next
-        Next
-    End Sub
-
-    Protected Sub ddlMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlMonth.SelectedIndexChanged
-
-        Try
-            strRet = BindData(datRespondent)
-
-        Catch ex As Exception
-
-        End Try
-
-        'edit UI
-
-        Dim col As Integer
-        Dim row As Integer
-        Dim lblDay As Label
-
-        For col = 3 To datRespondent.Columns.Count - 3 Step col + 1
-            row = 0
-
-            For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
-                lblDay = datRespondent.Rows(row).Cells(col).FindControl("lblday" & col - 2)
-                If lblDay.Text = "0" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.Red
-                    lblDay.ForeColor = Drawing.Color.Red
-                    lblDay.CssClass = "lblAbsent"
-
-                End If
-
-                If lblDay.Text = "1" Then
-
-                    lblDay.Text = "OO"
-                    lblDay.BackColor = Drawing.Color.LightGreen
-                    lblDay.ForeColor = Drawing.Color.LightGreen
-                    lblDay.CssClass = "lblAttend"
-
-                End If
-            Next
-        Next
-    End Sub
-
-    Private Sub ddlClass_List()
-        Try
-
-            Dim data As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
-
-            Dim strLevelSql As String = "SELECT class_Name FROM class_info where class_year = '" & Now.Year & "' AND stf_ID = '" & data & "'"
-            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
-
-            Dim levds As DataSet = New DataSet
-            sqlLevelDA.Fill(levds, "LevTable")
-
-            ddlClass_Name.DataSource = levds
-            ddlClass_Name.DataValueField = "class_Name"
-            ddlClass_Name.DataTextField = "class_Name"
-            ddlClass_Name.DataBind()
-            ddlClass_Name.Items.Insert(0, New ListItem("Select Class", String.Empty))
-            ddlClass_Name.SelectedIndex = 0
-
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Private Sub ddlYear_List()
-
-        Try
-
-            Dim strLevelSql As String = "SELECT Parameter FROM setting WHERE Type = 'Year'"
-            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
-
-            Dim levds As DataSet = New DataSet
-            sqlLevelDA.Fill(levds, "LevTable")
-
-            ddlYear.DataSource = levds
-            ddlYear.DataValueField = "Parameter"
-            ddlYear.DataTextField = "Parameter"
-            ddlYear.DataBind()
-            ddlYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
-            ddlYear.SelectedValue = Now.Year
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
-
-    Private Sub ddlSem_List()
-        Try
-            Dim strLevelSql As String = "Select Parameter from setting where Type = 'Sem'"
-            Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
-
-            Dim levds As DataSet = New DataSet
-            sqlLevelDA.Fill(levds, "LevTable")
-
-            ddlStudent_Sem.DataSource = levds
-            ddlStudent_Sem.DataValueField = "Parameter"
-            ddlStudent_Sem.DataTextField = "Parameter"
-            ddlStudent_Sem.DataBind()
-            ddlStudent_Sem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
-            ddlStudent_Sem.SelectedIndex = 0
-        Catch ex As Exception
-
         End Try
     End Sub
 
@@ -550,11 +432,8 @@ Public Class homeroom_ViewAttendance
             ddlMonth.DataValueField = "Value"
             ddlMonth.DataBind()
             ddlMonth.Items.Insert(0, New ListItem("Select Month", String.Empty))
-
+            ddlMonth.SelectedIndex = 0
         Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
         End Try
     End Sub
 

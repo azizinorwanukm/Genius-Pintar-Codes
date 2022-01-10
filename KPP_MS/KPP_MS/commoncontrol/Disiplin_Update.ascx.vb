@@ -5,214 +5,6 @@ Imports System.IO
 Imports System.Globalization
 Imports System.Drawing
 
-'Public Class Disiplin_Update
-'    Inherits System.Web.UI.UserControl
-
-'    Dim strSQL As String = ""
-'    Dim strRet As String = ""
-'    Dim result As Integer = 0
-
-'    Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-'    Dim objConn As SqlConnection = New SqlConnection(strConn)
-'    Dim oCommon As New Commonfunction
-'    Dim oDes As New Simple3Des("p@ssw0rd1")
-
-'    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-'        Try
-'            If Not IsPostBack Then
-'                result = Request.QueryString("result")
-
-'                Dim id As String = ""
-'                id = Request.QueryString("admin_ID")
-'                dicipline()
-'                CurrentDate.Text = Date.Now.ToString("dd MMMM yyyy")
-
-'            End If
-'        Catch ex As Exception
-'        End Try
-'    End Sub
-
-'    Protected Sub dicipline()
-
-'        strSQL = "select case_name from case_info "
-
-'        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-'        Dim objConn As SqlConnection = New SqlConnection(strConn)
-'        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-'        Try
-'            Dim ds As DataSet = New DataSet
-'            sqlDA.Fill(ds, "AnyTable")
-
-
-'            ddlDiciplinetype.DataSource = ds
-'            ddlDiciplinetype.DataTextField = "case_name"
-'            ddlDiciplinetype.DataValueField = "case_name"
-'            ddlDiciplinetype.DataBind()
-'            ddlDiciplinetype.Items.Insert(0, New ListItem("-- Pick A Case --", String.Empty))
-'            ddlDiciplinetype.SelectedIndex = 0
-
-'        Catch ex As Exception
-
-'        End Try
-
-
-'    End Sub
-
-'    Protected Sub disiplin_onselectedindexchanged(sender As Object, e As EventArgs) Handles ddlDiciplinetype.SelectedIndexChanged
-
-'        Dim display As String = "block"
-'        HiddenField2.Value = display
-
-'    End Sub
-
-'    Private Sub searchComplainant_serverclick(sender As Object, e As EventArgs) Handles searchComplainant.ServerClick
-'        Dim display As String = "block"
-'        HiddenField3.Value = display
-
-'        strSQL = "select staff_name,staff_id from staff_info where staff_id = '" & Pelapor_id.Text & "' "
-'        Dim strconn As String = ConfigurationManager.AppSettings("connectionstring")
-'        Dim objconn As SqlConnection = New SqlConnection(strconn)
-'        Dim sqlDa As New SqlDataAdapter(strSQL, objconn)
-
-'        Try
-'            Dim ds As DataSet = New DataSet
-'            sqlDa.Fill(ds)
-
-'            If ds.Tables(0) Is Nothing OrElse ds.Tables(0).Rows.Count = 0 Then
-'                Person_charge.Text = ""
-
-'            ElseIf Pelapor_id.Text = ds.Tables(0).Rows(0)("staff_id").ToString() Then
-'                Person_charge.Text = ds.Tables(0).Rows(0)("staff_name").ToString()
-
-
-'            End If
-
-'        Catch ex As Exception
-
-'        End Try
-
-'    End Sub
-
-
-
-'    Private Sub btn_search_serverclick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-'        Dim display As String = "block"
-'        HiddenField1.Value = display
-
-'        strSQL = "select class_info.class_Name, student_info.student_Name, student_info.student_Mykad, student_info.student_ID from student_info
-'            left join course on course.std_id = student_info.std_id
-'            left join class_info on class_info.class_id = course.class_id
-'            where student_info.student_id = '" & student_Mykad.Text & "' or student_info.student_mykad = '" & student_Mykad.Text & "' and class_info.class_type = 'Compulsory'"
-'        Dim strConn As String = ConfigurationManager.AppSettings("connectionString")
-'        Dim objConn As SqlConnection = New SqlConnection(strConn)
-'        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-'        Try
-'            Dim ds As DataSet = New DataSet
-'            sqlDA.Fill(ds)
-
-'            If ds.Tables(0) Is Nothing OrElse ds.Tables(0).Rows.Count = 0 Then
-'                Response.Redirect("admin_edit_disiplin.aspx?result=8&admin_ID=" + Request.QueryString("admin_ID"))
-'                Student_name.Text = ""
-'                Student_class.Text = ""
-'                student_Mykad.Text = ""
-
-
-'            ElseIf student_Mykad.Text = ds.Tables(0).Rows(0)("student_id").ToString() OrElse student_Mykad.Text = ds.Tables(0).Rows(0)("student_mykad") Then
-'                Hidden_IC.Text = ds.Tables(0).Rows(0)("student_mykad").ToString()
-'                student_id.Text = ds.Tables(0).Rows(0)("student_id").ToString()
-'                Student_name.Text = ds.Tables(0).Rows(0)("student_name").ToString()
-'                Student_class.Text = ds.Tables(0).Rows(0)("class_name").ToString()
-
-
-'            End If
-'        Catch ex As Exception
-
-'        End Try
-'    End Sub
-'    Private Sub Btnsimpan_serverClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
-'        Dim errorCount As Integer = 0S
-
-'        ''get student ID
-'        Dim get_StdID As String = "select student_info.std_ID from student_info left join student_level on student_info.std_ID = student_level.std_ID
-'                                    where student_level.year = '" & Now.Year & "' and (student_info.student_ID = '" & student_Mykad.Text & "' or student_info.student_Mykad = '" & student_Mykad.Text & "')"
-'        Dim data_StdID As String = oCommon.getFieldValue(get_StdID)
-
-'        ''get class ID
-'        Dim get_ClassID As String = "select class_ID from class_info where class_Name = '" & Student_class.Text & "' and class_year = '" & Now.Year & "'"
-'        Dim data_ClassID As String = oCommon.getFieldValue(get_ClassID)
-
-'        ''get staff ID
-'        Dim get_StfID As String = "select stf_ID from staff_Info where staff_ID = '" & Pelapor_id.Text & "' and staff_year = '" & Now.Year & "'"
-'        Dim data_StfID As String = oCommon.getFieldValue(get_StfID)
-
-'        ''get case ID
-'        Dim get_CaseID As String = "Select case_ID from case_info where case_Name = '" & ddlDiciplinetype.SelectedValue & "'"
-'        Dim data_CaseID As String = oCommon.getFieldValue(get_CaseID)
-
-'        If ddlDiciplinetype.SelectedIndex > 0 Then
-'            If Student_name.Text <> "" And Not IsNumeric(Student_name.Text) Then
-'                If student_id.Text <> "" And Regex.IsMatch(student_id.Text, "^[A-Za-z0-9]+$") Then
-'                    If Person_charge.Text <> "" And Not IsNumeric(Person_charge.Text) And Not IsNothing(Person_charge.Text) And Regex.IsMatch(Person_charge.Text, "^[A-Za-z ]+$") Then
-'                        If Pelapor_id.Text <> "" Then
-
-'                            Using STDDATA As New SqlCommand("INSERT INTO dicipline_info(std_ID,class_ID,case_ID,stf_ID,Detail_Case,Dicipline_Action,Dicipline_Date) values
-'                                ('" & data_StdID & "','" & data_ClassID & "','" & data_CaseID & "','" & data_StfID & "','" & Detail_case.Text & "','" & Action_box.Text & "','" & CurrentDate.Text & "')", objConn)
-'                                objConn.Open()
-'                                Dim i = STDDATA.ExecuteNonQuery()
-'                                objConn.Close()
-'                                If i <> 0 Then
-'                                    errorCount = 0 ''success
-'                                Else
-'                                    errorCount = 1 ''
-
-'                                End If
-'                            End Using
-'                        Else
-'                            errorCount = 2 ''id pelapor
-'                        End If
-'                    Else
-'                        errorCount = 3 ''nama person in charge
-'                    End If
-'                Else
-'                    errorCount = 4 ''student id
-'                End If
-'            Else
-'                errorCount = 5 ''student name
-'            End If
-'        Else
-'            errorCount = 6 ''student mykad
-'        End If
-
-
-'        If errorCount = 0 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=1&admin_ID=" + Request.QueryString("admin_ID"))
-'        ElseIf errorCount = 1 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=-1&admin_ID=" + Request.QueryString("admin_ID"))
-'        ElseIf errorCount = 2 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=2&admin_ID=" + Request.QueryString("admin_ID"))
-'        ElseIf errorCount = 3 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=3&admin_ID=" + Request.QueryString("admin_ID"))
-'        ElseIf errorCount = 4 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=4&admin_ID=" + Request.QueryString("admin_ID"))
-'        ElseIf errorCount = 5 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=5&admin_ID=" + Request.QueryString("admin_ID"))
-'        ElseIf errorCount = 6 Then
-'            Response.Redirect("admin_edit_disiplin.aspx?result=6&admin_ID=" + Request.QueryString("admin_ID"))
-
-
-'        End If
-
-'    End Sub
-
-'    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-'        Response.Redirect("admin_login_berjaya.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-'    End Sub
-
-
-'End Class
-
 Public Class Disiplin_Update
     Inherits System.Web.UI.UserControl
 
@@ -224,35 +16,58 @@ Public Class Disiplin_Update
     Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
     Dim objConn As SqlConnection = New SqlConnection(strConn)
     Dim oCommon As New Commonfunction
-    Dim oDes As New Simple3Des("p@ssw0rd1")
-
-    Dim data_StdID As String
-    Dim data_StdName As String
-    Dim data_className As String
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then
-                result = Request.QueryString("result")
 
-                Dim id As String = ""
-                id = Request.QueryString("admin_ID")
-                dicipline()
-                action_info()
+                Dim getStatus As String = Request.QueryString("status")
 
-                'StaffDDL()
-                CurrentDate.Text = Date.Now.ToString("dd MMMM yyyy")
-                'setReporterDDLToCurrUser()
+                If getStatus = "VC" Then ''View Case
+                    txtbreadcrum1.Text = "View Case"
+                    ViewCase.Visible = True
+                    RegisterCase.Visible = False
 
-                CurrentDate.Text = Date.Now.ToString("dd MMMM yyyy")
+                    btnViewCase.Attributes("class") = "btn btn-info"
+                    btnRegisterCase.Attributes("class") = "btn btn-default font"
+
+                    View_CaseYear_List()
+                    View_CaseMonth_List()
+                    View_CaseLevel_List()
+
+                ElseIf getStatus = "RC" Then ''Register Case
+                    txtbreadcrum1.Text = "Register Case"
+                    ViewCase.Visible = False
+                    RegisterCase.Visible = True
+
+                    btnViewCase.Attributes("class") = "btn btn-default font"
+                    btnRegisterCase.Attributes("class") = "btn btn-info"
+
+                    txtDate.Text = Date.Now.ToString("dd MMMM yyyy")
+
+                    txtStudent_Name.Enabled = False
+                    txtClass_Name.Enabled = False
+                    txtStudent_Level.Enabled = False
+
+                    caseCategory_List()
+                    caseName_List()
+
+                End If
             End If
         Catch ex As Exception
         End Try
     End Sub
 
-    Protected Sub dicipline()
+    Private Sub btnViewCase_ServerClick(sender As Object, e As EventArgs) Handles btnViewCase.ServerClick
+        Response.Redirect("admin_edit_disiplin.aspx?admin_ID=" + Request.QueryString("admin_ID") + "&status=VC")
+    End Sub
 
-        strSQL = "select case_name,case_ID from case_info "
+    Private Sub btnRegisterCase_ServerClick(sender As Object, e As EventArgs) Handles btnRegisterCase.ServerClick
+        Response.Redirect("admin_edit_disiplin.aspx?admin_ID=" + Request.QueryString("admin_ID") + "&status=RC")
+    End Sub
+
+    Private Sub caseCategory_List()
+        strSQL = "SELECT * from setting where Type = 'Discipline' order by ID DESC"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -261,263 +76,368 @@ Public Class Disiplin_Update
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-
-            ddlDiciplinetype.DataSource = ds
-            ddlDiciplinetype.DataTextField = "case_name"
-            ddlDiciplinetype.DataValueField = "case_ID"
-            ddlDiciplinetype.DataBind()
-            ddlDiciplinetype.Items.Insert(0, New ListItem("-- Pick A Case --", String.Empty))
-            ddlDiciplinetype.SelectedIndex = 0
-
+            ddlCase_Category.DataSource = ds
+            ddlCase_Category.DataTextField = "Parameter"
+            ddlCase_Category.DataValueField = "Value"
+            ddlCase_Category.DataBind()
+            ddlCase_Category.Items.Insert(0, New ListItem("Select Case Category", String.Empty))
         Catch ex As Exception
 
+        Finally
+            objConn.Dispose()
         End Try
     End Sub
 
-    Protected Sub CounselingStaffDDl()
-        Dim query As String = "SELECT distinct staff_Info.staff_Name, staff_Info.stf_ID 
-                               FROM staff_Info 
-                               LEFT JOIN staff_Login ON staff_Info.stf_ID = staff_Login.stf_ID 
-                               WHERE staff_Login.staff_Status = 'Access' ORDER BY staff_Name ASC"
-        Dim sqlDA As New SqlDataAdapter(query, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlCounselingStaff.DataSource = ds
-            ddlCounselingStaff.DataTextField = "staff_Name"
-            ddlCounselingStaff.DataValueField = "stf_ID"
-            ddlCounselingStaff.DataBind()
-            ddlCounselingStaff.Items.Insert(0, New ListItem("-- Select Staff In Charge --", String.Empty))
-            ddlCounselingStaff.SelectedIndex = 0
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Private Sub action_info()
-        Dim query As String = "select * from warning_letters_table"
-        Dim sqlDA As New SqlDataAdapter(query, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlActionType.DataSource = ds
-            ddlActionType.DataTextField = "title"
-            ddlActionType.DataValueField = "id"
-            ddlActionType.DataBind()
-            ddlActionType.Items.Insert(0, New ListItem("-- Select= Action --", String.Empty))
-            ddlActionType.SelectedIndex = 0
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Private Sub btn_search_serverclick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-
-        If student_Mykad.Text.Length > 0 Then
-
-            Try
-                'Get student name
-                Dim query_stdName As String = "select student_info.student_Name from student_info
-                                                 left join course on course.std_id = student_info.std_id
-                                                 left join class_info on class_info.class_id = course.class_id
-                                                 where (student_info.student_id = '" & student_Mykad.Text & "'
-                                                 or student_info.student_mykad = '" & student_Mykad.Text & "')
-                                                 and class_info.class_type = 'Compulsory'"
-                data_StdName = oCommon.getFieldValue(query_stdName)
-
-                'Get class name
-                Dim query_stdClass As String = "select class_info.class_name from student_info
-                                                     left join course on course.std_id = student_info.std_id
-                                                     left join class_info on class_info.class_id = course.class_id
-                                                     where (student_info.student_id = '" & student_Mykad.Text & "'
-                                                     or student_info.student_mykad = '" & student_Mykad.Text & "')
-                                                     and class_info.class_type = 'Compulsory'"
-                data_className = oCommon.getFieldValue(query_stdClass)
-
-                strSQL = "select Student_ID from student_info  where (student_info.student_id = '" & student_Mykad.Text & "' or student_info.student_mykad = '" & student_Mykad.Text & "') and student_status = 'Access' "
-                strRet = oCommon.getFieldValue(strSQL)
-
-                If data_StdName.Length > 0 And data_className.Length > 0 Then
-                    Dim display As String = "block"
-                    HiddenField1.Value = display
-                    StudentNameLbl.Text = data_StdName
-                    StudentClassLbl.Text = data_className
-                    StudentIDLbl.Text = strRet
-                Else
-                    Response.Redirect("admin_edit_disiplin.aspx?result=4&admin_ID=" + Request.QueryString("admin_ID"))
-                End If
-
-            Catch ex As Exception
-
-            End Try
-        Else
-            Response.Redirect("admin_edit_disiplin.aspx?result=4&admin_ID=" + Request.QueryString("admin_ID"))
-        End If
-
-    End Sub
-
-    Private Sub Btnsimpan_serverClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
-        Dim errorCount As Integer = 0
-
-        'get student ID
-        Dim get_StdID As String = " SELECT std_ID 
-                                    FROM student_info 
-                                    WHERE (student_ID = '" & student_Mykad.Text & "' OR student_Mykad = '" & student_Mykad.Text & "') AND student_Status = 'Access'"
-        Dim data_StdID As String = oCommon.getFieldValue(get_StdID)
-
-        'get class ID
-        Dim get_ClassID As String = "select class_ID from class_info where class_Name = '" & StudentClassLbl.Text & "' and class_year = '" & Now.Year & "'"
-        Dim data_ClassID As String = oCommon.getFieldValue(get_ClassID)
-
-        'get case ID
-        Dim get_CaseID As String = "Select case_ID from case_info where case_ID = '" & ddlDiciplinetype.SelectedValue & "'"
-        Dim data_CaseID As String = oCommon.getFieldValue(get_CaseID)
-
-        Dim get_StdName As String = "select student_Name from student_info where std_ID='" + data_StdID + "' and student_Status = 'Access'"
-        Dim data_StdName As String = oCommon.getFieldValue(get_StdName)
-
-        Dim get_point As String = "select case_MeritDemerit_Point from case_info where case_ID = '" & ddlDiciplinetype.SelectedValue & "'"
-        Dim data_point As String = oCommon.getFieldValue(get_point)
-
-        Dim newDispQuery As String = "INSERT INTO dicipline_info(std_ID, class_ID, case_ID, stf_ID, Detail_Case, warning_id, Dicipline_Date,meritdemerit_point ) VALUES ('" & data_StdID & "','" & data_ClassID & "','" & ddlDiciplinetype.SelectedValue & "','" & ddlCounselingStaff.SelectedValue & "','" & Detail_case.Text & "','" & ddlActionType.SelectedValue & "','" & CurrentDate.Text & "','" & data_point & "')"
-
-        If ddlDiciplinetype.SelectedIndex > 0 Then
-            If data_StdID.Length > 0 Then
-                If CurrentDate.Text <> "" And IsDate(CurrentDate.Text) Then
-                    If ddlActionType.SelectedIndex > 0 Then
-                        If Detail_case.Text <> "" And Regex.IsMatch(Detail_case.Text, "^[0-9A-Za-z ]+$") Then
-                            If needCounseling.Checked = True Then
-
-                                Using STDDATA As New SqlCommand(newDispQuery, objConn)
-                                    objConn.Open()
-                                    Dim dispID = STDDATA.ExecuteNonQuery()
-                                    objConn.Close()
-
-                                    If dispID <> 0 Then
-                                        If ddlCounselingStaff.SelectedIndex > 0 Then
-                                            If data_StdID <> "" Then
-                                                If CounselingDate.Text <> "" And IsDate(CounselingDate.Text) Then
-
-                                                    Dim captureDate As Date = CounselingDate.Text
-
-                                                    If txtstart_time.Text.Length > 0 And txtend_time.Text.Length > 0 Then
-                                                        If txtcode_session.Text.Length > 0 Then
-                                                            If txtclient_classification.Text.Length > 0 Then
-                                                                If txttype_interview.Text.Length > 0 Then
-
-                                                                    Using KSLRDATA As New SqlCommand("INSERT INTO counseling_info (stf_ID,std_ID,disiplin_id,kslr_year,kslr_date,kslr_day,kslr_startTime,kslr_endTime,kslr_status,kslr_codesession,kslr_classificationClass,kslr_typeIV) 
-                                                                                                      VALUES ('" & ddlCounselingStaff.SelectedValue & "','" & data_StdID & "','" & dispID & "','" & Now.Year & "','" & CounselingDate.Text & "','" & captureDate.DayOfWeek.ToString().ToUpper & "','" & txtstart_time.Text & "','" & txtend_time.Text & "','Uncompleted','" & txtcode_session.Text & "','" & txtclient_classification.Text & "','" & txttype_interview.Text & "')", objConn)
-                                                                        objConn.Open()
-                                                                        Dim i = KSLRDATA.ExecuteNonQuery()
-                                                                        objConn.Close()
-
-                                                                        If i <> 0 Then
-                                                                            errorCount = 0
-                                                                        Else
-                                                                            errorCount = 13 'error save counseling
-                                                                        End If
-                                                                    End Using
-
-                                                                Else
-                                                                    errorCount = 17 ''error txt type of interview
-                                                                End If
-                                                            Else
-                                                                errorCount = 16 ''error txt client classification
-                                                            End If
-                                                        Else
-                                                            errorCount = 15 ''error txt code session
-                                                        End If
-                                                    Else
-                                                        errorCount = 14 ''error start and end time
-                                                    End If
-                                                Else
-                                                    errorCount = 11 'counseling date error
-                                                End If
-                                            Else
-                                                errorCount = 5 'not student found
-                                            End If
-                                        Else
-                                            errorCount = 12 'counselor incharge not selected
-                                        End If
-                                    Else
-                                        errorCount = 10 'error saving disiplin
-                                    End If
-                                End Using
-
-                            Else
-
-                                Using STDDATA As New SqlCommand(newDispQuery, objConn)
-                                    objConn.Open()
-                                    Dim i = STDDATA.ExecuteNonQuery()
-                                    objConn.Close()
-                                    If i <> 0 Then
-                                        errorCount = 0 'no error
-                                    Else
-                                        errorCount = 10 'cannot save disiplin
-                                    End If
-                                End Using
-                            End If
-                        Else
-                            errorCount = 9 'Detail_case error
-                        End If
-                    Else
-                        errorCount = 8 'Action_box error
-                    End If
-                Else
-                    errorCount = 7 'CurrDate error
-                End If
-            Else
-                errorCount = 5 'id student not exist
-            End If
-        Else
-            errorCount = 4 'case type not selected
-        End If
-
-        Response.Redirect(String.Format("admin_edit_disiplin.aspx?result={0}&admin_ID={1}", errorCount, Request.QueryString("admin_ID")))
-    End Sub
-
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_login_berjaya.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-    End Sub
-
-    Private Sub needCounseling_CheckedChanged(sender As Object, e As EventArgs) Handles needCounseling.CheckedChanged
-        If needCounseling.Checked = True And showCounselingDiv.Visible = False Then
-            showCounselingDiv.Visible = True
-        ElseIf needCounseling.Checked = False And showCounselingDiv.Visible = True Then
-            showCounselingDiv.Visible = False
-        End If
-        CounselingStaffDDl()
-        CounselingDate.Text = Date.Today.ToString("dd MMMM yyyy")
-
-    End Sub
-
-    Protected Sub ddlActionType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlActionType.SelectedIndexChanged
-        Dim getDetail As String = "SELECT * FROM warning_letters_table WHERE id='" + ddlActionType.SelectedValue + "'"
-
+    Private Sub caseName_List()
+        strSQL = "SELECT * from case_info where case_Category = '" & ddlCase_Category.SelectedValue & "' order by case_Name asc"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(getDetail, objConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
         Try
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-            If ds.Tables(0).Rows.Count > 0 Then
-
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item("letter_content")) Then
-                    txtLetterContent.Content = Server.HtmlDecode(ds.Tables(0).Rows(0).Item("letter_content")).ToString
-                Else
-                    txtLetterContent.Content = Server.HtmlDecode("<b>Write content here</b>")
-                End If
-
-            End If
-            objConn.Close()
+            ddlCase_Name.DataSource = ds
+            ddlCase_Name.DataTextField = "case_Name"
+            ddlCase_Name.DataValueField = "case_ID"
+            ddlCase_Name.DataBind()
+            ddlCase_Name.Items.Insert(0, New ListItem("Select Case Name", String.Empty))
         Catch ex As Exception
 
+        Finally
+            objConn.Dispose()
         End Try
     End Sub
+
+    Protected Sub ddlCase_Category_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlCase_Category.SelectedIndexChanged
+        Try
+            caseName_List()
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub btnSearch_Student_ServerClick(sender As Object, e As EventArgs) Handles btnSearch_Student.ServerClick
+
+        Dim get_date As String = txtDate.Text
+        Dim LastFour_Char As String = get_date.Substring(get_date.Length - 4, 4)
+
+        Dim get_StudentName As String = "   select student_Name from student_info where student_Mykad = '" & txtStudentInformation.Text & "' and student_Status = 'Access' and student_ID is not null and student_ID <> '' and student_ID like '%M%'"
+        Dim get_StudentLevel As String = "  select distinct MAX(A.student_Level) as student_Level from student_Level A left join student_info B on A.std_ID = B.std_ID
+                                            where B.student_Mykad = '" & txtStudentInformation.Text & "' and B.student_Status = 'Access' and B.student_ID is not null and B.student_ID <> '' and B.student_ID like '%M%'  and A.year = '" & LastFour_Char & "'"
+        Dim get_StudentClass As String = "  select distinct A.class_Name from class_info A left join course B on A.class_ID = B.class_ID left join student_info C on B.std_ID = C.std_ID
+                                            where C.student_Mykad = '" & txtStudentInformation.Text & "' and C.student_Status = 'Access' and C.student_ID is not null and C.student_ID <> '' and C.student_ID like '%M%'
+                                            and B.year = '" & LastFour_Char & "' and A.class_year = '" & LastFour_Char & "' and A.class_type = 'Compulsory'"
+
+        txtStudent_Name.Text = oCommon.getFieldValue(get_StudentName)
+        txtStudent_Level.Text = oCommon.getFieldValue(get_StudentLevel)
+        txtClass_Name.Text = oCommon.getFieldValue(get_StudentClass)
+
+    End Sub
+
+    Private Sub btnUpdate_ServerClick(sender As Object, e As EventArgs) Handles btnUpdate.ServerClick
+
+        If checkData() = True Then
+
+            Dim get_date As String = txtDate.Text
+            Dim LastFour_Char As String = get_date.Substring(get_date.Length - 4, 4)
+
+            ''Get Std_ID
+            Dim Find_StdID As String = "Select std_ID from student_info where student_Mykad = '" & txtStudentInformation.Text & "' and student_Status = 'Access' and student_ID is not null and student_ID <> '' and student_ID like '%M%'"
+            Dim Get_StdID As String = oCommon.getFieldValue(Find_StdID)
+
+            ''Get Class_ID
+            Dim Find_ClassID As String = "Select class_ID from class_info where class_year = '" & LastFour_Char & "' and class_Name = '" & txtClass_Name.Text & "'"
+            Dim Get_ClassID As String = oCommon.getFieldValue(Find_ClassID)
+
+            ''Get Demerit Point
+            Dim Find_DemeritPoint As String = "Select case_MeritDemerit_Point from case_info where case_ID = '" & ddlCase_Name.SelectedValue & "'"
+            Dim Get_DemeritPoint As String = oCommon.getFieldValue(Find_DemeritPoint)
+
+            Dim getCheck_Counseling As String = ""
+
+            If Check_NeedCounseling.Checked = True Then
+                getCheck_Counseling = "True"
+            Else
+                getCheck_Counseling = "False"
+            End If
+
+            Dim Get_Date_SS As String = txtDate.Text.Substring(0, 2)
+            Dim Get_Year_SS As String = txtDate.Text.Substring(txtDate.Text.Length - 4, 4)
+            Dim Get_Month_SS As String = txtDate.Text.Remove(0, 3)
+            Get_Month_SS = Get_Month_SS.Remove(Get_Month_SS.Length - 5, 5)
+
+            If Get_Month_SS = "January" Then
+                Get_Month_SS = "01"
+            ElseIf Get_Month_SS = "February" Then
+                Get_Month_SS = "02"
+            ElseIf Get_Month_SS = "March" Then
+                Get_Month_SS = "03"
+            ElseIf Get_Month_SS = "April" Then
+                Get_Month_SS = "04"
+            ElseIf Get_Month_SS = "May" Then
+                Get_Month_SS = "05"
+            ElseIf Get_Month_SS = "June" Then
+                Get_Month_SS = "06"
+            ElseIf Get_Month_SS = "July" Then
+                Get_Month_SS = "07"
+            ElseIf Get_Month_SS = "August" Then
+                Get_Month_SS = "08"
+            ElseIf Get_Month_SS = "September" Then
+                Get_Month_SS = "09"
+            ElseIf Get_Month_SS = "October" Then
+                Get_Month_SS = "10"
+            ElseIf Get_Month_SS = "November" Then
+                Get_Month_SS = "11"
+            ElseIf Get_Month_SS = "December" Then
+                Get_Month_SS = "12"
+            End If
+
+            Dim Final_Date_Data As String = Get_Date_SS & "/" & Get_Month_SS & "/" & Get_Year_SS
+
+            Using STDDATA As New SqlCommand("INSERT INTO dicipline_info(std_ID, class_ID, case_ID, Detail_Case, Dicipline_Date, meritdemerit_point, need_Counseling ) values ('" & Get_StdID & "','" & Get_ClassID & "','" & ddlCase_Name.SelectedValue & "','" & txtCase_Detail.Text & "','" & Final_Date_Data & "','" & Get_DemeritPoint & "','" & getCheck_Counseling & "')", objConn)
+                objConn.Open()
+                Dim i = STDDATA.ExecuteNonQuery()
+                objConn.Close()
+
+                If i <> 0 Then
+                    ShowMessage(" Register Student Disciplinary Case ", MessageType.Success)
+                Else
+                    ShowMessage(" Unsuccessful Register Student Disciplinary Case ", MessageType.Error)
+                End If
+            End Using
+        End If
+    End Sub
+
+    Public Function checkData()
+
+        If txtStudentInformation.Text.Length = 0 Then
+            ShowMessage(" Please Fill In Student Information ", MessageType.Error)
+            Return False
+        End If
+
+        If Not Regex.IsMatch(txtStudentInformation.Text, "^[A-Z0-9]+$") Then
+            ShowMessage(" Please Fill In Student Information With The Correct Format ", MessageType.Error)
+            Return False
+        End If
+
+        If ddlCase_Category.SelectedIndex = 0 Then
+            ShowMessage(" Please Select Case Category ", MessageType.Error)
+            Return False
+        End If
+
+        If ddlCase_Name.SelectedIndex = 0 Then
+            ShowMessage(" Please Select Case Name ", MessageType.Error)
+            Return False
+        End If
+
+        Return True
+    End Function
+
+    Private Sub View_CaseYear_List()
+        strSQL = "select distinct RIGHT(Dicipline_Date,4) as date from dicipline_info order by date asc"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlView_CaseYear.DataSource = ds
+            ddlView_CaseYear.DataTextField = "date"
+            ddlView_CaseYear.DataValueField = "date"
+            ddlView_CaseYear.DataBind()
+            ddlView_CaseYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub View_CaseMonth_List()
+        strSQL = "select Parameter, Value from setting where type = 'month' order by ID ASC"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlView_CaseMonth.DataSource = ds
+            ddlView_CaseMonth.DataTextField = "Parameter"
+            ddlView_CaseMonth.DataValueField = "Value"
+            ddlView_CaseMonth.DataBind()
+            ddlView_CaseMonth.Items.Insert(0, New ListItem("Select Month", String.Empty))
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub View_CaseLevel_List()
+        strSQL = "select * from setting where type = 'level'"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlVIew_CaseLevel.DataSource = ds
+            ddlVIew_CaseLevel.DataTextField = "Parameter"
+            ddlVIew_CaseLevel.DataValueField = "Value"
+            ddlVIew_CaseLevel.DataBind()
+            ddlVIew_CaseLevel.Items.Insert(0, New ListItem("Select Level", String.Empty))
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub View_CaseClass_List()
+        strSQL = "Select class_ID, class_Name from class_info where class_year = '" & ddlView_CaseYear.SelectedValue & "' and class_Level = '" & ddlVIew_CaseLevel.SelectedValue & "' and class_type = 'Compulsory' and class_Campus = 'PGPN' order by class_Name asc"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlView_CaseClass.DataSource = ds
+            ddlView_CaseClass.DataTextField = "class_Name"
+            ddlView_CaseClass.DataValueField = "class_ID"
+            ddlView_CaseClass.DataBind()
+            ddlView_CaseClass.Items.Insert(0, New ListItem("Select Class", String.Empty))
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Protected Sub ddlView_CaseYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlView_CaseYear.SelectedIndexChanged
+        Try
+            View_CaseClass_List()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ddlView_CaseMonth_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlView_CaseMonth.SelectedIndexChanged
+        Try
+            View_CaseClass_List()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ddlVIew_CaseLevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlVIew_CaseLevel.SelectedIndexChanged
+        Try
+            View_CaseClass_List()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ddlView_CaseClass_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlView_CaseClass.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Function BindData(ByVal gvTable As GridView) As Boolean
+        Dim mydataSet As New DataSet
+        Dim myDataAdapter As New SqlDataAdapter(getSQL, strConn)
+        myDataAdapter.SelectCommand.CommandTimeout = 120
+
+        Try
+            myDataAdapter.Fill(mydataSet, "myaccount")
+
+            gvTable.DataSource = mydataSet
+            gvTable.DataBind()
+            objConn.Close()
+
+        Catch ex As Exception
+            Return False
+        End Try
+        Return True
+    End Function
+
+    Private Function getSQL() As String
+
+        Dim tmpSQL As String
+        Dim strWhere As String = ""
+        Dim strOrderby As String = " ORDER by B.Dicipline_Date ASC, C.class_Name ASC, D.student_Name ASC "
+
+        tmpSQL = "  select B.disiplin_id, D.student_Name, C.class_Name, A.case_Category, B.meritdemerit_point, B.Dicipline_Date from case_info A
+                    left join dicipline_info B on A.case_ID = B.case_ID
+                    left join class_info C on B.class_ID = C.class_ID
+                    left join student_info D on B.std_ID = D.std_ID
+                    where D.student_Status = 'Access' and D.student_ID is not null and D.student_ID <> '' and D.student_Id like '%M%'
+                    and B.Dicipline_Date like '%" & ddlView_CaseYear.SelectedValue & "%'"
+
+        If ddlView_CaseMonth.SelectedIndex > 0 Then
+            strWhere += "   and B.Dicipline_Date like '%/" & ddlView_CaseMonth.SelectedValue & "/%'"
+        End If
+
+        If ddlVIew_CaseLevel.SelectedIndex > 0 Then
+            strWhere += "   and C.class_Level = '" & ddlVIew_CaseLevel.SelectedValue & "'"
+        End If
+
+        If ddlView_CaseClass.SelectedIndex > 0 Then
+            strWhere += "   and C.class_ID = '" & ddlView_CaseClass.SelectedValue & "'"
+        End If
+
+        getSQL = tmpSQL & strWhere & strOrderby
+        Return getSQL
+    End Function
+
+    Protected Sub datRespondent_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles datRespondent.RowDeleting
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim strKeyName As String = datRespondent.DataKeys(e.RowIndex).Value.ToString
+
+        Try
+            Dim MyConnection As SqlConnection = New SqlConnection(strConn)
+            Dim Dlt_ClassData As New SqlDataAdapter()
+            Dim dlt_Class As String
+
+            Dlt_ClassData.SelectCommand = New SqlCommand()
+            Dlt_ClassData.SelectCommand.Connection = MyConnection
+            Dlt_ClassData.SelectCommand.CommandText = "delete dicipline_info where disiplin_id = '" & strKeyName & "'"
+            MyConnection.Open()
+            dlt_Class = Dlt_ClassData.SelectCommand.ExecuteScalar()
+            MyConnection.Close()
+
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub datRespondent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondent.RowEditing
+        Dim strKeyCode As String = datRespondent.DataKeys(e.NewEditIndex).Value.ToString
+        Try
+            Response.Redirect("admin_edit_disiplin_kemaskini.aspx?disiplin_id=" + strKeyCode + "&admin_ID=" + Request.QueryString("admin_ID"))
+        Catch ex As Exception
+            ''lblMsg.Text = "System Error: " & ex.Message
+        End Try
+    End Sub
+
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
+    End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
+
 End Class

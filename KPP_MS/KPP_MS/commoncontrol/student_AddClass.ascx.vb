@@ -16,8 +16,12 @@ Public Class student_AddClass
         Try
             If Not IsPostBack Then
 
+                Checking_MenuAccess_Load()
+
                 ddlYear()
                 ddlLevel()
+                ddlProgram()
+                ddlCampus()
                 ddlclassChoose.Enabled = False
 
                 load_page()
@@ -30,8 +34,55 @@ Public Class student_AddClass
         End Try
     End Sub
 
+    Private Sub Checking_MenuAccess_Load()
+
+        Btnsimpan.Visible = False
+
+        Dim accessID As String = "select MAX(stf_ID) from security_ID where loginID_Number = '" & Request.QueryString("admin_ID") & "'"
+        Dim stf_ID_Data As String = oCommon.getFieldValue(accessID)
+
+        Dim str_user_position As String = CType(Session.Item("user_position"), String)
+
+        ''Get Login ID from Staff_Login
+        strSQL = "Select login_ID from staff_Login where stf_ID = '" & stf_ID_Data & "' and staff_Access = '" & str_user_position & "'"
+        Dim find_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        ''Get Count from Menu_master_User
+        strSQL = "select count(*) Count_No from menu_master_user where stf_ID = '" & stf_ID_Data & "' and login_ID = '" & find_LoginID & "'"
+        Dim find_CountNo_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        ''Loop The Count_No
+        For num As Integer = 0 To find_CountNo_LoginID - 1 Step 1
+
+            ''Get Main Menu Data
+            strSQL = "  Select A.Menu From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_Menu_Data As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 Register Data 
+            strSQL = "  Select B.F1_Register From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1Register As String = oCommon.getFieldValue(strSQL)
+
+            If find_Data_Menu_Data = "Class & Course Placement" And find_Data_Menu_Data.Length > 0 Then
+
+                If find_Data_F1Register.Length > 0 And find_Data_F1Register = "TRUE" Then
+                    Btnsimpan.Visible = True
+                End If
+            End If
+
+            If find_Data_Menu_Data = "All" Then
+                Btnsimpan.Visible = True
+            End If
+
+        Next
+
+    End Sub
+
     Private Sub load_page()
-        strSQL = "SELECT year from student_Level where year ='" & Now.Year & "'"
+        strSQL = "SELECT MAX(Parameter) as year from setting where type = 'year'"
 
         '--debug
         ''Response.Write(strSQLstd)
@@ -54,15 +105,6 @@ Public Class student_AddClass
                 ddl_year.SelectedValue = ""
             End If
         End If
-    End Sub
-
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-        Try
-            strRet = BindData(datRespondent)
-
-        Catch ex As Exception
-
-        End Try
     End Sub
 
     Private Sub datRespondent_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles datRespondent.PageIndexChanging
@@ -108,9 +150,7 @@ Public Class student_AddClass
             If gvTable.Rows.Count = 0 Then
                 ddlclassChoose.Visible = False
                 Btnsimpan.Visible = False
-                nodatamessage.Visible = True
             Else
-                nodatamessage.Visible = False
                 Btnsimpan.Visible = True
                 ddlclassChoose.Visible = True
             End If
@@ -136,14 +176,15 @@ Public Class student_AddClass
                   student_info.student_Name,
                   student_Level.student_Level,
                   student_Level.student_Sem,
-                  class_info.class_Name
+                  class_info.class_Name,
+                  student_info.student_Campus
                   From student_info 
                   left join student_Level on student_info.std_ID=student_Level.std_ID
                   left join course on student_info.std_ID= course.std_ID 
                   left join class_info on course.class_ID = class_info.class_ID"
-        strWhere = " WHERE student_info.std_ID Is Not NULL"
-        strWhere += " And course.year = '" & ddl_year.SelectedValue & "' "
-        strWhere += " And student_level.year = '" & ddl_year.SelectedValue & "' AND ( class_info.class_type = 'Compulsory' or course.class_ID is null)"
+        strWhere = " WHERE student_info.std_ID Is Not NULL and (student_info.student_Status = 'Access' or student_info.student_Status = 'Graduate') and student_info.student_ID is not null and student_info.student_ID <> '' and ((student_info.student_ID like '%M%' or student_info.student_ID like '%P%') or student_info.student_ID like '%P%')"
+        strWhere += " And course.year = '" & ddl_year.SelectedValue & "' and student_Stream = '" & ddl_Program.SelectedValue & "' and student_Level.Registered = 'Yes' "
+        strWhere += " And student_level.year = '" & ddl_year.SelectedValue & "' AND ( class_info.class_type = 'Compulsory' or course.class_ID is null) and student_info.student_Campus = '" & ddl_Campus.SelectedValue & "'"
 
         If ddl_level.SelectedIndex > 0 Then
             strWhere += " And student_Level.student_Level = '" & ddl_level.SelectedValue & "'"
@@ -151,18 +192,6 @@ Public Class student_AddClass
 
         If ddl_sem.SelectedIndex > 0 Then
             strWhere += " And student_Level.student_Sem = '" & ddl_sem.SelectedValue & "'"
-        End If
-
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " And student_info.student_ID Like '%" & txtstudent.Text & "%'"
-        End If
-
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " OR student_info.student_Name LIKE '%" & txtstudent.Text & "%'"
-        End If
-
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " OR student_info.student_Mykad LIKE '%" & txtstudent.Text & "%'"
         End If
 
         If ddl_class.SelectedIndex > 0 Then
@@ -184,7 +213,9 @@ Public Class student_AddClass
             If Not chkUpdate Is Nothing Then
                 ' Get the values of textboxes using findControl
                 Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
+
                 If chkUpdate.Checked = True Then
+
                     Dim studentLevel As String = ""
                     Dim studentID As String = ""
                     Dim classLevel As String = ""
@@ -200,7 +231,7 @@ Public Class student_AddClass
                     id = "select ID from student_Level where std_ID ='" & datastudentID & "' And year = '" & ddl_year.SelectedValue & "'"
                     Dim dataID As String = getFieldValue(id, strConn)
 
-                    classLevel = "Select class_Level from class_info where class_ID='" & ddlclassChoose.SelectedValue & "' And class_year = '" & ddl_year.SelectedValue & "'"
+                    classLevel = "Select class_Level from class_info where class_ID='" & ddlclassChoose.SelectedValue & "' And class_year = '" & ddl_year.SelectedValue & "' and course_Program = '" & ddl_Program.SelectedValue & "' and class_Campus = '" & ddl_Campus.SelectedValue & "'"
                     Dim dataclass As String = getFieldValue(classLevel, strConn)
 
                     religion = "select student_Religion from student_info where std_ID  ='" & datastudentID & "'"
@@ -221,6 +252,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ALL'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
                                     strsubj += " Union"
                                     strsubj += " Select subject_id from subject_info where"
                                     strsubj += " subject_type = 'Compulsory'"
@@ -228,6 +261,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ISLAM'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
 
                                 ElseIf ddl_level.SelectedValue = "Level 2" And ddl_sem.SelectedValue = "Sem 2" Then
 
@@ -237,6 +272,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ALL'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
                                     strsubj += " Union"
                                     strsubj += " Select subject_id from subject_info where"
                                     strsubj += " subject_type = 'Compulsory'"
@@ -244,6 +281,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ISLAM'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
 
                                 Else
 
@@ -254,6 +293,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ALL'"
                                     strsubj += " And subject_Name <> 'Portfolio'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
                                     strsubj += " Union"
                                     strsubj += " Select subject_id from subject_info where"
                                     strsubj += " subject_type = 'Compulsory'"
@@ -261,6 +302,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ISLAM'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
 
                                 End If
 
@@ -273,6 +316,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ALL'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
                                     strsubj += " Union"
                                     strsubj += " Select subject_id from subject_info where"
                                     strsubj += " subject_type = 'Compulsory'"
@@ -280,6 +325,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'OTHERS'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
 
                                 ElseIf ddl_level.SelectedValue = "Level 2" And ddl_sem.SelectedValue = "Sem 2" Then
 
@@ -289,6 +336,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ALL'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
                                     strsubj += " Union"
                                     strsubj += " Select subject_id from subject_info where"
                                     strsubj += " subject_type = 'Compulsory'"
@@ -296,6 +345,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'OTHERS'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
 
                                 Else
 
@@ -306,6 +357,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'ALL'"
                                     strsubj += " And subject_Name <> 'Portfolio'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
                                     strsubj += " Union"
                                     strsubj += " Select subject_id from subject_info where"
                                     strsubj += " subject_type = 'Compulsory'"
@@ -313,6 +366,8 @@ Public Class student_AddClass
                                     strsubj += " And subject_StudentYear = '" & ddl_level.SelectedValue & "'"
                                     strsubj += " And subject_sem = '" & ddl_sem.SelectedValue & "'"
                                     strsubj += " And subject_religions = 'OTHERS'"
+                                    strsubj += " And course_Program = '" & ddl_Program.SelectedValue & "'"
+                                    strsubj += " And subject_Campus = '" & ddl_Campus.SelectedValue & "'"
 
                                 End If
 
@@ -354,16 +409,16 @@ Public Class student_AddClass
                             Dim find_Mykad As String = "select student_Mykad from student_info where std_ID = '" & datastudentID & "'"
                             Dim get_Mykad As String = oCommon.getFieldValue(find_Mykad)
 
-                            Dim find_StudentID As String = "select StudentID from StudentProfile where MYKAD = '" & find_Mykad & "'"
+                            Dim find_StudentID As String = "select StudentID from StudentProfile where MYKAD = '" & get_Mykad & "'"
                             Dim get_StudentID As String = oCommon.getFieldValue_Permata(find_StudentID)
 
                             Dim find_kolejKelas As String = "select class_Name from class_info where class_ID = '" & ddlclassChoose.SelectedValue & "'"
                             Dim get_kolejKelas As String = oCommon.getFieldValue(find_kolejKelas)
 
-                            Dim find_kokoKelas As String = "select KelasID from koko_kelas where Kelas = '" & get_kolejKelas & "'"
+                            Dim find_kokoKelas As String = "select KelasID from koko_kelas where Kelas = '" & get_kolejKelas & "' and Tahun = '" & ddl_year.SelectedValue & "' and Kampus = '" & ddl_Campus.SelectedValue & "'"
                             Dim get_kokoKelas As String = oCommon.getFieldValue_Permata(find_kokoKelas)
 
-                            strSQL = "UPDATE koko_kelas SET KelasID = '" & get_kokoKelas & "' where StudentID = '" & get_StudentID & "' and Tahun = '" & ddl_year.SelectedValue & "'"
+                            strSQL = "UPDATE koko_pelajar SET KelasID = '" & get_kokoKelas & "' where StudentID = '" & get_StudentID & "' and Tahun = '" & ddl_year.SelectedValue & "'"
                             strRet = oCommon.ExecuteSQLPermata(strSQL)
 
                             ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -383,9 +438,9 @@ Public Class student_AddClass
         Next
 
         If errorCount > 0 Then
-            Response.Redirect("admin_pelajar_penempatan_kelas.aspx?result=-1&admin_ID=" + Request.QueryString("admin_ID"))
+            ShowMessage(" Unsuccessful Add Student Class & Course ", MessageType.Success)
         Else
-            Response.Redirect("admin_pelajar_penempatan_kelas.aspx?result=1&admin_ID=" + Request.QueryString("admin_ID"))
+            ShowMessage(" Add Student Class & Course ", MessageType.Success)
         End If
     End Sub
 
@@ -418,34 +473,10 @@ Public Class student_AddClass
     Protected Sub ddlLevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_level.SelectedIndexChanged
 
         ddlClass()
+        ddlSem()
 
-        If Not ddl_level.SelectedValue = "" Then
-
-            Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-            Dim objConn As SqlConnection = New SqlConnection(strConn)
-            Dim STDLEVEL As New SqlDataAdapter()
-
-            strSQL = "select class_ID,class_Name from class_info where class_Level ='" & ddl_level.SelectedValue & "'"
-            strSQL += " And class_year = '" & ddl_year.SelectedValue & "' and class_type = 'Compulsory'"
-
-            Debug.WriteLine(strSQL)
-
-            Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlclassChoose.DataSource = ds
-            ddlclassChoose.DataTextField = "class_Name"
-            ddlclassChoose.DataValueField = "class_ID"
-            ddlclassChoose.DataBind()
-            ddlclassChoose.Items.Insert(0, New ListItem("Select Class", String.Empty))
-            ddlclassChoose.SelectedIndex = 0
-
+        If ddl_level.SelectedIndex > 0 Then
             ddlclassChoose.Enabled = True
-
-            ddlSem()
-
         Else
             ddlclassChoose.Enabled = False
         End If
@@ -454,7 +485,7 @@ Public Class student_AddClass
 
     End Sub
 
-    Protected Sub ddlClass_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_sem.SelectedIndexChanged
+    Protected Sub ddl_sem_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_sem.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
 
@@ -464,10 +495,17 @@ Public Class student_AddClass
 
     End Sub
 
+    Protected Sub ddl_Campus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Campus.SelectedIndexChanged
+        Try
+            ddlProgram()
+            ddlClass()
+        Catch ex As Exception
+        End Try
+    End Sub
+
     Protected Sub ddlSem()
         Try
-            strSQL = "select distinct subject_sem from subject_info where subject_StudentYear ='" & ddl_level.SelectedValue & "'"
-            ''strSQL += " And subject_Year = '" & ddl_year.SelectedValue & "'"
+            strSQL = "Select * from setting where Type = 'Sem'"
 
             Debug.WriteLine(strSQL)
 
@@ -477,10 +515,10 @@ Public Class student_AddClass
             sqlDA.Fill(ds, "AnyTable")
 
             ddl_sem.DataSource = ds
-            ddl_sem.DataTextField = "subject_sem"
-            ddl_sem.DataValueField = "subject_sem"
+            ddl_sem.DataTextField = "Parameter"
+            ddl_sem.DataValueField = "Value"
             ddl_sem.DataBind()
-            ddl_sem.Items.Insert(0, New ListItem("Select Student Sem", String.Empty))
+            ddl_sem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
             ddl_sem.SelectedIndex = 0
         Catch ex As Exception
 
@@ -490,10 +528,7 @@ Public Class student_AddClass
 
     Private Sub ddlClass()
         Try
-            strSQL = "SELECT class_Name, class_ID from class_info where class_type = 'Compulsory' and class_year = '" & ddl_year.SelectedValue & "' and class_Level = '" & ddl_level.SelectedValue & "' ORDER BY class_Name ASC"
-            ''strSQL += " And subject_Year = '" & ddl_year.SelectedValue & "'"
-
-            Debug.WriteLine(strSQL)
+            strSQL = "SELECT class_Name, class_ID from class_info where class_type = 'Compulsory' and class_year = '" & ddl_year.SelectedValue & "' and class_Level = '" & ddl_level.SelectedValue & "' and course_Program = '" & ddl_Program.SelectedValue & "' and class_Campus = '" & ddl_Campus.SelectedValue & "' ORDER BY class_Name ASC"
 
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
@@ -506,6 +541,13 @@ Public Class student_AddClass
             ddl_class.DataBind()
             ddl_class.Items.Insert(0, New ListItem("Select Class", String.Empty))
             ddl_class.SelectedIndex = 0
+
+            ddlclassChoose.DataSource = ds
+            ddlclassChoose.DataTextField = "class_Name"
+            ddlclassChoose.DataValueField = "class_ID"
+            ddlclassChoose.DataBind()
+            ddlclassChoose.Items.Insert(0, New ListItem("Select Class", String.Empty))
+            ddlclassChoose.SelectedIndex = 0
 
         Catch ex As Exception
         End Try
@@ -543,8 +585,61 @@ Public Class student_AddClass
             ddl_level.DataValueField = "Parameter"
             ddl_level.DataTextField = "Parameter"
             ddl_level.DataBind()
-            ddl_level.Items.Insert(0, New ListItem("Select Student Level", String.Empty))
+            ddl_level.Items.Insert(0, New ListItem("Select Level", String.Empty))
             ddl_level.SelectedIndex = 0
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Protected Sub ddlProgram()
+
+        Try
+
+            If ddl_Campus.SelectedValue = "APP" Then
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' and Value = 'PS'"
+            Else
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' "
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddl_Program.DataSource = levds
+            ddl_Program.DataValueField = "Value"
+            ddl_Program.DataTextField = "Parameter"
+            ddl_Program.DataBind()
+            ddl_Program.Items.Insert(0, New ListItem("Select Course Program", String.Empty))
+            ddl_Program.SelectedIndex = 0
+
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Protected Sub ddlCampus()
+
+        Try
+            If Session("SchoolCampus") = "APP" Then
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' and Value = 'APP'"
+            Else
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' "
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddl_Campus.DataSource = levds
+            ddl_Campus.DataValueField = "Value"
+            ddl_Campus.DataTextField = "Parameter"
+            ddl_Campus.DataBind()
+            ddl_Campus.Items.Insert(0, New ListItem("Select Institutions", String.Empty))
+            ddl_Campus.SelectedIndex = 0
 
         Catch ex As Exception
 
@@ -564,4 +659,22 @@ Public Class student_AddClass
         Catch ex As Exception
         End Try
     End Sub
+
+    Protected Sub ddl_Program_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Program.SelectedIndexChanged
+        Try
+            ddlClass()
+
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
+    End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
 End Class

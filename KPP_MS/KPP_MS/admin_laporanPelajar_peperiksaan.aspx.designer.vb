@@ -23,22 +23,22 @@ Partial Public Class admin_laporanPelajar_peperikssan
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlLevel control.
+    '''ddlCampus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlLevel As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlClass control.
+    '''ddlProgram control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlClass As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlProgram As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlExam control.
@@ -50,31 +50,40 @@ Partial Public Class admin_laporanPelajar_peperikssan
     Protected WithEvents ddlExam As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlSubject control.
+    '''ddlLevel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlSubject As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlLevel As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''lblExamination control.
+    '''ddlCourse control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblExamination As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddlCourse As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''lblCourses control.
+    '''ddlClass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblCourses As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddlClass As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''btnExport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnExport As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
     '''datRespondent control.

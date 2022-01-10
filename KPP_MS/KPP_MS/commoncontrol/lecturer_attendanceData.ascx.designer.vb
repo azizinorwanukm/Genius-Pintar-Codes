@@ -14,112 +14,76 @@ Option Explicit On
 Partial Public Class lecturer_attendanceData
     
     '''<summary>
-    '''txtstudent control.
+    '''ddlYearAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtstudent As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlYearAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnSearch control.
+    '''ddlMonthAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlMonthAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlStudent_Sem control.
+    '''ddlDayAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlStudent_Sem As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlDayAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlClass_Name control.
+    '''ddlProgramAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlClass_Name As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlProgramAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlSubject_Name control.
+    '''ddlLevelAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlSubject_Name As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlLevelAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlYear control.
+    '''ddlSemesterAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlSemesterAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlMonth control.
+    '''ddlCourseAttendace control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlMonth As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlCourseAttendace As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''selectdatePicker control.
+    '''ddlClassAttendance control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents selectdatePicker As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''showCalendar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents showCalendar As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''dday control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dday As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''dmonth control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dmonth As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''dyear control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dyear As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddlClassAttendance As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''addRespondent control.
@@ -138,76 +102,4 @@ Partial Public Class lecturer_attendanceData
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''viewRespondent control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents viewRespondent As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''dateDeletePicker control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dateDeletePicker As Global.System.Web.UI.WebControls.Calendar
-    
-    '''<summary>
-    '''selectdeletedatePicker control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents selectdeletedatePicker As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''deleteday control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents deleteday As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''deletemonth control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents deletemonth As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''deleteyear control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents deleteyear As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Label1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''btnDelete control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnDelete As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

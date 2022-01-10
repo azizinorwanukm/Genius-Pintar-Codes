@@ -62,8 +62,8 @@
         <button id="user_list" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%">User list <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
 
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px; margin-top: 10px">
-            <asp:DropDownList ID="ddlUser" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl"></asp:DropDownList>
-            <asp:DropDownList ID="ddlLogin" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl"></asp:DropDownList>            
+            <asp:DropDownList ID="ddlUser" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl"></asp:DropDownList>
+            <asp:DropDownList ID="ddlLogin" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl"></asp:DropDownList>            
         </div>
         <div class="row w3-text-black" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px; margin-top: 10px">
             <asp:Label CssClass="Label" runat="server"> Date : <i class="fa fa-calendar w3-medium w3-text-black"></i></asp:Label>

@@ -12,8 +12,79 @@ Public Class exam_Update
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then
+                examName_List()
+                examYear_List()
+                InstitutionsList()
+
                 Exam_info_Load(Request.QueryString("exam_ID"))
+
+                Session("getStatus") = "VE"
+                previousPage.NavigateUrl = String.Format("~/admin_peperiksaan_pengurusan_peperiksaan.aspx?admin_ID=" + Request.QueryString("admin_ID"))
             End If
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub examName_List()
+        strSQL = "SELECT Parameter FROM setting WHERE Type='Exam' "
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlExamName.DataSource = ds
+            ddlExamName.DataTextField = "Parameter"
+            ddlExamName.DataValueField = "Parameter"
+            ddlExamName.DataBind()
+            ddlExamName.Items.Insert(0, New ListItem("Select Examination", String.Empty))
+
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub examYear_List()
+        strSQL = "SELECT Parameter FROM setting WHERE Type='Year' "
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlExamYear.DataSource = ds
+            ddlExamYear.DataTextField = "Parameter"
+            ddlExamYear.DataValueField = "Parameter"
+            ddlExamYear.DataBind()
+            ddlExamYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub InstitutionsList()
+        Try
+            Dim stryear As String = "select Parameter, Value from setting where Type = 'Pusat Campus' order by parameter asc"
+            Dim sqlYearDA As New SqlDataAdapter(stryear, objConn)
+
+            Dim yrds As DataSet = New DataSet
+            sqlYearDA.Fill(yrds, "YrTable")
+
+            ddlExamInstitutions.DataSource = yrds
+            ddlExamInstitutions.DataValueField = "Value"
+            ddlExamInstitutions.DataTextField = "Parameter"
+            ddlExamInstitutions.DataBind()
+            ddlExamInstitutions.Items.Insert(0, New ListItem("Select Institutions", String.Empty))
 
         Catch ex As Exception
         End Try
@@ -38,33 +109,39 @@ Public Class exam_Update
             MyTable = ds.Tables(0)
             If MyTable.Rows.Count > 0 Then
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("exam_Name")) Then
-                    exam_Name.Text = ds.Tables(0).Rows(0).Item("exam_Name")
+                    ddlExamName.SelectedValue = ds.Tables(0).Rows(0).Item("exam_Name")
                 Else
-                    exam_Name.Text = ""
+                    ddlExamName.SelectedIndex = 0
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("exam_Code")) Then
-                    exam_Code.Text = ds.Tables(0).Rows(0).Item("exam_Code")
+                    txtExamCode.Text = ds.Tables(0).Rows(0).Item("exam_Code")
                 Else
-                    exam_Code.Text = ""
+                    txtExamCode.Text = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("exam_Year")) Then
-                    exam_year.Text = ds.Tables(0).Rows(0).Item("exam_Year")
+                    ddlExamYear.SelectedValue = ds.Tables(0).Rows(0).Item("exam_Year")
                 Else
-                    exam_year.Text = ""
+                    ddlExamYear.SelectedIndex = 0
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("exam_StartDate")) Then
-                    exam_StartDate.Text = ds.Tables(0).Rows(0).Item("exam_StartDate")
+                    txtStartDate.Text = ds.Tables(0).Rows(0).Item("exam_StartDate")
                 Else
-                    exam_StartDate.Text = ""
+                    txtStartDate.Text = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("exam_EndDate")) Then
-                    exam_EndDate.Text = ds.Tables(0).Rows(0).Item("exam_EndDate")
+                    txtEndDate.Text = ds.Tables(0).Rows(0).Item("exam_EndDate")
                 Else
-                    exam_EndDate.Text = ""
+                    txtEndDate.Text = ""
+                End If
+
+                If Not IsDBNull(ds.Tables(0).Rows(0).Item("exam_Institutions")) Then
+                    ddlExamInstitutions.SelectedValue = ds.Tables(0).Rows(0).Item("exam_Institutions")
+                Else
+                    ddlExamInstitutions.SelectedIndex = 0
                 End If
 
             End If
@@ -77,26 +154,31 @@ Public Class exam_Update
         End Try
     End Sub
 
-    Private Sub Btnsimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
+    Private Sub btnUpdate_ServerClick(sender As Object, e As EventArgs) Handles btnUpdate.ServerClick
 
-        If exam_Name.Text <> "" And Regex.IsMatch(exam_Name.Text, "^[A-Za-z0-9 ]+$") Then
+        If ddlExamName.SelectedIndex > 0 Then
 
-            If exam_Code.Text <> "" And Regex.IsMatch(exam_Code.Text, "^[A-Za-z0-9]+$") Then
+            If txtExamCode.Text.Length > 0 Then
 
-                If exam_year.Text <> "" And Regex.IsMatch(exam_year.Text, "^[0-9]+$") And IsNumeric(exam_year.Text) Then
+                If ddlExamYear.SelectedIndex > 0 Then
 
-                    If exam_StartDate.Text <> "" And Regex.IsMatch(exam_StartDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
+                    If txtStartDate.Text <> "" And Regex.IsMatch(txtStartDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
 
-                        If exam_EndDate.Text <> "" And Regex.IsMatch(exam_EndDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
+                        If txtEndDate.Text <> "" And Regex.IsMatch(txtEndDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
 
-                            'UPDATE
-                            strSQL = "UPDATE exam_Info SET exam_Name='" & exam_Name.Text & "',exam_Code='" & exam_Code.Text & "',exam_Year='" & exam_year.Text & "',exam_StartDate='" & exam_StartDate.Text & "',exam_EndDate='" & exam_EndDate.Text & "' WHERE exam_ID ='" & Request.QueryString("exam_ID") & "'"
-                            strRet = oCommon.ExecuteSQL(strSQL)
+                            If ddlExamInstitutions.SelectedIndex > 0 Then
 
-                            If strRet = "0" Then
-                                ShowMessage("Successfull update exam", MessageType.Success)
+                                'UPDATE
+                                strSQL = "UPDATE exam_Info SET exam_Name='" & ddlExamName.SelectedValue & "',exam_Code='" & txtExamCode.Text & "',exam_Year='" & ddlExamYear.SelectedValue & "',exam_StartDate='" & txtStartDate.Text & "',exam_EndDate='" & txtEndDate.Text & "',exam_Institutions = '" & ddlExamInstitutions.SelectedValue & "'  WHERE exam_ID ='" & Request.QueryString("exam_ID") & "'"
+                                strRet = oCommon.ExecuteSQL(strSQL)
+
+                                If strRet = "0" Then
+                                    ShowMessage("Successfull update exam", MessageType.Success)
+                                Else
+                                    ShowMessage("Unsuccessfull update exam", MessageType.Error)
+                                End If
                             Else
-                                ShowMessage("Unsuccessfull update exam", MessageType.Error)
+                                ShowMessage("Please select institutions", MessageType.Error)
                             End If
                         Else
                             ShowMessage("Please enter a valid exam end date", MessageType.Error)
@@ -117,10 +199,6 @@ Public Class exam_Update
 
     Protected Sub ShowMessage(Message As String, type As MessageType)
         ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
-    End Sub
-
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_login_berjaya.aspx?admin_ID=" + Request.QueryString("admin_ID"))
     End Sub
 
     Public Enum MessageType

@@ -12,10 +12,10 @@
     <br />
 
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px;margin-bottom:10px;padding-left:23px;text-align: left;">
-        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlexam_Name" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddllevel" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlsubject_Name" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlexam_Name" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddllevel" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlsubject_Name" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
         <button id="btnSearch" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">Search &#160;<i class="fa fa-search w3-large w3-text-white"></i></button>
     </div>
 
@@ -32,7 +32,7 @@
                     <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
                     <ItemStyle VerticalAlign="Middle" />
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Name" ItemStyle-Width="300">
+                <asp:TemplateField HeaderText="Name" ItemStyle-Width="450">
                     <ItemTemplate>
                         <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("student_Name") %>'></asp:Label>
                     </ItemTemplate>
@@ -62,7 +62,7 @@
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Marks" ItemStyle-Width="100">
+                <asp:TemplateField HeaderText="Marks" ItemStyle-Width="50">
                     <ItemTemplate>
                         <asp:Label ID="txtmarks" class="id1" runat="server" Text='<%# Eval("marks") %>'></asp:Label>
                     </ItemTemplate>

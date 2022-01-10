@@ -5,8 +5,8 @@
     <div style="display: none;" id="course_info">
 
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; margin-bottom: 10px; text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-            <asp:DropDownList ID="ddlSemn" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+            <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+            <asp:DropDownList ID="ddlSemn" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
         </div>
 
         <br />

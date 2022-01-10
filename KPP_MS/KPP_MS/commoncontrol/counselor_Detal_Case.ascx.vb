@@ -97,7 +97,7 @@ Public Class counselor_Detal_Case
     End Sub
 
     Private Sub counselor_status_list()
-        strSQL = "SELECT Value FROM setting WHERE Type='Counselor'"
+        strSQL = "SELECT Parameter , Value FROM setting WHERE Type='Counselor'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -108,9 +108,9 @@ Public Class counselor_Detal_Case
 
             ddlcounselorstatus.DataSource = ds
             ddlcounselorstatus.DataTextField = "Value"
-            ddlcounselorstatus.DataValueField = "Value"
+            ddlcounselorstatus.DataValueField = "Parameter"
             ddlcounselorstatus.DataBind()
-            ddlcounselorstatus.Items.Insert(0, New ListItem("Select Counselor Status", String.Empty))
+
         Catch ex As Exception
 
         Finally
@@ -119,7 +119,7 @@ Public Class counselor_Detal_Case
     End Sub
 
     Private Sub staff_list()
-        strSQL = "SELECT staff_Name, stf_ID FROM staff_info WHERE staff_year ='" & Now.Year & "' and staff_Status = 'Access' and staff_Login like '%@UKM%'"
+        strSQL = "Select staff_Name, stf_ID from staff_Info where staff_Status = 'Access' order by staff_Name ASC"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -163,7 +163,7 @@ Public Class counselor_Detal_Case
     Private Sub capture_data_list()
         ''student_info
         strSQL = "select student_info.student_Name, student_info.student_ID, student_info.student_Mykad, class_info.class_Name, dicipline_info.Dicipline_Date, 
-	                   case_info.case_Name, staff_info.stf_ID, dicipline_info.Detail_Case, dicipline_info.Dicipline_Action, dicipline_info.demerit_mark,
+	                   case_info.case_Name, staff_info.stf_ID, dicipline_info.Detail_Case, dicipline_info.meritdemerit_point,
 	                   counseling_info.kslr_date, counseling_info.kslr_status, counseling_info.kslr_session
                  from counseling_info
                  left join dicipline_info on counseling_info.disiplin_id = dicipline_info.disiplin_id
@@ -236,14 +236,8 @@ Public Class counselor_Detal_Case
                 Detail_case.Text = ""
             End If
 
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Dicipline_Action")) Then
-                Action_box.Text = ds.Tables(0).Rows(0).Item("Dicipline_Action")
-            Else
-                Action_box.Text = ""
-            End If
-
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("demerit_mark")) Then
-                demerit_mark.Text = ds.Tables(0).Rows(0).Item("demerit_mark")
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("meritdemerit_point")) Then
+                demerit_mark.Text = ds.Tables(0).Rows(0).Item("meritdemerit_point")
             Else
                 demerit_mark.Text = ""
             End If

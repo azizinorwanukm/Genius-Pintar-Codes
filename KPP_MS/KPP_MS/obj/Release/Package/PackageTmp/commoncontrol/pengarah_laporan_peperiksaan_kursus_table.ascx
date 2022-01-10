@@ -14,31 +14,33 @@
 
 <style>
     #table1 {
-        height: 300px;
-        font-size: 15px;
+        height: 250px;
+        font-size: 10px;
     }
 
     #table2 {
-        height: 300px;
-        font-size: 15px;
+        height: 250px;
+        font-size: 10px;
     }
 
     #table3 {
-        height: 300px;
-        font-size: 15px;
+        height: 250px;
+        font-size: 10px;
     }
 
     #table4 {
-        height: 300px;
-        font-size: 15px;
+        height: 250px;
+        font-size: 10px;
     }
 
     #table5 {
-        height: 300px;
-        font-size: 15px;
+        height: 250px;
+        font-size: 10px;
     }
-    .ddl {
-        border-radius: 25px;
+
+    #table6 {
+        height: 250px;
+        font-size: 10px;
     }
 </style>
 
@@ -50,6 +52,7 @@
         var displaygraph3 = document.getElementById('<%= graph3.ClientID %>').value;
         var displaygraph4 = document.getElementById('<%= graph4.ClientID %>').value;
         var displaygraph5 = document.getElementById('<%= graph5.ClientID %>').value;
+         var displaygraph6 = document.getElementById('<%= graph6.ClientID %>').value;
 
         if (displaygraph1 == 0) {
             document.getElementById("graph1display").style.display = "none";
@@ -86,11 +89,17 @@
             document.getElementById("graph5display").style.display = "block";
         }
 
+        if (displaygraph6 == 0) {
+            document.getElementById("graph6display").style.display = "none";
+        }
+        else {
+            document.getElementById("graph6display").style.display = "block";
+        }
+
 
     });
 
 </script>
-
 
 <script>
     $(document).ready(function () {
@@ -107,7 +116,6 @@
         var ee = document.getElementById('<%= table1_countee.ClientID %>').value;
         var gg = document.getElementById('<%= table1_countgg.ClientID %>').value;
 
-
         var chart = AmCharts.makeChart("table1", {
             "theme": "light",
             "type": "serial",
@@ -115,47 +123,47 @@
             "dataProvider": [{
                 "country": "A+",
                 "visits": aplus,
-                "color": "#ff4000"
+                "color": "#0040ff"
             }, {
                 "country": "A",
                 "visits": aa,
-                "color": "#ff8000"
+                "color": "#00bfff"
             }, {
                 "country": "A-",
                 "visits": aminus,
-                "color": "#ffbf00"
+                "color": "#00ffff"
             }, {
                 "country": "B+",
                 "visits": bplus,
-                "color": "#ffff00"
+                "color": "#00ffbf"
             }, {
                 "country": "B",
                 "visits": bb,
-                "color": "#bfff00"
+                "color": "#00ff80"
             }, {
                 "country": "B-",
                 "visits": bminus,
-                "color": "#80ff00"
+                "color": "#00ff40"
             }, {
                 "country": "C+",
                 "visits": cplus,
-                "color": "#40ff00"
+                "color": "#00ff00"
             }, {
                 "country": "C",
                 "visits": cc,
-                "color": "#00ff00"
+                "color": "#40ff00"
             }, {
                 "country": "D",
                 "visits": dd,
-                "color": "#00ff40"
+                "color": "#80ff00"
             }, {
                 "country": "E",
                 "visits": ee,
-                "color": "#00ff80"
+                "color": "#bfff00"
             }, {
                 "country": "G",
                 "visits": gg,
-                "color": "#00ffbf"
+                "color": "#ffff00"
             }],
             "graphs": [{
                 "balloonText": "[[category]]: <b>[[value]]</b>",
@@ -179,6 +187,7 @@
                 "labelRotation": 0
             }
         });
+
     });
 </script>
 
@@ -205,47 +214,47 @@
             "dataProvider": [{
                 "country": "A+",
                 "visits": aplus,
-                "color": "#ff4000"
+                "color": "#0040ff"
             }, {
                 "country": "A",
                 "visits": aa,
-                "color": "#ff8000"
+                "color": "#00bfff"
             }, {
                 "country": "A-",
                 "visits": aminus,
-                "color": "#ffbf00"
+                "color": "#00ffff"
             }, {
                 "country": "B+",
                 "visits": bplus,
-                "color": "#ffff00"
+                "color": "#00ffbf"
             }, {
                 "country": "B",
                 "visits": bb,
-                "color": "#bfff00"
+                "color": "#00ff80"
             }, {
                 "country": "B-",
                 "visits": bminus,
-                "color": "#80ff00"
+                "color": "#00ff40"
             }, {
                 "country": "C+",
                 "visits": cplus,
-                "color": "#40ff00"
+                "color": "#00ff00"
             }, {
                 "country": "C",
                 "visits": cc,
-                "color": "#00ff00"
+                "color": "#40ff00"
             }, {
                 "country": "D",
                 "visits": dd,
-                "color": "#00ff40"
+                "color": "#80ff00"
             }, {
                 "country": "E",
                 "visits": ee,
-                "color": "#00ff80"
+                "color": "#bfff00"
             }, {
                 "country": "G",
                 "visits": gg,
-                "color": "#00ffbf"
+                "color": "#ffff00"
             }],
             "graphs": [{
                 "balloonText": "[[category]]: <b>[[value]]</b>",
@@ -296,47 +305,47 @@
             "dataProvider": [{
                 "country": "A+",
                 "visits": aplus,
-                "color": "#ff4000"
+                "color": "#0040ff"
             }, {
                 "country": "A",
                 "visits": aa,
-                "color": "#ff8000"
+                "color": "#00bfff"
             }, {
                 "country": "A-",
                 "visits": aminus,
-                "color": "#ffbf00"
+                "color": "#00ffff"
             }, {
                 "country": "B+",
                 "visits": bplus,
-                "color": "#ffff00"
+                "color": "#00ffbf"
             }, {
                 "country": "B",
                 "visits": bb,
-                "color": "#bfff00"
+                "color": "#00ff80"
             }, {
                 "country": "B-",
                 "visits": bminus,
-                "color": "#80ff00"
+                "color": "#00ff40"
             }, {
                 "country": "C+",
                 "visits": cplus,
-                "color": "#40ff00"
+                "color": "#00ff00"
             }, {
                 "country": "C",
                 "visits": cc,
-                "color": "#00ff00"
+                "color": "#40ff00"
             }, {
                 "country": "D",
                 "visits": dd,
-                "color": "#00ff40"
+                "color": "#80ff00"
             }, {
                 "country": "E",
                 "visits": ee,
-                "color": "#00ff80"
+                "color": "#bfff00"
             }, {
                 "country": "G",
                 "visits": gg,
-                "color": "#00ffbf"
+                "color": "#ffff00"
             }],
             "graphs": [{
                 "balloonText": "[[category]]: <b>[[value]]</b>",
@@ -387,47 +396,47 @@
             "dataProvider": [{
                 "country": "A+",
                 "visits": aplus,
-                "color": "#ff4000"
+                "color": "#0040ff"
             }, {
                 "country": "A",
                 "visits": aa,
-                "color": "#ff8000"
+                "color": "#00bfff"
             }, {
                 "country": "A-",
                 "visits": aminus,
-                "color": "#ffbf00"
+                "color": "#00ffff"
             }, {
                 "country": "B+",
                 "visits": bplus,
-                "color": "#ffff00"
+                "color": "#00ffbf"
             }, {
                 "country": "B",
                 "visits": bb,
-                "color": "#bfff00"
+                "color": "#00ff80"
             }, {
                 "country": "B-",
                 "visits": bminus,
-                "color": "#80ff00"
+                "color": "#00ff40"
             }, {
                 "country": "C+",
                 "visits": cplus,
-                "color": "#40ff00"
+                "color": "#00ff00"
             }, {
                 "country": "C",
                 "visits": cc,
-                "color": "#00ff00"
+                "color": "#40ff00"
             }, {
                 "country": "D",
                 "visits": dd,
-                "color": "#00ff40"
+                "color": "#80ff00"
             }, {
                 "country": "E",
                 "visits": ee,
-                "color": "#00ff80"
+                "color": "#bfff00"
             }, {
                 "country": "G",
                 "visits": gg,
-                "color": "#00ffbf"
+                "color": "#ffff00"
             }],
             "graphs": [{
                 "balloonText": "[[category]]: <b>[[value]]</b>",
@@ -477,47 +486,47 @@
             "dataProvider": [{
                 "country": "A+",
                 "visits": aplus,
-                "color": "#ff4000"
+                "color": "#0040ff"
             }, {
                 "country": "A",
                 "visits": aa,
-                "color": "#ff8000"
+                "color": "#00bfff"
             }, {
                 "country": "A-",
                 "visits": aminus,
-                "color": "#ffbf00"
+                "color": "#00ffff"
             }, {
                 "country": "B+",
                 "visits": bplus,
-                "color": "#ffff00"
+                "color": "#00ffbf"
             }, {
                 "country": "B",
                 "visits": bb,
-                "color": "#bfff00"
+                "color": "#00ff80"
             }, {
                 "country": "B-",
                 "visits": bminus,
-                "color": "#80ff00"
+                "color": "#00ff40"
             }, {
                 "country": "C+",
                 "visits": cplus,
-                "color": "#40ff00"
+                "color": "#00ff00"
             }, {
                 "country": "C",
                 "visits": cc,
-                "color": "#00ff00"
+                "color": "#40ff00"
             }, {
                 "country": "D",
                 "visits": dd,
-                "color": "#00ff40"
+                "color": "#80ff00"
             }, {
                 "country": "E",
                 "visits": ee,
-                "color": "#00ff80"
+                "color": "#bfff00"
             }, {
                 "country": "G",
                 "visits": gg,
-                "color": "#00ffbf"
+                "color": "#ffff00"
             }],
             "graphs": [{
                 "balloonText": "[[category]]: <b>[[value]]</b>",
@@ -545,267 +554,409 @@
     });
 </script>
 
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;margin-top:30px">
-    <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Examination Results by Course</p>
-     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px;">
-        <div class="col-md-12 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass=" btn btn-default ddl" Style="width: 200px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddlExam" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlExam_SelectedIndexChanged" CssClass=" btn btn-default ddl" Style="width: 200px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddlCourse" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCourse_SelectedIndexChanged" CssClass=" btn btn-default ddl" Style="width: 300px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddlBahasa" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBahasa_SelectedIndexChanged" Enabled="false" CssClass=" btn btn-default ddl" Style="width: 300px;"></asp:DropDownList>
-            <p></p>
-        </div>
+<script>
+    $(document).ready(function () {
+
+        var aplus = document.getElementById('<%= table6_countaplus.ClientID %>').value;
+        var aa = document.getElementById('<%= table6_countaa.ClientID %>').value;
+        var aminus = document.getElementById('<%= table6_countaminus.ClientID %>').value;
+        var bplus = document.getElementById('<%= table6_countbplus.ClientID %>').value;
+        var bb = document.getElementById('<%= table6_countbb.ClientID %>').value;
+        var bminus = document.getElementById('<%= table6_countbminus.ClientID %>').value;
+        var cplus = document.getElementById('<%= table6_countcplus.ClientID %>').value;
+        var cc = document.getElementById('<%= table6_countcc.ClientID %>').value;
+        var dd = document.getElementById('<%= table6_countdd.ClientID %>').value;
+        var ee = document.getElementById('<%= table6_countee.ClientID %>').value;
+        var gg = document.getElementById('<%= table6_countgg.ClientID %>').value;
+
+
+        var chart = AmCharts.makeChart("table6", {
+            "theme": "light",
+            "type": "serial",
+            "startDuration": 2,
+            "dataProvider": [{
+                "country": "A+",
+                "visits": aplus,
+                "color": "#0040ff"
+            }, {
+                "country": "A",
+                "visits": aa,
+                "color": "#00bfff"
+            }, {
+                "country": "A-",
+                "visits": aminus,
+                "color": "#00ffff"
+            }, {
+                "country": "B+",
+                "visits": bplus,
+                "color": "#00ffbf"
+            }, {
+                "country": "B",
+                "visits": bb,
+                "color": "#00ff80"
+            }, {
+                "country": "B-",
+                "visits": bminus,
+                "color": "#00ff40"
+            }, {
+                "country": "C+",
+                "visits": cplus,
+                "color": "#00ff00"
+            }, {
+                "country": "C",
+                "visits": cc,
+                "color": "#40ff00"
+            }, {
+                "country": "D",
+                "visits": dd,
+                "color": "#80ff00"
+            }, {
+                "country": "E",
+                "visits": ee,
+                "color": "#bfff00"
+            }, {
+                "country": "G",
+                "visits": gg,
+                "color": "#ffff00"
+            }],
+            "graphs": [{
+                "balloonText": "[[category]]: <b>[[value]]</b>",
+                "fillColorsField": "color",
+                "fillAlphas": 1,
+                "lineAlpha": 0.1,
+                "labelText": "[[value]]",
+                "type": "column",
+                "valueField": "visits"
+            }],
+            "depth3D": 20,
+            "angle": 30,
+            "chartCursor": {
+                "categoryBalloonEnabled": false,
+                "cursorAlpha": 0,
+                "zoomable": false
+            },
+            "categoryField": "country",
+            "categoryAxis": {
+                "gridPosition": "start",
+                "labelRotation": 0
+            }
+
+        });
+    });
+</script>
+
+<style>
+    .sc3::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
+    }
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+        height: 8px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+    }
+</style>
+
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+    <%--Breadcrum--%>
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black font">
+        Menu &nbsp; : &nbsp; Examination Report &nbsp; / &nbsp; Report By Course
     </div>
-    <div hidden="hidden" style="overflow-y: scroll; overflow-x: hidden; height: 420px" class="table-responsive">
-        <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False"
-            BackColor="#d9d9d9" DataKeyNames="subject_ID" BorderStyle="None" GridLines="None"
-            Width="97%" HeaderStyle-HorizontalAlign="Left">
-            <RowStyle HorizontalAlign="Left" />
-            <Columns>
+</div>
 
-                <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
-                    <ItemTemplate>
-                        <%# Container.DataItemIndex + 1 %>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
-                    <ItemStyle VerticalAlign="Middle" />
-                </asp:TemplateField>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2;" class="w3-card-2">
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh; border-bottom: 3px solid #567572FF; overflow-x: auto; white-space: nowrap;" class="sc3">
 
-                <asp:TemplateField HeaderText="Subject Name" ItemStyle-Width="400">
-                    <ItemTemplate>
-                        <asp:Label ID="subject_Name" class="id1" runat="server" Text='<%# Eval("subject_Name") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Subject Code" ItemStyle-Width="400">
-                    <ItemTemplate>
-                        <asp:Label ID="subject_code" class="id1" runat="server" Text='<%# Eval("subject_code") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Subject StudentYear" ItemStyle-Width="400">
-                    <ItemTemplate>
-                        <asp:Label ID="subject_StudentYear" class="id1" runat="server" Text='<%# Eval("subject_StudentYear") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Jumlah Pelajar" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="StudentName" class="id1" runat="server" Text='<%# Eval("Jumlah Pelajar") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="A+" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="aplus" class="id1" runat="server" Text='<%# Eval("A+") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentageaplus" class="id1" runat="server" Text='<%# Eval("%A+") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="A" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="aa" class="id1" runat="server" Text='<%# Eval("A") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentageaa" class="id1" runat="server" Text='<%# Eval("%A") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="A-" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="aminus" class="id1" runat="server" Text='<%# Eval("A-") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentageaminus" class="id1" runat="server" Text='<%# Eval("%A-") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="B+" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="bplus" class="id1" runat="server" Text='<%# Eval("B+") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagebplus" class="id1" runat="server" Text='<%# Eval("%B+") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="B" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="bb" class="id1" runat="server" Text='<%# Eval("B") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagebb" class="id1" runat="server" Text='<%# Eval("%B") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="B-" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="bminus" class="id1" runat="server" Text='<%# Eval("B-") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagebminus" class="id1" runat="server" Text='<%# Eval("%B-") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="C+" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="cplus" class="id1" runat="server" Text='<%# Eval("C+") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagecplus" class="id1" runat="server" Text='<%# Eval("%C+") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="C" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="cc" class="id1" runat="server" Text='<%# Eval("C") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagecc" class="id1" runat="server" Text='<%# Eval("%C") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="D" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="dd" class="id1" runat="server" Text='<%# Eval("D") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagedd" class="id1" runat="server" Text='<%# Eval("%D") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="E" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="ee" class="id1" runat="server" Text='<%# Eval("E") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentageee" class="id1" runat="server" Text='<%# Eval("%E") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="G" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="gg" class="id1" runat="server" Text='<%# Eval("G") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="percentagegg" class="id1" runat="server" Text='<%# Eval("%G") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-            </Columns>
-            <HeaderStyle BackColor="#800000" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
-            <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
-        </asp:GridView>
-    </div>
-
-    <br />
-    <div class="container-fluid" style="margin-top:15px">
-        <div class="row" style="text-align: center; background-color: #f2f2f2">
-            <div class="col-md-12" id="graph1display">
-                <p style="background-color: #800000; display: inline-block; width: 90%; border-radius: 25px"><asp:Label ID="lblKursus1" runat="server" Text=""></asp:Label></p>
-                <div id="table1"></div>
-            </div>
+        <div class="w3-text-black" style="text-align: left; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Year : </asp:Label>
+            <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass=" btn btn-default font " style="font-size:0.8vw"></asp:DropDownList>
         </div>
-
-        <br />
-
-        <div class="row" style="text-align: center; background-color: #f2f2f2">
-            <div class="col-md-12" id="graph2display">
-                <p style="background-color: #800000; display: inline-block; width: 90%; border-radius: 25px"><asp:Label ID="lblKursus2" runat="server" Text=""></asp:Label></p>
-                <div id="table2"></div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+                <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Insitutions : </asp:Label>
+                <asp:DropDownList ID="ddlCampus" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCampus_SelectedIndexChanged" CssClass=" btn btn-default font" Style="font-size: 0.8vw"></asp:DropDownList>
             </div>
+            <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+                <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Campus : </asp:Label>
+                <asp:DropDownList ID="ddlProgram" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlProgram_SelectedIndexChanged" CssClass=" btn btn-default font" Style="font-size: 0.8vw"></asp:DropDownList>
+            </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Examination : </asp:Label>
+            <asp:DropDownList ID="ddlExam" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlExam_SelectedIndexChanged" CssClass=" btn btn-default font" style="font-size:0.8vw"></asp:DropDownList>
         </div>
-
-        <br />
-
-        <div class="row" style="text-align: center; background-color: #f2f2f2">
-            <div class="col-md-12" id="graph3display">
-               <p style="background-color: #800000; display: inline-block; width: 90%; border-radius: 25px"><asp:Label ID="lblKursus3" runat="server" Text=""></asp:Label></p>
-                <div id="table3"></div>
-            </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Course : </asp:Label>
+            <asp:DropDownList ID="ddlCourse" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCourse_SelectedIndexChanged" CssClass=" btn btn-default font" style="font-size:0.8vw"></asp:DropDownList>
         </div>
-
-        <br />
-
-        <div class="row" style="text-align: center; background-color: #f2f2f2">
-            <div class="col-md-12" id="graph4display">
-                <p style="background-color: #800000; display: inline-block; width: 90%; border-radius: 25px"><asp:Label ID="lblKursus4" runat="server" Text=""></asp:Label></p>
-                <div id="table4"></div>
-            </div>
-        </div>
-
-        <br />
-
-        <div class="row" style="text-align: center; background-color: #f2f2f2">
-            <div class="col-md-12" id="graph5display">
-               <p style="background-color: #800000; display: inline-block; width: 90%; border-radius: 25px"><asp:Label ID="lblKursus5" runat="server" Text=""></asp:Label></p>
-                <div id="table5"></div>
-            </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Subject : </asp:Label>
+            <asp:DropDownList ID="ddlBahasa" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBahasa_SelectedIndexChanged" Enabled="false" CssClass=" btn btn-default font" style="font-size:0.8vw"></asp:DropDownList>
         </div>
     </div>
 
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; padding-right:1vh; overflow-y: scroll; white-space: nowrap; height: 70vh" class="sc4">
+        <div hidden="hidden" class="table-responsive font" style="overflow-y: scroll; height: 62vh">
+
+            <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False"
+                BackColor="#FFFAFA" DataKeyNames="subject_ID" BorderStyle="None" GridLines="None"
+                Width="97%" HeaderStyle-HorizontalAlign="Left">
+                <RowStyle HorizontalAlign="Left" />
+                <Columns>
+
+                    <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
+                        <ItemTemplate>
+                            <%# Container.DataItemIndex + 1 %>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
+                        <ItemStyle VerticalAlign="Middle" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="Subject Name" ItemStyle-Width="400">
+                        <ItemTemplate>
+                            <asp:Label ID="subject_Name" class="id1" runat="server" Text='<%# Eval("subject_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="Subject Code" ItemStyle-Width="200">
+                        <ItemTemplate>
+                            <asp:Label ID="subject_code" class="id1" runat="server" Text='<%# Eval("subject_code") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="Subject StudentYear" ItemStyle-Width="400">
+                        <ItemTemplate>
+                            <asp:Label ID="subject_StudentYear" class="id1" runat="server" Text='<%# Eval("subject_StudentYear") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="Jumlah Pelajar" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="StudentName" class="id1" runat="server" Text='<%# Eval("Jumlah Pelajar") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="A+" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="aplus" class="id1" runat="server" Text='<%# Eval("A+") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentageaplus" class="id1" runat="server" Text='<%# Eval("%A+") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="A" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="aa" class="id1" runat="server" Text='<%# Eval("A") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentageaa" class="id1" runat="server" Text='<%# Eval("%A") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="A-" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="aminus" class="id1" runat="server" Text='<%# Eval("A-") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentageaminus" class="id1" runat="server" Text='<%# Eval("%A-") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="B+" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="bplus" class="id1" runat="server" Text='<%# Eval("B+") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagebplus" class="id1" runat="server" Text='<%# Eval("%B+") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="B" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="bb" class="id1" runat="server" Text='<%# Eval("B") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagebb" class="id1" runat="server" Text='<%# Eval("%B") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="B-" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="bminus" class="id1" runat="server" Text='<%# Eval("B-") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagebminus" class="id1" runat="server" Text='<%# Eval("%B-") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="C+" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="cplus" class="id1" runat="server" Text='<%# Eval("C+") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagecplus" class="id1" runat="server" Text='<%# Eval("%C+") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="C" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="cc" class="id1" runat="server" Text='<%# Eval("C") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagecc" class="id1" runat="server" Text='<%# Eval("%C") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="D" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="dd" class="id1" runat="server" Text='<%# Eval("D") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagedd" class="id1" runat="server" Text='<%# Eval("%D") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="E" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="ee" class="id1" runat="server" Text='<%# Eval("E") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentageee" class="id1" runat="server" Text='<%# Eval("%E") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="G" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="gg" class="id1" runat="server" Text='<%# Eval("G") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                    <asp:TemplateField HeaderText="%" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="percentagegg" class="id1" runat="server" Text='<%# Eval("%G") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                </Columns>
+                <HeaderStyle BackColor="#3C3232" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
+                <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
+            </asp:GridView>
+        </div>
+
+        <div id="graph1display" class="w3-text-white font" style="text-align: left; padding-left: 1vw; padding-bottom: 1vh; width: 100%">
+            <p style="background-color: #567572FF; padding-left: 1vw;" class="w3-card-2">
+                <asp:Label ID="lblKursus1" runat="server" Text=""></asp:Label>
+            </p>
+            <div id="table1"></div>
+        </div>
+
+        <div id="graph2display" class="w3-text-white font" style="text-align: left; padding-left: 1vw; padding-bottom: 1vh; width: 100%">
+            <p style="background-color: #567572FF; padding-left: 1vw;" class="w3-card-2">
+                <asp:Label ID="lblKursus2" runat="server" Text=""></asp:Label>
+            </p>
+            <div id="table2"></div>
+        </div>
+
+        <div id="graph3display" class="w3-text-white font" style="text-align: left; padding-left: 1vw; padding-bottom: 1vh; width: 100%">
+            <p style="background-color: #567572FF; padding-left: 1vw;" class="w3-card-2">
+                <asp:Label ID="lblKursus3" runat="server" Text=""></asp:Label>
+            </p>
+            <div id="table3"></div>
+        </div>
+
+        <div id="graph4display" class="w3-text-white font" style="text-align: left; padding-left: 1vw; padding-bottom: 1vh; width: 100%">
+            <p style="background-color: #567572FF; padding-left: 1vw;" class="w3-card-2">
+                <asp:Label ID="lblKursus4" runat="server" Text=""></asp:Label>
+            </p>
+            <div id="table4"></div>
+        </div>
+
+        <div id="graph5display" class="w3-text-white font" style="text-align: left; padding-left: 1vw; padding-bottom: 1vh; width: 100%">
+            <p style="background-color: #567572FF; padding-left: 1vw;" class="w3-card-2">
+                <asp:Label ID="lblKursus5" runat="server" Text=""></asp:Label>
+            </p>
+            <div id="table5"></div>
+        </div>
+
+        <div id="graph6display" class="w3-text-white font" style="text-align: left; padding-left: 1vw; padding-bottom: 1vh; width: 100%">
+            <p style="background-color: #567572FF; padding-left: 1vw;" class="w3-card-2">
+                <asp:Label ID="lblKursus6" runat="server" Text=""></asp:Label>
+            </p>
+            <div id="table6"></div>
+        </div>
+
+    </div>
 </div>
 
 <asp:HiddenField ClientIDMode="static" ID="graph1" runat="server" />
@@ -813,6 +964,7 @@
 <asp:HiddenField ClientIDMode="static" ID="graph3" runat="server" />
 <asp:HiddenField ClientIDMode="static" ID="graph4" runat="server" />
 <asp:HiddenField ClientIDMode="static" ID="graph5" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="graph6" runat="server" />
 
 <asp:HiddenField ClientIDMode="static" ID="table1_countaplus" runat="server" />
 <asp:HiddenField ClientIDMode="static" ID="table1_countaa" runat="server" />
@@ -873,3 +1025,15 @@
 <asp:HiddenField ClientIDMode="static" ID="table5_countdd" runat="server" />
 <asp:HiddenField ClientIDMode="static" ID="table5_countee" runat="server" />
 <asp:HiddenField ClientIDMode="static" ID="table5_countgg" runat="server" />
+
+<asp:HiddenField ClientIDMode="static" ID="table6_countaplus" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countaa" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countaminus" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countbplus" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countbb" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countbminus" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countcplus" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countcc" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countdd" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countee" runat="server" />
+<asp:HiddenField ClientIDMode="static" ID="table6_countgg" runat="server" />

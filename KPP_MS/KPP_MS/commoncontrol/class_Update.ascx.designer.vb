@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class class_Update
     
     '''<summary>
+    '''previousPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
     '''class_Name control.
     '''</summary>
     '''<remarks>
@@ -23,13 +32,13 @@ Partial Public Class class_Update
     Protected WithEvents class_Name As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''class_year control.
+    '''ddlclass_year control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents class_year As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlclass_year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlclass_Level control.
@@ -41,13 +50,22 @@ Partial Public Class class_Update
     Protected WithEvents ddlclass_Level As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlstaff_ID control.
+    '''ddlStream control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlstaff_ID As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlStream As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlCampus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''txtstd_number control.
@@ -59,20 +77,20 @@ Partial Public Class class_Update
     Protected WithEvents txtstd_number As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Btnsimpan control.
+    '''ddlstaff_ID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlstaff_ID As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Btnback control.
+    '''btnUpdate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents btnUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

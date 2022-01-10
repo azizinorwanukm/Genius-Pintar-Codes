@@ -23,6 +23,24 @@ Partial Public Class coordinator_student_marks
     Protected WithEvents ddl_year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''ddl_Program control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_Program As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlLevel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlLevel As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''ddl_exam control.
     '''</summary>
     '''<remarks>
@@ -57,31 +75,4 @@ Partial Public Class coordinator_student_marks
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''BtnExport control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BtnExport As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''nodatamessage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents nodatamessage As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''HiddenField1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents HiddenField1 As Global.System.Web.UI.WebControls.HiddenField
 End Class

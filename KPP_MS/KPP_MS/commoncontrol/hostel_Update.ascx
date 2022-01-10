@@ -1,161 +1,231 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="hostel_Update.ascx.vb" Inherits="KPP_MS.hostel_Update" %>
 
 <style>
-    .image-upload > input {
-        display: none;
+    .sc3::-webkit-scrollbar {
+        height: 10px;
     }
 
-    .ddl {
-        border-radius: 25px;
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
     }
 
-    .w3-row{
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
     }
-    .l3 {
-      flex: 0 0 auto;
-      padding:2px;
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
     }
 </style>
 
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <button type="button" disabled class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%">Hostel Information<i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px">
-        <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server" Style="width: 20%">Block Name : </asp:Label>
-            <asp:DropDownList ID="ddlBlock_Name" runat="server" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
-        </div>
-        <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server" Style="width: 20%">Block Level : </asp:Label>
-            <asp:DropDownList ID="ddlBlock_Level" runat="server" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
-        </div>
-        <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
-           <p></p>
-            <asp:Label CssClass="Label" runat="server" Style="width: 20%">Year : </asp:Label>
-            <asp:DropDownList ID="ddlYear" runat="server" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
-        </div>
-        <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
-           <p></p>
-            <asp:Label CssClass="Label" runat="server" Style="width: 20%">Semester : </asp:Label>
-            <asp:DropDownList ID="ddlSem" runat="server" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
-        </div>
-        <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server">Number of Rooms : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-            <asp:TextBox CssClass="textbox" class="form-control" ID="roomNumbers" Style="width: 100%; border-radius: 25px;" runat="server" Text=""></asp:TextBox>
-        </div>
-    </div>
-    <div id="newRoom" class="w3-modal">
-      <div class="gridViewRespond w3-container w3-text-black w3-modal-content ddl" style="width: 50%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-         <button type="button" disabled class="btn btn-info" style="background-color: #800000; display: inline-block; width: 500%; border-radius: 25px; width: 100%">Edit Room</button>
-         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px">
-             <div class="w3-container ddl">
-                 <div>
-                     <label for="txtRoomName">Room Name : </label>
-                     <asp:TextBox runat="server" ID="txtRoomName" Text="" CssClass="w3-input"></asp:TextBox>
-                 </div>
-                 <div>
-                     <label for="txtRoomCapacity">Room Capacity : </label>
-                     <asp:TextBox runat="server" ID="txtRoomCapacity" Text="" CssClass="w3-input"></asp:TextBox>
-                 </div>
-                 <asp:Button runat="server" ID="btnUpdate" OnClick="AddNewRoom" CssClass="w3-button w3-green" Text="Save"  />
-                 <span onclick="document.getElementById('newRoom').style.display='none';" class="w3-button w3-red">Close</span>
-             </div>    
-         </div>
-      </div>
-    </div>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; text-align: left; padding-left: 23px">
-        <%--<button id="Btnsimpan" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Save">Save &#160;<i class="fa fa-save w3-large w3-text-white"></i></button>--%>
-        <button id="Btnback" runat="server" class="btn btn-info" style="background-color: #ffdb4d; border-radius: 25px;" title="Back">Back &#160;<i class="fa fa-chevron-circle-left w3-large w3-text-white"></i></button>
-        <button id="BtnModal" type="button" onclick="document.getElementById('newRoom').style.display='block';" class="btn btn-info w3-right-align" style="border-radius: 25px;">New Room &#160;<i class="fa fa-chevron-circle-left w3-large w3-text-white"></i></button>
-    </div>
-    <p></p>
-</div>
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <button type="button" disabled class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%">Hostel Floor Information</button>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px">
-        <asp:Repeater runat="server" ID="floorInfo">
-            
-            <ItemTemplate>
-                <asp:HiddenField runat="server" Value='<%# Eval("room_ID") %>' ID="roomID" />
-                <div class="w3-card-4 w3-col m4 l3">
-                    <header class="w3-container" style="background-color:#800000;">
-                        <h5><%# Eval("room_Name") %></h5>
-                    </header>
+<script type="text/javascript">
+    function ShowMessage(message, messagetype) {
+        var cssclass;
+        switch (messagetype) {
+            case 'Success':
+                cssclass = 'alert-success'
+                break;
+            case 'Error':
+                cssclass = 'alert-danger'
+                break;
+            default:
+                cssclass = 'alert-info'
+        }
+        $('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%; text-align:left -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>');
 
-                    <div class="w3-container w3-left-align">
-                      <p class="w3-text-black ddl">
-                        Room Capacity: <%# Eval("room_Capacity") %>
-                      </p>
-                      <p class="w3-text-black ddl">
-                        For : <%# Eval("year") %>, <%# Eval("RoomSem") %>
-                      </p>
-                      <p class="w3-text-black ddl">
-                        Room Registered: <%# Eval("created_date") %>
-                      </p>
-                    </div>
-                    <div>
-                        <!-- The Modal -->
-                        <div id='<%# Eval("room_ID") %>' class="w3-modal">
-                          <div class="gridViewRespond w3-container w3-text-black w3-modal-content ddl" style="width: 50%; background-color: #f2f2f2; text-align: center; border-radius: 25px;">
-                             <button type="button" disabled class="btn btn-info" style="background-color: #800000; display: inline-block; border-radius: 25px; width: 100%">Edit Room</button>
-                             <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px">
-                                 <div class="w3-container ddl">
-                                     <div>
-                                         <label for="txtRoomName">Room Name:</label>
-                                         <asp:TextBox runat="server" ID="txtRoomName" Text='<%# Eval("room_Name") %>' CssClass="w3-input"></asp:TextBox>
-                                     </div>
-                                     <div>
-                                         <label for="txtRoomSem"></label>
-                                     </div>
-                                     <div>
-                                         <label for="txtRoomCapacity">Room Capacity:</label>
-                                         <asp:TextBox runat="server" ID="txtRoomCapacity" Text='<%# Eval("room_Capacity") %>' CssClass="w3-input"></asp:TextBox>
-                                     </div>
-                                     <span onclick="document.getElementById('<%# Eval("room_ID") %>').style.display='none';" class="w3-button w3-red">Close</span>
-                                     <asp:Button runat="server" ID="btnUpdate" OnClick="UpdateRoom" CssClass="w3-button w3-green" Text="Save"  />
-                                 </div>    
-                             </div>
-                          </div>
-                        </div>
-                    </div>
+        setTimeout(function () {
+            $("#alert_div").fadeTo(5000, 500).slideUp(500, function () {
+                $("#alert_div").remove();
+            });
+        }, 3000);
+    }
+</script>
 
-                    <button type="button" onclick="document.getElementById('<%# Eval("room_ID") %>').style.display='block';" class="w3-button w3-green w3-text-black">Edit</button>
-                    <asp:Button runat="server" ID="btnRemove" OnClick="DeleteRoom" CssClass="w3-button w3-red" Text="Remove" OnClientClick="javascript:return confirm('Are you sure to delete this room data ? ')" />
-                    
-                    <footer class="w3-container w3-blue"></footer>
-                </div>
-            </ItemTemplate>
-
-        </asp:Repeater>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+    <%--Breadcrum--%>
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black font">
+        Menu &nbsp; : &nbsp; Hostel &nbsp; / &nbsp;  Hostel Management  &nbsp; / &nbsp; 
+        <asp:HyperLink runat="server" ID="previousPage"> View Hostel </asp:HyperLink>
+        &nbsp; / &nbsp;  
+        <asp:Label runat="server" ID="txtbreadcrum1" Style="text-align: left;"></asp:Label>
     </div>
 </div>
+
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2;" class="w3-card-2">
+
+      <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh; border-bottom: 3px solid #567572FF; overflow-x: auto; white-space: nowrap;" class="sc3">
+        <button id="btnEditHostelInformation" runat="server" style="top: 8px; display: inline-block; font-size:0.8vw">Edit Hostel Information</button>
+        <button id="btnEditRoomInformation" runat="server" style="top: 8px; display: inline-block; font-size:0.8vw">Edit Room Information</button>
+    </div>
+
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; white-space: nowrap; height: 70vh" id="EditHostelInformation" runat="server">
+
+        <table class="w3-text-black" style="text-align: left; padding-left: 1vh; border: hidden; margin-left: 1vw">
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Year </asp:Label>
+                </td>
+                <td colspan="4">
+                    <p></p>
+                    &nbsp : &nbsp
+                     <asp:DropDownList ID="ddlHostel_Year" runat="server" CssClass=" btn btn-default font font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Semester </asp:Label>
+                </td>
+                <td colspan="4">
+                    <p></p>
+                    &nbsp : &nbsp
+                     <asp:DropDownList ID="ddlHostel_Semester" runat="server" CssClass=" btn btn-default font font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Campus </asp:Label>
+                </td>
+                <td colspan="4">
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:DropDownList ID="ddlHostel_Campus" runat="server" CssClass=" btn btn-default font font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Block </asp:Label>
+                </td>
+                <td colspan="4">
+                    <p></p>
+                    &nbsp : &nbsp
+                     <asp:DropDownList ID="ddlHostel_Block" runat="server" CssClass=" btn btn-default font font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Block Level </asp:Label>
+                </td>
+                <td colspan="4">
+                    <p></p>
+                    &nbsp : &nbsp
+                     <asp:DropDownList ID="ddlHostel_BlockLevel" runat="server" CssClass=" btn btn-default font font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Room Quantity </asp:Label>
+                </td>
+                <td colspan="4">
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:TextBox runat="server" ID="txtHostel_RoomQuantity" Style="width: 10vw; font-size:0.8vw" CssClass="textboxcss"></asp:TextBox>
+                </td>
+            </tr>
+
+        </table>
+
+        <br />
+
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; padding-top:1vh; display: inline-block">
+            <button id="Btnsimpan" runat="server" class="btn btn-success" style="top: 1vh; display: inline-block; font-size:0.8vw">Update Hostel</button>
+        </div>
+
+    </div>
+
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; white-space: nowrap; height: 70vh" id="EditRoomInformation" runat="server">
+
+        <div style="overflow-y: scroll; height: 62vh" class="table-responsive sc4 font">
+            <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False" OnRowCancelingEdit="OnRowCancelingEdit" OnRowUpdating="OnRowUpdating"
+                BackColor="#FFFAFA" DataKeyNames="room_ID" BorderStyle="None" GridLines="None"
+                Width="97%" HeaderStyle-HorizontalAlign="Left">
+                <RowStyle HorizontalAlign="Left" />
+                <Columns>
+                    <asp:TemplateField HeaderText="#">
+                        <ItemTemplate>
+                            <%# Container.DataItemIndex + 1 %>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" VerticalAlign="Top" />
+                        <ItemStyle VerticalAlign="Middle" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Year" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="year" runat="server" Text='<%# Bind("year") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Semester" ItemStyle-Width="150">
+                        <ItemTemplate>
+                            <asp:Label ID="room_Sem" runat="server" Text='<%# Bind("room_Sem") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Block" ItemStyle-Width="150">
+                        <ItemTemplate>
+                            <asp:Label ID="hostel_BlockNames" runat="server" Text='<%# Bind("hostel_BlockNames") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Floor" ItemStyle-Width="150">
+                        <ItemTemplate>
+                            <asp:Label ID="hostel_BlockLevels" runat="server" Text='<%# Bind("hostel_BlockLevels") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Room Name" ItemStyle-Width="150">
+                        <ItemTemplate>
+                            <asp:Label ID="room_Name" runat="server" Text='<%# Bind("room_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                         <EditItemTemplate>
+                            <asp:TextBox ID="txtroom_Name" Width="80px" class="id1" runat="server" Text='<%# Eval("room_Name") %>' />
+                        </EditItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Capacity" ItemStyle-Width="100">
+                        <ItemTemplate>
+                            <asp:Label ID="room_Capacity" runat="server" Text='<%# Bind("room_Capacity") %>'></asp:Label>
+                        </ItemTemplate>
+                         <EditItemTemplate>
+                            <asp:TextBox ID="txtroom_Capacity" Width="80px" class="id1" runat="server" Text='<%# Eval("room_Capacity") %>' />
+                        </EditItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Date Registered" ItemStyle-Width="200">
+                        <ItemTemplate>
+                            <asp:Label ID="created_date" runat="server" Text='<%# Bind("created_date") %>'></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:CommandField HeaderText="Edit" ButtonType="image" ShowEditButton="true" EditImageUrl="~/img/plus image 2.png" UpdateImageUrl="~/img/correct image 2.png" CancelImageUrl="~/img/minus image 2.png" ControlStyle-Width="22px" ControlStyle-Height="22px" />
+                    <asp:TemplateField HeaderText="Delete">
+                        <ItemTemplate>
+                            <asp:ImageButton Width="25" Height="25" ID="btnDelete" CommandName="Delete" OnClientClick="javascript:return confirm('Are you sure to delete this data ? ')" runat="server" ImageUrl="~/img/x image 2.png" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label runat="server" Class="id1 w3-text-black"><b> No Room Information Are Recorded </b> </asp:Label>
+                </EmptyDataTemplate>
+                <HeaderStyle BackColor="#3C3232" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
+                <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
+            </asp:GridView>
+        </div>
+
+    </div>
+</div>
+
 <div class="messagealert" id="alert_container" style="text-align: center"></div>
 
-<script type ="text/javascript">
-
-        function ShowMessage(message, messagetype) {
-            var cssclass;
-            switch (messagetype) {
-                case 'Success':
-                    cssclass = 'alert-success'
-                    break;
-                case 'Error':
-                    cssclass = 'alert-danger'
-                    break;
-                default:
-                    cssclass = 'alert-info'
-            }
-            $('#alert_container').append('<div id="alert_div" style="margin: 0 0.5%; text-align:left -webkit-box-shadow: 3px 4px 6px #999;" class="alert fade in ' + cssclass + '"><a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a><strong>' + messagetype + '!</strong> <span>' + message + '</span></div>');
-
-            setTimeout(function () {
-                $("#alert_div").fadeTo(5000, 500).slideUp(500, function () {
-                    $("#alert_div").remove();
-                });
-            }, 3000);
-        }
-    </script>

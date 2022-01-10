@@ -3,9 +3,11 @@
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
     <button id="admin_access_list" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%">Admin Accessibility List</button>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px">
+
         <div class="col-md-3 w3-text-black" style="text-align: left">
-            <asp:DropDownList ID="ddlformat" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlformat" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
         </div>
+
     </div>
     <p></p>
     <div style="overflow-y: scroll; overflow-x: hidden; height: 380px" class="table-responsive">

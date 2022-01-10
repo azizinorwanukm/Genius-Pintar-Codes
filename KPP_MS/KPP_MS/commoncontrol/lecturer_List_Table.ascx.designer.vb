@@ -14,6 +14,51 @@ Option Explicit On
 Partial Public Class lecturer_List_Table
     
     '''<summary>
+    '''txtbreadcrum1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''btnViewStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnViewStaff As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''btnRegisterStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnRegisterStaff As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''btnImportStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnImportStaff As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''ViewStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ViewStaff As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
     '''txtstaff_data control.
     '''</summary>
     '''<remarks>
@@ -41,20 +86,245 @@ Partial Public Class lecturer_List_Table
     Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
-    '''btnRegNewStaff control.
+    '''RegisterStaff control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnRegNewStaff As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents RegisterStaff As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''hiddenAccess control.
+    '''staff_ID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents hiddenAccess As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents staff_ID As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''staff_Photo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Photo As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''uploadPhoto control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents uploadPhoto As Global.System.Web.UI.WebControls.FileUpload
+    
+    '''<summary>
+    '''staff_Name control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Name As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''staff_Mykad control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Mykad As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''rbtn_Male control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rbtn_Male As Global.System.Web.UI.WebControls.RadioButton
+    
+    '''<summary>
+    '''rbtn_Female control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rbtn_Female As Global.System.Web.UI.WebControls.RadioButton
+    
+    '''<summary>
+    '''staff_Email control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Email As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''staff_MobileNo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_MobileNo As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''staff_Address control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Address As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtCity control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtCity As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''staff_Posscode control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Posscode As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''staff_State control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_State As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''staff_Campus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_Campus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''staff_P1_Position control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_P1_Position As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''staff_P2_Position control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_P2_Position As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''staff_P3_Position control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents staff_P3_Position As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''Btnsimpan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''ImportStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImportStaff As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''image1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents image1 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnDownload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnDownload As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''BtnUpload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUpload As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''FlUploadcsv control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FlUploadcsv As Global.System.Web.UI.WebControls.FileUpload
+    
+    '''<summary>
+    '''regexValidator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents regexValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    
+    '''<summary>
+    '''BtnImport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnImport As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnUploadedStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUploadedStaff As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

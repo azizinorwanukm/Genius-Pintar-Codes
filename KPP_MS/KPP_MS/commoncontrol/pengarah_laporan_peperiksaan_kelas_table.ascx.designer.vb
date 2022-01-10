@@ -14,31 +14,49 @@ Option Explicit On
 Partial Public Class pengarah_laporan_peperiksaan_kelas_table
     
     '''<summary>
-    '''ddlYear control.
+    '''ddlYearExamination control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlYearExamination As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlExam control.
+    '''ddlCampus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlExam As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlClass control.
+    '''ddlProgram control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlClass As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlProgram As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlExamination control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlExamination As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlClassExamination control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlClassExamination As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''datRespondent control.
@@ -48,13 +66,4 @@ Partial Public Class pengarah_laporan_peperiksaan_kelas_table
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''GridViewStudentList control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents GridViewStudentList As Global.System.Web.UI.WebControls.GridView
 End Class

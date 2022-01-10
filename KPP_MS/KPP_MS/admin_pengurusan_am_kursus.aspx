@@ -6,9 +6,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
         function ShowMessage(message, messagetype) {
@@ -33,14 +30,8 @@
         }
     </script>
 
-    <div id="editCourse_info" style="width: 100%; background-color: #f2f2f2; text-align: center">
-        <uc2:course_List_Table ID="course_List_Table" runat="server" />
+    <uc2:course_List_Table ID="course_List_Table" runat="server" />
 
-        <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-bottom: 10px; text-align: left; padding-left: 23px">
-            <button id="btnRegNewCourse" runat="server" type="button" class="btn btn-info" style="background-color: #009900; border-radius: 25px;"> Add Course &#160;<i class="fa fa-plus-circle w3-large w3-text-white"></i></button>
-        </div>
-    </div>
-    </div>
 
 
     <div class="messagealert" id="alert_container" style="text-align: center"></div>

@@ -21,13 +21,4 @@ Partial Public Class admin_daftar_kursus_baru
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents course_Create As Global.KPP_MS.course_Create
-    
-    '''<summary>
-    '''course_Transfer control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents course_Transfer As Global.KPP_MS.course_Transfer
 End Class

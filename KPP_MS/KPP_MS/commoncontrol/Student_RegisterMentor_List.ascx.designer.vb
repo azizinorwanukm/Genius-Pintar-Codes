@@ -14,6 +14,42 @@ Option Explicit On
 Partial Public Class Student_RegisterMentor_List
     
     '''<summary>
+    '''txtbreadcrum1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''btnViewStudentMentor control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnViewStudentMentor As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''btnRegisterStudentMentor control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnRegisterStudentMentor As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''RegisterStudentMentor control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegisterStudentMentor As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
     '''ddl_year control.
     '''</summary>
     '''<remarks>
@@ -77,31 +113,31 @@ Partial Public Class Student_RegisterMentor_List
     Protected WithEvents btnAdd As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''btnBack control.
+    '''ViewStudentMentor control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnBack As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ViewStudentMentor As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''list_mentor control.
+    '''ddlViewYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents list_mentor As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlViewYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''gridvew_list control.
+    '''ddlViewGroup control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents gridvew_list As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents ddlViewGroup As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''datRespondent control.

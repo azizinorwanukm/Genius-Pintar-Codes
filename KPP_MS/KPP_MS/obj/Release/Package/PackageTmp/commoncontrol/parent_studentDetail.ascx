@@ -54,12 +54,12 @@
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server" Style="width: 20%"> Race : </asp:Label>
-                <asp:DropDownList ID="ddlRace" runat="server" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlRace" runat="server" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server" Style="width: 20%"> Religion : </asp:Label>
-                <asp:DropDownList ID="ddlReligion" runat="server" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlReligion" runat="server" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
@@ -69,12 +69,12 @@
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server"> City : </asp:Label>
-                <asp:DropDownList ID="ddlCity" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlCity" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server"> State : </asp:Label>
-                <asp:DropDownList ID="ddlState" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlState" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
@@ -84,17 +84,17 @@
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server" Style="width: 20%"> Registered Year : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-                <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server"> Student Year : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"> </i></asp:Label>
-                <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server" Style="width: 20%"> Student Sem : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-                <asp:DropDownList ID="ddlSem" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlSem" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>

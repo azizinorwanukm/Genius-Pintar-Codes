@@ -9,14 +9,12 @@
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
     <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Search Student Data</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; margin-bottom: 5px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlHostelName" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlHostelName_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlBlockName" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBlockName_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlBlockLevel" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBlockLevel_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlBlockName" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBlockName_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlBlockLevel" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlBlockLevel_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; margin-bottom: 5px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLevelnaming_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlSemnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlSemnaming_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlSemnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlSemnaming_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <p></p>
 </div>
@@ -46,21 +44,16 @@
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Hostel Name" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="hostel_Name" class="id1" runat="server" Text='<%# Eval("hostel_Name") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
+                
                 <asp:TemplateField HeaderText="Block" ItemStyle-Width="100">
                     <ItemTemplate>
-                        <asp:Label ID="block_Name" class="id1" runat="server" Text='<%# Eval("block_Name") %>'></asp:Label>
+                        <asp:Label ID="block_Name" class="id1" runat="server" Text='<%# Eval("hostel_BlockNames") %>'></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Floor" ItemStyle-Width="100">
                     <ItemTemplate>
-                        <asp:Label ID="block_Level" class="id1" runat="server" Text='<%# Eval("block_Level") %>'></asp:Label>
+                        <asp:Label ID="block_Level" class="id1" runat="server" Text='<%# Eval("hostel_BlockLevels") %>'></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>

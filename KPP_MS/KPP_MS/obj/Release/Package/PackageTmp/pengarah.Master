@@ -21,6 +21,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
 
@@ -34,11 +36,6 @@
     </script>
 
     <style>
-        body {
-            font-family: "Montserrat", sans-serif;
-            -ms-overflow-style: none;
-        }
-
         #testExam {
             background-image: url("img/exam_transkrip_v13_2.jpg");
             height: 100%;
@@ -71,11 +68,6 @@
         table {
             margin-left: auto;
             margin-right: auto;
-        }
-
-        p {
-            font-family: "Montserrat", sans-serif;
-            font-size: 100%
         }
 
         .bootstrap-select .btn {
@@ -119,10 +111,22 @@
             width: 40%;
         }
 
-        #main {
-            transition: margin-left .5s;
-            margin-left: 15%
+        .textboxcss {
+            padding: 5px 15px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
         }
+
+        .alignText{
+            text-align:left;
+        }
+
+        .font {
+                font-size: 0.8vw;
+                text-align:left;
+            }
 
         @media screen and (min-width: 801px) {
             .messagealert {
@@ -142,22 +146,35 @@
                 z-index: 1;
                 top: 0;
                 left: 0;
+                background-color: #00203FFF;
                 overflow-x: scroll;
                 transition: 0.5s;
             }
 
                 .sidenav a {
-                    font-size: 12px;
+                    font-size: 0.8vw;
                 }
 
-            #main {
+            #myTopnav {
+                width: 100%;
+                /*height: 50px;*/
+                height: 6.7vh;
+                background-color: #00203FFF;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 13vw;
+                transition: 0.5s;
+            }
+
+            /*#main {
                 transition: margin-left .5s;
                 margin-left: 300px;
                 margin-right: 75px;
-            }
+            }*/
 
             .font {
-                font-size: 12px
+                font-size: 0.8vw
             }
 
             #tutupMenu {
@@ -169,7 +186,8 @@
             }
 
             #mySidenav {
-                width: 250px;
+                /*width: 200px;*/
+                width: 13vw;
                 height: 100%
             }
 
@@ -279,10 +297,6 @@
                 display: none;
             }
 
-            #mySidenav::-webkit-scrollbar {
-                display: none;
-            }
-
             .GridPager {
                 padding: 2px;
                 margin: 2% auto;
@@ -385,10 +399,6 @@
             document.getElementById("two").style.display = "block";
             document.getElementById('<%= pengarahLaporanKehadiran.ClientID %>').style.display = "block";
             document.getElementById('<%= pengarahSlipPeperiksaan.ClientID %>').style.display = "block";
-            document.getElementById("three").style.display = "block";
-            document.getElementById('<%= pengarahKemaskiniProfil.ClientID %>').style.display = "block";
-            document.getElementById('<%= pengarahTukarKataLaluan.ClientID %>').style.display = "block";
-            document.getElementById('<%= pengarahLogout.ClientID %>').style.display = "block";
             document.getElementById("four").style.display = "block";
             document.getElementById('<%= pengarahPengurusanKokurikulum.ClientID %>').style.display = "block";
 
@@ -509,52 +519,51 @@
     </asp:ContentPlaceHolder>
 </head>
 
-<body style="background-color: #f2f2f2;" onunload="bodyUnload();" onclick="clicked=true;">
+<body style="background-color: #FFFFFF;" onunload="bodyUnload();" onclick="clicked=true;">
+
     <form id="form1" runat="server">
         <div id="header" style="background-color: #8c8c8c; width: 100%">
             <asp:HyperLink ID="openMenu" runat="server" class="w3-bar-item w3-button" OnClick="openSideBar()"><i class="fa fa-align-justify w3-large w3-left"></i></asp:HyperLink>
         </div>
 
-        <div id="mySidenav" class="sidenav w3-bar-block w3-small w3-center" style="margin-top: 30px; margin-left: 30px; height: 565px; overflow-y: scroll;">
-            <div style="border-radius: 25px; border: 5px solid #8c8c8c;">
+        <div id="mySidenav" class="sidenav w3-bar-block w3-small w3-center">
+            <div style="border: 5px solid #00203FFF;">
 
-                <img src="img/permatapintar2.jpg" style="width: 100%; height: 17%; background-color: #f2f2f2" />
+                <div style="text-align: center">
+                    <img src="img/logo genius pintar.png" style="width: 100%;" />
+                </div>
 
-                <div class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" style="text-align: left; background-color: #800000;">
+                <br />
+
+                <div class="w3-bar-item w3-button w3-hover-grey w3-text-white font" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF;">
                     <asp:HyperLink ID="Home" runat="server" CssClass="w3-text-white">Home<i class="fa fa-home w3-large w3-right"></i></asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="four" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropFour()" style="text-align: left; background-color: #800000;">
-                    Co-Curricular <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-building w3-large w3-right"></i>
+                <div id="four" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="myDropFour()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF;">
+                    Co-Curricular <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
                 <div id="dropdown_four" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="pengarahPengurusanKokurikulum" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; ">Co-Crricular Management</asp:HyperLink>
+                    <asp:HyperLink ID="pengarahPengurusanKokurikulum" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2;">Co-Curricular Management</asp:HyperLink>
                 </div>
 
-                <div id="one" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropOne()" style="text-align: left; background-color: #800000; display: none">
-                    Examination Report <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-clipboard w3-large w3-right"></i>
+                <p></p>
+                <div id="one" class="w3-bar-item w3-button  w3-hover-grey w3-text-white font" onclick="myDropOne()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF;">
+                    Examination Report <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
                 <div id="dropdown_one" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="pengarahPeperiksaanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Report By Class</asp:HyperLink>
-                    <asp:HyperLink ID="pengarahPeperiksaanKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Report By Course</asp:HyperLink>
-                    <asp:HyperLink ID="pengarahLaporanPeperiksaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Ranking</asp:HyperLink>
+                    <asp:HyperLink ID="pengarahPeperiksaanKelas" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Report By Class</asp:HyperLink>
+                    <asp:HyperLink ID="pengarahPeperiksaanKursus" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Report By Course</asp:HyperLink>
+                    <asp:HyperLink ID="pengarahLaporanPeperiksaan" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Student Ranking</asp:HyperLink>
                 </div>
 
-                <div id="two" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwo()" style="text-align: left; background-color: #800000; display: none">
-                    Report <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file w3-large w3-right"></i>
+                <p></p>
+                <div id="two" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="myDropTwo()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF;">
+                    Report <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i></i>
                 </div>
                 <div id="dropdown_two" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="pengarahLaporanKehadiran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Attendance</asp:HyperLink>
-                    <asp:HyperLink ID="pengarahSlipPeperiksaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Examination Slip</asp:HyperLink>
-                </div>
-
-                <div id="three" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropThree()" style="text-align: left; background-color: #800000; display: none">
-                    Others <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-gear w3-large w3-right"></i>
-                </div>
-                <div id="dropdown_three" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="pengarahKemaskiniProfil" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Kemaskini Profil</asp:HyperLink>
-                    <asp:HyperLink ID="pengarahTukarKataLaluan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Tukar Kata Laluan</asp:HyperLink>
-                    <asp:HyperLink ID="pengarahLogout" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Logout</asp:HyperLink>
+                    <asp:HyperLink ID="pengarahLaporanKehadiran" runat="server" class="w3-bar-item w3-button font" Style="text-align: left; background-color: #F2F2F2; display: none">Attendance</asp:HyperLink>
+                    <asp:HyperLink ID="pengarahSlipPeperiksaan" runat="server" class="w3-bar-item w3-button font" Style="text-align: left; background-color: #F2F2F2; display: none">Examination Slip</asp:HyperLink>
                 </div>
 
                 <div id="tutupMenu">
@@ -565,7 +574,16 @@
             </div>
         </div>
 
-        <div id="main" class="w3-text-white" style="margin-top: 10px; height: 85%">
+        <div id="myTopnav">
+            <div style="padding-top: 2.2vh; padding-left: 2vw">
+                <asp:Label runat="server" ID="txtstaffName" class="w3-text-white font" Style="text-align: left;"></asp:Label>
+                &nbsp;&nbsp;
+                <asp:Label runat="server" ID="txtcurrentDate" class="w3-text-white font" Style="text-align: left;"></asp:Label>
+                <button id="btnLogout" runat="server" class="btn btn-danger" style="background-color: #CC0000; position: fixed; z-index: 1; right: 2vw; top: 1.6vh; font-size: 0.8vw">Logout &nbsp;&nbsp;<i class="fa fa-sign-out w3-text-white"></i></button>
+            </div>
+        </div>
+
+        <div class="w3-text-white" style="position: fixed; z-index: 1; top: 9vh; left: 15vw; right: 2.5vw; transition: 0.5s;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

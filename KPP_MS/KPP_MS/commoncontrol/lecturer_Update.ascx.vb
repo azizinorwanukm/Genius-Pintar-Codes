@@ -203,8 +203,14 @@ Public Class lecturer_Update
 
                                                 Dim find_value As String = ""
                                                 Dim get_value As String = ""
+                                                Dim strStaffLogin As String = ""
 
-                                                Dim strStaffLogin As String = Split(staff_Name.Text, " ")(0) & "@UKM"
+                                                If Session("SchoolCampus") = "APP" Then
+                                                    strStaffLogin = Split(staff_Name.Text, " ")(0) & "@APP"
+                                                ElseIf Session("SchoolCampus") = "PGPN" Then
+                                                    strStaffLogin = Split(staff_Name.Text, " ")(0) & "@UKM"
+                                                End If
+
                                                 Dim insertFunction As String = ""
                                                 Dim updateFunction As String = ""
 

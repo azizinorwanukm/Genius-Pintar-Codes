@@ -23,6 +23,15 @@ Partial Public Class class_transfer
     Protected WithEvents ddl_Year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''ddl_type control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_type As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''ddl_Level control.
     '''</summary>
     '''<remarks>
@@ -39,15 +48,6 @@ Partial Public Class class_transfer
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddl_Sem As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''ddl_type control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddl_type As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''datRespondent control.

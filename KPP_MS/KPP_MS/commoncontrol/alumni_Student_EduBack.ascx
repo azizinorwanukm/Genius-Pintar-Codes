@@ -15,10 +15,10 @@
     <div style="display: none;" id="education_Back">
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px">
             <asp:Label runat="server" CssClass="w3-text-black">SPM Year</asp:Label>
-            <asp:DropDownList CssClass="btn btn-default ddl" runat ="server" id="ddl_spmYear"></asp:DropDownList>
+            <asp:DropDownList CssClass="btn btn-default font ddl" runat ="server" id="ddl_spmYear"></asp:DropDownList>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
             <asp:Label runat="server" CssClass="w3-text-black">Year Of Graduate From KPP</asp:Label>
-            <asp:DropDownList CssClass="btn btn-default ddl" runat ="server" id="ddl_graduateKPPYear"></asp:DropDownList>
+            <asp:DropDownList CssClass="btn btn-default font ddl" runat ="server" id="ddl_graduateKPPYear"></asp:DropDownList>
         </div>
         <div></div>
     

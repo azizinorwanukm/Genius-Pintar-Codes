@@ -12,58 +12,76 @@ Option Explicit On
 
 
 Partial Public Class scholarship_update
-    
+
     '''<summary>
-    '''scholarship_name control.
+    '''previousPage control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents scholarship_name As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
-    '''scholarship_sponsar control.
+    '''ddl_Year control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents scholarship_sponsar As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents ddl_Year As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''scholarship_type control.
+    '''ddl_Level control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents scholarship_type As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents ddl_Level As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''scholarship_status control.
+    '''txt_studentData control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents scholarship_status As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents txt_studentData As Global.System.Web.UI.WebControls.TextBox
+
     '''<summary>
-    '''Btnsimpan control.
+    '''btnSearch control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
-    '''Btnback control.
+    '''datRespondent control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''ddlScholarship control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlScholarship As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''btnUpdate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

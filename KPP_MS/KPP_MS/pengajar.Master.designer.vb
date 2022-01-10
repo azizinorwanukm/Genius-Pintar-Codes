@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class pengajar
-    
+
     '''<summary>
     '''head control.
     '''</summary>
@@ -21,16 +21,16 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
-    '''form2 control.
+    '''form1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents form2 As Global.System.Web.UI.HtmlControls.HtmlForm
-    
+    Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
+
     '''<summary>
     '''openMenu control.
     '''</summary>
@@ -39,7 +39,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents openMenu As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''Home control.
     '''</summary>
@@ -48,7 +48,16 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Home As Global.System.Web.UI.WebControls.HyperLink
-    
+
+    '''<summary>
+    '''pengajarDaftarKelas control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents pengajarDaftarKelas As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
     '''pengajarPelajarKehadiran control.
     '''</summary>
@@ -57,7 +66,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pengajarPelajarKehadiran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''pengajarKemaskiniMarkah control.
     '''</summary>
@@ -66,16 +75,16 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pengajarKemaskiniMarkah As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''pengajarSenaraiKaunselorPelajar control.
+    '''pengajarKemasukanPelajar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengajarSenaraiKaunselorPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents pengajarKemasukanPelajar As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
     '''pengajarCarianPelajar control.
     '''</summary>
@@ -84,7 +93,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pengajarCarianPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''pengajarLaporanPeperiksaan control.
     '''</summary>
@@ -93,7 +102,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents pengajarLaporanPeperiksaan As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''homeroomSemakKehadiran control.
     '''</summary>
@@ -102,16 +111,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents homeroomSemakKehadiran As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''homeroomPenilaianPelajar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents homeroomPenilaianPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''koordinatorKemaskiniMarkah control.
     '''</summary>
@@ -120,43 +120,97 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents koordinatorKemaskiniMarkah As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''koordinatorPenilaianPelajar control.
+    '''kokocarianpelajar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents koordinatorPenilaianPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents kokocarianpelajar As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
-    '''pengajarKemaskiniProfil control.
+    '''kokopangkatpelajar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengajarKemaskiniProfil As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents kokopangkatpelajar As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
-    '''pengajarTukarKataLaluan control.
+    '''kokokehadiranpelajar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengajarTukarKataLaluan As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents kokokehadiranpelajar As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
-    '''pengajarLogout control.
+    '''kokomarkahpelajar control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengajarLogout As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents kokomarkahpelajar As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''kokojadualpelajar control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents kokojadualpelajar As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''ninenine control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ninenine As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''LinkTutorial control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents LinkTutorial As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''txtstaffName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffName As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtcurrentDate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtcurrentDate As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''btnLogout control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnLogout As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
     '''ContentPlaceHolder1 control.
     '''</summary>
@@ -165,7 +219,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
     '''hiddenAccess control.
     '''</summary>
@@ -174,7 +228,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents hiddenAccess As Global.System.Web.UI.WebControls.HiddenField
-    
+
     '''<summary>
     '''hiddenKoordinator control.
     '''</summary>
@@ -183,7 +237,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents hiddenKoordinator As Global.System.Web.UI.WebControls.HiddenField
-    
+
     '''<summary>
     '''hiddenKaunselor control.
     '''</summary>
@@ -192,7 +246,7 @@ Partial Public Class pengajar
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents hiddenKaunselor As Global.System.Web.UI.WebControls.HiddenField
-    
+
     '''<summary>
     '''hiddenData control.
     '''</summary>

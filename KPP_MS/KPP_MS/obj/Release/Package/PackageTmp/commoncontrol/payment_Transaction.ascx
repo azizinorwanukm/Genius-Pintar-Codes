@@ -1,5 +1,32 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="payment_Transaction.ascx.vb" Inherits="KPP_MS.payment_Transaction" %>
 
+<style>
+    .sc3::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
+    }
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+    }
+</style>
+
 <script type="text/javascript">
     function ShowMessage(message, messagetype) {
         var cssclass;
@@ -32,18 +59,19 @@
     }
 </script>
 
-<style>
-    .ddl {
-        border-radius: 25px;
-    }
-</style>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+    <%--Breadcrum--%>
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black">
+        Menu &nbsp; : &nbsp; Payment &nbsp; / &nbsp; Student information 
+    </div>
+</div>
 
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
     <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Search Student Data</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLevelnaming_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlClassnaming_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLevelnaming_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlClassnaming_SelectedIndexChanged" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left">
         <div class="col-md-4 w3-text-black" style="text-align: left; padding-left: 23px; margin-top: 10px">

@@ -35,17 +35,17 @@
 
     <div class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 10px; margin-top: 5px; margin-bottom: 5px; text-align: left;">
         <div class="w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_selectedindexchange" CssClass="btn btn-default ddl" Width="200px"></asp:DropDownList>
-            <asp:DropDownList ID="ddlLevelNaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLevelNaming_selectedindexchange" CssClass="btn btn-default ddl" Width="200px"></asp:DropDownList>
-            <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlClassnaming_SelectedIndexChanged" CssClass="btn btn-default ddl" Width="200px"></asp:DropDownList>
+            <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_selectedindexchange" CssClass="btn btn-default font ddl" Width="200px"></asp:DropDownList>
+            <asp:DropDownList ID="ddlLevelNaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLevelNaming_selectedindexchange" CssClass="btn btn-default font ddl" Width="200px"></asp:DropDownList>
+            <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlClassnaming_SelectedIndexChanged" CssClass="btn btn-default font ddl" Width="200px"></asp:DropDownList>
         </div>
     </div>
 
     <div class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 10px; margin-top: px; margin-bottom: 5px; text-align: left;">
         <div class="w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddlCasenaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCasenaming_SelectedIndexChanged" CssClass="btn btn-default ddl" Width="350px"></asp:DropDownList>
-            <asp:DropDownList ID="ddlAction" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl" Width="200px"></asp:DropDownList>
-            <asp:DropDownList ID="ddlCounselingStatus" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCounselingStatus_SelectedIndexChanged" CssClass="btn btn-default ddl" Width="200px"></asp:DropDownList>
+            <asp:DropDownList ID="ddlCasenaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCasenaming_SelectedIndexChanged" CssClass="btn btn-default font ddl" Width="350px"></asp:DropDownList>
+            <asp:DropDownList ID="ddlAction" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl" Width="200px"></asp:DropDownList>
+            <asp:DropDownList ID="ddlCounselingStatus" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlCounselingStatus_SelectedIndexChanged" CssClass="btn btn-default font ddl" Width="200px"></asp:DropDownList>
         </div>
     </div>
 

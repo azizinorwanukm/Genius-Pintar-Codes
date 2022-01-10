@@ -26,7 +26,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script type="text/javascript">
@@ -36,15 +35,6 @@
     </script>
 
     <style>
-        body {
-            font-family: "Montserrat", sans-serif;
-            -ms-overflow-style: none;
-        }
-
-        .ddl {
-            border-radius: 25px;
-        }
-
         #testExam {
             background-image: url("img/exam_transkrip_v13_2.jpg");
             height: 100%;
@@ -65,8 +55,6 @@
             display: none;
         }
 
-
-
         .w3-sidebar {
             width: 180px;
             background: #222;
@@ -79,11 +67,6 @@
             margin-right: auto;
         }
 
-        p {
-            font-family: "Montserrat", sans-serif;
-            font-size: 100%
-        }
-
         .bootstrap-select .btn {
             background-color: #ffffff;
             border-style: solid;
@@ -94,6 +77,7 @@
             font-size: 14px;
             -webkit-appearance: none;
             -moz-appearance: none;
+            text-align: left;
         }
 
         .bootstrap-select .dropdown-menu {
@@ -125,9 +109,21 @@
             width: 40%;
         }
 
-        #main {
-            transition: margin-left .5s;
-            margin-left: 15%
+        .textboxcss {
+            padding: 5px 15px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .alignText {
+            text-align: left;
+        }
+
+        .font {
+            font-size: 0.8vw;
+            text-align: left;
         }
 
         @media screen and (min-width: 801px) {
@@ -148,23 +144,28 @@
                 z-index: 1;
                 top: 0;
                 left: 0;
+                background-color: #00203FFF;
                 overflow-x: scroll;
                 transition: 0.5s;
             }
 
                 .sidenav a {
-                    font-size: 12px;
+                    font-size: 0.8vw;
                 }
 
-            #main {
-                transition: margin-left .5s;
-                margin-left: 300px;
-                margin-right: 75px;
+
+            #myTopnav {
+                width: 100%;
+                height: 6.7vh;
+                background-color: #00203FFF;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 13vw;
+                transition: 0.5s;
             }
 
-            .font {
-                font-size: 12px
-            }
+
 
             #tutupMenu {
                 display: none;
@@ -175,7 +176,7 @@
             }
 
             #mySidenav {
-                width: 250px;
+                width: 13vw;
                 height: 100%
             }
 
@@ -194,7 +195,6 @@
             #mySidenav::-webkit-scrollbar {
                 display: none;
             }
-
 
             .GridPager {
                 padding: 2px;
@@ -238,11 +238,12 @@
 
             .sidenav {
                 height: 100%;
-                width: 0%;
+                width: 15%;
                 position: fixed;
                 z-index: 1;
                 top: 0;
                 left: 0;
+                background-color: #00203FFF;
                 overflow-x: scroll;
                 transition: 0.5s;
             }
@@ -259,11 +260,6 @@
 
             .sidenav a {
                 font-size: 2vw;
-            }
-
-            #main {
-                transition: margin-left .5s;
-                margin-left: 0;
             }
 
             #header {
@@ -382,8 +378,8 @@
 
     <script type="text/javascript">
 
-        function myDropOne() {
-            var x = document.getElementById("dropdown_one");
+        function MyMenu_One() {
+            var x = document.getElementById("MENU_SUB_GENERALMANAGEMENT");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += " w3-hover-black";
@@ -395,8 +391,8 @@
             }
         }
 
-        function myDropTwo() {
-            var x = document.getElementById("dropdown_two");
+        function MyMenu_Two() {
+            var x = document.getElementById("MENU_SUB_STUDENT");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += " w3-hover-black";
@@ -409,8 +405,8 @@
             }
         }
 
-        function myDropThree() {
-            var x = document.getElementById("dropdown_three");
+        function MyMenu_Three() {
+            var x = document.getElementById("MENU_SUB_STAFF");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += " w3-hover-black";
@@ -421,8 +417,8 @@
             }
         }
 
-        function myDropFour() {
-            var x = document.getElementById("dropdown_four");
+        function MyMenu_Four() {
+            var x = document.getElementById("MENU_SUB_COORDINATOR");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -433,8 +429,8 @@
             }
         }
 
-        function myDropFive() {
-            var x = document.getElementById("dropdown_five");
+        function MyMenu_Five() {
+            var x = document.getElementById("MENU_SUB_DISCIPLINE");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -445,8 +441,8 @@
             }
         }
 
-        function myDropSix() {
-            var x = document.getElementById("dropdown_six");
+        function MyMenu_Six() {
+            var x = document.getElementById("MENU_SUB_COUNSELOR");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -457,8 +453,8 @@
             }
         }
 
-        function myDropSeven() {
-            var x = document.getElementById("dropdown_seven");
+        function MyMenu_Seven() {
+            var x = document.getElementById("MENU_SUB_RESEARCH");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -468,20 +464,8 @@
                     x.previousElementSibling.className.replace(" w3-hover-black", "");
             }
         }
-        function myDropEight() {
-            var x = document.getElementById("dropdown_eight");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-                x.previousElementSibling.className += "w3-hover-black";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-                x.previousElementSibling.className =
-                    x.previousElementSibling.className.replace(" w3-hover-black", "");
-            }
-        }
-
-        function myDropEightOne() {
-            var x = document.getElementById("dropdown_eight_one");
+        function MyMenu_Eight() {
+            var x = document.getElementById("MENU_SUB_EXAMINATION");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -492,8 +476,8 @@
             }
         }
 
-        function myDropEightTwo() {
-            var x = document.getElementById("dropdown_eight_two");
+        function MyMenu_Nine() {
+            var x = document.getElementById("MENU_SUB_PAYMENT");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -504,8 +488,8 @@
             }
         }
 
-        function myDropNine() {
-            var x = document.getElementById("dropdown_nine");
+        function MyMenu_Ten() {
+            var x = document.getElementById("MENU_SUB_HOSTEL");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -516,8 +500,8 @@
             }
         }
 
-        function myDropTen() {
-            var x = document.getElementById("dropdown_ten");
+        function MyMenu_Eleven() {
+            var x = document.getElementById("MENU_SUB_COCURRICULAR");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -528,8 +512,8 @@
             }
         }
 
-        function myDropEleven() {
-            var x = document.getElementById("dropdown_eleven");
+        function MyMenu_Twelve() {
+            var x = document.getElementById("MENU_SUB_REPORT");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -540,8 +524,8 @@
             }
         }
 
-        function myDropTwelve() {
-            var x = document.getElementById("dropdown_twelve");
+        function MyMenu_Thirdteen() {
+            var x = document.getElementById("MENU_SUB_ALUMNI");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -552,8 +536,8 @@
             }
         }
 
-        function myDropThirdteen() {
-            var x = document.getElementById("dropdown_thirdteen");
+        function MyMenu_Fourteen() {
+            var x = document.getElementById("MENU_SUB_SETTING");
             if (x.className.indexOf("w3-show") == -1) {
                 x.className += " w3-show";
                 x.previousElementSibling.className += "w3-hover-black";
@@ -564,41 +548,6 @@
             }
         }
 
-        function myDropTwentyOne() {
-            var x = document.getElementById("dropdown_twentyone");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-                x.previousElementSibling.className += "w3-hover-black";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-                x.previousElementSibling.className =
-                    x.previousElementSibling.className.replace(" w3-hover-black", "");
-            }
-        }
-
-        function myDropTwentyTwo() {
-            var x = document.getElementById("dropdown_twentytwo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-                x.previousElementSibling.className += "w3-hover-black";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-                x.previousElementSibling.className =
-                    x.previousElementSibling.className.replace(" w3-hover-black", "");
-            }
-        }
-
-        function myDropTwentyThree() {
-            var x = document.getElementById("dropdown_twentythree");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-                x.previousElementSibling.className += "w3-hover-black";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-                x.previousElementSibling.className =
-                    x.previousElementSibling.className.replace(" w3-hover-black", "");
-            }
-        }
     </script>
 
     <script>
@@ -622,7 +571,6 @@
             data = document.getElementById('<%= hiddenData.ClientID %>').value;
         });
 
-
         function CheckBrowser() {
             if (clicked == false) {
                 //Browser closed
@@ -632,7 +580,6 @@
             }
         }
 
-
         function bodyUnload() {
 
             if (clicked == false)//browser is closed
@@ -641,7 +588,6 @@
 
                 request.open("GET", "admin_CloseLogout.aspx?admin_ID=" + data + "", true);
                 request.send();
-
             }
         }
 
@@ -659,219 +605,212 @@
     </asp:ContentPlaceHolder>
 </head>
 
-<body style="background-color: #f2f2f2;" onunload="bodyUnload();" onclick="clicked=true;">
-    <form id="form1" runat="server">
+<body style="background-color: #FFFFFF;" onunload="bodyUnload();" onclick="clicked=true;">
 
+    <form id="form1" runat="server">
         <div id="header" style="background-color: #8c8c8c; width: 100%">
             <asp:HyperLink ID="openMenu" runat="server" class="w3-bar-item w3-button" OnClick="openSideBar()"><i class="fa fa-align-justify w3-large w3-left"></i></asp:HyperLink>
         </div>
 
-        <div id="mySidenav" class="sidenav w3-bar-block w3-small w3-center" style="margin-top: 30px; margin-left: 30px; height: 565px; overflow-y: scroll;">
-            <div style="border-radius: 25px; border: 5px solid #8c8c8c;">
+        <div id="mySidenav" class="sidenav w3-bar-block w3-small w3-center">
+            <div style="border: 5px solid #00203FFF;">
 
-                <img src="img/permatapintar2.jpg" style="width: 100%; height: 17%; background-color: #f2f2f2" />
+                <div style="text-align: center; background-color: white" runat="server" id="Main_Logo_PGPN">
+                    <img src="img/logo genius pintar.png" style="width: 100%" />
+                </div>
 
-                <div class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" style="text-align: left; background-color: #800000;">
+                <div style="text-align: center; background-color: white" runat="server" id="Main_Logo_APP">
+                    <br />
+                    <br />
+                    <img src="img/logo kpm.png" style="width: 100%;" />
+                    <br />
+                    <br />
+                    <br />
+                </div>
+
+                <br />
+
+                <div class="w3-bar-item w3-button w3-hover-grey w3-text-white font" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF;">
                     <asp:HyperLink ID="Home" runat="server" CssClass="w3-text-white">Home<i class="fa fa-home w3-large w3-right"></i></asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="one" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropOne()" style="text-align: left; background-color: #800000; display: none">
-                    General Management <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-clipboard w3-large w3-right"></i>
+                <div id="MENU_GENERALMANAGEMENT" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_One()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    General Management <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_one" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminPeperiksaanPengurusanPeperiksaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Examination Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminPeperiksaanPengurusanGred" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Grade Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminPenilaian" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Assessment Management</asp:HyperLink>
+                <div id="MENU_SUB_GENERALMANAGEMENT" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPeperiksaanPengurusanPeperiksaan" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Examination Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPeperiksaanPengurusanGred" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Grade Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPenilaian" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Assessment Management</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="two" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwo()" style="text-align: left; background-color: #800000; display: none">
-                    Student <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-child w3-large w3-right"></i>
+                <div id="MENU_STUDENT" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Two()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Student <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_two" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminPengurusanKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Courses Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminPengurusanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminPengurusanPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminCarianPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Search Student</asp:HyperLink>
-                    <asp:HyperLink ID="adminDaftarPelajarBaru" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Student</asp:HyperLink>
-                    <asp:HyperLink ID="adminImportPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import Student</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarPenempatanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class & Course Placement</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarKehadiran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Attendance</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarKepastianKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Courses</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarKepastianKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Class</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarKepastianKokurikulum" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Cocurricular</asp:HyperLink>
+                <div id="MENU_SUB_STUDENT" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanKursus" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Courses Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengurusanKelas" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Class Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengurusanPelajar" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Student Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminCarianPelajar" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Search Student</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarPenempatanKelas" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Class & Course Placement</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarKehadiran" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Attendance</asp:HyperLink>
+                    <asp:HyperLink ID="adminPelajarKepastianKursus" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">View Information</asp:HyperLink>
+                </div>
+                <p></p>
 
-                    <asp:HyperLink ID="adminPelajarKepastianHostel" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Hostel</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarAgama" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Religion</asp:HyperLink>
-                    <asp:HyperLink ID="adminPelajarDisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Discipline</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Report</asp:HyperLink>
-                    <asp:HyperLink ID="adminDokumenPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Documents</asp:HyperLink>
+                <div id="MENU_STAFF" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Three()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Staff <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
+                <div id="MENU_SUB_STAFF" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminCarianPengajar" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Search Staff</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengajarPenempatanKelas" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Course Placement</asp:HyperLink>
+                </div>
+                <p></p>
 
-                <div id="three" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropThree()" style="text-align: left; background-color: #800000; display: none">
-                    Staff <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-group w3-large w3-right"></i>
+                <div id="MENU_COORDINATOR" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Four()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Coordinator <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_three" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminCarianPengajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Search Staff</asp:HyperLink>
-                    <asp:HyperLink ID="adminDaftarPengajarBaru" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Staff</asp:HyperLink>
-                    <asp:HyperLink ID="adminImportPengajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import Staff</asp:HyperLink>
-                    <asp:HyperLink ID="adminPengajarPenempatanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class & Courses Placement</asp:HyperLink>
-                    <asp:HyperLink ID="adminPengajarKepastianKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Course</asp:HyperLink>
+                <div id="MENU_SUB_COORDINATOR" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminDaftarKoordinator" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none"> Search Coordinator</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="twelve" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwelve()" style="text-align: left; background-color: #800000; display: none">
-                    Coordinator <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-group w3-large w3-right"></i>
+                <div id="MENU_DISCIPLINE" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Five()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Discipline <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_twelve" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminDaftarKoordinator" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Coordinator</asp:HyperLink>
-                    <asp:HyperLink ID="adminViewKoordinator" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Coordinator</asp:HyperLink>
+                <div id="MENU_SUB_DISCIPLINE" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanDisiplin" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Discipline Management</asp:HyperLink>
+                    <%--<asp:HyperLink ID="adminConfigWarningLetter" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Warning Letters Management</asp:HyperLink>--%>
+                    <asp:HyperLink ID="admineditdisiplin" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Case Management</asp:HyperLink>
+                    <%--<asp:HyperLink ID="adminviewdisiplin" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">View Case</asp:HyperLink>--%>
                 </div>
+                <p></p>
 
-                <div id="eleven" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropEleven()" style="text-align: left; background-color: #800000; display: none">
-                    Discipline <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-exclamation-triangle w3-large w3-right"></i>
+                <div id="MENU_COUNSELOR" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Six()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Counselor <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_eleven" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminPengurusanDisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Discipline Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminConfigWarningLetter" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Warning Letters Management</asp:HyperLink>
-                    <asp:HyperLink ID="admineditdisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Case</asp:HyperLink>
-                    <asp:HyperLink ID="adminviewdisiplin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View Case</asp:HyperLink>
+                <div id="MENU_SUB_COUNSELOR" class="w3-hide w3-white w3-card-4 font">
+                    <%--<asp:HyperLink ID="adminSenaraiKaunselorPelajar" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Student List</asp:HyperLink>--%>
+                    <asp:HyperLink ID="adminPengurusanKaunselor" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Counselor Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPerkembanganKendiri" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Self Development</asp:HyperLink>
+                    <asp:HyperLink ID="adminJatiDiri" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Personality Development</asp:HyperLink>
+                    <asp:HyperLink ID="adminPortfolio" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Portfolio</asp:HyperLink>
+                    <asp:HyperLink ID="adminAktivitiKounselor" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Counselling Activity</asp:HyperLink>
+                    <asp:HyperLink ID="adminPengurusanBiasiswa" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Scholarship Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminImportEksport" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Import/Export Result</asp:HyperLink>
+                    <asp:HyperLink ID="adminAlumni" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Alumni</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="twentyone" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwentyOne()" style="text-align: left; background-color: #800000; display: none">
-                    Counselor <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-heartbeat w3-right w3-large"></i>
+                <div id="MENU_RESEARCH" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Seven()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Research <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_twentyone" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminSenaraiKaunselorPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student List</asp:HyperLink>
-                    <asp:HyperLink ID="adminPerkembanganKendiri" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Self Development</asp:HyperLink>
-                    <asp:HyperLink ID="adminJatiDiri" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Personality Development</asp:HyperLink>
-                    <asp:HyperLink ID="adminPortfolio" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Portfolio</asp:HyperLink>
-                    <asp:HyperLink ID="adminAktivitiKounselor" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Counselling Activity</asp:HyperLink>
-                    <asp:HyperLink ID="adminPengurusanBiasiswa" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Scholarship Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminBiasiswa" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Scholarship</asp:HyperLink>
-                    <asp:HyperLink ID="adminImportEksport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import/Export Result</asp:HyperLink>
-                    <asp:HyperLink ID="adminAlumni" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Alumni</asp:HyperLink>
+                <div id="MENU_SUB_RESEARCH" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminDaftarKajianPelajar" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Register Student/Supervisor</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarKajianProjek" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Register Project/Field</asp:HyperLink>
+                    <asp:HyperLink ID="adminDaftarKajianMentor" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Register Mentor</asp:HyperLink>
+                    <asp:HyperLink ID="adminViewKajian" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">View List</asp:HyperLink>
+                </div>
+                <p></p>
 
+                <div id="MENU_EXAMINATION" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Eight()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Examination <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
+                <div id="MENU_SUB_EXAMINATION" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminKemaskiniMarkah" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Examination Result</asp:HyperLink>
+                    <asp:HyperLink ID="adminPeperiksaanTranskrip" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Examination Transcript</asp:HyperLink>
+                    <asp:HyperLink ID="adminImportExport" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Import Examination </asp:HyperLink>
+                </div>
+                <p></p>
 
-                <div id="twentytwo" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwentyTwo()" style="text-align: left; background-color: #800000; display: none">
-                    Research <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file-text w3-right w3-large"></i>
+                <div id="MENU_PAYMENT" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Nine()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Payment <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_twentytwo" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminDaftarKajianPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Student/Supervisor</asp:HyperLink>
-                    <asp:HyperLink ID="adminDaftarKajianProjek" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Research Project/Field</asp:HyperLink>
-                    <asp:HyperLink ID="adminDaftarKajianMentor" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Mentor</asp:HyperLink>
-                    <asp:HyperLink ID="adminViewKajian" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">View List</asp:HyperLink>
+                <div id="MENU_SUB_PAYMENT" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanPembayaran" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Payment Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminTransaksiYuran" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Student Information</asp:HyperLink>
+                    <asp:HyperLink ID="adminSemakYuran" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Payment Information</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="four" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropFive()" style="text-align: left; background-color: #800000; display: none">
-                    Examination <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file-powerpoint-o w3-large w3-right"></i>
+                <div id="MENU_HOSTEL" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Ten()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Hostel <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_five" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminKemaskiniMarkah" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Update Academic Result</asp:HyperLink>
-                    <asp:HyperLink ID="adminKemaskiniMarkahKoko" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Update Co-curriculum Result</asp:HyperLink>
-                    <asp:HyperLink ID="adminPeperiksaanTranskrip" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Exam Transcript</asp:HyperLink>
-                    <asp:HyperLink ID="adminTranskripRasmi" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Official Transcript</asp:HyperLink>
-                    <asp:HyperLink ID="adminImportExport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import / Export Result </asp:HyperLink>
-                    <asp:HyperLink ID="admin_ExamImport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Import GPA & CGPA</asp:HyperLink>
-                    <asp:HyperLink ID="adminImport" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Import Previous Exam Data</asp:HyperLink>
+                <div id="MENU_SUB_HOSTEL" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanHostel" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Hostel Management</asp:HyperLink>
+                    <asp:HyperLink ID="adminPenempatanPelajarAsrama" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Student Placement</asp:HyperLink>
+                    <asp:HyperLink ID="adminViewHostel" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">View Information</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="five" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropSix()" style="text-align: left; background-color: #800000; display: none">
-                    Payment <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-cc-visa w3-large w3-right"></i>
+                <div id="MENU_COCURRICULAR" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Eleven()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Co-Curricular <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_six" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminPengurusanPembayaran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Payment Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminTransaksiYuran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Information</asp:HyperLink>
-                    <asp:HyperLink ID="adminSemakYuran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Payment Information</asp:HyperLink>
+                <div id="MENU_SUB_COCURRICULAR" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminPengurusanKokurikulum" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Co-Curricular Management</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="six" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropSeven()" style="text-align: left; background-color: #800000; display: none">
-                    Hostel <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-building w3-large w3-right"></i>
+                <div id="MENU_REPORT" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Twelve()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Report <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_seven" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminPengurusanHostel" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Hostel Management</asp:HyperLink>
-                    <asp:HyperLink ID="adminDaftarAsramaBaru" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Register Hostel</asp:HyperLink>
-                    <asp:HyperLink ID="adminPenempatanPelajarAsrama" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Placement</asp:HyperLink>
+                <div id="MENU_SUB_REPORT" class="w3-hide w3-black w3-card-4 font w3-text-black">
+                    <asp:HyperLink ID="adminLaporanPeperiksaan" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Examination Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPeperiksaanKelas" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Class Examination Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanPeperiksaanKursus" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Courses Examination Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminCartaKedudukanPelajar" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Student Ranking List</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanKehadiran" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Attendance Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanBayaran" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">Financial Report</asp:HyperLink>
+                    <asp:HyperLink ID="adminLaporanUKM1PPCS" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">UKM 1 - PPCS Report</asp:HyperLink>
                 </div>
+                <p></p>
 
-                <div id="nine" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropThirdteen()" style="text-align: left; background-color: #800000; display: none">
-                    Co-Curricular <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-building w3-large w3-right"></i>
+                <div id="MENU_ALUMNI" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Thirdteen()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Alumni <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_thirdteen" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminPengurusanKokurikulum" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Co-Curricular Management</asp:HyperLink>
-                </div>
-
-                <div id="seven" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropEight()" style="text-align: left; background-color: #800000; display: none">
-                    Report <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-file w3-large w3-right"></i>
-                </div>
-                <div id="dropdown_eight" class="w3-hide w3-black w3-card-4 font w3-text-black">
-                    <asp:HyperLink ID="adminLaporanPeperiksaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Examination Report</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanPeperiksaanKelas" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Class Examination Report</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanPeperiksaanKursus" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Courses Examination Report</asp:HyperLink>
-                    <asp:HyperLink ID="adminCartaKedudukanPelajar" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Student Ranking List</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanKehadiran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Attendance Report</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanBayaran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Financial Report</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanUKM1" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">UKM1 History</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanUKM2" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">UKM2 History</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanUKM3" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">UKM3 History</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanPPCS" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">PPCS History</asp:HyperLink>
-                    <asp:HyperLink ID="adminLaporanPCIS" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">PCIS History</asp:HyperLink>
-                </div>
-
-                <div id="twentythree" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTwentyThree()" style="text-align: left; background-color: #800000; display: none">
-                    Alumni <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-graduation-cap w3-large w3-right"></i>
-                </div>
-                <%-- <div id="dropdown_twentythree" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminAlumniHistory" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">History</asp:HyperLink>
-                    <asp:HyperLink ID="adminAlumniMaklumatPembelajaran" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Study Information</asp:HyperLink>
-                    <asp:HyperLink ID="adminAlumniMaklumatPekerjaan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Occupation Information</asp:HyperLink>
+                <p></p>
+                <%-- <div id="MENU_SUB_ALUMNI" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminAlumniHistory" runat="server" class="w3-bar-item w3-button   font" Style="text-align: left; background-color: #ffcccc; display: none">History</asp:HyperLink>
+                    <asp:HyperLink ID="adminAlumniMaklumatPembelajaran" runat="server" class="w3-bar-item w3-button   font" Style="text-align: left; background-color: #ffcccc; display: none">Study Information</asp:HyperLink>
+                    <asp:HyperLink ID="adminAlumniMaklumatPekerjaan" runat="server" class="w3-bar-item w3-button   font" Style="text-align: left; background-color: #ffcccc; display: none">Occupation Information</asp:HyperLink>
                 </div>--%>
 
-                <div id="eight" runat="server" class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropNine()" style="text-align: left; background-color: #800000; display: none">
-                    Setting <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-wrench w3-large w3-right"></i>
+                <div id="MENU_SETTING" runat="server" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="MyMenu_Fourteen()" style="text-align: left; background-color: #00203FFF; border-bottom: 1px solid #567572FF; display: none">
+                    Setting <i class="fa fa-caret-down fa fa-fw w3-medium w3-right"></i>
                 </div>
-                <div id="dropdown_nine" class="w3-hide w3-white w3-card-4 font">
-                    <asp:HyperLink ID="adminMastrerKonfigurasi" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Admin Configuration</asp:HyperLink>
-                    <asp:HyperLink ID="adminKonfigurasi" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">System Configuration</asp:HyperLink>
-                    <asp:HyperLink ID="adminUserAkses" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">User Access</asp:HyperLink>
-                    <asp:HyperLink ID="adminUserLogin" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">User Login Trail</asp:HyperLink>
-                    <asp:HyperLink ID="adminTutorial" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc; display: none">Tutorial</asp:HyperLink>
+                <div id="MENU_SUB_SETTING" class="w3-hide w3-white w3-card-4 font">
+                    <asp:HyperLink ID="adminMastrerKonfigurasi" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">User Configuration</asp:HyperLink>
+                    <asp:HyperLink ID="adminKonfigurasi" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">System Configuration</asp:HyperLink>
+                    <asp:HyperLink ID="adminUserAkses" runat="server" class="w3-bar-item w3-button  font" Style="text-align: left; background-color: #F2F2F2; display: none">User Access</asp:HyperLink>
                 </div>
-
-                <div class="w3-bar-item w3-button w3-padding-large w3-hover-grey w3-border w3-text-white font" onclick="myDropTen()" style="text-align: left; background-color: #800000">
-                    Others <i class="fa fa-caret-down fa fa-fw w3-medium"></i><i class="fa fa-gear w3-large w3-right"></i>
-                </div>
-                <div id="dropdown_ten" class="w3-hide w3-white w3-card-4 font">
-
-                    <%-- <asp:HyperLink ID="adminImportStudent" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Temporary Import Student</asp:HyperLink>--%>
-                    <asp:HyperLink ID="adminKemaskiniProfil" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Update Profiles</asp:HyperLink>
-                    <asp:HyperLink ID="adminTukarKataLaluan" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Update Pasword</asp:HyperLink>
-                    <asp:HyperLink ID="adminLogout" runat="server" class="w3-bar-item w3-button w3-padding-large font" Style="text-align: left; background-color: #ffcccc">Logout</asp:HyperLink>
-                </div>
+                <p></p>
 
                 <div id="tutupMenu">
-                    <a href="#" class="w3-bar-item w3-button w3-hover-grey w3-border w3-padding-large w3-text-white font" onclick="closeNav()" style="text-align: left; background-color: #800000;">Close Menu
+                    <a href="#" class="w3-bar-item w3-button w3-hover-grey w3-text-white font" onclick="closeNav()" style="text-align: left; background-color: #800000;">Close Menu
                 <i class="fa fa-close w3-right w3-large fa fa-fw"></i>
                     </a>
-                </div>
-
-                <div id="testExam">
-                    <p></p>
-                </div>
-
-                <div id="testExamOfficial">
-                    <p></p>
                 </div>
             </div>
         </div>
 
-        <div id="main" class="w3-text-white" style="margin-top: 30px; height: 85%">
+        <div id="myTopnav">
+            <div style="padding-top: 2.2vh; padding-left: 2vw">
+                <asp:Label runat="server" ID="txtstaffName" class="w3-text-white font" Style="text-align: left;"></asp:Label>
+                &nbsp;&nbsp;
+                <asp:Label runat="server" ID="txtcurrentDate" class="w3-text-white font" Style="text-align: left;"></asp:Label>
+                <asp:HyperLink ID="btnTutorial" runat="server" class="btn btn-warning" Style=" position: fixed; z-index: 1; right: 9vw; top: 1.6vh; font-size:0.8vw">Tutorial &nbsp;&nbsp;<i class="fa fa-video-camera w3-text-white"></i></asp:HyperLink>
+                <asp:HyperLink ID="btnSignOut" runat="server" class="btn btn-danger" style="background-color: #CC0000; position: fixed; z-index: 1; right: 2vw; top: 1.6vh; font-size:0.8vw">Logout &nbsp;&nbsp;<i class="fa fa-sign-out w3-text-white"></i></asp:HyperLink>
+            </div>
+        </div>
+
+       <div class="w3-text-white alignText" style="position: fixed; z-index: 1; top: 9vh; left: 15vw; right: 2.5vw; transition: 0.5s;">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
 
         <br />
 
-        <%--<asp:HiddenField ID="hiddenAccess" runat="server" />--%>
         <asp:HiddenField ID="hiddenData" runat="server" />
     </form>
 </body>

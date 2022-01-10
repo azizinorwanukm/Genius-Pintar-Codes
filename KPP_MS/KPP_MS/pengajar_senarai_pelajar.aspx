@@ -2,7 +2,6 @@
 
 <%@ Register Src="~/commoncontrol/lecturer_list_student.ascx" TagPrefix="uc1" TagName="lecturer_list_student" %>
 
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 

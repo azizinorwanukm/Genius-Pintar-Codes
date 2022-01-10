@@ -87,12 +87,12 @@
                             <!--disiplin drop down -->
                             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
                                 <asp:Label CssClass="Label" runat="server" Style="width: 20%">Diciplinary Category : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-                                <asp:DropDownList ID="ddlCaseType" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl" Style="width: 100%"></asp:DropDownList>
+                                <asp:DropDownList ID="ddlCaseType" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl" Style="width: 100%"></asp:DropDownList>
                             </div>
                             <!--Complainant Dropdown list-->
                             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
                                 <asp:Label CssClass="Label" runat="server" Style="width: 20%">Complainant Name : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-                                <asp:DropDownList ID="ddlReporter" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl" Style="width: 100%"></asp:DropDownList>
+                                <asp:DropDownList ID="ddlReporter" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl" Style="width: 100%"></asp:DropDownList>
                             </div>
                         </div>
 
@@ -296,7 +296,7 @@
                         </div>  
                         <div ID="wlContentDiv" class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px;" runat="server">
                             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-                                <asp:DropDownList ID="ddlLetterType" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl" Style="width: 100%"></asp:DropDownList>
+                                <asp:DropDownList ID="ddlLetterType" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl" Style="width: 100%"></asp:DropDownList>
                                 <asp:Label CssClass="Label" runat="server" Style="width: 20%">Title : </asp:Label>
                                 <asp:TextBox ID="wlTitle" runat="server" class="form-control" ReadOnly="true"></asp:TextBox>
                                 <asp:Label CssClass="Label" runat="server" Style="width: 20%">Content : </asp:Label>

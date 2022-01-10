@@ -14,24 +14,6 @@ Option Explicit On
 Partial Public Class student_AddClass
     
     '''<summary>
-    '''txtstudent control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtstudent As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''btnSearch control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
     '''ddl_year control.
     '''</summary>
     '''<remarks>
@@ -39,6 +21,24 @@ Partial Public Class student_AddClass
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddl_year As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_Campus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_Campus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_Program control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_Program As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddl_level control.
@@ -93,13 +93,4 @@ Partial Public Class student_AddClass
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''nodatamessage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents nodatamessage As Global.System.Web.UI.WebControls.Label
 End Class

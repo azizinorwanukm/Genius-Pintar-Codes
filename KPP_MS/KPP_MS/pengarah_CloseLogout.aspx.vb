@@ -11,18 +11,12 @@ Public Class pengarah_CloseLogout
     Dim objConn As SqlConnection = New SqlConnection(strConn)
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        logout_activity(Request.QueryString("pengarah_ID"))
+        logout_activity(oCommon.Staff_securityLogin(Request.QueryString("pengarah_ID")))
     End Sub
 
     Private Sub logout_activity(ByVal text As String)
 
-        Dim accessID As String = "select MAX(security_ID) from security_ID where loginID_Number = '" & text & "'"
-        Dim accessData As String = oCommon.getFieldValue(accessID)
-
-        Dim get_userID As String = "select stf_ID from security_ID where security_ID = '" & accessData & "'"
-        Dim data_userID As String = oCommon.getFieldValue(get_userID)
-
-        Dim search_Data As String = "select staff_Login from staff_Info where stf_ID = '" & data_userID & "'"
+        Dim search_Data As String = "select distinct staff_Login from staff_Login where stf_ID = '" & text & "'"
         Dim find_getData As String = oCommon.getFieldValue(search_Data)
 
         Session.Abandon()
@@ -42,6 +36,8 @@ Public Class pengarah_CloseLogout
             Dim i = LoginData.ExecuteNonQuery()
             objConn.Close()
         End Using
+
+        Response.Redirect("default.aspx")
 
     End Sub
 

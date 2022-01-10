@@ -14,22 +14,40 @@ Option Explicit On
 Partial Public Class student_marks1
     
     '''<summary>
-    '''txtstudent control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtstudent As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''btnSearch control.
+    '''btnAcademicResult control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents btnAcademicResult As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''btnCocurricularResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnCocurricularResult As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''AcademicResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents AcademicResult As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
     '''ddl_year control.
@@ -41,13 +59,22 @@ Partial Public Class student_marks1
     Protected WithEvents ddl_year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddl_exam control.
+    '''ddl_campus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_exam As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddl_campus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_program control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_program As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddl_level control.
@@ -59,13 +86,13 @@ Partial Public Class student_marks1
     Protected WithEvents ddl_level As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddl_class control.
+    '''ddl_exam control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_class As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddl_exam As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddl_subject control.
@@ -75,6 +102,15 @@ Partial Public Class student_marks1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddl_subject As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_class control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_class As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''datRespondent control.
@@ -95,29 +131,65 @@ Partial Public Class student_marks1
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''BtnExport control.
+    '''CocurricularResult control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnExport As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents CocurricularResult As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''nodatamessage control.
+    '''ddl_cocuYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents nodatamessage As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ddl_cocuYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''HiddenField1 control.
+    '''ddl_cocuLevel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HiddenField1 As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents ddl_cocuLevel As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_cocuExam control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_cocuExam As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_cocuType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_cocuType As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_cocuName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_cocuName As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''CocuRespondent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents CocuRespondent As Global.System.Web.UI.WebControls.GridView
 End Class

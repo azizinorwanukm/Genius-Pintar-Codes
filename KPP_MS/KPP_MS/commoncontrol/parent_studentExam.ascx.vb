@@ -228,21 +228,34 @@ Public Class parent_studentExam
             Test.AppendLine("<div id='data' style='display:none'>")
             Test.AppendLine("<div id='dataTESTBM' style='background-image: url(img/exam_transkrip_v13_2.jpg);height:90%;background-position:center;background-repeat: no-repeat;background-size: cover;' ")
 
-            'get Portfolio percentage on / off
-            Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-            Dim Confirm_Portfolio As String = getFieldValue(check_portfolio_percen, strConn)
+            ''get student level
+            Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & Request.QueryString("std_ID") & "' and year = '" & ddlyear.SelectedValue & "'"
+            Dim GetStudentLevel As String = oCommon.getFieldValue(FindStudentLevel)
+
+            Dim check_portfolio_percen As String = ""
+            Dim Confirm_Portfolio As String = ""
+            Dim check_cocuricullum_percen As String = ""
+            Dim Confirm_Cocuricullum As String = ""
+            Dim check_research_percen As String = ""
+            Dim Confirm_Research As String = ""
+            Dim check_self_percen As String = ""
+            Dim Confirm_Self As String = ""
+
+            ''get Portfolio percentage on / off
+            check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Confirm_Portfolio = oCommon.getFieldValue(check_portfolio_percen)
 
             ''get cocuricullum percentage on / off
-            Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-            Dim Confirm_Cocuricullum As String = getFieldValue(check_cocuricullum_percen, strConn)
+            check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Confirm_Cocuricullum = oCommon.getFieldValue(check_cocuricullum_percen)
 
             ''get research percentage on / off
-            Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-            Dim Confirm_Research As String = getFieldValue(check_research_percen, strConn)
+            check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Confirm_Research = oCommon.getFieldValue(check_research_percen)
 
             ''get self development percentage on / off
-            Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-            Dim Confirm_Self As String = getFieldValue(check_self_percen, strConn)
+            check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Confirm_Self = oCommon.getFieldValue(check_self_percen)
 
             ''print subject name and grade
             ''print subject name and grade
@@ -265,7 +278,7 @@ Public Class parent_studentExam
             SQA.SelectCommand.CommandTimeout = 120
 
             'print portfolio
-            If Confirm_Portfolio = "on" Then
+            If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
                 tmpSQL = "Select exam_result.grade from exam_result 
                                       left join course on exam_result.course_ID=course.course_ID 
                                       left join student_info on course.std_ID=student_info.std_ID 
@@ -284,7 +297,7 @@ Public Class parent_studentExam
             End If
 
             ''print research 
-            If Confirm_Research = "on" Then
+            If Confirm_Research = "on" Or Confirm_Research = "On" Then
                 tmpSQL = "Select exam_result.grade from exam_result 
                                       left join course on exam_result.course_ID=course.course_ID 
                                       left join student_info on course.std_ID=student_info.std_ID 
@@ -303,7 +316,7 @@ Public Class parent_studentExam
             End If
 
             ''print self development
-            If Confirm_Self = "on" Then
+            If Confirm_Self = "on" Or Confirm_Self = "On" Then
                 Dim level As String = "select student_Level from student_level where std_ID = '" & dataSTDIDFInal & "' and year = '" & ddlyear.SelectedValue & "' "
                 Dim getLevel As String = getFieldValue(level, strConn)
 
@@ -340,7 +353,7 @@ Public Class parent_studentExam
             End If
 
             '' print cocuricullum (for temporary purpose.. until kolejadmin db combine with permata db)
-            If Confirm_Cocuricullum = "on" Then
+            If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
                 If ddlexam.SelectedValue = "Exam 1" Or ddlexam.SelectedValue = "Exam 5" Then
 
                     Dim studentData As String = "Select student_Mykad from student_info where std.ID = '" & dataSTDIDFInal & "'"
@@ -579,7 +592,7 @@ Public Class parent_studentExam
             Next
 
             ''second column (cocuricullum)
-            If Confirm_Cocuricullum = "on" Then
+            If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
                 For Each row As DataRow In DSCocuricullum.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -595,7 +608,7 @@ Public Class parent_studentExam
             End If
 
             ''second column (research)
-            If Confirm_Research = "on" Then
+            If Confirm_Research = "on" Or Confirm_Research = "On" Then
                 For Each row As DataRow In DSResearch.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -611,7 +624,7 @@ Public Class parent_studentExam
             End If
 
             ''second column (Portfolio)
-            If Confirm_Portfolio = "on" Then
+            If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
                 For Each row As DataRow In DSPortfolio.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -627,7 +640,7 @@ Public Class parent_studentExam
             End If
 
             ''second column (self development)
-            If Confirm_Self = "on" Then
+            If Confirm_Self = "on" Or Confirm_Self = "On" Then
                 For Each row As DataRow In DSSelfdevelopment.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -707,21 +720,34 @@ Public Class parent_studentExam
             Test.AppendLine("<div id='data' style='display:none'>")
             Test.AppendLine("<div id='dataTESTBI' style='background-image: url(img/exam_transkrip_v13_2.jpg);height:90%;background-position:center;background-repeat: no-repeat;background-size: cover;' ")
 
-            ''get portfolio percentage on / off
-            Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-            Dim Confirm_Portfolio As String = getFieldValue(check_portfolio_percen, strConn)
+            ''get student level
+            Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & Request.QueryString("std_ID") & "' and year = '" & ddlyear.SelectedValue & "'"
+            Dim GetStudentLevel As String = oCommon.getFieldValue(FindStudentLevel)
+
+            Dim check_portfolio_percen As String = ""
+            Dim Confirm_Portfolio As String = ""
+            Dim check_cocuricullum_percen As String = ""
+            Dim Confirm_Cocuricullum As String = ""
+            Dim check_research_percen As String = ""
+            Dim Confirm_Research As String = ""
+            Dim check_self_percen As String = ""
+            Dim Confirm_Self As String = ""
+
+            ''get Portfolio percentage on / off
+            check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Confirm_Portfolio = oCommon.getFieldValue(check_portfolio_percen)
 
             ''get cocuricullum percentage on / off
-            Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-            Dim Confirm_Cocuricullum As String = getFieldValue(check_cocuricullum_percen, strConn)
+            check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Confirm_Cocuricullum = oCommon.getFieldValue(check_cocuricullum_percen)
 
             ''get research percentage on / off
-            Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-            Dim Confirm_Research As String = getFieldValue(check_research_percen, strConn)
+            check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Confirm_Research = oCommon.getFieldValue(check_research_percen)
 
             ''get self development percentage on / off
-            Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-            Dim Confirm_Self As String = getFieldValue(check_self_percen, strConn)
+            check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Confirm_Self = oCommon.getFieldValue(check_self_percen)
 
             ''print academic
             tmpSQL = "Select subject_info.subject_Name,exam_result.grade from exam_result 
@@ -742,7 +768,7 @@ Public Class parent_studentExam
             SQA.SelectCommand.CommandTimeout = 120
 
             ''print portfolio
-            If Confirm_Portfolio = "on" Then
+            If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
                 tmpSQL = "Select exam_result.grade from exam_result 
                                       left join course on exam_result.course_ID=course.course_ID 
                                       left join student_info on course.std_ID=student_info.std_ID 
@@ -761,7 +787,7 @@ Public Class parent_studentExam
             End If
 
             ''print research 
-            If Confirm_Research = "on" Then
+            If Confirm_Research = "on" Or Confirm_Research = "On" Then
                 tmpSQL = "Select exam_result.grade from exam_result 
                                       left join course on exam_result.course_ID=course.course_ID 
                                       left join student_info on course.std_ID=student_info.std_ID 
@@ -780,7 +806,7 @@ Public Class parent_studentExam
             End If
 
             ''print self development
-            If Confirm_Self = "on" Then
+            If Confirm_Self = "on" Or Confirm_Self = "On" Then
                 Dim level As String = "select student_Level from student_level where std_ID = '" & dataSTDIDFInal & "' and year = '" & ddlyear.SelectedValue & "' "
                 Dim getLevel As String = getFieldValue(level, strConn)
 
@@ -817,7 +843,7 @@ Public Class parent_studentExam
             End If
 
             '' print cocuricullum (for temporary purpose.. until kolejadmin db combine with permata db)
-            If Confirm_Cocuricullum = "on" Then
+            If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
                 If ddlexam.SelectedValue = "Exam 1" Or ddlexam.SelectedValue = "Exam 5" Then
 
                     Dim studentData As String = "Select student_Mykad from student_info where std.ID = '" & dataSTDIDFInal & "'"
@@ -1056,7 +1082,7 @@ Public Class parent_studentExam
             Next
 
             ''second column (cocuricullum)
-            If Confirm_Cocuricullum = "on" Then
+            If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
                 For Each row As DataRow In DSCocuricullum.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -1072,7 +1098,7 @@ Public Class parent_studentExam
             End If
 
             ''second column (research)
-            If Confirm_Research = "on" Then
+            If Confirm_Research = "on" Or Confirm_Research = "On" Then
                 For Each row As DataRow In DSResearch.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -1088,7 +1114,7 @@ Public Class parent_studentExam
             End If
 
             ''second column (portfolio)
-            If Confirm_Portfolio = "on" Then
+            If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
                 For Each row As DataRow In DSPortfolio.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -1104,7 +1130,7 @@ Public Class parent_studentExam
             End If
 
             ''second column (self development)
-            If Confirm_Self = "on" Then
+            If Confirm_Self = "on" Or Confirm_Self = "On" Then
                 For Each row As DataRow In DSSelfdevelopment.Rows
                     Test.Append("<tr>")
                     Test.Append("<td style='text-align:left'>")
@@ -1232,26 +1258,40 @@ Public Class parent_studentExam
                 png = 0.00
             End If
 
+            ''get student level
+            Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & Request.QueryString("std_ID") & "' and year = '" & ddlyear.SelectedValue & "'"
+            Dim GetStudentLevel As String = oCommon.getFieldValue(FindStudentLevel)
 
-            ''get academic percentage on / off
-            Dim check_academic_percen As String = "select Value from setting where Type = 'Academic_Percentage'"
-            Dim Confirm_Academic As String = getFieldValue(check_academic_percen, strConn)
+            Dim check_academic_percen As String = ""
+            Dim Confirm_Academic As String = ""
+            Dim check_portfolio_percen As String = ""
+            Dim Confirm_Portfolio As String = ""
+            Dim check_cocuricullum_percen As String = ""
+            Dim Confirm_Cocuricullum As String = ""
+            Dim check_research_percen As String = ""
+            Dim Confirm_Research As String = ""
+            Dim check_self_percen As String = ""
+            Dim Confirm_Self As String = ""
 
-            ''get portfolio percentage on / off
-            Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-            Dim Confirm_Portfolio As String = getFieldValue(check_portfolio_percen, strConn)
+            'get academic percentage on / off
+            check_academic_percen = "select Value from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+            Confirm_Academic = oCommon.getFieldValue(check_academic_percen)
+
+            ''get Portfolio percentage on / off
+            check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Confirm_Portfolio = oCommon.getFieldValue(check_portfolio_percen)
 
             ''get cocuricullum percentage on / off
-            Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-            Dim Confirm_Cocuricullum As String = getFieldValue(check_cocuricullum_percen, strConn)
+            check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Confirm_Cocuricullum = oCommon.getFieldValue(check_cocuricullum_percen)
 
             ''get research percentage on / off
-            Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-            Dim Confirm_Research As String = getFieldValue(check_research_percen, strConn)
+            check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Confirm_Research = oCommon.getFieldValue(check_research_percen)
 
             ''get self development percentage on / off
-            Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-            Dim Confirm_Self As String = getFieldValue(check_self_percen, strConn)
+            check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Confirm_Self = oCommon.getFieldValue(check_self_percen)
 
             Dim PNG_Academic As Decimal
             Dim PNG_Cocuricullum As Decimal
@@ -1266,8 +1306,8 @@ Public Class parent_studentExam
             Dim percen_portfolio As Decimal
 
             '' Confirm Academic
-            If Confirm_Academic = "on" Then
-                Dim data_academic_percen As String = "select Parameter from setting where Type = 'Academic_Percentage'"
+            If Confirm_Academic = "on" Or Confirm_Academic = "On" Then
+                Dim data_academic_percen As String = "select Parameter from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
                 percen_academic = Decimal.Parse(getFieldValue(data_academic_percen, strConn))
 
                 PNG_Academic = png
@@ -1277,8 +1317,8 @@ Public Class parent_studentExam
             End If
 
             '' Confirm Portfolio
-            If Confirm_Portfolio = "on" Then
-                Dim data_portfolio_percen As String = "select Parameter from setting where Type = 'Portfolio_Percentage'"
+            If Confirm_Portfolio = "on" Or Confirm_Portfolio = "On" Then
+                Dim data_portfolio_percen As String = "select Parameter from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
                 percen_portfolio = Decimal.Parse(getFieldValue(data_portfolio_percen, strConn))
 
                 Dim get_portfolio As String = "Select gpa
@@ -1298,8 +1338,8 @@ Public Class parent_studentExam
             End If
 
             '' Confirm Research
-            If Confirm_Research = "on" Then
-                Dim data_research_percen As String = "select Parameter from setting where Type = 'Research_Percentage'"
+            If Confirm_Research = "on" Or Confirm_Research = "On" Then
+                Dim data_research_percen As String = "select Parameter from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
                 percen_research = Decimal.Parse(getFieldValue(data_research_percen, strConn))
 
                 Dim get_research As String = "Select gpa
@@ -1320,8 +1360,8 @@ Public Class parent_studentExam
             End If
 
             '' Confirm Cocuricullum
-            If Confirm_Cocuricullum = "on" Then
-                Dim data_cocuricullum_percen As String = "select Parameter from setting where Type = 'Cocuricullum_Percentage'"
+            If Confirm_Cocuricullum = "on" Or Confirm_Cocuricullum = "On" Then
+                Dim data_cocuricullum_percen As String = "select Parameter from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
                 percen_cocuricullum = Decimal.Parse(getFieldValue(data_cocuricullum_percen, strConn))
 
                 PNG_Cocuricullum = 3.55 ''this is dummy data for test 
@@ -1331,8 +1371,8 @@ Public Class parent_studentExam
             End If
 
             '' Confirm Self Developmemnt
-            If Confirm_Self = "on" Then
-                Dim data_self_percen As String = "select Parameter from setting where Type = 'Self_Development_Percentage'"
+            If Confirm_Self = "on" Or Confirm_Self = "On" Then
+                Dim data_self_percen As String = "select Parameter from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
                 percen_selfdevelopment = Decimal.Parse(getFieldValue(data_self_percen, strConn))
 
                 Dim get_selfdevelopment As String = "Select gpa

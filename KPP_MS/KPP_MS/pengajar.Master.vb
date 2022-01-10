@@ -13,7 +13,12 @@ Public Class pengajar
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
-            If Not IsPostBack Then
+
+            If Not Request.IsSecureConnection Then
+                Response.Redirect(Request.Url.AbsoluteUri.Replace("http://", "https://"))
+            End If
+
+            If Not IsPostBack Or IsPostBack Then
 
                 Dim id As String = Request.QueryString("stf_ID")
 
@@ -31,39 +36,17 @@ Public Class pengajar
                         Response.Redirect("default.aspx")
 
                     Else
-                        Dim userAccess As String = ""
-                        userAccess = "select stf_ID from staff_Info where stf_ID = '" & staffID_Data & "' and staff_Status = 'Access'"
-                        Dim access As String = getFieldValue(userAccess, strConn)
 
-                        ''check whether lecturer is a homeroom teacher
-                        Dim homeroom As String = "select distinct stf_ID from class_info where stf_ID = '" & staffID_Data & "' and class_year= '" & Now.Year & "'"
-                        Dim accessHomeroom As String = oCommon.getFieldValue(homeroom)
-
-                        ''check whether lecturer is a coordinator teacher
-                        Dim coordinator As String = "select distinct stf_ID from coordinator where stf_ID = '" & staffID_Data & "' and year= '" & Now.Year & "'"
-                        Dim accessCoordinator As String = oCommon.getFieldValue(coordinator)
-
-                        ''check whether lecturer is a counselor
-                        Dim counselor As String = "select distinct stf_ID from counseling_info where kslr_year = '" & Now.Year & "' and stf_ID = '" & staffID_Data & "'"
-                        Dim accessCounselor As String = oCommon.getFieldValue(counselor)
-
-                        If accessHomeroom = "" Then
-                            hiddenAccess.Value = "NOT ACCESS"
-                        Else
-                            hiddenAccess.Value = "ACCESS"
+                        ''Hide Certain Menu When User APP Login
+                        If Session("SchoolCampus") = "APP" Then
+                            pengajarPelajarKehadiran.Visible = False
+                            homeroomSemakKehadiran.Visible = False
+                            ninenine.Visible = False
                         End If
 
-                        If accessCoordinator = "" Then
-                            hiddenKoordinator.Value = "NOT ACCESS"
-                        Else
-                            hiddenKoordinator.Value = "ACCESS"
-                        End If
-
-                        If accessCounselor = "" Then
-                            hiddenKaunselor.Value = "NOT ACCESS"
-                        Else
-                            hiddenKaunselor.Value = "ACCESS"
-                        End If
+                        hiddenAccess.Value = "ACCESS"
+                        hiddenKoordinator.Value = "ACCESS"
+                        hiddenKaunselor.Value = "ACCESS"
 
                         loading_Page(id)
 
@@ -103,19 +86,54 @@ Public Class pengajar
     End Function
 
     Private Sub loading_Page(ByVal id As String)
-        Home.NavigateUrl = String.Format("pengajar_login_berjaya.aspx?stf_ID=" + id)
+
+        Home.NavigateUrl = String.Format("pengajar_login_berjaya.aspx?stf_ID=" + id + "&status=SI")
+        pengajarDaftarKelas.NavigateUrl = String.Format(("pengajar_daftar_kelas.aspx?stf_ID=" + id))
         pengajarPelajarKehadiran.NavigateUrl = String.Format("pengajar_kehadiran_pelajar.aspx?stf_ID=" + id)
         pengajarKemaskiniMarkah.NavigateUrl = String.Format("pengajar_kemasukan_markah.aspx?stf_ID=" + id)
-        pengajarSenaraiKaunselorPelajar.NavigateUrl = String.Format("pengajar_carian_pelajar_kaunselor.aspx?stf_ID=" + id)
-        pengajarKemaskiniProfil.NavigateUrl = String.Format("pengajar_kemaskini_profile.aspx?stf_ID=" + id)
-        pengajarTukarKataLaluan.NavigateUrl = String.Format("pengajar_password_baru.aspx?stf_ID=" + id)
-        pengajarLogout.NavigateUrl = String.Format("default.aspx?result=89&stf_ID=" + id)
+        pengajarKemasukanPelajar.NavigateUrl = String.Format("penagajr_kemasukan_pelajar.aspx?stf_ID=" + id + "&status=SR")
+        'pengajarSenaraiKaunselorPelajar.NavigateUrl = String.Format("pengajar_carian_pelajar_kaunselor.aspx?stf_ID=" + id)
+
         pengajarCarianPelajar.NavigateUrl = String.Format("pengajar_senarai_pelajar.aspx?stf_ID=" + id)
         pengajarLaporanPeperiksaan.NavigateUrl = String.Format("pengajar_laporan_pentaksiran.aspx?stf_ID=" + id)
         homeroomSemakKehadiran.NavigateUrl = String.Format("homeroom_semak_kehadiran.aspx?stf_ID=" + id)
-        homeroomPenilaianPelajar.NavigateUrl = String.Format("pengajar_penilaian_pelajar.aspx?stf_ID=" + id)
+        'homeroomPenilaianPelajar.NavigateUrl = String.Format("pengajar_penilaian_pelajar.aspx?stf_ID=" + id)
         koordinatorKemaskiniMarkah.NavigateUrl = String.Format("pegajar_koordinator_kemaskini_markah.aspx?stf_ID=" + id)
-        koordinatorPenilaianPelajar.NavigateUrl = String.Format("pengajar_koordinator_penilaian_pelajar.aspx?stf_ID=" + id)
+        'koordinatorPenilaianPelajar.NavigateUrl = String.Format("pengajar_koordinator_penilaian_pelajar.aspx?stf_ID=" + id)
+
+        kokocarianpelajar.NavigateUrl = String.Format("pengajar_koko_carianPelajar.aspx?stf_ID=" + id)
+        kokopangkatpelajar.NavigateUrl = String.Format("pengajar_koko_pangkatPelajar.aspx?stf_ID=" + id)
+        kokokehadiranpelajar.NavigateUrl = String.Format("pengajar_koko_kehadiranPelajar.aspx?stf_ID=" + id)
+        kokomarkahpelajar.NavigateUrl = String.Format("pengajar_koko_markahPelajar.aspx?stf_ID=" + id)
+        kokojadualpelajar.NavigateUrl = String.Format("pengajar_koko_jadualPelajar.aspx?stf_ID=" + id)
+
+        LinkTutorial.NavigateUrl = String.Format("pengajar_tutorial.aspx?stf_ID=" + id)
+
+        Dim staffID_Data As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
+
+        If staffID_Data = "1654" Then
+            pengajarKemasukanPelajar.Visible = True
+        Else
+            pengajarKemasukanPelajar.Visible = False
+        End If
+
+
+        strSQL = "  select staff_Name from staff_Info
+                    where staff_Status = 'Access'
+                    and stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'"
+
+
+        Dim strSQLPosition As String = "Select Parameter from setting where Value = '" & Session("lecturer_position") & "'"
+
+        txtstaffName.Text = " [ WELCOME ,  &nbsp;&nbsp; " & oCommon.getFieldValue(strSQL) & " &nbsp;&nbsp; - &nbsp;&nbsp; " & oCommon.getFieldValue(strSQLPosition).ToUpper & " ] "
+
+        txtcurrentDate.Text = DateTime.Now.ToString("dd/MM/yyyy")
+
     End Sub
+
+    Private Sub btnLogout_ServerClick(sender As Object, e As EventArgs) Handles btnLogout.ServerClick
+        Response.Redirect("default.aspx?result=89&stf_ID=" + oCommon.Staff_securityLogin(Request.QueryString("stf_ID")))
+    End Sub
+
 
 End Class

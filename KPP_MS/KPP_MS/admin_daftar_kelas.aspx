@@ -37,18 +37,8 @@
         }
     </script>
 
-    <div id="newClass_info" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c; ">
-        <uc1:class_Create runat="server" ID="class_Create" />
-        <p></p>
-    </div>
 
-    <div id="importClass" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c; margin-top: 10px">
-        <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Transfer Class</p>
-        <uc1:class_transfer runat="server" id="class_transfer" />
-
-        <%--<p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Import Class</p>
-        <uc1:import_class runat="server" ID="import_class" />--%>
-    </div>
+    <uc1:class_Create runat="server" ID="class_Create" />
 
     <div class="messagealert" id="alert_container" style="text-align: center"></div>
 

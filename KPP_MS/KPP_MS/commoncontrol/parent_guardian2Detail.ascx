@@ -33,13 +33,13 @@
                 <p></p>
                 <asp:Label CssClass="Label" runat="server"> City : </asp:Label>
                 <!--<asp:TextBox CssClass="textbox" ID="parent_City" Style="width: 100%; border-radius: 25px;" runat="server"></asp:TextBox>-->
-                <asp:DropDownList ID="ddlparent_City" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlparent_City" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server"> State : </asp:Label>
                 <!--<asp:TextBox CssClass="textbox" ID="parent_State" Style="width: 100%; border-radius: 25px;" runat="server"></asp:TextBox>-->
-                <asp:DropDownList ID="ddlparent_State" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+                <asp:DropDownList ID="ddlparent_State" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
             </div>
             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>

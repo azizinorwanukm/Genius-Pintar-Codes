@@ -20,7 +20,7 @@
             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
                 <p></p>
                 <asp:Label CssClass="Label" runat="server"> Status : </asp:Label>
-                <asp:DropDownList ID="ddlStatus" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl" Style="width: 100%;">
+                <asp:DropDownList ID="ddlStatus" runat="server" AutoPostBack="false" CssClass=" btn btn-default font ddl" Style="width: 100%;">
                     <asp:ListItem Text="Please Select"></asp:ListItem>
                 </asp:DropDownList>
             </div>

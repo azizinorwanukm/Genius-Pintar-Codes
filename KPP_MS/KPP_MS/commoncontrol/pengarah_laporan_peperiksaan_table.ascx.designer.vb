@@ -23,6 +23,24 @@ Partial Public Class pengarah_laporan_peperiksaan_table
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''ddlCampus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlProgram control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlProgram As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''ddlExam control.
     '''</summary>
     '''<remarks>
@@ -41,13 +59,13 @@ Partial Public Class pengarah_laporan_peperiksaan_table
     Protected WithEvents ddlLevel As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''lblExamination control.
+    '''btnExport control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblExamination As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents btnExport As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
     '''datRespondent control.
@@ -57,15 +75,6 @@ Partial Public Class pengarah_laporan_peperiksaan_table
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''BtnExport control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BtnExport As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
     '''count400 control.

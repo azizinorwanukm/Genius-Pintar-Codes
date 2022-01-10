@@ -24,9 +24,7 @@ Public Class counselor_Portfolio
                 ElseIf data = "TRUE" Then
 
                     Year_List_Info()
-
-                    load_page()
-
+                    Program_List_Info()
                     Exam_List_Info()
                     Level_List_Info()
 
@@ -37,29 +35,6 @@ Public Class counselor_Portfolio
 
         Catch ex As Exception
         End Try
-    End Sub
-
-    Private Sub load_page()
-        strSQL = "SELECT * from setting where Type = 'Year' and Parameter = '" & Now.Year & "'"
-
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddlYear.SelectedValue = Now.Year
-            End If
-        End If
     End Sub
 
     Private Sub Year_List_Info()
@@ -76,6 +51,29 @@ Public Class counselor_Portfolio
             ddlYear.DataTextField = "Parameter"
             ddlYear.DataValueField = "Value"
             ddlYear.DataBind()
+            ddlYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub Program_List_Info()
+        strSQL = "SELECT * from setting where Type = 'Stream'"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlProgram.DataSource = ds
+            ddlProgram.DataTextField = "Parameter"
+            ddlProgram.DataValueField = "Value"
+            ddlProgram.DataBind()
+            ddlProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
 
         Catch ex As Exception
         Finally
@@ -84,7 +82,21 @@ Public Class counselor_Portfolio
     End Sub
 
     Private Sub Exam_List_Info()
-        strSQL = "SELECT * from exam_info where exam_year = '" & ddlYear.SelectedValue & "'"
+
+        strSQL = ""
+
+        If ddlLevelnaming.SelectedValue = "Foundation 1" Then
+            strSQL = "SELECT Parameter, Value from setting where Type = 'Exam' and (Parameter = 'Exam 1' or Parameter = 'Exam 2' or Parameter = 'Exam 3' or Parameter = 'Exam 4') "
+        ElseIf ddlLevelnaming.SelectedValue = "Foundation 2" Then
+            strSQL = "SELECT Parameter, Value from setting where Type = 'Exam' and (Parameter = 'Exam 5' or Parameter = 'Exam 6' or Parameter = 'Exam 7' or Parameter = 'Exam 8') "
+        ElseIf ddlLevelnaming.SelectedValue = "Foundation 3" Then
+            strSQL = "SELECT Parameter, Value from setting where Type = 'Exam' and (Parameter = 'Exam 9' or Parameter = 'Exam 10' or Parameter = 'Exam 11' or Parameter = 'Exam 12') "
+        ElseIf ddlLevelnaming.SelectedValue = "Level 1" Then
+            strSQL = "SELECT Parameter, Value from setting where Type = 'Exam' and (Parameter = 'Exam 1' or Parameter = 'Exam 2' or Parameter = 'Exam 3' or Parameter = 'Exam 4') "
+        ElseIf ddlLevelnaming.SelectedValue = "Level 2" Then
+            strSQL = "SELECT Parameter, Value from setting where Type = 'Exam' and (Parameter = 'Exam 5' or Parameter = 'Exam 6' or Parameter = 'Exam 7' or Parameter = 'Exam 8') "
+        End If
+
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -94,10 +106,10 @@ Public Class counselor_Portfolio
             sqlDA.Fill(ds, "AnyTable")
 
             ddlExamnaming.DataSource = ds
-            ddlExamnaming.DataTextField = "exam_Name"
-            ddlExamnaming.DataValueField = "exam_ID"
+            ddlExamnaming.DataTextField = "Value"
+            ddlExamnaming.DataValueField = "Parameter"
             ddlExamnaming.DataBind()
-            ddlExamnaming.Items.Insert(0, New ListItem("Select Exam", String.Empty))
+            ddlExamnaming.Items.Insert(0, New ListItem("Select Examination", String.Empty))
 
         Catch ex As Exception
         Finally
@@ -128,7 +140,7 @@ Public Class counselor_Portfolio
     End Sub
 
     Private Sub Class_List_Info()
-        strSQL = "SELECT * from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_Level = '" & ddlLevelnaming.SelectedValue & "' and class_Type = 'Compulsory'"
+        strSQL = "SELECT * from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_Level = '" & ddlLevelnaming.SelectedValue & "' and class_Type = 'Compulsory' and course_Program = '" & ddlProgram.SelectedValue & "' and class_Campus = 'PGPN' order by class_name asc"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -173,28 +185,24 @@ Public Class counselor_Portfolio
 
         Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY A.pf_total, E.student_Name ASC"
+        Dim strOrderby As String = " ORDER BY F.class_Name, E.student_Name ASC"
 
-        tmpSQL = " SELECT * from portfolio_mark A
-                   LEFT JOIN exam_result B on A.examresult_id = B.id
-                   LEFT JOIN course C on B.course_id = C.course_id
-                   LEFT JOIN exam_info D on C.exam_id = D.exam_id
-                   LEFT JOIN student_info E ON C.std_ID = E.std_ID
-                   LEFT JOIN class_info F ON C.class_ID = F.class_ID
-                   LEFT JOIN subject_info G ON C.subject_ID = G.subject_ID
+        tmpSQL = "  SELECT B.ID, E.student_Name, E.student_ID, G.subject_StudentYear, G.subject_sem, F.class_Name, B.marks, B.grade from exam_result B
+                    LEFT JOIN course C on B.course_id = C.course_id
+                    LEFT JOIN exam_info D on B.exam_id = D.exam_id
+                    LEFT JOIN student_info E ON C.std_ID = E.std_ID
+                    LEFT JOIN class_info F ON C.class_ID = F.class_ID
+                    LEFT JOIN subject_info G ON C.subject_ID = G.subject_ID
 
-                   WHERE A.year = '" & ddlYear.SelectedValue & "' AND G.subject_Type = 'Compulsory' AND F.class_Type = 'Compulsory' AND E.student_status = 'Access'"
+                    WHERE C.year = '" & ddlYear.SelectedValue & "' AND F.class_year = '" & ddlYear.SelectedValue & "' AND G.subject_year = '" & ddlYear.SelectedValue & "'
+                    AND F.class_level = '" & ddlLevelnaming.SelectedValue & "' AND G.subject_StudentYear = '" & ddlLevelnaming.SelectedValue & "'
+
+                    AND G.subject_Type = 'Compulsory' AND F.class_Type = 'Compulsory' AND (E.student_status = 'Access' or E.student_status = 'Graduate') AND E.student_Stream = '" & ddlProgram.SelectedValue & "'
+                    AND D.exam_Name = '" & ddlExamnaming.SelectedValue & "' AND E.student_Campus = 'PGPN'
+                    And (G.subject_Name = 'Portfolio' OR G.subject_NameBM = 'Portfolio')"
 
         If ddlClassnaming.SelectedIndex > 0 Then
             strWhere += " AND F.class_ID = '" & ddlClassnaming.SelectedValue & "' "
-        End If
-
-        If ddlExamnaming.SelectedIndex > 0 Then
-            strWhere += " AND D.exam_ID = '" & ddlExamnaming.SelectedValue & "'"
-        End If
-
-        If txtstudent.Text.Length > 0 Then
-            strWhere += " AND (E.student_Name LIKE '%" & txtstudent.Text & "%' OR E.student_Mykad = '" & txtstudent.Text & "' OR student_ID = '" & txtstudent.Text & "')"
         End If
 
         getSQL = tmpSQL & strWhere & strOrderby
@@ -202,25 +210,16 @@ Public Class counselor_Portfolio
         Return getSQL
     End Function
 
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
+    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
         Try
-            Response.Redirect("admin_login_berjaya.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-        Catch ex As Exception
-        End Try
-    End Sub
-
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-        Try
+            Class_List_Info()
             strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
     End Sub
 
-    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
+    Protected Sub ddlProgram_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlProgram.SelectedIndexChanged
         Try
-            Exam_List_Info()
-            Level_List_Info()
-
             strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
@@ -229,7 +228,8 @@ Public Class counselor_Portfolio
     Protected Sub ddlLevelnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevelnaming.SelectedIndexChanged
         Try
             Class_List_Info()
-
+            Exam_List_Info()
+            strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
     End Sub
@@ -237,7 +237,6 @@ Public Class counselor_Portfolio
     Protected Sub ddlClassnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClassnaming.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
-
         Catch ex As Exception
         End Try
     End Sub
@@ -245,7 +244,6 @@ Public Class counselor_Portfolio
     Protected Sub ddlExamnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamnaming.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
-
         Catch ex As Exception
         End Try
     End Sub
@@ -261,103 +259,28 @@ Public Class counselor_Portfolio
                 Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
                 If chkUpdate.Checked = True Then
 
-                    ''get student id
-                    Dim find_stdid As String = "select std_ID from course
-                                                left join exam_result on course.course_ID = exam_result.course_id
-                                                left join portfolo_mark on exam_result.id = portfolio_mark.examresult_id where pf_id = '" & strKey & "'"
-                    Dim get_stdid As String = oCommon.getFieldValue(find_stdid)
-
                     Dim txt_totalark As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txttotal_mark"), TextBox)
-
-                    ''update to database
-                    strSQL = "UPDATE portfolio_mark
-                              SET pf_total = '" & txt_totalark.Text & "'
-                              Where pf_id = '" & strKey & "'"
-                    strRet = oCommon.ExecuteSQL(strSQL)
-
-                    Dim select_examresultid As String = "select examresult_id from portfolio_mark where pf_id = '" & strKey & "'"
-                    Dim get_examresultid As String = oCommon.getFieldValue(select_examresultid)
 
                     Dim ResultGrades As String = "select grade_Name from grade_info where grade_min_range <= '" & txt_totalark.Text & "' and grade_max_range >= '" & txt_totalark.Text & "'"
                     Dim get_grade As String = oCommon.getFieldValue(ResultGrades)
 
                     strSQL = "UPDATE exam_result SET
                               marks = '" & txt_totalark.Text & "', grade = '" & get_grade & "'
-                              WHERE ID = '" & get_examresultid & "'"
+                              WHERE ID = '" & strKey & "'"
                     strRet = oCommon.ExecuteSQL(strSQL)
+
+                    If strRet = "0" Then
+                        ShowMessage(" Update Student Portfolio Result ", MessageType.Success)
+                    Else
+                        ShowMessage(" Unsuccessful Update Student Portfolio Result ", MessageType.Error)
+                    End If
 
                 End If
             End If
         Next
+
+        strRet = BindData(datRespondent)
     End Sub
-
-    Private Function percen_checking(leadership As String, communityservice As String, reflection As String, assignment As String, appearance As String, roomtidiness As String, attitude As String, pd_id As String)
-
-        ''checking leadership percen
-        Dim find_checking_leadership As String = "select leadership_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_leadership As String = oCommon.getFieldValue(find_checking_leadership)
-
-        ''checking coomunityservice percen
-        Dim find_checking_communityservice As String = "select communityservice_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_communityservice As String = oCommon.getFieldValue(find_checking_communityservice)
-
-        ''checking reflection percen
-        Dim find_checking_reflection As String = "select reflection_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_reflection As String = oCommon.getFieldValue(find_checking_reflection)
-
-        ''checking assignment percen
-        Dim find_checking_assignment As String = "select assignment_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_assignment As String = oCommon.getFieldValue(find_checking_assignment)
-
-        ''checking appearance percen
-        Dim find_checking_appearance As String = "select appearance_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_appearance As String = oCommon.getFieldValue(find_checking_appearance)
-
-        ''checking roomtidiness percen
-        Dim find_checking_roomtidiness As String = "select roomtidiness_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_roomtidiness As String = oCommon.getFieldValue(find_checking_roomtidiness)
-
-        ''checking attitude percen
-        Dim find_checking_attitude As String = "select attitude_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_attitude As String = oCommon.getFieldValue(find_checking_attitude)
-
-        If get_checking_leadership.Length = 0 Or get_checking_leadership > leadership Then
-            ShowMessage(" Please fill in leadership mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        If get_checking_communityservice.Length = 0 Or get_checking_communityservice > communityservice Then
-            ShowMessage(" Please fill in community service mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        If get_checking_reflection.Length = 0 Or get_checking_reflection > reflection Then
-            ShowMessage(" Please fill in reflection mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        If get_checking_assignment.Length = 0 Or get_checking_assignment > assignment Then
-            ShowMessage(" Please fill in assignment mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        If get_checking_appearance.Length = 0 Or get_checking_appearance > appearance Then
-            ShowMessage(" Please fill in appearance mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        If get_checking_roomtidiness.Length = 0 Or get_checking_roomtidiness > roomtidiness Then
-            ShowMessage(" Please fill in room tidiness mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        If get_checking_attitude.Length = 0 Or get_checking_attitude > attitude Then
-            ShowMessage(" Please fill in attitude mark according to setting ", MessageType.Error)
-            Return "False"
-        End If
-
-        Return "True"
-    End Function
 
     Protected Sub ShowMessage(Message As String, type As MessageType)
         ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)

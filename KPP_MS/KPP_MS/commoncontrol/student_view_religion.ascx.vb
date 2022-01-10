@@ -41,7 +41,7 @@ Public Class student_view_religion
     End Sub
 
     Private Sub load_page()
-        strSQL = "SELECT Value from setting where Value ='" & Now.Year & "' and Type = 'Year' "
+        strSQL = "SELECT MAX(Parameter) as year from setting where type = 'year'"
 
         '--debug
         ''Response.Write(strSQLstd) 
@@ -58,8 +58,8 @@ Public Class student_view_religion
         Dim MyTable As DataTable = New DataTable
         MyTable = ds.Tables(0)
         If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Value")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("Value")
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("year")) Then
+                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("year")
             Else
                 ddlYear.SelectedValue = ""
             End If

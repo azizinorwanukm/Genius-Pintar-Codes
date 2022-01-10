@@ -198,7 +198,7 @@ Public Class Disiplin_view
             ddlClassnaming.Enabled = True
         End If
 
-        strSQL = "SELECT distinct class_Name,class_ID from class_info where class_level = '" & ddlLevelNaming.SelectedValue & "' and class_type = 'Compulsory' 
+        strSQL = "SELECT distinct class_Name,class_ID from class_info where class_level = '" & ddlLevelNaming.SelectedValue & "' and class_type = 'Compulsory' and class_Campus = 'PGPN'
                   and class_year = '" & ddlYear.SelectedValue & "' order by Class_Name ASC"
         Dim strconn As String = ConfigurationManager.AppSettings("connectionString")
         Dim objconn As SqlConnection = New SqlConnection(strconn)

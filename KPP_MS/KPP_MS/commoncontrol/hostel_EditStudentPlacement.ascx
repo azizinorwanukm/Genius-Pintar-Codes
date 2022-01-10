@@ -43,10 +43,10 @@
     <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Placement Info</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px;">
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddlHostelYear" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" style="width:190px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddlBlockName" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" style="width:190px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddlBlockLevel" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" style="width:190px;"></asp:DropDownList>
-            <asp:DropDownList ID="ddlRoomName" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" style="width:190px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlHostelYear" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" style="width:190px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlBlockName" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" style="width:190px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlBlockLevel" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" style="width:190px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlRoomName" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" style="width:190px;"></asp:DropDownList>
             <asp:Label CssClass="Label w3-text-black" ID="count_student" runat="server" Text =" " Visible ="False"/>
         </div>
         <asp:Button runat="server" ID="btnSave" Text="Save" />

@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/admin.Master" CodeBehind="admin_asrama_penempatan_pelajar.aspx.vb" Inherits="KPP_MS.admin_asrama_penempatan_pelajar" %>
 
 <%@ Register Src="~/commoncontrol/student_AddHostel.ascx" TagPrefix="uc1" TagName="student_AddHostel" %>
-<%@ Register Src="~/commoncontrol/hostel_EditStudentPlacement.ascx" TagPrefix="uc1" TagName="hostel_EditStudentPlacement" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
@@ -32,20 +31,7 @@
         }
     </script>
 
-    <%--<asp:MultiView runat="server" ID="hostelPlacement">
-        <asp:View ID="hsotelPlacementList" runat="server">
-            <div>
-                <uc1:student_AddHostel runat="server" id="student_AddHostel" />
-            </div>
-        </asp:View>
-        <asp:View ID="hostelEditPlacement" runat="server">
-            <div>
-                <uc1:hostel_EditStudentPlacement runat="server" ID="hostel_EditStudentPlacement" />
-            </div>
-        </asp:View>
-    </asp:MultiView>--%>
-    <div>
-        <uc1:student_AddHostel runat="server" id="student_AddHostel" />
-    </div>
-    <div class="messagealert" id="alert_container" style="text-align: center"></div> 
+    <uc1:student_AddHostel runat="server" ID="student_AddHostel" />
+
+    <div class="messagealert" id="alert_container" style="text-align: center"></div>
 </asp:Content>

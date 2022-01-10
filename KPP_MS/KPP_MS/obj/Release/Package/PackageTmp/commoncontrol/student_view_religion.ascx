@@ -9,9 +9,9 @@
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
     <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Search Student Religions</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlReligion" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlReligion" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <p></p>
 </div>

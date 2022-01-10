@@ -70,7 +70,7 @@
     <button id="bayaran_info" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%" value="0">Transaction Information <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px">
         <div class="col-md-2 w3-text-black" style="text-align: left">
-            <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 100%;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" Style="width: 100%;"></asp:DropDownList>
         </div>
     </div>
     <p></p>

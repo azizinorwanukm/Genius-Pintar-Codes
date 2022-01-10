@@ -163,7 +163,7 @@ Public Class Import_Export_student_marks
     End Sub
 
     Private Sub subject_info()
-        strSQL = "SELECT distinct course_Name FROM subject_info WHERE subject_year = '" & Now.Year & "'"
+        strSQL = "SELECT distinct course_Name FROM subject_info WHERE subject_year = '" & ddlyear.SelectedValue & "'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -330,4 +330,10 @@ Public Class Import_Export_student_marks
         Return getSQL
     End Function
 
+    Protected Sub ddlyear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlyear.SelectedIndexChanged
+        Try
+            subject_info()
+        Catch ex As Exception
+        End Try
+    End Sub
 End Class

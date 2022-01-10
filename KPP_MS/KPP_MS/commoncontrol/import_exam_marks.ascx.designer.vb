@@ -14,56 +14,272 @@ Option Explicit On
 Partial Public Class import_exam_marks
     
     '''<summary>
-    '''BtnDownload control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnDownload As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''FlUploadcsv control.
+    '''btnImportExaminationResult control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents FlUploadcsv As Global.System.Web.UI.WebControls.FileUpload
+    Protected WithEvents btnImportExaminationResult As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''regexValidator control.
+    '''btnImportGPACGPA control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents regexValidator As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    Protected WithEvents btnImportGPACGPA As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''BtnUploaded control.
+    '''btnImportKOKO control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnUploaded As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents btnImportKOKO As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''lblMsg control.
+    '''ImportExaminationResult control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents lblMsg As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents ImportExaminationResult As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''divMsg control.
+    '''image1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents divMsg As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents image1 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnDownloadImportExaminationResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnDownloadImportExaminationResult As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''BtnUpload control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUpload As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''FileUploadImportExaminationResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FileUploadImportExaminationResult As Global.System.Web.UI.WebControls.FileUpload
+    
+    '''<summary>
+    '''regexValidatorImportExaminationResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents regexValidatorImportExaminationResult As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    
+    '''<summary>
+    '''BtnImport control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnImport As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnUploadedImportExaminationResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUploadedImportExaminationResult As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''ViewImportExaminationResult control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ViewImportExaminationResult As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''datRespondent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
+    
+    '''<summary>
+    '''ImportGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImportGPACGPA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''image2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents image2 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnDownloadImportGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnDownloadImportGPACGPA As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''Image3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image3 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''FileUploadImportGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FileUploadImportGPACGPA As Global.System.Web.UI.WebControls.FileUpload
+    
+    '''<summary>
+    '''regexValidatorImportGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents regexValidatorImportGPACGPA As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    
+    '''<summary>
+    '''BtnImportDataGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnImportDataGPACGPA As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnUploadedImportGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUploadedImportGPACGPA As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''ViewImportGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ViewImportGPACGPA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''datRespondentGPACGPA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentGPACGPA As Global.System.Web.UI.WebControls.GridView
+    
+    '''<summary>
+    '''ImportKOKO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ImportKOKO As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''Image5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image5 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''FileUploadImportKOKO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents FileUploadImportKOKO As Global.System.Web.UI.WebControls.FileUpload
+    
+    '''<summary>
+    '''regexValidatorImportKOKO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents regexValidatorImportKOKO As Global.System.Web.UI.WebControls.RegularExpressionValidator
+    
+    '''<summary>
+    '''Image6 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Image6 As Global.System.Web.UI.WebControls.Image
+    
+    '''<summary>
+    '''BtnUploadedImportKOKO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents BtnUploadedImportKOKO As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

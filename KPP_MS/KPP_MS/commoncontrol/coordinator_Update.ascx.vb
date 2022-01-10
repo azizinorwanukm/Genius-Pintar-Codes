@@ -15,41 +15,24 @@ Public Class coordinator_Update
             If Not IsPostBack Then
 
                 yearList()
+                campusList()
+                programList()
 
-                year_page()
+                load_page()
+
                 courseList()
                 staffList()
                 studentlevel()
 
                 load_page()
+
+                previousPage.NavigateUrl = String.Format("~/admin_daftar_koordinator.aspx?admin_ID=" + Request.QueryString("admin_ID"))
+                txtbreadcrum1.Text = "Edit Coordinator"
+
             End If
         Catch ex As Exception
 
         End Try
-    End Sub
-
-    Private Sub year_page()
-        strSQL = "SELECT Parameter from setting where Value ='" & Now.Year & "' and Type = 'Year'"
-
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlyear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddlyear.SelectedValue = ""
-            End If
-        End If
-
     End Sub
 
     Private Sub load_page()
@@ -79,6 +62,12 @@ Public Class coordinator_Update
                 ddlstaff.SelectedValue = ""
             End If
 
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("coordinator_Level")) Then
+                ddllevel.SelectedValue = ds.Tables(0).Rows(0).Item("coordinator_Level")
+            Else
+                ddllevel.SelectedValue = ""
+            End If
+
             If Not IsDBNull(ds.Tables(0).Rows(0).Item("course_Name")) Then
                 ddlcourse.SelectedValue = ds.Tables(0).Rows(0).Item("course_Name")
 
@@ -93,14 +82,18 @@ Public Class coordinator_Update
                 ddlsubject.SelectedValue = ""
             End If
 
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("coordinator_Level")) Then
-                ddllevel.SelectedValue = ds.Tables(0).Rows(0).Item("coordinator_Level")
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("program")) Then
+                ddlStream.SelectedValue = ds.Tables(0).Rows(0).Item("program")
             Else
-                ddllevel.SelectedValue = ""
+                ddlStream.SelectedValue = ""
             End If
 
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("campus")) Then
+                ddlCampus.SelectedValue = ds.Tables(0).Rows(0).Item("campus")
+            Else
+                ddlCampus.SelectedValue = ""
+            End If
         End If
-
     End Sub
 
     Private Sub studentlevel()
@@ -118,14 +111,8 @@ Public Class coordinator_Update
             ddllevel.DataValueField = "Parameter"
             ddllevel.DataBind()
             ddllevel.Items.Insert(0, New ListItem("Select Level", String.Empty))
-            ddllevel.Items.Insert(1, New ListItem("ALL", "ALL"))
-            ddllevel.Items.Insert(2, New ListItem("Foundation (1-3)", "F1"))
-            ddllevel.Items.Insert(3, New ListItem("Level (1-2)", "L1"))
-            ddllevel.SelectedIndex = 0
 
         Catch ex As Exception
-        Finally
-            objConn.Dispose()
         End Try
     End Sub
 
@@ -145,13 +132,61 @@ Public Class coordinator_Update
             ddlyear.DataBind()
 
         Catch ex As Exception
-        Finally
-            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub campusList()
+        Try
+            Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+            Dim objConn As SqlConnection = New SqlConnection(strConn)
+
+            If Session("SchoolCampus") = "APP" Then
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' and Value = 'APP'"
+            Else
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' "
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlCampus.DataSource = levds
+            ddlCampus.DataValueField = "Value"
+            ddlCampus.DataTextField = "Parameter"
+            ddlCampus.DataBind()
+            ddlCampus.Items.Insert(0, New ListItem("Select Institutions", String.Empty))
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub programList()
+        Try
+            Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+            Dim objConn As SqlConnection = New SqlConnection(strConn)
+
+            If ddlCampus.SelectedValue = "APP" Then
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' and Value = 'PS'"
+            Else
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' "
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlStream.DataSource = levds
+            ddlStream.DataValueField = "Value"
+            ddlStream.DataTextField = "Parameter"
+            ddlStream.DataBind()
+            ddlStream.Items.Insert(0, New ListItem("Select Program", String.Empty))
+        Catch ex As Exception
         End Try
     End Sub
 
     Private Sub staffList()
-        strSQL = "SELECT staff_Name,stf_ID from staff_Info where staff_Status = 'Access' order by staff_Name ASC"
+        strSQL = "SELECT staff_Name,stf_ID from staff_Info where staff_Status = 'Access' and staff_Name NOT LIKE '%araken%' and staff_Campus = '" & ddlCampus.SelectedValue & "' order by staff_Name ASC"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -165,16 +200,13 @@ Public Class coordinator_Update
             ddlstaff.DataValueField = "stf_ID"
             ddlstaff.DataBind()
             ddlstaff.Items.Insert(0, New ListItem("Select Staff", String.Empty))
-            ddlstaff.SelectedIndex = 0
 
         Catch ex As Exception
-        Finally
-            objConn.Dispose()
         End Try
     End Sub
 
     Private Sub courseList()
-        strSQL = "SELECT distinct course_Name from subject_info where subject_year = '" & ddlyear.SelectedValue & "' order by course_Name ASC"
+        strSQL = "SELECT distinct course_Name from subject_info where subject_year = '" & ddlyear.SelectedValue & "' and course_Program = '" & ddlStream.SelectedValue & "' and subject_Campus = '" & ddlCampus.SelectedValue & "' order by course_Name ASC"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -190,14 +222,21 @@ Public Class coordinator_Update
             ddlcourse.Items.Insert(0, New ListItem("Select Course", String.Empty))
 
         Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
         End Try
     End Sub
 
     Private Sub subjectList()
-        strSQL = "SELECT distinct subject_Name from subject_info where course_Name = '" & ddlcourse.SelectedValue & "' and subject_year = '" & ddlyear.SelectedValue & "' order by subject_Name ASC"
+
+        Dim checkSubjectType As String = "SELECT distinct subject_type from subject_info where course_Name = '" & ddlcourse.SelectedValue & "' and subject_year = '" & ddlyear.SelectedValue & "' and course_Program = '" & ddlStream.SelectedValue & "' and subject_Campus = '" & ddlCampus.SelectedValue & "'"
+        strRet = oCommon.getFieldValue(checkSubjectType)
+
+        If strRet = "Compulsory" Then
+            ddlsubject.Enabled = False
+        Else
+            ddlsubject.Enabled = True
+        End If
+
+        strSQL = "SELECT distinct subject_Name from subject_info where course_Name = '" & ddlcourse.SelectedValue & "' and subject_year = '" & ddlyear.SelectedValue & "' and subject_StudentYear = '" & ddllevel.SelectedValue & "' and course_Program = '" & ddlStream.SelectedValue & "' and subject_Campus = '" & ddlCampus.SelectedValue & "' order by subject_Name ASC"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -211,65 +250,36 @@ Public Class coordinator_Update
             ddlsubject.DataValueField = "subject_Name"
             ddlsubject.DataBind()
             ddlsubject.Items.Insert(0, New ListItem("Select Subject", String.Empty))
-            ddlsubject.Items.Insert(1, New ListItem("ALL", "ALL"))
 
         Catch ex As Exception
-        Finally
-            objConn.Dispose()
         End Try
     End Sub
 
     Protected Sub ddlcourse_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlcourse.SelectedIndexChanged
-
-        If ddlcourse.SelectedValue = "Bahasa Antarabangsa" Or ddlcourse.SelectedValue = "AP Courses" Then
-            subjectList()
-        End If
-
+        subjectList()
     End Sub
 
-    Private Function BindData(ByVal gvTable As GridView) As Boolean
-        Dim myDataSet As New DataSet
-        Dim myDataAdapter As New SqlDataAdapter(getSQL, strConn)
-        myDataAdapter.SelectCommand.CommandTimeout = 120
+    Protected Sub ddlCampus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlCampus.SelectedIndexChanged
         Try
-            myDataAdapter.Fill(myDataSet, "myaccount")
-
-            gvTable.DataSource = myDataSet
-            gvTable.DataBind()
-            objConn.Close()
-
+            courseList()
+            staffList()
+            programList()
+            subjectList()
         Catch ex As Exception
-
-            Return False
         End Try
-        Return True
-    End Function
+    End Sub
 
-    Private Function getSQL() As String
-        Dim tmpSQL As String
-        Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY coordinator_ID ASC"
-
-        tmpSQL = "select coordinator_ID,staff_Name, course_Name, subject_Name, year from coordinator left join staff_Info on coordinator.stf_ID = staff_Info.stf_ID"
-        strWhere = " where year = '" & ddlyear.SelectedValue & "'"
-        strWhere += " and coordinator.stf_ID = '" & ddlstaff.SelectedValue & "'"
-
-        If ddlcourse.SelectedValue <> "" Then
-            strWhere += " and course_Name = '" & ddlcourse.SelectedValue & "'"
-        End If
-
-        If ddlsubject.SelectedValue <> "" Then
-            strWhere += " and subject_Name = '" & ddlsubject.SelectedValue & "'"
-        End If
-
-        getSQL = tmpSQL & strWhere & strOrderby
-        ''--debug
-
-        Return getSQL
-    End Function
+    Protected Sub ddlStream_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlStream.SelectedIndexChanged
+        Try
+            courseList()
+            subjectList()
+        Catch ex As Exception
+        End Try
+    End Sub
 
     Protected Sub ddlyear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlyear.SelectedIndexChanged
-        staffList()
+        courseList()
+        subjectList()
     End Sub
 
     Private Sub Btnsimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
@@ -277,27 +287,31 @@ Public Class coordinator_Update
         If ddlcourse.SelectedValue <> "" And ddlcourse.SelectedValue <> "Bahasa Antarabangsa" And ddlcourse.SelectedValue <> "AP Courses" Then
 
             'UPDATE
-            strSQL = "UPDATE coordinator SET stf_ID='" & ddlstaff.SelectedValue & "',course_Name ='" & ddlcourse.SelectedValue & "',subject_Name ='" & ddlcourse.SelectedValue & "',year ='" & ddlyear.SelectedValue & "',coordinator_Level ='" & ddllevel.SelectedValue & "' WHERE coordinator_ID ='" & Request.QueryString("coordinator_ID") & "'"
+            strSQL = "UPDATE coordinator SET stf_ID='" & ddlstaff.SelectedValue & "',course_Name ='" & ddlcourse.SelectedValue & "',subject_Name ='" & ddlcourse.SelectedValue & "',year ='" & ddlyear.SelectedValue & "',coordinator_Level ='" & ddllevel.SelectedValue & "',program ='" & ddlStream.SelectedValue & "',campus ='" & ddlCampus.SelectedValue & "' WHERE coordinator_ID ='" & Request.QueryString("coordinator_ID") & "'"
             strRet = oCommon.ExecuteSQL(strSQL)
 
         ElseIf ddlcourse.SelectedValue = "Bahasa Antarabangsa" Or ddlcourse.SelectedValue > "AP Courses" Then
 
             'UPDATE
-            strSQL = "UPDATE coordinator SET stf_ID='" & ddlstaff.SelectedValue & "',course_Name ='" & ddlcourse.SelectedValue & "',subject_Name ='" & ddlsubject.SelectedValue & "',year ='" & ddlyear.SelectedValue & "',coordinator_Level ='" & ddllevel.SelectedValue & "' WHERE coordinator_ID ='" & Request.QueryString("coordinator_ID") & "'"
+            strSQL = "UPDATE coordinator SET stf_ID='" & ddlstaff.SelectedValue & "',course_Name ='" & ddlcourse.SelectedValue & "',subject_Name ='" & ddlsubject.SelectedValue & "',year ='" & ddlyear.SelectedValue & "',coordinator_Level ='" & ddllevel.SelectedValue & "',program ='" & ddlStream.SelectedValue & "',campus ='" & ddlCampus.SelectedValue & "' WHERE coordinator_ID ='" & Request.QueryString("coordinator_ID") & "'"
             strRet = oCommon.ExecuteSQL(strSQL)
 
         End If
 
-
         If strRet = "0" Then
-            Response.Redirect("admin_view_koordinator.aspx?result=1&admin_ID=" + Request.QueryString("admin_ID"))
+            ShowMessage(" Update Coordinator", MessageType.Success)
         Else
-            Response.Redirect("admin_view_koordinator.aspx?result=-1&admin_ID=" + Request.QueryString("admin_ID"))
+            ShowMessage(" Unsuccessful Update Coordinator", MessageType.Error)
         End If
     End Sub
 
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_view_koordinator.aspx?&admin_ID=" + Request.QueryString("admin_ID"))
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
     End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
 
 End Class

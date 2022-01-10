@@ -21,13 +21,4 @@ Partial Public Class admin_pengajar_penempatan_kelas
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lecturer_RegClass As Global.KPP_MS.lecturer_RegClass
-    
-    '''<summary>
-    '''import_lecturerPlacement control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents import_lecturerPlacement As Global.KPP_MS.import_lecturerPlacement
 End Class

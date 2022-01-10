@@ -31,72 +31,23 @@ Public Class lecturer_list_student
                 ElseIf data = "TRUE" Then
 
                     year_list()
-
-                    load_page()
-                    class_info_list()
+                    student_program()
+                    student_Level()
                     student_Sem()
+                    class_info_list()
+
+                    strRet = BindData(datRespondent)
+
                 End If
             End If
         Catch ex As Exception
 
         End Try
     End Sub
-
-    Private Sub load_page()
-        strSQL = "SELECT Parameter from setting where Type ='Year' and Parameter = '" & Now.Year & "'"
-
-        '--debug
-        ''Response.Write(strSQLstd) 
-
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddlYear.SelectedValue = ""
-            End If
-        End If
-    End Sub
-
-    Public Function getFieldValue(ByVal sql_plus As String, ByVal MyConnection As String) As String
-        If sql_plus.Length = 0 Then
-            Return "0"
-        End If
-        Dim conn As SqlConnection = New SqlConnection(MyConnection)
-        Dim sqlAdapter As New SqlDataAdapter(sql_plus, conn)
-        Dim strvalue As String = ""
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlAdapter.Fill(ds, "AnyTable")
-
-            If ds.Tables(0).Rows.Count > 0 Then
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item(0).ToString) Then
-                    strvalue = ds.Tables(0).Rows(0).Item(0).ToString
-                Else
-                    Return "0"
-                End If
-            End If
-        Catch ex As Exception
-            Return "0"
-        Finally
-            conn.Dispose()
-        End Try
-        Return strvalue
-    End Function
 
     Protected Sub ddlClassnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClassnaming.SelectedIndexChanged
         Try
-            student_Level()
+            strRet = BindData(datRespondent)
         Catch ex As Exception
 
         End Try
@@ -104,6 +55,7 @@ Public Class lecturer_list_student
 
     Protected Sub ddlSemnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlSemnaming.SelectedIndexChanged
         Try
+            class_info_list()
             strRet = BindData(datRespondent)
         Catch ex As Exception
 
@@ -112,6 +64,7 @@ Public Class lecturer_list_student
 
     Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
         Try
+            student_Level()
             strRet = BindData(datRespondent)
         Catch ex As Exception
 
@@ -119,18 +72,18 @@ Public Class lecturer_list_student
     End Sub
 
     Protected Sub ddlLevelnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevelnaming.SelectedIndexChanged
-        ''Dim class As String = ""
         Try
+            class_info_list()
             strRet = BindData(datRespondent)
         Catch ex As Exception
 
         End Try
     End Sub
 
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
+    Protected Sub ddlProgramnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlProgramnaming.SelectedIndexChanged
         Try
+            class_info_list()
             strRet = BindData(datRespondent)
-
         Catch ex As Exception
 
         End Try
@@ -163,39 +116,25 @@ Public Class lecturer_list_student
     End Function
 
     Private Function getSQL() As String
-        'A left outer join will give all rows in A, plus any common rows in B.
-
-        Dim DATA_STAFFID As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
 
         Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY student_info.student_Name ASC"
+        Dim strOrderby As String = " ORDER BY student_Name ASC"
 
-        tmpSQL = "Select distinct student_info.student_ID, student_info.std_ID,
-                  student_info.student_Mykad,student_info.student_Name,student_Level.student_Level,
-                  student_Level.student_Sem,student_info.student_Photo, class_info.class_Name From student_info 
-                  left join student_Level on student_info.std_ID=student_level.std_ID
-                  left join course on student_info.std_ID= course.std_ID 
-                  left join class_info on course.class_ID= class_info.class_ID
-                  left join staff_info on class_info.stf_ID = staff_info.stf_ID"
-        strWhere = " WHERE student_info.std_ID IS NOT NULL and student_Status = 'Access'"
-        strWhere += " and course.year = '" & ddlYear.SelectedValue & "'"
-        strWhere += " and staff_info.stf_ID = '" & DATA_STAFFID & "'"
+        tmpSQL = "  Select distinct student_info.student_ID, student_info.std_ID,
+                    student_info.student_Mykad, UPPER(student_info.student_Name) student_Name,
+                    student_info.student_Photo, class_info.class_Name, class_info.class_Level From student_info
+                    left join student_Level on student_info.std_ID=student_level.std_ID
+                    left join course on student_info.std_ID= course.std_ID 
+                    left join class_info on course.class_ID= class_info.class_ID
+                    left join staff_info on class_info.stf_ID = staff_info.stf_ID"
 
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " AND (student_info.student_ID LIKE '%" & txtstudent.Text & "%'"
-        End If
-
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " OR student_info.student_Name LIKE '%" & txtstudent.Text & "%'"
-        End If
-
-        If Not txtstudent.Text.Length = 0 Then
-            strWhere += " OR student_info.student_Mykad LIKE '%" & txtstudent.Text & "%' )"
-        End If
+        strWhere = "    WHERE student_info.std_ID IS NOT NULL and student_Status = 'Access' and student_Level.year = '" & ddlYear.SelectedValue & "'"
+        strWhere += "   and course.year = '" & ddlYear.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "' and class_info.course_Program = '" & ddlProgramnaming.SelectedValue & "'"
+        strWhere += "   and staff_info.stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' and student_info.student_Campus = '" & Session("SchoolCampus") & "' and student_info.student_Stream = '" & ddlProgramnaming.SelectedValue & "'"
 
         If ddlLevelnaming.SelectedIndex > 0 Then
-            strWhere += " and student_level.student_Level = '" & ddlLevelnaming.SelectedValue & "'"
+            strWhere += " and class_info.class_Level = '" & ddlLevelnaming.SelectedValue & "'"
         End If
 
         If ddlClassnaming.SelectedIndex > 0 Then
@@ -203,7 +142,7 @@ Public Class lecturer_list_student
         End If
 
         If ddlSemnaming.SelectedIndex > 0 Then
-            strWhere += " and student_Level.student_Sem = '" & ddlSemnaming.SelectedValue & "'"
+            strWhere += " and student_Level.student_Level = '" & ddlSemnaming.SelectedValue & "')"
         End If
 
         getSQL = tmpSQL & strWhere & strOrderby
@@ -212,44 +151,22 @@ Public Class lecturer_list_student
         Return getSQL
     End Function
 
-    Private Sub datRespondent_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles datRespondent.RowDeleting
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim strKeyName As String = datRespondent.DataKeys(e.RowIndex).Value.ToString
-
-        Try
-            Dim MyConnection As SqlConnection = New SqlConnection(strConn)
-            Dim Dlt_ClassData As New SqlDataAdapter()
-
-            Dim dlt_Class As String
-
-            Dlt_ClassData.SelectCommand = New SqlCommand()
-            Dlt_ClassData.SelectCommand.Connection = MyConnection
-            Dlt_ClassData.SelectCommand.CommandText = "UPDATE student_info set student_Status = 'Block' where std_ID='" & strKeyName & "'"
-            MyConnection.Open()
-            dlt_Class = Dlt_ClassData.SelectCommand.ExecuteScalar()
-            MyConnection.Close()
-
-            strRet = BindData(datRespondent)
-        Catch ex As Exception
-            ''lblMsg.Text = "System Error: " & ex.Message
-        End Try
-    End Sub
-
     Private Sub datRespondent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondent.RowEditing
         Dim strKeyID As String = datRespondent.DataKeys(e.NewEditIndex).Value.ToString
         Try
-            Response.Redirect("pengajar_pelajar_detail.aspx?std_ID=" + strKeyID + "&stf_ID=" + Request.QueryString("stf_ID"))
+            Response.Redirect("pengajar_pelajar_detail.aspx?std_ID=" + strKeyID + "&stf_ID=" + Request.QueryString("stf_ID") + "&status=SI")
         Catch ex As Exception
             ''lblMsg.Text = "System Error: " & ex.Message
         End Try
     End Sub
 
     Private Sub class_info_list()
-        Dim DATA_STAFFID As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
 
-        strSQL = "select distinct class_Name, class_ID from class_info 
-                  where class_info.class_year = '" & ddlYear.SelectedValue & "'
-                  and class_info.stf_ID = '" & DATA_STAFFID & "'"
+        strSQL = "  select class_info.class_ID, class_info.class_Name from class_info
+                    where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'
+                    and class_year = '" & ddlYear.SelectedValue & "'
+                    and class_Level = '" & ddlLevelnaming.SelectedValue & "' and course_Program = '" & ddlProgramnaming.SelectedValue & "' and class_Campus = '" & Session("SchoolCampus") & "'
+                    order by class_Name asc"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -273,7 +190,7 @@ Public Class lecturer_list_student
     End Sub
 
     Private Sub student_Level()
-        strSQL = "SELECT distinct class_Level from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_ID = '" & ddlClassnaming.SelectedValue & "'"
+        strSQL = "SELECT class_Level from class_info where class_year = '" & ddlYear.SelectedValue & "' and stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' and class_Campus = '" & Session("SchoolCampus") & "'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -308,7 +225,7 @@ Public Class lecturer_list_student
             ddlSemnaming.DataTextField = "Parameter"
             ddlSemnaming.DataValueField = "Value"
             ddlSemnaming.DataBind()
-            ddlSemnaming.Items.Insert(0, New ListItem("Select Sem", String.Empty))
+            ddlSemnaming.Items.Insert(0, New ListItem("Select Semester", String.Empty))
         Catch ex As Exception
 
         Finally
@@ -317,7 +234,7 @@ Public Class lecturer_list_student
     End Sub
 
     Private Sub year_list()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Year' "
+        strSQL = "select distinct class_year from class_info where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' and class_Campus = '" & Session("SchoolCampus") & "'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -327,9 +244,37 @@ Public Class lecturer_list_student
             sqlDA.Fill(ds, "AnyTable")
 
             ddlYear.DataSource = ds
-            ddlYear.DataTextField = "Parameter"
-            ddlYear.DataValueField = "Parameter"
+            ddlYear.DataTextField = "class_year"
+            ddlYear.DataValueField = "class_year"
             ddlYear.DataBind()
+            ddlYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+        Catch ex As Exception
+
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub student_program()
+        If Session("SchoolCampus") = "APP" Then
+            strSQL = "select Parameter, Value from setting where type = 'Stream' and Value = 'PS'"
+        Else
+            strSQL = "select Parameter, Value from setting where type = 'Stream' and Value <> 'Temp'"
+        End If
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlProgramnaming.DataSource = ds
+            ddlProgramnaming.DataTextField = "Parameter"
+            ddlProgramnaming.DataValueField = "Value"
+            ddlProgramnaming.DataBind()
+            ddlProgramnaming.Items.Insert(0, New ListItem("Select Program", String.Empty))
         Catch ex As Exception
 
         Finally

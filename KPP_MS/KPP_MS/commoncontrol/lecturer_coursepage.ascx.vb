@@ -27,7 +27,7 @@ Public Class lecturer_coursepage
     End Sub
 
     Private Sub load_page()
-        strSQL = "select distinct lecturer_year from lecturer where lecturer_year = '" & Now.Year & "'"
+        strSQL = "select distinct MAX(lecturer_year) from lecturer"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -74,7 +74,7 @@ Public Class lecturer_coursepage
     End Sub
 
     Private Sub Sem()
-        strSQL = "select Parameter From setting where Type = 'Sem'"
+        strSQL = "select * From setting where Type = 'Sem'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -86,7 +86,7 @@ Public Class lecturer_coursepage
 
             ddlsem.DataSource = ds
             ddlsem.DataTextField = "Parameter"
-            ddlsem.DataValueField = "Parameter"
+            ddlsem.DataValueField = "Value"
             ddlsem.DataBind()
             ddlsem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
             ddlsem.SelectedIndex = 0

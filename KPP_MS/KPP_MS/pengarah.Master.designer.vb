@@ -113,31 +113,31 @@ Partial Public Class Site1
     Protected WithEvents pengarahSlipPeperiksaan As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''pengarahKemaskiniProfil control.
+    '''txtstaffName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengarahKemaskiniProfil As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents txtstaffName As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''pengarahTukarKataLaluan control.
+    '''txtcurrentDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengarahTukarKataLaluan As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents txtcurrentDate As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''pengarahLogout control.
+    '''btnLogout control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents pengarahLogout As Global.System.Web.UI.WebControls.HyperLink
+    Protected WithEvents btnLogout As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
     '''ContentPlaceHolder1 control.

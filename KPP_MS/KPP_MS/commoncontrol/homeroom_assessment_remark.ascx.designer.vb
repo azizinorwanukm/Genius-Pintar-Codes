@@ -50,15 +50,6 @@ Partial Public Class homeroom_assessment_remark
     Protected WithEvents ddlClass As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnSearch control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
     '''datRespondent control.
     '''</summary>
     '''<remarks>
@@ -66,15 +57,6 @@ Partial Public Class homeroom_assessment_remark
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
-    
-    '''<summary>
-    '''BtnPrint control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents BtnPrint As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
     '''Answer_Test control.

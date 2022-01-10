@@ -70,7 +70,7 @@
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
     <p style="background-color: #800000; text-align: center; display: inline-block; width: 100%; border-radius: 25px">Invoice Information</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <p></p>
     <div style="overflow-y: scroll; overflow-x: hidden; height: 250px" class="table-responsive">
@@ -120,7 +120,7 @@
     <p style="background-color: #800000; text-align: center; display: inline-block; width: 100%; border-radius: 25px">Invoice Detail</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px; text-align: left; padding-left: 23px">
         <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddlInvoice_Type" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+            <asp:DropDownList ID="ddlInvoice_Type" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
         </div>
         <div class="col-md-2 w3-text-black" style="text-align: left; padding-left: 23px">
             <p></p>

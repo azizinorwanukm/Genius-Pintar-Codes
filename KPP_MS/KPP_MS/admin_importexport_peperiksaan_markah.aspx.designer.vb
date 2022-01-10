@@ -21,13 +21,4 @@ Partial Public Class admin_importexport_peperiksaan_markah
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents import_exam_marks As Global.KPP_MS.import_exam_marks
-    
-    '''<summary>
-    '''Import_Export_student_marks control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Import_Export_student_marks As Global.KPP_MS.Import_Export_student_marks
 End Class

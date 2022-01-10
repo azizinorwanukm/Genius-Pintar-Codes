@@ -17,8 +17,8 @@ Public Class student_ExamList
                 Year()
                 load_page()
                 Exam()
+
                 strRet = BindData(datRespondent)
-                ''Generate_Table()
             End If
         Catch ex As Exception
 
@@ -26,10 +26,7 @@ Public Class student_ExamList
     End Sub
 
     Private Sub load_page()
-        strSQL = "SELECT year from student_level where year ='" & Now.Year & "'"
-
-        '--debug
-        ''Response.Write(strSQLstd)
+        strSQL = "select MAX(Parameter) as year from setting where type = 'year'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -52,9 +49,12 @@ Public Class student_ExamList
     End Sub
 
     Private Sub Year()
+
+        Dim data_ID As String = Request.QueryString("std_ID")
+
         strSQL = "select distinct student_Level.year from student_Level
                   left join student_info on student_Level.std_ID=student_info.std_ID
-                  where student_info.std_ID = '" + Request.QueryString("std_ID") + "'"
+                  where student_info.std_ID = '" + data_ID + "'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -77,13 +77,35 @@ Public Class student_ExamList
     End Sub
 
     Private Sub Exam()
-        strSQL = "select distinct exam_info.exam_Name from exam_result left join exam_info on exam_result.exam_ID = exam_info.exam_ID
+
+        Dim get_Check As String = "select Value from setting where Type  = 'Exam Result'"
+        Dim data_Check As String = oCommon.getFieldValue(get_Check)
+
+        Dim data_Exam As String = ""
+
+        If data_Check = "off" Then
+
+            ''show all student exam result except the current exam
+            data_Exam = "  select max(exam_result.exam_ID) from exam_result
+                        left join exam_info on exam_result.exam_ID = exam_Info.exam_ID
+                        left join course on exam_result.course_ID = course.course_ID
+                        where course.year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+            strRet = oCommon.getFieldValue(data_Exam)
+
+            strSQL = "select distinct exam_info.exam_Name from exam_result left join exam_info on exam_result.exam_ID = exam_info.exam_ID
                   left join course on exam_result.course_ID = course.course_ID left join student_info on course.std_ID = student_info.std_ID
-                  where student_info.student_Status = 'Access' and course.year = '" & ddlyear.SelectedValue & "' and exam_info.exam_Year = '" & ddlyear.SelectedValue & "' 
-                  and student_info.std_ID = '" & Request.QueryString("std_ID") & "'
-                  intersect
-                  select Parameter from setting 
-                  where idx = 'Examination' and Type = 'Exam Result' and Value = 'on'"
+                  where student_info.student_Status = 'Access' and course.year = '" & ddlyear.SelectedValue & "' and exam_info.exam_Year = '" & ddlyear.SelectedValue & "' and exam_info.exam_ID < '" & strRet & "'
+                  and student_info.std_ID = '" & Request.QueryString("std_ID") & "'"
+        Else
+
+            ''show all student exam result
+            strSQL = "select distinct exam_info.exam_Name from exam_result left join exam_info on exam_result.exam_ID = exam_info.exam_ID
+                  left join course on exam_result.course_ID = course.course_ID left join student_info on course.std_ID = student_info.std_ID
+                  where student_info.student_Status = 'Access' and course.year = '" & ddlyear.SelectedValue & "' and exam_info.exam_Year = '" & ddlyear.SelectedValue & "'
+                  and student_info.std_ID = '" & Request.QueryString("std_ID") & "'"
+        End If
+
+
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -141,7 +163,6 @@ Public Class student_ExamList
             objConn.Close()
 
         Catch ex As Exception
-
             Return False
         End Try
 
@@ -150,32 +171,24 @@ Public Class student_ExamList
     End Function
 
     Private Function getSQL() As String
-        'A left outer join will give all rows in A, plus any common rows in B.
 
-        Dim tmpSQL As String = ""
+        Dim data_ID As String = Request.QueryString("std_ID")
+
+        Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY subject_ID ASC"
+        Dim strOrderby As String = " ORDER BY subject_Name ASC"
 
-        If ddlexam.SelectedIndex > 0 Then
-
-            tmpSQL = "select distinct exam_result.ID,subject_Name,subject_code,marks,grade,gpa from course
+        tmpSQL = "select exam_result.ID,subject_Name,subject_code,marks,grade,gpa from course
                       left join subject_info on course.subject_ID=subject_info.subject_ID
-                      left join student_level on course.std_ID=student_level.std_ID
-                      left join student_info on student_level.std_ID=student_info.std_ID
                       left join exam_result on course.course_ID=exam_result.course_ID
                       left join exam_Info on exam_result.exam_Id=exam_Info.exam_ID
                       left join grade_info on exam_result.grade=grade_info.grade_Name"
+        strWhere = " where course.std_ID = '" + data_ID + "'"
+        strWhere += " AND exam_Info.exam_Year = '" & ddlyear.SelectedValue & "'"
+        strWhere += " AND exam_Info.exam_Name = '" & ddlexam.SelectedValue & "'"
 
-            strWhere = " where student_info.std_ID = '" + Request.QueryString("std_ID") + "' and exam_result.ID is not null and exam_Info.exam_Name = '" & ddlexam.SelectedValue & "'"
-
-            If ddlyear.SelectedIndex > 0 Then
-                strWhere += " AND exam_Info.exam_Year = '" & ddlyear.SelectedValue & "'"
-            End If
-
-        End If
-
-        getSQL = tmpSQL & strWhere
-        ''--debug
+        getSQL = tmpSQL & strWhere & strOrderby
+        '--debug
         Return getSQL
     End Function
 

@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class User_Access
     
     '''<summary>
-    '''ddlyear control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlyear As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
     '''ddlUser control.
     '''</summary>
     '''<remarks>
@@ -32,13 +23,13 @@ Partial Public Class User_Access
     Protected WithEvents ddlUser As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlAccess control.
+    '''StatusPosition control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlAccess As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents StatusPosition As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
     '''ddlPosition control.
@@ -50,31 +41,22 @@ Partial Public Class User_Access
     Protected WithEvents ddlPosition As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txt_User control.
+    '''ddlAccess control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txt_User As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlAccess As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnSearch control.
+    '''StudentDisplayData control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''datRespondentStaff control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents datRespondentStaff As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents StudentDisplayData As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
     '''datRespondentStudent control.
@@ -86,11 +68,38 @@ Partial Public Class User_Access
     Protected WithEvents datRespondentStudent As Global.System.Web.UI.WebControls.GridView
     
     '''<summary>
-    '''UserType_HF control.
+    '''StaffDisplayData control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents UserType_HF As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents StaffDisplayData As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''datRespondentStaff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondentStaff As Global.System.Web.UI.WebControls.GridView
+    
+    '''<summary>
+    '''ddlUpdateStatus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlUpdateStatus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''btnUpdateData control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdateData As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

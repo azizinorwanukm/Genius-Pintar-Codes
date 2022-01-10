@@ -12,9 +12,9 @@
     <br />
 
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 5px; margin-bottom: 5px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlKokoType" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlKokoName" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlKokoType" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlKokoName" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-bottom: 5px; text-align: left;">
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">

@@ -98,7 +98,7 @@ Public Class student_CocurricularList
     End Sub
 
     Private Sub page_Load()
-        strSQL = "SELECT Parameter from setting where Type ='Year' and Parameter = '" & Now.Year & "'"
+        strSQL = "SELECT MAX(Parameter) as year from setting where type = 'year'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -112,8 +112,8 @@ Public Class student_CocurricularList
         Dim MyTable As DataTable = New DataTable
         MyTable = ds.Tables(0)
         If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("year")) Then
+                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("year")
             Else
                 ddlYear.SelectedValue = ""
             End If

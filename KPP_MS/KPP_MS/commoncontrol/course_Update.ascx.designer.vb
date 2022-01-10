@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class course_Update
     
     '''<summary>
+    '''previousPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
     '''subject_Name control.
     '''</summary>
     '''<remarks>
@@ -41,22 +50,13 @@ Partial Public Class course_Update
     Protected WithEvents subject_code As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''subject_type control.
+    '''ddlsubject_year control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents subject_type As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''ddl_subjectreligions control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddl_subjectreligions As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlsubject_year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''subject_StudentYear control.
@@ -86,6 +86,24 @@ Partial Public Class course_Update
     Protected WithEvents subject_credithour As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''ddl_subjectreligions control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_subjectreligions As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''subject_type control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents subject_type As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''txtStdNumber control.
     '''</summary>
     '''<remarks>
@@ -93,15 +111,6 @@ Partial Public Class course_Update
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents txtStdNumber As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''ddlsubject_year control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlsubject_year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlCourse_group control.
@@ -113,20 +122,29 @@ Partial Public Class course_Update
     Protected WithEvents ddlCourse_group As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Btnsimpan control.
+    '''ddlStream control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlStream As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Btnback control.
+    '''ddlCampus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''btnUpdate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

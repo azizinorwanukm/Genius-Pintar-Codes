@@ -23,8 +23,8 @@
     }
 </script>
 
-<div class="import" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Import Data</p>
+<div class="import" style="width: 100%; background-color: #f2f2f2; text-align: left; border-radius: 25px; border: 5px solid #8c8c8c;">
+    <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; text-align:center">Import Data</p>
 
     <div class="w3-text-black" style="text-align: left; padding-left: 23px; margin-top: 10px; margin-bottom: 10px">
         <p>Please used this format before import :</p>
@@ -37,10 +37,15 @@
         <asp:RegularExpressionValidator ID="regexValidator" runat="server" ErrorMessage="Only XLSX file are allowed" ValidationExpression="(.*\.([Xx][Ll][Ss][Xx])$)" ControlToValidate="FlUploadcsv"></asp:RegularExpressionValidator>
     </div>
 
-    <div class="w3-text-black" style="text-align: left; padding-left: 23px; margin-bottom: 10px">
-        <button id="BtnUploaded" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Import File"> Import &#160; <i class="fa fa-plus-circle w3-large w3-text-white"></i></button>
+    <div class="w3-text-black" style="text-align: left; padding-left: 23px; margin-bottom: 10px; display:inline-block">
+        <button id="BtnUploaded" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Import File"> Import Student & Subject &#160; <i class="fa fa-plus-circle w3-large w3-text-white"></i></button>
         <asp:Label ID="lblMsg" runat="server" Text="" ForeColor="Red"></asp:Label>
         <div class="info" id="divMsg" runat="server"></div>
+    </div>
+
+
+    <div class="w3-text-black" style="text-align: left; padding-left: 23px; margin-bottom: 10px; display:inline-block">
+        <button id="BtnUploadedStudentOnly" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Import File"> Import Student Only  &#160; <i class="fa fa-plus-circle w3-large w3-text-white"></i></button>
     </div>
 
 </div>

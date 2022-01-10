@@ -5,11 +5,11 @@
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px">
         <div class="col-md-3 w3-text-black" style="text-align: left">
             <asp:Label CssClass="Label" runat="server"> Course Name : </asp:Label>
-            <asp:DropDownList ID="ddl_courseName" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 100%;border-radius: 25px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_courseName" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" Style="width: 100%;border-radius: 25px;"></asp:DropDownList>
         </div>
         <div class="col-md-3 w3-text-black" style="text-align: left">
             <asp:Label CssClass="Label" runat="server"> Class Name : </asp:Label>
-            <asp:DropDownList ID="ddl_className" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 100%;border-radius: 25px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddl_className" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl" Style="width: 100%;border-radius: 25px;"></asp:DropDownList>
         </div>
         <div class="col-md-3 w3-text-black" style="text-align: left">
             <asp:Label CssClass="Label" ID="count_student" Style="width: 100%; border-radius: 25px;" runat="server"></asp:Label>

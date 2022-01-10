@@ -14,20 +14,18 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
 
         Try
-
             If Not IsPostBack Then
 
                 year_list()
+                campus_list()
+                program_list
                 exam_list()
                 course_list()
                 bahasa_list()
 
             End If
-
         Catch ex As Exception
-
         End Try
-
     End Sub
 
     Private Sub year_list()
@@ -48,6 +46,60 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
 
         Catch ex As Exception
 
+        End Try
+    End Sub
+
+    Private Sub campus_list()
+        If Session("SchoolCampus") = "APP" Then
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' and Value = 'APP'"
+        Else
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' "
+        End If
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlCampus.DataSource = ds
+            ddlCampus.DataTextField = "Parameter"
+            ddlCampus.DataValueField = "Value"
+            ddlCampus.DataBind()
+            ddlCampus.Items.Insert(0, New ListItem("Select Institutions", String.Empty))
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub program_list()
+        If ddlCampus.SelectedValue = "APP" Then
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' and Value = 'PS'"
+        Else
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' "
+        End If
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlProgram.DataSource = ds
+            ddlProgram.DataTextField = "Parameter"
+            ddlProgram.DataValueField = "Value"
+            ddlProgram.DataBind()
+            ddlProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
         End Try
     End Sub
 
@@ -79,27 +131,24 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
         Dim strSem As String = ""
         Dim strLevel As String = ""
 
-        If examName = "Exam 1" Or examName = "Exam 2" Or examName = "Exam 5" Or examName = "Exam 6" Then
-
+        If examName = "Exam 1" Or examName = "Exam 2" Or examName = "Exam 5" Or examName = "Exam 6" Or examName = "Exam 9" Or examName = "Exam 10" Then
             strSem = "Sem 1"
-
         Else
-
             strSem = "Sem 2"
-
         End If
 
         Try
 
-            strSQL = "SELECT course_Name FROM subject_info WHERE subject_year = '" & ddlYear.SelectedValue & "' AND subject_sem = '" & strSem & "'"
+            strSQL = "SELECT distinct course_Name FROM subject_info WHERE subject_year = '" & ddlYear.SelectedValue & "' AND subject_sem = '" & strSem & "' and subject_Campus = '" & ddlCampus.SelectedValue & "' and course_Program = '" & ddlProgram.SelectedValue & "'"
 
             If examName = "Exam 1" Or examName = "Exam 2" Or examName = "Exam 3" Or examName = "Exam 4" Then
+                strSQL += " AND (subject_StudentYear = 'Foundation 1' OR subject_StudentYear = 'Level 1')"
 
-                strSQL += " AND subject_StudentYear <> 'Level 2'"
+            ElseIf examName = "Exam 5" Or examName = "Exam 6" Or examName = "Exam 7" Or examName = "Exam 8" Then
+                strSQL += " AND (subject_StudentYear = 'Foundation 2' OR subject_StudentYear = 'Level 2')"
 
-            Else
-
-                strSQL += " AND subject_StudentYear = 'Level 2'"
+            ElseIf examName = "Exam 9" Or examName = "Exam 10" Or examName = "Exam 11" Or examName = "Exam 12" Then
+                strSQL += " AND subject_StudentYear = 'Foundation 3'"
 
             End If
 
@@ -127,7 +176,28 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
     Private Sub bahasa_list()
         Try
 
-            strSQL = "SELECT subject_Name FROM subject_info WHERE subject_year = '" & ddlYear.SelectedValue & "' AND course_Name = 'Bahasa Antarabangsa' GROUP BY subject_Name"
+            strSQL = "SELECT exam_Name FROM exam_info WHERE exam_ID = '" & ddlExam.SelectedValue & "'"
+            Dim examName As String = oCommon.getFieldValue(strSQL)
+
+            Dim strSem As String = ""
+            Dim strLevel As String = ""
+            Dim strGroup As String = " GROUP BY subject_Name"
+
+            If examName = "Exam 1" Or examName = "Exam 2" Or examName = "Exam 5" Or examName = "Exam 6" Or examName = "Exam 9" Or examName = "Exam 10" Then
+                strSem = "Sem 1"
+            Else
+                strSem = "Sem 2"
+            End If
+
+            If examName = "Exam 1" Or examName = "Exam 2" Or examName = "Exam 3" Or examName = "Exam 4" Then
+                strLevel = " and (subject_StudentYear = 'Foundation 1' or subject_StudentYear = 'Level 1')"
+            ElseIf examName = "Exam 5" Or examName = "Exam 6" Or examName = "Exam 7" Or examName = "Exam 8" Then
+                strLevel = " and (subject_StudentYear = 'Foundation 2' or subject_StudentYear = 'Level 2')"
+            ElseIf examName = "Exam 9" Or examName = "Exam 10" Or examName = "Exam 11" Or examName = "Exam 12" Then
+                strLevel = " and subject_StudentYear = 'Foundation 3'"
+            End If
+
+            strSQL = "SELECT subject_Name FROM subject_info WHERE subject_year = '" & ddlYear.SelectedValue & "' AND subject_Sem  = '" & strSem & "' AND course_Name = 'Bahasa Antarabangsa' and subject_Campus = '" & ddlCampus.SelectedValue & "' and course_Program = '" & ddlProgram.SelectedValue & "'" & strLevel & strGroup
 
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
@@ -138,7 +208,7 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
             ddlBahasa.DataTextField = "subject_Name"
             ddlBahasa.DataValueField = "subject_Name"
             ddlBahasa.DataBind()
-            ddlBahasa.Items.Insert(0, New ListItem("Bahasa Antarabangsa", String.Empty))
+            ddlBahasa.Items.Insert(0, New ListItem("Select Subject", String.Empty))
 
         Catch ex As Exception
 
@@ -146,6 +216,31 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
     End Sub
 
     Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs)
+        exam_list()
+        course_list()
+        bahasa_list()
+        If ddlCourse.SelectedValue = "Bahasa Antarabangsa" Then
+            ddlBahasa.Enabled = True
+        Else
+            ddlBahasa.Enabled = False
+        End If
+        graphFunction()
+    End Sub
+
+    Protected Sub ddlCampus_SelectedIndexChanged(sender As Object, e As EventArgs)
+        program_list()
+        exam_list()
+        course_list()
+        bahasa_list()
+        If ddlCourse.SelectedValue = "Bahasa Antarabangsa" Then
+            ddlBahasa.Enabled = True
+        Else
+            ddlBahasa.Enabled = False
+        End If
+        graphFunction()
+    End Sub
+
+    Protected Sub ddlProgram_SelectedIndexChanged(sender As Object, e As EventArgs)
         exam_list()
         course_list()
         bahasa_list()
@@ -274,8 +369,8 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
 			            LEFT JOIN exam_Info ON exam_Info.exam_ID = exam_result.exam_ID
 			            LEFT JOIN student_info ON student_info.std_ID = course.std_ID"
         strWhere = "    WHERE
-			            exam_Info.exam_Year = '" & ddlYear.SelectedValue & "'
-			            AND exam_Info.exam_ID = '" & ddlExam.SelectedValue & "'
+			            exam_Info.exam_Year = '" & ddlYear.SelectedValue & "' and (student_info.student_status = 'Access' or student_info.student_status = 'Graduate') and student_info.student_ID is not null and student_info.student_ID <> '' and (student_info.student_ID like '%M%' or student_info.student_ID like '%P%')
+			            AND exam_Info.exam_ID = '" & ddlExam.SelectedValue & "' AND subject_info.subject_Campus = '" & ddlCampus.SelectedValue & "' AND subject_info.course_Program = '" & ddlProgram.SelectedValue & "'
 			            AND subject_info.course_Name = '" & ddlCourse.SelectedValue & "'"
 
         If ddlBahasa.SelectedIndex > 0 Then
@@ -302,12 +397,14 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
         graph3.Value = 0
         graph4.Value = 0
         graph5.Value = 0
+        graph6.Value = 0
 
         lblKursus1.Text = ""
         lblKursus2.Text = ""
         lblKursus3.Text = ""
         lblKursus4.Text = ""
         lblKursus5.Text = ""
+        lblKursus6.Text = ""
 
         table1_countaplus.Value = 0
         table1_countaa.Value = 0
@@ -369,6 +466,18 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
         table5_countee.Value = 0
         table5_countgg.Value = 0
 
+        table6_countaplus.Value = 0
+        table6_countaa.Value = 0
+        table6_countaminus.Value = 0
+        table6_countbplus.Value = 0
+        table6_countbb.Value = 0
+        table6_countbminus.Value = 0
+        table6_countcplus.Value = 0
+        table6_countcc.Value = 0
+        table6_countdd.Value = 0
+        table6_countee.Value = 0
+        table6_countgg.Value = 0
+
         Dim i As Integer
 
         For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
@@ -391,7 +500,7 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
             If i = 0 Then
 
                 graph1.Value = 1
-                lblKursus1.Text = lblSubjectName.Text & " : " & lblStudentYear.Text
+                lblKursus1.Text = lblSubjectName.Text & " &nbsp; : &nbsp; " & lblStudentYear.Text
 
                 table1_countaplus.Value = gradeaplus.Text
                 table1_countaa.Value = gradeaa.Text
@@ -409,7 +518,7 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
             If i = 1 Then
 
                 graph2.Value = 1
-                lblKursus2.Text = lblSubjectName.Text & " : " & lblStudentYear.Text
+                lblKursus2.Text = lblSubjectName.Text & " &nbsp; : &nbsp; " & lblStudentYear.Text
 
                 table2_countaplus.Value = gradeaplus.Text
                 table2_countaa.Value = gradeaa.Text
@@ -427,7 +536,7 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
             If i = 2 Then
 
                 graph3.Value = 1
-                lblKursus3.Text = lblSubjectName.Text & " : " & lblStudentYear.Text
+                lblKursus3.Text = lblSubjectName.Text & " &nbsp; : &nbsp; " & lblStudentYear.Text
 
                 table3_countaplus.Value = gradeaplus.Text
                 table3_countaa.Value = gradeaa.Text
@@ -445,7 +554,7 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
             If i = 3 Then
 
                 graph4.Value = 1
-                lblKursus4.Text = lblSubjectName.Text & " : " & lblStudentYear.Text
+                lblKursus4.Text = lblSubjectName.Text & " &nbsp; : &nbsp; " & lblStudentYear.Text
 
                 table4_countaplus.Value = gradeaplus.Text
                 table4_countaa.Value = gradeaa.Text
@@ -463,7 +572,7 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
             If i = 4 Then
 
                 graph5.Value = 1
-                lblKursus5.Text = lblSubjectName.Text & " : " & lblStudentYear.Text
+                lblKursus5.Text = lblSubjectName.Text & " &nbsp; : &nbsp; " & lblStudentYear.Text
 
                 table5_countaplus.Value = gradeaplus.Text
                 table5_countaa.Value = gradeaa.Text
@@ -476,6 +585,24 @@ Public Class pengarah_laporan_peperiksaan_kursus_table
                 table5_countdd.Value = gradedd.Text
                 table5_countee.Value = gradeee.Text
                 table5_countgg.Value = gradegg.Text
+            End If
+
+            If i = 5 Then
+
+                graph6.Value = 1
+                lblKursus6.Text = lblSubjectName.Text & " &nbsp; : &nbsp; " & lblStudentYear.Text
+
+                table6_countaplus.Value = gradeaplus.Text
+                table6_countaa.Value = gradeaa.Text
+                table6_countaminus.Value = gradeaminus.Text
+                table6_countbplus.Value = gradebplus.Text
+                table6_countbb.Value = gradebb.Text
+                table6_countbminus.Value = gradebminus.Text
+                table6_countcplus.Value = gradecplus.Text
+                table6_countcc.Value = gradecc.Text
+                table6_countdd.Value = gradedd.Text
+                table6_countee.Value = gradeee.Text
+                table6_countgg.Value = gradegg.Text
             End If
         Next
 

@@ -193,17 +193,6 @@ Public Class exam_Official_Transcript
         Dim find_job As String = "select Value from setting where idx = 'Examination' and Type = 'Director Permata Pintar'"
         Dim get_job As String = oCommon.getFieldValue(find_job)
 
-        'For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
-        '    Dim chkUpdate As CheckBox = CType(datRespondent.Rows(i).Cells(5).FindControl("chkSelect"), CheckBox)
-        '    If Not chkUpdate Is Nothing Then
-
-        '        If chkUpdate.Checked = True Then
-        '            count_i += 1
-        '        End If
-
-        '    End If
-        'Next
-
         ''check print transcript language
         If rbtn_Malay.Checked = True Then
             rbtn_English.Checked = False

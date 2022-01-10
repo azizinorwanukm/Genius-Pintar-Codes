@@ -46,6 +46,8 @@ Public Class alumni_Student_Status
         Finally
             objConn.Dispose()
         End Try
+
+        Return True
     End Function
 
     Private Sub LoadPage(ByVal Access As String)

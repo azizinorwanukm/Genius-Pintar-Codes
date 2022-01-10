@@ -57,9 +57,9 @@
     <br />
 
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px; padding-left: 23px; text-align: left;">
-        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlexam_Name" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddllevel" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlexam_Name" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddllevel" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
     </div>
 
     <div style="overflow-y: scroll; overflow-x: hidden; height: 450px" class="table-responsive">
@@ -75,13 +75,13 @@
                     <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
                     <ItemStyle VerticalAlign="Middle" />
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Name" ItemStyle-Width="300">
+                <asp:TemplateField HeaderText="Name" ItemStyle-Width="400">
                     <ItemTemplate>
                         <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("student_Name") %>'></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="IC" ItemStyle-Width="100">
+                <asp:TemplateField HeaderText="IC" ItemStyle-Width="150">
                     <ItemTemplate>
                         <asp:Label ID="student_MyKad" class="id1" runat="server" Text='<%# Eval("student_Mykad") %>'></asp:Label>
                     </ItemTemplate>
@@ -93,13 +93,13 @@
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>              
-                <asp:TemplateField HeaderText="Exam" ItemStyle-Width="70">
+                <asp:TemplateField HeaderText="Exam" ItemStyle-Width="150">
                     <ItemTemplate>
                         <asp:Label ID="exam_Name" class="id1" runat="server" Text='<%# Eval("exam_Name") %>'></asp:Label>
                     </ItemTemplate>
                     <HeaderStyle HorizontalAlign="Left" />
                 </asp:TemplateField>
-                <asp:TemplateField HeaderText="Year" ItemStyle-Width="50">
+                <asp:TemplateField HeaderText="Year" ItemStyle-Width="100">
                     <ItemTemplate>
                         <asp:Label ID="year" class="id1" runat="server" Text='<%# Eval("year") %>'></asp:Label>
                     </ItemTemplate>

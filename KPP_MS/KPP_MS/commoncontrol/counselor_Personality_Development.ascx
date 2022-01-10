@@ -1,8 +1,31 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="counselor_Personality_Development.ascx.vb" Inherits="KPP_MS.counselor_Personality_Development" %>
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<style>
+    .sc3::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
+    }
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+    }
+</style>
 
 <script type="text/javascript">
     function ShowMessage(message, messagetype) {
@@ -27,36 +50,6 @@
     }
 </script>
 
-<style>
-    .ddl {
-        border-radius: 25px;
-    }
-</style>
-
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Search Student Data</p>
-
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 5px; margin-bottom: 10px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlExamnaming" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-    </div>
-
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left">
-        <div class="col-md-4 w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:Label CssClass="Label" runat="server"> Search : </asp:Label>
-            <asp:TextBox CssClass="textbox" ID="txtstudent" Style="width: 100%; border-radius: 25px;" runat="server" Text="" placeholder="   Search By Name / ID / IC"></asp:TextBox>
-        </div>
-        <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 13px">
-            <p></p>
-            <button id="btnSearch" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">Search &#160;<i class="fa fa-search w3-large w3-text-white"></i></button>
-        </div>
-    </div>
-    <p></p>
-</div>
-<br />
-
 <script type="text/javascript" lang="javascript">
     function CheckAllEmp(Checkbox) {
         var GridVwHeaderChckbox = document.getElementById("<%=datRespondent.ClientID%>");
@@ -66,109 +59,148 @@
     }
 </script>
 
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <button id="admin_access_list" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%">Student List</button>
-
-    <p></p>
-    <div style="overflow-y: scroll; overflow-x: scroll; height: 300px" class="table-responsive">
-        <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False"
-            BackColor="#d9d9d9" DataKeyNames="pd_id" BorderStyle="None" GridLines="None"
-            Width="97%" HeaderStyle-HorizontalAlign="Left">
-            <RowStyle HorizontalAlign="Left" />
-            <Columns>
-                <asp:TemplateField>
-                    <HeaderTemplate>
-                        <asp:CheckBox ID="chkboxSelectAll" Text="" runat="server" onclick="CheckAllEmp(this);" />
-                    </HeaderTemplate>
-                    <ItemTemplate>
-                        <asp:CheckBox ID="chkSelect" runat="server" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
-                    <ItemTemplate>
-                        <%# Container.DataItemIndex + 1 %>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
-                    <ItemStyle VerticalAlign="Middle" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Student Name">
-                    <ItemTemplate>
-                        <asp:Label ID="student_Name" class="id1" runat="server" Width="150px" Font-Size="Smaller" Text='<%# Eval("student_Name") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Student IC">
-                    <ItemTemplate>
-                        <asp:Label ID="txtstudent_Mykad" class="id1" runat="server" Width="50px" Font-Size="Smaller" Text='<%# Eval("student_Mykad") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Class">
-                    <ItemTemplate>
-                        <asp:Label ID="txtclass_Name" class="id1" runat="server" Width="50px" Font-Size="Smaller" Text='<%# Eval("class_Name") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Leadership">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtleadership_mark" Width="70px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("leadership_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Community Service">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtcommunityservice_mark" Width="100px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("communityservice_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Reflection">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtreflection_mark" Width="70px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("reflection_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Assignment">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtassignment_mark" Width="70px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("assignment_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Appearance">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtappearance_mark" Width="70px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("appearance_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Room Tidiness">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtroomtidiness_mark" Width="100px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("roomtidiness_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Atitude">
-                    <ItemTemplate>
-                        <asp:TextBox ID="txtattitude_mark" Width="70px" Font-Size="Smaller" class="id1" runat="server" Text='<%# Eval("attitude_mark") %>' Enabled="true" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Demerit">
-                    <ItemTemplate>
-                        <asp:Label ID="txtsd_total_demerit" Width="100px" cFont-Size="Smaller" lass="id1" runat="server" Text='<%# Eval("pd_total_demerit") %>' Enabled="true"></asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Total Attitude">
-                    <ItemTemplate>
-                        <asp:Label ID="txtsd_total_attitude" Width="70px" class="id1" runat="server" Text='<%# Eval("pd_total_attitude") %>' Enabled="true"></asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Total Mark">
-                    <ItemTemplate>
-                        <asp:Label ID="txtsd_total" Width="70px" class="id1" runat="server" Text='<%# Eval("pd_total") %>' Enabled="true"></asp:Label>
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-            <HeaderStyle BackColor="#800000" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
-            <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
-        </asp:GridView>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+    <%--Breadcrum--%>
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black">
+        Menu &nbsp; : &nbsp; Counselor &nbsp; / &nbsp; Personality Development
     </div>
-    <p></p>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px;">
-        <button id="btnSave" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Save">Save <i class="fa fa-save w3-large w3-text-white"></i></button>
-        <button id="Btnback" runat="server" class="btn btn-info" style="background-color: #ffdb4d; border-radius: 25px;" title="Back">Back &#160; <i class="fa fa-chevron-circle-left w3-large w3-text-white"></i></button>
-    </div>
-
-    <div class="messagealert" id="alert_container" style="text-align: center"></div>
 </div>
+
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2;" class="w3-card-2">
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh; border-bottom: 3px solid #567572FF;">
+
+        <div class="w3-text-black" style="text-align: left; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Year : </asp:Label>
+            <asp:DropDownList ID="ddlYear" runat="server" CssClass=" btn btn-default font" AutoPostBack="true" Style="font-size: 0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Program : </asp:Label>
+            <asp:DropDownList ID="ddlProgram" runat="server" CssClass=" btn btn-default font" AutoPostBack="true" Style="font-size: 0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Level : </asp:Label>
+            <asp:DropDownList ID="ddlLevelnaming" runat="server" CssClass=" btn btn-default font" AutoPostBack="true" Style="font-size: 0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block;">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Class : </asp:Label>
+            <asp:DropDownList ID="ddlClassnaming" runat="server" CssClass=" btn btn-default font" AutoPostBack="true" Style="font-size: 0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block;">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Examination : </asp:Label>
+            <asp:DropDownList ID="ddlExamnaming" runat="server" CssClass=" btn btn-default font" AutoPostBack="true" Style="font-size: 0.8vw"></asp:DropDownList>
+        </div>
+    </div>
+
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; overflow-y: scroll; white-space: nowrap; height: 70vh" class="sc4">
+
+        <div style="overflow-y: scroll; height: 56vh" class="table-responsive sc4 font">
+            <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False"
+                BackColor="#FFFAFA" DataKeyNames="pd_id" BorderStyle="None" GridLines="None"
+                Width="97%" HeaderStyle-HorizontalAlign="Left">
+                <RowStyle HorizontalAlign="Left" />
+                <Columns>
+                    <asp:TemplateField>
+                        <HeaderTemplate>
+                            <asp:CheckBox ID="chkboxSelectAll" Text="" runat="server" onclick="CheckAllEmp(this);" />
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <asp:CheckBox ID="chkSelect" runat="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
+                        <ItemTemplate>
+                            <%# Container.DataItemIndex + 1 %>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
+                        <ItemStyle VerticalAlign="Middle" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Student Name" ItemStyle-Width="30%">
+                        <ItemTemplate>
+                            <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("student_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Student ID" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="txtstudent_ID" class="id1" runat="server" Text='<%# Eval("student_ID") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Class" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:Label ID="txtclass_Name" class="id1" runat="server" Text='<%# Eval("class_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="REM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtreflection_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("reflection_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="ASM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtassignment_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("assignment_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="LEM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtleadership_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("leadership_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="CSM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtcommunityservice_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("communityservice_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="PDM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtpersonalitydevelopment_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("personalitydevelopment_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="RTM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtroomtidiness_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("roomtidiness_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="APM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtappearance_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("appearance_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="MM" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                           <asp:TextBox ID="txtmerit_mark" Width="100%" class="id1" runat="server" Text='<%# Eval("merit_mark") %>' Enabled="true" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Total" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:Label ID="txtsd_total" class="id1" runat="server" Text='<%# Eval("pd_total") %>' Enabled="true"></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Grade" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:Label ID="txtpd_grade" class="id1" runat="server" Text='<%# Eval("pd_grade") %>' Enabled="true"></asp:Label>
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label runat="server" Class="id1 w3-text-black"><b> No Personality Development Information Are Recorded </b> </asp:Label>
+                </EmptyDataTemplate>
+                <HeaderStyle BackColor="#3C3232" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
+                <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
+            </asp:GridView>
+        </div>
+
+        <br />
+
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; padding-top: 1vh; display: inline-block">
+            <button id="btnSave" runat="server" class="btn btn-success" style="top: 1vh; display: inline-block; font-size: 0.8vw">Update Result </button>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; padding-top: 1vh; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> <b>Notes:</b> <b>REM</b> = Reflection Mark, <b>ASM</b> = Assignment Mark, <b>LEM</b> = Leadership Mark, <b>CSM</b> = Community Services Mark<br />
+            <b>Notes:</b>  <b>PDM</b> = Personality Development Mark, <b>RTM</b> = Room Tidiness Mark, <b>APM</b> = Appearance Mark, <b>MM</b> = Merit Mark</asp:Label>
+        </div>
+    </div>
+</div>
+
+<div class="messagealert" id="alert_container" style="text-align: center"></div>

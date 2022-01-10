@@ -21,13 +21,4 @@ Partial Public Class pengajar_login_berjaya
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents lecturer_homepage As Global.KPP_MS.lecturer_homepage
-    
-    '''<summary>
-    '''lecturer_coursepage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lecturer_coursepage As Global.KPP_MS.lecturer_coursepage
 End Class

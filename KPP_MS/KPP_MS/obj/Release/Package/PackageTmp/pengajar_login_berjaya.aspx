@@ -1,17 +1,11 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/pengajar.Master" CodeBehind="pengajar_login_berjaya.aspx.vb" Inherits="KPP_MS.pengajar_login_berjaya" %>
 
 <%@ Register Src="~/commoncontrol/lecturer_homepage.ascx" TagPrefix="uc1" TagName="lecturer_homepage" %>
-<%@ Register Src="~/commoncontrol/lecturer_coursepage.ascx" TagPrefix="uc1" TagName="lecturer_coursepage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         function staff_info() {
@@ -79,6 +73,5 @@
     </script>
 
     <uc1:lecturer_homepage runat="server" id="lecturer_homepage" />
-    <uc1:lecturer_coursepage runat="server" id="lecturer_coursepage" />
 
 </asp:Content>

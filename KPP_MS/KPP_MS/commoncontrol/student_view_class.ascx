@@ -29,9 +29,9 @@
         </div>
     </div>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlSem" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>        
+        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlSem" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>        
     </div>
     <p></p>
 </div>
@@ -98,7 +98,7 @@
         </asp:GridView>
     </div>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; margin-bottom: 10px; text-align: left; padding-left: 23px">        
-        <asp:DropDownList ID="ddlClassName" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>   
+        <asp:DropDownList ID="ddlClassName" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>   
         <button id="BtnUpdate" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Add"> Update Student Class &#160; <i class="fa fa-save w3-large w3-text-white"></i></button>
     </div>
     <p></p>

@@ -8,9 +8,6 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
 
@@ -80,8 +77,6 @@
     </script>
 
     <uc1:lecturer_Detail ID="lecturer_Detail" runat="server" />
-
-    <uc2:lecturer_CourseList ID="lecturer_CourseList" runat="server" />
 
      <div class="messagealert" id="alert_container" style="text-align: center">
          

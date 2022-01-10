@@ -14,6 +14,24 @@ Option Explicit On
 Partial Public Class coordinator_Update
     
     '''<summary>
+    '''previousPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
+    '''txtbreadcrum1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''ddlyear control.
     '''</summary>
     '''<remarks>
@@ -21,6 +39,24 @@ Partial Public Class coordinator_Update
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlyear As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlCampus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlStream control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlStream As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlstaff control.
@@ -66,13 +102,4 @@ Partial Public Class coordinator_Update
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''Btnback control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

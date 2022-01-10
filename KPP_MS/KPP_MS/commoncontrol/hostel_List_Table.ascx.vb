@@ -22,10 +22,8 @@ Public Class hostel_List_Table
                 Dim id As String = ""
                 id = Request.QueryString("admin_ID")
 
-                hostel_name_list()
                 block_name_list()
                 block_level_list()
-                student_Level()
                 student_Sem()
                 year_list()
 
@@ -90,14 +88,6 @@ Public Class hostel_List_Table
         Return strvalue
     End Function
 
-    Protected Sub ddlHostelName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlHostelName.SelectedIndexChanged
-        Try
-            strRet = BindData(datRespondent)
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
     Protected Sub ddlBlockName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlBlockName.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
@@ -124,15 +114,6 @@ Public Class hostel_List_Table
     End Sub
 
     Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
-        Try
-            strRet = BindData(datRespondent)
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Protected Sub ddlLevelnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevelnaming.SelectedIndexChanged
-        ''Dim class As String = ""
         Try
             strRet = BindData(datRespondent)
         Catch ex As Exception
@@ -173,31 +154,24 @@ Public Class hostel_List_Table
         Dim strWhere As String = ""
         Dim strOrderby As String = " ORDER BY student_info.student_Name ASC"
 
-        tmpSQL = "select student_info.student_Name,hostel_info.hostel_Name,hostel_info.block_Name,hostel_info.block_Level,room_info.room_Name,room_info.year,student_info.std_ID
-                  from student_info
-                  left join student_level on student_info.std_ID = student_level.std_ID
-                  left join room_info on student_info.std_ID = room_info.std_ID
-                  left join hostel_info on room_info.hostel_ID = hostel_info.hostel_ID"
+        tmpSQL = "  select student_info.student_Name, hostel_info.hostel_BlockNames,hostel_info.hostel_BlockLevels,room_info.room_Name,room_info.year,student_info.std_ID
+                    from student_info
+                    left join student_room on student_info.std_ID = student_room.std_ID
+                    left join room_info on student_room.room_ID = room_info.room_ID
+                    left join hostel_info on room_info.hostel_ID = hostel_info.hostel_ID"
+
         strWhere = " where hostel_info.year = '" & ddlYear.SelectedValue & "'"
 
-        If ddlHostelName.SelectedIndex > 0 Then
-            strWhere += " and hostel_info.hostel_Name = '" & ddlHostelName.SelectedValue & "'"
-        End If
-
         If ddlBlockName.SelectedIndex > 0 Then
-            strWhere += " and hostel_info.block_Name = '" & ddlBlockName.SelectedValue & "'"
+            strWhere += " and hostel_info.hostel_BlockNames = '" & ddlBlockName.SelectedValue & "'"
         End If
 
         If ddlBlockLevel.SelectedIndex > 0 Then
-            strWhere += " and hostel_info.block_Level = '" & ddlBlockLevel.SelectedValue & "'"
-        End If
-
-        If ddlLevelnaming.SelectedIndex > 0 Then
-            strWhere += " and student_Level.student_Level = '" & ddlLevelnaming.SelectedValue & "'"
+            strWhere += " and hostel_info.hostel_BlockLevels = '" & ddlBlockLevel.SelectedValue & "'"
         End If
 
         If ddlSemnaming.SelectedIndex > 0 Then
-            strWhere += " and student_Level.student_Sem = '" & ddlSemnaming.SelectedValue & "'"
+            strWhere += " and  hostel_info.hostel_Sem = '" & ddlSemnaming.SelectedValue & "'"
         End If
 
         getSQL = tmpSQL & strWhere & strOrderby
@@ -207,7 +181,7 @@ Public Class hostel_List_Table
     End Function
 
     Private Sub block_name_list()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Block_Name' "
+        strSQL = "SELECT Parameter,Value FROM setting WHERE Type='Block_Name' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -218,7 +192,7 @@ Public Class hostel_List_Table
 
             ddlBlockName.DataSource = ds
             ddlBlockName.DataTextField = "Parameter"
-            ddlBlockName.DataValueField = "Parameter"
+            ddlBlockName.DataValueField = "Value"
             ddlBlockName.DataBind()
             ddlBlockName.Items.Insert(0, New ListItem("Select Block", String.Empty))
         Catch ex As Exception
@@ -229,7 +203,7 @@ Public Class hostel_List_Table
     End Sub
 
     Private Sub block_level_list()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Block_Level' "
+        strSQL = "SELECT Parameter , Value FROM setting WHERE Type='Block_Level' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -240,7 +214,7 @@ Public Class hostel_List_Table
 
             ddlBlockLevel.DataSource = ds
             ddlBlockLevel.DataTextField = "Parameter"
-            ddlBlockLevel.DataValueField = "Parameter"
+            ddlBlockLevel.DataValueField = "Value"
             ddlBlockLevel.DataBind()
             ddlBlockLevel.Items.Insert(0, New ListItem("Select Block Level", String.Empty))
         Catch ex As Exception
@@ -250,52 +224,8 @@ Public Class hostel_List_Table
         End Try
     End Sub
 
-    Private Sub hostel_name_list()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Hostel_Name' "
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlHostelName.DataSource = ds
-            ddlHostelName.DataTextField = "Parameter"
-            ddlHostelName.DataValueField = "Parameter"
-            ddlHostelName.DataBind()
-            ddlHostelName.Items.Insert(0, New ListItem("Select Hostel", String.Empty))
-        Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
-        End Try
-    End Sub
-
-    Private Sub student_Level()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Level' "
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlLevelnaming.DataSource = ds
-            ddlLevelnaming.DataTextField = "Parameter"
-            ddlLevelnaming.DataValueField = "Parameter"
-            ddlLevelnaming.DataBind()
-            ddlLevelnaming.Items.Insert(0, New ListItem("Select Student Level", String.Empty))
-        Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
-        End Try
-    End Sub
-
     Private Sub student_Sem()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Sem' "
+        strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Sem' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -306,9 +236,9 @@ Public Class hostel_List_Table
 
             ddlSemnaming.DataSource = ds
             ddlSemnaming.DataTextField = "Parameter"
-            ddlSemnaming.DataValueField = "Parameter"
+            ddlSemnaming.DataValueField = "Value"
             ddlSemnaming.DataBind()
-            ddlSemnaming.Items.Insert(0, New ListItem("Select Student Sem", String.Empty))
+            ddlSemnaming.Items.Insert(0, New ListItem("Select Semester", String.Empty))
         Catch ex As Exception
 
         Finally

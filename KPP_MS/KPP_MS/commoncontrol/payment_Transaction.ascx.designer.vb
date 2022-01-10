@@ -12,52 +12,88 @@ Option Explicit On
 
 
 Partial Public Class payment_Transaction
-    
+
     '''<summary>
-    '''ddlYear control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
-    '''ddlLevelnaming control.
+    '''BtnInvoiceLock control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlLevelnaming As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents BtnInvoiceLock As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
-    '''ddlClassnaming control.
+    '''BtnInvoiceLists control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlClassnaming As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents BtnInvoiceLists As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
-    '''txtstudent control.
+    '''InvoiceLock control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtstudent As Global.System.Web.UI.WebControls.TextBox
-    
+    Protected WithEvents InvoiceLock As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''btnSearch control.
+    '''ddlYear_InvoiceLock control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+    Protected WithEvents ddlYear_InvoiceLock As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddlLevel_InvoiceLock control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlLevel_InvoiceLock As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddlClass_InvoiceLock control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlClass_InvoiceLock As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''txtstudent_data control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstudent_data As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnSearch_InvoiceLock control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSearch_InvoiceLock As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
     '''datRespondent control.
     '''</summary>
@@ -66,7 +102,7 @@ Partial Public Class payment_Transaction
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
     '''BtnPublish control.
     '''</summary>
@@ -75,22 +111,22 @@ Partial Public Class payment_Transaction
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents BtnPublish As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+
     '''<summary>
-    '''Btnprint control.
+    '''BtnPrint control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnprint As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+    Protected WithEvents BtnPrint As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
-    '''hiddenAccess control.
+    '''InvoiceLists control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents hiddenAccess As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents InvoiceLists As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 End Class

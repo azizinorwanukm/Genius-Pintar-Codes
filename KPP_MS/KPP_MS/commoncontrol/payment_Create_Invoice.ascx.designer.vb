@@ -12,7 +12,52 @@ Option Explicit On
 
 
 Partial Public Class payment_Create_Invoice
-    
+
+    '''<summary>
+    '''previousPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''txtbreadcrum1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''btnGenerateInvoice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnGenerateInvoice As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''btnViewInvoice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnViewInvoice As Global.System.Web.UI.HtmlControls.HtmlButton
+
+    '''<summary>
+    '''GenerateInvoice control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents GenerateInvoice As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''ddlYear_List control.
     '''</summary>
@@ -21,7 +66,16 @@ Partial Public Class payment_Create_Invoice
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlYear_List As Global.System.Web.UI.WebControls.DropDownList
-    
+
+    '''<summary>
+    '''ddlLevel_List control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlLevel_List As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
     '''datRespondent control.
     '''</summary>
@@ -30,43 +84,16 @@ Partial Public Class payment_Create_Invoice
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
-    
+
     '''<summary>
-    '''ddl_Year control.
+    '''datStdRespondent control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_Year As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''ddl_Level control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddl_Level As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''ddl_Class control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddl_Class As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''gridRespondent control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents gridRespondent As Global.System.Web.UI.WebControls.GridView
-    
+    Protected WithEvents datStdRespondent As Global.System.Web.UI.WebControls.GridView
+
     '''<summary>
     '''Btnsimpan control.
     '''</summary>
@@ -75,13 +102,40 @@ Partial Public Class payment_Create_Invoice
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+
     '''<summary>
-    '''BtnBack control.
+    '''ViewInvoice control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents BtnBack As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ViewInvoice As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ddl_VI_year control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_VI_year As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddl_VI_level control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_VI_level As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''datStdFeeRespondent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datStdFeeRespondent As Global.System.Web.UI.WebControls.GridView
 End Class

@@ -69,13 +69,9 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Data.OleDb, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Data.OleDb.5.0.0-preview.5.20278.1\lib\net461\System.Data.OleDb.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -124,12 +120,14 @@
     <Content Include="admin_alumni_maklumat_pekerjaan.aspx" />
     <Content Include="admin_alumni_maklumat_pembelajaran.aspx" />
     <Content Include="admin_asrama_penempatan_pelajar.aspx" />
+    <Content Include="admin_asrama_senarai_pelajar.aspx" />
     <Content Include="admin_carian_pelajar.aspx" />
     <Content Include="admin_carian_pelajar_kaunselor.aspx" />
     <Content Include="admin_carian_pengajar.aspx" />
     <Content Include="admin_carian_yuran.aspx" />
     <Content Include="admin_CloseLogout.aspx" />
     <Content Include="admin_config_disiplin.aspx" />
+    <Content Include="admin_config_disiplin_kemaskini.aspx" />
     <Content Include="admin_config_warning_letter.aspx" />
     <Content Include="admin_daftarPenyelidikanMentor.aspx" />
     <Content Include="admin_daftarPenyelidikanPelajar.aspx" />
@@ -148,20 +146,25 @@
     <Content Include="admin_edit_biasiswa.aspx" />
     <Content Include="admin_edit_coordinator.aspx" />
     <Content Include="admin_edit_disiplin.aspx" />
+    <Content Include="admin_edit_disiplin_kemaskini.aspx" />
     <Content Include="admin_edit_exam_data.aspx" />
     <Content Include="admin_edit_kelas_data.aspx" />
     <Content Include="admin_edit_kursus_data.aspx" />
     <Content Include="admin_edit_pelajar_data.aspx" />
     <Content Include="admin_edit_pelajar_kursus_data.aspx" />
     <Content Include="admin_edit_pengajar_data.aspx" />
+    <Content Include="admin_edit_yuran.aspx" />
     <Content Include="admin_importexport_peperiksaan_markah.aspx" />
     <Content Include="admin_import_pelajar.aspx" />
     <Content Include="admin_import_pengajar.aspx" />
     <Content Include="admin_kaunselor_aktivitikaunselor.aspx" />
+    <Content Include="admin_kaunselor_aktivitikaunselor_detail.aspx" />
+    <Content Include="admin_kaunselor_aktivitikaunselor_view.aspx" />
     <Content Include="admin_kaunselor_biasiswa.aspx" />
     <Content Include="admin_kaunselor_importeksport.aspx" />
     <Content Include="admin_kaunselor_jatidiri.aspx" />
     <Content Include="admin_kaunselor_pengurusanbiasiswa.aspx" />
+    <Content Include="admin_kaunselor_pengurusanKaunselor.aspx" />
     <Content Include="admin_kaunselor_perkembangankendiri.aspx" />
     <Content Include="admin_kaunselor_portfolio.aspx" />
     <Content Include="admin_kemaskini_markah_koko.aspx" />
@@ -175,6 +178,7 @@
     <Content Include="admin_laporanPeperiksaan_peperiksaanKelasDetail.aspx" />
     <Content Include="admin_laporanPeperiksaan_peperiksaan_kelas.aspx" />
     <Content Include="admin_laporanPeperiksaan_peperiksaan_kursus.aspx" />
+    <Content Include="admin_laporanPeperiksaan_UKM1_PPCS.aspx" />
     <Content Include="admin_laporanPPCS.aspx" />
     <Content Include="admin_laporanUKM1.aspx" />
     <Content Include="admin_laporanUKM2.aspx" />
@@ -203,16 +207,19 @@
     <Content Include="admin_peperiksaan_pengurusan_gred.aspx" />
     <Content Include="admin_peperiksaan_pengurusan_peperiksaan.aspx" />
     <Content Include="admin_peperiksaan_popup.aspx" />
+    <Content Include="Admin_Peperiksaan_Popup_Pelajar.aspx" />
     <Content Include="admin_peperiksaan_transkrip.aspx" />
     <Content Include="admin_transaksi_email.aspx" />
     <Content Include="admin_transaksi_yuran.aspx" />
     <Content Include="admin_transaksi_yuran_gambar.aspx" />
+    <Content Include="admin_transaksi_yuran_view.aspx" />
     <Content Include="admin_transkrip_rasmi.aspx" />
     <Content Include="admin_tutorial.aspx" />
     <Content Include="admin_userAkses.aspx" />
     <Content Include="admin_userLogin.aspx" />
     <Content Include="admin_view_disiplin.aspx" />
     <Content Include="admin_view_koordinator.aspx" />
+    <Content Include="admin_view_yuran_pelajar.aspx" />
     <Content Include="alumni_History_List.aspx" />
     <Content Include="alumni_student_EditEduback.aspx" />
     <Content Include="alumni_student_workStatusEdit.aspx" />
@@ -238,8 +245,12 @@
     <Content Include="commoncontrol\coordinator_student_marks.ascx" />
     <Content Include="commoncontrol\coordinator_Update.ascx" />
     <Content Include="commoncontrol\coordinator_View.ascx" />
+    <Content Include="commoncontrol\counselor_Activity.ascx" />
+    <Content Include="commoncontrol\counselor_Activity_Detail.ascx" />
+    <Content Include="commoncontrol\counselor_Activity_View.ascx" />
     <Content Include="commoncontrol\counselor_Detal_Case.ascx" />
     <Content Include="commoncontrol\counselor_List_Table.ascx" />
+    <Content Include="commoncontrol\counselor_Management.ascx" />
     <Content Include="commoncontrol\counselor_Personality_Development.ascx" />
     <Content Include="commoncontrol\counselor_Portfolio.ascx" />
     <Content Include="commoncontrol\counselor_Self_Development_Mark.ascx" />
@@ -249,9 +260,11 @@
     <Content Include="commoncontrol\course_Update.ascx" />
     <Content Include="commoncontrol\Disiplin_Case_Detail.ascx" />
     <Content Include="commoncontrol\Disiplin_config.ascx" />
+    <Content Include="commoncontrol\Disiplin_config_edit.ascx" />
     <Content Include="commoncontrol\Disiplin_Letter_List.ascx" />
     <Content Include="commoncontrol\Disiplin_student_detail.ascx" />
     <Content Include="commoncontrol\Disiplin_Update.ascx" />
+    <Content Include="commoncontrol\Disiplin_Update_Detail.ascx" />
     <Content Include="commoncontrol\Disiplin_view.ascx" />
     <Content Include="commoncontrol\Disiplin_warning_letter.ascx" />
     <Content Include="commoncontrol\Disiplin_Warning_Letter_Form.ascx" />
@@ -271,6 +284,7 @@
     <Content Include="commoncontrol\hostel_Detail.ascx" />
     <Content Include="commoncontrol\hostel_EditStudentPlacement.ascx" />
     <Content Include="commoncontrol\hostel_list_managae.ascx" />
+    <Content Include="commoncontrol\hostel_List_Student.ascx" />
     <Content Include="commoncontrol\hostel_List_Table.ascx" />
     <Content Include="commoncontrol\hostel_Update.ascx" />
     <Content Include="commoncontrol\import_class.ascx" />
@@ -280,6 +294,8 @@
     <Content Include="commoncontrol\import_lecturerPlacement.ascx" />
     <Content Include="commoncontrol\import_staff.ascx" />
     <Content Include="commoncontrol\import_student.ascx" />
+    <Content Include="commoncontrol\lecturer_koko_attendanceStudent_Detail.ascx" />
+    <Content Include="commoncontrol\lecturer_AddClass.ascx" />
     <Content Include="commoncontrol\lecturer_attendanceData.ascx" />
     <Content Include="commoncontrol\lecturer_counselor_Detail_Case.ascx" />
     <Content Include="commoncontrol\lecturer_counselor_List_Table.ascx" />
@@ -288,9 +304,15 @@
     <Content Include="commoncontrol\lecturer_Create.ascx" />
     <Content Include="commoncontrol\lecturer_Detail.ascx" />
     <Content Include="commoncontrol\lecturer_homepage.ascx" />
+    <Content Include="commoncontrol\lecturer_koko_attendanceStudent.ascx" />
+    <Content Include="commoncontrol\lecturer_koko_markStudent.ascx" />
+    <Content Include="commoncontrol\lecturer_koko_positionStudent.ascx" />
+    <Content Include="commoncontrol\lecturer_koko_scheduleStudent.ascx" />
+    <Content Include="commoncontrol\lecturer_koko_searchStudent.ascx" />
     <Content Include="commoncontrol\lecturer_list_student.ascx" />
     <Content Include="commoncontrol\lecturer_List_Table.ascx" />
     <Content Include="commoncontrol\lecturer_RegClass.ascx" />
+    <Content Include="commoncontrol\lecturer_student_registration.ascx" />
     <Content Include="commoncontrol\lecturer_Update.ascx" />
     <Content Include="commoncontrol\lecturer_update_result.ascx" />
     <Content Include="commoncontrol\lecturer_view_course.ascx" />
@@ -308,9 +330,12 @@
     <Content Include="commoncontrol\payment_admin_image.ascx" />
     <Content Include="commoncontrol\payment_Create.ascx" />
     <Content Include="commoncontrol\payment_Create_Invoice.ascx" />
+    <Content Include="commoncontrol\payment_edit.ascx" />
     <Content Include="commoncontrol\payment_Email.ascx" />
     <Content Include="commoncontrol\payment_list_table.ascx" />
     <Content Include="commoncontrol\payment_Transaction.ascx" />
+    <Content Include="commoncontrol\payment_Transaction_list.ascx" />
+    <Content Include="commoncontrol\payment_view_invoice_student.ascx" />
     <Content Include="commoncontrol\pengarah_examination_slip.ascx" />
     <Content Include="commoncontrol\pengarah_laporan_kehadiran_table.ascx" />
     <Content Include="commoncontrol\pengarah_laporan_peperiksaan_kelas_table.ascx" />
@@ -319,6 +344,7 @@
     <Content Include="commoncontrol\report_PCIS.ascx" />
     <Content Include="commoncontrol\report_PPCS.ascx" />
     <Content Include="commoncontrol\report_UKM1.ascx" />
+    <Content Include="commoncontrol\report_UKM1_PPCS.ascx" />
     <Content Include="commoncontrol\report_UKM2.ascx" />
     <Content Include="commoncontrol\report_UKM3.ascx" />
     <Content Include="commoncontrol\scholarship_create.ascx" />
@@ -332,6 +358,7 @@
     <Content Include="commoncontrol\student_Create.ascx" />
     <Content Include="commoncontrol\student_Detail.ascx" />
     <Content Include="commoncontrol\student_DetailAdmin.ascx" />
+    <Content Include="commoncontrol\student_DetailLecturer.ascx" />
     <Content Include="commoncontrol\student_dicipline.ascx" />
     <Content Include="commoncontrol\student_examData.ascx" />
     <Content Include="commoncontrol\student_ExamList.ascx" />
@@ -366,7 +393,12 @@
     <Content Include="commoncontrol\àlumni_History.ascx" />
     <Content Include="css\animate.css" />
     <Content Include="css\base.css" />
+    <Content Include="css\bootstrap_335.min.css" />
+    <Content Include="css\bootstrap_337.min.css" />
+    <Content Include="css\bootstrap_select_1100.min.css" />
     <Content Include="css\font_awesome.css" />
+    <Content Include="css\font_awesome_470.css" />
+    <Content Include="css\font_awesome_470.min.css" />
     <Content Include="css\font_montserrat.css" />
     <Content Include="css\frame.css" />
     <Content Include="css\jquerytable.min.css" />
@@ -378,6 +410,9 @@
     <Content Include="css\w3.css" />
     <Content Include="default.aspx" />
     <Content Include="homeroom_semak_kehadiran.aspx" />
+    <Content Include="img\1 number.png" />
+    <Content Include="img\2 number.png" />
+    <Content Include="img\3 number.png" />
     <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\doa_rezeki_banyak.jpg" />
     <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_official.jpg" />
     <Content Include="img\983db650f7f79bc8e87d9a3ba418aefc\exam_official_v1.jpg" />
@@ -391,7 +426,9 @@
     <Content Include="img\alumni.png" />
     <Content Include="img\Box_Crate_With_Upwards_Arrow-512.png" />
     <Content Include="img\cancel.png" />
+    <Content Include="img\correct image 2.png" />
     <Content Include="img\doa_rezeki_banyak.jpg" />
+    <Content Include="img\download image 2.png" />
     <Content Include="img\edit-11-512.png" />
     <Content Include="img\Empty.png" />
     <Content Include="img\empty_space.png" />
@@ -405,31 +442,48 @@
     <Content Include="img\front.jpg" />
     <Content Include="img\front2.jpg" />
     <Content Include="img\file_icon.png" />
+    <Content Include="img\icon_erase.png" />
     <Content Include="img\img_tree.png" />
     <Content Include="img\import.png" />
+    <Content Include="img\logo genius pintar.png" />
+    <Content Include="img\logo kpm 2.jpg" />
+    <Content Include="img\logo kpm.png" />
+    <Content Include="img\minus image 2.png" />
     <Content Include="img\permatapintar2.jpg" />
     <Content Include="img\permata_logo.png" />
     <Content Include="img\permata_logo_v1.png" />
+    <Content Include="img\PGPN LOGO.jpg" />
+    <Content Include="img\plus image 2.png" />
     <Content Include="img\save.png" />
     <Content Include="img\star.png" />
     <Content Include="img\time.png" />
     <Content Include="img\trash.png" />
     <Content Include="img\tree.jpeg" />
     <Content Include="img\ukm.jpg" />
+    <Content Include="img\update button.png" />
     <Content Include="img\update.png" />
+    <Content Include="img\x image 2.png" />
     <Content Include="Import_Data.aspx" />
     <Content Include="Import_Exam_Data.aspx" />
     <Content Include="Import_Student_Data_Temporary.aspx" />
     <Content Include="js\amchart.js" />
     <Content Include="js\anime.min.js" />
+    <Content Include="js\bootstrap_335.min.js" />
+    <Content Include="js\bootstrap_337.min.js" />
+    <Content Include="js\bootstrap_select_1100.min.js" />
     <Content Include="js\canvas.min.js" />
     <Content Include="js\data_toogle.min.js" />
     <Content Include="js\demo.js" />
+    <Content Include="js\html2canvas.js" />
     <Content Include="js\jquery-1.10.2.js" />
     <Content Include="js\jquery-ui.css" />
     <Content Include="js\jquery-ui.js" />
     <Content Include="js\jquery.js" />
     <Content Include="js\jquerytable.min.js" />
+    <Content Include="js\jquery_1113.min.js" />
+    <Content Include="js\jquery_211.min.js" />
+    <Content Include="js\jquery_321.min.js" />
+    <Content Include="js\jspdf_10272.debug.js" />
     <Content Include="js\particles.js" />
     <Content Include="js\pie.js" />
     <Content Include="js\plugins_export.min.js" />
@@ -516,12 +570,22 @@
     <Content Include="js\topbar_dropdown_jquery.min.js" />
     <Content Include="payment_Image\receipt.png" />
     <Content Include="pegajar_koordinator_kemaskini_markah.aspx" />
+    <Content Include="Pelajar_reference.aspx" />
+    <Content Include="pelajar_view_reference.aspx" />
+    <Content Include="penagajr_kemasukan_pelajar.aspx" />
     <Content Include="pengajar_carian_pelajar_kaunselor.aspx" />
     <Content Include="pengajar_CloseLogout.aspx" />
+    <Content Include="pengajar_daftar_kelas.aspx" />
     <Content Include="pengajar_detail_kaunselor.aspx" />
     <Content Include="pengajar_kehadiran_pelajar.aspx" />
     <Content Include="pengajar_kemaskini_profile.aspx" />
     <Content Include="pengajar_kemasukan_markah.aspx" />
+    <Content Include="pengajar_koko_carianPelajar.aspx" />
+    <Content Include="pengajar_koko_jadualPelajar.aspx" />
+    <Content Include="pengajar_koko_kehadiranPelajar.aspx" />
+    <Content Include="pengajar_koko_kehadiranPelajar_Detail.aspx" />
+    <Content Include="pengajar_koko_markahPelajar.aspx" />
+    <Content Include="pengajar_koko_pangkatPelajar.aspx" />
     <Content Include="pengajar_koordinator_penilaian_pelajar.aspx" />
     <Content Include="pengajar_laporan_pentaksiran.aspx" />
     <Content Include="pengajar_login_berjaya.aspx" />
@@ -529,6 +593,7 @@
     <Content Include="pengajar_pelajar_detail.aspx" />
     <Content Include="pengajar_penilaian_pelajar.aspx" />
     <Content Include="pengajar_senarai_pelajar.aspx" />
+    <Content Include="pengajar_tutorial.aspx" />
     <Content Include="pengarah_CloseLogout.aspx" />
     <Content Include="pengarah_laporan_kehadiran.aspx" />
     <Content Include="pengarah_laporan_kursus.aspx" />
@@ -686,6 +751,9 @@
     <Content Include="textboxio\thirdparty-licenses.html" />
     <Content Include="textboxio\version.txt" />
     <Content Include="Tukar_KataLaluan.aspx" />
+    <Content Include="video\KPPMS Menu Access.mp4" />
+    <Content Include="video\Lecturer Portal\Lecturer\Tutorial Lecturer Register Class.mp4" />
+    <Content Include="video\Lecturer Portal\Lecturer\Tutorial Lecturer Student Attendance.mp4" />
     <Content Include="video\test.mp4" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -741,6 +809,13 @@
       <DependentUpon>admin_asrama_penempatan_pelajar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="admin_asrama_senarai_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_asrama_senarai_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_asrama_senarai_pelajar.aspx.vb">
+      <DependentUpon>admin_asrama_senarai_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin_carian_pelajar.aspx.designer.vb">
       <DependentUpon>admin_carian_pelajar.aspx</DependentUpon>
     </Compile>
@@ -782,6 +857,13 @@
     <Compile Include="admin_config_disiplin.aspx.vb">
       <DependentUpon>admin_config_disiplin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_config_disiplin_kemaskini.aspx.designer.vb">
+      <DependentUpon>admin_config_disiplin_kemaskini.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_config_disiplin_kemaskini.aspx.vb">
+      <DependentUpon>admin_config_disiplin_kemaskini.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="admin_config_warning_letter.aspx.designer.vb">
       <DependentUpon>admin_config_warning_letter.aspx</DependentUpon>
@@ -909,6 +991,13 @@
       <DependentUpon>admin_edit_disiplin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="admin_edit_disiplin_kemaskini.aspx.designer.vb">
+      <DependentUpon>admin_edit_disiplin_kemaskini.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_disiplin_kemaskini.aspx.vb">
+      <DependentUpon>admin_edit_disiplin_kemaskini.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin_edit_exam_data.aspx.designer.vb">
       <DependentUpon>admin_edit_exam_data.aspx</DependentUpon>
     </Compile>
@@ -951,6 +1040,13 @@
       <DependentUpon>admin_edit_pengajar_data.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="admin_edit_yuran.aspx.designer.vb">
+      <DependentUpon>admin_edit_yuran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edit_yuran.aspx.vb">
+      <DependentUpon>admin_edit_yuran.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin_importexport_peperiksaan_markah.aspx.designer.vb">
       <DependentUpon>admin_importexport_peperiksaan_markah.aspx</DependentUpon>
     </Compile>
@@ -979,6 +1075,20 @@
       <DependentUpon>admin_kaunselor_aktivitikaunselor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="admin_kaunselor_aktivitikaunselor_detail.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_aktivitikaunselor_detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_aktivitikaunselor_detail.aspx.vb">
+      <DependentUpon>admin_kaunselor_aktivitikaunselor_detail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_aktivitikaunselor_view.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_aktivitikaunselor_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_aktivitikaunselor_view.aspx.vb">
+      <DependentUpon>admin_kaunselor_aktivitikaunselor_view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin_kaunselor_biasiswa.aspx.designer.vb">
       <DependentUpon>admin_kaunselor_biasiswa.aspx</DependentUpon>
     </Compile>
@@ -1005,6 +1115,13 @@
     </Compile>
     <Compile Include="admin_kaunselor_pengurusanbiasiswa.aspx.vb">
       <DependentUpon>admin_kaunselor_pengurusanbiasiswa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_kaunselor_pengurusanKaunselor.aspx.designer.vb">
+      <DependentUpon>admin_kaunselor_pengurusanKaunselor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_kaunselor_pengurusanKaunselor.aspx.vb">
+      <DependentUpon>admin_kaunselor_pengurusanKaunselor.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="admin_kaunselor_perkembangankendiri.aspx.designer.vb">
@@ -1097,6 +1214,13 @@
     <Compile Include="admin_laporanPeperiksaan_peperiksaan_kursus.aspx.vb">
       <DependentUpon>admin_laporanPeperiksaan_peperiksaan_kursus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_UKM1_PPCS.aspx.designer.vb">
+      <DependentUpon>admin_laporanPeperiksaan_UKM1_PPCS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_laporanPeperiksaan_UKM1_PPCS.aspx.vb">
+      <DependentUpon>admin_laporanPeperiksaan_UKM1_PPCS.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="admin_laporanPPCS.aspx.designer.vb">
       <DependentUpon>admin_laporanPPCS.aspx</DependentUpon>
@@ -1294,6 +1418,13 @@
       <DependentUpon>admin_peperiksaan_popup.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Admin_Peperiksaan_Popup_Pelajar.aspx.designer.vb">
+      <DependentUpon>Admin_Peperiksaan_Popup_Pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Peperiksaan_Popup_Pelajar.aspx.vb">
+      <DependentUpon>Admin_Peperiksaan_Popup_Pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="admin_peperiksaan_transkrip.aspx.designer.vb">
       <DependentUpon>admin_peperiksaan_transkrip.aspx</DependentUpon>
     </Compile>
@@ -1321,6 +1452,13 @@
     <Compile Include="admin_transaksi_yuran_gambar.aspx.vb">
       <DependentUpon>admin_transaksi_yuran_gambar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_transaksi_yuran_view.aspx.designer.vb">
+      <DependentUpon>admin_transaksi_yuran_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_transaksi_yuran_view.aspx.vb">
+      <DependentUpon>admin_transaksi_yuran_view.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="admin_transkrip_rasmi.aspx.designer.vb">
       <DependentUpon>admin_transkrip_rasmi.aspx</DependentUpon>
@@ -1362,6 +1500,13 @@
     </Compile>
     <Compile Include="admin_view_koordinator.aspx.vb">
       <DependentUpon>admin_view_koordinator.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="admin_view_yuran_pelajar.aspx.designer.vb">
+      <DependentUpon>admin_view_yuran_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_view_yuran_pelajar.aspx.vb">
+      <DependentUpon>admin_view_yuran_pelajar.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="alumni_History_List.aspx.designer.vb">
@@ -1526,6 +1671,27 @@
       <DependentUpon>coordinator_View.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="commoncontrol\counselor_Activity.ascx.designer.vb">
+      <DependentUpon>counselor_Activity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Activity.ascx.vb">
+      <DependentUpon>counselor_Activity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Activity_Detail.ascx.designer.vb">
+      <DependentUpon>counselor_Activity_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Activity_Detail.ascx.vb">
+      <DependentUpon>counselor_Activity_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Activity_View.ascx.designer.vb">
+      <DependentUpon>counselor_Activity_View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Activity_View.ascx.vb">
+      <DependentUpon>counselor_Activity_View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="commoncontrol\counselor_Detal_Case.ascx.designer.vb">
       <DependentUpon>counselor_Detal_Case.ascx</DependentUpon>
     </Compile>
@@ -1538,6 +1704,13 @@
     </Compile>
     <Compile Include="commoncontrol\counselor_List_Table.ascx.vb">
       <DependentUpon>counselor_List_Table.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Management.ascx.designer.vb">
+      <DependentUpon>counselor_Management.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\counselor_Management.ascx.vb">
+      <DependentUpon>counselor_Management.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="commoncontrol\counselor_Personality_Development.ascx.designer.vb">
@@ -1603,6 +1776,13 @@
       <DependentUpon>Disiplin_config.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="commoncontrol\Disiplin_config_edit.ascx.designer.vb">
+      <DependentUpon>Disiplin_config_edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_config_edit.ascx.vb">
+      <DependentUpon>Disiplin_config_edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="commoncontrol\Disiplin_Letter_List.ascx.designer.vb">
       <DependentUpon>Disiplin_Letter_List.ascx</DependentUpon>
     </Compile>
@@ -1622,6 +1802,13 @@
     </Compile>
     <Compile Include="commoncontrol\Disiplin_Update.ascx.vb">
       <DependentUpon>Disiplin_Update.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Update_Detail.ascx.designer.vb">
+      <DependentUpon>Disiplin_Update_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\Disiplin_Update_Detail.ascx.vb">
+      <DependentUpon>Disiplin_Update_Detail.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="commoncontrol\Disiplin_view.ascx.designer.vb">
@@ -1757,6 +1944,13 @@
       <DependentUpon>hostel_list_managae.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="commoncontrol\hostel_List_Student.ascx.designer.vb">
+      <DependentUpon>hostel_List_Student.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\hostel_List_Student.ascx.vb">
+      <DependentUpon>hostel_List_Student.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="commoncontrol\hostel_List_Table.ascx.designer.vb">
       <DependentUpon>hostel_List_Table.ascx</DependentUpon>
     </Compile>
@@ -1820,6 +2014,20 @@
       <DependentUpon>import_student.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_attendanceStudent_Detail.ascx.designer.vb">
+      <DependentUpon>lecturer_koko_attendanceStudent_Detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_attendanceStudent_Detail.ascx.vb">
+      <DependentUpon>lecturer_koko_attendanceStudent_Detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_AddClass.ascx.designer.vb">
+      <DependentUpon>lecturer_AddClass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_AddClass.ascx.vb">
+      <DependentUpon>lecturer_AddClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="commoncontrol\lecturer_attendanceData.ascx.designer.vb">
       <DependentUpon>lecturer_attendanceData.ascx</DependentUpon>
     </Compile>
@@ -1876,6 +2084,41 @@
       <DependentUpon>lecturer_homepage.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_attendanceStudent.ascx.designer.vb">
+      <DependentUpon>lecturer_koko_attendanceStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_attendanceStudent.ascx.vb">
+      <DependentUpon>lecturer_koko_attendanceStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_markStudent.ascx.designer.vb">
+      <DependentUpon>lecturer_koko_markStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_markStudent.ascx.vb">
+      <DependentUpon>lecturer_koko_markStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_positionStudent.ascx.designer.vb">
+      <DependentUpon>lecturer_koko_positionStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_positionStudent.ascx.vb">
+      <DependentUpon>lecturer_koko_positionStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_scheduleStudent.ascx.designer.vb">
+      <DependentUpon>lecturer_koko_scheduleStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_scheduleStudent.ascx.vb">
+      <DependentUpon>lecturer_koko_scheduleStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_searchStudent.ascx.designer.vb">
+      <DependentUpon>lecturer_koko_searchStudent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_koko_searchStudent.ascx.vb">
+      <DependentUpon>lecturer_koko_searchStudent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="commoncontrol\lecturer_list_student.ascx.designer.vb">
       <DependentUpon>lecturer_list_student.ascx</DependentUpon>
     </Compile>
@@ -1895,6 +2138,13 @@
     </Compile>
     <Compile Include="commoncontrol\lecturer_RegClass.ascx.vb">
       <DependentUpon>lecturer_RegClass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_student_registration.ascx.designer.vb">
+      <DependentUpon>lecturer_student_registration.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\lecturer_student_registration.ascx.vb">
+      <DependentUpon>lecturer_student_registration.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="commoncontrol\lecturer_Update.ascx.designer.vb">
@@ -2016,6 +2266,13 @@
       <DependentUpon>payment_Create_Invoice.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="commoncontrol\payment_edit.ascx.designer.vb">
+      <DependentUpon>payment_edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_edit.ascx.vb">
+      <DependentUpon>payment_edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="commoncontrol\payment_Email.ascx.designer.vb">
       <DependentUpon>payment_Email.ascx</DependentUpon>
     </Compile>
@@ -2035,6 +2292,20 @@
     </Compile>
     <Compile Include="commoncontrol\payment_Transaction.ascx.vb">
       <DependentUpon>payment_Transaction.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Transaction_list.ascx.designer.vb">
+      <DependentUpon>payment_Transaction_list.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_Transaction_list.ascx.vb">
+      <DependentUpon>payment_Transaction_list.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\payment_view_invoice_student.ascx.designer.vb">
+      <DependentUpon>payment_view_invoice_student.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\payment_view_invoice_student.ascx.vb">
+      <DependentUpon>payment_view_invoice_student.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="commoncontrol\pengarah_examination_slip.ascx.designer.vb">
@@ -2091,6 +2362,13 @@
     </Compile>
     <Compile Include="commoncontrol\report_UKM1.ascx.vb">
       <DependentUpon>report_UKM1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM1_PPCS.ascx.designer.vb">
+      <DependentUpon>report_UKM1_PPCS.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\report_UKM1_PPCS.ascx.vb">
+      <DependentUpon>report_UKM1_PPCS.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="commoncontrol\report_UKM2.ascx.designer.vb">
@@ -2182,6 +2460,13 @@
     </Compile>
     <Compile Include="commoncontrol\student_DetailAdmin.ascx.vb">
       <DependentUpon>student_DetailAdmin.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commoncontrol\student_DetailLecturer.ascx.designer.vb">
+      <DependentUpon>student_DetailLecturer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="commoncontrol\student_DetailLecturer.ascx.vb">
+      <DependentUpon>student_DetailLecturer.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="commoncontrol\student_dicipline.ascx.designer.vb">
@@ -2470,6 +2755,27 @@
       <DependentUpon>pegajar_koordinator_kemaskini_markah.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Pelajar_reference.aspx.designer.vb">
+      <DependentUpon>Pelajar_reference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pelajar_reference.aspx.vb">
+      <DependentUpon>Pelajar_reference.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pelajar_view_reference.aspx.designer.vb">
+      <DependentUpon>pelajar_view_reference.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pelajar_view_reference.aspx.vb">
+      <DependentUpon>pelajar_view_reference.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="penagajr_kemasukan_pelajar.aspx.designer.vb">
+      <DependentUpon>penagajr_kemasukan_pelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="penagajr_kemasukan_pelajar.aspx.vb">
+      <DependentUpon>penagajr_kemasukan_pelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="pengajar.Master.designer.vb">
       <DependentUpon>pengajar.Master</DependentUpon>
     </Compile>
@@ -2490,6 +2796,13 @@
     <Compile Include="pengajar_CloseLogout.aspx.vb">
       <DependentUpon>pengajar_CloseLogout.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_daftar_kelas.aspx.designer.vb">
+      <DependentUpon>pengajar_daftar_kelas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_daftar_kelas.aspx.vb">
+      <DependentUpon>pengajar_daftar_kelas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="pengajar_detail_kaunselor.aspx.designer.vb">
       <DependentUpon>pengajar_detail_kaunselor.aspx</DependentUpon>
@@ -2518,6 +2831,48 @@
     <Compile Include="pengajar_kemasukan_markah.aspx.vb">
       <DependentUpon>pengajar_kemasukan_markah.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koko_carianPelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_koko_carianPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koko_carianPelajar.aspx.vb">
+      <DependentUpon>pengajar_koko_carianPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koko_jadualPelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_koko_jadualPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koko_jadualPelajar.aspx.vb">
+      <DependentUpon>pengajar_koko_jadualPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koko_kehadiranPelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_koko_kehadiranPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koko_kehadiranPelajar.aspx.vb">
+      <DependentUpon>pengajar_koko_kehadiranPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koko_kehadiranPelajar_Detail.aspx.designer.vb">
+      <DependentUpon>pengajar_koko_kehadiranPelajar_Detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koko_kehadiranPelajar_Detail.aspx.vb">
+      <DependentUpon>pengajar_koko_kehadiranPelajar_Detail.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koko_markahPelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_koko_markahPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koko_markahPelajar.aspx.vb">
+      <DependentUpon>pengajar_koko_markahPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_koko_pangkatPelajar.aspx.designer.vb">
+      <DependentUpon>pengajar_koko_pangkatPelajar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_koko_pangkatPelajar.aspx.vb">
+      <DependentUpon>pengajar_koko_pangkatPelajar.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="pengajar_koordinator_penilaian_pelajar.aspx.designer.vb">
       <DependentUpon>pengajar_koordinator_penilaian_pelajar.aspx</DependentUpon>
@@ -2567,6 +2922,13 @@
     <Compile Include="pengajar_senarai_pelajar.aspx.vb">
       <DependentUpon>pengajar_senarai_pelajar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pengajar_tutorial.aspx.designer.vb">
+      <DependentUpon>pengajar_tutorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pengajar_tutorial.aspx.vb">
+      <DependentUpon>pengajar_tutorial.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="pengarah.Master.designer.vb">
       <DependentUpon>pengarah.Master</DependentUpon>
@@ -2671,8 +3033,6 @@
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
     <None Include="My Project\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
-    <None Include="My Project\PublishProfiles\FolderProfile1.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>

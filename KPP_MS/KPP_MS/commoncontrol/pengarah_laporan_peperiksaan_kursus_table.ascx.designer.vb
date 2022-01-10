@@ -23,6 +23,24 @@ Partial Public Class pengarah_laporan_peperiksaan_kursus_table
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''ddlCampus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlCampus As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlProgram control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlProgram As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''ddlExam control.
     '''</summary>
     '''<remarks>
@@ -104,6 +122,15 @@ Partial Public Class pengarah_laporan_peperiksaan_kursus_table
     Protected WithEvents lblKursus5 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
+    '''lblKursus6 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblKursus6 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''graph1 control.
     '''</summary>
     '''<remarks>
@@ -147,6 +174,15 @@ Partial Public Class pengarah_laporan_peperiksaan_kursus_table
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents graph5 As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''graph6 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents graph6 As Global.System.Web.UI.WebControls.HiddenField
     
     '''<summary>
     '''table1_countaplus control.
@@ -642,4 +678,103 @@ Partial Public Class pengarah_laporan_peperiksaan_kursus_table
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents table5_countgg As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countaplus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countaplus As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countaa control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countaa As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countaminus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countaminus As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countbplus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countbplus As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countbb control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countbb As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countbminus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countbminus As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countcplus control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countcplus As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countcc control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countcc As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countdd control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countdd As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countee control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countee As Global.System.Web.UI.WebControls.HiddenField
+    
+    '''<summary>
+    '''table6_countgg control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents table6_countgg As Global.System.Web.UI.WebControls.HiddenField
 End Class

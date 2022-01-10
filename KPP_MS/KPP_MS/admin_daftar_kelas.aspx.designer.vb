@@ -21,13 +21,4 @@ Partial Public Class admin_daftar_kelas
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents class_Create As Global.KPP_MS.class_Create
-    
-    '''<summary>
-    '''class_transfer control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents class_transfer As Global.KPP_MS.class_transfer
 End Class

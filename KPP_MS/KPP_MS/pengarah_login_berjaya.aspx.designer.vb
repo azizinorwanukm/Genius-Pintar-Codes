@@ -14,11 +14,164 @@ Option Explicit On
 Partial Public Class pengarah_login_berjaya
     
     '''<summary>
-    '''Label1 control.
+    '''txtstaffID control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtstaffID As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtstaffName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffName As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtstaffMykad control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffMykad As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''rbtn_Male control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rbtn_Male As Global.System.Web.UI.WebControls.RadioButton
+    
+    '''<summary>
+    '''rbtn_Female control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents rbtn_Female As Global.System.Web.UI.WebControls.RadioButton
+    
+    '''<summary>
+    '''txtstaffEmail control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffEmail As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtstaffPhone control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffPhone As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtstaffAddress control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffAddress As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtstaffCity control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffCity As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtstaffPostcode control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstaffPostcode As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''ddlState control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlState As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''txtPosition1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPosition1 As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtPosition2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPosition2 As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtPosition3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtPosition3 As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''btnUpdateDirectorInfo control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdateDirectorInfo As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''txtOldPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtOldPassword As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtNewPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtNewPassword As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''btnUpdateDirectorPassword control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnUpdateDirectorPassword As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

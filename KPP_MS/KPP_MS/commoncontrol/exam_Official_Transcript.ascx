@@ -39,8 +39,8 @@
         </div>
     </div>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px;text-align:left;padding-left:23px;margin-top:5px;margin-bottom:5px">
-        <asp:DropDownList ID="ddlstudentYear" runat="server" AutoPostBack="true" class="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlclassID" runat="server" AutoPostBack="false" class="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlstudentYear" runat="server" AutoPostBack="true" class="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlclassID" runat="server" AutoPostBack="false" class="btn btn-default font ddl"></asp:DropDownList>
         <button id="btnSearch" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">Search &#160; <i class="fa fa-search w3-large w3-text-white"></i></button>
     </div>
 </div>

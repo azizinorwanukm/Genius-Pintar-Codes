@@ -3,28 +3,49 @@
 Public Class hostel_Update
     Inherits System.Web.UI.UserControl
 
-    Dim oCommon As New Commonfunction
-    Dim strSQL As String
-    Dim strRet As String
+    Dim strSQL As String = ""
+    Dim strRet As String = ""
+    Dim result As Integer = 0
+
     Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
     Dim objConn As SqlConnection = New SqlConnection(strConn)
+    Dim oCommon As New Commonfunction
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then
 
-                'make sure the data read is integer(as for id from db).
-                If Not Regex.IsMatch(Request.QueryString("hostelID"), "^[0-9 ]+$") Then
-                    Response.Redirect("admin_pengurusan_am_hostel.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-                Else
-                    'validated.
+                previousPage.NavigateUrl = String.Format("~/admin_pengurusan_am_hostel.aspx?admin_ID=" + Request.QueryString("admin_ID"))
+
+                Checking_MenuAccess_Load()
+
+                If Session("getStatus") = "EHI" Then ''Edit Hostel Information
+                    txtbreadcrum1.Text = "Edit Hostel Information"
+
+                    EditHostelInformation.Visible = True
+                    EditRoomInformation.Visible = False
+
+                    btnEditHostelInformation.Attributes("class") = "btn btn-info"
+                    btnEditRoomInformation.Attributes("class") = "btn btn-default font"
+
+                    block_campus_list()
                     block_name_list()
                     block_level_list()
                     year_list()
                     sem_list()
 
                     LoadHostelInfo(Request.QueryString("hostelID"))
-                    ListRoom()
+
+                ElseIf Session("getStatus") = "ERI" Then ''Edit Room Information
+                    txtbreadcrum1.Text = "Edit Room Information"
+
+                    EditHostelInformation.Visible = False
+                    EditRoomInformation.Visible = True
+
+                    btnEditHostelInformation.Attributes("class") = "btn btn-default font"
+                    btnEditRoomInformation.Attributes("class") = "btn btn-info"
+
+                    strRet = BindData(datRespondent)
                 End If
 
             End If
@@ -33,8 +54,142 @@ Public Class hostel_Update
         End Try
     End Sub
 
-    Private Sub block_name_list()
-        strSQL = "SELECT Parameter,Value from setting where Type = 'Block_Name' and Parameter is not null "
+    Private Sub Checking_MenuAccess_Load()
+
+        btnEditHostelInformation.Visible = False
+        btnEditRoomInformation.Visible = False
+        EditHostelInformation.Visible = False
+        EditRoomInformation.Visible = False
+
+        Btnsimpan.Visible = False
+
+        Dim accessID As String = "select MAX(stf_ID) from security_ID where loginID_Number = '" & Request.QueryString("admin_ID") & "'"
+        Dim stf_ID_Data As String = oCommon.getFieldValue(accessID)
+
+        Dim str_user_position As String = CType(Session.Item("user_position"), String)
+
+        ''Get Login ID from Staff_Login
+        strSQL = "Select login_ID from staff_Login where stf_ID = '" & stf_ID_Data & "' and staff_Access = '" & str_user_position & "'"
+        Dim find_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        ''Get Count from Menu_master_User
+        strSQL = "select count(*) Count_No from menu_master_user where stf_ID = '" & stf_ID_Data & "' and login_ID = '" & find_LoginID & "'"
+        Dim find_CountNo_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        Dim Get_EdithostelInformation As String = ""
+        Dim Get_EditRoomInformation As String = ""
+
+        ''Loop The Count_No
+        For num As Integer = 0 To find_CountNo_LoginID - 1 Step 1
+
+            ''Get Main Menu Data
+            strSQL = "  Select A.Menu From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_Menu_Data As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Sub Menu 3 Data
+            strSQL = "  Select A.Menu_Sub3 From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_SubMenu2 As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 2 Edit Data 
+            strSQL = "  Select B.F2_Edit From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F2Edit As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 2 Delete Data 
+            strSQL = "  Select B.F2_Delete From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F2Delete As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 2 Update Data 
+            strSQL = "  Select B.F2_Update From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F2Update As String = oCommon.getFieldValue(strSQL)
+
+            If find_Data_SubMenu2 = "Edit Hostel Information" And find_Data_SubMenu2.Length > 0 Then
+                btnEditHostelInformation.Visible = True
+                EditHostelInformation.Visible = True
+
+                Get_EdithostelInformation = "TRUE"
+
+                If find_Data_F2Update.Length > 0 And find_Data_F2Update = "TRUE" Then
+                    Btnsimpan.Visible = True
+                End If
+            End If
+
+            If find_Data_SubMenu2 = "Edit Room Information" And find_Data_SubMenu2.Length > 0 Then
+                btnEditRoomInformation.Visible = True
+                EditRoomInformation.Visible = True
+
+                Get_EditRoomInformation = "TRUE"
+
+                If find_Data_F2Edit.Length > 0 And find_Data_F2Edit = "TRUE" Then
+                    Session("getEditButton") = "TRUE"
+                End If
+
+                If find_Data_F2Delete.Length > 0 And find_Data_F2Delete = "TRUE" Then
+                    Session("getDeleteButton") = "TRUE"
+                End If
+            End If
+
+            If find_Data_SubMenu2.Length = 0 And find_Data_Menu_Data = "All" Then
+                btnEditRoomInformation.Visible = True
+                btnEditHostelInformation.Visible = True
+                EditHostelInformation.Visible = True
+                EditRoomInformation.Visible = True
+
+                Btnsimpan.Visible = True
+
+                Get_EdithostelInformation = "TRUE"
+                Session("getEditButton") = "TRUE"
+                Session("getDeleteButton") = "TRUE"
+            End If
+
+        Next
+
+        Dim Data_If_Not_Group_Status As String = ""
+        Session("getStatus_Temporary") = ""
+
+        If Session("getStatus") = "EHI" Or Session("getStatus") = "ERI" Then
+            Data_If_Not_Group_Status = Session("getStatus")
+        End If
+
+        If Session("getStatus") <> "EHI" And Session("getStatus") <> "ERI" Then
+            If Get_EdithostelInformation = "TRUE" Then
+                Data_If_Not_Group_Status = "EHI"
+            ElseIf Get_EditRoomInformation = "TRUE" Then
+                Data_If_Not_Group_Status = "ERI"
+            End If
+        End If
+
+        If Session("getStatus_Temporary") IsNot Nothing Then
+            If Get_EdithostelInformation = "TRUE" And Data_If_Not_Group_Status = "EHI" Then
+                Session("getStatus") = "EHI"
+            ElseIf Get_EditRoomInformation = "TRUE" And Data_If_Not_Group_Status = "ERI" Then
+                Session("getStatus") = "ERI"
+            End If
+        End If
+
+    End Sub
+
+    Private Sub btnEditHostelInformation_ServerClick(sender As Object, e As EventArgs) Handles btnEditHostelInformation.ServerClick
+        Session("getStatus") = "EHI"
+        Response.Redirect("admin_edit_asrama_data.aspx?hostelID=" + Request.QueryString("hostelID") + "&admin_ID=" + Request.QueryString("admin_ID"))
+    End Sub
+
+    Private Sub btnEditRoomInformation_ServerClick(sender As Object, e As EventArgs) Handles btnEditRoomInformation.ServerClick
+        Session("getStatus") = "ERI"
+        Response.Redirect("admin_edit_asrama_data.aspx?hostelID=" + Request.QueryString("hostelID") + "&admin_ID=" + Request.QueryString("admin_ID"))
+    End Sub
+
+    Private Sub block_campus_list()
+        strSQL = "SELECT Parameter FROM setting WHERE Type='Hostel_Name' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -43,15 +198,33 @@ Public Class hostel_Update
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-            ddlBlock_Name.DataSource = ds
-            ddlBlock_Name.DataTextField = "Parameter"
-            ddlBlock_Name.DataValueField = "Value"
-            ddlBlock_Name.DataBind()
-            ddlBlock_Name.Items.Insert(0, New ListItem("Select Block", String.Empty))
-            ''ddlYear.SelectedIndex = 0
-
+            ddlHostel_Campus.DataSource = ds
+            ddlHostel_Campus.DataTextField = "Parameter"
+            ddlHostel_Campus.DataValueField = "Parameter"
+            ddlHostel_Campus.DataBind()
+            ddlHostel_Campus.Items.Insert(0, New ListItem("Select Campus", String.Empty))
         Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
 
+    Private Sub block_name_list()
+        strSQL = "SELECT Parameter,Value from setting where Type = 'Block_Name'"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlHostel_Block.DataSource = ds
+            ddlHostel_Block.DataTextField = "Parameter"
+            ddlHostel_Block.DataValueField = "Value"
+            ddlHostel_Block.DataBind()
+            ddlHostel_Block.Items.Insert(0, New ListItem("Select Block", String.Empty))
+        Catch ex As Exception
         Finally
             objConn.Dispose()
         End Try
@@ -67,15 +240,12 @@ Public Class hostel_Update
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-            ddlBlock_Level.DataSource = ds
-            ddlBlock_Level.DataTextField = "Parameter"
-            ddlBlock_Level.DataValueField = "Value"
-            ddlBlock_Level.DataBind()
-            ddlBlock_Level.Items.Insert(0, New ListItem("Select Floor Level", String.Empty))
-            ''ddlYear.SelectedIndex = 0
-
+            ddlHostel_BlockLevel.DataSource = ds
+            ddlHostel_BlockLevel.DataTextField = "Parameter"
+            ddlHostel_BlockLevel.DataValueField = "Value"
+            ddlHostel_BlockLevel.DataBind()
+            ddlHostel_BlockLevel.Items.Insert(0, New ListItem("Select Block Level", String.Empty))
         Catch ex As Exception
-
         Finally
             objConn.Dispose()
         End Try
@@ -91,28 +261,36 @@ Public Class hostel_Update
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-            ddlYear.DataSource = ds
-            ddlYear.DataTextField = "Parameter"
-            ddlYear.DataValueField = "Value"
-            ddlYear.DataBind()
+            ddlHostel_Year.DataSource = ds
+            ddlHostel_Year.DataTextField = "Parameter"
+            ddlHostel_Year.DataValueField = "Value"
+            ddlHostel_Year.DataBind()
+            ddlHostel_Year.Items.Insert(0, New ListItem("Select Year", String.Empty))
         Catch ex As Exception
-
         Finally
             objConn.Dispose()
         End Try
     End Sub
 
     Private Sub sem_list()
-        Using cmd As New SqlCommand("SELECT Parameter,Value FROM setting WHERE Type='Sem'", objConn)
-            objConn.Open()
-            ddlSem.DataSource = cmd.ExecuteReader
-            ddlSem.DataTextField = "Parameter"
-            ddlSem.DataValueField = "Value"
-            ddlSem.DataBind()
-            ddlSem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
-            ddlSem.SelectedIndex = 0
-            objConn.Close()
-        End Using
+        strSQL = "SELECT Parameter,Value FROM setting WHERE Type='Sem' "
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlHostel_Semester.DataSource = ds
+            ddlHostel_Semester.DataTextField = "Parameter"
+            ddlHostel_Semester.DataValueField = "Value"
+            ddlHostel_Semester.DataBind()
+            ddlHostel_Semester.Items.Insert(0, New ListItem("Select Semester", String.Empty))
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
     End Sub
 
     Private Sub LoadHostelInfo(ByVal hostelID As String)
@@ -132,40 +310,42 @@ Public Class hostel_Update
             MyTable = ds.Tables(0)
             If MyTable.Rows.Count > 0 Then
 
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item("hostel_BlockNames")) Then
-                    ddlBlock_Name.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_BlockNames")
+                If Not IsDBNull(ds.Tables(0).Rows(0).Item("hostel_CampusNames")) Then
+                    ddlHostel_Campus.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_CampusNames")
                 Else
-                    ddlBlock_Name.SelectedValue = ""
+                    ddlHostel_Campus.SelectedValue = ""
+                End If
+
+                If Not IsDBNull(ds.Tables(0).Rows(0).Item("hostel_BlockNames")) Then
+                    ddlHostel_Block.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_BlockNames")
+                Else
+                    ddlHostel_Block.SelectedValue = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("hostel_BlockLevels")) Then
-                    ddlBlock_Level.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_BlockLevels")
+                    ddlHostel_BlockLevel.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_BlockLevels")
                 Else
-                    ddlBlock_Level.SelectedValue = ""
+                    ddlHostel_BlockLevel.SelectedValue = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("year")) Then
-                    ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("year")
+                    ddlHostel_Year.SelectedValue = ds.Tables(0).Rows(0).Item("year")
                 Else
-                    ddlYear.SelectedValue = ""
+                    ddlHostel_Year.SelectedValue = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("hostel_Sem")) Then
-                    ddlSem.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_Sem")
+                    ddlHostel_Semester.SelectedValue = ds.Tables(0).Rows(0).Item("hostel_Sem")
                 Else
-                    ddlSem.SelectedValue = ""
+                    ddlHostel_Semester.SelectedValue = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("hostel_RoomNumbers")) Then
-                    roomNumbers.Text = ds.Tables(0).Rows(0).Item("hostel_RoomNumbers")
+                    txtHostel_RoomQuantity.Text = ds.Tables(0).Rows(0).Item("hostel_RoomNumbers")
                 Else
-                    roomNumbers.Text = ""
+                    txtHostel_RoomQuantity.Text = ""
                 End If
-                ddlBlock_Level.Enabled = False
-                ddlBlock_Name.Enabled = False
-                ddlYear.Enabled = False
-                ddlSem.Enabled = False
-                roomNumbers.Enabled = False
+
             Else
                 Debug.WriteLine("Table hostel_info return no data...")
             End If
@@ -177,169 +357,187 @@ Public Class hostel_Update
         End Try
     End Sub
 
-    'Private Sub BtnSimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
-    '    ''UPDATE room_info
-    '    'strSQL = "UPDATE room_info SET room_Name ='" & room_Name.Text & "',roomNumbers='" & roomNumbers.Text & "',year = '" & ddlYear.SelectedValue & "' WHERE room_ID ='" & Request.QueryString("room_ID") & "'"
-    '    'strRet = oCommon.ExecuteSQL(strSQL)
+    Private Sub Btnsimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
+        Try
 
-    '    ''get hostel id from that room id
-    '    'Dim hostelExist As String = "select hostel_ID from room_info where room_ID = '" & Request.QueryString("room_ID") & "'"
-    '    'Dim dataHostelExist As String = getFieldValue(hostelExist, strConn)
+            If ddlHostel_Year.SelectedIndex > 0 Then
 
-    '    ''UPDATE hostel_info
-    '    'strSQL = "UPDATE hostel_info SET hostel_Name ='" & ddlHostelName.SelectedValue & "', block_Name='" & ddlBlock_Name.SelectedValue & "', block_Level='" & ddlBlock_Level.SelectedValue & "',year = '" & ddlYear.SelectedValue & "' WHERE hostel_ID ='" & dataHostelExist & "'"
-    '    'strRet = oCommon.ExecuteSQL(strSQL)
-    '    'Update hostel info
+                If ddlHostel_Semester.SelectedIndex > 0 Then
 
-    '    If strRet = "0" Then
-    '        Response.Redirect("admin_pengurusan_am_hostel.aspx?result=1&admin_ID=" + Request.QueryString("admin_ID") + "")
-    '    Else
-    '        Response.Redirect("admin_pengurusan_am_hostel.aspx?result=-1&admin_ID=" + Request.QueryString("admin_ID") + "")
-    '    End If
-    'End Sub
+                    If ddlHostel_Campus.SelectedIndex > 0 Then
 
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_pengurusan_am_hostel.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-    End Sub
+                        If ddlHostel_Block.SelectedIndex > 0 Then
 
-    Private Sub ListRoom()
-        Dim hostelID As String = Request.QueryString("hostelID")
-        Using cmd As New SqlCommand("SELECT 
-	                                    room_info.room_ID,
-	                                    room_info.room_Name,
-	                                    room_info.room_Capacity,
-	                                    d.Parameter AS RoomSem,
-	                                    room_info.year,
-	                                    room_info.created_date
-                                    FROM 
-	                                    room_info
-	                                    JOIN hostel_info ON hostel_info.hostel_ID = room_info.hostel_ID
-	                                    JOIN setting AS d ON d.Value = room_info.room_Sem
-                                    WHERE hostel_info.hostel_ID = @hostelID", objConn)
-            cmd.Parameters.AddWithValue("@hostelID", hostelID)
-            objConn.Open()
-            floorInfo.DataSource = cmd.ExecuteReader()
-            floorInfo.DataBind()
-            objConn.Close()
-        End Using
-    End Sub
+                            If ddlHostel_BlockLevel.SelectedIndex > 0 Then
 
-    Protected Sub UpdateRoom(sender As Object, e As EventArgs)
-        Dim item As RepeaterItem = TryCast(TryCast(sender, Button).Parent, RepeaterItem)
-        Dim roomID As String = TryCast(item.FindControl("roomID"), HiddenField).Value
-        Dim roomName As String = TryCast(item.FindControl("txtRoomName"), TextBox).Text.Trim()
-        Dim roomCapacity As String = TryCast(item.FindControl("txtRoomCapacity"), TextBox).Text.Trim()
+                                If txtHostel_RoomQuantity.Text.Length > 0 Then
 
-        If roomID <> "" And Regex.IsMatch(roomID, "^[0-9 ]+$") Then
-            If roomName <> "" Then
-                If roomCapacity <> "" And Regex.IsMatch(roomCapacity, "^[0-9 ]+$") Then
-                    Dim query = String.Format("UPDATE room_info SET room_Name='{1}', room_Capacity='{2}' WHERE room_ID='{0}'", roomID, roomName, roomCapacity)
-                    strRet = oCommon.ExecuteSQL(query)
-                    If strRet <> "" Then
-                        ListRoom()
-                        ShowMessage("Succesfully insert new data", MessageType.Success)
-                    Else
-                        ShowMessage("Error saving update", MessageType.Error)
-                    End If
-                Else
-                    ShowMessage("Please enter room capacity correctly", MessageType.Error)
-                End If
-            Else
-                ShowMessage("Please enter room name correctly", MessageType.Error)
-            End If
-        Else
-            ShowMessage("Room not find", MessageType.Error)
-        End If
-    End Sub
+                                    If HostelChecking() = True Then
 
-    Protected Sub DeleteRoom(sender As Object, e As EventArgs)
-        Dim item As RepeaterItem = TryCast(TryCast(sender, Button).Parent, RepeaterItem) 'get refered repeateditem.
-        Dim roomID As String = TryCast(item.FindControl("roomID"), HiddenField).Value 'get room id.
-        'get totalroom saved fro the hostel floor.
-        Dim totalRoom As Integer = Integer.Parse(oCommon.getFieldValue("SELECT COUNT(room_ID) FROM room_info WHERE hostel_ID='" & Request.QueryString("hostelID") & "'"))
+                                        strSQL = "  Update hostel_info
+                                                    Set year ='" & ddlHostel_Year.SelectedValue & "', hostel_Sem = '" & ddlHostel_Semester.SelectedValue & "', hostel_CampusNames = '" & ddlHostel_Campus.SelectedValue & "',
+                                                    hostel_BlockNames = '" & ddlHostel_Block.SelectedValue & "', hostel_BlockLevels = '" & ddlHostel_BlockLevel.SelectedValue & "', hostel_RoomNumbers = '" & txtHostel_RoomQuantity.Text & "'
+                                                    Where hostel_ID = '" & Request.QueryString("hostelID") & "'"
+                                        strRet = oCommon.ExecuteSQL(strSQL)
 
-        If roomID <> "" And Regex.IsMatch(roomID, "^[0-9 ]+$") Then
-            'delete room.
-            Dim dltSuccess = oCommon.ExecuteSQL("DELETE FROM room_info WHERE room_ID = '" & roomID & "'")
-            If dltSuccess <> "" Then
-                totalRoom -= 1
-                'make sure value is positive.
-                If totalRoom < 0 Then
-                    totalRoom = 0
-                End If
-                'update room floor.
-                Dim updtRoom = oCommon.ExecuteSQL("UPDATE hostel_info SET hostel_RoomNumbers='" & totalRoom.ToString & "' WHERE hostel_ID='" & Request.QueryString("hostelID") & "'")
-                If updtRoom <> "" Then
-                    'reload data.
-                    LoadHostelInfo(Request.QueryString("hostelID"))
-                    ListRoom()
-                Else
-                    ShowMessage("Update hostel failed", MessageType.Error)
-                End If
-            End If
-        Else
-            ShowMessage("Room not found", MessageType.Error)
-        End If
+                                        If strRet = 0 Then
 
-    End Sub
+                                            strSQL = "Delete room_info where hostel_ID = '" & Request.QueryString("hostelID") & "'"
+                                            strRet = oCommon.ExecuteSQL(strSQL)
 
-    Protected Sub AddNewRoom(sender As Object, e As EventArgs)
-        Dim hostelID = Request.QueryString("hostelID")
-        Dim totalRoom As Integer = getTotalRoom()
-        Dim hostelYear As String = oCommon.getFieldValue(String.Format("SELECT year FROM hostel_info WHERE hostel_ID='{0}'", hostelID))
-        Dim hostelSem As String = oCommon.getFieldValue(String.Format("SELECT hostel_Sem FROM hostel_info WHERE hostel_ID='{0}'", hostelID))
-        Dim stfID As String = oCommon.getFieldValue(String.Format("SELECT stf_ID from security_ID WHERE loginID_Number='{0}'", Request.QueryString("admin_ID")))
-        Dim roomName = txtRoomName.Text
-        Dim roomCapacity = txtRoomCapacity.Text
-        Dim query As String = ""
-        If hostelID <> "" Then
-            If roomName <> "" Then
-                If roomCapacity <> "" Then
-                    query = String.Format("INSERT INTO room_info (hostel_ID,room_Name,room_Capacity,year,room_Sem,stf_ID,created_date) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}')", hostelID, roomName, roomCapacity, hostelYear, hostelSem, stfID, DateTime.Now)
-                    Dim insrtSuccess = oCommon.ExecuteSQL(query)
-                    If insrtSuccess = "0" Then
-                        ShowMessage("Create success.", MessageType.Success)
-                        ListRoom()
-                        totalRoom += 1
-                        query = String.Format("UPDATE hostel_info SET hostel_RoomNumbers='{0}' WHERE hostel_ID='{1}'", totalRoom, hostelID)
-                        Dim updtSucccess = oCommon.ExecuteSQL(query)
-                        If updtSucccess = "0" Then
-                            txtRoomName.Text = ""
-                            txtRoomCapacity.Text = ""
-                            LoadHostelInfo(hostelID)
+                                            For i As Integer = 0 To Integer.Parse(txtHostel_RoomQuantity.Text.Trim) - 1
+
+                                                strSQL = "  Insert into room_info(hostel_ID,room_Name,room_Capacity,year,room_Sem,stf_ID,created_date)
+                                                            Values('" & Request.QueryString("hostelID") & "','" & ddlHostel_Block.SelectedValue & "-" & ddlHostel_BlockLevel.SelectedValue & "-" & i + 1 & " ','2','" & ddlHostel_Year.SelectedValue & "','" & ddlHostel_Semester.SelectedValue & "','" & oCommon.Staff_securityLogin(Request.QueryString("admin_ID")) & "','" & Date.Now & "')"
+                                                strRet = oCommon.ExecuteSQL(strSQL)
+                                            Next
+
+                                            If strRet = 0 Then
+                                                ShowMessage("Successful Create Hostel & Room", MessageType.Success)
+                                            Else
+                                                ShowMessage("Unsuccessful Create Room", MessageType.Error)
+                                            End If
+
+                                        Else
+                                            ShowMessage("Unsuccessful Create Hostel", MessageType.Error)
+                                        End If
+                                    Else
+                                        ShowMessage("The Hostel Information Had Been Registered", MessageType.Error)
+                                    End If
+                                Else
+                                    ShowMessage("Please Enter Room Quantity", MessageType.Error)
+                                End If
+                            Else
+                                ShowMessage("Please Select Block Level", MessageType.Error)
+                            End If
+                        Else
+                            ShowMessage("Please Select Block", MessageType.Error)
                         End If
                     Else
-                        ShowMessage("Create failed!", MessageType.Error)
+                        ShowMessage("Please Select Campus", MessageType.Error)
                     End If
                 Else
-
+                    ShowMessage("Please Select Semester", MessageType.Error)
                 End If
             Else
-
+                ShowMessage("Please Select Year", MessageType.Error)
             End If
-        Else
 
-        End If
+        Catch ex As Exception
+        End Try
     End Sub
 
-    Protected Function getTotalRoom() As Integer
-        Dim totalRoom As Integer = 0
-        Using cmd As New SqlCommand("SELECT hostel_RoomNumbers FROM hostel_info WHERE hostel_ID=@hostelID", objConn)
-            Try
-                objConn.Open()
-                cmd.Parameters.AddWithValue("@hostelID", Request.QueryString("hostelID"))
-                Using objReader As SqlDataReader = cmd.ExecuteReader
-                    While objReader.Read
-                        totalRoom = Integer.Parse(objReader("hostel_RoomNumbers"))
-                    End While
-                End Using
-                objConn.Close()
-            Catch ex As Exception
-                Debug.WriteLine("Loct: getTotalRoom, Error: " & ex.Message)
-            End Try
-        End Using
-        Return totalRoom
+    Private Function HostelChecking() As Boolean
+
+        strSQL = "Select hostel_ID from hostel_info where year = '" & ddlHostel_Year.SelectedValue & "' and hostel_Sem = '" & ddlHostel_Semester.SelectedValue & "' and hostel_CampusNames = '" & ddlHostel_Campus.SelectedValue & "' and hostel_BlockNames = '" & ddlHostel_Block.SelectedValue & "' and hostel_BlockLevels = '" & ddlHostel_BlockLevel.SelectedValue & "'"
+        strRet = oCommon.getFieldValue(strSQL)
+
+        If strRet.Length > 0 Then
+            Return True
+        Else
+            Return False
+        End If
+
     End Function
+
+    Private Function BindData(ByVal gvTable As GridView) As Boolean
+        Dim myDataSet As New DataSet
+        Dim myDataAdapter As New SqlDataAdapter(getSQL, strConn)
+        myDataAdapter.SelectCommand.CommandTimeout = 120
+        Try
+            myDataAdapter.Fill(myDataSet, "myaccount")
+
+            gvTable.DataSource = myDataSet
+            gvTable.DataBind()
+
+            If Session("getEditButton") = "TRUE" Then
+                gvTable.Columns(8).Visible = True
+            Else
+                gvTable.Columns(8).Visible = False
+            End If
+
+            If Session("getDeleteButton") = "TRUE" Then
+                gvTable.Columns(9).Visible = True
+            Else
+                gvTable.Columns(9).Visible = False
+            End If
+
+            objConn.Close()
+
+        Catch ex As Exception
+
+            Return False
+        End Try
+
+        Return True
+
+    End Function
+
+    Private Function getSQL() As String
+        'A left outer join will give all rows in A, plus any common rows in B.
+
+        Dim tmpSQL As String
+        Dim strWhere As String = ""
+        Dim strOrderby As String = " ORDER BY room_ID ASC"
+
+        tmpSQL = "Select * from room_info left join hostel_info on room_info.hostel_ID = hostel_info.hostel_ID"
+        strWhere = " WHERE hostel_info.hostel_ID = '" & Request.QueryString("hostelID") & "'"
+
+        getSQL = tmpSQL & strWhere & strOrderby
+
+        Return getSQL
+    End Function
+
+
+    Private Sub datRespondent_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles datRespondent.RowDeleting
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim strKeyCode As String = datRespondent.DataKeys(e.RowIndex).Value.ToString
+
+        Try
+            Dim MyConnection As SqlConnection = New SqlConnection(strConn)
+            Dim Dlt_NewCourse As New SqlDataAdapter()
+
+            Dim dlt_Course As String
+
+            Dlt_NewCourse.SelectCommand = New SqlCommand()
+            Dlt_NewCourse.SelectCommand.Connection = MyConnection
+            Dlt_NewCourse.SelectCommand.CommandText = "delete room_info where room_ID='" & strKeyCode & "'"
+            MyConnection.Open()
+            dlt_Course = Dlt_NewCourse.SelectCommand.ExecuteScalar()
+            MyConnection.Close()
+
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub datRespondent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondent.RowEditing
+        datRespondent.EditIndex = e.NewEditIndex
+        Me.BindData(datRespondent)
+    End Sub
+
+    Protected Sub OnRowCancelingEdit(sender As Object, e As EventArgs)
+        datRespondent.EditIndex = -1
+        Me.BindData(datRespondent)
+    End Sub
+
+    Protected Sub OnRowUpdating(ByVal sender As Object, ByVal e As GridViewUpdateEventArgs)
+        Dim room_name As TextBox = DirectCast(datRespondent.Rows(e.RowIndex).FindControl("txtroom_Name"), TextBox)
+        Dim room_capacity As TextBox = DirectCast(datRespondent.Rows(e.RowIndex).FindControl("txtroom_Capacity"), TextBox)
+        Dim strKeyID As String = datRespondent.DataKeys(e.RowIndex).Value.ToString
+
+        strSQL = "UPDATE room_info SET room_Name ='" & room_name.Text & "',room_Capacity ='" & room_capacity.Text & "' WHERE room_ID ='" & strKeyID & "'"
+        strRet = oCommon.ExecuteSQL(strSQL)
+
+        If strRet = 0 Then
+            ShowMessage("Update Room Info", MessageType.Success)
+        Else
+            ShowMessage("Unsuccessful Update Room Info", MessageType.Error)
+        End If
+
+        datRespondent.EditIndex = -1
+        Me.BindData(datRespondent)
+    End Sub
 
     Protected Sub ShowMessage(Message As String, type As MessageType)
         ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)

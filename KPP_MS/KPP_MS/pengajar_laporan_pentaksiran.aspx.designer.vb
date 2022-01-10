@@ -23,6 +23,15 @@ Partial Public Class pengajar_laporan_pentaksiran
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''ddlProgram control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlProgram As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''ddlClass control.
     '''</summary>
     '''<remarks>
@@ -48,24 +57,6 @@ Partial Public Class pengajar_laporan_pentaksiran
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlSubject As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''lblExamination control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblExamination As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''lblCourses control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblCourses As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''datRespondent control.

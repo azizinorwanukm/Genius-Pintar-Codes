@@ -7,7 +7,36 @@
             GridVwHeaderChckbox.rows[i].cells[0].getElementsByTagName("INPUT")[0].checked = Checkbox.checked;
         }
     }
+</script>
 
+<style>
+    .sc3::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
+    }
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+    }
+</style>
+
+<script type="text/javascript">
     function ShowMessage(message, messagetype) {
         var cssclass;
         switch (messagetype) {
@@ -30,143 +59,129 @@
     }
 </script>
 
-<style>
-    .ddl {
-        border-radius: 25px;
-    }
-</style>
-
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Select Room:</p>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px;">
-        <div class="col-md-12 w3-text-black" style="text-align: left; padding-left: 23px">
-            <asp:DropDownList runat="server" ID="ddlHostelYear" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 190px;"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlBlockName" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 190px;"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlBlockLevel" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 190px;"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlHostelSem" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 190px;"></asp:DropDownList>
-            <asp:DropDownList runat="server" ID="ddlRoomName" AutoPostBack="true" CssClass=" btn btn-default ddl" Style="width: 190px;"></asp:DropDownList>
-            <button id="btnSearch" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">List Student &#160;<i class="fa fa-search w3-large w3-text-white"></i></button>
-        </div>
-
-        <div runat="server" id="divRoomInfo" visible="false" class="col-md-12 w3-text-black" style="text-align: left; padding-left: 23px">
-            <br />
-            <div>
-                <h5>
-                    <asp:Label CssClass="Label" runat="server"> Room Name : </asp:Label><asp:Label CssClass="Label" runat="server" ID="lblRoomName"></asp:Label></h5>
-            </div>
-            <div>
-                <h5>
-                    <asp:Label CssClass="Label" runat="server"> Availability : </asp:Label><asp:Label CssClass="Label" runat="server" ID="lblRoomAvailability"></asp:Label></h5>
-            </div>
-        </div>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+    <%--Breadcrum--%>
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black">
+        Menu &nbsp; : &nbsp; Hostel &nbsp; / &nbsp; Student Placement
     </div>
-    <p></p>
 </div>
-<br />
 
-<div runat="server" class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2;" class="w3-card-2">
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh; border-bottom: 3px solid #567572FF; overflow-x: auto; white-space: nowrap;" class="sc3">
 
-    <p style="background-color: #800000; text-align: center; display: inline-block; width: 100%; border-radius: 25px">Student List</p>
-
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; text-align: left; padding-left: 23px">
-        <div class="col-md-6 w3-text-black" style="text-align: left;">
-            <asp:Label CssClass="Label" runat="server"> Search : </asp:Label>
-            <asp:TextBox CssClass="textbox" ID="txtstudent" Style="width: 85%; border-radius: 25px;" runat="server" Text="" placeholder="   By Name / ID / IC"></asp:TextBox>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Year : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlHostelYear" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Level : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlStudentLevel" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Semester : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlHostelSem" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Class : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlClassName" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Gender : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlGenderName" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
         </div>
     </div>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; text-align: left; padding-left: 23px">
-        <div class="col-md-6 w3-text-black" style="text-align: left;">
-            <div style="text-align: left; padding-left: 23px">
-                <asp:DropDownList runat="server" ID="dddlFilterTable" AutoPostBack="true" CssClass="btn btn-default ddl" Style="width: 190px;">
-                    <asp:ListItem Text="Filter student..."></asp:ListItem>
-                    <asp:ListItem Text="Registered" Value="1"></asp:ListItem>
-                    <asp:ListItem Text="Not Registered" Value="2"></asp:ListItem>
-                </asp:DropDownList>
-            </div>
-        </div>
-        <div>
-            <button id="searchStudent" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">Search &#160;<i class="fa fa-search w3-large w3-text-white"></i></button>
-        </div>
-    </div>
 
-    <div style="overflow-y: scroll; overflow-x: hidden; height: 350px" class="table-responsive">
-        <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False"
-            BackColor="#d9d9d9" DataKeyNames="STDID" BorderStyle="None" GridLines="None"
-            Width="97%" HeaderStyle-HorizontalAlign="Left">
-            <RowStyle HorizontalAlign="Left" />
-            <Columns>
-                <asp:TemplateField>
-                    <HeaderTemplate>
-                        <asp:CheckBox ID="chkboxSelectAll" Text="" runat="server" onclick="CheckAllEmp(this);" />
-                    </HeaderTemplate>
-                    <ItemTemplate>
-                        <asp:CheckBox ID="chkSelect" runat="server" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
-                    <ItemTemplate>
-                        <%# Container.DataItemIndex + 1 %>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
-                    <ItemStyle VerticalAlign="Middle" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Student Name" ItemStyle-Width="400">
-                    <ItemTemplate>
-                        <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("StudentName") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Years" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="year" class="id1" runat="server" Text='<%# Eval("StudentLevelYear") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Levels" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="student_Level" class="id1" runat="server" Text='<%# Eval("StudentLevelLevel") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Semesters" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="sem" class="id1" runat="server" Text='<%# Eval("SettingSem") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Block Name" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="block_Name" class="id1" runat="server" Text='<%# Eval("SettingBlockName") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Block Floor" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="block_Level" class="id1" runat="server" Text='<%# Eval("SettingBlockLevel") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Room Name" ItemStyle-Width="150">
-                    <ItemTemplate>
-                        <asp:Label ID="room_Name" class="id1" runat="server" Text='<%# Eval("RoomName") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Relocate Room">
-                    <ItemTemplate>
-                        <asp:ImageButton Width="22" Height="22" ID="btnEdit" CommandName="changeRoom" CommandArgument='<%# Eval("StudentRoomID") %>' runat="server" ImageUrl="~/img/edit-11-512.png" />
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-            </Columns>
-            <EmptyDataTemplate>
-                <asp:Label align="center" runat="server" Class="id1">No Student Listed</asp:Label>
-            </EmptyDataTemplate>
-            <HeaderStyle BackColor="#800000" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
-            <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
-        </asp:GridView>
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; white-space: nowrap; height: 70vh" class="sc4" runat="server">
+
+        <div style="overflow-y: scroll; height: 56vh" class="table-responsive sc4 font">
+            <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black gridViewRespond" AutoGenerateColumns="False"
+                BackColor="#FFFAFA" DataKeyNames="std_ID" Width="97%" HeaderStyle-HorizontalAlign="Left" BorderStyle="None" GridLines="None">
+                <RowStyle HorizontalAlign="Left" />
+                <Columns>
+                    <asp:TemplateField>
+                        <HeaderTemplate>
+                            <asp:CheckBox ID="chkboxSelectAll" Text="" runat="server" onclick="CheckAllEmp(this);" />
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <asp:CheckBox ID="chkSelect" runat="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
+                        <ItemTemplate>
+                            <%# Container.DataItemIndex + 1 %>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
+                        <ItemStyle VerticalAlign="Middle" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Name" ItemStyle-Width="40%">
+                        <ItemTemplate>
+                            <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("student_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Level" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="student_Level" class="id1" runat="server" Text='<%# Eval("student_Level") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Semester" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="student_Sem" class="id1" runat="server" Text='<%# Eval("student_Sem") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Class" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="class_Name" class="id1" runat="server" Text='<%# Eval("class_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Campus" ItemStyle-Width="20%">
+                        <ItemTemplate>
+                            <asp:Label ID="hostel_CampusNames" class="id1" runat="server" Text='<%# Eval("hostel_CampusNames") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Room" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="room_Name" class="id1" runat="server" Text='<%# Eval("room_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label runat="server" Class="id1 w3-text-black"><b> No Student Hostel Information Are Recorded </b> </asp:Label>
+                </EmptyDataTemplate>
+                 <HeaderStyle BackColor="#3C3232" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
+                <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
+            </asp:GridView>
+        </div>
+
+        <br />
+
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Campus : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlCampusNames" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Block : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlBlockNames" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Floor : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlBlockLevel" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <asp:Label CssClass="Label font" runat="server" Style="width: 100%"> Room : </asp:Label>
+            <asp:DropDownList CssClass="btn btn-default font" ID="ddlRoomNames" runat="server" AutoPostBack="True" style="font-size:0.8vw"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1.2vw; display: inline-block">
+            <button id="btnUpdateStudentHostel" runat="server" class="btn btn-success" style="top: 8px; display: inline-block; font-size:0.8vw">Update Student Hostel</button>
+        </div>
+
     </div>
-    <button id="Btnsimpan" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Save">Assign Room &#160; <i class="fa fa-save w3-large w3-text-white"></i></button>
-    <p></p>
-    <div class="messagealert" id="alert_container" style="text-align: center"></div>
 </div>
+
+<div class="messagealert" id="alert_container" style="text-align: center"></div>

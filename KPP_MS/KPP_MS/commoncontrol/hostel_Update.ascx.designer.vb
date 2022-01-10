@@ -14,92 +14,128 @@ Option Explicit On
 Partial Public Class hostel_Update
     
     '''<summary>
-    '''ddlBlock_Name control.
+    '''previousPage control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlBlock_Name As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
     
     '''<summary>
-    '''ddlBlock_Level control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlBlock_Level As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''ddlYear control.
+    '''btnEditHostelInformation control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents btnEditHostelInformation As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''ddlSem control.
+    '''btnEditRoomInformation control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlSem As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents btnEditRoomInformation As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''roomNumbers control.
+    '''EditHostelInformation control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents roomNumbers As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents EditHostelInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''txtRoomName control.
+    '''ddlHostel_Year control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtRoomName As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlHostel_Year As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txtRoomCapacity control.
+    '''ddlHostel_Semester control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtRoomCapacity As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlHostel_Semester As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnUpdate control.
+    '''ddlHostel_Campus control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnUpdate As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ddlHostel_Campus As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Btnback control.
+    '''ddlHostel_Block control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlHostel_Block As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''floorInfo control.
+    '''ddlHostel_BlockLevel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents floorInfo As Global.System.Web.UI.WebControls.Repeater
+    Protected WithEvents ddlHostel_BlockLevel As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''txtHostel_RoomQuantity control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtHostel_RoomQuantity As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Btnsimpan control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''EditRoomInformation control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents EditRoomInformation As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''datRespondent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
 End Class

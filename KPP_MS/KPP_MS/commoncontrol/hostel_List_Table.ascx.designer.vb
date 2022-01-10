@@ -14,15 +14,6 @@ Option Explicit On
 Partial Public Class hostel_List_Table
     
     '''<summary>
-    '''ddlHostelName control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlHostelName As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
     '''ddlBlockName control.
     '''</summary>
     '''<remarks>
@@ -48,15 +39,6 @@ Partial Public Class hostel_List_Table
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
-    '''ddlLevelnaming control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlLevelnaming As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlSemnaming control.

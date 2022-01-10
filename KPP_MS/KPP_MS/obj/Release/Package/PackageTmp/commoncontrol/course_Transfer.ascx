@@ -11,12 +11,13 @@
 
 <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
     <button id="pelajarTransfer_info" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%" onclick="student_transfer()" value="0">Transfer Course <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
+    
     <div style="display: none;" id="transfer_info">
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px; margin-top: 10px">
-            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_Year" runat="server" AutoPostBack="false"></asp:DropDownList>
-            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_Level" runat="server" AutoPostBack="false"></asp:DropDownList>
-            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_Sem" runat="server" AutoPostBack="false"></asp:DropDownList>
-            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_type" runat="server" AutoPostBack="false"></asp:DropDownList>
+            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_Year" runat="server" AutoPostBack="true"></asp:DropDownList>
+            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_Level" runat="server" AutoPostBack="true"></asp:DropDownList>
+            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_Sem" runat="server" AutoPostBack="true"></asp:DropDownList>
+            <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_type" runat="server" AutoPostBack="true"></asp:DropDownList>
         </div>
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px;">
             <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px; margin-bottom: 10px;">
@@ -93,7 +94,7 @@
         </div>
 
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-bottom: 10px; margin-top: 10px; text-align: left; padding-left: 23px">
-            <asp:DropDownList ID="ddlyear_Transfer" runat="server" AutoPostBack="false" class=" btn btn-default " Style="width: 190px; border-radius: 25px;"></asp:DropDownList>
+            <asp:DropDownList ID="ddlyear_Transfer" runat="server" AutoPostBack="false" class=" btn btn-default font " Style="width: 190px; border-radius: 25px;"></asp:DropDownList>
             <button id="Btnsimpan" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Save">Save &#160; <i class="fa fa-save w3-large w3-text-white"></i></button>
         </div>
         <br />

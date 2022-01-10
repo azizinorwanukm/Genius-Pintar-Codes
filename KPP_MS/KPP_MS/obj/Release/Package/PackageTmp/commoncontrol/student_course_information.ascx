@@ -6,10 +6,10 @@
 
         <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px;margin-top:20px">
             <div class="col-md-3 w3-text-black" style="text-align: left">
-                <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" onselectedindexchanged="ddlyear_SelectedIndexChanged" CssClass=" btn btn-default ddl"  Style="width: 100%;" ></asp:DropDownList>               
+                <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" onselectedindexchanged="ddlyear_SelectedIndexChanged" CssClass=" btn btn-default font ddl"  Style="width: 100%;" ></asp:DropDownList>               
             </div>
              <div class="col-md-3 w3-text-black" style="text-align: left">
-                <asp:DropDownList ID="ddlsem" runat="server" AutoPostBack="true" onselectedindexchanged="ddlsem_SelectedIndexChanged" CssClass=" btn btn-default ddl"  Style="width: 100%;" ></asp:DropDownList>
+                <asp:DropDownList ID="ddlsem" runat="server" AutoPostBack="true" onselectedindexchanged="ddlsem_SelectedIndexChanged" CssClass=" btn btn-default font ddl"  Style="width: 100%;" ></asp:DropDownList>
             </div>
         </div>
         <p></p>

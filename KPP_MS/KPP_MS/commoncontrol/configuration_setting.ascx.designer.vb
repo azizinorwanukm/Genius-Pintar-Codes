@@ -14,40 +14,76 @@ Option Explicit On
 Partial Public Class configuration_setting
     
     '''<summary>
-    '''Parameter control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Parameter As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Value control.
+    '''btnViewSystemConfiguration control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Value As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnViewSystemConfiguration As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''Type control.
+    '''btnRegisterSystemConfiguration control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Type As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnRegisterSystemConfiguration As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''idx control.
+    '''RegisterSystemConfiguration control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents idx As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RegisterSystemConfiguration As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''txtParameter control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtParameter As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtValue control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtValue As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtType control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtType As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''txtGenre control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtGenre As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Btnsimpan control.
@@ -57,6 +93,24 @@ Partial Public Class configuration_setting
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''ViewSystemConfiguration control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ViewSystemConfiguration As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''ddlGenre control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlGenre As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlType control.

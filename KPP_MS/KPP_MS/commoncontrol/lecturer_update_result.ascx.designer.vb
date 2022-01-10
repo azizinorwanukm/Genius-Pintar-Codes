@@ -14,49 +14,58 @@ Option Explicit On
 Partial Public Class lecturer_update_result
     
     '''<summary>
-    '''ddl_year control.
+    '''ddlExamYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_year As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlExamYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddl_exam control.
+    '''ddlExamProgram control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_exam As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlExamProgram As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddl_level control.
+    '''ddlExamName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_level As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlExamName As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddl_class control.
+    '''ddlExamLevel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_class As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlExamLevel As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddl_subject control.
+    '''ddlExamClass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddl_subject As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlExamClass As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddlExamCourse control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlExamCourse As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''datRespondent control.
@@ -75,22 +84,4 @@ Partial Public Class lecturer_update_result
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''nodatamessage control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents nodatamessage As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''HiddenField1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents HiddenField1 As Global.System.Web.UI.WebControls.HiddenField
 End Class

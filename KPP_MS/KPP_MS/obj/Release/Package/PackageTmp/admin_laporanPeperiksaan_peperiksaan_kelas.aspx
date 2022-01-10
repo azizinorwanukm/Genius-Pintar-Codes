@@ -7,7 +7,5 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="margin-top:-20px">
         <uc1:pengarah_laporan_peperiksaan_kelas_table runat="server" ID="pengarah_laporan_peperiksaan_kelas_table" />
-    </div>
 </asp:Content>

@@ -28,8 +28,12 @@ Public Class course_Update
                     year_Load()
                     subject_religions_Load()
                     subject_group_Load()
+                    course_program_Load()
+                    course_campus_load()
 
-                    Subject_info_Load(Request.QueryString("subject_ID"))
+                    previousPage.NavigateUrl = String.Format("~/admin_pengurusan_am_kursus.aspx?admin_ID=" + Request.QueryString("admin_ID"))
+
+                    Subject_info_Load()
 
                 End If
             End If
@@ -81,6 +85,48 @@ Public Class course_Update
 
     End Sub
 
+    Private Sub course_program_Load()
+
+        strSQL = "select * from setting where type = 'Stream'"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Dim ds As DataSet = New DataSet
+        sqlDA.Fill(ds, "AnyTable")
+
+        ddlStream.DataSource = ds
+        ddlStream.DataTextField = "Parameter"
+        ddlStream.DataValueField = "Value"
+        ddlStream.DataBind()
+        ddlStream.Items.Insert(0, New ListItem("Select Program", ""))
+
+    End Sub
+
+    Private Sub course_campus_load()
+        Try
+            If Session("SchoolCampus") = "APP" Then
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' and Value = 'APP'"
+            Else
+                strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' "
+            End If
+
+            Dim sqlLevelDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim levds As DataSet = New DataSet
+            sqlLevelDA.Fill(levds, "LevTable")
+
+            ddlCampus.DataSource = levds
+            ddlCampus.DataValueField = "Value"
+            ddlCampus.DataTextField = "Parameter"
+            ddlCampus.DataBind()
+            ddlCampus.Items.Insert(0, New ListItem("Select Institutions", String.Empty))
+            ddlCampus.SelectedIndex = 0
+
+        Catch ex As Exception
+        End Try
+    End Sub
+
     Private Sub year_Load()
 
         strSQL = "select distinct subject_year from subject_info"
@@ -98,8 +144,8 @@ Public Class course_Update
 
     End Sub
 
-    Private Sub Subject_info_Load(ByVal strcourse_ID As String)
-        strSQL = "SELECT * from subject_info WHERE subject_ID ='" & strcourse_ID & "'"
+    Private Sub Subject_info_Load()
+        strSQL = "SELECT * from subject_info WHERE subject_ID ='" & Request.QueryString("subject_ID") & "'"
         '--debug
         'Response.Write(strSQL)
 
@@ -147,9 +193,9 @@ Public Class course_Update
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("subject_code")) Then
-                    subject_Code.Text = ds.Tables(0).Rows(0).Item("subject_code")
+                    subject_code.Text = ds.Tables(0).Rows(0).Item("subject_code")
                 Else
-                    subject_Code.Text = ""
+                    subject_code.Text = ""
                 End If
 
                 If Not IsDBNull(ds.Tables(0).Rows(0).Item("subject_type")) Then
@@ -182,6 +228,18 @@ Public Class course_Update
                     ddl_subjectreligions.SelectedValue = ""
                 End If
 
+                If Not IsDBNull(ds.Tables(0).Rows(0).Item("course_Program")) Then
+                    ddlStream.SelectedValue = ds.Tables(0).Rows(0).Item("course_Program")
+                Else
+                    ddlStream.SelectedValue = ""
+                End If
+
+                If Not IsDBNull(ds.Tables(0).Rows(0).Item("subject_Campus")) Then
+                    ddlCampus.SelectedValue = ds.Tables(0).Rows(0).Item("subject_Campus")
+                Else
+                    ddlCampus.SelectedValue = ""
+                End If
+
             End If
 
         Catch ex As Exception
@@ -192,33 +250,23 @@ Public Class course_Update
         End Try
     End Sub
 
-    Private Sub Btnsimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
-        Dim errorCount As Integer = 0
+    Private Sub btnUpdate_ServerClick(sender As Object, e As EventArgs) Handles btnUpdate.ServerClick
+        Dim errorCount As Integer = 0 
 
         'UPDATE
-        strSQL = "UPDATE subject_info SET subject_Name='" & subject_Name.Text & "',
+        strSQL = "  UPDATE subject_info SET subject_Name='" & subject_Name.Text & "',
                     subject_NameBM='" & subject_NameBM.Text & "',subject_code='" & subject_code.Text & "',
                     subject_year='" & ddlsubject_year.SelectedValue & "',subject_type='" & subject_type.SelectedValue & "',
                     subject_StudentYear='" & subject_StudentYear.SelectedValue & "',subject_sem='" & subject_sem.SelectedValue & "',
-                    subject_CreditHour='" & subject_credithour.Text & "',std_number='" & txtStdNumber.Text & "',
-                    course_Name = '" & ddlCourse_group.SelectedValue & "' WHERE subject_ID ='" & Request.QueryString("subject_ID") & "'"
+                    subject_CreditHour='" & subject_credithour.Text & "',std_number='" & txtStdNumber.Text & "', course_Program  = '" & ddlStream.SelectedValue & "',
+                    course_Name = '" & ddlCourse_group.SelectedValue & "', subject_Campus = '" & ddlCampus.SelectedValue & "' WHERE subject_ID ='" & Request.QueryString("subject_ID") & "'"
         strRet = oCommon.ExecuteSQL(strSQL)
 
         If strRet = "0" Then
-            errorCount = 0
+            ShowMessage("Successfull update course", MessageType.Success)
         Else
-            errorCount = 1
+            ShowMessage("Unsuccessfull update course", MessageType.Error)
         End If
-
-        If errorCount = 1 Then
-            Response.Redirect("admin_pengurusan_am_kursus.aspx?result=-1&admin_ID=" + Request.QueryString("admin_ID"))
-        ElseIf errorCount = 0 Then
-            Response.Redirect("admin_pengurusan_am_kursus.aspx?result=1&admin_ID=" + Request.QueryString("admin_ID"))
-        End If
-    End Sub
-
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_pengurusan_am_kursus.aspx?admin_ID=" + Request.QueryString("admin_ID"))
     End Sub
 
     Private Sub subject_type_Load()
@@ -251,7 +299,7 @@ Public Class course_Update
         subject_StudentYear.DataTextField = "Parameter"
         subject_StudentYear.DataValueField = "Parameter"
         subject_StudentYear.DataBind()
-        subject_StudentYear.Items.Insert(0, New ListItem("Select Student Year", String.Empty))
+        subject_StudentYear.Items.Insert(0, New ListItem("Select Level", String.Empty))
         subject_StudentYear.SelectedIndex = 0
 
     End Sub
@@ -273,5 +321,14 @@ Public Class course_Update
         subject_sem.SelectedIndex = 0
 
     End Sub
+
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
+    End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
 
 End Class

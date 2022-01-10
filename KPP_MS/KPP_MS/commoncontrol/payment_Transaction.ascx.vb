@@ -9,92 +9,277 @@ Public Class payment_Transaction
 
     Dim strSQL As String = ""
     Dim strRet As String = ""
-    Dim result As Integer = 0
 
     Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
     Dim objConn As SqlConnection = New SqlConnection(strConn)
+
     Dim oCommon As New Commonfunction
-    Dim oDes As New Simple3Des("p@ssw0rd1")
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then
 
-                Dim id As String = ""
-                id = Request.QueryString("admin_ID")
+                Checking_MenuAccess_Load()
 
-                txtstudent.Text = ""
+                If Session("getStatus") = "ILO" Then ''Invoice Lock
+                    txtbreadcrum1.Text = "Invoice Lock"
 
-                student_Level()
-                year_list()
+                    InvoiceLock.Visible = True
+                    InvoiceLists.Visible = False
 
-                ''get a user access
-                Dim userAccess As String = ""
-                userAccess = "select staff_Position from staff_Info where stf_ID = '" & id & "'"
-                Dim access As String = getFieldValue(userAccess, strConn)
-                hiddenAccess.Value = access
+                    BtnInvoiceLock.Attributes("class") = "btn btn-info"
+                    BtnInvoiceLists.Attributes("class") = "btn btn-default font"
 
-                load_page()
-                ''Generate_Table()
+                    ILO_Year()
+                    ILO_Level()
+                    ILO_Class()
+
+                    strRet = BindData(datRespondent)
+
+                ElseIf Session("getStatus") = "ILI" Then ''Invoice List
+                    txtbreadcrum1.Text = "Invoice Lists"
+
+                    InvoiceLock.Visible = False
+                    InvoiceLists.Visible = True
+
+                    BtnInvoiceLock.Attributes("class") = "btn btn-default font"
+                    BtnInvoiceLists.Attributes("class") = "btn btn-info"
+
+                End If
+
             End If
         Catch ex As Exception
 
         End Try
     End Sub
 
-    Private Sub load_page()
-        strSQL = "SELECT year from student_Level where year ='" & Now.Year & "'"
+    Private Sub Checking_MenuAccess_Load()
 
-        '--debug
-        ''Response.Write(strSQLstd) 
+        BtnInvoiceLock.Visible = False
+        BtnInvoiceLists.Visible = False
 
+        InvoiceLock.Visible = False
+        InvoiceLists.Visible = False
+
+        BtnPublish.Visible = False
+        BtnPrint.Visible = False
+
+        Dim accessID As String = "select MAX(stf_ID) from security_ID where loginID_Number = '" & Request.QueryString("admin_ID") & "'"
+        Dim stf_ID_Data As String = oCommon.getFieldValue(accessID)
+
+        Dim str_user_position As String = CType(Session.Item("user_position"), String)
+
+        ''Get Login ID from Staff_Login
+        strSQL = "Select login_ID from staff_Login where stf_ID = '" & stf_ID_Data & "' and staff_Access = '" & str_user_position & "'"
+        Dim find_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        ''Get Count from Menu_master_User
+        strSQL = "select count(*) Count_No from menu_master_user where stf_ID = '" & stf_ID_Data & "' and login_ID = '" & find_LoginID & "'"
+        Dim find_CountNo_LoginID As String = oCommon.getFieldValue(strSQL)
+
+        Dim Get_InvoiceLock As String = ""
+        Dim Get_InvoiceLists As String = ""
+
+        ''Loop The Count_No
+        For num As Integer = 0 To find_CountNo_LoginID - 1 Step 1
+
+            ''Get Main Menu Data
+            strSQL = "  Select A.Menu From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_Menu_Data As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Sub Menu 2 Data
+            strSQL = "  Select A.Menu_Sub2 From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_SubMenu2 As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 View Data 
+            strSQL = "  Select B.F1_View From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1View As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 Print Data 
+            strSQL = "  Select B.F1_PrintInBI From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1PrintInBi As String = oCommon.getFieldValue(strSQL)
+
+            ''Get Function Button 1 Register Data 
+            strSQL = "  Select B.F1_Register From menu_master_access A Left Join menu_master_user B On A.MenuID = B.MenuID Where stf_ID = '" & stf_ID_Data & "' And login_ID = '" & find_LoginID & "'
+                        Order By A.MenuID Asc
+                        Offset " & num & " Rows Fetch Next 1 Rows Only"
+            Dim find_Data_F1Register As String = oCommon.getFieldValue(strSQL)
+
+            If find_Data_SubMenu2 = "Invoice Lock" And find_Data_SubMenu2.Length > 0 Then
+                BtnInvoiceLock.Visible = True
+                InvoiceLock.Visible = True
+
+                Get_InvoiceLock = "TRUE"
+
+                If find_Data_F1Register.Length > 0 And find_Data_F1Register = "TRUE" Then
+                    BtnPublish.Visible = True
+                End If
+
+                If find_Data_F1PrintInBi.Length > 0 And find_Data_F1PrintInBi = "TRUE" Then
+                    BtnPrint.Visible = True
+                End If
+
+                If find_Data_F1View.Length > 0 And find_Data_F1View = "TRUE" Then
+                    Session("getViewButton") = "TRUE"
+                End If
+
+            End If
+
+            If find_Data_SubMenu2 = "Invoice Lists" And find_Data_SubMenu2.Length > 0 Then
+                BtnInvoiceLists.Visible = True
+                InvoiceLists.Visible = True
+
+                Get_InvoiceLists = "TRUE"
+
+            End If
+
+            If find_Data_SubMenu2.Length = 0 And find_Data_Menu_Data = "All" Then
+                BtnInvoiceLock.Visible = True
+                BtnInvoiceLists.Visible = True
+                InvoiceLock.Visible = True
+                InvoiceLists.Visible = True
+
+                BtnPublish.Visible = True
+                BtnPrint.Visible = True
+
+                Get_InvoiceLock = "TRUE"
+                Session("getViewButton") = "TRUE"
+            End If
+
+        Next
+
+        Dim Data_If_Not_Group_Status As String = ""
+        Session("getStatus_Temporary") = ""
+
+        If Session("getStatus") = "ILO" Or Session("getStatus") = "ILI" Then
+            Data_If_Not_Group_Status = Session("getStatus")
+        End If
+
+        If Session("getStatus") <> "ILO" And Session("getStatus") <> "ILI" Then
+            If Get_InvoiceLists = "TRUE" Then
+                Data_If_Not_Group_Status = "ILI"
+            ElseIf Get_InvoiceLock = "TRUE" Then
+                Data_If_Not_Group_Status = "ILO"
+            End If
+        End If
+
+        If Session("getStatus_Temporary") IsNot Nothing Then
+            If Get_InvoiceLists = "TRUE" And Data_If_Not_Group_Status = "ILI" Then
+                Session("getStatus") = "ILI"
+            ElseIf Get_InvoiceLock = "TRUE" And Data_If_Not_Group_Status = "ILO" Then
+                Session("getStatus") = "ILO"
+            End If
+        End If
+
+    End Sub
+
+    Private Sub BtnInvoiceLock_ServerClick(sender As Object, e As EventArgs) Handles BtnInvoiceLock.ServerClick
+        Session("getStatus") = "ILO"
+        Response.Redirect("admin_transaksi_yuran.aspx?admin_ID=" + Request.QueryString("admin_ID"))
+    End Sub
+
+    Private Sub BtnInvoiceLists_ServerClick(sender As Object, e As EventArgs) Handles BtnInvoiceLists.ServerClick
+        Session("getStatus") = "ILI"
+        Response.Redirect("admin_transaksi_yuran.aspx?admin_ID=" + Request.QueryString("admin_ID"))
+    End Sub
+
+    Private Sub ILO_Year()
+        strSQL = "select Parameter from setting where Type = 'Year'"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("year")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("year")
-            Else
-                ddlYear.SelectedValue = ""
-            End If
-        End If
-    End Sub
-
-    Public Function getFieldValue(ByVal sql_plus As String, ByVal MyConnection As String) As String
-        If sql_plus.Length = 0 Then
-            Return "0"
-        End If
-        Dim conn As SqlConnection = New SqlConnection(MyConnection)
-        Dim sqlAdapter As New SqlDataAdapter(sql_plus, conn)
-        Dim strvalue As String = ""
         Try
             Dim ds As DataSet = New DataSet
-            sqlAdapter.Fill(ds, "AnyTable")
+            sqlDA.Fill(ds, "AnyTable")
 
-            If ds.Tables(0).Rows.Count > 0 Then
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item(0).ToString) Then
-                    strvalue = ds.Tables(0).Rows(0).Item(0).ToString
-                Else
-                    Return "0"
-                End If
-            End If
+            ddlYear_InvoiceLock.DataSource = ds
+            ddlYear_InvoiceLock.DataTextField = "Parameter"
+            ddlYear_InvoiceLock.DataValueField = "Parameter"
+            ddlYear_InvoiceLock.DataBind()
+            ddlYear_InvoiceLock.Items.Insert(0, New ListItem("Select Year", String.Empty))
+            ddlYear_InvoiceLock.SelectedIndex = 0
+
         Catch ex As Exception
-            Return "0"
+
         Finally
-            conn.Dispose()
+            objConn.Dispose()
         End Try
-        Return strvalue
-    End Function
+    End Sub
 
-    Protected Sub ddlClassnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClassnaming.SelectedIndexChanged
+    Private Sub ILO_Level()
+        strSQL = "Select Parameter from setting where Type = 'Level' order by Parameter ASC"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlLevel_InvoiceLock.DataSource = ds
+            ddlLevel_InvoiceLock.DataTextField = "Parameter"
+            ddlLevel_InvoiceLock.DataValueField = "Parameter"
+            ddlLevel_InvoiceLock.DataBind()
+            ddlLevel_InvoiceLock.Items.Insert(0, New ListItem("Select Level", String.Empty))
+            ddlLevel_InvoiceLock.SelectedIndex = 0
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub ILO_Class()
+        strSQL = "Select class_ID, class_Name from class_info where class_year = '" & ddlYear_InvoiceLock.SelectedValue & "' and class_Level = '" & ddlLevel_InvoiceLock.SelectedValue & "' and class_type = 'Compulsory' and class_Campus = 'PGPN' "
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlClass_InvoiceLock.DataSource = ds
+            ddlClass_InvoiceLock.DataTextField = "class_Name"
+            ddlClass_InvoiceLock.DataValueField = "class_ID"
+            ddlClass_InvoiceLock.DataBind()
+            ddlClass_InvoiceLock.Items.Insert(0, New ListItem("Select Class", String.Empty))
+            ddlClass_InvoiceLock.SelectedIndex = 0
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Protected Sub ddlYear_InvoiceLock_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear_InvoiceLock.SelectedIndexChanged
+        Try
+            ILO_Class()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Protected Sub ddlLevel_InvoiceLock_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevel_InvoiceLock.SelectedIndexChanged
+        Try
+            ILO_Class()
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+
+        End Try
+    End Sub
+
+    Protected Sub ddlClass_InvoiceLock_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClass_InvoiceLock.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
         Catch ex As Exception
@@ -102,36 +287,11 @@ Public Class payment_Transaction
         End Try
     End Sub
 
-    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
+    Private Sub btnSearch_InvoiceLock_ServerClick(sender As Object, e As EventArgs) Handles btnSearch_InvoiceLock.ServerClick
         Try
             strRet = BindData(datRespondent)
         Catch ex As Exception
-
         End Try
-    End Sub
-
-    Protected Sub ddlLevelnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevelnaming.SelectedIndexChanged
-        ''Dim class As String = ""
-        Try
-            strRet = BindData(datRespondent)
-            class_info_list()
-        Catch ex As Exception
-        End Try
-    End Sub
-
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-        Try
-            strRet = BindData(datRespondent)
-
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Private Sub datRespondent_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles datRespondent.PageIndexChanging
-        datRespondent.PageIndex = e.NewPageIndex
-        strRet = BindData(datRespondent)
-
     End Sub
 
     Private Function BindData(ByVal gvTable As GridView) As Boolean
@@ -143,7 +303,15 @@ Public Class payment_Transaction
 
             gvTable.DataSource = myDataSet
             gvTable.DataBind()
+
+            If Session("getViewButton") = "TRUE" Then
+                gvTable.Columns(9).Visible = True
+            Else
+                gvTable.Columns(9).Visible = False
+            End If
+
             objConn.Close()
+            run_color()
 
         Catch ex As Exception
 
@@ -161,142 +329,100 @@ Public Class payment_Transaction
         Dim strWhere As String = ""
         Dim strOrderby As String = ""
 
-        strOrderby = " ORDER BY student_info.student_Name ASC"
+        strOrderby = " Order By A.student_Name Asc"
 
-        tmpSQL = "select distinct student_info.std_Id, student_info.student_Name, student_info.student_ID, class_info.class_Name, invoice_info.II_InvNo, invoice_info.II_Published from student_info
-                  left join course on student_info.std_ID = course.std_ID
-                  left join class_info on course.class_Id = class_info.class_ID
-                  left join invoice_info on student_info.std_ID = invoice_info.Std_ID
-                  left join invoice_item on invoice_info.II_ID = invoice_item.II_ID
-                  left join fee_item_master on invoice_item.FIM_ID = fee_item_master.FIM_ID"
+        tmpSQL = "  Select distinct D.II_ID, A.student_Name, A.student_ID, C.class_Name, D.II_InvNo, D.II_Year, D.II_FullAmount, D.II_Published, D.II_Published as Status from student_info A
+                    Left Join course B on A.std_ID = B.std_ID
+                    Left Join class_info C on B.class_ID = C.class_ID
+                    Left Join invoice_info D on A.std_ID = D.std_ID"
 
-        strWhere = " WHERE student_info.student_Status = 'Access'"
-        strWhere += " and class_info.class_type = 'Compulsory'"
-        strWhere += " and class_info.class_year = '" & ddlYear.SelectedValue & "' and invoice_info.II_Year = '" & ddlYear.SelectedValue & "' and course.year = '" & ddlYear.SelectedValue & "'"
+        strWhere = " WHERE (A.student_Status = 'Access' or A.student_Status = 'Graduate') and A.student_ID like '%M%' and A.student_Campus = 'PGPN'"
+        strWhere += " and C.class_type = 'Compulsory'"
+        strWhere += " and B.year = '" & ddlYear_InvoiceLock.SelectedValue & "' and C.class_year = '" & ddlYear_InvoiceLock.SelectedValue & "' and D.II_Year = '" & ddlYear_InvoiceLock.SelectedValue & "'"
 
-        If Not txtstudent.Text.Length = 0 Then
-            Dim student_ID As String = "Select student_ID from student_info where student_ID = '" & txtstudent.Text & "'"
-            Dim get_student_ID As String = oCommon.getFieldValue(student_ID)
-
-            Dim student_Name As String = "Select student_Name from student_info where student_Name = '" & txtstudent.Text & "'"
-            Dim get_student_Name As String = oCommon.getFieldValue(student_Name)
-
-            Dim student_Mykad As String = "Select student_Mykad from student_info where student_Mykad = '" & txtstudent.Text & "'"
-            Dim get_student_Mykad As String = oCommon.getFieldValue(student_Mykad)
-
-            If get_student_ID <> txtstudent.Text Then
-
-                If get_student_Name <> txtstudent.Text Then
-
-                    If get_student_Mykad <> txtstudent.Text Then
-                        strWhere += " AND student_info.student_Mykad = '" & txtstudent.Text & "'"
-                    ElseIf get_student_Mykad = txtstudent.Text Then
-                        strWhere += " AND student_info.student_Mykad = '" & txtstudent.Text & "'"
-
-                    End If
-                ElseIf get_student_Name = txtstudent.Text Then
-                    strWhere += " AND student_info.student_Name like '%" & txtstudent.Text & "%'"
-
-                End If
-            ElseIf get_student_ID = txtstudent.Text Then
-                strWhere += " AND student_info.student_ID = '" & txtstudent.Text & "'"
-
-            End If
+        If txtstudent_data.Text.Length > 0 Then
+            strWhere += " and A.student_Name like '%" & txtstudent_data.Text & "%'"
         End If
 
-        If ddlLevelnaming.SelectedIndex > 0 Then
-            strWhere += " and class_info.class_Level = '" & ddlLevelnaming.SelectedValue & "'"
+        If ddlLevel_InvoiceLock.SelectedIndex > 0 Then
+            strWhere += " and C.class_Level = '" & ddlLevel_InvoiceLock.SelectedValue & "'"
         End If
 
-        If ddlClassnaming.SelectedIndex > 0 Then
-            strWhere += " and class_info.class_ID = '" & ddlClassnaming.SelectedValue & "'"
+        If ddlClass_InvoiceLock.SelectedIndex > 0 Then
+            strWhere += " and C.class_ID = '" & ddlClass_InvoiceLock.SelectedValue & "'"
         End If
-
 
         getSQL = tmpSQL & strWhere & strOrderby
-        Debug.WriteLine(getSQL)
 
         Return getSQL
-
     End Function
+
+    Private Sub BtnPublish_ServerClick(sender As Object, e As EventArgs) Handles BtnPublish.ServerClick
+
+        Dim errorCount As Integer = 0
+        Dim i As Integer = 0
+
+        For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
+            Dim chkUpdate As CheckBox = CType(datRespondent.Rows(i).Cells(5).FindControl("CheckAll"), CheckBox)
+            If Not chkUpdate Is Nothing Then
+                ' Get the values of textboxes using findControl
+                Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
+
+                If chkUpdate.Checked = True Then
+
+                    strSQL = "UPDATE invoice_info set II_Published ='Yes' WHERE II_ID ='" & strKey & "' and II_Year = '" & ddlYear_InvoiceLock.SelectedValue & "'"
+                    strRet = oCommon.ExecuteSQL(strSQL)
+
+                End If
+            End If
+        Next
+
+        If strRet = "0" Then
+            ShowMessage("Successful Lock Invoice", MessageType.Success)
+        Else
+            ShowMessage("Unsuccessful Lock Invoice", MessageType.Error)
+        End If
+
+        strRet = BindData(datRespondent)
+    End Sub
+
+    Private Sub run_color()
+        Dim col As Integer = 0
+        Dim row As Integer = 0
+        Dim lblDay As Label
+
+        For row = 0 To datRespondent.Rows.Count - 1 Step row + 1
+            lblDay = datRespondent.Rows(row).Cells(8).FindControl("Status")
+            If lblDay.Text <> "Yes" Then
+
+                lblDay.Text = "OO"
+                lblDay.BackColor = Drawing.Color.Red
+                lblDay.ForeColor = Drawing.Color.Red
+                lblDay.CssClass = "lblAbsent"
+
+            End If
+
+            If lblDay.Text = "Yes" Then
+
+                lblDay.Text = "OO"
+                lblDay.BackColor = Drawing.Color.Green
+                lblDay.ForeColor = Drawing.Color.Green
+                lblDay.CssClass = "lblAttend"
+
+            End If
+        Next
+    End Sub
 
     Private Sub datRespondent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondent.RowEditing
         Dim strKeyID As String = datRespondent.DataKeys(e.NewEditIndex).Value.ToString
         Try
-            Response.Redirect("admin_transaksi_yuran_gambar.aspx?std_ID=" + strKeyID + "&admin_ID=" + Request.QueryString("admin_ID") + "&back=1")
+            Session("getII_ID") = strKeyID
+            Response.Redirect("admin_transaksi_yuran_view.aspx?admin_ID=" + Request.QueryString("admin_ID"))
         Catch ex As Exception
-            ''lblMsg.Text = "System Error: " & ex.Message
         End Try
     End Sub
 
-    Private Sub class_info_list()
-        strSQL = "SELECT class_Name,class_ID FROM class_info where class_year = '" & ddlYear.SelectedValue & "' and class_type = 'Compulsory' and class_Level = '" & ddlLevelnaming.SelectedValue & "' order by class_Name ASC"
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlClassnaming.DataSource = ds
-            ddlClassnaming.DataTextField = "class_Name"
-            ddlClassnaming.DataValueField = "class_ID"
-            ddlClassnaming.DataBind()
-            ddlClassnaming.Items.Insert(0, New ListItem("Select Class", String.Empty))
-
-        Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
-        End Try
-    End Sub
-
-    Private Sub student_Level()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Level' "
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlLevelnaming.DataSource = ds
-            ddlLevelnaming.DataTextField = "Parameter"
-            ddlLevelnaming.DataValueField = "Parameter"
-            ddlLevelnaming.DataBind()
-            ddlLevelnaming.Items.Insert(0, New ListItem("Select Level", String.Empty))
-        Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
-        End Try
-    End Sub
-
-
-    Private Sub year_list()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Year' "
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlDA.Fill(ds, "AnyTable")
-
-            ddlYear.DataSource = ds
-            ddlYear.DataTextField = "Parameter"
-            ddlYear.DataValueField = "Parameter"
-            ddlYear.DataBind()
-        Catch ex As Exception
-
-        Finally
-            objConn.Dispose()
-        End Try
-    End Sub
-
-    Private Sub BtnPublish_ServerClick(sender As Object, e As EventArgs) Handles BtnPublish.ServerClick
+    Private Sub BtnPrint_ServerClick(sender As Object, e As EventArgs) Handles BtnPrint.ServerClick
 
         Dim errorCount As Integer = 0
         Dim i As Integer = 0
@@ -310,41 +436,15 @@ Public Class payment_Transaction
 
                 If chkUpdate.Checked = True Then
 
-                    strSQL = "UPDATE invoice_info set II_Published ='Yes' WHERE Std_ID ='" & strKey & "' and II_Year = '" & ddlYear.SelectedValue & "' and II_Published = 'No' and II_InvNo = '" & chkRefNo.Text & "'"
-                    strRet = oCommon.ExecuteSQL(strSQL)
+                    ''Print 
 
-                    If strRet = "0" Then
-                        errorCount = 0
-                    Else
-                        errorCount = 1
-                    End If
+
 
                 End If
             End If
         Next
 
-        If errorCount > 0 Then
-            ShowMessage("Update Invoice Detail", MessageType.Error)
-
-        ElseIf errorCount = 0 Then
-            ShowMessage("Update Invoice Detail", MessageType.Success)
-
-        End If
-
-        strRet = BindData(datRespondent)
-
     End Sub
-
-    'Private Sub BtnTest_ServerClick(sender As Object, e As EventArgs) Handles BtnTest.ServerClick
-    '    Try
-
-    '        Response.Redirect("admin_transaksi_email.aspx?admin_ID=" & Request.QueryString("admin_ID"))
-
-    '        ShowMessage("Send Notification", MessageType.Success)
-    '    Catch ex As Exception
-    '        ShowMessage("Send Notification", MessageType.Error)
-    '    End Try
-    'End Sub
 
     Protected Sub ShowMessage(Message As String, type As MessageType)
         ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
@@ -354,7 +454,5 @@ Public Class payment_Transaction
         Success
         [Error]
     End Enum
-
-
 
 End Class

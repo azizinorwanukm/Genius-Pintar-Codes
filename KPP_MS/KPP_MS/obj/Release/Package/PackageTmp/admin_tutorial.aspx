@@ -4,104 +4,54 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <script type="text/javascript">
-        function subject_reg() {
-            if (document.getElementById("tutorial_subject_reg").value == 0) {
-                document.getElementById("subject_reg_tutorial").style.display = "block";
-                document.getElementById("tutorial_subject_reg").value = 1;
-            }
-
-            else if (document.getElementById("tutorial_subject_reg").value == 1) {
-                document.getElementById("subject_reg_tutorial").style.display = "none";
-                document.getElementById("tutorial_subject_reg").value = 0;
-            }
-        }
-
-        function class_reg() {
-            if (document.getElementById("tutorial_class_reg").value == 0) {
-                document.getElementById("class_reg_tutorial").style.display = "block";
-                document.getElementById("tutorial_class_reg").value = 1;
-            }
-
-            else if (document.getElementById("tutorial_class_reg").value == 1) {
-                document.getElementById("class_reg_tutorial").style.display = "none";
-                document.getElementById("tutorial_class_reg").value = 0;
-            }
-        }
-
-        function student_reg() {
-            if (document.getElementById("tutorial_std_reg").value == 0) {
-                document.getElementById("std_reg_tutorial").style.display = "block";
-                document.getElementById("tutorial_std_reg").value = 1;
-            }
-
-            else if (document.getElementById("tutorial_std_reg").value == 1) {
-                document.getElementById("std_reg_tutorial").style.display = "none";
-                document.getElementById("tutorial_std_reg").value = 0;
-            }
-        }
-
-        function coordinator_reg() {
-            if (document.getElementById("tutorial_coordinator_reg").value == 0) {
-                document.getElementById("coordinator_reg_tutorial").style.display = "block";
-                document.getElementById("tutorial_coordinator_reg").value = 1;
-            }
-
-            else if (document.getElementById("tutorial_coordinator_reg").value == 1) {
-                document.getElementById("coordinator_reg_tutorial").style.display = "none";
-                document.getElementById("tutorial_coordinator_reg").value = 0;
-            }
-        }
-    </script>
-
     <style>
-        .ddl {
-            border-radius: 25px;
+        .sc3::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .sc3::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        .sc3::-webkit-scrollbar-thumb {
+            background-color: #929B9E;
+            border-radius: 3px;
+        }
+
+        .sc4::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .sc4::-webkit-scrollbar-track {
+            background-color: transparent;
+        }
+
+        .sc4::-webkit-scrollbar-thumb {
+            background-color: #929B9E;
         }
     </style>
 
-    <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-        <button id="tutorial_subject_reg" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%" onclick="subject_reg()" value="0">Course Registration Tutorial <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
-        <div style="display: none;" id="subject_reg_tutorial">
-            <video width="400" controls>
-                <source src="video/test.mp4" type="video/mp4">
-            </video>
-            <p></p>
+    <div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+        <%--Breadcrum--%>
+        <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black font">
+            Menu &nbsp; : Tutorial &nbsp; 
         </div>
     </div>
-    <br />
 
-    <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-        <button id="tutorial_class_reg" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%" onclick="class_reg()" value="0">Class Registration Tutorial <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
-        <div style="display: none;" id="class_reg_tutorial">
-            <video width="400" controls>
-                <source src="video/test.mp4" type="video/mp4">
-            </video>
-            <p></p>
+    <div style="background-color: #F2F2F2; border: 5px solid #F2F2F2;" class="w3-card-2">
+        <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh; border-bottom: 3px solid #567572FF; overflow-x: auto; white-space: nowrap;" class="sc3">
+            <button id="btnSetting" runat="server" class="btn btn-info" style="display: inline-block; font-size: 0.8vw">Setting</button>
         </div>
-    </div>
-    <br />
 
-    <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-        <button id="tutorial_std_reg" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%" onclick="student_reg()" value="0">Student Registration Tutorial <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
-        <div style="display: none;" id="std_reg_tutorial">
-            <video width="400" controls>
-                <source src="video/test.mp4" type="video/mp4">
-            </video>
-            <p></p>
+        <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; white-space: nowrap; height: 70vh; overflow-y: scroll;" class="sc4" runat="server">
+            <div class="w3-text-black " style="text-align: left; padding-left: 1vw;">
+                <p> 1. Register User Configuration</p>
+                <video width="400" src="video/KPPMS Menu Access.mp4" controls>
+                </video>
+            </div>
         </div>
-    </div>
-    <br />
 
-    <div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-        <button id="tutorial_coordinator_reg" type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%" onclick="coordinator_reg()" value="0">Coordinator Registration Tutorial <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
-        <div style="display: none;" id="coordinator_reg_tutorial">
-            <video width="400" controls>
-                <source src="video/test.mp4" type="video/mp4">
-            </video>
-            <p></p>
-        </div>
     </div>
-    <br />
+
 
 </asp:Content>

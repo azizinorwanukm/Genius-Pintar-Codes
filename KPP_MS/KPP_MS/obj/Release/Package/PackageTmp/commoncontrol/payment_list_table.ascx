@@ -10,9 +10,9 @@
     <button type="button" class="btn btn-info" style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px; width: 100%">Payment Information <i class="fa fa-fw fa fa-caret-down w3-left"></i></button>
 
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px;text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddllevel" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlInvGroup" runat="server" AutoPostBack="true" CssClass=" btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddllevel" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlInvGroup" runat="server" AutoPostBack="true" CssClass=" btn btn-default font ddl"></asp:DropDownList>
     </div>
 <p></p>
 

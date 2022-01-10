@@ -1,5 +1,32 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="payment_Transaction.ascx.vb" Inherits="KPP_MS.payment_Transaction" %>
 
+<style>
+    .sc3::-webkit-scrollbar {
+        height: 10px;
+    }
+
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
+    }
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+    }
+</style>
+
 <script type="text/javascript">
     function ShowMessage(message, messagetype) {
         var cssclass;
@@ -32,105 +59,133 @@
     }
 </script>
 
-<style>
-    .ddl {
-        border-radius: 25px;
-    }
-</style>
-
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Search Student Data</p>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px; text-align: left; padding-left: 23px">
-        <asp:DropDownList ID="ddlYear" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlYear_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevelnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlLevelnaming_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlClassnaming" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlClassnaming_SelectedIndexChanged" CssClass="btn btn-default ddl"></asp:DropDownList>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 3vh" class="w3-card-2 font">
+    <%--Breadcrum--%>
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh" class="w3-text-black">
+        Menu &nbsp; : &nbsp; Payment &nbsp; / &nbsp; Student information &nbsp; / &nbsp;
+        <asp:Label runat="server" ID="txtbreadcrum1" Style="text-align: left;"></asp:Label>
     </div>
-    <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left">
-        <div class="col-md-4 w3-text-black" style="text-align: left; padding-left: 23px; margin-top: 10px">
-            <asp:TextBox CssClass="textbox" ID="txtstudent" Style="width: 100%; border-radius: 25px;" runat="server" Text="" placeholder="   Search By Name / ID / IC"></asp:TextBox>
-        </div>
-        <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 13px">
-            <p></p>
-            <button id="btnSearch" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">Search &#160;<i class="fa fa-search w3-large w3-text-white"></i></button>
-        </div>
-    </div>
-    <p></p>
 </div>
-<br />
 
-<div class="gridViewRespond" style="width: 100%; background-color: #f2f2f2; border-radius: 25px; border: 5px solid #8c8c8c;">
-
-    <p style="background-color: #800000; text-align: center; display: inline-block; width: 100%; border-radius: 25px">Student List</p>
-    <br />
-
-    <div style="overflow-y: scroll; overflow-x: hidden; height: 350px" class="table-responsive">
-        <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black " AutoGenerateColumns="False"
-            BackColor="#d9d9d9" DataKeyNames="std_ID" BorderStyle="None" GridLines="None"
-            Width="97%" HeaderStyle-HorizontalAlign="Left">
-            <RowStyle HorizontalAlign="Left" />
-            <Columns>
-                <asp:TemplateField>
-                    <HeaderTemplate>
-                        <asp:CheckBox ID="chkboxSelectAll" Text="" runat="server" onclick="CheckAllEmp(this);" />
-                    </HeaderTemplate>
-                    <ItemTemplate>
-                        <asp:CheckBox ID="chkSelect" runat="server" />
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="#" ItemStyle-Width="10">
-                    <ItemTemplate>
-                        <%# Container.DataItemIndex + 1 %>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
-                    <ItemStyle VerticalAlign="Middle" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Student Name" ItemStyle-Width="300">
-                    <ItemTemplate>
-                        <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("student_Name") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-              
-                <asp:TemplateField HeaderText="Student ID" ItemStyle-Width="100">
-                    <ItemTemplate>
-                        <asp:Label ID="student_ID" class="id1" runat="server" Text='<%# Eval("student_ID") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Class" ItemStyle-Width="80">
-                    <ItemTemplate>
-                        <asp:Label ID="class_Name" class="id1" runat="server" Text='<%# Eval("class_Name") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-                <asp:TemplateField HeaderText="Invoice No" ItemStyle-Width="130">
-                    <ItemTemplate>
-                        <asp:Label ID="II_InvNo" class="id1" runat="server" Text='<%# Eval("II_InvNo") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:TemplateField HeaderText="Published" ItemStyle-Width="130">
-                    <ItemTemplate>
-                        <asp:Label ID="II_Published" class="id1" runat="server" Text='<%# Eval("II_Published") %>'></asp:Label>
-                    </ItemTemplate>
-                    <HeaderStyle HorizontalAlign="Left" />
-                </asp:TemplateField>
-
-                <asp:CommandField HeaderText="View" ButtonType="image" ShowEditButton="true" EditImageUrl="~/img/edit-11-512.png" ControlStyle-Width="22px" ControlStyle-Height="22px" />
-            </Columns>
-            <HeaderStyle BackColor="#800000" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
-            <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
-        </asp:GridView>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2;" class="w3-card-2">
+    <div style="padding-top: 1vh; padding-left: 1.1vw; padding-bottom: 1vh; border-bottom: 3px solid #567572FF;">
+        <button id="BtnInvoiceLock" runat="server" style="display: inline-block; font-size: 0.8vw">Invoice Lock </button>
+        <button id="BtnInvoiceLists" runat="server" style="display: inline-block; font-size: 0.8vw">Invoice Lists </button>
     </div>
 
-    <div class="w3-text-black" style="margin-left: 23px; margin-top: 10px; margin-bottom: 10px">
-        <button id="BtnPublish" runat="server" class="btn btn-info" style="background-color: #009900; border-radius: 25px;" title="Publish">Publish &#160; <i class="fa fa-caret-square-o-up w3-large w3-text-white"></i></button>
-        <button id="Btnprint" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Print">Print &#160;<i class="fa fa-print w3-large w3-text-white"></i></button>
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; white-space: nowrap; height: 70vh" id="InvoiceLock" runat="server" class="sc4">
+
+        <div class="w3-text-black font" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Year : </asp:Label>
+            <asp:DropDownList ID="ddlYear_InvoiceLock" runat="server" CssClass=" btn btn-default font" AutoPostBack="true"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black font" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Level : </asp:Label>
+            <asp:DropDownList ID="ddlLevel_InvoiceLock" runat="server" CssClass=" btn btn-default font" AutoPostBack="true"></asp:DropDownList>
+        </div>
+        <div class="w3-text-black font" style="text-align: left; padding-left: 1vw; display: inline-block">
+            <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Class : </asp:Label>
+            <asp:DropDownList ID="ddlClass_InvoiceLock" runat="server" CssClass=" btn btn-default font" AutoPostBack="true"></asp:DropDownList>
+        </div>
+
+        <div class="w3-text-black font" style="text-align: left; padding-left: 1vw; padding-top: 2vh">
+            <asp:TextBox CssClass="textboxcss" ID="txtstudent_data" runat="server" Text="" placeholder="  Search By Name " Style="width: 30vw"></asp:TextBox>
+            <button id="btnSearch_InvoiceLock" runat="server" style="display: inline-block; font-size: 0.8vw" class="btn btn-success">Search Student </button>
+        </div>
+
+        <br />
+        <br />
+
+        <div style="overflow-y: scroll; height: 42vh" class="table-responsive sc4 font">
+            <asp:GridView ID="datRespondent" runat="server" class="table w3-text-black gridViewRespond" AutoGenerateColumns="False"
+                BackColor="#FFFAFA" DataKeyNames="II_ID" Width="97%" HeaderStyle-HorizontalAlign="Left" BorderStyle="None" GridLines="None">
+                <RowStyle HorizontalAlign="Left" />
+                <Columns>
+                    <asp:TemplateField>
+                        <HeaderTemplate>
+                            <asp:CheckBox ID="chkboxSelectAll" Text="" runat="server" onclick="CheckAllEmp(this);" />
+                        </HeaderTemplate>
+                        <ItemTemplate>
+                            <asp:CheckBox ID="CheckAll" runat="server" />
+                        </ItemTemplate>
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="#">
+                        <ItemTemplate>
+                            <%# Container.DataItemIndex + 1 %>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" VerticalAlign="Middle" />
+                        <ItemStyle VerticalAlign="Middle" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Student Name" ItemStyle-Width="35%">
+                        <ItemTemplate>
+                            <asp:Label ID="student_Name" class="id1" runat="server" Text='<%# Eval("student_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Student ID" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="student_ID" class="id1" runat="server" Text='<%# Eval("student_ID") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Class" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="class_Name" class="id1" runat="server" Text='<%# Eval("class_Name") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Invoice No" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="II_InvNo" class="id1" runat="server" Text='<%# Eval("II_InvNo") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Year" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="II_Year" class="id1" runat="server" Text='<%# Eval("II_Year") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Total Amount" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="II_FullAmount" class="id1" runat="server" Text='<%# Eval("II_FullAmount") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="Published" ItemStyle-Width="10%">
+                        <ItemTemplate>
+                            <asp:Label ID="II_Published" class="id1" runat="server" Text='<%# Eval("II_Published") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:TemplateField HeaderText="" ItemStyle-Width="5%">
+                        <ItemTemplate>
+                            <asp:Label ID="Status" class="id1" runat="server" Text='<%# Eval("Status") %>'></asp:Label>
+                        </ItemTemplate>
+                        <HeaderStyle HorizontalAlign="Left" />
+                    </asp:TemplateField>
+                    <asp:CommandField HeaderText="View" ButtonType="image" ShowEditButton="true" EditImageUrl="~/img/plus image 2.png" ControlStyle-Width="22px" ControlStyle-Height="22px" />
+                </Columns>
+                <EmptyDataTemplate>
+                    <asp:Label runat="server" Class="id1 w3-text-black"><b> No Student Fee Information Are Recorded </b> </asp:Label>
+                </EmptyDataTemplate>
+                <HeaderStyle BackColor="#3C3232" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
+                <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
+            </asp:GridView>
+        </div>
+
+        <br />
+
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; padding-top: 1vh; display: inline-block;">
+            <button id="BtnPublish" runat="server" class="btn btn-success" style="top: 1vh; display: inline-block; font-size: 0.8vw">Publish Invoice</button>
+        </div>
+        <div class="w3-text-black" style="text-align: left; padding-left: 1vw; padding-top: 1vh; display: inline-block;">
+            <button id="BtnPrint" runat="server" class="btn btn-primary" style="top: 1vh; display: inline-block; font-size: 0.8vw">Print Invoice </button>
+        </div>
     </div>
 
-    <asp:HiddenField ID="hiddenAccess" runat="server" />
-
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; white-space: nowrap; height: 70vh" id="InvoiceLists" runat="server" class="sc4">
+    </div>
 </div>
 
 <div class="messagealert" id="alert_container" style="text-align: center"></div>

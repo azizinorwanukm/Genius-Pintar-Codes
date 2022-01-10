@@ -14,6 +14,51 @@ Option Explicit On
 Partial Public Class class_Create
     
     '''<summary>
+    '''previousPage control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents previousPage As Global.System.Web.UI.WebControls.HyperLink
+    
+    '''<summary>
+    '''txtbreadcrum1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''btnClassCreate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnClassCreate As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''btnClassTransfer control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnClassTransfer As Global.System.Web.UI.HtmlControls.HtmlButton
+    
+    '''<summary>
+    '''ClassCreate control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ClassCreate As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
     '''class_Name control.
     '''</summary>
     '''<remarks>
@@ -32,15 +77,6 @@ Partial Public Class class_Create
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''class_Level control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents class_Level As Global.System.Web.UI.WebControls.DropDownList
-    
-    '''<summary>
     '''class_Type control.
     '''</summary>
     '''<remarks>
@@ -50,13 +86,22 @@ Partial Public Class class_Create
     Protected WithEvents class_Type As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''classExist control.
+    '''class_Level control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents classExist As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents class_Level As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''displaystatusSemester control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displaystatusSemester As Global.System.Web.UI.HtmlControls.HtmlTableRow
     
     '''<summary>
     '''class_Sem control.
@@ -68,6 +113,15 @@ Partial Public Class class_Create
     Protected WithEvents class_Sem As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''displaystatusCourseName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displaystatusCourseName As Global.System.Web.UI.HtmlControls.HtmlTableRow
+    
+    '''<summary>
     '''course_Name control.
     '''</summary>
     '''<remarks>
@@ -75,6 +129,15 @@ Partial Public Class class_Create
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents course_Name As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''txtstd_number control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtstd_number As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''staff_ID control.
@@ -86,20 +149,83 @@ Partial Public Class class_Create
     Protected WithEvents staff_ID As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnClassCreate control.
+    '''btnUpdate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnClassCreate As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents btnUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''btnEditClass control.
+    '''ClassTransfer control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnEditClass As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ClassTransfer As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    
+    '''<summary>
+    '''ddl_Year control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_Year As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_type control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_type As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_Level control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_Level As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''ddl_Sem control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddl_Sem As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''datRespondent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
+    
+    '''<summary>
+    '''ddlyear_Transfer control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlyear_Transfer As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''btnTransferClass control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnTransferClass As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

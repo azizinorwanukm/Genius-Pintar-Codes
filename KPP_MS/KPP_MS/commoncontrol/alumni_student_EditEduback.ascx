@@ -15,7 +15,7 @@
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
             <p></p>
             <asp:Label CssClass="Label" runat="server"> Qualification Type : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"> </i></asp:Label>
-            <asp:DropDownList CssClass="btn btn-default ddl" ID="ddl_qualificationType" Style="width: 100%; border-radius: 25px;" runat="server" ></asp:DropDownList>
+            <asp:DropDownList CssClass="btn btn-default font ddl" ID="ddl_qualificationType" Style="width: 100%; border-radius: 25px;" runat="server" ></asp:DropDownList>
         </div>
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
             <p></p>
@@ -30,7 +30,7 @@
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
             <p></p>
             <asp:Label CssClass="Label" runat="server"> Country : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"> </i></asp:Label>
-            <asp:DropDownList CssClass="btn btn-default ddl" ID="ddl_Country" Style="width: 100%; border-radius: 25px;" runat="server" ></asp:DropDownList>
+            <asp:DropDownList CssClass="btn btn-default font ddl" ID="ddl_Country" Style="width: 100%; border-radius: 25px;" runat="server" ></asp:DropDownList>
        </div>
         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
             <p></p>
@@ -60,7 +60,7 @@
         <div class="col-md-3 w3-text-black" style="text-align: left; padding-left: 23px">
             <p></p>
             <asp:Label CssClass="Label" runat="server" Style="width: 20%"> Scholarship : </asp:Label>
-            <asp:DropDownList CssClass="btn btn-default ddl" ID="ddl_scholarship" Style="width: 100%; border-radius: 25px;" runat="server" ></asp:DropDownList>
+            <asp:DropDownList CssClass="btn btn-default font ddl" ID="ddl_scholarship" Style="width: 100%; border-radius: 25px;" runat="server" ></asp:DropDownList>
         </div>
         <div></div>
     <div class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px; margin-bottom: 10px; text-align: left; padding-left: 23px">

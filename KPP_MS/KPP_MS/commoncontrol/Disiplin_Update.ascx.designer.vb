@@ -14,218 +14,218 @@ Option Explicit On
 Partial Public Class Disiplin_Update
     
     '''<summary>
-    '''HiddenField1 control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HiddenField1 As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''HiddenField2 control.
+    '''btnViewCase control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HiddenField2 As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents btnViewCase As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''HiddenField3 control.
+    '''btnRegisterCase control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents HiddenField3 As Global.System.Web.UI.WebControls.HiddenField
+    Protected WithEvents btnRegisterCase As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''student_Mykad control.
+    '''RegisterCase control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents student_Mykad As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents RegisterCase As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''btnSearch control.
+    '''txtStudentInformation control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents txtStudentInformation As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CurrentDate control.
+    '''btnSearch_Student control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CurrentDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnSearch_Student As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''StudentNameLbl control.
+    '''txtDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StudentNameLbl As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtDate As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''StudentIDLbl control.
+    '''Row1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StudentIDLbl As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents Row1 As Global.System.Web.UI.HtmlControls.HtmlTableRow
     
     '''<summary>
-    '''StudentClassLbl control.
+    '''txtStudent_Name control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents StudentClassLbl As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents txtStudent_Name As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''ddlDiciplinetype control.
+    '''Row2 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlDiciplinetype As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents Row2 As Global.System.Web.UI.HtmlControls.HtmlTableRow
     
     '''<summary>
-    '''Detail_case control.
+    '''txtStudent_Level control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Detail_case As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txtStudent_Level As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''ddlActionType control.
+    '''Row3 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlActionType As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents Row3 As Global.System.Web.UI.HtmlControls.HtmlTableRow
     
     '''<summary>
-    '''txtLetterContent control.
+    '''txtClass_Name control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtLetterContent As Global.TextboxioControl.Textboxio
+    Protected WithEvents txtClass_Name As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''needCounseling control.
+    '''ddlCase_Category control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents needCounseling As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents ddlCase_Category As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''showCounselingDiv control.
+    '''ddlCase_Name control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents showCounselingDiv As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+    Protected WithEvents ddlCase_Name As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlCounselingStaff control.
+    '''txtCase_Detail control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlCounselingStaff As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents txtCase_Detail As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''CounselingDate control.
+    '''Check_NeedCounseling control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents CounselingDate As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Check_NeedCounseling As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''txtstart_time control.
+    '''btnUpdate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtstart_time As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents btnUpdate As Global.System.Web.UI.HtmlControls.HtmlButton
     
     '''<summary>
-    '''txtend_time control.
+    '''ViewCase control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtend_time As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ViewCase As Global.System.Web.UI.HtmlControls.HtmlGenericControl
     
     '''<summary>
-    '''txtcode_session control.
+    '''ddlView_CaseYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtcode_session As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlView_CaseYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txtclient_classification control.
+    '''ddlView_CaseMonth control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtclient_classification As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlView_CaseMonth As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txttype_interview control.
+    '''ddlVIew_CaseLevel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txttype_interview As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlVIew_CaseLevel As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Btnsimpan control.
+    '''ddlView_CaseClass control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnsimpan As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents ddlView_CaseClass As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''Btnback control.
+    '''datRespondent control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
 End Class

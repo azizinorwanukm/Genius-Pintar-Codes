@@ -17,8 +17,9 @@ Public Class student_CourseList
                 Sem()
 
                 load_page()
+
                 strRet = BindData(datRespondent)
-                ''Generate_Table()
+
             End If
         Catch ex As Exception
 
@@ -26,7 +27,8 @@ Public Class student_CourseList
     End Sub
 
     Private Sub load_page()
-        strSQL = "SELECT distinct year from student_Level where year ='" & Now.Year & "'"
+
+        strSQL = "SELECT MAX(Parameter) from setting where type = 'year'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -40,12 +42,8 @@ Public Class student_CourseList
         Dim MyTable As DataTable = New DataTable
         MyTable = ds.Tables(0)
         If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("year")) Then
-                ddlyear.SelectedValue = ds.Tables(0).Rows(0).Item("year")
-                ddlSem.SelectedValue = "Sem 1"
-            Else
-                ddlyear.SelectedValue = ""
-                ddlSem.SelectedValue = "Sem 1"
+            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
+                ddlyear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
             End If
         End If
     End Sub
@@ -78,7 +76,7 @@ Public Class student_CourseList
     End Sub
 
     Private Sub Sem()
-        strSQL = "select Parameter From setting where Type = 'Sem'"
+        strSQL = "select * From setting where Type = 'Sem'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -90,8 +88,11 @@ Public Class student_CourseList
 
             ddlSem.DataSource = ds
             ddlSem.DataTextField = "Parameter"
-            ddlSem.DataValueField = "Parameter"
+            ddlSem.DataValueField = "Value"
             ddlSem.DataBind()
+            ddlSem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
+            ddlSem.SelectedIndex = 0
+
         Catch ex As Exception
 
         Finally
@@ -152,6 +153,7 @@ Public Class student_CourseList
                   left join subject_info on course.subject_ID = subject_info.subject_ID 
                   left join class_info on course.class_ID = class_info.class_ID 
                   left join student_info on course.std_ID = student_info.std_ID"
+
         strWhere = " WHERE student_info.std_ID = '" & Request.QueryString("std_ID") & "'"
 
         If ddlyear.SelectedIndex > 0 Then

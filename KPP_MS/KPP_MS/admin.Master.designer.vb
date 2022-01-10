@@ -12,7 +12,7 @@ Option Explicit On
 
 
 Partial Public Class admin
-    
+
     '''<summary>
     '''head control.
     '''</summary>
@@ -21,7 +21,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
     '''form1 control.
     '''</summary>
@@ -30,7 +30,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
-    
+
     '''<summary>
     '''openMenu control.
     '''</summary>
@@ -39,7 +39,25 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents openMenu As Global.System.Web.UI.WebControls.HyperLink
-    
+
+    '''<summary>
+    '''Main_Logo_PGPN control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Main_Logo_PGPN As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''Main_Logo_APP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Main_Logo_APP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''Home control.
     '''</summary>
@@ -48,16 +66,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents Home As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''one control.
+    '''MENU_GENERALMANAGEMENT control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents one As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_GENERALMANAGEMENT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminPeperiksaanPengurusanPeperiksaan control.
     '''</summary>
@@ -66,7 +84,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPeperiksaanPengurusanPeperiksaan As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPeperiksaanPengurusanGred control.
     '''</summary>
@@ -75,7 +93,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPeperiksaanPengurusanGred As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPenilaian control.
     '''</summary>
@@ -84,16 +102,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPenilaian As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''two control.
+    '''MENU_STUDENT control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents two As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_STUDENT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminPengurusanKursus control.
     '''</summary>
@@ -102,7 +120,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanKursus As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPengurusanKelas control.
     '''</summary>
@@ -111,7 +129,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanKelas As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPengurusanPelajar control.
     '''</summary>
@@ -120,7 +138,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminCarianPelajar control.
     '''</summary>
@@ -129,25 +147,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminCarianPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminDaftarPelajarBaru control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminDaftarPelajarBaru As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminImportPelajar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminImportPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPelajarPenempatanKelas control.
     '''</summary>
@@ -156,7 +156,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPelajarPenempatanKelas As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPelajarKehadiran control.
     '''</summary>
@@ -165,7 +165,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPelajarKehadiran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPelajarKepastianKursus control.
     '''</summary>
@@ -174,79 +174,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPelajarKepastianKursus As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''adminPelajarKepastianKelas control.
+    '''MENU_STAFF control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminPelajarKepastianKelas As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminPelajarKepastianKokurikulum control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminPelajarKepastianKokurikulum As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminPelajarKepastianHostel control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminPelajarKepastianHostel As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminPelajarAgama control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminPelajarAgama As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminPelajarDisiplin control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminPelajarDisiplin As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminLaporanPelajar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminLaporanPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminDokumenPelajar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminDokumenPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''three control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents three As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_STAFF As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminCarianPengajar control.
     '''</summary>
@@ -255,25 +192,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminCarianPengajar As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminDaftarPengajarBaru control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminDaftarPengajarBaru As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminImportPengajar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminImportPengajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPengajarPenempatanKelas control.
     '''</summary>
@@ -282,25 +201,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengajarPenempatanKelas As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''adminPengajarKepastianKursus control.
+    '''MENU_COORDINATOR control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminPengajarKepastianKursus As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''twelve control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents twelve As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_COORDINATOR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminDaftarKoordinator control.
     '''</summary>
@@ -309,25 +219,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminDaftarKoordinator As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''adminViewKoordinator control.
+    '''MENU_DISCIPLINE control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminViewKoordinator As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''eleven control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents eleven As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_DISCIPLINE As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminPengurusanDisiplin control.
     '''</summary>
@@ -336,16 +237,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanDisiplin As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminConfigWarningLetter control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminConfigWarningLetter As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''admineditdisiplin control.
     '''</summary>
@@ -354,34 +246,25 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents admineditdisiplin As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''adminviewdisiplin control.
+    '''MENU_COUNSELOR control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminviewdisiplin As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents MENU_COUNSELOR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''twentyone control.
+    '''adminPengurusanKaunselor control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents twentyone As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
-    '''<summary>
-    '''adminSenaraiKaunselorPelajar control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminSenaraiKaunselorPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents adminPengurusanKaunselor As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
     '''adminPerkembanganKendiri control.
     '''</summary>
@@ -390,7 +273,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPerkembanganKendiri As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminJatiDiri control.
     '''</summary>
@@ -399,7 +282,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminJatiDiri As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPortfolio control.
     '''</summary>
@@ -408,7 +291,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPortfolio As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminAktivitiKounselor control.
     '''</summary>
@@ -417,7 +300,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminAktivitiKounselor As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPengurusanBiasiswa control.
     '''</summary>
@@ -426,16 +309,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanBiasiswa As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminBiasiswa control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminBiasiswa As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminImportEksport control.
     '''</summary>
@@ -444,7 +318,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminImportEksport As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminAlumni control.
     '''</summary>
@@ -453,16 +327,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminAlumni As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''twentytwo control.
+    '''MENU_RESEARCH control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents twentytwo As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_RESEARCH As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminDaftarKajianPelajar control.
     '''</summary>
@@ -471,7 +345,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminDaftarKajianPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminDaftarKajianProjek control.
     '''</summary>
@@ -480,7 +354,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminDaftarKajianProjek As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminDaftarKajianMentor control.
     '''</summary>
@@ -489,7 +363,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminDaftarKajianMentor As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminViewKajian control.
     '''</summary>
@@ -498,16 +372,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminViewKajian As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''four control.
+    '''MENU_EXAMINATION control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents four As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_EXAMINATION As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminKemaskiniMarkah control.
     '''</summary>
@@ -516,16 +390,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminKemaskiniMarkah As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminKemaskiniMarkahKoko control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminKemaskiniMarkahKoko As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPeperiksaanTranskrip control.
     '''</summary>
@@ -534,16 +399,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPeperiksaanTranskrip As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminTranskripRasmi control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminTranskripRasmi As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminImportExport control.
     '''</summary>
@@ -552,34 +408,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminImportExport As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''admin_ExamImport control.
+    '''MENU_PAYMENT control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents admin_ExamImport As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminImport control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminImport As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''five control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents five As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_PAYMENT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminPengurusanPembayaran control.
     '''</summary>
@@ -588,7 +426,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanPembayaran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminTransaksiYuran control.
     '''</summary>
@@ -597,7 +435,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminTransaksiYuran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminSemakYuran control.
     '''</summary>
@@ -606,16 +444,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminSemakYuran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''six control.
+    '''MENU_HOSTEL control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents six As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_HOSTEL As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminPengurusanHostel control.
     '''</summary>
@@ -624,16 +462,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanHostel As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminDaftarAsramaBaru control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminDaftarAsramaBaru As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminPenempatanPelajarAsrama control.
     '''</summary>
@@ -642,16 +471,25 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPenempatanPelajarAsrama As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''nine control.
+    '''adminViewHostel control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents nine As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents adminViewHostel As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''MENU_COCURRICULAR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COCURRICULAR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminPengurusanKokurikulum control.
     '''</summary>
@@ -660,16 +498,16 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminPengurusanKokurikulum As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''seven control.
+    '''MENU_REPORT control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents seven As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_REPORT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminLaporanPeperiksaan control.
     '''</summary>
@@ -678,7 +516,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminLaporanPeperiksaan As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminLaporanPeperiksaanKelas control.
     '''</summary>
@@ -687,7 +525,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminLaporanPeperiksaanKelas As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminLaporanPeperiksaanKursus control.
     '''</summary>
@@ -696,7 +534,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminLaporanPeperiksaanKursus As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminCartaKedudukanPelajar control.
     '''</summary>
@@ -705,7 +543,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminCartaKedudukanPelajar As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminLaporanKehadiran control.
     '''</summary>
@@ -714,7 +552,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminLaporanKehadiran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminLaporanBayaran control.
     '''</summary>
@@ -723,70 +561,34 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminLaporanBayaran As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''adminLaporanUKM1 control.
+    '''adminLaporanUKM1PPCS control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminLaporanUKM1 As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents adminLaporanUKM1PPCS As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
-    '''adminLaporanUKM2 control.
+    '''MENU_ALUMNI control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminLaporanUKM2 As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents MENU_ALUMNI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''adminLaporanUKM3 control.
+    '''MENU_SETTING control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminLaporanUKM3 As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminLaporanPPCS control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminLaporanPPCS As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminLaporanPCIS control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminLaporanPCIS As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''twentythree control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents twentythree As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
-    '''<summary>
-    '''eight control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents eight As Global.System.Web.UI.HtmlControls.HtmlGenericControl
-    
+    Protected WithEvents MENU_SETTING As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
     '''adminMastrerKonfigurasi control.
     '''</summary>
@@ -795,7 +597,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminMastrerKonfigurasi As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminKonfigurasi control.
     '''</summary>
@@ -804,7 +606,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminKonfigurasi As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
     '''adminUserAkses control.
     '''</summary>
@@ -813,52 +615,43 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents adminUserAkses As Global.System.Web.UI.WebControls.HyperLink
-    
+
     '''<summary>
-    '''adminUserLogin control.
+    '''txtstaffName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminUserLogin As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents txtstaffName As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
-    '''adminTutorial control.
+    '''txtcurrentDate control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminTutorial As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents txtcurrentDate As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
-    '''adminKemaskiniProfil control.
+    '''btnTutorial control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminKemaskiniProfil As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents btnTutorial As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
-    '''adminTukarKataLaluan control.
+    '''btnSignOut control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents adminTukarKataLaluan As Global.System.Web.UI.WebControls.HyperLink
-    
-    '''<summary>
-    '''adminLogout control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents adminLogout As Global.System.Web.UI.WebControls.HyperLink
-    
+    Protected WithEvents btnSignOut As Global.System.Web.UI.WebControls.HyperLink
+
     '''<summary>
     '''ContentPlaceHolder1 control.
     '''</summary>
@@ -867,7 +660,7 @@ Partial Public Class admin
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
-    
+
     '''<summary>
     '''hiddenData control.
     '''</summary>

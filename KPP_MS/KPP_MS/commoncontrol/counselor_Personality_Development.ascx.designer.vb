@@ -23,6 +23,15 @@ Partial Public Class counselor_Personality_Development
     Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''ddlProgram control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlProgram As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
     '''ddlLevelnaming control.
     '''</summary>
     '''<remarks>
@@ -50,24 +59,6 @@ Partial Public Class counselor_Personality_Development
     Protected WithEvents ddlExamnaming As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''txtstudent control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents txtstudent As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''btnSearch control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
     '''datRespondent control.
     '''</summary>
     '''<remarks>
@@ -84,13 +75,4 @@ Partial Public Class counselor_Personality_Development
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnSave As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''Btnback control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents Btnback As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

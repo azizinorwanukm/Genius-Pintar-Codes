@@ -14,12 +14,12 @@ Public Class class_transfer
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then
-                Dim id As String = Request.QueryString("admin_ID")
 
-                Dim data As String = oCommon.securityLogin(id)
+                Dim data As String = oCommon.securityLogin(Request.QueryString("admin_ID"))
 
                 If data = "FALSE" Then
                     Response.Redirect("default.aspx")
+
                 ElseIf data = "TRUE" Then
 
                     year_load()
@@ -36,7 +36,7 @@ Public Class class_transfer
 
     Private Sub Page_Load()
         ''student_info
-        strSQL = "select * from setting where Type = 'Year' and Value = '" & Now.Year & "'"
+        strSQL = "SELECT MAX(Parameter) FROM setting WHERE Type = 'Year' "
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -97,7 +97,7 @@ Public Class class_transfer
         If ddl_type.SelectedIndex > 0 Then
             strWhere += " AND class_type = '" & ddl_type.SelectedValue & "'"
 
-            If ddl_type.SelectedValue = "Electives" Then
+            If ddl_type.SelectedValue = "Electives" And ddl_Sem.SelectedIndex > 0 Then
                 strWhere += " AND class_sem = '" & ddl_Sem.SelectedValue & "'"
             End If
         End If
@@ -112,7 +112,7 @@ Public Class class_transfer
 
     Private Sub year_load()
         Try
-            Dim strLevelSql As String = "Select * from setting where Type = 'Year'"
+            Dim strLevelSql As String = "Select Parameter from setting where Type = 'Year'"
             Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
 
             Dim levds As DataSet = New DataSet
@@ -139,7 +139,7 @@ Public Class class_transfer
 
     Private Sub student_year_load()
         Try
-            Dim strLevelSql As String = "Select * from setting where Type = 'Level'"
+            Dim strLevelSql As String = "Select Parameter from setting where Type = 'Level'"
             Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
 
             Dim levds As DataSet = New DataSet
@@ -166,7 +166,7 @@ Public Class class_transfer
             sqlLevelDA.Fill(levds, "LevTable")
 
             ddl_Sem.DataSource = levds
-            ddl_Sem.DataValueField = "Parameter"
+            ddl_Sem.DataValueField = "Value"
             ddl_Sem.DataTextField = "Parameter"
             ddl_Sem.DataBind()
             ddl_Sem.Items.Insert(0, New ListItem("Select Semester", String.Empty))
@@ -179,7 +179,7 @@ Public Class class_transfer
 
     Private Sub subject_type_load()
         Try
-            Dim strLevelSql As String = "select * from setting where Type = 'Class Type'"
+            Dim strLevelSql As String = "select Parameter from setting where Type = 'Class Type'"
             Dim sqlLevelDA As New SqlDataAdapter(strLevelSql, objConn)
 
             Dim levds As DataSet = New DataSet
@@ -323,8 +323,18 @@ Public Class class_transfer
                                 errorCount = 2
                             End If
                         End Using
+                    End If
 
-                    Else
+                    If ddl_type.SelectedValue = "Compulsory" Then
+
+                        Dim go_checking_permata As String = "select Kelas from koko_kelas where Tahun = '" & ddlyear_Transfer.SelectedValue & "' and Kelas = '" & get_new_className & "'"
+                        Dim go_confirm_permata As String = oCommon.getFieldValue_Permata(go_checking_permata)
+
+                        If go_confirm.Length = 0 Then
+                            ''Insert into koko_kelas in permatapintar database
+                            strSQL = "insert into koko_kelas(Kelas,Tahun) values('" & get_new_className & "','" & ddlyear_Transfer.SelectedValue & "')"
+                            strRet = oCommon.ExecuteSQLPermata(strSQL)
+                        End If
 
                     End If
                 End If

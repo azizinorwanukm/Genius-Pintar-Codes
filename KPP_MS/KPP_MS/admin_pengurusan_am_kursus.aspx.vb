@@ -58,13 +58,6 @@ Public Class admin_pengurusan_am_kursus
         ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
     End Sub
 
-    Private Sub btnRegNewCourse_ServerClick(sender As Object, e As EventArgs) Handles btnRegNewCourse.ServerClick
-        Try
-            Response.Redirect("admin_daftar_kursus_baru.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-        Catch ex As Exception
-        End Try
-    End Sub
-
     Public Enum MessageType
         Success
         [Error]

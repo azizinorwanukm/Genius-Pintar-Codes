@@ -17,6 +17,8 @@ Public Class pengarah_laporan_peperiksaan_table
             If Not IsPostBack Then
 
                 year_list()
+                campus_list()
+                program_list()
                 exam_list()
                 student_level()
                 strRet = BindData(datRespondent)
@@ -94,9 +96,73 @@ Public Class pengarah_laporan_peperiksaan_table
         End Try
     End Sub
 
+    Private Sub campus_list()
+        If Session("SchoolCampus") = "APP" Then
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' and Value = 'APP'"
+        Else
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Pusat Campus' "
+        End If
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlCampus.DataSource = ds
+            ddlCampus.DataTextField = "Parameter"
+            ddlCampus.DataValueField = "Value"
+            ddlCampus.DataBind()
+            ddlCampus.Items.Insert(0, New ListItem("Select Institutions", String.Empty))
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub program_list()
+        If ddlCampus.SelectedValue = "APP" Then
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' and Value = 'PS'"
+        Else
+            strSQL = "SELECT Parameter, Value FROM setting WHERE Type='Stream' "
+        End If
+
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlProgram.DataSource = ds
+            ddlProgram.DataTextField = "Parameter"
+            ddlProgram.DataValueField = "Value"
+            ddlProgram.DataBind()
+            ddlProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
     Private Sub student_level()
         Try
-            strSQL = "SELECT Parameter FROM setting WHERE Type = 'Level'"
+
+            strSQL = "Select exam_Name from exam_info where exam_ID = '" & ddlExam.SelectedValue & "'"
+            Dim get_ExamName As String = oCommon.getFieldValue(strSQL)
+
+            If get_ExamName = "Exam 1" Or get_ExamName = "Exam 2" Or get_ExamName = "Exam 3" Or get_ExamName = "Exam 4" Then
+                strSQL = "SELECT Parameter FROM setting WHERE Type = 'Level' and (Parameter = 'Foundation 1' or Parameter = 'Level 1')"
+            ElseIf get_ExamName = "Exam 5" Or get_ExamName = "Exam 6" Or get_ExamName = "Exam 7" Or get_ExamName = "Exam 8" Then
+                strSQL = "SELECT Parameter FROM setting WHERE Type = 'Level' and (Parameter = 'Foundation 2' or Parameter = 'Level 2')"
+            ElseIf get_ExamName = "Exam 9" Or get_ExamName = "Exam 10" Or get_ExamName = "Exam 11" Or get_ExamName = "Exam 12" Then
+                strSQL = "SELECT Parameter FROM setting WHERE Type = 'Level' and Parameter = 'Foundation 3'"
+            End If
 
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
@@ -117,8 +183,7 @@ Public Class pengarah_laporan_peperiksaan_table
     Private Sub exam_list()
 
         Try
-
-            strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "'"
+            strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "' order by exam_Name asc"
 
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
@@ -142,18 +207,19 @@ Public Class pengarah_laporan_peperiksaan_table
         Dim strSelect As String = ""
         Dim strWhere As String = ""
         Dim strGroupby As String = ""
-        Dim strOrderby As String = " ORDER BY 'Total GPA' DESC"
+        Dim strOrderby As String = " ORDER BY 'CGPA' DESC"
 
         Dim examData As String = "select exam_Name from exam_info where exam_ID = '" & ddlExam.SelectedValue & "'"
         Dim getExam As String = oCommon.getFieldValue(examData)
 
         strSelect = "SELECT
                     course.std_ID,
-                    student_info.student_Name,
-                    student_info.student_Mykad,
+                    UPPER(student_info.student_Name) student_Name,
+                    student_info.student_ID,
                     class_info.class_Name,
                     SUM(grade_info.gpa * subject_info.subject_CreditHour) AS 'gpa X credithour',
-                    student_Png.pngs as 'Total GPA'
+                    student_Png.png as 'GPA',
+                    student_Png.pngs as 'CGPA'
                     FROM
                     exam_result
                     LEFT JOIN course ON exam_result.course_ID = course.course_ID
@@ -163,13 +229,13 @@ Public Class pengarah_laporan_peperiksaan_table
                     LEFT JOIN class_info ON course.class_ID = class_info.class_ID
                     Left Join student_Png on student_info.std_ID = student_Png.std_ID"
 
-        strWhere = " WHERE exam_result.exam_ID = '" & ddlExam.SelectedValue & "'
-                    and student_Png.exam_Name = '" & getExam & "'
+        strWhere = " WHERE exam_result.exam_ID = '" & ddlExam.SelectedValue & "' and student_info.student_Stream = '" & ddlProgram.SelectedValue & "' and student_info.student_Campus = '" & ddlCampus.SelectedValue & "'
+                    and student_Png.exam_Name = '" & getExam & "' and class_info.course_Program = '" & ddlProgram.SelectedValue & "' and class_info.class_Campus = '" & ddlCampus.SelectedValue & "'
                     and class_info.class_year = '" & ddlYear.SelectedValue & "'
                     and student_png.year = '" & ddlYear.SelectedValue & "'
                     and course.year = '" & ddlYear.SelectedValue & "'
                     and subject_info.subject_year = '" & ddlYear.SelectedValue & "'
-                    and class_info.class_type = 'Compulsory'"
+                    and class_info.class_type = 'Compulsory' and (student_info.student_status = 'Access' or student_info.student_status = 'Graduate') and student_info.student_ID is not null and student_info.student_ID <> '' and (student_info.student_ID like '%M%' or student_info.student_ID like '%P%') "
 
         If ddlLevel.SelectedValue <> "" Then
             strWhere += " and class_info.class_level = '" & ddlLevel.SelectedValue & "' "
@@ -177,9 +243,10 @@ Public Class pengarah_laporan_peperiksaan_table
 
         strGroupby = " GROUP BY
                         course.std_ID,
-                        student_info.student_Name,
-                        student_info.student_Mykad,
+                        student_Name,
+                        student_info.student_ID,
                         class_info.class_Name,
+                        student_Png.png,
                         student_Png.pngs"
 
         getSQL = strSelect & strWhere & strGroupby & strOrderby
@@ -212,7 +279,7 @@ Public Class pengarah_laporan_peperiksaan_table
 
         For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
 
-            Dim gpaCount As Label = datRespondent.Rows(i).FindControl("GPA")
+            Dim gpaCount As Label = datRespondent.Rows(i).FindControl("CGPA")
 
             If gpaCount.Text = 4.0 Then
 
@@ -308,14 +375,28 @@ Public Class pengarah_laporan_peperiksaan_table
 
     Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs)
         exam_list()
+        student_level()
+        strRet = BindData(datRespondent)
+        graphFunction()
+    End Sub
+
+    Protected Sub ddlCampus_SelectedIndexChanged(sender As Object, e As EventArgs)
+        program_list()
+        exam_list()
+        student_level()
+        strRet = BindData(datRespondent)
+        graphFunction()
+    End Sub
+
+    Protected Sub ddlProgram_SelectedIndexChanged(sender As Object, e As EventArgs)
+        exam_list()
+        student_level()
         strRet = BindData(datRespondent)
         graphFunction()
     End Sub
 
     Protected Sub ddlExam_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-        strSQL = "SELECT exam_Name FROM exam_Info WHERE exam_ID = '" & ddlExam.SelectedValue & "'"
-        lblExamination.Text = oCommon.getFieldValue(strSQL)
+        student_level()
         strRet = BindData(datRespondent)
         graphFunction()
     End Sub
@@ -325,7 +406,7 @@ Public Class pengarah_laporan_peperiksaan_table
         graphFunction()
     End Sub
 
-    Private Sub BtnExport_ServerClick(sender As Object, e As EventArgs) Handles BtnExport.ServerClick
+    Private Sub BtnExport_ServerClick(sender As Object, e As EventArgs) Handles btnExport.ServerClick
         ExportToCSV(getSQL)
     End Sub
 

@@ -561,49 +561,44 @@ Public Class admin_peperiksaan_popup
         ''first column
         Test.Append("<div style='margin:0;page-break-after: always; color:black; '><font size='1'>
                                         <table style='width:100%'>
-                                            <tr style='width:100%'> 
-                                                <table>
-                                                    <tr style='width:100%'>
-                                                        <td style='width:15%'>
-                                                            <img src='img/permata_logo.png' height='34' width='90'>
-                                                        </td>
-                                                        <td style='width:2%'> <p></p> </td>
-                                                        <td style='width:15%'>
-                                                            <img src='img/ukm.jpg'  height='34' width='90'>
-                                                        </td>
-                                                        <td style='width:68%'>
-                                                            <P></p>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </tr>
-                                            <tr>    
-                                                <td>
-                                                    <p></p>
+                                            <tr style='width:100%'>
+                                                <td style='width:100%'>
+                                                    <table tyle='width:100%'>
+                                                        <tr style='width:100%'>
+                                                            <td>
+                                                                <img src='img/ukm.jpg'  height='56' width='120'>
+                                                                &nbsp;
+                                                                <img src='img/logo genius pintar.png' height='62' width='120'>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                 </td>
-                                                <table>
-                                                    <tr style='width:100%'>
-                                                        <td style='width:15%'> Nama </td>
-                                                        <td style='width:5%'></td>
-                                                        <td style='width:80%'>: " & dataStdName & "</td>
-                                                    </tr>     
-                                                    <tr style='width:100%'>
-                                                        <td style='width:15%'> No Kad Pengenalan </td>
-                                                        <td style='width:5%'></td>
-                                                        <td style='width:80%'>: " & dataStdMykad & "</td>
-                                                    </tr>     
-                                                    <tr style='width:100%'>
-                                                        <td style='width:15%'> No Kad Matrik </td>
-                                                        <td style='width:5%'></td>
-                                                        <td style='width:80%'>: " & dataStdID & "</td>
-                                                    </tr>  
-                                                    <tr style='width:100%'>
-                                                        <td style='width:15%'> Peperiksaan </td>
-                                                        <td style='width:5%'></td>
-                                                        <td style='width:80%'>: " & dataExmName & "</td>
-                                                    </tr>
-                                                </table>                                                                                    
-                                            </tr>   
+                                            </tr>
+                                            <tr style='width:100%'>    
+                                                <td style='width:100%'>
+                                                    <table style='width:100%'>
+                                                        <tr style='width:100%'>
+                                                            <td style='width:10%'> Nama</td>
+                                                            <td style='width:90%'>: " & dataStdName & "</td>
+                                                        </tr>     
+                                                        <tr style='width:100%'>
+                                                            <td style='width:10%'> MYKAD </td>
+                                                            <td style='width:90%'>: " & dataStdMykad & "</td>
+                                                        </tr>     
+                                                        <tr style='width:100%'>
+                                                            <td style='width:10%'> ID Pelajar </td>
+                                                            <td style='width:90%'>: " & dataStdID & "</td>
+                                                        </tr>  
+                                                        <tr style='width:100%'>
+                                                            <td style='width:10%'> Peperiksaan </td>
+                                                            <td style='width:90%'>: " & dataExmName & "</td>
+                                                        </tr>
+                                                    </table>    
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <table style='width:100%; padding-top:5px'>
                                             <tr>
                                                 <td>
                                                     <p></p>
@@ -633,7 +628,7 @@ Public Class admin_peperiksaan_popup
         Next
 
         Dim get_ENG_KOD As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
         Dim data_ENGLITERATURE_KOD As String = oCommon.getFieldValue(get_ENG_KOD)
 
         If data_ENGLITERATURE_KOD.Length > 0 Then
@@ -665,7 +660,7 @@ Public Class admin_peperiksaan_popup
         Next
 
         Dim get_ENG_NAMA As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
         Dim data_ENGLITERATURE_NAMA As String = oCommon.getFieldValue(get_ENG_NAMA)
 
         If data_ENGLITERATURE_NAMA.Length > 0 Then
@@ -691,7 +686,7 @@ Public Class admin_peperiksaan_popup
         Next
 
         Dim get_ENG_Grade As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                      where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
+                                                      where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
         Dim data_ENGLITERATURE_Grade As String = oCommon.getFieldValue(get_ENG_Grade)
 
         If data_ENGLITERATURE_Grade.Length > 0 Then
@@ -723,7 +718,7 @@ Public Class admin_peperiksaan_popup
         Next
 
         Dim get_ENG_Png As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                      where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
+                                                      where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
         Dim data_ENGLITERATURE_Png As String = oCommon.getFieldValue(get_ENG_Png)
 
         If data_ENGLITERATURE_Png.Length > 0 Then
@@ -755,7 +750,7 @@ Public Class admin_peperiksaan_popup
         Next
 
         Dim get_ENG_HOUR As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
         Dim data_ENGLITERATURE_HOUR As String = oCommon.getFieldValue(get_ENG_HOUR)
 
         If data_ENGLITERATURE_HOUR.Length > 0 Then
@@ -787,7 +782,7 @@ Public Class admin_peperiksaan_popup
         Next
 
         Dim get_ENG_TOTAL As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & get_year & "' and course.std_ID = '" & get_stdID & "'"
         Dim data_ENGLITERATURE_TOTAL As String = oCommon.getFieldValue(get_ENG_TOTAL)
 
         If data_ENGLITERATURE_TOTAL.Length > 0 Then

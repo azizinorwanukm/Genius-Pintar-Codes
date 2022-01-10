@@ -13,28 +13,50 @@ Public Class Disiplin_config
     Dim oDes As New Simple3Des("p@ssw0rd1")
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
         Try
             If Not IsPostBack Then
-                Dim id As String = ""
 
-                category_list()
-                strRet = BindData(datRespondent)
+                Dim getStatus As String = Request.QueryString("status")
+
+                If getStatus = "VD" Then ''View Discipline
+                    txtbreadcrum1.Text = "View Discipline"
+                    ViewDiscipline.Visible = True
+                    RegisterDiscipline.Visible = False
+
+                    btnViewDiscipline.Attributes("class") = "btn btn-info"
+                    btnRegisterDiscipline.Attributes("class") = "btn btn-default font"
+
+                    category_list()
+                    strRet = BindData(datRespondent)
+
+                ElseIf getStatus = "RD" Then ''Register Discipline
+                    txtbreadcrum1.Text = "Register Discipline"
+                    ViewDiscipline.Visible = False
+                    RegisterDiscipline.Visible = True
+
+                    btnViewDiscipline.Attributes("class") = "btn btn-default font"
+                    btnRegisterDiscipline.Attributes("class") = "btn btn-info"
+
+                    category_list()
+
+                End If
 
             End If
         Catch ex As Exception
-
         End Try
-
 
     End Sub
 
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_login_berjaya.aspx?admin_ID=" + Request.QueryString("admin_ID"))
+    Private Sub btnViewDiscipline_ServerClick(sender As Object, e As EventArgs) Handles btnViewDiscipline.ServerClick
+        Response.Redirect("admin_config_disiplin.aspx?admin_ID=" + Request.QueryString("admin_ID") + "&status=VD")
+    End Sub
+
+    Private Sub btnRegisterDiscipline_ServerClick(sender As Object, e As EventArgs) Handles btnRegisterDiscipline.ServerClick
+        Response.Redirect("admin_config_disiplin.aspx?admin_ID=" + Request.QueryString("admin_ID") + "&status=RD")
     End Sub
 
     Private Sub category_list()
-        strSQL = "SELECT * from setting where Type = 'Discipline'"
+        strSQL = "SELECT * from setting where Type = 'Discipline' order by ID DESC"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -43,65 +65,22 @@ Public Class Disiplin_config
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
+            ddlCaseCategory.DataSource = ds
+            ddlCaseCategory.DataTextField = "Parameter"
+            ddlCaseCategory.DataValueField = "Value"
+            ddlCaseCategory.DataBind()
+            ddlCaseCategory.Items.Insert(0, New ListItem("Select Category", String.Empty))
+
             ddlCategory.DataSource = ds
             ddlCategory.DataTextField = "Parameter"
             ddlCategory.DataValueField = "Value"
             ddlCategory.DataBind()
             ddlCategory.Items.Insert(0, New ListItem("Select Category", String.Empty))
-            ddlCategory.SelectedIndex = 0
-
         Catch ex As Exception
 
         Finally
             objConn.Dispose()
         End Try
-    End Sub
-
-    Private Sub btnsimpan_serverClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
-        Dim errorCount As Integer = 0
-
-        If case_Name.Text <> "" Then
-
-            If ddlCategory.SelectedIndex = 0 Or ddlCategory.SelectedValue <> "" Then
-
-                Using STDDATA As New SqlCommand("INSERT INTO case_info(case_Name,case_Category,case_MeritDemerit_Point) values 
-                                ('" & case_Name.Text & "','" & ddlCategory.SelectedValue & "','" & txt_MeritDemerit.Text & "')", objConn)
-                    objConn.Open()
-                    Dim i = STDDATA.ExecuteNonQuery()
-                    objConn.Close()
-                    If i <> 0 Then
-                        errorCount = 0 '' Success
-                    Else
-                        errorCount = 1 ''
-
-                    End If
-                End Using
-
-            Else
-                errorCount = 3 ''Category 
-            End If
-        Else
-            errorCount = 4 '' case name
-        End If
-
-        If errorCount = 0 Then
-            Response.Redirect("admin_config_disiplin.aspx?result=1&admin_ID=" + Request.QueryString("admin_ID"))
-        ElseIf errorCount = 1 Then
-            Response.Redirect("admin_config_disiplin.aspx?result=-1&admin_ID=" + Request.QueryString("admin_ID"))
-        ElseIf errorCount = 3 Then
-            Response.Redirect("admin_config_disiplin.aspx?result=3&admin_ID=" + Request.QueryString("admin_ID"))
-        ElseIf errorCount = 4 Then
-            Response.Redirect("admin_config_disiplin.aspx?result=4&admin_ID=" + Request.QueryString("admin_ID"))
-
-
-        End If
-        strRet = BindData(datRespondent)
-    End Sub
-
-    Private Sub datRespondent_PageIndexChanging(sender As Object, e As GridViewPageEventArgs) Handles datRespondent.PageIndexChanging
-        datRespondent.PageIndex = e.NewPageIndex
-        strRet = BindData(datRespondent)
-
     End Sub
 
     Private Function BindData(ByVal gvTable As GridView) As Boolean
@@ -117,119 +96,101 @@ Public Class Disiplin_config
             objConn.Close()
 
         Catch ex As Exception
-
             Return False
-
         End Try
-
         Return True
-
-
-    End Function
-
-    Public Function getFieldValue(ByVal sql_plus As String, ByVal MyConnection As String) As String
-
-        If sql_plus.Length = 0 Then
-            Return "0"
-        End If
-        Dim conn As SqlConnection = New SqlConnection(MyConnection)
-        Dim sqlAdapter As New SqlDataAdapter(sql_plus, conn)
-        Dim strvalue As String = ""
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlAdapter.Fill(ds, "AnyTable")
-
-            If ds.Tables(0).Rows.Count > 0 Then
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item(0).ToString) Then
-                    strvalue = ds.Tables(0).Rows(0).Item(0).ToString
-                Else
-                    Return "0"
-                End If
-            End If
-        Catch ex As Exception
-            Return "0"
-        Finally
-            conn.Dispose()
-        End Try
-        Return strvalue
-
-
     End Function
 
     Private Function getSQL() As String
 
         Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = "ORDER by case_info.case_id ASC"
+        Dim strOrderby As String = " ORDER by case_info.case_MeritDemerit_Point ASC"
 
-        tmpSQL = "select * from case_info "
+        tmpSQL = "select * from case_info where case_Category = '" & ddlCaseCategory.SelectedValue & "'"
 
         getSQL = tmpSQL & strOrderby
         Return getSQL
     End Function
 
-    Protected Sub datrespondent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondent.RowEditing
-        Try
-            datRespondent.EditIndex = e.NewEditIndex
-            strRet = BindData(datRespondent)
-        Catch ex As Exception
-
-        End Try
-    End Sub
-
-    Protected Sub datrespondent_rowcancelingEdit(sender As Object, e As GridViewCancelEditEventArgs) Handles datRespondent.RowCancelingEdit
-        datRespondent.EditIndex = -1
-        strRet = BindData(datRespondent)
-    End Sub
 
     Protected Sub datRespondent_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles datRespondent.RowDeleting
 
-        Dim strKeyName As String = datRespondent.DataKeys(e.RowIndex).Value
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim strKeyName As String = datRespondent.DataKeys(e.RowIndex).Value.ToString
 
         Try
-            Dim Myconnection As SqlConnection = New SqlConnection(strConn)
-            Dim dlt_ClassData As New SqlDataAdapter()
+            Dim MyConnection As SqlConnection = New SqlConnection(strConn)
+            Dim Dlt_ClassData As New SqlDataAdapter()
+            Dim dlt_Class As String
 
-            Dim dlt_class As String
-
-            dlt_ClassData.SelectCommand = New SqlCommand()
-            dlt_ClassData.SelectCommand.Connection = Myconnection
-            dlt_ClassData.SelectCommand.CommandText = "delete case_info where case_id = '" & strKeyName & "'"
-
-            Myconnection.Open()
-            dlt_class = dlt_ClassData.SelectCommand.ExecuteScalar()
-            Response.Redirect("admin_config_disiplin.aspx?result=7&admin_ID=" + Request.QueryString("admin_ID"))
-            Myconnection.Close()
+            Dlt_ClassData.SelectCommand = New SqlCommand()
+            Dlt_ClassData.SelectCommand.Connection = MyConnection
+            Dlt_ClassData.SelectCommand.CommandText = "delete case_info where case_id = '" & strKeyName & "'"
+            MyConnection.Open()
+            dlt_Class = Dlt_ClassData.SelectCommand.ExecuteScalar()
+            MyConnection.Close()
 
             strRet = BindData(datRespondent)
-
-
         Catch ex As Exception
-
         End Try
-
     End Sub
 
-    Protected Sub datRespondent_RowUpdating(sender As Object, e As GridViewUpdateEventArgs) Handles datRespondent.RowUpdating
-        Dim strkeyID As String = datRespondent.DataKeys(e.RowIndex).Value
-
-        Dim case_box As TextBox = datRespondent.Rows(e.RowIndex).FindControl("case_box")
-        Dim category_box As TextBox = datRespondent.Rows(e.RowIndex).FindControl("category_box")
-        Dim txt_CasePoint As TextBox = datRespondent.Rows(e.RowIndex).FindControl("txt_CasePoint")
-
+    Private Sub datRespondent_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles datRespondent.RowEditing
+        Dim strKeyCode As String = datRespondent.DataKeys(e.NewEditIndex).Value.ToString
         Try
-            strSQL = "update case_info set case_Name ='" + case_box.Text + "', case_Category = '" + category_box.Text + "', case_MeritDemerit_Point = '" + txt_CasePoint.Text + "' where case_ID = '" & strkeyID & "'"
-            strRet = oCommon.ExecuteSQL(strSQL)
-            If strRet = "0" Then
-                Response.Redirect("admin_config_disiplin.aspx?result=5&admin_ID=" + Request.QueryString("admin_ID"))
-            Else
-                Response.Redirect("admin_config_disiplin.aspx?result=6&admin_ID=" + Request.QueryString("admin_ID"))
-            End If
+            Response.Redirect("admin_config_disiplin_kemaskini.aspx?case_ID=" + strKeyCode + "&admin_ID=" + Request.QueryString("admin_ID"))
         Catch ex As Exception
-
+            ''lblMsg.Text = "System Error: " & ex.Message
         End Try
-        datRespondent.EditIndex = -1
-        strRet = BindData(datRespondent)
     End Sub
+
+    Protected Sub ddlCaseCategory_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlCaseCategory.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
+    End Sub
+
+    Private Sub btnUpdate_ServerClick(sender As Object, e As EventArgs) Handles btnUpdate.ServerClick
+
+        If txtCase_Name.Text.Length > 0 Then
+
+            If ddlCategory.SelectedIndex > 0 Then
+
+                If txtDemerit_Point.Text.Length > 0 Then
+
+                    Using STDDATA As New SqlCommand("INSERT INTO case_info(case_Name,case_Category,case_MeritDemerit_Point) values ('" & oCommon.FixSingleQuotes(txtCase_Name.Text) & "','" & ddlCategory.SelectedValue & "','" & txtDemerit_Point.Text & "')", objConn)
+                        objConn.Open()
+                        Dim i = STDDATA.ExecuteNonQuery()
+                        objConn.Close()
+
+                        If i <> 0 Then
+                            ShowMessage("Add New Discipline", MessageType.Success)
+                        Else
+                            ShowMessage("Unsuccessful Add New Discipline", MessageType.Error)
+                        End If
+                    End Using
+
+                Else
+                    ShowMessage("Please Fill In Demerit Point", MessageType.Error)
+                End If
+            Else
+                ShowMessage("Please Select Category", MessageType.Error)
+            End If
+        Else
+            ShowMessage("Please Fill In Case Name", MessageType.Error)
+        End If
+    End Sub
+
+    Protected Sub ShowMessage(Message As String, type As MessageType)
+        ScriptManager.RegisterStartupScript(Me, Me.[GetType](), System.Guid.NewGuid().ToString(), "ShowMessage('" & Message & "','" & type.ToString() & "');", True)
+    End Sub
+
+    Public Enum MessageType
+        Success
+        [Error]
+    End Enum
 
 End Class
+

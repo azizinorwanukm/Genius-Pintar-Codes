@@ -17,9 +17,7 @@ Public Class exam_Create
                 examName_List()
                 examYear_List()
 
-                exam_Code.Text = ""
-                exam_StartDate.Text = ""
-                exam_EndDate.Text = ""
+                previousPage.NavigateUrl = String.Format("~/admin_peperiksaan_pengurusan_peperiksaan.aspx?admin_ID=" + Request.QueryString("admin_ID"))
             End If
 
         Catch ex As Exception
@@ -36,11 +34,11 @@ Public Class exam_Create
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-            ddlExam_Name.DataSource = ds
-            ddlExam_Name.DataTextField = "Parameter"
-            ddlExam_Name.DataValueField = "Parameter"
-            ddlExam_Name.DataBind()
-            ddlExam_Name.Items.Insert(0, New ListItem("Select Exam Name", "0"))
+            ddlExamName.DataSource = ds
+            ddlExamName.DataTextField = "Parameter"
+            ddlExamName.DataValueField = "Parameter"
+            ddlExamName.DataBind()
+            ddlExamName.Items.Insert(0, New ListItem("Select Examination", String.Empty))
 
         Catch ex As Exception
 
@@ -59,11 +57,11 @@ Public Class exam_Create
             Dim ds As DataSet = New DataSet
             sqlDA.Fill(ds, "AnyTable")
 
-            ddlExam_Year.DataSource = ds
-            ddlExam_Year.DataTextField = "Parameter"
-            ddlExam_Year.DataValueField = "Parameter"
-            ddlExam_Year.DataBind()
-            ddlExam_Year.Items.Insert(0, New ListItem("Select Year", "0"))
+            ddlExamYear.DataSource = ds
+            ddlExamYear.DataTextField = "Parameter"
+            ddlExamYear.DataValueField = "Parameter"
+            ddlExamYear.DataBind()
+            ddlExamYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
 
         Catch ex As Exception
 
@@ -72,24 +70,20 @@ Public Class exam_Create
         End Try
     End Sub
 
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
-        Response.Redirect("admin_peperiksaan_pengurusan_peperiksaan.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-    End Sub
+    Private Sub btnUpdate_ServerClick(sender As Object, e As EventArgs) Handles btnUpdate.ServerClick
 
-    Private Sub BtnSimpan_ServerClick(sender As Object, e As EventArgs) Handles Btnsimpan.ServerClick
+        If ddlExamName.SelectedIndex > 0 Then
 
-        If ddlExam_Name.SelectedValue <> "0" Then
+            If txtExamCode.Text.Length > 0 Then
 
-            If exam_Code.Text <> "" And Regex.IsMatch(exam_Code.Text, "^[A-Za-z0-9]+$") Then
+                If ddlExamYear.SelectedIndex > 0 Then
 
-                If ddlExam_Year.SelectedValue <> "0" Then
+                    If txtStartDate.Text <> "" And Regex.IsMatch(txtStartDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
 
-                    If exam_StartDate.Text <> "" And Regex.IsMatch(exam_StartDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
-
-                        If exam_EndDate.Text <> "" And Regex.IsMatch(exam_EndDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
+                        If txtEndDate.Text <> "" And Regex.IsMatch(txtEndDate.Text, "(((0|1)[0-9]|2[0-9]|3[0-1])\/(0[1-9]|1[0-2])\/((19|20)\d\d))$") Then
 
                             'Insert new exam in exam_Info
-                            Using PJGDATA As New SqlCommand("INSERT into exam_Info(exam_Name,exam_Code,exam_Year,exam_StartDate,exam_EndDate) values ('" & ddlExam_Name.SelectedValue & "','" & exam_Code.Text & "','" & ddlExam_Year.SelectedValue & "','" & exam_StartDate.Text & "','" & exam_EndDate.Text & "')", objConn)
+                            Using PJGDATA As New SqlCommand("INSERT into exam_Info(exam_Name,exam_Code,exam_Year,exam_StartDate,exam_EndDate) values ('" & ddlExamName.SelectedValue & "','" & txtExamCode.Text & "','" & ddlExamYear.SelectedValue & "','" & txtStartDate.Text & "','" & txtEndDate.Text & "')", objConn)
                                 objConn.Open()
                                 Dim i = PJGDATA.ExecuteNonQuery()
                                 objConn.Close()
@@ -101,113 +95,113 @@ Public Class exam_Create
                             End Using
 
                             ''print exam name
-                            If ddlExam_Name.SelectedValue = "Exam 1" Or ddlExam_Name.SelectedValue = "Exam 2" Then
+                            If ddlExamName.SelectedValue = "Exam 1" Or ddlExamName.SelectedValue = "Exam 2" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join student_level on course.std_ID = student_level.std_ID 
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and student_level.student_Level != 'Level 2' and student_level.student_Level != 'Foundation 2' and student_level.student_Level != 'Foundation 3' and student_level.student_Sem = 'Sem 1' and student_level.year = '" & ddlExam_Year.SelectedValue & "' order by course_ID ASC ", objConn)
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and student_level.student_Level != 'Level 2' and student_level.student_Level != 'Foundation 2' and student_level.student_Level != 'Foundation 3' and student_level.student_Sem = 'Sem 1' and student_level.year = '" & ddlExamYear.SelectedValue & "' order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
                                 End Using
 
-                            ElseIf ddlExam_Name.SelectedValue = "Exam 3" Or ddlExam_Name.SelectedValue = "Exam 4" Then
+                            ElseIf ddlExamName.SelectedValue = "Exam 3" Or ddlExamName.SelectedValue = "Exam 4" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear != 'Level 2' 
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear != 'Level 2' 
                                                                  and subject_info.subject_StudentYear != 'Foundation 2' and subject_info.subject_StudentYear != 'Foundation 3' 
-                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExam_Year.SelectedValue & "'  order by course_ID ASC ", objConn)
+                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExamYear.SelectedValue & "'  order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
                                 End Using
 
-                            ElseIf ddlExam_Name.SelectedValue = "Exam 5" Or ddlExam_Name.SelectedValue = "Exam 6" Then
+                            ElseIf ddlExamName.SelectedValue = "Exam 5" Or ddlExamName.SelectedValue = "Exam 6" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join student_level on course.std_ID = student_level.std_ID 
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and student_level.student_Level != 'Level 1' and student_level.year = '" & ddlExam_Year.SelectedValue & "' and student_level.student_Level != 'Foundation 1' and student_level.student_Level != 'Foundation 3' and student_level.student_Sem = 'Sem 1' order by course_ID ASC ", objConn)
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and student_level.student_Level != 'Level 1' and student_level.year = '" & ddlExamYear.SelectedValue & "' and student_level.student_Level != 'Foundation 1' and student_level.student_Level != 'Foundation 3' and student_level.student_Sem = 'Sem 1' order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
                                 End Using
 
-                            ElseIf ddlExam_Name.SelectedValue = "Exam 7" Then
+                            ElseIf ddlExamName.SelectedValue = "Exam 7" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear != 'Level 1' 
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear != 'Level 1' 
                                                                  and subject_info.subject_StudentYear != 'Foundation 1' and subject_info.subject_StudentYear != 'Foundation 3' 
-                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExam_Year.SelectedValue & "'  order by course_ID ASC ", objConn)
+                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExamYear.SelectedValue & "'  order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
                                 End Using
 
-                            ElseIf ddlExam_Name.SelectedValue = "Exam 8" Then
+                            ElseIf ddlExamName.SelectedValue = "Exam 8" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear != 'Level 1' and subject_info.subject_StudentYear != 'Level 2' 
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear != 'Level 1' and subject_info.subject_StudentYear != 'Level 2' 
                                                                  and subject_info.subject_StudentYear != 'Foundation 1' and subject_info.subject_StudentYear != 'Foundation 3' 
-                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExam_Year.SelectedValue & "'  order by course_ID ASC ", objConn)
+                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExamYear.SelectedValue & "'  order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
                                 End Using
 
-                            ElseIf ddlExam_Name.SelectedValue = "Exam 9" Or ddlExam_Name.SelectedValue = "Exam 10" Then
+                            ElseIf ddlExamName.SelectedValue = "Exam 9" Or ddlExamName.SelectedValue = "Exam 10" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join student_level on course.ID = student_level.ID 
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and student_level.student_Level = 'Foundation 3' and student_level.year = '" & ddlExam_Year.SelectedValue & "' and student_level.student_Sem = 'Sem 1' order by course_ID ASC ", objConn)
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and student_level.student_Level = 'Foundation 3' and student_level.year = '" & ddlExamYear.SelectedValue & "' and student_level.student_Sem = 'Sem 1' order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
                                 End Using
 
-                            ElseIf ddlExam_Name.SelectedValue = "Exam 11" Or ddlExam_Name.SelectedValue = "Exam 12" Then
+                            ElseIf ddlExamName.SelectedValue = "Exam 11" Or ddlExamName.SelectedValue = "Exam 12" Then
 
                                 ''get exam id
-                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExam_Name.SelectedValue & "' and exam_Year = '" & ddlExam_Year.SelectedValue & "'"
+                                Dim exmID As String = "select exam_ID from exam_Info where exam_Name = '" & ddlExamName.SelectedValue & "' and exam_Year = '" & ddlExamYear.SelectedValue & "'"
                                 Dim dataexmID As String = getFieldValue(exmID, strConn)
 
                                 'Insert student taking exam at exam_result
                                 Using PJGDATA As New SqlCommand("INSERT into exam_result(exam_ID,course_ID) 
                                                                  select '" & dataexmID & "',course_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                                 where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 3' 
-                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExam_Year.SelectedValue & "'  order by course_ID ASC ", objConn)
+                                                                 where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 3' 
+                                                                 and subject_info.subject_sem = 'Sem 2' and subject_info.subject_year = '" & ddlExamYear.SelectedValue & "'  order by course_ID ASC ", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
@@ -220,16 +214,16 @@ Public Class exam_Create
                                                                      left join course B on A.course_ID = B.course_ID
                                                                      left join subject_info C on B.subject_Id = C.subject_id
                                                                      left join exam_info D on A.exam_ID = D.exam_ID
-                                                                     where B.year = '" & ddlExam_Year.SelectedValue & "'
-                                                                     and C.subject_year = '" & ddlExam_Year.SelectedValue & "'
-                                                                     and D.exam_Year = '" & ddlExam_Year.SelectedValue & "'
-                                                                     and D.exam_Name = '" & ddlExam_Name.SelectedValue & "'
+                                                                     where B.year = '" & ddlExamYear.SelectedValue & "'
+                                                                     and C.subject_year = '" & ddlExamYear.SelectedValue & "'
+                                                                     and D.exam_Year = '" & ddlExamYear.SelectedValue & "'
+                                                                     and D.exam_Name = '" & ddlExamName.SelectedValue & "'
                                                                      and C.subject_name = 'Self Development'"
                             Dim ID_selfdevelpment As String = getFieldValue(examID_selfdevelopment, strConn)
 
                             If ID_selfdevelpment.Length > 0 Then
                                 'insert data into self_deveopment_mark table
-                                Using PJGDATA As New SqlCommand("INSERT INTO self_development_mark(examresult_id,year) VALUES('" & ID_selfdevelpment & "','" & ddlExam_Year.SelectedValue & "')", objConn)
+                                Using PJGDATA As New SqlCommand("INSERT INTO self_development_mark(examresult_id,year) VALUES('" & ID_selfdevelpment & "','" & ddlExamYear.SelectedValue & "')", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
@@ -241,16 +235,16 @@ Public Class exam_Create
                                                                             left join course B on A.course_ID = B.course_ID
                                                                             left join subject_info C on B.subject_Id = C.subject_id
                                                                             left join exam_info D on A.exam_ID = D.exam_ID
-                                                                            where B.year = '" & ddlExam_Year.SelectedValue & "'
-                                                                            and C.subject_year = '" & ddlExam_Year.SelectedValue & "'
-                                                                            and D.exam_Year = '" & ddlExam_Year.SelectedValue & "'
-                                                                            and D.exam_Name = '" & ddlExam_Name.SelectedValue & "'
+                                                                            where B.year = '" & ddlExamYear.SelectedValue & "'
+                                                                            and C.subject_year = '" & ddlExamYear.SelectedValue & "'
+                                                                            and D.exam_Year = '" & ddlExamYear.SelectedValue & "'
+                                                                            and D.exam_Name = '" & ddlExamName.SelectedValue & "'
                                                                             and C.subject_name = 'Personality Development'"
                             Dim ID_personalitydevelpment As String = getFieldValue(examID_selfdevelopment, strConn)
 
                             If ID_personalitydevelpment.Length > 0 Then
                                 'insert data into self_deveopment_mark table
-                                Using PJGDATA As New SqlCommand("INSERT INTO self_development_mark(examresult_id,year) VALUES('" & ID_selfdevelpment & "','" & ddlExam_Year.SelectedValue & "')", objConn)
+                                Using PJGDATA As New SqlCommand("INSERT INTO self_development_mark(examresult_id,year) VALUES('" & ID_selfdevelpment & "','" & ddlExamYear.SelectedValue & "')", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
@@ -262,16 +256,16 @@ Public Class exam_Create
                                                                left join course B on A.course_ID = B.course_ID
                                                                left join subject_info C on B.subject_Id = C.subject_id
                                                                left join exam_info D on A.exam_ID = D.exam_ID
-                                                               where B.year = '" & ddlExam_Year.SelectedValue & "'
-                                                               and C.subject_year = '" & ddlExam_Year.SelectedValue & "'
-                                                               and D.exam_Year = '" & ddlExam_Year.SelectedValue & "'
-                                                               and D.exam_Name = '" & ddlExam_Name.SelectedValue & "'
+                                                               where B.year = '" & ddlExamYear.SelectedValue & "'
+                                                               and C.subject_year = '" & ddlExamYear.SelectedValue & "'
+                                                               and D.exam_Year = '" & ddlExamYear.SelectedValue & "'
+                                                               and D.exam_Name = '" & ddlExamName.SelectedValue & "'
                                                                and C.subject_name = 'Portfolio'"
                             Dim ID_portfolio As String = getFieldValue(examID_portfolio, strConn)
 
                             If ID_portfolio.Length > 0 Then
                                 'insert data into portfolio_mark table
-                                Using PJGDATA As New SqlCommand("INSERT INTO portfolio_mark(examresult_id,year) VALUES('" & ID_selfdevelpment & "','" & ddlExam_Year.SelectedValue & "')", objConn)
+                                Using PJGDATA As New SqlCommand("INSERT INTO portfolio_mark(examresult_id,year) VALUES('" & ID_selfdevelpment & "','" & ddlExamYear.SelectedValue & "')", objConn)
                                     objConn.Open()
                                     Dim j = PJGDATA.ExecuteNonQuery()
                                     objConn.Close()
@@ -281,9 +275,9 @@ Public Class exam_Create
                             ''Insert into exam create 
                             Insert_studentPng_Data()
 
-                            exam_Code.Text = ""
-                            exam_StartDate.Text = ""
-                            exam_EndDate.Text = ""
+                            txtExamCode.Text = ""
+                            txtStartDate.Text = ""
+                            txtEndDate.Text = ""
                         Else
                             ShowMessage("Please enter a valid exam end date", MessageType.Error)
                         End If
@@ -313,110 +307,110 @@ Public Class exam_Create
 
     Private Sub Insert_studentPng_Data()
 
-        If ddlExam_Name.SelectedValue = "Exam 1" Or ddlExam_Name.SelectedValue = "Exam 2" Then
+        If ddlExamName.SelectedValue = "Exam 1" Or ddlExamName.SelectedValue = "Exam 2" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type) 
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0', 'ASAS' from course left join bject_info on course.subject_ID = subject_info.subject_ID 
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 1' and subject_info.subject_sem = 'Sem 1' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0', 'ASAS' from course left join bject_info on course.subject_ID = subject_info.subject_ID 
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 1' and subject_info.subject_sem = 'Sem 1' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
             Using STDDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type) 
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0', 'TAHAP' from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 1' and subject_info.subject_sem = 'Sem 1' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0', 'TAHAP' from course left join subject_info on course.subject_ID = subject_info.subject_ID
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 1' and subject_info.subject_sem = 'Sem 1' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim K = STDDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
-        ElseIf ddlExam_Name.SelectedValue = "Exam 3" Or ddlExam_Name.SelectedValue = "Exam 4" Then
+        ElseIf ddlExamName.SelectedValue = "Exam 3" Or ddlExamName.SelectedValue = "Exam 4" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type) 
-                                            select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0', 'ASAS' from course left join subject_info on course.subject_ID = subject_info.subject_ID 
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 1' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                            select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0', 'ASAS' from course left join subject_info on course.subject_ID = subject_info.subject_ID 
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 1' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
             Using STDDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type) 
-                                            select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0', 'TAHAP' from course left join student_level on course.std_ID = subject_info.subject_ID
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 1' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                            select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0', 'TAHAP' from course left join student_level on course.std_ID = subject_info.subject_ID
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 1' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim K = STDDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
-        ElseIf ddlExam_Name.SelectedValue = "Exam 5" Or ddlExam_Name.SelectedValue = "Exam 6" Then
+        ElseIf ddlExamName.SelectedValue = "Exam 5" Or ddlExamName.SelectedValue = "Exam 6" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type)  
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.std_ID = subject_info.subject_ID
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 2' and subject_info.student_Sem = 'Sem 1' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.std_ID = subject_info.subject_ID
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 2' and subject_info.student_Sem = 'Sem 1' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
             Using STDDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type) 
-                                            select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0', 'TAHAP' from course left join student_level on course.std_ID = subject_info.subject_ID 
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 2' and subject_info.student_Sem = 'Sem 1' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                            select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0', 'TAHAP' from course left join student_level on course.std_ID = subject_info.subject_ID 
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 2' and subject_info.student_Sem = 'Sem 1' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim K = STDDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
-        ElseIf ddlExam_Name.SelectedValue = "Exam 7" Then
+        ElseIf ddlExamName.SelectedValue = "Exam 7" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type)  
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 2' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 2' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
             Using STDDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type) 
-                                            select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0', 'TAHAP' from course left join student_level on course.std_ID = subject_info.subject_ID 
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 2' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                            select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0', 'TAHAP' from course left join student_level on course.std_ID = subject_info.subject_ID 
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Level 2' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim K = STDDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
-        ElseIf ddlExam_Name.SelectedValue = "Exam 8" Then
+        ElseIf ddlExamName.SelectedValue = "Exam 8" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type)  
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 2' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 2' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
-        ElseIf ddlExam_Name.SelectedValue = "Exam 9" Or ddlExam_Name.SelectedValue = "Exam 10" Then
+        ElseIf ddlExamName.SelectedValue = "Exam 9" Or ddlExamName.SelectedValue = "Exam 10" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type)  
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID 
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 3' and subject_info.student_Sem = 'Sem 1' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID 
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 3' and subject_info.student_Sem = 'Sem 1' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()
             End Using
 
-        ElseIf ddlExam_Name.SelectedValue = "Exam 11" Or ddlExam_Name.SelectedValue = "Exam 12" Then
+        ElseIf ddlExamName.SelectedValue = "Exam 11" Or ddlExamName.SelectedValue = "Exam 12" Then
 
             'Insert student taking exam at exam_result
             Using PJGDATA As New SqlCommand("INSERT into student_Png(exam_Name,std_ID,year,png,pngs,student_type)  
-                                             select distinct '" & ddlExam_Name.SelectedValue & "', course.std_ID, '" & ddlExam_Year.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID 
-                                             where course_ID is not null and course.year = '" & ddlExam_Year.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 3' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExam_Year.SelectedValue & "' order by course.std_ID ASC ", objConn)
+                                             select distinct '" & ddlExamName.SelectedValue & "', course.std_ID, '" & ddlExamYear.SelectedValue & "', '0', '0','ASAS' from course left join student_level on course.ID = subject_info.subject_ID 
+                                             where course_ID is not null and course.year = '" & ddlExamYear.SelectedValue & "' and subject_info.subject_StudentYear = 'Foundation 3' and subject_info.student_Sem = 'Sem 2' and course.year = '" & ddlExamYear.SelectedValue & "' order by course.std_ID ASC ", objConn)
                 objConn.Open()
                 Dim j = PJGDATA.ExecuteNonQuery()
                 objConn.Close()

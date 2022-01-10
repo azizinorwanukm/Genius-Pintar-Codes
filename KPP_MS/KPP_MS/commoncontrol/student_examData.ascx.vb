@@ -247,25 +247,44 @@ Public Class student_examData
             Test.AppendLine("<div id='data' style='display:none'>")
             Test.AppendLine("<div id='dataTESTBM'> ")
 
+            ''get student level
+            Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & Request.QueryString("std_ID") & "' and year = '" & ddlyear.SelectedValue & "'"
+            Dim GetStudentLevel As String = oCommon.getFieldValue(FindStudentLevel)
+
+            Dim check_academic_percen As String = ""
+            Dim Confirm_Academic As String = ""
+            Dim check_portfolio_percen As String = ""
+            Dim Confirm_Portfolio As String = ""
+            Dim check_cocuricullum_percen As String = ""
+            Dim Confirm_Cocuricullum As String = ""
+            Dim check_research_percen As String = ""
+            Dim Confirm_Research As String = ""
+            Dim check_self_percen As String = ""
+            Dim Confirm_Self As String = ""
+
+            ''get Portfolio percentage on / off
+            check_academic_percen = "select Value from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+            Confirm_Academic = oCommon.getFieldValue(check_portfolio_percen)
+
+            ''get Portfolio percentage on / off
+            check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Confirm_Portfolio = oCommon.getFieldValue(check_portfolio_percen)
+
+            ''get cocuricullum percentage on / off
+            check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Confirm_Cocuricullum = oCommon.getFieldValue(check_cocuricullum_percen)
+
+            ''get research percentage on / off
+            check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Confirm_Research = oCommon.getFieldValue(check_research_percen)
+
+            ''get self development percentage on / off
+            check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Confirm_Self = oCommon.getFieldValue(check_self_percen)
+
             'get englih literture on / off
             Dim check_Eng_Literature As String = "select Value from setting where Type = 'English Literature'"
             Dim Confirm_Eng_Literature As String = oCommon.getFieldValue(check_Eng_Literature)
-
-            'get Portfolio percentage on / off
-            Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-            Dim Confirm_Portfolio As String = oCommon.getFieldValue(check_portfolio_percen)
-
-            ''get cocuricullum percentage on / off
-            Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-            Dim Confirm_Cocuricullum As String = oCommon.getFieldValue(check_cocuricullum_percen)
-
-            ''get research percentage on / off
-            Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-            Dim Confirm_Research As String = oCommon.getFieldValue(check_research_percen)
-
-            ''get self development percentage on / off
-            Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-            Dim Confirm_Self As String = oCommon.getFieldValue(check_self_percen)
 
             ''print subject name 
             tmpSQL_Nama = "SELECT subject_NameBM FROM [ExamSlip_SubjectName] 
@@ -717,21 +736,25 @@ Public Class student_examData
             Dim gpa As Decimal = png_dec.ToString("F2")
             Dim cgpa As Decimal = pngs_dec.ToString("F2")
 
+            ''get the academic percentage
+            strSQL = "Select Parameter from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+            Dim academic_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Academic_Percentage' "
-            Dim academic_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the cocurricular percentage
+            strSQL = "Select Parameter from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Dim cocuricullum_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Cocuricullum_Percentage' "
-            Dim cocuricullum_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the portfolio percentage
+            strSQL = "Select Parameter from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Dim portfolio_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Portfolio_Percentage' "
-            Dim portfolio_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the research percentage
+            strSQL = "Select Parameter from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Dim research_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Research_Percentage' "
-            Dim research_value As String = oCommon.getFieldValue(tmpSQL)
-
-            tmpSQL = "Select Parameter from setting where Type = 'Self_Development_Percentage' "
-            Dim sd_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the self development percentage
+            strSQL = "Select Parameter from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Dim sd_value As String = oCommon.getFieldValue(strSQL)
 
             ''first column
             Test.Append("<div style='margin:0;page-break-after: always;'>
@@ -806,7 +829,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_KOD As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_KOD As String = oCommon.getFieldValue(get_ENG_KOD)
 
             If data_ENGLITERATURE_KOD.Length > 0 Then
@@ -838,7 +861,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_NAMA As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_NAMA As String = oCommon.getFieldValue(get_ENG_NAMA)
 
             If data_ENGLITERATURE_NAMA.Length > 0 Then
@@ -864,7 +887,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_Grade As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                      where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                      where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_Grade As String = oCommon.getFieldValue(get_ENG_Grade)
 
             If data_ENGLITERATURE_Grade.Length > 0 Then
@@ -896,7 +919,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_Png As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                      where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                      where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_Png As String = oCommon.getFieldValue(get_ENG_Png)
 
             If data_ENGLITERATURE_Png.Length > 0 Then
@@ -928,7 +951,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_HOUR As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_HOUR As String = oCommon.getFieldValue(get_ENG_HOUR)
 
             If data_ENGLITERATURE_HOUR.Length > 0 Then
@@ -960,7 +983,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_TOTAL As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_TOTAL As String = oCommon.getFieldValue(get_ENG_TOTAL)
 
             If data_ENGLITERATURE_TOTAL.Length > 0 Then
@@ -1298,25 +1321,44 @@ Public Class student_examData
             Test.AppendLine("<div id='data' style='display:none'>")
             Test.AppendLine("<div id='dataTESTBI'> ")
 
+            ''get student level
+            Dim FindStudentLevel As String = "select distinct student_Level from student_Level where std_ID = '" & Request.QueryString("std_ID") & "' and year = '" & ddlyear.SelectedValue & "'"
+            Dim GetStudentLevel As String = oCommon.getFieldValue(FindStudentLevel)
+
+            Dim check_academic_percen As String = ""
+            Dim Confirm_Academic As String = ""
+            Dim check_portfolio_percen As String = ""
+            Dim Confirm_Portfolio As String = ""
+            Dim check_cocuricullum_percen As String = ""
+            Dim Confirm_Cocuricullum As String = ""
+            Dim check_research_percen As String = ""
+            Dim Confirm_Research As String = ""
+            Dim check_self_percen As String = ""
+            Dim Confirm_Self As String = ""
+
+            ''get Portfolio percentage on / off
+            check_academic_percen = "select Value from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+            Confirm_Academic = oCommon.getFieldValue(check_portfolio_percen)
+
+            ''get Portfolio percentage on / off
+            check_portfolio_percen = "select Value from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Confirm_Portfolio = oCommon.getFieldValue(check_portfolio_percen)
+
+            ''get cocuricullum percentage on / off
+            check_cocuricullum_percen = "select Value from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Confirm_Cocuricullum = oCommon.getFieldValue(check_cocuricullum_percen)
+
+            ''get research percentage on / off
+            check_research_percen = "select Value from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Confirm_Research = oCommon.getFieldValue(check_research_percen)
+
+            ''get self development percentage on / off
+            check_self_percen = "select Value from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Confirm_Self = oCommon.getFieldValue(check_self_percen)
+
             'get englih literture on / off
             Dim check_Eng_Literature As String = "select Value from setting where Type = 'English Literature'"
             Dim Confirm_Eng_Literature As String = oCommon.getFieldValue(check_Eng_Literature)
-
-            'get Portfolio percentage on / off
-            Dim check_portfolio_percen As String = "select Value from setting where Type = 'Portfolio_Percentage'"
-            Dim Confirm_Portfolio As String = oCommon.getFieldValue(check_portfolio_percen)
-
-            ''get cocuricullum percentage on / off
-            Dim check_cocuricullum_percen As String = "select Value from setting where Type = 'Cocuricullum_Percentage'"
-            Dim Confirm_Cocuricullum As String = oCommon.getFieldValue(check_cocuricullum_percen)
-
-            ''get research percentage on / off
-            Dim check_research_percen As String = "select Value from setting where Type = 'Research_Percentage'"
-            Dim Confirm_Research As String = oCommon.getFieldValue(check_research_percen)
-
-            ''get self development percentage on / off
-            Dim check_self_percen As String = "select Value from setting where Type = 'Self_Development_Percentage'"
-            Dim Confirm_Self As String = oCommon.getFieldValue(check_self_percen)
 
             ''print subject name 
             tmpSQL_Nama = "SELECT subject_Name FROM [ExamSlip_SubjectName] 
@@ -1768,21 +1810,25 @@ Public Class student_examData
             Dim gpa As Decimal = png_dec.ToString("F2")
             Dim cgpa As Decimal = pngs_dec.ToString("F2")
 
+            ''get the academic percentage
+            strSQL = "Select Parameter from setting where Type = 'Academic " & GetStudentLevel & " Percentage'"
+            Dim academic_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Academic_Percentage' "
-            Dim academic_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the cocurricular percentage
+            strSQL = "Select Parameter from setting where Type = 'Cocurricular " & GetStudentLevel & " Percentage'"
+            Dim cocuricullum_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Cocuricullum_Percentage' "
-            Dim cocuricullum_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the portfolio percentage
+            strSQL = "Select Parameter from setting where Type = 'Portfolio " & GetStudentLevel & " Percentage'"
+            Dim portfolio_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Portfolio_Percentage' "
-            Dim portfolio_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the research percentage
+            strSQL = "Select Parameter from setting where Type = 'Research " & GetStudentLevel & " Percentage'"
+            Dim research_value As String = oCommon.getFieldValue(strSQL)
 
-            tmpSQL = "Select Parameter from setting where Type = 'Research_Percentage' "
-            Dim research_value As String = oCommon.getFieldValue(tmpSQL)
-
-            tmpSQL = "Select Parameter from setting where Type = 'Self_Development_Percentage' "
-            Dim sd_value As String = oCommon.getFieldValue(tmpSQL)
+            ''get the self development percentage
+            strSQL = "Select Parameter from setting where Type = 'Self Development " & GetStudentLevel & " Percentage'"
+            Dim sd_value As String = oCommon.getFieldValue(strSQL)
 
             ''first column
             Test.Append("<div style='margin:0;page-break-after: always;'>
@@ -1857,7 +1903,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_KOD As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_KOD As String = oCommon.getFieldValue(get_ENG_KOD)
 
             If data_ENGLITERATURE_KOD.Length > 0 Then
@@ -1889,7 +1935,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_NAMA As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_NAMA As String = oCommon.getFieldValue(get_ENG_NAMA)
 
             If data_ENGLITERATURE_NAMA.Length > 0 Then
@@ -1915,7 +1961,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_Grade As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                      where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                      where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_Grade As String = oCommon.getFieldValue(get_ENG_Grade)
 
             If data_ENGLITERATURE_Grade.Length > 0 Then
@@ -1947,7 +1993,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_Png As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                      where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                      where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_Png As String = oCommon.getFieldValue(get_ENG_Png)
 
             If data_ENGLITERATURE_Png.Length > 0 Then
@@ -1979,7 +2025,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_HOUR As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_HOUR As String = oCommon.getFieldValue(get_ENG_HOUR)
 
             If data_ENGLITERATURE_HOUR.Length > 0 Then
@@ -2011,7 +2057,7 @@ Public Class student_examData
             Next
 
             Dim get_ENG_TOTAL As String = "select course.subject_ID from course left join subject_info on course.subject_ID = subject_info.subject_ID
-                                                  where subject_info.subject_Name = 'AP English Language and Composition' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
+                                                  where subject_info.subject_Name like '%AP English%' and subject_info.subject_year = '" & ddlyear.SelectedValue & "' and course.std_ID = '" & Request.QueryString("std_ID") & "'"
             Dim data_ENGLITERATURE_TOTAL As String = oCommon.getFieldValue(get_ENG_TOTAL)
 
             If data_ENGLITERATURE_TOTAL.Length > 0 Then

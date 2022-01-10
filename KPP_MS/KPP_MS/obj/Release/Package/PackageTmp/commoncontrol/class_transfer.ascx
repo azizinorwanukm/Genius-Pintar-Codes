@@ -10,10 +10,10 @@
 </script>
 
 <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px; margin-top: 10px">
-    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_Year" runat="server" AutoPostBack="true"></asp:DropDownList>
-    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_Level" runat="server" AutoPostBack="true"></asp:DropDownList>
-    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_Sem" runat="server" AutoPostBack="true"></asp:DropDownList>
-    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default ddl" ID="ddl_type" runat="server" AutoPostBack="true"></asp:DropDownList>
+    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_Year" runat="server" AutoPostBack="true"></asp:DropDownList>
+    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_type" runat="server" AutoPostBack="true"></asp:DropDownList>
+    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_Level" runat="server" AutoPostBack="true"></asp:DropDownList>
+    <asp:DropDownList Style="width: 190px; border-radius: 25px;" CssClass="w3-text-black btn btn-default font ddl" ID="ddl_Sem" runat="server" AutoPostBack="true"></asp:DropDownList>    
 </div>
 <%--<div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 10px;">
     <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px; margin-bottom: 10px;">
@@ -59,6 +59,12 @@
                 </ItemTemplate>
                 <HeaderStyle HorizontalAlign="Left" />
             </asp:TemplateField>
+            <asp:TemplateField HeaderText="Class Type" ItemStyle-Width="200">
+                <ItemTemplate>
+                    <asp:Label ID="class_type" class="id1" runat="server" Text='<%# Eval("class_type") %>'></asp:Label>
+                </ItemTemplate>
+                <HeaderStyle HorizontalAlign="Left" />
+            </asp:TemplateField>
             <asp:TemplateField HeaderText="Class Level" ItemStyle-Width="200">
                 <ItemTemplate>
                     <asp:Label ID="class_Level" class="id1" runat="server" Text='<%# Eval("class_Level") %>'></asp:Label>
@@ -71,12 +77,6 @@
                 </ItemTemplate>
                 <HeaderStyle HorizontalAlign="Left" />
             </asp:TemplateField>
-            <asp:TemplateField HeaderText="Class Type" ItemStyle-Width="200">
-                <ItemTemplate>
-                    <asp:Label ID="class_type" class="id1" runat="server" Text='<%# Eval("class_type") %>'></asp:Label>
-                </ItemTemplate>
-                <HeaderStyle HorizontalAlign="Left" />
-            </asp:TemplateField>
         </Columns>
         <HeaderStyle BackColor="#800000" ForeColor="White" VerticalAlign="Middle" HorizontalAlign="Left" />
         <PagerStyle HorizontalAlign="Center" CssClass="GridPager" />
@@ -84,7 +84,7 @@
 </div>
 
 <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-bottom: 10px; margin-top: 10px; text-align: left; padding-left: 23px">
-    <asp:DropDownList ID="ddlyear_Transfer" runat="server" AutoPostBack="false" class=" btn btn-default " Style="width: 190px; border-radius: 25px;"></asp:DropDownList>
+    <asp:DropDownList ID="ddlyear_Transfer" runat="server" AutoPostBack="false" class=" btn btn-default font " Style="width: 190px; border-radius: 25px;"></asp:DropDownList>
     <button id="Btnsimpan" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Save">Save &#160; <i class="fa fa-save w3-large w3-text-white"></i></button>
 </div>
 <br />

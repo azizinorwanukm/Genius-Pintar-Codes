@@ -30,7 +30,7 @@ Public Class student_view_class
     End Sub
 
     Private Sub load_page()
-        strSQL = "SELECT distinct year from student_Level where year ='" & Now.Year & "'"
+        strSQL = "SELECT MAX(Parameter) as year from setting where type = 'year'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -97,7 +97,7 @@ Public Class student_view_class
     End Sub
 
     Private Sub sem_list_data()
-        strSQL = "SELECT Parameter FROM setting WHERE Type='Sem' "
+        strSQL = "SELECT * FROM setting WHERE Type='Sem' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -108,7 +108,7 @@ Public Class student_view_class
 
             ddlSem.DataSource = ds
             ddlSem.DataTextField = "Parameter"
-            ddlSem.DataValueField = "Parameter"
+            ddlSem.DataValueField = "Value"
             ddlSem.DataBind()
             ddlSem.Items.Insert(0, New ListItem("Select Sem", String.Empty))
         Catch ex As Exception

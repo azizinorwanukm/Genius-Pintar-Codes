@@ -12,157 +12,2479 @@ Option Explicit On
 
 
 Partial Public Class admin_access
-    
+
     '''<summary>
-    '''ddladmin control.
+    '''txtbreadcrum1 control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddladmin As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents txtbreadcrum1 As Global.System.Web.UI.WebControls.Label
+
     '''<summary>
-    '''ddlPosition control.
+    '''btnViewUserAccess control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlPosition As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents btnViewUserAccess As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
-    '''datRespondent control.
+    '''btnRegisterUserAccess control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents datRespondent As Global.System.Web.UI.WebControls.GridView
-    
+    Protected WithEvents btnRegisterUserAccess As Global.System.Web.UI.HtmlControls.HtmlButton
+
     '''<summary>
-    '''btnSave control.
+    '''ViewUserAccess control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSave As Global.System.Web.UI.HtmlControls.HtmlButton
-    
+    Protected WithEvents ViewUserAccess As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''admin_Name control.
+    '''ddl_ViewStaffName control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents admin_Name As Global.System.Web.UI.WebControls.Label
-    
+    Protected WithEvents ddl_ViewStaffName As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''ddlMenu control.
+    '''ddl_ViewStaffPosition control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlMenu As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents ddl_ViewStaffPosition As Global.System.Web.UI.WebControls.DropDownList
+
     '''<summary>
-    '''ddlSubMenu control.
+    '''displayTreeViewUserAccess control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlSubMenu As Global.System.Web.UI.WebControls.DropDownList
-    
+    Protected WithEvents displayTreeViewUserAccess As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Add control.
+    '''collapse_Menu_GeneralManagement control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Add As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents collapse_Menu_GeneralManagement As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Delete control.
+    '''MENU_GM control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Delete As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Edit control.
+    '''MENU_GM_EM control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Edit As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_EM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Print control.
+    '''MENU_GM_EM_VE control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Print As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_EM_VE As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Save control.
+    '''MENU_GM_EM_VE_EB control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Save As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_EM_VE_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Back control.
+    '''MENU_GM_EM_VE_DB control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Back As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_EM_VE_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_ImportExport control.
+    '''MENU_GM_EM_RE control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_ImportExport As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_EM_RE As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Cgpa control.
+    '''MENU_GM_EM_RE_RB control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Cgpa As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_EM_RE_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''check_Image control.
+    '''MENU_GM_GM control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents check_Image As Global.System.Web.UI.WebControls.CheckBox
-    
+    Protected WithEvents MENU_GM_GM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
     '''<summary>
-    '''btnUpload control.
+    '''MENU_GM_GM_EB control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnUpload As Global.System.Web.UI.HtmlControls.HtmlButton
+    Protected WithEvents MENU_GM_GM_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_GM_GM_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_GM_GM_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_GM_AM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_GM_AM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Student control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Student As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_VC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_VC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_VC_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_VC_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_VC_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_VC_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_RC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_RC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_RC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_RC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_TC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_TC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_COURSEM_TC_TB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_COURSEM_TC_TB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_VC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_VC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_VC_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_VC_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_VC_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_VC_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_RC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_RC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_RC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_RC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_TC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_TC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CLASSM_TC_TB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CLASSM_TC_TB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SM_TB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SM_TB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_SI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_SI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_SI_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_SI_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_FI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_FI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_FI_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_FI_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_COURSEI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_COURSEI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_COURSEI_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_COURSEI_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_COURSEI_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_COURSEI_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_COCURRICULARI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_COCURRICULARI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_EI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_EI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_HI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_HI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_DI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_DI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_UP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_UP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_RI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_RI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_RI_VB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_RI_VB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_RI_DOWNLOADB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_RI_DOWNLOADB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_VB_RI_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_VB_RI_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_VS_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_VS_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_RS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_RS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_RS_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_RS_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_IS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_IS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_SS_IS_IB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_SS_IS_IB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CCP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CCP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_CCP_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_CCP_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_ATT control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_ATT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_ATT_VA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_ATT_VA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_ATT_UA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_ATT_UA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_ATT_UA_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_ATT_UA_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VCOURSE control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VCOURSE As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VCOURSE_AB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VCOURSE_AB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VCLASS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VCLASS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VCLASS_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VCLASS_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VIVCOCURRICULUM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VIVCOCURRICULUM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VH control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VH As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STD_VI_VR_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STD_VI_VR_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Staff control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Staff As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS_EB_SI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS_EB_SI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS_EB_SI_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS_EB_SI_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS_EB_CI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS_EB_CI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS_EB_CI_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS_EB_CI_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_VS_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_VS_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_RS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_RS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_RS_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_RS_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_IS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_IS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_SS_IS_IB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_SS_IS_IB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_CP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_CP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_CP_VSC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_CP_VSC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_CP_RSC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_CP_RSC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_STF_CP_RSC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_STF_CP_RSC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Coordinator control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Coordinator As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO_SC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO_SC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO_SC_VC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO_SC_VC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO_SC_VC_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO_SC_VC_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO_SC_VC_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO_SC_VC_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO_SC_RC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO_SC_RC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COO_SC_RC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COO_SC_RC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Discipline control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Discipline As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_DM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_DM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_DM_VD control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_DM_VD As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_DM_VD_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_DM_VD_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_DM_VD_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_DM_VD_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_DM_RD control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_DM_RD As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_DM_RD_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_DM_RD_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_CM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_CM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_CM_VC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_CM_VC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_CM_VC_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_CM_VC_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_CM_VC_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_CM_VC_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_CM_RC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_CM_RC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_DISC_CM_RC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_DISC_CM_RC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Counselor control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Counselor As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_VM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_VM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_VM_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_VM_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_VM_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_VM_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_SDM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_SDM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_SDM_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_SDM_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_PDM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_PDM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CM_PDM_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CM_PDM_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SDM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SDM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SDM_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SDM_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_PDM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_PDM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_PDM_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_PDM_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_POR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_POR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_POR_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_POR_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CA_SC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CA_SC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CA_SC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CA_SC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CA_VCR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CA_VCR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CA_VCR_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CA_VCR_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_CA_VCR_VB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_CA_VCR_VB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_LS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_LS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_LS_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_LS_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_LS_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_LS_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_LS_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_LS_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_SS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_SS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_SS_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_SS_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_COUN_SM_SS_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_COUN_SM_SS_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Research control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Research As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RSS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RSS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RSS_VSGS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RSS_VSGS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RSS_VSGS_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RSS_VSGS_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RSS_RSGS control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RSS_RSGS As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RSS_RSGS_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RSS_RSGS_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RPF control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RPF As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RPF_VSP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RPF_VSP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RPF_VSP_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RPF_VSP_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RPF_RSP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RPF_RSP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RPF_RSP_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RPF_RSP_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RM_VSM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RM_VSM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RM_VSM_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RM_VSM_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RM_RSN control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RM_RSN As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RES_RM_RSN_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RES_RM_RSN_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Examination control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Examination As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ER control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ER As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ER_AR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ER_AR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ER_AR_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ER_AR_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ER_CR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ER_CR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_CET control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_CET As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_CET_GEN control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_CET_GEN As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_CET_BI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_CET_BI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_CET_BM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_CET_BM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_OT control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_OT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_OT_BI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_OT_BI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_ET_OT_BM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_ET_OT_BM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_IE control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_IE As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_IE_IER control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_IE_IER As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_IE_IER_BI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_IE_IER_BI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_IE_IGC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_IE_IGC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_EXAM_IE_IGC_BI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_EXAM_IE_IGC_BI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Hostel control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Hostel As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_EB_EHI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_EB_EHI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_EB_EHI_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_EB_EHI_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_EB_ERI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_EB_ERI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_EB_ERI_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_EB_ERI_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_EB_ERI_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_EB_ERI_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_VH_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_VH_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_RH control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_RH As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_HM_RH_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_HM_RH_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_SP control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_SP As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_SP_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_SP_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_VHI control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_VHI As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_HST_VHI_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_HST_VHI_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Cocurricular control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Cocurricular As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_CC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_CC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_CC_CCM control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_CC_CCM As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Report control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Report As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT_ER control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT_ER As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT_CLASSER control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT_CLASSER As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT_COURSESER control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT_COURSESER As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT_SRL control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT_SRL As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT_AR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT_AR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_RPT_FR control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_RPT_FR As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''collapse_Menu_Setting control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents collapse_Menu_Setting As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_UC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_UC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_UC_VUA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_UC_VUA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_UC_RUA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_UC_RUA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_UC_RUA_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_UC_RUA_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_SC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_SC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_SC_VSC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_SC_VSC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_SC_VSC_EB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_SC_VSC_EB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_SC_VSC_DB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_SC_VSC_DB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_SC_RSC control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_SC_RSC As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_SC_RSC_RB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_SC_RSC_RB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_UA control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_UA As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''MENU_SET_UA_UB control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MENU_SET_UA_UB As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''RegisterUserAccess control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents RegisterUserAccess As Global.System.Web.UI.HtmlControls.HtmlGenericControl
+
+    '''<summary>
+    '''ddlStaffName control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlStaffName As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddlStaffPosition control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlStaffPosition As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''ddlMainMenu control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlMainMenu As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''displayStatusSubMenu1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displayStatusSubMenu1 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''ddlSubMenu1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlSubMenu1 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''displayStatusSubMenu2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displayStatusSubMenu2 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''ddlSubMenu2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlSubMenu2 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''displayButtonFunction1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displayButtonFunction1 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''F1_R1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R1 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''F1_R1_C1_P1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R1_C1_P1 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_ViewButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_ViewButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R1_C1_P2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R1_C1_P2 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_EditButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_EditButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R1_C1_P3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R1_C1_P3 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_UpdateButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_UpdateButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R1_C1_P4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R1_C1_P4 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_DeleteButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_DeleteButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R2 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''F1_R2_C2_P1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R2_C2_P1 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_RegisterButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_RegisterButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R2_C2_P2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R2_C2_P2 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_ImportButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_ImportButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R2_C2_P3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R2_C2_P3 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_TransferButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_TransferButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R2_C2_P4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R2_C2_P4 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_DropoutButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_DropoutButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R3 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''F1_R3_C3_P1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R3_C3_P1 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_GenerateButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_GenerateButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R3_C3_P2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R3_C3_P2 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_PrintBIButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_PrintBIButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F1_R3_C3_P3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F1_R3_C3_P3 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_PrintBMButton_F1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_PrintBMButton_F1 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''displayStatusSubMenu3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displayStatusSubMenu3 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''ddlSubMenu3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents ddlSubMenu3 As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''displayButtonFunction2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents displayButtonFunction2 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''F2_R1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F2_R1 As Global.System.Web.UI.HtmlControls.HtmlTableRow
+
+    '''<summary>
+    '''F2_R1_C1_P1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F2_R1_C1_P1 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_EditButton_F2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_EditButton_F2 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F2_R1_C1_P2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F2_R1_C1_P2 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_DeleteButton_F2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_DeleteButton_F2 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F2_R1_C1_P3 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F2_R1_C1_P3 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_UpdateButton_F2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_UpdateButton_F2 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F2_R1_C1_P4 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F2_R1_C1_P4 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_DownloadButton_F2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_DownloadButton_F2 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''F2_R1_C1_P5 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents F2_R1_C1_P5 As Global.System.Web.UI.HtmlControls.HtmlTableCell
+
+    '''<summary>
+    '''check_ViewButton_F2 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents check_ViewButton_F2 As Global.System.Web.UI.WebControls.CheckBox
+
+    '''<summary>
+    '''btnSaveRegisterUserAccess control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnSaveRegisterUserAccess As Global.System.Web.UI.HtmlControls.HtmlButton
 End Class

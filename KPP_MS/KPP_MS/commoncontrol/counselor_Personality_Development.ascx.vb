@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.Globalization
 
 Public Class counselor_Personality_Development
     Inherits System.Web.UI.UserControl
@@ -10,6 +11,14 @@ Public Class counselor_Personality_Development
     Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
     Dim objConn As SqlConnection = New SqlConnection(strConn)
     Dim oCommon As New Commonfunction
+
+    Dim get_PercenREM As Decimal = 0.00
+    Dim get_PercenASM As Decimal = 0.00
+    Dim get_PercenLEM As Decimal = 0.00
+    Dim get_PercenCSM As Decimal = 0.00
+    Dim get_PercenPDM As Decimal = 0.00
+    Dim get_PercenRTM As Decimal = 0.00
+    Dim get_PercenAPM As Decimal = 0.00
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
@@ -24,9 +33,7 @@ Public Class counselor_Personality_Development
                 ElseIf data = "TRUE" Then
 
                     Year_List_Info()
-
-                    load_page()
-
+                    Program_List_Info()
                     Exam_List_Info()
                     Level_List_Info()
 
@@ -39,31 +46,8 @@ Public Class counselor_Personality_Development
         End Try
     End Sub
 
-    Private Sub load_page()
-        strSQL = "SELECT * from setting where Type = 'Year' and Parameter = '" & Now.Year & "'"
-
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddlYear.SelectedValue = Now.Year
-            End If
-        End If
-    End Sub
-
     Private Sub Year_List_Info()
-        strSQL = "SELECT * from setting where Type = 'Year'"
+        strSQL = "SELECT distinct year from personality_development_mark order by year asc"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -73,9 +57,32 @@ Public Class counselor_Personality_Development
             sqlDA.Fill(ds, "AnyTable")
 
             ddlYear.DataSource = ds
-            ddlYear.DataTextField = "Parameter"
-            ddlYear.DataValueField = "Value"
+            ddlYear.DataTextField = "year"
+            ddlYear.DataValueField = "year"
             ddlYear.DataBind()
+            ddlYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+
+        Catch ex As Exception
+        Finally
+            objConn.Dispose()
+        End Try
+    End Sub
+
+    Private Sub Program_List_Info()
+        strSQL = "SELECT * from setting where Type = 'Stream'"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlProgram.DataSource = ds
+            ddlProgram.DataTextField = "Parameter"
+            ddlProgram.DataValueField = "Value"
+            ddlProgram.DataBind()
+            ddlProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
 
         Catch ex As Exception
         Finally
@@ -84,7 +91,13 @@ Public Class counselor_Personality_Development
     End Sub
 
     Private Sub Exam_List_Info()
-        strSQL = "SELECT * from exam_info where exam_year = '" & ddlYear.SelectedValue & "'"
+
+        If ddlLevelnaming.SelectedValue = "Level 1" Then
+            strSQL = "Select exam_ID, exam_Name from exam_info where exam_year = '" & ddlYear.SelectedValue & "' and (exam_Name = 'Exam 1' or exam_Name = 'Exam 2' or exam_Name = 'Exam 3' or exam_Name = 'Exam 4') order by exam_name asc"
+        Else
+            strSQL = "Select exam_ID, exam_Name from exam_info where exam_year = '" & ddlYear.SelectedValue & "' and (exam_Name = 'Exam 5' or exam_Name = 'Exam 6' or exam_Name = 'Exam 7' or exam_Name = 'Exam 8') order by exam_name asc"
+        End If
+
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -97,7 +110,7 @@ Public Class counselor_Personality_Development
             ddlExamnaming.DataTextField = "exam_Name"
             ddlExamnaming.DataValueField = "exam_ID"
             ddlExamnaming.DataBind()
-            ddlExamnaming.Items.Insert(0, New ListItem("Select Exam", String.Empty))
+            ddlExamnaming.Items.Insert(0, New ListItem("Select Examination", String.Empty))
 
         Catch ex As Exception
         Finally
@@ -106,7 +119,7 @@ Public Class counselor_Personality_Development
     End Sub
 
     Private Sub Level_List_Info()
-        strSQL = "SELECT * from setting where Type = 'Level'"
+        strSQL = "SELECT * from setting where Type = 'Level' and Parameter <> 'Foundation 1' and Parameter <> 'Foundation 2' and Parameter <> 'Foundation 3' "
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -128,7 +141,7 @@ Public Class counselor_Personality_Development
     End Sub
 
     Private Sub Class_List_Info()
-        strSQL = "SELECT * from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_Level = '" & ddlLevelnaming.SelectedValue & "' and class_Type = 'Compulsory'"
+        strSQL = "SELECT * from class_info where class_year = '" & ddlYear.SelectedValue & "' and class_Level = '" & ddlLevelnaming.SelectedValue & "' and class_Type = 'Compulsory' and class_Campus = 'PGPN' order by class_name asc"
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
         Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
@@ -173,28 +186,25 @@ Public Class counselor_Personality_Development
 
         Dim tmpSQL As String
         Dim strWhere As String = ""
-        Dim strOrderby As String = " ORDER BY A.pd_total, E.student_Name ASC"
+        Dim strOrderby As String = " ORDER BY F.class_Name, E.student_Name ASC"
 
-        tmpSQL = " SELECT * from personality_developmet_mark A
-                   LEFT JOIN exam_result B on A.examresult_id = B.id
-                   LEFT JOIN course C on B.course_id = C.course_id
-                   LEFT JOIN exam_info D on C.exam_id = D.exam_id
-                   LEFT JOIN student_info E ON C.std_ID = E.std_ID
-                   LEFT JOIN class_info F ON C.class_ID = F.class_ID
-                   LEFT JOIN subject_info G ON C.subject_ID = G.subject_ID
+        tmpSQL = "  SELECT A.pd_id, E.student_Name, E.student_ID, F.class_Name, A.appearance_mark, A.reflection_mark, A.assignment_mark, A.leadership_mark, A.communityservice_mark,
+                    A.personalitydevelopment_mark, A.roomtidiness_mark, A.appearance_mark, A.merit_mark, A.pd_total, A.pd_grade  from personality_development_mark A
+                    LEFT JOIN course C on A.courseID = C.course_id
+                    LEFT JOIN exam_info D on A.examID = D.exam_id
+                    LEFT JOIN student_info E ON C.std_ID = E.std_ID
+                    LEFT JOIN class_info F ON C.class_ID = F.class_ID
+                    LEFT JOIN subject_info G ON C.subject_ID = G.subject_ID
 
-                   WHERE A.year = '" & ddlYear.SelectedValue & "' AND G.subject_Type = 'Compulsory' AND F.class_Type = 'Compulsory' AND E.student_status = 'Access'"
+                    WHERE C.year = '" & ddlYear.SelectedValue & "' AND F.class_year = '" & ddlYear.SelectedValue & "' AND G.subject_year = '" & ddlYear.SelectedValue & "'
+                    AND F.class_level = '" & ddlLevelnaming.SelectedValue & "' AND G.subject_StudentYear = '" & ddlLevelnaming.SelectedValue & "'
+
+                    AND G.subject_Type = 'Compulsory' AND F.class_Type = 'Compulsory' AND (E.student_status = 'Access' or E.student_status = 'Graduate') AND E.student_Stream = '" & ddlProgram.SelectedValue & "'
+                    AND D.exam_ID = '" & ddlExamnaming.SelectedValue & "' AND E.student_Campus = 'PGPN'
+                    And (G.subject_Name = 'Personality Development' OR G.subject_NameBM = 'Jati Diri')"
 
         If ddlClassnaming.SelectedIndex > 0 Then
             strWhere += " AND F.class_ID = '" & ddlClassnaming.SelectedValue & "' "
-        End If
-
-        If ddlExamnaming.SelectedIndex > 0 Then
-            strWhere += " AND D.exam_ID = '" & ddlExamnaming.SelectedValue & "'"
-        End If
-
-        If txtstudent.Text.Length > 0 Then
-            strWhere += " AND (E.student_Name LIKE '%" & txtstudent.Text & "%' OR E.student_Mykad = '" & txtstudent.Text & "' OR student_ID = '" & txtstudent.Text & "')"
         End If
 
         getSQL = tmpSQL & strWhere & strOrderby
@@ -202,25 +212,17 @@ Public Class counselor_Personality_Development
         Return getSQL
     End Function
 
-    Private Sub Btnback_ServerClick(sender As Object, e As EventArgs) Handles Btnback.ServerClick
+    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
         Try
-            Response.Redirect("admin_login_berjaya.aspx?admin_ID=" + Request.QueryString("admin_ID"))
-        Catch ex As Exception
-        End Try
-    End Sub
-
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-        Try
+            Class_List_Info()
+            Exam_List_Info()
             strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
     End Sub
 
-    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
+    Protected Sub ddlProgram_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlProgram.SelectedIndexChanged
         Try
-            Exam_List_Info()
-            Level_List_Info()
-
             strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
@@ -229,7 +231,8 @@ Public Class counselor_Personality_Development
     Protected Sub ddlLevelnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevelnaming.SelectedIndexChanged
         Try
             Class_List_Info()
-
+            Exam_List_Info()
+            strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
     End Sub
@@ -237,7 +240,6 @@ Public Class counselor_Personality_Development
     Protected Sub ddlClassnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClassnaming.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
-
         Catch ex As Exception
         End Try
     End Sub
@@ -245,7 +247,6 @@ Public Class counselor_Personality_Development
     Protected Sub ddlExamnaming_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlExamnaming.SelectedIndexChanged
         Try
             strRet = BindData(datRespondent)
-
         Catch ex As Exception
         End Try
     End Sub
@@ -254,220 +255,229 @@ Public Class counselor_Personality_Development
         Dim i As Integer = 0
         Dim value As String = ""
 
-        Dim find_leadership As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Leadership'"
-        Dim percen_leadership As Integer = Integer.Parse(oCommon.getFieldValue(find_leadership))
+        Dim sql_LastDateExam As String = "Select exam_EndDate from exam_info where exam_ID = '" & ddlExamnaming.SelectedValue & "'"
+        Dim get_LastDateExam As String = oCommon.getFieldValue(sql_LastDateExam)
 
-        Dim find_communityservice As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Community Service'"
-        Dim percen_communityservice As Integer = Integer.Parse(oCommon.getFieldValue(find_communityservice))
+        Dim convertToDate_examEndDate As DateTime = DateTime.ParseExact(get_LastDateExam, "dd/MM/yyyy", DateTimeFormatInfo.InvariantInfo)
+        Dim formatted_examEndDate As String = convertToDate_examEndDate.ToString("yyyyMMdd", DateTimeFormatInfo.InvariantInfo)
 
-        Dim find_reflection As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Reflection'"
-        Dim percen_reflection As Integer = Integer.Parse(oCommon.getFieldValue(find_reflection))
+        Dim get_currentDate As String = DateTime.Now.ToString("yyyyMMdd")
 
-        Dim find_assignment As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Assignment'"
-        Dim percen_assignment As Integer = Integer.Parse(oCommon.getFieldValue(find_assignment))
+        If get_currentDate < formatted_examEndDate Then
 
-        Dim find_apperance As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Appearance'"
-        Dim percen_appearance As Integer = Integer.Parse(oCommon.getFieldValue(find_apperance))
+            For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
+                Dim chkUpdate As CheckBox = CType(datRespondent.Rows(i).Cells(5).FindControl("chkSelect"), CheckBox)
+                If Not chkUpdate Is Nothing Then
+                    ' Get the values of textboxes using findControl
+                    Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
+                    If chkUpdate.Checked = True Then
 
-        Dim find_roomtidiness As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Room Tidiness'"
-        Dim percen_romtidiness As Integer = Integer.Parse(oCommon.getFieldValue(find_roomtidiness))
+                        ''get student id
+                        Dim find_stdid As String = "select distinct std_ID from course
+                                                    left join personality_development_mark on course.course_ID = personality_development_mark.courseID where pd_id = '" & strKey & "'"
+                        Dim get_stdid As String = oCommon.getFieldValue(find_stdid)
 
-        Dim find_attitude As String = "select Value from setting where idx = 'Self Personality Development' and Parameter = 'Attitude'"
-        Dim percen_attitude As Integer = Integer.Parse(oCommon.getFieldValue(find_attitude))
+                        Dim txt_reflection As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtreflection_mark"), TextBox)
+                        Dim txt_assignment As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtassignment_mark"), TextBox)
+                        Dim txt_leadership As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtleadership_mrk"), TextBox)
+                        Dim txt_communityservice As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtcommunityservice_mark"), TextBox)
+                        Dim txt_personalitydevelopment As TextBox = DirectCast(datRespondent.Rows(i).FindControl("personalitydevelopment_mark"), TextBox)
+                        Dim txt_roomtidiness As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtroomtidiness_mark"), TextBox)
+                        Dim txt_appearance As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtappearance_mark"), TextBox)
+                        Dim txt_merit As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtmerit_mark"), TextBox)
 
-        For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
-            Dim chkUpdate As CheckBox = CType(datRespondent.Rows(i).Cells(5).FindControl("chkSelect"), CheckBox)
-            If Not chkUpdate Is Nothing Then
-                ' Get the values of textboxes using findControl
-                Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
-                If chkUpdate.Checked = True Then
+                        Dim Data_REM As String = txt_reflection.Text
+                        Dim Data_ASM As String = txt_assignment.Text
+                        Dim Data_LEM As String = txt_leadership.Text
+                        Dim Data_CSM As String = txt_communityservice.Text
+                        Dim Data_PDM As String = txt_personalitydevelopment.Text
+                        Dim Data_RTM As String = txt_roomtidiness.Text
+                        Dim Data_APM As String = txt_appearance.Text
+                        Dim Data_MM As String = txt_merit.Text
 
-                    ''get student id
-                    Dim find_stdid As String = "select std_ID from course
-                                                left join exam_result on course.course_ID = exam_result.course_id
-                                                left join personality_development_mark on exam_result.id = personality_development_mark.examresult_id where pd_id = '" & strKey & "'"
-                    Dim get_stdid As String = oCommon.getFieldValue(find_stdid)
+                        If checking_Data(Data_REM, Data_ASM, Data_LEM, Data_CSM, Data_PDM, Data_RTM, Data_APM, Data_MM) = True Then
 
-                    ''sum the demerit point
-                    Dim find_sumpoint As String = "select sum(meritdemerit_point) from dicipline_info where std_ID = '" & get_stdid & "'"
-                    Dim get_sumponint As Integer = Integer.Parse(oCommon.getFieldValue(find_sumpoint))
+                            Dim find_sumpoint As String = ""
+                            Dim get_sumponint As Decimal = 0.00
 
-                    Dim txt_leadership As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtleadership_mrk"), TextBox)
-                    Dim txt_communityservice As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtcommunityservice_mark"), TextBox)
-                    Dim txt_reflection As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtreflection_mark"), TextBox)
-                    Dim txt_assignment As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtassignment_mark"), TextBox)
-                    Dim txt_appearance As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtappearance_mark"), TextBox)
-                    Dim txt_roomtidiness As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtroomtidiness_mark"), TextBox)
-                    Dim txt_attitude As TextBox = DirectCast(datRespondent.Rows(i).FindControl("txtattitude_mark"), TextBox)
+                            If ddlExamnaming.SelectedValue = "Exam 1" Or ddlExamnaming.SelectedValue = "Exam 5" Or ddlExamnaming.SelectedValue = "Exam 9" Then
+                                ''get the demerit point and sum the demerit point  
+                                strSQL = "select sum(meritdemerit_point) from dicipline_info where Dicipline_Date like '%" & ddlYear.SelectedValue & "%' and std_ID = '" & get_stdid & "'"
+                            Else
+                                Dim examName As String = ddlExamnaming.SelectedValue
+                                Dim lastChar As Integer = Integer.Parse(examName.Substring(5)) - 1 ''Get The Previeous Exam No
 
-                    Dim find_total_mark As String = "select pd_total from personaltiy_development_mark where pd_id = '" & strKey & "'"
-                    Dim data_total_mark As String = oCommon.getFieldValue(find_total_mark)
+                                ''Get Exam End Date === Previous Exam End Date
+                                strSQL = "Select exam_EndDate from exam_info where exam_Name = 'Exam " & lastChar & "' and exam_Year = '" & ddlYear.SelectedValue & "'"
+                                Dim Previous_EndDate As String = oCommon.getFieldValue(strSQL)
 
-                    Dim total_attitude As Integer = txt_attitude.Text - get_sumponint
-                    Dim total_mark As Integer = txt_leadership.Text + txt_communityservice.Text + txt_reflection.Text + txt_assignment.Text + txt_appearance.Text + txt_roomtidiness.Text + total_attitude
+                                ''Get Exam End Date === Current Exam End Date
+                                strSQL = "Select exam_EndDate from exam_info where exam_Name = '" & ddlExamnaming.SelectedValue & "' and exam_Year = '" & ddlYear.SelectedValue & "'"
+                                Dim Current_EndDate As String = oCommon.getFieldValue(strSQL)
 
-                    If data_total_mark.Length > 0 Then
-                        If txt_leadership.Text > percen_leadership Then
-                            ShowMessage(" Please fill in leadership mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
+                                ''Get the demerit point and sum the demerit point  
+                                strSQL = "select sum(meritdemerit_point) from dicipline_info where Dicipline_Date > '" & Previous_EndDate & "' and Dicipline_Date <= '" & Current_EndDate & "' and std_ID = '" & get_stdid & "'"
+                                get_sumponint = Decimal.Parse(oCommon.getFieldValue(find_sumpoint))
+                            End If
 
-                        If txt_communityservice.Text > percen_communityservice Then
-                            ShowMessage(" Please fill in coomunity service mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
+                            ''Get Total Mark
+                            Dim total_PDM As Decimal = txt_personalitydevelopment.Text - get_sumponint
+                            Dim total_mark As Decimal = txt_leadership.Text + txt_communityservice.Text + txt_reflection.Text + txt_assignment.Text + txt_appearance.Text + txt_roomtidiness.Text + total_PDM + txt_merit.Text
 
-                        If txt_reflection.Text > percen_reflection Then
-                            ShowMessage(" Please fill in reflection mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
+                            ''Get Grade
+                            strSQL = "Select grade_Name from grade_info where grade_min_range >= '" & total_mark & "' and grade_max_range = '" & total_mark & "'"
+                            Dim get_GradeData As String = oCommon.getFieldValue(strSQL)
 
-                        If txt_assignment.Text > percen_assignment Then
-                            ShowMessage(" Please fill in assignment mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
-
-                        If txt_appearance.Text > percen_appearance Then
-                            ShowMessage(" Please fill in appearance mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
-
-                        If txt_roomtidiness.Text > percen_romtidiness Then
-                            ShowMessage(" Please fill in room tidiness mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
-
-                        If txt_attitude.Text > percen_attitude Then
-                            ShowMessage(" Please fill in attitude mark according to setting ", MessageType.Error)
-                            Exit For
-                        End If
-
-                        ''update to database
-                        strSQL = "UPDATE personality_development_mark
-                                  SET atitude_percen = '" & percen_attitude & "', attitude_mark = '" & txt_attitude.Text & "',
-                                  leadership_percen = '" & percen_leadership & "', leadership_mark = '" & txt_leadership.Text & "',
-                                  communityservice_percen = '" & percen_communityservice & "', community_mark = '" & txt_communityservice.Text & "',
-                                  reflection_percen = '" & percen_reflection & "', reflection_mark = '" & txt_reflection.Text & "',
-                                  assignment_percen = '" & percen_assignment & "', assignment_mark = '" & txt_assignment.Text & "',
-                                  appearance_percen = '" & percen_appearance & "', appearance_mark = '" & txt_appearance.Text & "',
-                                  roomtidiness_percen = '" & percen_romtidiness & "', roomtidiness_mark = '" & txt_roomtidiness.Text & "',
-                                  pd_total_demerit = '" & get_sumponint & "', pd_total_attitude ='" & total_attitude & "',
-                                  pd_total = '" & total_mark & "'
-                                  Where pd_id = '" & strKey & "'"
-                        strRet = oCommon.ExecuteSQL(strSQL)
-
-                        Dim select_examresultid As String = "select examresult_id from personality_development_mark where pd_id = '" & strKey & "'"
-                        Dim get_examresultid As String = oCommon.getFieldValue(select_examresultid)
-
-                        Dim ResultGrades As String = "select grade_Name from grade_info where grade_min_range <= '" & total_mark & "' and grade_max_range >= '" & total_mark & "'"
-                        Dim get_grade As String = oCommon.getFieldValue(ResultGrades)
-
-                        strSQL = "UPDATE exam_result SET
-                                  marks = '" & total_mark & "', grade = '" & get_grade & "'
-                                  WHERE ID = '" & get_examresultid & "'"
-                        strRet = oCommon.ExecuteSQL(strSQL)
-                    Else
-                        Dim resilt As String = percen_checking(txt_leadership.Text, txt_communityservice.Text, txt_reflection.Text, txt_assignment.Text, txt_appearance.Text, txt_roomtidiness.Text, txt_attitude.Text, strKey)
-
-                        If result = "True" Then
                             ''update to database
-                            strSQL = "UPDATE personality_development_mark SET
-                                      attitude_mark = '" & txt_attitude.Text & "',
-                                      leadership_mark = '" & txt_leadership.Text & "',
-                                      community_mark = '" & txt_communityservice.Text & "',
-                                      reflection_mark = '" & txt_reflection.Text & "',
-                                      assignment_mark = '" & txt_assignment.Text & "',
-                                      appearance_mark = '" & txt_appearance.Text & "',
-                                      roomtidiness_mark = '" & txt_roomtidiness.Text & "',
-                                      pd_total_attitude ='" & total_attitude & "',
+                            strSQL = "UPDATE personality_development_mark
+                                      SET reflection_percen = '" & get_PercenREM & "', reflection_mark = '" & txt_reflection.Text & "',
+                                      assignment_percen = '" & get_PercenASM & "', assignment_mark = '" & txt_assignment.Text & "',
+                                      leadership_percen = '" & get_PercenLEM & "', leadership_mark = '" & txt_leadership.Text & "',
+                                      communityservice_percen = '" & get_PercenCSM & "', communityservice_mark = '" & txt_communityservice.Text & "',
+                                      personalitydevelopment_percen = '" & get_PercenPDM & "', personalitydevelopment_mark = '" & total_PDM & "',
+                                      appearance_percen = '" & get_PercenAPM & "', appearance_mark = '" & txt_appearance.Text & "',
+                                      roomtidiness_percen = '" & get_PercenRTM & "', roomtidiness_mark = '" & txt_roomtidiness.Text & "',
+                                      merit_mark = '" & txt_merit.Text & "', pd_grade ='" & get_GradeData & "',
                                       pd_total = '" & total_mark & "'
                                       Where pd_id = '" & strKey & "'"
                             strRet = oCommon.ExecuteSQL(strSQL)
 
-                            Dim select_examresultid As String = "select examresult_id from personality_development_mark where pd_id = '" & strKey & "'"
-                            Dim get_examresultid As String = oCommon.getFieldValue(select_examresultid)
+                            If strRet = "0" Then
+                                Dim find_examID As String = "Select examID from personality_development_mark where pd_id = '" & strKey & "'"
+                                Dim get_examID As String = oCommon.getFieldValue(find_examID)
 
-                            Dim ResultGrades As String = "select grade_Name from grade_info where grade_min_range <= '" & total_mark & "' and grade_max_range >= '" & total_mark & "'"
-                            Dim get_grade As String = oCommon.getFieldValue(ResultGrades)
+                                Dim find_courseID As String = "Select courseID from personality_development_mark where pd_id = '" & strKey & "'"
+                                Dim get_courseID As String = oCommon.getFieldValue(find_courseID)
 
-                            strSQL = "UPDATE exam_result SET
-                                      marks = '" & total_mark & "', grade = '" & get_grade & "'
-                                      WHERE ID = '" & get_examresultid & "'"
-                            strRet = oCommon.ExecuteSQL(strSQL)
+                                Dim select_examresultid As String = "select ID from exam_result where exam_ID = '" & get_examID & "' and course_ID = '" & get_courseID & "'"
+                                Dim get_examresultid As String = oCommon.getFieldValue(select_examresultid)
 
+                                strSQL = "UPDATE exam_result SET
+                                          marks = '" & total_mark & "', grade = '" & get_GradeData & "'
+                                          WHERE ID = '" & get_examresultid & "'"
+                                strRet = oCommon.ExecuteSQL(strSQL)
+                            Else
+                                ShowMessage(" Unablt To Update Student Result ", MessageType.Error)
+                                Exit For
+                            End If
+                        Else
+                            Exit For
                         End If
+
                     End If
                 End If
+            Next
+
+            If strRet = "0" Then
+                ShowMessage(" Update Student Result ", MessageType.Success)
             End If
-        Next
+
+        Else
+            ShowMessage(" Unable To Update Previous Result. Closed After " & get_LastDateExam, MessageType.Error)
+        End If
+
     End Sub
 
-    Private Function percen_checking(leadership As String, communityservice As String, reflection As String, assignment As String, appearance As String, roomtidiness As String, attitude As String, pd_id As String)
+    Private Function checking_Data(REM_Data As String, ASM_Data As String, LEM_Data As String, CSM_Data As String, PDM_Data As String, RTM_Data As String, APM_Data As String, MM_Data As String)
 
-        ''checking leadership percen
-        Dim find_checking_leadership As String = "select leadership_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_leadership As String = oCommon.getFieldValue(find_checking_leadership)
+        Dim find_PercenReflection As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Reflection'"
+        get_PercenREM = Decimal.Parse(oCommon.getFieldValue(find_PercenReflection))
 
-        ''checking coomunityservice percen
-        Dim find_checking_communityservice As String = "select communityservice_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_communityservice As String = oCommon.getFieldValue(find_checking_communityservice)
+        Dim find_PercenAssignment As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Assignment'"
+        get_PercenASM = Decimal.Parse(oCommon.getFieldValue(find_PercenAssignment))
 
-        ''checking reflection percen
-        Dim find_checking_reflection As String = "select reflection_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_reflection As String = oCommon.getFieldValue(find_checking_reflection)
+        Dim find_PercenLeadership As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Leadership'"
+        get_PercenLEM = Decimal.Parse(oCommon.getFieldValue(find_PercenLeadership))
 
-        ''checking assignment percen
-        Dim find_checking_assignment As String = "select assignment_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_assignment As String = oCommon.getFieldValue(find_checking_assignment)
+        Dim find_PercenCommunityServices As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Community Services'"
+        get_PercenCSM = Decimal.Parse(oCommon.getFieldValue(find_PercenCommunityServices))
 
-        ''checking appearance percen
-        Dim find_checking_appearance As String = "select appearance_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_appearance As String = oCommon.getFieldValue(find_checking_appearance)
+        Dim find_PercenPersonalityDevelopmentAssessment As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Personality Development Assessment'"
+        get_PercenPDM = Decimal.Parse(oCommon.getFieldValue(find_PercenPersonalityDevelopmentAssessment))
 
-        ''checking roomtidiness percen
-        Dim find_checking_roomtidiness As String = "select roomtidiness_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_roomtidiness As String = oCommon.getFieldValue(find_checking_roomtidiness)
+        Dim find_PercenRoomTidiness As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Room Tidiness'"
+        get_PercenRTM = Decimal.Parse(oCommon.getFieldValue(find_PercenRoomTidiness))
 
-        ''checking attitude percen
-        Dim find_checking_attitude As String = "select attitude_percen from personality_development_mark where pd_id = '" & pd_id & "'"
-        Dim get_checking_attitude As String = oCommon.getFieldValue(find_checking_attitude)
+        Dim find_PercenAppearance As String = "select CM_Percentage from counselor_management_rubrick where CM_Year = '" & ddlYear.SelectedValue & "' and CM_Program = '" & ddlProgram.SelectedValue & "' and CM_Level = '" & ddlLevelnaming.SelectedValue & "' and CM_Name = 'Appearance'"
+        get_PercenAPM = Decimal.Parse(oCommon.getFieldValue(find_PercenAppearance))
 
-        If get_checking_leadership.Length = 0 Or get_checking_leadership > leadership Then
-            ShowMessage(" Please fill in leadership mark according to setting ", MessageType.Error)
-            Return "False"
+
+        If REM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Reflection Mark ", MessageType.Error)
+            Return False
         End If
 
-        If get_checking_communityservice.Length = 0 Or get_checking_communityservice > communityservice Then
-            ShowMessage(" Please fill in community service mark according to setting ", MessageType.Error)
-            Return "False"
+        If Decimal.Parse(REM_Data) > get_PercenREM Then
+            ShowMessage(" Please Fill In Reflection Mark Less Than " & get_PercenREM, MessageType.Error)
+            Return False
         End If
 
-        If get_checking_reflection.Length = 0 Or get_checking_reflection > reflection Then
-            ShowMessage(" Please fill in reflection mark according to setting ", MessageType.Error)
-            Return "False"
+        If ASM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Assignment Mark ", MessageType.Error)
+            Return False
         End If
 
-        If get_checking_assignment.Length = 0 Or get_checking_assignment > assignment Then
-            ShowMessage(" Please fill in assignment mark according to setting ", MessageType.Error)
-            Return "False"
+        If Decimal.Parse(ASM_Data) > get_PercenASM Then
+            ShowMessage(" Please Fill In Assignment Mark Less Than " & get_PercenASM, MessageType.Error)
+            Return False
         End If
 
-        If get_checking_appearance.Length = 0 Or get_checking_appearance > appearance Then
-            ShowMessage(" Please fill in appearance mark according to setting ", MessageType.Error)
-            Return "False"
+        If LEM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Leadership Mark ", MessageType.Error)
+            Return False
         End If
 
-        If get_checking_roomtidiness.Length = 0 Or get_checking_roomtidiness > roomtidiness Then
-            ShowMessage(" Please fill in room tidiness mark according to setting ", MessageType.Error)
-            Return "False"
+        If Decimal.Parse(LEM_Data) > get_PercenLEM Then
+            ShowMessage(" Please Fill In Leadership Mark Less Than " & get_PercenLEM, MessageType.Error)
+            Return False
         End If
 
-        If get_checking_attitude.Length = 0 Or get_checking_attitude > attitude Then
-            ShowMessage(" Please fill in attitude mark according to setting ", MessageType.Error)
-            Return "False"
+        If CSM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Community Services Mark ", MessageType.Error)
+            Return False
         End If
 
-        Return "True"
+        If Decimal.Parse(CSM_Data) > get_PercenCSM Then
+            ShowMessage(" Please Fill In Community Services Mark Less Than " & get_PercenCSM, MessageType.Error)
+            Return False
+        End If
+
+        If PDM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Personality Development Mark ", MessageType.Error)
+            Return False
+        End If
+
+        If Decimal.Parse(PDM_Data) > get_PercenPDM Then
+            ShowMessage(" Please Fill In Personality Development Mark Less Than " & get_PercenPDM, MessageType.Error)
+            Return False
+        End If
+
+        If RTM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Room Tidiness Mark ", MessageType.Error)
+            Return False
+        End If
+
+        If RTM_Data > get_PercenRTM Then
+            ShowMessage(" Please Fill In Room Tidiness Mark Less Than " & get_PercenRTM, MessageType.Error)
+            Return False
+        End If
+
+        If APM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Appearance Mark ", MessageType.Error)
+            Return False
+        End If
+
+        If APM_Data > get_PercenAPM Then
+            ShowMessage(" Please Fill In Appearance Mark Less Than " & get_PercenAPM, MessageType.Error)
+            Return False
+        End If
+
+        If MM_Data.Length = 0 Then
+            ShowMessage(" Please Fill In Merit Mark ", MessageType.Error)
+            Return False
+        End If
+
+        Return True
     End Function
 
     Protected Sub ShowMessage(Message As String, type As MessageType)

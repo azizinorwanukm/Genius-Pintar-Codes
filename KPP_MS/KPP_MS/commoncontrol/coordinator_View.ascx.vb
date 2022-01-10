@@ -235,6 +235,7 @@ Public Class coordinator_View
 
     Protected Sub ddlyear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlyear.SelectedIndexChanged
         staffList()
+        strRet = BindData(datRespondent)
     End Sub
 
     Protected Sub ddlstaff_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlstaff.SelectedIndexChanged

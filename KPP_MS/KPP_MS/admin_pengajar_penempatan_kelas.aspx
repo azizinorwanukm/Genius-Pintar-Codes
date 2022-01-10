@@ -1,8 +1,6 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/admin.Master" CodeBehind="admin_pengajar_penempatan_kelas.aspx.vb" Inherits="KPP_MS.admin_pengajar_penempatan_kelas" %>
 
-<%@ Register Src="commoncontrol/lecturer_RegClass.ascx" TagName="lecturer_RegClass" TagPrefix="uc1" %>
-<%@ Register Src="~/commoncontrol/import_lecturerPlacement.ascx" TagPrefix="uc1" TagName="import_lecturerPlacement" %>
-
+<%@ Register Src="~/commoncontrol/lecturer_RegClass.ascx" TagName="lecturer_RegClass" TagPrefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -32,15 +30,7 @@
         }
     </script>
 
-    <div>
-        <uc1:lecturer_RegClass ID="lecturer_RegClass" runat="server" />
-    </div>
-
-    <div id="importPenempatanKelas" style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c; margin-top:10px">
-        <p style="background-color: #800000; display: inline-block; width: 100%; border-radius: 25px">Import Lecturer Class Placement</p>
-        <uc1:import_lecturerPlacement runat="server" id="import_lecturerPlacement" />
-    </div>
-    </div>
+    <uc1:lecturer_RegClass ID="lecturer_RegClass" runat="server" />
 
     <div class="messagealert" id="alert_container" style="text-align: center"></div>
 </asp:Content>

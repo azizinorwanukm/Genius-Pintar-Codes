@@ -68,72 +68,282 @@ C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\
 C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
 C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
 C:\Users\azizi\OneDrive\Documents\Visual Studio 2017\Projects\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.exe
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.exe
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
-F:\PermataPintar\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
-F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
-F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.pdb
-F:\PermataPintar\KPP_MS\KPP_MS\bin\KPP_MS.xml
-F:\PermataPintar\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
-F:\PermataPintar\KPP_MS\KPP_MS\bin\itextsharp.xml
-F:\PermataPintar\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
-F:\PermataPintar\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbprojAssemblyReference.cache
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.subjectDataMS.resources
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.Resources.resources
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.GenerateResource.cache
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CopyComplete
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.dll
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.xml
-F:\PermataPintar\KPP_MS\KPP_MS\obj\Release\KPP_MS.pdb
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\KPP_MS.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\KPP_MS.xml
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\itextsharp.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\itextsharp.xml
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbprojAssemblyReference.cache
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.subjectDataMS.resources
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.Resources.resources
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.GenerateResource.cache
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CoreCompileInputs.cache
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CopyComplete
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.dll
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.xml
+D:\Genius Pintar Personal Version\KPP_MS\KPP_MS\obj\Release\KPP_MS.pdb
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.xml
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\itextsharp.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\itextsharp.xml
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbprojAssemblyReference.cache
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.subjectDataMS.resources
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.Resources.resources
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.GenerateResource.cache
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CoreCompileInputs.cache
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CopyComplete
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.dll
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.xml
+D:\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.pdb
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\KPP_MS.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\KPP_MS.xml
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\itextsharp.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\itextsharp.xml
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+C:\Work PGPN Coding\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.AssemblyReference.cache
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.subjectDataMS.resources
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.Resources.resources
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.GenerateResource.cache
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CoreCompileInputs.cache
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CopyComplete
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.dll
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.xml
+C:\Work PGPN Coding\KPP_MS\KPP_MS\obj\Release\KPP_MS.pdb
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csc.exe
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csc.exe.config
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csc.rsp
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csi.exe
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csi.exe.config
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\csi.rsp
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.AppContext.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Collections.Immutable.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Console.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.Process.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.Compression.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.IO.Pipes.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.AccessControl.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Claims.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Threading.Thread.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.ValueTuple.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\vbc.exe
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\vbc.exe.config
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\vbc.rsp
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\roslyn\VBCSCompiler.exe.config
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.dll.config
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.pdb
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\KPP_MS.xml
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\AjaxControlToolkit.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\itextsharp.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\itextsharp.xmlworker.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Newtonsoft.Json.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\itextsharp.xml
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Newtonsoft.Json.pdb
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\bin\Newtonsoft.Json.xml
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.AssemblyReference.cache
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.subjectDataMS.resources
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.Resources.resources
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.GenerateResource.cache
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.vbproj.CoreCompileInputs.cache
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.dll
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.xml
+C:\Work PGPN Coding\Genius Pintar Personal Version 2.0\KPP_MS\KPP_MS\obj\Release\KPP_MS.pdb

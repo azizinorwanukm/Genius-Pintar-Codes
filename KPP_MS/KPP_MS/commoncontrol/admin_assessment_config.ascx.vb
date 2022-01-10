@@ -22,7 +22,7 @@ Public Class admin_assessment_config
     End Sub
 
     Private Sub format_info()
-        strSQL = "select staff_Name, stf_ID from staff_Info where staff_Year = '1999'"
+        strSQL = "select staff_Name, stf_ID from staff_Info where staff_contract = '1999'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)

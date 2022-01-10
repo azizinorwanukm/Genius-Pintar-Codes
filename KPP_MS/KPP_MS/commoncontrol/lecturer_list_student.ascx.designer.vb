@@ -14,31 +14,22 @@ Option Explicit On
 Partial Public Class lecturer_list_student
     
     '''<summary>
-    '''txtstudent control.
+    '''ddlYear control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents txtstudent As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''btnSearch control.
+    '''ddlProgramnaming control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnSearch As Global.System.Web.UI.HtmlControls.HtmlButton
-    
-    '''<summary>
-    '''ddlClassnaming control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents ddlClassnaming As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlProgramnaming As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''ddlLevelnaming control.
@@ -59,13 +50,13 @@ Partial Public Class lecturer_list_student
     Protected WithEvents ddlSemnaming As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
-    '''ddlYear control.
+    '''ddlClassnaming control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ddlYear As Global.System.Web.UI.WebControls.DropDownList
+    Protected WithEvents ddlClassnaming As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''datRespondent control.

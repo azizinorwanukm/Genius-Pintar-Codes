@@ -3,8 +3,8 @@ Imports System.Data.OleDb
 Imports System.Data.SqlClient
 Imports System.IO
 Imports System.Globalization
-Imports iTextSharp.text
-Imports iTextSharp.text.pdf
+'Imports iTextSharp.text
+'Imports iTextSharp.text.pdf
 
 
 Public Class homeroom_assessment_remark
@@ -17,11 +17,13 @@ Public Class homeroom_assessment_remark
     Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
     Dim objConn As SqlConnection = New SqlConnection(strConn)
     Dim oCommon As New Commonfunction
+    Dim oDes As New Simple3Des("p@ssw0rd1")
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If Not IsPostBack Then
                 ddlyear_info()
+                ddlLevel_info()
 
             End If
         Catch ex As Exception
@@ -29,56 +31,43 @@ Public Class homeroom_assessment_remark
     End Sub
 
     Private Sub ddlyear_info()
-        Try
-            Dim year As String = "SELECT Parameter FROM setting where Type = 'Year'"
-            Dim yearDA As New SqlDataAdapter(year, objConn)
 
+        strSQL = "select class_year from class_info where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'"
+        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+        Dim objConn As SqlConnection = New SqlConnection(strConn)
+        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+        Try
             Dim years_DS As DataSet = New DataSet
-            yearDA.Fill(years_DS, "YearTable")
+            sqlDA.Fill(years_DS, "AnyTable")
 
             ddlyear.DataSource = years_DS
-            ddlyear.DataValueField = "Parameter"
-            ddlyear.DataTextField = "Parameter"
+            ddlyear.DataTextField = "class_year"
+            ddlyear.DataValueField = "class_year"
             ddlyear.DataBind()
-            'ddlyear.Items.Insert(0, New ListItem("Select Year", String.Empty))
-            'ddlyear.SelectedIndex = 0
+            ddlyear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+
         Catch ex As Exception
+        Finally
+            objConn.Dispose()
         End Try
     End Sub
 
     Private Sub ddlLevel_info()
         Try
-            Dim level_asas As String = ""
-            Dim level_tahap As String = ""
-
-            If ddlexam_Name.SelectedValue = "Exam 1" Or ddlexam_Name.SelectedValue = "Exam 2" Or ddlexam_Name.SelectedValue = "Exam 3" Or ddlexam_Name.SelectedValue = "Exam 4" Then
-                level_asas = "Foundation 1"
-                level_tahap = "Level 1"
-
-            ElseIf ddlexam_Name.SelectedValue = "Exam 5" Or ddlexam_Name.SelectedValue = "Exam 6" Or ddlexam_Name.SelectedValue = "Exam 7" Then
-                level_asas = "Foundation 2"
-                level_tahap = "Level 2"
-
-            ElseIf ddlexam_Name.SelectedValue = "Exam 8" Then
-                level_asas = "Foundation 2"
-
-            ElseIf ddlexam_Name.SelectedValue = "Exam 9" Or ddlexam_Name.SelectedValue = "Exam 10" Or ddlexam_Name.SelectedValue = "Exam 11" Or ddlexam_Name.SelectedValue = "Exam 12" Then
-                level_asas = "Foundation 3"
-
-            End If
-
-            Dim exam As String = "select * from setting where Type = 'Level' and ( Parameter = '" & level_asas & "' or Parameter = '" & level_tahap & "' )"
-            Dim examDA As New SqlDataAdapter(exam, objConn)
+            strSQL = "Select class_Level from class_info where class_year = '" & ddlyear.SelectedValue & "' and stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'"
+            Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+            Dim objConn As SqlConnection = New SqlConnection(strConn)
+            Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
             Dim exam_DS As DataSet = New DataSet
-            examDA.Fill(exam_DS, "ExamTable")
+            sqlDA.Fill(exam_DS, "ExamTable")
 
             ddlLevel.DataSource = exam_DS
-            ddlLevel.DataValueField = "Parameter"
-            ddlLevel.DataTextField = "Value"
+            ddlLevel.DataValueField = "class_Level"
+            ddlLevel.DataTextField = "class_Level"
             ddlLevel.DataBind()
-            'ddlLevel.Items.Insert(0, New ListItem("Select Level", String.Empty))
-            'ddlLevel.SelectedIndex = 0
+            ddlLevel.Items.Insert(0, New ListItem("Select Level", String.Empty))
 
         Catch ex As Exception
         End Try
@@ -86,12 +75,10 @@ Public Class homeroom_assessment_remark
 
     Private Sub ddlclass_info()
         Try
-            Dim DATA_STAFFID As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
-
             Dim exam As String = "select * from class_info
                                   where class_info.class_year = '" & ddlyear.SelectedValue & "'
                                   and class_info.class_Level = '" & ddlLevel.SelectedValue & "'
-                                  and class_info.stf_ID = '" & DATA_STAFFID & "'"
+                                  and class_info.stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'"
             Dim examDA As New SqlDataAdapter(exam, objConn)
 
             Dim exam_DS As DataSet = New DataSet
@@ -101,8 +88,7 @@ Public Class homeroom_assessment_remark
             ddlClass.DataValueField = "class_ID"
             ddlClass.DataTextField = "Class_Name"
             ddlClass.DataBind()
-            'ddlClass.Items.Insert(0, New ListItem("Select Class", String.Empty))
-            'ddlClass.SelectedIndex = 0
+            ddlClass.Items.Insert(0, New ListItem("Select Class", String.Empty))
 
         Catch ex As Exception
         End Try
@@ -133,8 +119,7 @@ Public Class homeroom_assessment_remark
             ddlexam_Name.DataValueField = "exam_Name"
             ddlexam_Name.DataTextField = "exam_Name"
             ddlexam_Name.DataBind()
-            'ddlexam_Name.Items.Insert(0, New ListItem("Select Exam", String.Empty))
-            'ddlexam_Name.SelectedIndex = 0
+            ddlexam_Name.Items.Insert(0, New ListItem("Select Exam", String.Empty))
 
         Catch ex As Exception
         End Try
@@ -142,6 +127,7 @@ Public Class homeroom_assessment_remark
 
     Protected Sub ddlyear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlyear.SelectedIndexChanged
         Try
+            ddlLevel_info()
             ddlexam_info()
         Catch ex As Exception
         End Try
@@ -201,7 +187,7 @@ Public Class homeroom_assessment_remark
 
     Protected Sub ddlexam_Name_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlexam_Name.SelectedIndexChanged
         Try
-            ddlLevel_info()
+            strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
     End Sub
@@ -209,13 +195,6 @@ Public Class homeroom_assessment_remark
     Protected Sub ddlLevel_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlLevel.SelectedIndexChanged
         Try
             ddlclass_info()
-        Catch ex As Exception
-        End Try
-    End Sub
-
-    Private Sub btnSearch_ServerClick(sender As Object, e As EventArgs) Handles btnSearch.ServerClick
-        Try
-            strRet = BindData(datRespondent)
         Catch ex As Exception
         End Try
     End Sub
@@ -239,11 +218,11 @@ Public Class homeroom_assessment_remark
             Dim data_student_Mykad As String = oCommon.getFieldValue(get_student_Mykad)
 
 
-            std_Name.Text = data_student_Name
-            std_Mykad.Text = data_student_Mykad
-            std_Class.Text = data_student_Class
-            std_Exam.Text = ddlexam_Name.SelectedValue
-            std_Year.Text = ddlyear.SelectedValue
+            'std_Name.Text = data_student_Name
+            'std_Mykad.Text = data_student_Mykad
+            'std_Class.Text = data_student_Class
+            'std_Exam.Text = ddlexam_Name.SelectedValue
+            'std_Year.Text = ddlyear.SelectedValue
 
             strRet = RemarkData(GridView1)
 
@@ -386,541 +365,548 @@ Public Class homeroom_assessment_remark
 
     End Sub
 
-    Private Sub BtnPrint_ServerClick(sender As Object, e As EventArgs) Handles BtnPrint.ServerClick
-
-        Dim myDocument As New Document(PageSize.A4)
-
-        Dim i As Integer = 0
-
-        HttpContext.Current.Response.ContentType = "application/pdf"
-        HttpContext.Current.Response.AddHeader("content-disposition", "attachment;filename=UlasanPelajarPeramtaPintar.pdf")
-        HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache)
-
-        PdfWriter.GetInstance(myDocument, HttpContext.Current.Response.OutputStream)
-
-        myDocument.Open()
-
-
-        For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
-            Dim chkUpdate As CheckBox = CType(datRespondent.Rows(i).Cells(5).FindControl("chkSelect"), CheckBox)
-            If Not chkUpdate Is Nothing Then
-
-                Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
-                If chkUpdate.Checked = True Then
-
-                    ''GET EXAM ID
-                    Dim get_exam_ID As String = "select exam_ID from exam_info where exam_Name = '" & ddlexam_Name.SelectedValue & "' and exam_year = '" & ddlyear.SelectedValue & "'"
-                    Dim data_exam_ID As String = oCommon.getFieldValue(get_exam_ID)
-
-                    ''GET STUDENT NAME
-                    Dim get_student_name As String = "select student_Name from student_info where std_ID ='" & strKey & "' and student_Status = 'Access'"
-                    Dim data_student_name As String = oCommon.getFieldValue(get_student_name)
-
-                    ''GET STUDENT CLASS
-                    Dim get_student_class As String = "select class_Name from class_info where class_ID = '" & ddlClass.SelectedValue & "'"
-                    Dim data_student_class As String = oCommon.getFieldValue(get_student_class)
-
-                    ''GET STUDENT MATIK
-                    Dim get_student_ID As String = "select student_ID from student_info where std_ID ='" & strKey & "' and student_Status = 'Access'"
-                    Dim data_student_ID As String = oCommon.getFieldValue(get_student_ID)
-
-                    ''GET YEAR
-                    Dim data_student_year As String = ddlyear.SelectedValue
-
-                    ''GET REMARK DESCRIPTION
-                    Dim tmpsql_remark_description As String = ""
-                    Dim get_description As New DataTable
-
-                    tmpsql_remark_description = "select assessment_config.description from assessment_remark
-                                                 left join assessment_config on assessment_remark.asconfig_ID = assessment_config.asconfig_ID
-                                                 left join exam_info on assessment_remark.exam_ID = exam_info.exam_ID
-                                                 where assessment_remark.std_ID = '" & strKey & "' and assessment_remark.class_ID = '" & ddlClass.SelectedValue & "'
-                                                 and exam_info.exam_Name = '" & ddlexam_Name.SelectedValue & "' and exam_info.exam_year = '" & ddlyear.SelectedValue & "' and assessment_remark.year = '" & ddlyear.SelectedValue & "'
-                                                 order by assessment_config.asconfig_ID ASC"
-                    Dim sql_remark_description As New SqlDataAdapter(tmpsql_remark_description, strConn)
-
-                    ''GET REMARK POINT
-                    Dim tmpsql_remark_point As String = ""
-                    Dim get_point As New DataTable
-
-                    tmpsql_remark_point = "select asremark from assessment_remark
-                                           left join assessment_config on assessment_remark.asconfig_ID = assessment_config.asconfig_ID
-                                           left join exam_info on assessment_remark.exam_ID = exam_info.exam_ID
-                                           where assessment_remark.std_ID = '" & strKey & "' and assessment_remark.class_ID = '" & ddlClass.SelectedValue & "'
-                                           and exam_info.exam_Name = '" & ddlexam_Name.SelectedValue & "' and exam_info.exam_year = '" & ddlyear.SelectedValue & "' and assessment_remark.year = '" & ddlyear.SelectedValue & "'
-                                           order by assessment_config.asconfig_ID ASC"
-                    Dim sql_remark_point As New SqlDataAdapter(tmpsql_remark_point, strConn)
-
-                    ''GET REMARK ESSAY
-                    Dim tmpsql_remark_essay As String = ""
-                    Dim get_essay As New DataTable
-
-                    tmpsql_remark_essay = "SELECT asremark_essay from assessment_remark_essay 
-                                           left join exam_info on asremark_essay.exam_ID = exam_info.exam_ID
-                                           where asremark_essay.std_ID ='" & strKey & "' and asremark_essay.year = '" & std_Year.Text & "' and exam_info.exam_Name = '" & ddlexam_Name.SelectedValue & "'"
-                    Dim sql_remark_essay As New SqlDataAdapter(tmpsql_remark_essay, strConn)
-
-                    Try
-                        sql_remark_description.Fill(get_description)
-                        sql_remark_point.Fill(get_point)
-                        sql_remark_essay.Fill(get_essay)
-                    Catch ex As Exception
-                    End Try
-
-                    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-                    ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-                    '' draw spacing
-                    Dim imgdrawSpacing As String = Server.MapPath("~/img/empty_space.png")
-                    Dim imgSpacing As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(imgdrawSpacing)
-                    imgSpacing.Alignment = iTextSharp.text.Image.LEFT_ALIGN  'left
-                    imgSpacing.Border = 0
-
-                    ' drawa permata pintar image
-                    Dim get_imgPP As String = Server.MapPath("~/img/permata_logo.png")
-                    Dim data_imgPP As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(get_imgPP)
-                    data_imgPP.ScalePercent(30)
-                    data_imgPP.SetAbsolutePosition(212, 770)
-                    myDocument.Add(data_imgPP)
-
-                    '' drawa permata pintar image
-                    Dim get_imgUKM As String = Server.MapPath("~/img/ukm.jpg")
-                    Dim data_imgUKM As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(get_imgUKM)
-                    data_imgUKM.ScalePercent(12.5)
-                    data_imgUKM.SetAbsolutePosition(312, 770)
-                    myDocument.Add(data_imgUKM)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-                    myDocument.Add(imgSpacing)
-                    myDocument.Add(imgSpacing)
-                    myDocument.Add(imgSpacing)
-
-                    '' BORANG PENILAIN PELAJAR Text
-                    Dim myPara001 As New Paragraph("BORANG PENILAIAN PELAJAR", FontFactory.GetFont("Arial", 10, Font.BOLD))
-                    myPara001.Alignment = Element.ALIGN_CENTER
-                    myDocument.Add(myPara001)
-
-                    '' KOLEJ PERMATApintar Text
-                    Dim myPara002 As New Paragraph("KOLEJ PERMATApintar®", FontFactory.GetFont("Arial", 10, Font.BOLD))
-                    myPara002.Alignment = Element.ALIGN_CENTER
-                    myDocument.Add(myPara002)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-
-                    '' create a table
-                    Dim table As New PdfPTable(4)
-                    table.WidthPercentage = 100
-                    table.SetWidths({5, 22, 68, 5})
-
-                    Dim cetak = Environment.NewLine & ""
-                    Dim cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" NAMA PELAJAR", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" " & data_student_name, FontFactory.GetFont("Arial", 9)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" KELAS", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" " & data_student_class, FontFactory.GetFont("Arial", 9)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table.AddCell(cell)
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" NO MATRIK", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" " & data_student_ID, FontFactory.GetFont("Arial", 9)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table.AddCell(cell)
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" TAHUN PENILAIAN", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" " & data_student_year, FontFactory.GetFont("Arial", 9)))
-                    table.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table.AddCell(cell)
-
-                    myDocument.Add(table)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    '' create a table
-                    Dim table1 As New PdfPTable(2)
-                    table1.WidthPercentage = 100
-                    table1.SetWidths({5, 95})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table1.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph("Sila rujuk jadual pemarkahan", FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table1.AddCell(cell)
-
-                    myDocument.Add(table1)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    '' create a table
-                    Dim table2 As New PdfPTable(4)
-                    table2.WidthPercentage = 100
-                    table2.SetWidths({15, 5, 30, 50})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" 5", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Sangat Baik", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" 4", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Baik", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" 3", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Memuaskan", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" 2", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Kurang Memuaskan", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" 1", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Tidak Memuaskan", FontFactory.GetFont("Arial", 9)))
-                    table2.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table2.AddCell(cell)
-
-                    myDocument.Add(table2)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    '' create a table
-                    Dim table3 As New PdfPTable(2)
-                    table3.WidthPercentage = 100
-                    table3.SetWidths({5, 95})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table3.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph("BAHAGIAN A : KEHADIRAN DAN PRESTASI PELAJAR ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    cell.Border = 0
-                    table3.AddCell(cell)
-
-                    myDocument.Add(table3)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    '' create a table
-                    Dim table4 As New PdfPTable(5)
-                    table4.WidthPercentage = 100
-                    table4.SetWidths({5, 5, 60, 12, 18})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table4.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Bil ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table4.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Perkara ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table4.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Pemarkahan ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    table4.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table4.AddCell(cell)
-
-                    '' get count remark content for 
-                    Dim get_count_remark As String = "select count(*) from assessment_config"
-                    Dim data_count_remark As String = oCommon.getFieldValue(get_count_remark)
-
-                    For value As Integer = 1 To data_count_remark
-
-                        Dim get_content_remark As String = "select description from assessment_config where asconfig_ID = '" & value & "'"
-                        Dim data_content_remark As String = oCommon.getFieldValue(get_content_remark)
-
-                        Dim get_remark_result As String = "select asremark from assessment_remark where asconfig_ID = '" & value & "' and std_ID = '" & strKey & "' and class_ID = '" & ddlClass.SelectedValue & "' and exam_ID = '" & data_exam_ID & "'"
-                        Dim data_remark_result As String = oCommon.getFieldValue(get_remark_result)
-
-                        cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                        cell.Border = 0
-                        table4.AddCell(cell)
-
-                        cell = New PdfPCell(New Paragraph(" " & value, FontFactory.GetFont("Arial", 9)))
-                        table4.AddCell(cell)
-
-                        cell = New PdfPCell(New Paragraph(" " & data_content_remark, FontFactory.GetFont("Arial", 9)))
-                        table4.AddCell(cell)
-
-                        Dim myPara005 As New Paragraph(" " & data_remark_result, FontFactory.GetFont("Arial", 9))
-                        myPara005.Alignment = Element.ALIGN_CENTER
-
-                        cell.VerticalAlignment = Element.ALIGN_MIDDLE
-                        cell.AddElement(myPara005)
-                        table4.AddCell(cell)
-
-                        cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                        cell.Border = 0
-                        table4.AddCell(cell)
-
-                    Next
-
-                    myDocument.Add(table4)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    '' create a table
-                    Dim table5 As New PdfPTable(2)
-                    table5.WidthPercentage = 100
-                    table5.SetWidths({5, 95})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table5.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph("BAHAGIAN B : PRESTASI DAN HARAPAN KOLEJ PERMATAPINTAR KEPADA PELAJAR ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    cell.Border = 0
-                    table5.AddCell(cell)
-
-                    myDocument.Add(table5)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    Dim get_remark_essay As String = "select asremark_essay from assessment_remark_essay where year = '" & ddlyear.SelectedValue & "' and std_ID = '" & strKey & "' and class_ID = '" & ddlClass.SelectedValue & "' and exam_ID = '" & data_exam_ID & "'"
-                    Dim data_remark_essay As String = oCommon.getFieldValue(get_remark_essay)
-
-                    '' create a table
-                    Dim table6 As New PdfPTable(3)
-                    table6.WidthPercentage = 100
-                    table6.SetWidths({5, 90, 5})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    Dim cell_rowspan = New PdfPCell(New Paragraph(" " & data_remark_essay, FontFactory.GetFont("Arial", 9)))
-                    cell_rowspan.Rowspan = 5
-                    table6.AddCell(cell_rowspan)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table6.AddCell(cell)
-
-                    myDocument.Add(table6)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-                    myDocument.Add(imgSpacing)
-                    myDocument.Add(imgSpacing)
-                    myDocument.Add(imgSpacing)
-
-
-                    '' create a table
-                    Dim table7 As New PdfPTable(3)
-                    table7.WidthPercentage = 100
-                    table7.SetWidths({25, 15, 60})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table7.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph("(Tandatangan)", FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table7.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table7.AddCell(cell)
-
-                    myDocument.Add(table7)
-
-                    '' spacing
-                    myDocument.Add(imgSpacing)
-
-                    '' create a table
-                    Dim table8 As New PdfPTable(4)
-                    table8.WidthPercentage = 100
-                    table8.SetWidths({5, 60, 20, 5})
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Nama : ", FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    Dim cell_rowspan_cop = New PdfPCell(New Paragraph("         Cop Rasmi Kolej ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
-                    cell_rowspan_cop.Rowspan = 4
-                    table8.AddCell(cell_rowspan_cop)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(" Tarikh : ", FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
-                    cell.Border = 0
-                    table8.AddCell(cell)
-
-                    myDocument.Add(table8)
-
-                    '' spacing
-                    myDocument.NewPage()
-
-                End If
-            End If
-        Next
-
-        myDocument.Close()
-
-        HttpContext.Current.Response.Write(myDocument)
-        HttpContext.Current.Response.End()
-
+    Protected Sub ddlClass_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlClass.SelectedIndexChanged
+        Try
+            strRet = BindData(datRespondent)
+        Catch ex As Exception
+        End Try
     End Sub
+
+    'Private Sub BtnPrint_ServerClick(sender As Object, e As EventArgs) Handles BtnPrint.ServerClick
+
+    '    Dim myDocument As New Document(PageSize.A4)
+
+    '    Dim i As Integer = 0
+
+    '    HttpContext.Current.Response.ContentType = "application/pdf"
+    '    HttpContext.Current.Response.AddHeader("content-disposition", "attachment;filename=UlasanPelajarPeramtaPintar.pdf")
+    '    HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache)
+
+    '    PdfWriter.GetInstance(myDocument, HttpContext.Current.Response.OutputStream)
+
+    '    myDocument.Open()
+
+
+    '    For i = 0 To datRespondent.Rows.Count - 1 Step i + 1
+    '        Dim chkUpdate As CheckBox = CType(datRespondent.Rows(i).Cells(5).FindControl("chkSelect"), CheckBox)
+    '        If Not chkUpdate Is Nothing Then
+
+    '            Dim strKey As String = datRespondent.DataKeys(i).Value.ToString
+    '            If chkUpdate.Checked = True Then
+
+    '                ''GET EXAM ID
+    '                Dim get_exam_ID As String = "select exam_ID from exam_info where exam_Name = '" & ddlexam_Name.SelectedValue & "' and exam_year = '" & ddlyear.SelectedValue & "'"
+    '                Dim data_exam_ID As String = oCommon.getFieldValue(get_exam_ID)
+
+    '                ''GET STUDENT NAME
+    '                Dim get_student_name As String = "select student_Name from student_info where std_ID ='" & strKey & "' and student_Status = 'Access'"
+    '                Dim data_student_name As String = oCommon.getFieldValue(get_student_name)
+
+    '                ''GET STUDENT CLASS
+    '                Dim get_student_class As String = "select class_Name from class_info where class_ID = '" & ddlClass.SelectedValue & "'"
+    '                Dim data_student_class As String = oCommon.getFieldValue(get_student_class)
+
+    '                ''GET STUDENT MATIK
+    '                Dim get_student_ID As String = "select student_ID from student_info where std_ID ='" & strKey & "' and student_Status = 'Access'"
+    '                Dim data_student_ID As String = oCommon.getFieldValue(get_student_ID)
+
+    '                ''GET YEAR
+    '                Dim data_student_year As String = ddlyear.SelectedValue
+
+    '                ''GET REMARK DESCRIPTION
+    '                Dim tmpsql_remark_description As String = ""
+    '                Dim get_description As New DataTable
+
+    '                tmpsql_remark_description = "select assessment_config.description from assessment_remark
+    '                                             left join assessment_config on assessment_remark.asconfig_ID = assessment_config.asconfig_ID
+    '                                             left join exam_info on assessment_remark.exam_ID = exam_info.exam_ID
+    '                                             where assessment_remark.std_ID = '" & strKey & "' and assessment_remark.class_ID = '" & ddlClass.SelectedValue & "'
+    '                                             and exam_info.exam_Name = '" & ddlexam_Name.SelectedValue & "' and exam_info.exam_year = '" & ddlyear.SelectedValue & "' and assessment_remark.year = '" & ddlyear.SelectedValue & "'
+    '                                             order by assessment_config.asconfig_ID ASC"
+    '                Dim sql_remark_description As New SqlDataAdapter(tmpsql_remark_description, strConn)
+
+    '                ''GET REMARK POINT
+    '                Dim tmpsql_remark_point As String = ""
+    '                Dim get_point As New DataTable
+
+    '                tmpsql_remark_point = "select asremark from assessment_remark
+    '                                       left join assessment_config on assessment_remark.asconfig_ID = assessment_config.asconfig_ID
+    '                                       left join exam_info on assessment_remark.exam_ID = exam_info.exam_ID
+    '                                       where assessment_remark.std_ID = '" & strKey & "' and assessment_remark.class_ID = '" & ddlClass.SelectedValue & "'
+    '                                       and exam_info.exam_Name = '" & ddlexam_Name.SelectedValue & "' and exam_info.exam_year = '" & ddlyear.SelectedValue & "' and assessment_remark.year = '" & ddlyear.SelectedValue & "'
+    '                                       order by assessment_config.asconfig_ID ASC"
+    '                Dim sql_remark_point As New SqlDataAdapter(tmpsql_remark_point, strConn)
+
+    '                ''GET REMARK ESSAY
+    '                Dim tmpsql_remark_essay As String = ""
+    '                Dim get_essay As New DataTable
+
+    '                tmpsql_remark_essay = "SELECT asremark_essay from assessment_remark_essay 
+    '                                       left join exam_info on asremark_essay.exam_ID = exam_info.exam_ID
+    '                                       where asremark_essay.std_ID ='" & strKey & "' and asremark_essay.year = '" & std_Year.Text & "' and exam_info.exam_Name = '" & ddlexam_Name.SelectedValue & "'"
+    '                Dim sql_remark_essay As New SqlDataAdapter(tmpsql_remark_essay, strConn)
+
+    '                Try
+    '                    sql_remark_description.Fill(get_description)
+    '                    sql_remark_point.Fill(get_point)
+    '                    sql_remark_essay.Fill(get_essay)
+    '                Catch ex As Exception
+    '                End Try
+
+    '                ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+    '                ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+
+    '                '' draw spacing
+    '                Dim imgdrawSpacing As String = Server.MapPath("~/img/empty_space.png")
+    '                Dim imgSpacing As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(imgdrawSpacing)
+    '                imgSpacing.Alignment = iTextSharp.text.Image.LEFT_ALIGN  'left
+    '                imgSpacing.Border = 0
+
+    '                ' drawa permata pintar image
+    '                Dim get_imgPP As String = Server.MapPath("~/img/permata_logo.png")
+    '                Dim data_imgPP As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(get_imgPP)
+    '                data_imgPP.ScalePercent(30)
+    '                data_imgPP.SetAbsolutePosition(212, 770)
+    '                myDocument.Add(data_imgPP)
+
+    '                '' drawa permata pintar image
+    '                Dim get_imgUKM As String = Server.MapPath("~/img/ukm.jpg")
+    '                Dim data_imgUKM As iTextSharp.text.Image = iTextSharp.text.Image.GetInstance(get_imgUKM)
+    '                data_imgUKM.ScalePercent(12.5)
+    '                data_imgUKM.SetAbsolutePosition(312, 770)
+    '                myDocument.Add(data_imgUKM)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+    '                myDocument.Add(imgSpacing)
+    '                myDocument.Add(imgSpacing)
+    '                myDocument.Add(imgSpacing)
+
+    '                '' BORANG PENILAIN PELAJAR Text
+    '                Dim myPara001 As New Paragraph("BORANG PENILAIAN PELAJAR", FontFactory.GetFont("Arial", 10, Font.BOLD))
+    '                myPara001.Alignment = Element.ALIGN_CENTER
+    '                myDocument.Add(myPara001)
+
+    '                '' KOLEJ PERMATApintar Text
+    '                Dim myPara002 As New Paragraph("KOLEJ PERMATApintar®", FontFactory.GetFont("Arial", 10, Font.BOLD))
+    '                myPara002.Alignment = Element.ALIGN_CENTER
+    '                myDocument.Add(myPara002)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+
+    '                '' create a table
+    '                Dim table As New PdfPTable(4)
+    '                table.WidthPercentage = 100
+    '                table.SetWidths({5, 22, 68, 5})
+
+    '                Dim cetak = Environment.NewLine & ""
+    '                Dim cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" NAMA PELAJAR", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" " & data_student_name, FontFactory.GetFont("Arial", 9)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" KELAS", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" " & data_student_class, FontFactory.GetFont("Arial", 9)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table.AddCell(cell)
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" NO MATRIK", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" " & data_student_ID, FontFactory.GetFont("Arial", 9)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table.AddCell(cell)
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" TAHUN PENILAIAN", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" " & data_student_year, FontFactory.GetFont("Arial", 9)))
+    '                table.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table.AddCell(cell)
+
+    '                myDocument.Add(table)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                '' create a table
+    '                Dim table1 As New PdfPTable(2)
+    '                table1.WidthPercentage = 100
+    '                table1.SetWidths({5, 95})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table1.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph("Sila rujuk jadual pemarkahan", FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table1.AddCell(cell)
+
+    '                myDocument.Add(table1)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                '' create a table
+    '                Dim table2 As New PdfPTable(4)
+    '                table2.WidthPercentage = 100
+    '                table2.SetWidths({15, 5, 30, 50})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" 5", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Sangat Baik", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" 4", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Baik", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" 3", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Memuaskan", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" 2", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Kurang Memuaskan", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" 1", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Tidak Memuaskan", FontFactory.GetFont("Arial", 9)))
+    '                table2.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table2.AddCell(cell)
+
+    '                myDocument.Add(table2)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                '' create a table
+    '                Dim table3 As New PdfPTable(2)
+    '                table3.WidthPercentage = 100
+    '                table3.SetWidths({5, 95})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table3.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph("BAHAGIAN A : KEHADIRAN DAN PRESTASI PELAJAR ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                cell.Border = 0
+    '                table3.AddCell(cell)
+
+    '                myDocument.Add(table3)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                '' create a table
+    '                Dim table4 As New PdfPTable(5)
+    '                table4.WidthPercentage = 100
+    '                table4.SetWidths({5, 5, 60, 12, 18})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table4.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Bil ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table4.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Perkara ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table4.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Pemarkahan ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                table4.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table4.AddCell(cell)
+
+    '                '' get count remark content for 
+    '                Dim get_count_remark As String = "select count(*) from assessment_config"
+    '                Dim data_count_remark As String = oCommon.getFieldValue(get_count_remark)
+
+    '                For value As Integer = 1 To data_count_remark
+
+    '                    Dim get_content_remark As String = "select description from assessment_config where asconfig_ID = '" & value & "'"
+    '                    Dim data_content_remark As String = oCommon.getFieldValue(get_content_remark)
+
+    '                    Dim get_remark_result As String = "select asremark from assessment_remark where asconfig_ID = '" & value & "' and std_ID = '" & strKey & "' and class_ID = '" & ddlClass.SelectedValue & "' and exam_ID = '" & data_exam_ID & "'"
+    '                    Dim data_remark_result As String = oCommon.getFieldValue(get_remark_result)
+
+    '                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                    cell.Border = 0
+    '                    table4.AddCell(cell)
+
+    '                    cell = New PdfPCell(New Paragraph(" " & value, FontFactory.GetFont("Arial", 9)))
+    '                    table4.AddCell(cell)
+
+    '                    cell = New PdfPCell(New Paragraph(" " & data_content_remark, FontFactory.GetFont("Arial", 9)))
+    '                    table4.AddCell(cell)
+
+    '                    Dim myPara005 As New Paragraph(" " & data_remark_result, FontFactory.GetFont("Arial", 9))
+    '                    myPara005.Alignment = Element.ALIGN_CENTER
+
+    '                    cell.VerticalAlignment = Element.ALIGN_MIDDLE
+    '                    cell.AddElement(myPara005)
+    '                    table4.AddCell(cell)
+
+    '                    cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                    cell.Border = 0
+    '                    table4.AddCell(cell)
+
+    '                Next
+
+    '                myDocument.Add(table4)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                '' create a table
+    '                Dim table5 As New PdfPTable(2)
+    '                table5.WidthPercentage = 100
+    '                table5.SetWidths({5, 95})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table5.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph("BAHAGIAN B : PRESTASI DAN HARAPAN KOLEJ PERMATAPINTAR KEPADA PELAJAR ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                cell.Border = 0
+    '                table5.AddCell(cell)
+
+    '                myDocument.Add(table5)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                Dim get_remark_essay As String = "select asremark_essay from assessment_remark_essay where year = '" & ddlyear.SelectedValue & "' and std_ID = '" & strKey & "' and class_ID = '" & ddlClass.SelectedValue & "' and exam_ID = '" & data_exam_ID & "'"
+    '                Dim data_remark_essay As String = oCommon.getFieldValue(get_remark_essay)
+
+    '                '' create a table
+    '                Dim table6 As New PdfPTable(3)
+    '                table6.WidthPercentage = 100
+    '                table6.SetWidths({5, 90, 5})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                Dim cell_rowspan = New PdfPCell(New Paragraph(" " & data_remark_essay, FontFactory.GetFont("Arial", 9)))
+    '                cell_rowspan.Rowspan = 5
+    '                table6.AddCell(cell_rowspan)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table6.AddCell(cell)
+
+    '                myDocument.Add(table6)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+    '                myDocument.Add(imgSpacing)
+    '                myDocument.Add(imgSpacing)
+    '                myDocument.Add(imgSpacing)
+
+
+    '                '' create a table
+    '                Dim table7 As New PdfPTable(3)
+    '                table7.WidthPercentage = 100
+    '                table7.SetWidths({25, 15, 60})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table7.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph("(Tandatangan)", FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table7.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table7.AddCell(cell)
+
+    '                myDocument.Add(table7)
+
+    '                '' spacing
+    '                myDocument.Add(imgSpacing)
+
+    '                '' create a table
+    '                Dim table8 As New PdfPTable(4)
+    '                table8.WidthPercentage = 100
+    '                table8.SetWidths({5, 60, 20, 5})
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Nama : ", FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                Dim cell_rowspan_cop = New PdfPCell(New Paragraph("         Cop Rasmi Kolej ", FontFactory.GetFont("Arial", 9, Font.BOLD)))
+    '                cell_rowspan_cop.Rowspan = 4
+    '                table8.AddCell(cell_rowspan_cop)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(" Tarikh : ", FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                cell = New PdfPCell(New Paragraph(cetak, FontFactory.GetFont("Arial", 9)))
+    '                cell.Border = 0
+    '                table8.AddCell(cell)
+
+    '                myDocument.Add(table8)
+
+    '                '' spacing
+    '                myDocument.NewPage()
+
+    '            End If
+    '        End If
+    '    Next
+
+    '    myDocument.Close()
+
+    '    HttpContext.Current.Response.Write(myDocument)
+    '    HttpContext.Current.Response.End()
+
+    'End Sub
 
 End Class

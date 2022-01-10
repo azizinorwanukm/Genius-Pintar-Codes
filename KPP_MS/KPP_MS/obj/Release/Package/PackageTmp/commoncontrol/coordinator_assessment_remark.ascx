@@ -23,10 +23,10 @@
 <div class="gridViewRespond" id="Search_Test" style="width: 100%; background-color: #f2f2f2; border-radius: 25px; border: 5px solid #8c8c8c;">
     <p style="background-color: #800000; display: inline-block; text-align: center; width: 100%; border-radius: 25px">Search Information</p>
     <div class="row" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; text-align: left; padding-left: 23px; margin-left: 13px">
-        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlexam_Name" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="true" CssClass="btn btn-default ddl"></asp:DropDownList>
-        <asp:DropDownList ID="ddlSubject" runat="server" AutoPostBack="false" CssClass="btn btn-default ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlyear" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlexam_Name" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlLevel" runat="server" AutoPostBack="true" CssClass="btn btn-default font ddl"></asp:DropDownList>
+        <asp:DropDownList ID="ddlSubject" runat="server" AutoPostBack="false" CssClass="btn btn-default font ddl"></asp:DropDownList>
         <button id="btnSearch" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Search">Search &#160;<i class="fa fa-search w3-large w3-text-white"></i></button>
     </div>
     <p></p>

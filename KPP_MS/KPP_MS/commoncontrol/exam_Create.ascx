@@ -28,46 +28,113 @@
 </script>
 
 <style>
-    .image-upload > input{
-        display:none;
+    .sc3::-webkit-scrollbar {
+        height: 10px;
     }
-     .ddl {
-        border-radius: 25px;
+
+    .sc3::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc3::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
+        border-radius: 3px;
+    }
+
+    .sc4::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .sc4::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .sc4::-webkit-scrollbar-thumb {
+        background-color: #929B9E;
     }
 </style>
 
-<div style="width: 100%; background-color: #f2f2f2; text-align: center; border-radius: 25px; border: 5px solid #8c8c8c;">
-    <p class="w3-text-white gridViewRespond" style="background-color: #800000; text-align: center; width: 100%; border-radius: 25px">Register New Examination</p>
-    <div class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 5px">
-        <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server"> Exam Name : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-            <asp:DropDownList ID="ddlExam_Name" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl"  Style="width: 100%;" ></asp:DropDownList>
-        </div>
-        <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server"> Exam Year : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-            <asp:DropDownList ID="ddlExam_Year" runat="server" AutoPostBack="false" CssClass=" btn btn-default ddl"  Style="width: 100%;" ></asp:DropDownList>
-        </div>
-         <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server"> Exam Code : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-            <asp:TextBox CssClass="textbox" class="form-control" ID="exam_Code" Style="width: 100%; border-radius: 25px;" runat="server" Text=""></asp:TextBox>
-        </div>
-        <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server" Style="width: 20%"> Start Date : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-            <asp:TextBox CssClass="textbox" class="form-control" ID="exam_StartDate" Style="width: 100%; border-radius: 25px;" runat="server" placeholder="DD/MM/YYYY" Text=""></asp:TextBox>
-        </div>
-        <div class="col-md-6 w3-text-black" style="text-align: left; padding-left: 23px">
-            <p></p>
-            <asp:Label CssClass="Label" runat="server" Style="width: 20%"> End Date : <i class="fa fa-certificate fa fa-fw w3-text-red w3-small"></i></asp:Label>
-            <asp:TextBox CssClass="textbox" class="form-control" ID="exam_EndDate" Style="width: 100%; border-radius: 25px;" runat="server" placeholder="DD/MM/YYYY" Text=""></asp:TextBox>
-        </div>
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 20px" class="w3-card-2">
+    <%--Breadcrum--%>
+    <div style="padding-top: 10px; padding-left: 15px; padding-bottom: 10px" class="w3-text-black">
+        Menu &nbsp; : &nbsp; General Management &nbsp; / &nbsp;
+        <asp:HyperLink runat="server" ID="previousPage"> Examination Management </asp:HyperLink> &nbsp;
+        / &nbsp; Add New Examination
     </div>
-    <div class="row gridViewRespond" style="background-color: #f2f2f2; display: inline-block; width: 100%; border-radius: 25px; margin-top: 20px; text-align: left; padding-left: 23px">
-        <button id="Btnsimpan" runat="server" class="btn btn-info" style="background-color: #005580; border-radius: 25px;" title="Save">Save &#160;<i class="fa fa-save w3-large w3-text-white"></i></button>
-        <button id="Btnback" runat="server" class="btn btn-info" style="background-color: #ffdb4d; border-radius: 25px;" title="Back">Back &#160;<i class="fa fa-chevron-circle-left w3-large w3-text-white"></i></button>
+</div>
+
+<div style="background-color: #F2F2F2; border: 5px solid #F2F2F2; margin-bottom: 20px;" class="w3-card-2">
+    <div style="padding-top: 3vh; padding-left: 1vw; padding-bottom: 1vh; overflow-y: scroll; white-space: nowrap; height: 77vh" class="sc4">
+
+        <table class="w3-text-black" style="text-align: left; padding-left: 1vh; border: hidden; margin-left: 1vw">
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Exam Name</asp:Label>
+                </td>
+                <td>
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:DropDownList ID="ddlExamName" runat="server" AutoPostBack="false" CssClass=" btn btn-default font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Exam Year</asp:Label>
+                </td>
+                <td>
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:DropDownList ID="ddlExamYear" runat="server" AutoPostBack="false" CssClass=" btn btn-default font"></asp:DropDownList>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Exam Code</asp:Label>
+                </td>
+                <td>
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:TextBox runat="server" ID="txtExamCode" Style="width: 200px"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Exam Start Date</asp:Label>
+                </td>
+                <td>
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:TextBox runat="server" ID="txtStartDate" Style="width: 200px" placeholder="Example : DD/MM/YYYY"></asp:TextBox>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p></p>
+                    <asp:Label CssClass="Label" runat="server" Style="width: 100%"> Exam End Date</asp:Label>
+                </td>
+                <td>
+                    <p></p>
+                    &nbsp : &nbsp
+                    <asp:TextBox runat="server" ID="txtEndDate" Style="width: 200px" placeholder="Example : DD/MM/YYYY"></asp:TextBox>
+                </td>
+            </tr>
+
+        </table>
+
+        <br />
+        <br />
+
+        <button id="btnUpdate" runat="server" class="btn btn-success" style="top: 8px; display: inline-block;">Add Examination</button>
+
     </div>
 </div>
 

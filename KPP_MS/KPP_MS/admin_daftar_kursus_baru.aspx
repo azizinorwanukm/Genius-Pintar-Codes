@@ -59,9 +59,9 @@
 
     <uc1:course_Create runat="server" ID="course_Create" />
 
-    <br />
+<%--    <br />
 
-    <uc1:course_Transfer runat="server" ID="course_Transfer" />
+    <uc1:course_Transfer runat="server" ID="course_Transfer" />--%>
 
     <div class="messagealert" id="alert_container" style="text-align: center"></div>
 </asp:Content>

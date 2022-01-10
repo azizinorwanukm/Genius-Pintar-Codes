@@ -15,9 +15,7 @@ Public Class pengajar_laporan_pentaksiran
         Try
             If Not IsPostBack Then
 
-                Dim id As String = Request.QueryString("stf_ID")
-
-                Dim data As String = oCommon.securityLogin(id)
+                Dim data As String = oCommon.securityLogin(Request.QueryString("stf_ID"))
 
                 If data = "FALSE" Then
                     Response.Redirect("default.aspx")
@@ -25,9 +23,10 @@ Public Class pengajar_laporan_pentaksiran
                 ElseIf data = "TRUE" Then
 
                     year_list()
-
-                    load_page()
+                    program_list()
                     student_class()
+                    exam_list()
+
                     strRet = BindData(datRespondent)
 
                 End If
@@ -38,58 +37,6 @@ Public Class pengajar_laporan_pentaksiran
         End Try
 
     End Sub
-
-    Private Sub load_page()
-        strSQL = "SELECT Parameter from setting where Parameter ='" & Now.Year & "' and Type = 'Year'"
-
-        '--debug
-        ''Response.Write(strSQLstd) 
-
-        Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
-        Dim objConn As SqlConnection = New SqlConnection(strConn)
-        Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
-
-        Dim ds As DataSet = New DataSet
-        sqlDA.Fill(ds, "AnyTable")
-
-        Dim nRows As Integer = 0
-        Dim nCount As Integer = 1
-        Dim MyTable As DataTable = New DataTable
-        MyTable = ds.Tables(0)
-        If MyTable.Rows.Count > 0 Then
-            If Not IsDBNull(ds.Tables(0).Rows(0).Item("Parameter")) Then
-                ddlYear.SelectedValue = ds.Tables(0).Rows(0).Item("Parameter")
-            Else
-                ddlYear.SelectedValue = ""
-            End If
-        End If
-    End Sub
-
-    Public Function getFieldValue(ByVal data As String, ByVal MyConnection As String) As String
-        If data.Length = 0 Then
-            Return "0"
-        End If
-        Dim conn As SqlConnection = New SqlConnection(MyConnection)
-        Dim sqlAdapter As New SqlDataAdapter(data, conn)
-        Dim strvalue As String = ""
-        Try
-            Dim ds As DataSet = New DataSet
-            sqlAdapter.Fill(ds, "AnyTable")
-
-            If ds.Tables(0).Rows.Count > 0 Then
-                If Not IsDBNull(ds.Tables(0).Rows(0).Item(0).ToString) Then
-                    strvalue = ds.Tables(0).Rows(0).Item(0).ToString
-                Else
-                    Return "0"
-                End If
-            End If
-        Catch ex As Exception
-            Return "0"
-        Finally
-            conn.Dispose()
-        End Try
-        Return strvalue
-    End Function
 
     Private Function BindData(ByVal gvTable As GridView) As Boolean
         Dim myDataSet As New DataSet
@@ -113,7 +60,7 @@ Public Class pengajar_laporan_pentaksiran
 
     Private Sub year_list()
         Try
-            strSQL = "SELECT Parameter FROM setting WHERE Type = 'Year'"
+            strSQL = "select distinct class_year from class_info where stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "' and class_Campus = '" & Session("SchoolCampus") & "'"
 
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
@@ -121,21 +68,43 @@ Public Class pengajar_laporan_pentaksiran
             sqlDA.Fill(ds, "AnyTable")
 
             ddlYear.DataSource = ds
-            ddlYear.DataTextField = "Parameter"
-            ddlYear.DataValueField = "Parameter"
+            ddlYear.DataTextField = "class_year"
+            ddlYear.DataValueField = "class_year"
             ddlYear.DataBind()
+            ddlYear.Items.Insert(0, New ListItem("Select Year", String.Empty))
+        Catch ex As Exception
 
+        End Try
+    End Sub
+
+    Private Sub program_list()
+        Try
+            If Session("SchoolCampus") = "APP" Then
+                strSQL = "select Parameter, Value from setting where Type = 'Stream' and Value = 'PS'"
+            Else
+                strSQL = "select Parameter, Value from setting where Type = 'Stream' and Value <> 'Temp'"
+            End If
+
+            Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
+
+            Dim ds As DataSet = New DataSet
+            sqlDA.Fill(ds, "AnyTable")
+
+            ddlProgram.DataSource = ds
+            ddlProgram.DataTextField = "Parameter"
+            ddlProgram.DataValueField = "Value"
+            ddlProgram.DataBind()
+            ddlProgram.Items.Insert(0, New ListItem("Select Program", String.Empty))
         Catch ex As Exception
 
         End Try
     End Sub
 
     Private Sub student_class()
-        Dim DATA_STAFFID As String = oCommon.Staff_securityLogin(Request.QueryString("stf_ID"))
 
         strSQL = "select class_Name, class_ID from class_info 
-                  where class_info.class_year = '" & ddlYear.SelectedValue & "'
-                  and class_info.stf_ID = '" & DATA_STAFFID & "'"
+                  where class_info.class_year = '" & ddlYear.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "' and class_info.course_Program = '" & ddlProgram.SelectedValue & "'
+                  and class_info.stf_ID = '" & oCommon.Staff_securityLogin(Request.QueryString("stf_ID")) & "'"
 
         Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
         Dim objConn As SqlConnection = New SqlConnection(strConn)
@@ -160,9 +129,24 @@ Public Class pengajar_laporan_pentaksiran
 
     Private Sub exam_list()
         Try
+            ''get class level
+            strSQL = "Select class_Level from class_info where class_ID = '" & ddlClass.SelectedValue & "' and class_year = '" & ddlYear.SelectedValue & "' and class_Campus = '" & Session("SchoolCampus") & "'"
+            Dim class_data As String = oCommon.getFieldValue(strSQL)
 
-            strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "'"
+            If class_data = "Foundation 1" Then
+                strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "' and (Exam_Name = 'Exam 1' or Exam_Name = 'Exam 2' or Exam_Name = 'Exam 3' or Exam_Name = 'Exam 4') order by exam_Name ASC"
+            ElseIf class_data = "Foundation 2" Then
+                strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "' and (Exam_Name = 'Exam 5' or Exam_Name = 'Exam 6' or Exam_Name = 'Exam 7' or Exam_Name = 'Exam 8') order by exam_Name ASC"
+            ElseIf class_data = "Foundation 3" Then
+                strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "' and (Exam_Name = 'Exam 9' or Exam_Name = 'Exam 10' or Exam_Name = 'Exam 11' or Exam_Name = 'Exam 12') order by exam_Name ASC"
+            ElseIf class_data = "Level 1" Then
+                strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "' and (Exam_Name = 'Exam 1' or Exam_Name = 'Exam 2' or Exam_Name = 'Exam 3' or Exam_Name = 'Exam 4') order by exam_Name ASC"
+            ElseIf class_data = "Level 2" Then
+                strSQL = "SELECT exam_Name, exam_ID FROM exam_Info WHERE exam_Year = '" & ddlYear.SelectedValue & "' and (Exam_Name = 'Exam 5' or Exam_Name = 'Exam 6' or Exam_Name = 'Exam 7' or Exam_Name = 'Exam 8') order by exam_Name ASC"
+            End If
 
+            Dim strConn As String = ConfigurationManager.AppSettings("ConnectionString")
+            Dim objConn As SqlConnection = New SqlConnection(strConn)
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
             Dim ds As DataSet = New DataSet
@@ -183,7 +167,6 @@ Public Class pengajar_laporan_pentaksiran
             ''get exam name
             strSQL = "SELECT exam_Name FROM exam_Info WHERE exam_ID = '" & ddlExam.SelectedValue & "'"
             Dim exam_data As String = oCommon.getFieldValue(strSQL)
-            lblExamination.Text = oCommon.getFieldValue(strSQL)
 
             Dim get_ExamLevel As String = ""
 
@@ -195,11 +178,11 @@ Public Class pengajar_laporan_pentaksiran
             End If
 
             ''get class level
-            strSQL = "Select class_Level from class_info where class_ID = '" & ddlClass.SelectedValue & "'"
+            strSQL = "Select class_Level from class_info where class_ID = '" & ddlClass.SelectedValue & "' and class_year = '" & ddlYear.SelectedValue & "' and class_Campus = '" & Session("SchoolCampus") & "'"
             Dim class_data As String = oCommon.getFieldValue(strSQL)
 
             strSQL = "SELECT subject_ID, subject_Name FROM subject_info WHERE subject_StudentYear = '" & class_data & "' 
-                      and subject_year = '" & ddlYear.SelectedValue & "' and subject_sem = '" & get_ExamLevel & "'"
+                      and subject_year = '" & ddlYear.SelectedValue & "' and subject_sem = '" & get_ExamLevel & "' and subject_Campus = '" & Session("SchoolCampus") & "' and course_Program = '" & ddlProgram.SelectedValue & "'"
             Dim sqlDA As New SqlDataAdapter(strSQL, objConn)
 
             Dim ds As DataSet = New DataSet
@@ -226,12 +209,10 @@ Public Class pengajar_laporan_pentaksiran
         Dim get_SubjectType As String = "Select subject_type from subject_info where subject_ID = '" & ddlSubject.SelectedValue & "'"
         Dim data_SubjectType As String = oCommon.getFieldValue(get_SubjectType)
 
-        Dim get_SubjectName As String = "Select subject_Name from subject_info where subject_ID = '" & ddlSubject.SelectedValue & "'"
-        lblCourses.Text = oCommon.getFieldValue(get_SubjectName)
-
         strSelect = "SELECT
 			        course.std_ID,
-			        student_info.student_Name,
+			        UPPER(student_info.student_Name) student_Name,
+                    student_info.student_ID,
 			        student_info.student_Mykad,
 			        class_info.class_Name,
 			        exam_result.marks,
@@ -246,15 +227,15 @@ Public Class pengajar_laporan_pentaksiran
 
         If data_SubjectType <> "Compulsory" Then
             strWhere = " WHERE
-			            exam_result.exam_ID = '" & ddlExam.SelectedValue & "'
-                        AND course.year = '" & ddlYear.SelectedValue & "'
-			            AND class_info.subject_ID = subject_info.subject_ID
+			            exam_result.exam_ID = '" & ddlExam.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "' and subject_info.subject_Campus = '" & Session("SchoolCampus") & "' and student_info.student_Campus = '" & Session("SchoolCampus") & "'
+                        AND course.year = '" & ddlYear.SelectedValue & "' and class_info.course_Program = '" & ddlProgram.SelectedValue & "' and subject_info.course_Program = '" & ddlProgram.SelectedValue & "'
+			            AND class_info.subject_ID = '" & ddlSubject.SelectedValue & "'
                         AND subject_info.subject_ID = '" & ddlSubject.SelectedValue & "'"
 
         ElseIf data_SubjectType = "Compulsory" Then
 
             strWhere = " WHERE
-			            exam_result.exam_ID = '" & ddlExam.SelectedValue & "'
+			            exam_result.exam_ID = '" & ddlExam.SelectedValue & "' and class_info.class_Campus = '" & Session("SchoolCampus") & "' and subject_info.subject_Campus = '" & Session("SchoolCampus") & "' and student_info.student_Campus = '" & Session("SchoolCampus") & "'
                         AND course.year = '" & ddlYear.SelectedValue & "'
 			            AND class_info.class_ID = '" & ddlClass.SelectedValue & "'
                         AND subject_info.subject_ID = '" & ddlSubject.SelectedValue & "'"
@@ -366,5 +347,14 @@ Public Class pengajar_laporan_pentaksiran
     Protected Sub ddlSubject_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlSubject.SelectedIndexChanged
         strRet = BindData(datRespondent)
         graphFunction()
+    End Sub
+
+    Protected Sub ddlYear_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlYear.SelectedIndexChanged
+        student_class()
+    End Sub
+
+    Protected Sub ddlProgram_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddlProgram.SelectedIndexChanged
+        subject_data()
+        student_class()
     End Sub
 End Class
